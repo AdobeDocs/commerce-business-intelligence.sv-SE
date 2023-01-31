@@ -1,0 +1,68 @@
+---
+title: Connect Google Analytics Warehouse
+description: Lär dig att spåra hur besökarna använder er webbplats, vilket innehåll som är attraktivt, var besökarna lämnar webbplatsen och mycket annat.
+exl-id: b9879399-9e1a-4f36-b510-8426ebc83aeb
+source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+workflow-type: tm+mt
+source-wordcount: '512'
+ht-degree: 0%
+
+---
+
+# Anslut [!DNL Google Analytics Warehoused]
+
+>[!NOTE]
+>
+>Kräver [Administratörsbehörigheter](../../../administrator/user-management/user-management.md).
+
+![](../../../assets/google-analytics-logo.png)
+
+[!DNL Google Analytics] är den vanligaste webbanalystjänsten på Internet. Implementering [!DNL Google Analytics] på er webbplats kan ni spåra hur besökarna använder er webbplats, vilket innehåll som är attraktivt, var besökarna lämnar webbplatsen och mycket annat. [!DNL Google Analytics Warehoused] är en separat integrering från vår befintliga [!DNL Google Analytics] integrering. På så sätt blir analysen bättre tack vare [!DNL Google Analytics] data i Data warehouse, som skiljer sig från den befintliga matningen [!DNL Google Analytics] integrering. Analysera mätvärdena i [!DNL MBI], tillsammans med andra datadelar, förbättrar webbplatsens övergripande hälsa och användbarhet.
+
+## Skillnaden mellan GA Warehouse och Live Integration
+
+Den viktigaste skillnaden är att en integrering sparas ([!DNL Google Analytics Warehoused]) och den andra inte ([!DNL Google Analytics Live]). Om [!DNL Google Analytics Warehoused]kan du manipulera [!DNL Google Analytics] data och ger er möjlighet att kombinera [!DNL Google Analytics] och andra datakällor för att skapa insiktsfull rapportering.
+
+Låt oss titta på [!DNL Google Analytics] annonskampanjer för ett exempel på vad som kan göras från en manipulation. Anta att ni har haft flera annonskampanjer för Q4 med olika namn. Kampanjerna var ett resultat av ett specifikt marknadsföringsinitiativ. Med lagrade data kan vi skapa en ny kolumn som hittar kampanjnamnen i fråga och returnerar Q4-initialnamnet för `Operation Dumbo`.
+
+Kombinationsaspekten tillåter [!DNL Google Analytics] Uppgifter som ska sammanfogas med andra uppgifter för att utföra analyser. Ta till exempel `Total Time On Site By Ad Campaign` data från [!DNL Google Analytics] och förena dem mot `Total Spent Per Campaign` data från [!DNL Facebook Ads] för att få en fullständig bild av hur mycket engagemang kostar er.
+
+Med [!DNL Google Analytics Live] integrering, å andra sidan, [!DNL Google Analytics] diagram är som en liten silo som inte lagras i [!DNL MBI] data warehouse.
+
+## Ansluter [!DNL Google Analytics Warehoused]
+
+>[!INFO]
+>
+>[!DNL Google Analytics Warehoused] är en `Premium` Integrering. [Kontakta support](../../../guide-overview.md) om du vill lägga till den här integreringen i din prenumeration.
+
+1. Gå till `Connections` sida under **[!UICONTROL Admin** > **Integrations]**.
+1. Klicka **[!UICONTROL Add a Add Integration]**, som finns till höger på skärmen.
+1. Klicka på [!DNL Google Analytics Warehoused] ikon. Detta öppnar [!DNL Google Analytics] inloggningssida.
+1. Ange [!DNL Google Analytics] autentiseringsuppgifter. När auktoriseringsprocessen är slutförd omdirigeras du tillbaka till [!DNL MBI].
+1. En lista med profil-ID:n visas. Markera de profiler som du vill ansluta till [!DNL MBI]. Om du har flera profiler och behöver hjälp med att identifiera vilket som är det, se Ansluter flera [!DNL Google Analytics] profilavsnittet nedan.
+
+## Ansluta flera [!DNL Google Analytics] profiler
+
+Du kan ha flera webbplatser anslutna till en enda [!DNL Google Analytics] konto, som identifieras av deras egna [!DNL Google Analytics] profil-ID. I det här fallet kan du välja att ta med alla dina profil-ID:n i [!DNL MBI]. Kontrollera bara de profil-ID som du vill inkludera under steget för profilval.
+
+Identifiera en viss webbplats [!DNL Google Analytics] Profil-ID:
+
+1. Logga in [!DNL Google Analytics]
+1. Gå till webbplatsens [!DNL Google Analytics] kontrollpanel
+1. Titta på URL:en - profil-ID:t motsvarar de åtta siffrorna efter `p` i slutet av raden
+
+   `www.google.com/analytics/web/#home/a11345062w43527078p**XXXXXXXX**/`
+
+## Kopplar från [!DNL Google Analytics Warehoused] från [!DNL MBI] {#disconnect}
+
+1. Besök [!DNL Google Analytics] [kontoinställningar](https://www.google.com/accounts/) sida.
+1. Under `Security` och klicka **[!UICONTROL edit]** nästa `Authorizing` program och webbplatser.
+1. Klicka **[!UICONTROL revoke access]** nästa [!DNL MBI].
+
+## Relaterad dokumentation
+
+* [Återautentisera integreringar](https://support.magento.com/hc/en-us/articles/360016733151)
+* [Ansluter [!DNL Google Adwords]](../integrations/google-adwords.md)
+* [Analysera webbplatsaktivitet och kundkonverteringsgrader](../../analysis/web-act-cust-conversion.md)
+* [Spåra kundvärvningsdata med [!DNL Google Analytics] cookies](../../analysis/google-track-user-acq.md)
+* [Spåra användarenhets- och webbläsardata med [!DNL Google Analytics] cookies](https://support.magento.com/hc/en-us/articles/360016732911)

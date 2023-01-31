@@ -1,0 +1,138 @@
+---
+title: Konfigurerar replikeringsmetoder
+description: Lär dig hur tabeller är ordnade och hur tabelldata fungerar kan du välja den bästa replikeringsmetoden för tabellerna.
+exl-id: 83895c48-a6ec-4b01-9890-164e0b21dcbc
+source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+workflow-type: tm+mt
+source-wordcount: '1455'
+ht-degree: 0%
+
+---
+
+# Konfigurerar replikeringsmetoder
+
+`Replication` metoder och [omkontroller](../data-warehouse-mgr/cfg-data-rechecks.md) används för att identifiera nya eller uppdaterade data i dina databastabeller. Att ställa in dem på rätt sätt är avgörande för att både datakvaliteten och optimerade uppdateringstider ska kunna garanteras. I den här artikeln fokuserar vi bara på replikeringsmetoder.
+
+När nya tabeller synkroniseras i Data warehouse Manager väljs automatiskt en replikeringsmetod för tabellen. Om du förstår de olika replikeringsmetoderna, hur tabeller är ordnade och hur tabelldata fungerar kan du välja den bästa replikeringsmetoden för tabellerna.
+
+## Vilka är replikeringsmetoderna?
+
+`Replication` metoder kan delas in i tre grupper - `Incremental`, `Full Table`och `Paused`.
+
+[**[!UICONTROL Incremental Replication]**](#incremental) innebär att [!DNL MBI] replikerar endast nya eller uppdaterade data vid varje replikeringsförsök. Eftersom dessa metoder minskar fördröjningen avsevärt rekommenderar vi att du använder den där det är möjligt.
+
+[**[!UICONTROL Full Table Replication]**](#fulltable) innebär att [!DNL MBI] replikerar hela innehållet i en tabell vid varje replikeringsförsök. På grund av den potentiellt stora mängd data som kan replikeras kan dessa metoder öka fördröjningen och uppdateringstiden. Om en tabell innehåller tidstämplade kolumner eller datetime-kolumner rekommenderar vi att du använder en Stegvis metod i stället.
+
+**[!UICONTROL Paused]** anger att replikeringen för tabellen har stoppats eller pausats. [!DNL MBI] inte kommer att söka efter nya eller uppdaterade data under en uppdateringscykel, Detta innebär att inga data kommer att replikeras från en tabell som har detta som replikeringsmetod.
+
+## Stegvisa replikeringsmetoder {#incremental}
+
+### Ändrad vid (mest idealisk)
+
+The `Modified At` replikeringsmetoden använder en datetime-kolumn, som fylls i när en rad skapas och sedan uppdateras när data ändras, för att hitta data som ska replikeras. Den här metoden är utformad för att fungera med tabeller som uppfyller följande kriterier:
+
+* innehåller en `datetime` kolumn som fylls i från början när en rad skapas och uppdateras när raden ändras,
+* den `datetime` kolumnen är aldrig null,
+* rader tas inte bort från tabellen
+
+Förutom dessa kriterier rekommenderar vi **indexering** den `datetime` kolumn som används för `Modified At` replikering, eftersom detta bidrar till att optimera replikeringshastigheten.
+
+När uppdateringen körs identifieras nya eller ändrade data genom sökning efter rader som har ett värde i `datetime` -kolumn som inträffade efter den senaste uppdateringen. När nya rader upptäcks replikeras de till Data warehouse. Om det redan finns rader i Data warehouse skrivs de över med de aktuella databasvärdena.
+
+En tabell kan till exempel ha en kolumn som kallas `modified\_at` som anger senaste gången data ändrades. Om den senaste uppdateringen kördes på tisdag klockan 12.00 kommer uppdateringen att söka efter alla rader som har en `modified\_at` större än tisdag klockan tolv. Alla identifierade rader som antingen har skapats eller ändrats sedan tisdag klockan tolv kommer att replikeras till Data warehouse.
+
+**Visste du det?**
+Även om din databas för närvarande inte stöder `Incremental` Replikeringsmetod kan eventuellt användas [göra vissa ändringar i databasen](../../best-practices/mod-db-inc-replication.md) som skulle göra det möjligt att använda `Modified At` eller `Single Auto Incrementing PK`.
+
+`Modified At` är inte bara den mest idealiska replikeringsmetoden, utan också den snabbaste. Den här metoden ger inte bara märkbara hastighetsökningar med stora datauppsättningar, den kräver inte heller att du konfigurerar ett alternativ för omkontroll. Andra metoder måste iterera igenom en hel tabell för att identifiera ändringar, även om en liten delmängd av data har ändrats. `Modified At` itererar bara genom den lilla delmängden.
+
+### Enkel autoökning primärnyckel
+
+`Auto Incrementing` är ett beteende som i angiven ordning tilldelar primärnycklar till rader. Om en tabell `Auto Incrementing` och den högsta primärnyckeln i tabellen är för närvarande 1 000, kommer nästa primära värde att vara 1 001 eller högre. En tabell som inte använder `Auto Incrementing` beteendet kan tilldela ett primärnyckelvärde som är mindre än 1 000 eller hoppa till ett mycket större tal, men det är inte vanligt.
+
+Den här metoden är utformad för att replikera nya data från tabeller som uppfyller följande kriterier:
+
+* `single-column primary key`; och
+* `primary key` datatypen är `integer`; och
+* `auto incrementing` primärnyckelvärden.
+
+När en tabell används `Single Auto Incrementing Primary Key` nya data identifieras genom att du söker efter primärnyckelvärden som är högre än det högsta värdet i Data warehouse. Om det högsta primärnyckelvärdet i Data warehouse till exempel är 500 kommer nästa uppdatering att söka efter rader med primärnyckelvärden på 501 eller högre.
+
+### Lägg till datum
+
+The `Add Date` metodfunktioner som liknar `Single Auto Incrementing Primary Key` -metod. I stället för att använda ett heltal som primärnyckel för tabellen använder den här metoden ett `timestamped` för att söka efter nya rader.
+
+När en tabell använder `Add Date` nya data upptäcks genom att söka efter tidsstämplade värden som är större än det senaste datumet som synkroniseras med Data warehouse. Exempel: om en uppdatering senast kördes 20/12/2015 09:00:00, alla rader med en större tidsstämpel markeras som nya data och replikeras.
+
+>[!NOTE]
+>
+>Till skillnad från `Modified At` metod, `Add Date` söker inte efter uppdaterad information på befintliga rader - den kommer bara att se fram emot nya rader.
+
+## Fullständiga replikeringsmetoder för tabeller {#fulltable}
+
+### Fullständig tabell
+
+`Full table` hela tabellen uppdateras när nya rader upptäcks. Detta är den i särklass minst effektiva replikeringsmetoden eftersom alla data måste bearbetas om under varje uppdatering, förutsatt att det finns nya rader.
+
+Nya rader upptäcks genom att du skickar en fråga till databasen i början av synkroniseringsprocessen och räknar antalet rader. Om den lokala databasen innehåller fler rader än [!DNL MBI], uppdateras tabellen. Om antalet rader är identiskt, eller om [!DNL MBI] innehåller *mer* rader än din lokala databas, hoppas tabellen över.
+
+Detta leder till den viktiga punkten att **`Full Table`replikeringen är inte kompatibel när:**
+
+* fler rader tas bort än vad som har skapats i den lokala databastabellen mellan efterföljande uppdateringscykler, eller
+* kolumnvärden ändras, men inga ytterligare rader skapas
+
+I något av de ovanstående scenarierna `Full Table` inga ändringar identifieras vid replikeringen och dina data blir inaktuella. På grund av ineffektiviteten hos denna replikeringsmetod och de krav som nämns ovan, `Full Table` replikering rekommenderas endast som en sista utväg.
+
+### Primärnyckelgrupp
+
+När en tabell använder `Primary Key Batch` (PK Batch) upptäcks nya data genom att rader i primärnyckelvärden, eller grupper, räknas. Även om vi vanligtvis tänker på att detta används med heltal, kan även textvärden ordnas på ett sätt som gör att systemet kan definiera konstanta intervall.
+
+Låt oss säga att en uppdatering körs och utför en radräkning för intervallet mellan 1 och 100. I den här uppdateringen hittar och loggar systemet 37 rader. I nästa uppdatering utförs radantalet igen i intervallet 1-100 och 41 rader hittas. Eftersom antalet rader är olika jämfört med den senaste uppdateringen kommer systemet att undersöka det intervallet (eller gruppen) mer i detalj.
+
+Den här metoden är avsedd att replikera data från tabeller som uppfyller följande kriterier:
+
+* icke-heltal med en kolumn; eller
+* sammansatta nycklar (flera kolumner som utgör primärnyckeln) - observera att kolumner som används i en sammansatt primärnyckel aldrig kan ha null-värden. eller
+* primärnyckelvärden med en kolumn, ett heltal och utan autostegning.
+
+Den här metoden är inte perfekt eftersom den är oerhört långsam på grund av den mängd bearbetning som måste utföras för att undersöka grupper och hitta ändringar. Vi rekommenderar inte att du använder den här metoden såvida det inte är möjligt att göra de ändringar som behövs för att stödja de andra replikeringsmetoderna. Förväntade att uppdateringstiderna ska öka om den här metoden måste användas.
+
+## Ställa in replikeringsmetoder
+
+Replikeringsmetoderna anges tabell för tabell. Om du vill ange en replikeringsmetod för en tabell måste du [`Admin`](../../administrator/user-management/user-management.md) behörigheter så att du kan komma åt Data warehouse Manager.
+
+1. I Data warehouse Manager väljer du tabellen i `Synced Tables` lista för att visa tabellens schema.
+1. Den aktuella replikeringsmetoden visas under tabellnamnet. Klicka på länken om du vill ändra den.
+1. Klicka på alternativknappen bredvid antingen `Incremental` eller `Full Table` replikering för att välja en replikeringstyp.
+1. Klicka sedan på **[!UICONTROL Replication Method]** listruta för att välja en metod, till exempel `Paused` eller `Modified At`.
+
+   >[!NOTE]
+   >
+   >**Vissa inkrementella metoder kräver att du anger en`Replication Key`**. [!DNL MBI] använder den här nyckeln för att bestämma var nästa uppdateringscykel ska börja.
+   >
+   >Om vi till exempel vill använda `modified at` metod för `orders` bord, vi måste skapa en `date column` som replikeringsnyckeln. Det kan finnas flera alternativ för replikeringsnycklar, men vi väljer `created at`eller när ordern skapades. Om den senaste uppdateringscykeln stoppades 12/1/2015 00:10:00, nästa cykel börjar replikera data med en `created at` datum större än detta.
+
+1. När du är klar klickar du på **[!UICONTROL Save]**.
+
+Se hela processen:
+
+![](../../assets/replication_method.gif)<!--{: width="801" height="341"}-->
+
+## Radbrytning
+
+Vi har sammanställt denna tabell som jämför de olika replikeringsmetoderna. Vi tycker att det är otroligt praktiskt när vi väljer en metod för tabellerna i data warehouse.
+
+| **`Method`** | **`Syncing New Data`** | **`Processing Rechecks on Large Data Sets`** | **`Handle Composite Keys?`** | **`Handle Non-Integer PKs?`** | **`Handle Non-Sequential PK Population?`** | **`Handle Row Deletion?`** |
+|-----|-----|-----|-----|-----|-----|-----|
+| `Auto-Incrementing Primary Key` | Snabbare | Långsam | Nej | Nej | Nej | Ja |
+| `Primary Key Batch Monitoring` | Långsam | Långsam | Ja | Ja | Ja | Ja |
+| `Modified At` | Snabbare | Snabbare | Ja | Ja | Ja | Nej |
+
+{style=&quot;table-layout:auto&quot;}
+
+## Relaterad dokumentation
+
+* [Förstå omkontroller av data](../data-warehouse-mgr/cfg-data-rechecks.md)
+* [Ändra databasen som stöds ](../../best-practices/mod-db-inc-replication.md)
+* [Optimera databasen för analys](../../best-practices/opt-db-analysis.md)
+* [Minskar uppdateringstiderna](../../best-practices/reduce-update-cycle-time.md)

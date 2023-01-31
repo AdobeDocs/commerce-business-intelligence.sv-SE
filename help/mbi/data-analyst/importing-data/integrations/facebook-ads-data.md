@@ -1,0 +1,63 @@
+---
+title: Förväntade Facebook Ads-data
+description: Lär dig en kort översikt över de tabeller vi rekommenderar att du synkroniserar med data warehouse
+exl-id: 0c8b907b-1a98-470b-bb2c-55327e88e502
+source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+workflow-type: tm+mt
+source-wordcount: '341'
+ht-degree: 0%
+
+---
+
+# Förväntat [!DNL Facebook Ads] data
+
+![](../../../assets/Facebook_Logo.png)
+
+Efter att du har [ansluten till din [!DNL Facebook Ads] konto](../integrations/facebook-ads.md)kan du använda [data warehouse Manager](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) för att enkelt spåra relevanta datafält för analys.
+
+I den här artikeln får du en kort översikt över de tabeller vi rekommenderar att du synkroniserar med data warehouse. Det här är inte en fullständig lista eftersom det finns många deltabeller. Vi lyfter bara fram de viktigaste tabellerna.
+
+## Huvudtabeller för annonskampanjer
+
+Dessa tabeller innehåller data om viktiga komponenter i annonskampanjer.
+
+### [`facebook _campaigns_ (account-id)`](https://developers.facebook.com/docs/reference/ads-api/adcampaign/)
+
+Det här registret är huvudtabellen för kampanjer i en [!DNL Facebook Ads] konto. Kolumnerna innehåller `campaign id`, `name`, `status (active/paused)`, `objective`.
+
+### [`facebook _adsets_ (account-id)`](https://developers.facebook.com/docs/marketing-api/reference/ad-campaign)
+
+Registerposterna är huvudtabellen i [!DNL Facebook Ads] Uppsättningar i en [!DNL Facebook Ads] konto. Kolumnerna innehåller annonsen `Campaign id/name` annonsuppsättningen tillhör, information om budget, budtyp, planering och målgruppsanpassning.
+
+### [`facebook _ads_ (account-id)`](https://developers.facebook.com/docs/reference/ads-api/adgroup/)
+
+Det här registret registrerar alla annonser i en [!DNL Facebook Ads] konto. Kolumnerna innehåller annonsinformationen, inklusive annonsuppsättningen och annonskampanjen som den tillhör, annonsinbjudandena, annonsinriktningen och referensen till specifika kreativa (bild/text) som annonsen använder.
+
+### [`facebook _adcreative_ (account-id)`](https://developers.facebook.com/docs/reference/ads-api/adcreative/)
+
+I den här tabellen registreras alla de kreativa som används i [!DNL Facebook Ads]. Dessa innehåller kreativa namn, beskrivning och relevanta bild-URL:er där det är lämpligt.
+
+## Segmenterade kampanjtabeller
+
+Följande tabeller innehåller en post för varje kampanj/uppsättning/annonskombination för varje dag, segmenterad efter dimensioner som ålder, kön och land.
+
+### `facebook _ads insights_ (account-id)`
+
+Tabellen innehåller ett tävlingsbidrag för varje kampanj/uppsättning/annonskombination för varje dag, tillsammans med statistik, inklusive visningar, klickningar, kostnad, cpc, cpm, cpp, ctr, räckvidd, social räckvidd och utgifter.
+
+### `facebook _ads insights_ (account-id)_~\_actions`
+
+Detta är en deltabell av `facebook_ads_insights_{account_id}` tabell. Det innehåller konverteringsdata för åtgärder som utförs baserat på olika kampanjer.
+
+### `facebook _ads insights country_ (account-id)`
+
+Tabellen innehåller samma information som `facebook_ads_insights_{account_id}` tabell och segmenterar den per land.
+
+### `facebook ads insights age and gender (account-id)`
+
+Tabellen innehåller samma information som `facebook_ads_insights_{account_id}` tabell och segmenterar den efter ålder och kön.
+
+## Relaterad
+
+* [Ansluter [!DNL Facebook Ads]](../integrations/facebook-ads.md)
+* [Återautentisera integreringar](https://support.magento.com/hc/en-us/articles/360016733151-Reauthenticating-integrations)

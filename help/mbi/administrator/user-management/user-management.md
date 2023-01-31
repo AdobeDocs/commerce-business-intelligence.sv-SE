@@ -1,0 +1,75 @@
+---
+title: Hantera användare och behörigheter
+description: Lär dig hantera dina [!DNL MBI] -användare.
+exl-id: 2a5eeabb-3c13-4ca1-b845-ed255b389c9f
+source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+workflow-type: tm+mt
+source-wordcount: '415'
+ht-degree: 0%
+
+---
+
+# Hantera användarbehörigheter
+
+MBI är tänkt att vara en enda källa till sanning i hela organisationen. Varje användare får en egen uppsättning kontrollpaneler som de kan [dela med andra användare](../../data-user/dashboards/share-dashboard-with-users.md).
+
+## Behörighetsnivåer för användare
+
+I [!DNL MBI], finns det tre allmänna behörighetsnivåer som gäller för användare, som väljs när ett konto skapas:
+
+* `Admin`
+* `Standard`
+* `Read-Only`
+
+Dessa behörigheter gör att användare kan utföra vissa åtgärder eller komma åt specifika delar av [!DNL MBI]. Här följer en tabell över vad varje behörighetsnivå kan göra i MBI:
+
+|  | `Admin` | `Standard` | `Read Only` |
+| -----|-----|-----|----|
+| **Skapa/hantera användare** | ✔ |  |  |
+| **Skapa e-postsammanfattningar** | ✔ | ✔ |  |
+| **Skapa/redigera/dela kontrollpaneler** | ✔ | ✔ |  |
+| **Visa instrumentpaneler** | ✔ | ✔ | ✔ |
+| **Skapa/redigera/ta bort visuella rapporter** | ✔ | ✔* |  |
+| **Skapa/redigera/ta bort SQL-rapporter** | ✔ |  |  |
+| **Klona instrumentpaneler** | ✔ |  |  |
+| **Lägg till/hantera integreringar** | ✔ |  |  |
+| **Öppna Data warehouse Manager** | ✔ |  |  |
+| **Synkronisera/avsynkronisera tabeller och kolumner** | ✔ |  |  |
+| **Skapa/redigera mätvärden** | ✔ |  |  |
+| **Skapa/redigera filteruppsättningar** | ✔ |  |  |
+| **Skapa/redigera beräknade kolumner** | ✔ |  |  |
+| **Skapa en lista med beroende rapporter** | ✔ |  |  |
+| **Översikt över Access System** | ✔ |  |  |
+| **Åtkomstinställningar för tidszon** | ✔ |  |  |
+| **Åtkomstfakturering** | ✔ | ✔** |  |
+| **Kontakta supporten** | ✔ | ✔ | ✔ |
+
+{style=&quot;table-layout:auto&quot;}
+
+>[!NOTE]
+>
+>_Du kan begränsa **[!UICONTROL Standard]**användarens [tillgång till specifika mätvärden](../../administrator/user-management/restrict-metric-access.md)._
+>
+>**[!UICONTROL Standard] _-användare har åtkomst till Fakturering med en extra behörighetsinställning._
+>
+>**[!UICONTROL Read-Only]** kan bara _visa_ Instrumentpaneler som har delats med dem. de inte kan skapa eller redigera något i [!DNL MBI]och de kan inte heller söka efter och lägga till nya instrumentpaneler på sitt konto. Vi rekommenderar att du delar en specifik uppsättning instrumentpaneler med **[!UICONTROL Read-Only]** användare som du eller någon annan medlem i ditt team underhåller. Klona inte en uppsättning instrumentpaneler åt dem.
+
+## Ytterligare behörigheter: Fakturering och teknisk rådgivning {#billingtech}
+
+Förutom de allmänna behörighetsnivåerna finns det två andra användarbeteckningar - `Billing` och `Technical`. Dessa beteckningar är avsedda att användas tillsammans med de allmänna behörighetsnivåerna.
+
+### Fakturering
+
+`Billing` användare har tillgång till faktureringssidan och kan ändra betalningsinformation. Dessutom kan våra team även kontakta dem för faktureringsfrågor.
+
+`Admin` användare har som standard åtkomst till fliken Fakturering, men standardanvändare kan även få åtkomst till dem om de har `Billing` markerad kryssruta på sin profil.
+
+![fakturering](../../assets/billing.png)<!--{: width="550" height="363"}-->
+
+### Teknik
+
+`Technical` -användare har inte någon behörighet som är specifik för dem - den här inställningen markerar bara en teknisk kontakt inom organisationen. Dessa användare kan kontaktas av våra team för tekniska frågor.
+
+`Admin` användare kan lägga till nya användare i sina konton genom att klicka på **[!UICONTROL Account Settings]** > **[!UICONTROL Create Users]** och följer anvisningarna. När användaren har skapats i [!DNL MBI], får den person du bjuder in e-postinstruktioner om hur du slutför kontokonfigurationsprocessen.
+
+När som helst, `Admins` kan visa alla användare på deras konto genom att klicka på **[!UICONTROL Account Settings]** > **[!UICONTROL Manage Users]**. På den här sidan visas användarens behörigheter och vilka mått och instrumentpaneler användaren har tillgång till.
