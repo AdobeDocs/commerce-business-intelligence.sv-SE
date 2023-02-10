@@ -2,9 +2,9 @@
 title: Formler i Report Builder
 description: Lär dig hur formler kan användas i Report Builder.
 exl-id: 7a0ad07a-5bcc-474f-95bc-ccc2b74073b2
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '554'
 ht-degree: 0%
 
 ---
@@ -63,4 +63,4 @@ I vårt exempel använde vi `Stacked Columns` för att visa resultaten per måna
 
 Observera i exemplen ovan att formeln `timestamp`, `groupings`, `perspectives`och `filters` ärvs från indatavärden? Kom ihåg att formler kan användas `perspectives` och [oberoende tidsalternativ](../../tutorials/time-options-visual-rpt-bldr.md){: target=&quot;_blank&quot;}, precis som mätvärden kan.
 
-Om du har ytterligare frågor om hur du använder formler i `Report Builder`, [kontakta support](../../guide-overview.md).
+Om du har ytterligare frågor om hur du använder formler i `Report Builder`, [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

@@ -2,9 +2,9 @@
 title: Optimera dina SQL-frågor
 description: Lär dig hur du optimerar dina SQL-frågor.
 exl-id: 2782c707-6a02-4e5d-bfbb-eff20659fbb2
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '823'
+source-wordcount: '828'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Med SQL Report Builder kan du fråga efter och upprepa dessa frågor när du vill. Detta är användbart när du behöver ändra en fråga utan att behöva vänta på att en uppdateringscykel ska slutföras innan en kolumn eller rapport som du har skapat realiseras och behöver uppdateras.
 
-Innan en fråga körs [[!DNL MBI] beräknar kostnaden](https://support.magento.com/hc/en-us/articles/360016730391). Kostnaden tar hänsyn till hur lång tid och hur många resurser som krävs för att köra en fråga. Om kostnaden anses vara för hög eller om antalet returnerade rader överstiger våra gränser, kommer frågan inte att köras. Vi har sammanställt en lista med rekommendationer om hur du ska ställa frågor till data warehouse, så att du kan vara säker på att du skriver så smidiga frågor som möjligt.
+Innan en fråga körs [[!DNL MBI] beräknar kostnaden](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html?lang=en). Kostnaden tar hänsyn till hur lång tid och hur många resurser som krävs för att köra en fråga. Om kostnaden anses vara för hög eller om antalet returnerade rader överstiger våra gränser, kommer frågan inte att köras. Vi har sammanställt en lista med rekommendationer om hur du ska ställa frågor till data warehouse, så att du kan vara säker på att du skriver så smidiga frågor som möjligt.
 
 ## Använda SELECT eller Markera alla kolumner
 

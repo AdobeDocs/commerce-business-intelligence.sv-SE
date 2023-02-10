@@ -2,9 +2,9 @@
 title: Aktivera [!DNL MBI] Konto för molnstartprenumerationer
 description: Lär dig hur du aktiverar [!DNL MBI] för Cloud Starter-projekt.
 exl-id: 172439ee-fa1d-4872-b6a9-c61a212a7cbe
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 9974cc5c5cf89829ca522ba620b8c0c2d509610c
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '548'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Aktivera [!DNL MBI] for `Cloud Starter` projekt, skapa först [!DNL MBI] skapa s
 
 1. Skapa [!DNL MBI] Konto.
 
-   - Gå till [https://account.magento.com/customer/account/login](https://account.magento.com/customer/account/login)
+   - Gå till [Adobe Commerce-kontoinloggning](https://account.magento.com/customer/account/login)
 
    - Gå till **[!UICONTROL My Account** > **My [!DNL MBI] Instances]**.
 
@@ -53,7 +53,7 @@ Aktivera [!DNL MBI] for `Cloud Starter` projekt, skapa först [!DNL MBI] skapa s
 
 1. Skapa dedikerad [!DNL MBI] Användare.
 
-   - Skapa en ny användare på [https://accounts.magento.com](https://accounts.magento.com).
+   - Skapa en ny användare i [Adobe Commerce](https://accounts.magento.com).
 
    - _Varför en ny användare?_ [!DNL MBI] behöver en användare som har lagts till i projektet för att kontinuerligt hämta nya data som ska överföras till kontots [!DNL MBI] data warehouse. Den här användaren fungerar som den anslutningen. Om du lägger till den här användaren i projektet visas steg 4.
 
@@ -75,7 +75,7 @@ Aktivera [!DNL MBI] for `Cloud Starter` projekt, skapa först [!DNL MBI] skapa s
 
 1. Lägg till dina nya [!DNL MBI] `Public key` till [!DNL MBI] som skapades i steg 5.
 
-   - Gå till [https://accounts.magento.cloud/](https://accounts.magento.cloud/). Logga in med din kontoinloggningsinformation för den nya [!DNL MBI] har skapats. Gå sedan till `Account Settings` -fliken.
+   - Gå till [ditt Adobe Commerce-konto i molnet](https://accounts.magento.cloud/). Logga in med din kontoinloggningsinformation för den nya [!DNL MBI] har skapats. Gå sedan till `Account Settings` -fliken.
 
    - Bläddra nedåt på sidan och utöka listrutan för `SSH` nycklar. Klicka sedan på **[!UICONTROL Add a public key]**.
 

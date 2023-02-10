@@ -2,9 +2,9 @@
 title: Förväntad analys av livstidsvärde (LTV) (grundläggande)
 description: Lär dig hur ni skapar analyser för att förstå era kunders livstidsvärde och förutse hur livstidsvärdet kommer att öka med fler order.
 exl-id: e6f02cf6-f542-4768-969c-3ec998a7caa9
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '335'
 ht-degree: 0%
 
 ---
@@ -44,8 +44,6 @@ När mätvärdena har skapats kan du **skapa en kontrollpanel** genom att göra 
 * Det är här vi skapar och lägger in alla rapporter.
 
 ## Skapar rapporter
-
-* Om du inte redan har gjort det, checka ut [den här videon](https://fast.wistia.net/embed/iframe/24zz7wmjrt) om att använda **[!UICONTROL Visual Report Builder] för att skapa diagram, tabeller och skalära värden.
 
 >[!NOTE]
 >

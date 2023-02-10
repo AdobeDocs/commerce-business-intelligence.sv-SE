@@ -2,9 +2,9 @@
 title: tabell för försäljning_order
 description: Lär dig hur du arbetar med tabellen sales_order.
 exl-id: 19a8ab88-de51-48f8-af39-ae4897834afe
-source-git-commit: 73373924b7adaffabf643b65bd290ce2d9408574
+source-git-commit: 9974cc5c5cf89829ca522ba620b8c0c2d509610c
 workflow-type: tm+mt
-source-wordcount: '1218'
+source-wordcount: '1219'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Det här registret innehåller alla kundorder, oavsett om beställningen har bea
 | `customer_group_id` | Sekundärnyckel som är associerad med `customer_group` tabell. Gå med i `customer_group.customer_group_id` för att fastställa kundgruppen som är kopplad till ordern |
 | `customer_id` | `Foreign key` som är kopplade till `customer_entity` om kunden är registrerad. Gå med i `customer_entity.entity_id` för att avgöra vilka kundattribut som är kopplade till ordern. Om beställningen gjordes via gästutcheckning kommer det här fältet att `NULL` |
 | `entity_id` (PK) | Unik identifierare för tabellen och används ofta i kopplingar till andra tabeller i Commerce-instansen |
-| `increment_id` | Unik identifierare för en order och kallas ofta `order_id` i Magento. The `increment_id` används oftast för kopplingar till externa källor, som [!DNL Google Ecommerce] |
+| `increment_id` | Unik identifierare för en order och kallas ofta `order_id` inom Adobe Commerce. The `increment_id` används oftast för kopplingar till externa källor, som [!DNL Google Ecommerce] |
 | `shipping_address_id` | Sekundärnyckel som är associerad med `sales_order_address` tabell. Gå med i `sales_order_address.entity_id` för att fastställa leveransadressuppgifter för ordern |
 | `status` | Orderstatus. Kan returnera värden som &#39;complete&#39;, &#39;processing&#39;, &#39;canceled&#39;, &#39;repaid&#39;, samt alla anpassade statusvärden som implementerats i Commerce-instansen. Reservation för ändringar när ordern behandlas |
 | `store_id` | `Foreign key` som är kopplade till `store` tabell. Gå med i `store`.`store_id` för att avgöra vilken Commerce Store-vy som är associerad med ordern |

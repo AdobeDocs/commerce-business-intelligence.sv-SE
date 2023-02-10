@@ -2,9 +2,9 @@
 title: Connect QuickBooks
 description: Lär dig mer om hur företagets ekonomi nu kan samverka med era sälj- och marknadsföringsdata, så att ni snabbt och enkelt kan hålla koll på era utgifter, identifiera överutgifter och mycket annat.
 exl-id: e100c88c-af59-4185-b2a2-c8e77bfd7277
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '143'
+source-wordcount: '147'
 ht-degree: 0%
 
 ---
@@ -38,4 +38,4 @@ Efter klickning **[!UICONTROL Connect to Quickbooks]** loggar du in på [!DNL In
 ## Relaterad
 
 * [Förväntat [!DNL QuickBooks] data](../integrations/quickbooks-data.md)
-* [Återautentisera integreringar](https://support.magento.com/hc/en-us/articles/360016733151)
+* [Återautentisera integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)

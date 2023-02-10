@@ -2,9 +2,9 @@
 title: Avlasta [!DNL MBI] Konto
 description: Lär dig hur du rensar upp dina [!DNL MBI] konto.
 exl-id: 5fcdac2d-41ca-4011-b646-a699d9ecc6e4
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '893'
+source-wordcount: '891'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Du kan göra detta genom att klicka på företagets namn i det övre högra hör
 
 >[!WARNING]
 >
->Om du inaktiverar en användare tas även diagram, instrumentpaneler och andra resurser som skapats av användaren bort. Om du vill bevara dessa resurser kan du kontakta [!DNL MBI] [support](../guide-overview.md) innan användaren inaktiveras. Support kan hjälpa dig att överföra dessa resurser till en annan användare.
+>Om du inaktiverar en användare tas även diagram, instrumentpaneler och andra resurser som skapats av användaren bort. Om du vill bevara dessa resurser kontaktar du [!DNL MBI] [support](../guide-overview.md) innan användaren inaktiveras. Support kan hjälpa dig att överföra dessa resurser till en annan användare.
 
 ### Återaktivera en användare
 

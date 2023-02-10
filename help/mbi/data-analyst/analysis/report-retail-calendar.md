@@ -39,9 +39,9 @@ Du kan [ladda ned](../../assets/454-calendar.csv) a `.csv` version av 4-5-4-kale
 
 * **sales\_order** table
    * `INPUT` `created\_at` (åååå-mm-dd 00:00:00)
-      * [!UICONTROL Column type]: - `Same table > Calculation`
-      * [!UICONTROL Inputs]: - `created\_at`
-      * [!UICONTROL Datatype]: - `Datetime`
+      * [!UICONTROL Column type]: – `Same table > Calculation`
+      * [!UICONTROL Inputs]: – `created\_at`
+      * [!UICONTROL Datatype]: – `Datetime`
       * [!UICONTROL Calculation]: - ` case when A is null then null else to\_char(A, 'YYYY-MM-DD 00:00:00') end`
 
 * **Butikskalender** filöverföringsregister

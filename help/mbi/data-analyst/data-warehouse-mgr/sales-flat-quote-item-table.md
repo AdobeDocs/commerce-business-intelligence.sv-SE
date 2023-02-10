@@ -2,16 +2,16 @@
 title: register_quote_item
 description: Lär dig hur du arbetar med tabellen quote_item.
 exl-id: dad36e88-5986-4b52-8a0e-ac084fabb275
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '682'
+source-wordcount: '693'
 ht-degree: 0%
 
 ---
 
 # quote_item Table
 
-The `quote_item` tabell (`sales_flat_quote_item` på [!DNL Magento] 1) innehåller uppgifter om varje artikel som lagts till i en kundvagn, oavsett om vagnen övergavs eller konverterades till ett inköp. Varje rad representerar ett varukorgsobjekt. På grund av tabellens potentiella storlek rekommenderar vi att du regelbundet tar bort poster om vissa villkor uppfylls, t.ex. om det finns några ej konverterade varukorgar som är äldre än 60 dagar.
+The `quote_item` tabell (`sales_flat_quote_item` på M1) 1) innehåller uppgifter om varje artikel som lagts till i en kundvagn, oavsett om vagnen övergavs eller konverterades till ett inköp. Varje rad representerar ett varukorgsobjekt. På grund av tabellens potentiella storlek rekommenderar vi att du regelbundet tar bort poster om vissa villkor uppfylls, t.ex. om det finns några ej konverterade varukorgar som är äldre än 60 dagar.
 
 >[!NOTE]
 >
@@ -70,7 +70,7 @@ The `quote_item` tabell (`sales_flat_quote_item` på [!DNL Magento] 1) innehål
 
 `quote_item`
 
-* Gå med i `quote_item` om du vill skapa nya kolumner som associerar information om den överordnade konfigurerbara enheten eller SKU:n med den enkla produkten. Observera att du måste [kontakta support](../../guide-overview.md) om du behöver hjälp med att konfigurera dessa beräkningar, om du bygger i Data warehouse.
+* Gå med i `quote_item` om du vill skapa nya kolumner som associerar information om den överordnade konfigurerbara enheten eller SKU:n med den enkla produkten. Observera att du måste [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) om du behöver hjälp med att konfigurera dessa beräkningar, om du bygger i Data warehouse.
    * Sökväg: `quote_item.parent_item_id` (många) => `quote_item.item_id` (ett)
 
 `store`

@@ -2,9 +2,9 @@
 title: Entitetsrelationsdiagram
 description: Lär dig mer om några ER-diagram som hjälper dig att visualisera relationen mellan en handfull vanliga Commerce-databastabeller.
 exl-id: de7d419f-efbe-4d0c-95a8-155a12aa93f3
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '326'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ En kund kan göra många beställningar. Relationen mellan de här två tabeller
 
 >[!IMPORTANT]
 >
->`customer\_entity.entity\_id` är inte lika med `sales\_flat\_order.entity\_id`. Den första kan man tänka sig som en `customer\_id` och den andra kan man tänka sig som `order\_id.` Du kan läsa mer om detta i [`entity\_id` section](https://support.magento.com/hc/en-us/articles/360016729951) på _[!DNL Magento]: Vanliga missuppfattningar_ artikel.
+>`customer\_entity.entity\_id` är inte lika med `sales\_flat\_order.entity\_id`. Den första kan man tänka sig som en `customer\_id` och den andra kan man tänka sig som `order\_id.`
 
 Inom [!DNL MBI]om sökvägen mellan de två tabellerna inte redan finns, kan du [skapa banan](../data-warehouse-mgr/create-paths-calc-columns.md) på fliken Data warehouse. När du är redo att skapa banan definieras den så här:
 

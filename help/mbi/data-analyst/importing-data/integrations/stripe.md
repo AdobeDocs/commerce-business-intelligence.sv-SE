@@ -2,9 +2,9 @@
 title: Koppla rand
 description: Lär dig hur du hanterar och håller reda på företagets betalningar och fakturadata.
 exl-id: c038f2a9-b2bd-4e45-93f9-12d2e5077b31
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '171'
+source-wordcount: '175'
 ht-degree: 0%
 
 ---
@@ -46,4 +46,4 @@ Efter klickning **[!UICONTROL Connect with Stripe]** visas en sida för åtkomst
 Om du är lite mer teknikkunnig, [[!DNL Stripe] API-dokumentation](https://stripe.com/docs/api) kan vara en användbar resurs för att lära dig mer om hur [!DNL Stripe] är integrerat med [!DNL MBI].
 
 * [Förväntat [!DNL Stripe] data](../integrations/stripe-data.md)
-* [Återautentisera integreringar](https://support.magento.com/hc/en-us/articles/360016733151)
+* [Återautentisera integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)

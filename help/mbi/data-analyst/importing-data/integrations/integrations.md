@@ -2,9 +2,9 @@
 title: Koppla externa data med hjälp av en integrering
 description: Läs mer om de integreringar du kan använda för att ansluta olika externa datakällor till [!DNL MBI].
 exl-id: b80f6f77-15f7-4d20-83fe-c6d758f9b0f8
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '82'
+source-wordcount: '92'
 ht-degree: 0%
 
 ---
@@ -15,4 +15,4 @@ En integrering är en datakälla. Integrationer är program och databaser som du
 
 I det här avsnittet presenterar vi tillgängliga integreringar som du kan använda för att ansluta olika externa datakällor till [!DNL MBI].
 
-Om du vill ta bort en anslutning eller integrering kontaktar du [support](../../../guide-overview.md) och ange namnet på anslutningen eller integreringen som ska tas bort.
+Om du vill ta bort en anslutning eller integrering [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) och ange namnet på anslutningen eller integreringen som ska tas bort.

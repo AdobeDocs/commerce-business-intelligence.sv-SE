@@ -2,16 +2,16 @@
 title: Förstå [!DNL MBI] Miljö
 description: Lär dig hur du arbetar med och förbättrar dina [!DNL MBI] miljö.
 exl-id: 601b5fba-da02-4cc8-96ed-147c24f326f9
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '780'
 ht-degree: 0%
 
 ---
 
 # Dina [!DNL MBI] Miljö
 
-När ni analyserar era affärsdata bör ni vara medvetna om dessa faktorer och vanliga missuppfattningar. Om du behöver hjälp med att se till att du använder ditt Commerce-schema på rätt sätt går det bra att [kontakta support](../guide-overview.md).
+När ni analyserar era affärsdata bör ni vara medvetna om dessa faktorer och vanliga missuppfattningar. Om du behöver hjälp med att se till att du använder ditt Commerce-schema på rätt sätt går det bra att [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
 
 ## [!DNL entity\_id]
 

@@ -2,9 +2,9 @@
 title: Sannolikhetsrapport för upprepade order
 description: Lär dig mer och förstå rapporten om sannolikhet för upprepad order.
 exl-id: 2c88b85a-7320-44ca-87a5-5b91250348ea
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '345'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Om vi lägger till ett filter som använder en dimension som inte är lika för 
 
 I vissa fall kan vi kanske ändra `order-specific` dimension till en `user-specific` dimension som ska läggas till som filter i `Repeat Order Probability` diagram. I dessa fall returnerar vi beställningsattributet för en användares första order eller senaste order (t.ex. användarens namn för första orderområde).
 
-Om du vill skapa en sådan ny dimension [kontakta support](../../guide-overview.md).
+Om du vill skapa en sådan ny dimension [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
 
 ## Jämföra upprepningssannolikhet för order med olika attribut
 

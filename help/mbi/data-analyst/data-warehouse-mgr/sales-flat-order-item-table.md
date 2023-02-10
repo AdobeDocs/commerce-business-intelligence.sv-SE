@@ -2,16 +2,16 @@
 title: register_för försäljningsorder_artikel
 description: Lär dig hur du arbetar med tabellen sales_order_item.
 exl-id: 5c48e985-3ba2-414b-bd1f-555b3da763bd
-source-git-commit: c0892aa046c80f90561b4a178525ef9ed05b435a
+source-git-commit: 9974cc5c5cf89829ca522ba620b8c0c2d509610c
 workflow-type: tm+mt
-source-wordcount: '880'
+source-wordcount: '891'
 ht-degree: 0%
 
 ---
 
 # `sales_order_item` Tabell
 
-The `sales_order_item` tabell (`sales_flat_order_item` på [!DNL Magento] 1) innehåller uppgifter om alla produkter som köpts i en beställning. Varje rad representerar en unik `sku` ingår i en beställning. Kvantiteten enheter som köpts för en viss `sku` representeras oftast av `qty_ordered` fält.
+The `sales_order_item` tabell (`sales_flat_order_item` M1 1) innehåller uppgifter om alla produkter som köpts i en beställning. Varje rad representerar en unik `sku` ingår i en beställning. Kvantiteten enheter som köpts för en viss `sku` representeras oftast av `qty_ordered` fält.
 
 ## Produkttyper
 
@@ -82,7 +82,7 @@ Det är därför möjligt att rapportera om försäljning av produkter antingen 
 
 `sales_order_item`
 
-* Gå med i `sales_order_item` om du vill skapa nya kolumner som associerar information om den överordnade konfigurerbara enheten eller SKU:n med den enkla produkten. Observera att du måste [kontakta support](../../guide-overview.md) om du behöver hjälp med att konfigurera dessa beräkningar, om du bygger i Data warehouse.
+* Gå med i `sales_order_item` om du vill skapa nya kolumner som associerar information om den överordnade konfigurerbara enheten eller SKU:n med den enkla produkten. Observera att du måste [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) om du behöver hjälp med att konfigurera dessa beräkningar, om du bygger i Data warehouse.
    * Sökväg: `sales_order_item.parent_item_id` (många) => `sales_order_item.item_id` (ett)
 
 `store`

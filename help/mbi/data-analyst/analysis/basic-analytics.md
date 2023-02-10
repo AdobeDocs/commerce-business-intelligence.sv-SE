@@ -2,9 +2,9 @@
 title: Förstå och bygga upp grundläggande analyser
 description: Lär dig förstå och bygga upp grundläggande analyser.
 exl-id: 23cea7b3-2e66-40c3-b4bd-d197237782e3
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '3142'
+source-wordcount: '3153'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Om några av dessa beräkningar inte finns i databasen kan alla administratörsa
 
 **Tar ni emot gästorder?**
 
-*I så fall kanske den här tabellen inte innehåller alla dina kunder. Kontakta oss [supportteam](https://support.magento.com/hc/en-us/articles/360016503692) för att säkerställa att era kundanalyser omfattar alla kunder.*
+*I så fall kanske den här tabellen inte innehåller alla dina kunder. Kontakta oss [supportteam](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) för att säkerställa att era kundanalyser omfattar alla kunder.*
 
 *Är du inte säker på om du godkänner gästbeställningar? Se [det här ämnet](../data-warehouse-mgr/guest-orders.md) för att lära dig mer!*
 
@@ -58,7 +58,7 @@ I den här tabellen representerar varje rad en ordning. Kolumnerna i den här ta
 * **[!UICONTROL Created_at]**: Det datum då ordern skapades eller placerades.
 * **[!UICONTROL Customer_email]**: E-postadressen till den kund som gjorde beställningen. Detta kan också vara den unika identifieraren för kunden.
 * **[!UICONTROL Customer's lifetime number of orders]**: En kopia av kolumnen med samma namn på din `Customers` tabell.
-* **[!UICONTROL Customer's order number]**: Kundens sekventiella ordernummer som är kopplat till ordern. Om raden du tittar på till exempel är en kunds första order är kolumnen&quot;1&quot;; men om det var kundens 15:e beställning visas&quot;15&quot; för den här beställningen i den här kolumnen. Om den här dimensionen inte finns på din `Customers` bord, fråga vår [supportteam](https://support.magento.com/hc/en-us/articles/360016503692) för att hjälpa dig att bygga den.
+* **[!UICONTROL Customer's order number]**: Kundens sekventiella ordernummer som är kopplat till ordern. Om raden du tittar på till exempel är en kunds första order är kolumnen&quot;1&quot;; men om det var kundens 15:e beställning visas&quot;15&quot; för den här beställningen i den här kolumnen. Om den här dimensionen inte finns på din `Customers` bord, fråga vår [supportteam](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) för att hjälpa dig att bygga den.
 * **[!UICONTROL Customer's order number (previous-current)]**: En sammanfogning av två värden i **[!UICONTROL Customer's order number]** kolumn. Den används i en exempelrapport nedan för att visa den förflutna tiden mellan två order. Tiden mellan en kunds första orderdatum och dess andra orderdatum är till exempel&quot;1-2&quot; med den här beräkningen.
 * **[!UICONTROL Coupon_code]**: Visar vilka kuponger som användes på varje order.
 * **[!UICONTROL Seconds since previous order]**: Tiden (i sekunder) mellan en kunds order.
@@ -86,7 +86,7 @@ Tabellen används för att hantera din prenumerationsinformation, t.ex. prenumer
 
 ## Utgiftsregister för marknadsföring
 
-När ni analyserar era marknadsföringsutgifter kan ni inkludera [!DNL Facebook], [!DNL Google AdWords]eller andra källor i analyserna. Om ni har flera olika marknadsföringsresurser kan ni kontakta vår [Tjänstteam](https://business.adobe.com/products/magento/fully-managed-service.html) för att få hjälp med att skapa en konsoliderad tabell för era marknadsföringskampanjer.
+När ni analyserar era marknadsföringsutgifter kan ni inkludera [!DNL Facebook], [!DNL Google AdWords]eller andra källor i analyserna. Om ni har flera olika marknadsföringsresurser kan ni kontakta vår [Managed Services Team](https://business.adobe.com/products/magento/fully-managed-service.html) för att få hjälp med att skapa en konsoliderad tabell för era marknadsföringskampanjer.
 
 **Dimensioner**
 
@@ -535,7 +535,7 @@ Här är några vanliga exempel på rapporter och mätvärden som du kan använd
 
 >[!NOTE]
 >
->Du kan namnge formeln som&quot;ROI&quot; och dölja alla mått. Dessutom kan du justera filtren i mätvärdena för att analysera alternativa källor och medier. Du kan även checka ut [den här artikeln](../analysis/roi-ad-camp.md) för mer information om CAC, LTV och ROI.
+>Du kan namnge formeln som&quot;ROI&quot; och dölja alla mått. Dessutom kan du justera filtren i mätvärdena för att analysera alternativa källor och medier. Du kan även checka ut [det här ämnet](../analysis/roi-ad-camp.md) för mer information om CAC, LTV och ROI.
 
 ![avkastning 1](../../assets/ROI_1.png)<!--{: width="929"}-->
 

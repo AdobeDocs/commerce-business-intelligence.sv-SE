@@ -2,9 +2,9 @@
 title: Lägg till/redigera en ny användare
 description: Lär dig hur du lägger till en ny [!DNL MBI] användare och hur du uppdaterar ditt användarnamn eller lösenord.
 exl-id: 6b846e3d-fce0-4145-b298-9a9c57e6bd26
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '243'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,8 @@ ht-degree: 0%
    >Om du vill visa, lägga till eller ändra faktureringsinformationen för ditt konto måste du ha `Billing` behörigheter. [Behörigheter anges per användare](../../administrator/user-management/user-management.md) när användarkonton skapas. Om du behöver `Billing` behörigheter, kontakta kontoadministratören.
 
 1. Klicka **[!UICONTROL Save]**.
-1. Den nya användaren får ett e-postmeddelande med inloggnings- och lösenordsinformation.
+
+Den nya användaren får ett e-postmeddelande med inloggnings- och lösenordsinformation.
 
 >[!NOTE]
 >
@@ -37,4 +38,4 @@ Om du behöver skicka om inbjudan till den nya användaren går du till [inloggn
 
 >[!IMPORTANT]
 >
->Varje konto har ett avtalat antal licenser, eller licenser. Om du når gränsen eller vill veta mer, [skicka en supportanmälan](../../guide-overview.md).
+>Varje konto har ett avtalat antal licenser, eller licenser. Om du når gränsen eller vill veta mer, [skicka en supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

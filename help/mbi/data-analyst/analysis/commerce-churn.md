@@ -5,7 +5,7 @@ exl-id: 8775cf0a-114d-4b48-8bd2-fc1700c59a12
 source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
 workflow-type: tm+mt
 source-wordcount: '333'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -102,9 +102,9 @@ Nedan finns några vanliga konverteringar för månad > sekund, men Google inneh
 
 | **Månader** | **Sekunder** |
 |---|---|
-| 3 | 7 776 000 |
-| 6 | 15 552 000 |
-| 9 | 23 328 000 |
-| 12 | 31 104 000 |
+| 3 | 7,776,000 |
+| 6 | 15,552,000 |
+| 9 | 23,328,000 |
+| 12 | 31,104,000 |
 
 När du har kompilerat alla rapporter kan du ordna dem på kontrollpanelen som du vill. Slutresultatet kan se ut som kontrollpanelen ovan.

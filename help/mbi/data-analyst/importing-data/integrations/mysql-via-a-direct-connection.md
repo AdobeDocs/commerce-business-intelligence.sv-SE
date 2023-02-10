@@ -2,9 +2,9 @@
 title: Ansluta MySQL via en direktanslutning
 description: Lär dig ansluta [!DNL MongoDB] via direktanslutning.
 exl-id: 53765844-c9bb-4a16-b00c-ce9672f87415
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '407'
 ht-degree: 0%
 
 ---
@@ -65,4 +65,4 @@ Så ja! När du är klar klickar du på **[!UICONTROL Save & Test]** för att sl
 
 ## Relaterad dokumentation
 
-* [Återautentisera integreringar](https://support.magento.com/hc/en-us/articles/360016733151)
+* [Återautentisera integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)

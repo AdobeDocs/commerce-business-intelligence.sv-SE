@@ -2,9 +2,9 @@
 title: Använd tidsalternativ i Visual Report Builder
 description: Lär dig att analysera data i rapporten under en viss tidsperiod.
 exl-id: a1bb4838-f882-44b1-a29f-84b985032ceb
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '1281'
+source-wordcount: '1278'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ Nu kan vi se hur effektfullt varje månad var förra året:
 
 ## Jämföra samma mått över olika tidsintervall {#difftimerange}
 
-I det här exemplet används en anpassad dimension som kallas `Day number of the month`. Om du vill skapa den här rapporten och inte redan har den här dimensionen i Data warehouse, [kontakta support](../guide-overview.md) om du behöver hjälp.
+I det här exemplet används en anpassad dimension som kallas `Day number of the month`. Om du vill skapa den här rapporten och inte redan har den här dimensionen i Data warehouse, [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) om du behöver hjälp.
 
 De två vanligaste exemplen i den här kategorin är (1) att jämföra tillväxtstatistik (intäkter år för år eller månad för månad) och (2) att bättre förstå de senaste trenderna inom lager- eller artikelförsäljning.
 
@@ -143,4 +143,3 @@ Det här exemplet visar att nuvarande lagernivåer var väl placerade för en pr
 
 Eftersom kunderna beter sig olika över tid kan ni förvänta er att olika data ska visas vid analyser. Genom att ställa in anpassade tidsalternativ kan du snabbt skapa komplexa analyser, vilket möjliggör datadrivna beslut som tar hänsyn till historiska trender.
 
-Se vår [utbildningsvideo](https://support.magento.com/hc/en-us/articles/360016730071-Training-Video-Time-Options-in-the-Visual-Report-Builder) om du vill veta mer.

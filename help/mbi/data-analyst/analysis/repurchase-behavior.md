@@ -2,10 +2,10 @@
 title: Analyserar kundens återköpsbeteende
 description: Lär dig hur du analyserar kundens beteende vid återköp.
 exl-id: 62666d08-5240-4f19-bf8e-e5b2d79a25c4
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '866'
-ht-degree: 0%
+source-wordcount: '876'
+ht-degree: 1%
 
 ---
 
@@ -46,9 +46,9 @@ Låt oss ta en titt på ett exempel som handlar om kaffeprodukter.
 
 | **Produktnamn** | **Sannolikhet för upprepad order** | **Genomsnittligt antal order under hela livstiden** | **Genomsnittlig intäkt för livstid** | **Mediantid till nästa order** |
 |-----|-----|-----|-----|-----|
-| Kaffekbryggare i en kopp | 94,98 % | 7,92 | 549,82 USD | 57.01 dagar |
-| Kaffekapslar | 93,82 % | 8,68 | 479,98 USD | 63.48 dagar |
-| Kaffebönor | 41,92 % | 6.07 | 99,82 USD | 27.31 dagar |
+| Kaffekbryggare i en kopp | 94.98% | 7.92 | $549.82 | 57.01 dagar |
+| Kaffekapslar | 93.82% | 8.68 | $479.98 | 63.48 dagar |
+| Kaffebönor | 41.92% | 6.07 | $99.82 | 27.31 dagar |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -80,4 +80,4 @@ Förutom att analysera återköpets beteende hos era kunder kan ni också skapa 
 
 När du har identifierat varför det händer något kan du använda din analys för att skapa en `reactivation` kampanj. Med hjälp av dessa data kan du identifiera användare som har blivit inaktiva, hur länge det har gått sedan deras senaste besök, vilket deras senaste köp var och så vidare. På så sätt kan ni fatta konkreta beslut som får kunderna att komma tillbaka.
 
-Om du behöver hjälp med analys [kontakta support](../../guide-overview.md).
+Om du behöver hjälp med analys [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

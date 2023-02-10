@@ -2,9 +2,9 @@
 title: QuickBooks-data förväntades
 description: Lär dig att enkelt spåra relevanta datafält för analys.
 exl-id: a60996bd-e3d1-497d-abce-f02ef1444f1a
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '963'
+source-wordcount: '966'
 ht-degree: 0%
 
 ---
@@ -62,4 +62,4 @@ Om du vill visa alla fält som är tillgängliga för spårning klickar du på l
 ## Relaterat:
 
 * [Ansluter [!DNL QuickBooks]](../integrations/quickbooks.md)
-* [Återautentisera integreringar](https://support.magento.com/hc/en-us/articles/360016733151-Reauthenticating-integrations)
+* [Återautentisera integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)

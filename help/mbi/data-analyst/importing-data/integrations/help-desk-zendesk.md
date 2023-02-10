@@ -2,9 +2,9 @@
 title: Help desk-rapportering för Zendesk
 description: Läs om era mest värdefulla hänvisningskanaler.
 exl-id: b6142ef2-2be8-401f-ac35-f86fc68d204e
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '390'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Detta är bara tillgängligt för klienter som finns på `Pro` planera och använda den nya arkitekturen. Du är på [ny arkitektur](https://support.magento.com/hc/en-us/articles/360016503052-New-Architecture-FAQ) om du har `Data Warehouse Views` avsnitt som är tillgängliga efter markering `Manage Data` i huvudverktygsfältet.
+>Detta är bara tillgängligt för klienter som finns på `Pro` planera och använda den nya arkitekturen. Du har den nya arkitekturen om du har `Data Warehouse Views` avsnitt som är tillgängliga efter markering `Manage Data` i huvudverktygsfältet.
 
 Konsoliderar [!DNL Zendesk] data med transaktionsdatabasen är ett utmärkt sätt att bättre förstå hur kunderna interagerar med era sälj- eller kundframgångsgrupper och vilken typ av kunder som använder er supportplattform. I den här artikeln visar vi hur du konfigurerar en kontrollpanel för att få detaljerade rapporter om din [!DNL Zendesk] prestanda och band till era transaktionskunder.
 
@@ -196,7 +196,7 @@ Innan du börjar måste du ansluta [[!DNL Zendesk]](../integrations/zendesk.md).
 
       * `Calculation` - `to_char(A,'D')||'. '||to_char(A,'Day')`
 
-      *`Datatype` - `String`
+      *`Datatype` – `String`
 
 
 * **`customer_entity`** table
@@ -221,7 +221,7 @@ Innan du börjar måste du ansluta [[!DNL Zendesk]](../integrations/zendesk.md).
 
       * `Calculation` - `case when A>0 then 'Yes' else 'No' end`
 
-      * `Datatype` - `String`
+      * `Datatype` – `String`
 
 * **`[Zendesk] Tickets`** table
    * Välj en definition: `Joined Column`

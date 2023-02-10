@@ -2,9 +2,9 @@
 title: Connect Google ECommerce
 description: Läs om era mest värdefulla hänvisningskanaler.
 exl-id: c80f52f3-894a-4084-8c0e-aee618ed77f5
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '311'
+source-wordcount: '315'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Identifiera en viss webbplats [!DNL Google Analytics] Profil-ID:
 ## Relaterat:
 
 * [Förväntat [!DNL Google ECommerce] data](../integrations/google-ecommerce-data.md)
-* [Återautentisera integreringar](https://support.magento.com/hc/en-us/articles/360016733151)
+* [Återautentisera integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
 * [Konfigurera [!DNL Google ECommerce] spårning](https://support.google.com/analytics/answer/1009612?hl=en)
 * [Upptäck era mest värdefulla förvärvskällor och kanaler](../../analysis/most-value-source-channel.md)
 * [Öka avkastningen på era annonskampanjer](../../analysis/roi-ad-camp.md)

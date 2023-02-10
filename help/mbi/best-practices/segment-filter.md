@@ -2,9 +2,9 @@
 title: Rekommenderade Dimensioner för segmentering och filtrering
 description: Läs om de bästa sätten att segmentera och filtrera.
 exl-id: 66391bce-bdeb-4e9d-8089-1c796e00d91e
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '923'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ Den här typen av analyser är vad marknadsförarna på Fortune 1000-företag g�
 
 Det första steget för att segmentera mätvärdena med ovanstående mått är att se till att du spårar dessa data i databasen. Om den inte spåras kan du kontakta din tekniker och hitta ett sätt att börja spåra dessa data.
 
-När vi har bekräftat att data spåras i din databas, [kontakta vårt supportteam](../guide-overview.md) för att flytta måtten till [!DNL MBI] mätvärden och diagram, eller använd vårt fälthanteringsverktyg för att spåra fälten i [!DNL MBI].
+När vi har bekräftat att data spåras i din databas, [kontakta vårt supportteam](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) för att flytta måtten till [!DNL MBI] mätvärden och diagram, eller använd vårt fälthanteringsverktyg för att spåra fälten i [!DNL MBI].
 
 ## Relaterad
 

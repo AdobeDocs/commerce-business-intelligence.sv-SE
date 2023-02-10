@@ -2,9 +2,9 @@
 title: Arbeta med SQL Report Builder
 description: Lär dig hur du granskar data och mätvärden med SQL Report Builder så att du kan jämföra resultaten med data från din lokala databas.
 exl-id: d1d9e099-4138-43e6-aaec-6f15ebc5c4d4
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '519'
 ht-degree: 0%
 
 ---
@@ -46,4 +46,4 @@ Du kan också skriva egna frågor och exportera resultaten som ska jämföras me
 
 ### Fortfarande stumpen?
 
-Om du upptäcker en diskrepans efter att ha granskat dina data kan du titta på [Kontakta support: Dataavvikelser](https://support.magento.com/hc/en-us/articles/360016505312) om du vill ha mer information om vad du ska göra härnäst.
+Om du upptäcker en diskrepans efter att ha granskat dina data kan du titta på [Kontakta support: Dataavvikelser](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies.html?lang=en) om du vill ha mer information om vad du ska göra härnäst.

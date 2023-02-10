@@ -2,9 +2,9 @@
 title: Ta bort eller återaktivera en användare
 description: Lär dig hur du tar bort en [!DNL MBI] användare.
 exl-id: 0590275d-3329-40fb-8be1-4a700438338d
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '200'
+source-wordcount: '210'
 ht-degree: 0%
 
 ---
@@ -24,5 +24,5 @@ Du kan återaktivera användaren genom att skapa en ny användare med samma e-po
 Om du bara behöver instrumentpanelerna från den användaren som har överförts till ett annat användarkonto gör du följande:
 
 1. Använd den borttagna användarens e-postadress för att skapa en ny [!DNL MBI] användare.
-1. [Meddela support](../../guide-overview.md) när du har skapat användaren. Stödet överför instrumentpanelerna till ditt konto.
+1. [Meddela support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) när du har skapat användaren. Stödet överför instrumentpanelerna till ditt konto.
 1. När supporten har meddelat dig om överföringen kan du ta bort användaren igen.

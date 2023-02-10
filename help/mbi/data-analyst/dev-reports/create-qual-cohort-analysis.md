@@ -2,9 +2,9 @@
 title: Skapa en kvalitativ kohortanalys
 description: Läs vad en kvalitativ kohort är, varför du kanske är intresserad av att skapa den här analysen och hur du kan skapa den i [!DNL MBI].
 exl-id: 113244e4-409b-4129-b3d4-7a3433539ade
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '848'
+source-wordcount: '858'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Om du vill analysera kohortbeteendet för flera användarsegment i samma kohortr
 
 Skapa en `qualitative cohort` i `Report Builder` engagerar vårt analysteam att skapa [avancerade beräknade kolumner](../data-warehouse-mgr/creating-calculated-columns.md) på de tabeller som behövs.
 
-Om du vill skapa dessa skickar du en [supportanmälan](../../guide-overview.md) (och hänvisa till den här artikeln!). Det här behöver vi veta:
+Om du vill skapa dessa skickar du en [supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) (och hänvisa till den här artikeln!). Det här behöver vi veta:
 
 * The `metric` du vill utföra din kohortanalys med och vilken tabell den använder (exempel: `Revenue`, som bygger på `orders` tabell).
 

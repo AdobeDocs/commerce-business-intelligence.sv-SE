@@ -2,9 +2,9 @@
 title: Använda SQL Report Builder
 description: Lär dig In och ut hur du använder SQL Report Builder.
 exl-id: 3a485b00-c59d-4bc5-b78b-57e9e92dd9d6
-source-git-commit: 09b6983c3e06a1f18035542dfa3b9de9ac3ceb38
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '1516'
+source-wordcount: '1501'
 ht-degree: 0%
 
 ---
@@ -15,15 +15,15 @@ ht-degree: 0%
 >
 >Kräver [Administratörsbehörigheter](../../administrator/user-management/user-management.md) för att skapa och redigera SQL-diagram. `Standard` kan användarna ordna om dessa diagram på kontrollpaneler, och `Read-only` användarna får samma upplevelse som de har med traditionella diagram. Dessutom `Read-only` -användare har inte åtkomst till frågetexten.
 
-Se vår [utbildningsvideo](https://support.magento.com/hc/en-us/articles/360016730131) om du vill veta mer.
+Se vår [utbildningsvideo](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html?lang=en) om du vill veta mer.
 
 `SQL`, eller Structured Query Language, är ett programmeringsspråk som används för att kommunicera med databaser. I [!DNL MBI]används SQL för att hämta data från data warehouse. Ta en titt på rapporterna på din instrumentpanel - bakom kulisserna drivs var och en av dem av en SQL-fråga.
 
 Du kan använda [`SQL Report Builder`](../dev-reports/sql-rpt-bldr.md) om du vill fråga data warehouse direkt, visa resultaten och omvandla dem till ett diagram. Du kan börja skapa en rapport med `SQL Report Builder` genom att navigera till **[!UICONTROL Report Builder** > **SQL Report Builder]**.
 
-Se vår [utbildningsvideo](https://support.magento.com/hc/en-us/articles/360016730131-Training-Video-SQL-Report-Builder) om du vill veta mer.
+Se vår [utbildningsvideo](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html?lang=en) om du vill veta mer.
 
-The `SQL Report Builder` Med kan du ställa frågor direkt i data warehouse, visa resultaten och snabbt omvandla dem till ett diagram. Det bästa med att använda SQL för att skapa rapporter är att [du inte behöver vänta på uppdateringscykler för att iterera på kolumner](https://support.magento.com/hc/en-us/articles/360016506212) du skapar. Om resultatet inte blir som du vill kan du snabbt redigera och köra frågan igen tills det matchar dina förväntningar.
+The `SQL Report Builder` Med kan du ställa frågor direkt i data warehouse, visa resultaten och snabbt omvandla dem till ett diagram. Det bästa med att använda SQL för att skapa rapporter är att du inte behöver vänta på uppdateringscykler för att iterera i kolumner som du skapar. Om resultatet inte blir som du vill kan du snabbt redigera och köra frågan igen tills det matchar dina förväntningar.
 
 I den här artikeln visar vi hur du använder `SQL Report Builder`. När du vet hur du ska gå vidare kan du kolla in vår självstudiekurs om visualiseringar i SQL eller försöka optimera några av de frågor du har skrivit.
 
@@ -131,9 +131,9 @@ Vi vill nämna att beräknade kolumner som skapats med SQL inte är beroende av 
 
 Större delen av tiden kan skillnader i resultat tillskrivas uppdateringscykler. If [!DNL MBI] är på väg att replikera data från databasen till Data warehouse, kan du se olika resultat även om du använder samma fråga.
 
-Anslutningsproblem kan också leda till avvikelser. Navigera till `Connections` sida genom att klicka **[!DNL Manage Data** > **Connections]**) för att ta reda på det - finns det ett fel för databasintegreringen i fråga? I så fall kan du behöva [autentisera integreringen igen](https://support.magento.com/hc/en-us/articles/360016733151-Reauthenticating-integrations) för att få igång saker och ting igen.
+Anslutningsproblem kan också leda till avvikelser. Navigera till `Connections` sida genom att klicka **[!DNL Manage Data** > **Connections]**) för att ta reda på det - finns det ett fel för databasintegreringen i fråga? I så fall kan du behöva [autentisera integreringen igen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en) för att få igång saker och ting igen.
 
-Om alla integreringar har anslutits och du inte befinner dig mitt i en uppdateringscykel kan något annat vara fel. Prova att använda [felsökningsguider för diskrepans](https://support.magento.com/hc/en-us/sections/360003074492) på vår supportwebbplats för att identifiera problemet.
+Om alla integreringar har anslutits och du inte befinner dig mitt i en uppdateringscykel kan något annat vara fel.
 
 #### Om du tar bort en SQL-rapport tas även de underliggande kolumnerna bort från Data warehouse?
 

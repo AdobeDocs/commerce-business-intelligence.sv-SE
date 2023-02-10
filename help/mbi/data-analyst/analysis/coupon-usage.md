@@ -5,7 +5,7 @@ exl-id: d4d1393f-1695-43f2-980a-84525f84031e
 source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
 workflow-type: tm+mt
 source-wordcount: '1168'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -67,18 +67,18 @@ Nu när vi vet vilka mätvärden vi ska titta på kan vi ta en titt på ett exem
 
 | **Kupong** | **Antal order** | **Bruttointäkter** | **Bruttorabatter från kuponger** | **Nettointäkter** | **Rabatterad procent** |
 |-----|-----|-----|-----|-----|-----|
-| **10 % rabatt** | 79 | 19 757 USD | 1 975,70 USD | 17 781,32 USD | 10,00 % |
-| **$20 rabatt $100+** | 101 | 13 928,91 USD | 2 020 dollar | 11 908,91 USD | 14,50 % |
-| **10 dollar rabatt** | 201 | 14 542,35 USD | $2 010.00 | 12 532,35 USD | 13,82 % |
+| **10 % rabatt** | 79 | $19,757.02 | $1,975.70 | $17,781.32 | 10.00% |
+| **$20 rabatt $100+** | 101 | $13,928.91 | $2,020.00 | $11,908.91 | 14.50% |
+| **10 dollar rabatt** | 201 | $14,542.35 | $2,010.00 | $12,532.35 | 13.82% |
 
 {style=&quot;table-layout:auto&quot;}
 
 
 | **Kupong** | **Medel. nettoordervärde** | **Medel. orderrabatt** | **Distinkta köpare** | **Medel. omsättning** |
 |-----|-----|-----|-----|-----|
-| **10 % rabatt** | 225,08 USD | $25.01 | 79 | 361,50 USD |
-| **$20 rabatt $100+** | 117,91 USD | $20.00 | 95 | $218.76 |
-| **10 dollar rabatt** | 62,35 USD | 10.00 USD | 199 | $84.27 |
+| **10 % rabatt** | $225.08 | $25.01 | 79 | $361.50 |
+| **$20 rabatt $100+** | $117.91 | $20.00 | 95 | $218.76 |
+| **10 dollar rabatt** | $62.35 | $10.00 | 199 | $84.27 |
 
 {style=&quot;table-layout:auto&quot;}
 

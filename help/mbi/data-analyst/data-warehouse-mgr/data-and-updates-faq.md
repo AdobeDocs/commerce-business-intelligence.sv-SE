@@ -2,9 +2,9 @@
 title: Information om data och uppdateringar
 description: Lär dig hur du kontrollerar status för uppdateringscykeln.
 exl-id: a4a2e487-b826-4888-baf0-9d246a8ff153
-source-git-commit: 09b6983c3e06a1f18035542dfa3b9de9ac3ceb38
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '401'
+source-wordcount: '426'
 ht-degree: 0%
 
 ---
@@ -38,8 +38,8 @@ Absolut! Om en uppdatering pågår finns det en länk på `Connections` sida som
 
 ## Varför[!DNL Google ECommerce]data som skiljer sig från min databas? {#ecommdatabase}
 
-Skillnader mellan [!DNL Google Analytics] och databasen kan uppstå av flera olika anledningar. Spårning är inte korrekt aktiverat, användare som besöker incognito och klickningshändelser fungerar inte korrekt är bara några exempel. Om era intäkter och beställningar inte ser bra ut [använd den här artikeln](https://support.magento.com/hc/en-us/articles/360016505232) för att diagnostisera problemet.
+Skillnader mellan [!DNL Google Analytics] och databasen kan uppstå av flera olika anledningar. Spårning är inte korrekt aktiverat, användare som besöker incognito och klickningshändelser fungerar inte korrekt är bara några exempel. Om era intäkter och beställningar inte ser bra ut [använd den här artikeln](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html?lang=en) för att diagnostisera problemet.
 
 ## Hur felsöker jag en diskrepans? {#datadiscrepancy}
 
-Vi vet att inkonsekventa data kan vara en frustrerande upplevelse. Prova vår [Checklista för dataavvikelse](https://support.magento.com/hc/en-us/articles/360016731271) eller [Självstudiekurs om dataexport](https://support.magento.com/hc/en-us/articles/360016730631) för att diagnostisera problemet. Om du fortfarande stöter, [kontakta support](../../guide-overview.md).
+Vi vet att inkonsekventa data kan vara en frustrerande upplevelse. Prova vår [Checklista för dataavvikelse](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.html?lang=en) eller [Självstudiekurs om dataexport](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html?lang=en) för att diagnostisera problemet. Om du fortfarande stöter, [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

@@ -2,7 +2,7 @@
 title: Namnge rapporter och element i MBI
 description: Lär dig de bästa sätten att namnge rapporter och element i [!DNL MBI].
 exl-id: c662cedd-c779-4254-b04b-f3092a538c85
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
 source-wordcount: '740'
 ht-degree: 0%
@@ -101,4 +101,4 @@ Intäkter (levererad\_at) Inkomster (skapad)
 
 ## Radbrytning {#wrapup}
 
-Genom att upprätta stilkonventioner och namnkonventioner i ett tidigt skede kommer du att lyckas med dina [!DNL MBI] konto. Kom ihåg de tre CS: tydlighet, konsekvens och trovärdighet.
+Genom att upprätta stilkonventioner och namnkonventioner i ett tidigt skede kommer du att lyckas med dina [!DNL MBI] konto. Kom ihåg de tre C:n: tydlighet, konsekvens och trovärdighet.

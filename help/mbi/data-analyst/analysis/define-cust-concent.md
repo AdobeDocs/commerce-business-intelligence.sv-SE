@@ -2,9 +2,9 @@
 title: Definiera kundkoncentration
 description: Lär dig hur du skapar en kontrollpanel som hjälper dig att mäta hur de totala intäkterna fördelas mellan era kunder.
 exl-id: 6242019f-a6a5-48d3-b214-94acd7842e00
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '486'
 ht-degree: 0%
 
 ---
@@ -31,49 +31,49 @@ Kolumner att skapa
 
 * `Sales_flat_order/customer_entity` table
 * (indata) `reference`
-* [!UICONTROL Column type]: - `Same table > Calculation`
-* [!UICONTROL Inputs]: - `entity_id`
+* [!UICONTROL Column type]: – `Same table > Calculation`
+* [!UICONTROL Inputs]: – `entity_id`
 * [!UICONTROL Calculation]: - **case when A is null then null else 1 end**
-* [!UICONTROL Datatype]: - `Integer`
+* [!UICONTROL Datatype]: – `Integer`
 
 * `Customer concentration` tabell (det här är filen som du just överförde med numret) `1`)
 * Antal kunder
-* [!UICONTROL Column type]: - `Many to One > Count Distinct`
+* [!UICONTROL Column type]: – `Many to One > Count Distinct`
 * Sökväg - `sales_flat_order.(input) reference > Customer Concentration.Primary Key` ELLER `customer_entity.(input)reference > Customer Concentration.Primary Key`
 * Markerad kolumn - `sales_flat_order.customer_email` ELLER `customer_entity.entity_id`
 
 * `customer_entity` table
 * Antal kunder
-* [!UICONTROL Column type]: - `One to Many > JOINED_COLUMN`
+* [!UICONTROL Column type]: – `One to Many > JOINED_COLUMN`
 * Sökväg - `customer_entity.(input) reference > Customer Concentration. Primary Key`
 * Markerad kolumn - `Number of customers`
 
 * (indata) `Ranking by customer lifetime revenue`
-* [!UICONTROL Column type]: - `Same table > Event Number`
+* [!UICONTROL Column type]: – `Same table > Event Number`
 * Ägare till händelse - `Number of customers`
 * Händelserangordning - `Customer's lifetime revenue`
 
 * Kundens intäktspunkt
-* [!UICONTROL Column type]: - `Same table > Calculation`
-* [!UICONTROL Inputs]: - `(input) Ranking by customer lifetime revenue`, `Number of customers`
+* [!UICONTROL Column type]: – `Same table > Calculation`
+* [!UICONTROL Inputs]: – `(input) Ranking by customer lifetime revenue`, `Number of customers`
 * [!UICONTROL Calculation]: - **om A är null är null else (A/B)* 100 slut **
-* [!UICONTROL Datatype]: - `Decimal`
+* [!UICONTROL Datatype]: – `Decimal`
 
 * `Sales_flat_order` table
 * Antal kunder
-* [!UICONTROL Column type]: - `One to Many > JOINED_COLUMN`
+* [!UICONTROL Column type]: – `One to Many > JOINED_COLUMN`
 * Sökväg - `sales_flat_order.(input) reference > Customer Concentration.Primary Key`
 * Markerad kolumn - `Number of customers`
 
 * (input) Rankning per kundens livstidsintäkt
-* [!UICONTROL Column type]: - `Same table > Event Number`
+* [!UICONTROL Column type]: – `Same table > Event Number`
 * Ägare till händelse - `Number of customers`
 * Händelserangordning - `Customer's lifetime revenue`
 * Filter - `Customer's order number = 1`
 
 * Kundens intäktspunkt
-* [!UICONTROL Column type]: - `Same table > Calculation`
-* [!UICONTROL Inputs]: - `(input) Ranking by customer lifetime revenue`, `Number of customers`
+* [!UICONTROL Column type]: – `Same table > Calculation`
+* [!UICONTROL Inputs]: – `(input) Ranking by customer lifetime revenue`, `Number of customers`
 * [!UICONTROL Calculation]: - **om A är null är null else (A/B)* 100 slut **
 * [!UICONTROL Datatype]: - `Decimal`
 
@@ -158,4 +158,4 @@ Kolumner att skapa
 
 När du har kompilerat alla rapporter kan du ordna dem på kontrollpanelen som du vill. Slutresultatet kan se ut som kontrollpanelen ovan.
 
-Om du stöter på några frågor när du bygger upp den här analysen, eller bara vill engagera vårt team med professionella tjänster, [kontakta support](../../guide-overview.md).
+Om du stöter på några frågor när du bygger upp den här analysen, eller bara vill engagera vårt team med professionella tjänster, [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

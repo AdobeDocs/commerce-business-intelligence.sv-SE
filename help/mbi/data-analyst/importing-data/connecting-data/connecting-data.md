@@ -2,9 +2,9 @@
 title: Koppla samman data
 description: Lär dig hur du bläddrar bland de tabeller som är tillgängliga för synkronisering i Data warehouse Manager.
 exl-id: 94beba8b-6a86-4af9-87fb-96b1cf8f8fa2
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '539'
+source-wordcount: '549'
 ht-degree: 0%
 
 ---
@@ -60,6 +60,6 @@ Om du vill lägga till en integrering klickar du på **[!UICONTROL Manage Data**
 * [Konsoliderar tabeller](../../../best-practices/consolidating-your-tables.md)
 * [Begränsa åtkomst till databasen](../../../administrator/account-management/restrict-db-access.md)
 
-**Ser du ingen integrering?** Vissa integreringar måste aktiveras för att de ska visas på ditt konto. Om du letar efter något - till exempel [!DNL Facebook] - men inte är listad, [skicka en supportanmälan](../../../guide-overview.md).
+**Ser du ingen integrering?** Vissa integreringar måste aktiveras för att de ska visas på ditt konto. Om du letar efter något - till exempel [!DNL Facebook] - men inte är listad, [skicka en supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
 
 **Om du ser en felstatus för en integrering**, do not panic - kolla in [Felsökningsavsnitt](https://support.magento.com/hc/en-us/sections/360003078151) om du behöver hjälp.

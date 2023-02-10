@@ -2,10 +2,10 @@
 title: Analyserar kupongpåverkan
 description: Lär dig hur du analyserar kupongpåverkan på kundvärvning och kundunderhåll.
 exl-id: b0619365-fa75-49b5-a393-87f3364a390f
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '1382'
-ht-degree: 0%
+source-wordcount: '1392'
+ht-degree: 2%
 
 ---
 
@@ -46,8 +46,8 @@ Låt oss titta på några exempeldata för kuponganskaffning jämfört med icke-
 
 | **Kundvärvning** | **Antal nya kunder** | **Genomsnittlig intäkt för livstid** | **Antal upprepade order** | **Antal upprepade order med kupong** | **% av upprepade order med kupong** |
 |-----|-----|-----|-----|-----|-----|
-| Kupong | 1 206 | 356,91 USD | 2 570 | 1 248 | 48,56 % |
-| Icke-kupong | 11 561 | 498,30 USD | 20 145 | 3 251 | 16,14 % |
+| Kupong | 1,206 | $356.91 | 2,570 | 1,248 | 48.56% |
+| Icke-kupong | 11,561 | $498.30 | 20,145 | 3,251 | 16.14% |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -109,9 +109,9 @@ Låt oss nu titta på ett exempel som innehåller tre olika kuponger som använd
 
 | **Kupong** | **Första gången du beställer (FTO)** | **Bruttointäkter från FTO** | **Rabatterna tillämpas på FTO** | **Nettointäkter från FTO** | **Genomsnittligt ordervärde för FTO** |
 |-----|-----|-----|-----|-----|-----|
-| **25 % rabatt på 100 USD eller mer** | 56 | 8 531 USD | $2 132.76 | 6 398,28 USD | 152,34 USD |
-| **10 dollar rabatt** | 87 | 3 707 USD | 426,10 USD | 3 280,97 USD | 42,61 USD |
-| **20 % rabatt** | 145 | 10 975 USD | $2 195.01 | 8 780 dollar | 75,69 USD |
+| **25 % rabatt på 100 USD eller mer** | 56 | $8,531.04 | $2,132.76 | $6,398.28 | $152.34 |
+| **10 dollar rabatt** | 87 | $3,707.07 | $426.10 | $3,280.97 | $42.61 |
+| **20 % rabatt** | 145 | $10,975.05 | $2,195.01 | $8,780.04 | $75.69 |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -137,8 +137,8 @@ Nu när vi har tittat på själva beställningarna kan vi titta på de kunder so
 
 | **Kundens första orderkupong** | **Antal kunder** | **Genomsnittligt antal order för livslängd** | **Genomsnittlig intäkt för livstid** |
 |-----|-----|-----|-----|
-| **25 % rabatt på 100 USD eller mer** | 56 | 2.8 | 554,54 USD |
-| **10 dollar rabatt** | 87 | 1.9 | 115,50 USD |
+| **25 % rabatt på 100 USD eller mer** | 56 | 2.8 | $554.54 |
+| **10 dollar rabatt** | 87 | 1.9 | $115.50 |
 | **20 % rabatt** | 145 | 1.3 | $103.75 |
 
 {style=&quot;table-layout:auto&quot;}
@@ -149,4 +149,4 @@ Det största antalet kunder förvärvades genom kupongen&quot;20 % rabatt&quot;.
 
 ## Radbrytning {#wrapup}
 
-Det finns en mängd analyser som ni kan skapa för att bättre förstå hur era kunder använder kuponger. Har du någonsin funderat på att analysera hur era kunder använder era kuponger eller hur lång tid det tar för kuponger att användas? Vad sägs om att hitta det optimala rabattbeloppet - vilket belopp uppmuntrar fler köpare att köpa, högre genomsnittligt ordervärde och högre intäkter under hela löptiden? Om du behöver hjälp med den här typen av frågor kan du [kontakta support](../../guide-overview.md).
+Det finns en mängd analyser som ni kan skapa för att bättre förstå hur era kunder använder kuponger. Har du någonsin funderat på att analysera hur era kunder använder era kuponger eller hur lång tid det tar för kuponger att användas? Vad sägs om att hitta det optimala rabattbeloppet - vilket belopp uppmuntrar fler köpare att köpa, högre genomsnittligt ordervärde och högre intäkter under hela löptiden? Om du behöver hjälp med den här typen av frågor kan du [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

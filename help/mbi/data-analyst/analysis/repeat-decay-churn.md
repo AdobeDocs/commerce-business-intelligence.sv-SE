@@ -2,9 +2,9 @@
 title: Analyserar sannolikhet för upprepning, minskning och belastning
 description: Lär dig mer och förstå hur tidsfördröjningar mellan order och när kunderna förväntas försvinna.
 exl-id: ea26052d-ac74-43b7-a4a6-977800d4c719
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '970'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ När du analyserar upprepad sannolikhetsminskning och -minskning bör du överv�
 
 ### Sannolikhet för inledande upprepad order
 
-Detta mått definieras som det totala antalet upprepade order, i procent av den totala ordern. Om man fasar ut en annan metod är det sannolikt att en order kommer att följas upp av en annan order. När denna sannolikhet är över 50 % innebär det att mer än hälften av alla order följs av en efterföljande order.
+Detta mått definieras som det totala antalet upprepade order, i procent av den totala ordern. Om man fasar ut en annan metod är det sannolikt att en order kommer att följas upp av en annan order. När denna sannolikhet är över 50 procent innebär det att mer än hälften av alla order följs av en efterföljande order.
 
 ### Sannolikhet för upprepade order som har angetts månader sedan ordern
 
@@ -76,7 +76,7 @@ När du har skapat analysen ovan och fastställt ett tröskelvärde för bortfal
 
 Om ni erbjuder mer än en produkt undrar ni antagligen hur kunder som köper en viss produkt beter sig annorlunda över tiden jämfört med andra kunder. Vill du veta mer? Titta på den här självstudiekursen för att utforska hur kundkohorter fungerar hela livet baserat på specifika produkter som de har köpt.
 
-Denna bästa praxis tillhandahålls av [!DNL MBI] Data Analysis Services (DAS). Vi ser fram emot att få svara på dina specifika företagsfrågor! [Kontakta support](../../guide-overview.md) för mer information.
+Denna bästa praxis tillhandahålls av [!DNL MBI] Data Analysis Services (DAS). Vi ser fram emot att få svara på dina specifika företagsfrågor! [Kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) för mer information.
 
 ### Relaterad
 

@@ -2,9 +2,9 @@
 title: Analyserar returnerade order
 description: Lär dig hur du konfigurerar en kontrollpanel som ger en detaljerad analys av butikernas intäkter.
 exl-id: 6a948561-45b7-4813-9661-ab42197ca5bd
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '440'
 ht-degree: 0%
 
 ---
@@ -248,4 +248,4 @@ Kolumner att skapa
 
 När du har kompilerat alla rapporter kan du ordna dem på kontrollpanelen som du vill. Resultatet kan se ut som kontrollpanelen ovan.
 
-Om du stöter på några frågor när du skapar den här analysen eller bara vill engagera Professional Services-teamet, [kontakta support](../../guide-overview.md).
+Om du stöter på några frågor när du skapar den här analysen eller vill engagera Professional Services-teamet, [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

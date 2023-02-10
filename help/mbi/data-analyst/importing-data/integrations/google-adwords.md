@@ -2,9 +2,9 @@
 title: Anslut Google-lösenord
 description: Lär dig mäta kampanjens avkastning genom att kombinera era era annonskostnader med kundens livstidsvärde (CLV) för användare som ni köpt från era kampanjer.
 exl-id: db99f817-2a2e-4194-9dd2-ec2d6b27a118
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
@@ -53,10 +53,9 @@ Du kan ha flera webbplatser anslutna till en enda [!DNL Google Analytics] konto,
 
 ## Relaterad
 
-* [Återautentisera integreringar](https://support.magento.com/hc/en-us/articles/360016733151)
+* [Återautentisera integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
 * [Spåra hänvisningskälla för order via [!DNL Google ECommerce]](../integrations/google-ecommerce.md)
 * [Spåra hänvisningskälla för användare i databasen](../../analysis/google-track-user-acq.md)
-* [Spåra användarenhets-, webbläsar- och operativsystemsdata i databasen](https://support.magento.com/hc/en-us/articles/360016732911)
 * [Upptäck era mest värdefulla förvärvskällor och kanaler](../../analysis/most-value-source-channel.md)
 * [Öka avkastningen på era annonskampanjer](../../analysis/roi-ad-camp.md)
 * [Hur [!DNL Google Analytics] UTM-attribueringsarbete?](../../analysis/utm-attributes.md)

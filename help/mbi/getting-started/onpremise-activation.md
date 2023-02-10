@@ -2,9 +2,9 @@
 title: Aktivera [!DNL MBI] Konto för lokal prenumeration
 description: Läs om hur du aktiverar [!DNL MBI] konto för On-Premise-prenumerationer.
 exl-id: 0efac7b4-2457-48c7-947a-d2776b90a1dd
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 9974cc5c5cf89829ca522ba620b8c0c2d509610c
 workflow-type: tm+mt
-source-wordcount: '217'
+source-wordcount: '227'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Aktivera [!DNL MBI] för lokala prenumerationer måste du först skapa en [!DNL 
 
 1. Skapa [!DNL MBI] Konto.
 
-   - Gå till [https://account.magento.com/customer/account/login](https://account.magento.com/customer/account/login)
+   - Gå till [Adobe Commerce-kontoinloggning](https://account.magento.com/customer/account/login)
 
    - Gå till **[!UICONTROL My Account** > **My [!DNL MBI] Instances]**.
 
@@ -25,7 +25,7 @@ Aktivera [!DNL MBI] för lokala prenumerationer måste du först skapa en [!DNL 
 
    ![](../assets/create-account-2.png)
 
-   - Gå till din inkorg och verifiera din e-postadress. Om du inte har fått något e-postmeddelande [kontakta support](../guide-overview.md).
+   - Gå till din inkorg och verifiera din e-postadress. Om du inte har fått något e-postmeddelande [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
 
    - Skapa ditt lösenord.
 

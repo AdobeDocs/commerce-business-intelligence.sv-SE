@@ -2,9 +2,9 @@
 title: Bred filtrering på kontrollpanelen
 description: Lär dig göra massredigeringar av alla rapporter på en specifik kontrollpanel.
 exl-id: 379d0027-8a7a-4062-a66a-4f06c37b806c
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '472'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Om du vill analysera hur en viss butik fungerar klickar du på butiksikonen i de
 
 >[!NOTE]
 >
->Ett arkivfilter är aktiverat eller inaktiverat för en hel [!DNL MBI] konto. Om en kontrollpanel innehåller rapporter som inte påverkas av filtret, t.ex. rapporter som inte baseras på några Commerce-data, uppdateras inte dessa rapporter när arkivfiltret används. Du kan [kontakta support](../../guide-overview.md) om du anser att en rapport ska uppdateras baserat på val av butik eller om du tror att ditt kontoarkivfilter har inaktiverats av misstag.
+>Ett arkivfilter är aktiverat eller inaktiverat för en hel [!DNL MBI] konto. Om en kontrollpanel innehåller rapporter som inte påverkas av filtret, t.ex. rapporter som inte baseras på några Commerce-data, uppdateras inte dessa rapporter när arkivfiltret används. Du kan [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) om du anser att en rapport ska uppdateras baserat på val av butik eller om du tror att ditt kontoarkivfilter har inaktiverats av misstag.
 
 När du väljer en butik på `Store Filter`behåller filtret markeringen när du navigerar mellan kontrollpaneler. Om du behåller markeringen kan du visa data för den valda butiken överallt tills du väljer `All Stores`.
 

@@ -2,10 +2,10 @@
 title: Google Analytics - Spåra översikt över källdata för användarförvärv
 description: Lär dig segmentera data utifrån källa för kundvärvning.
 exl-id: 2ce3e4f9-4741-4ada-b822-ec6a5ca94497
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '852'
-ht-degree: 0%
+source-wordcount: '837'
+ht-degree: 1%
 
 ---
 
@@ -93,7 +93,6 @@ Detta är intressant, men av begränsad användning. Det vi verkligen vill veta 
 
 ### Relaterad
 
-* **[Spåra användarenhets-, webbläsar- och operativsystemsdata i databasen](https://support.magento.com/hc/en-us/articles/360016732911)**
 * **[Upptäck era mest värdefulla förvärvskällor och kanaler](../analysis/most-value-source-channel.md)**
 * **[Koppla samman [!DNL Google Adwords] konto](../importing-data/integrations/google-adwords.md)**
 * **[Öka avkastningen på era annonskampanjer](../analysis/roi-ad-camp.md)**

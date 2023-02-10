@@ -2,7 +2,7 @@
 title: Datamigreringstjänster
 description: Lär dig allt du behöver för att skicka in en begäran och komma igång med migreringen.
 exl-id: 105cd003-98ef-4358-80b9-b3190c2c57b7
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 9974cc5c5cf89829ca522ba620b8c0c2d509610c
 workflow-type: tm+mt
 source-wordcount: '723'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Datamigrering
 
-Att migrera till ett nytt databasschema, en ny server eller en rapportdatabas behöver inte vara stressigt. Våra **[!DNL Magento Services - Analytics]** team erbjuder migreringshjälp - vi gör allt för hårt arbete så att du inte behöver göra det.
+Att migrera till ett nytt databasschema, en ny server eller en rapportdatabas behöver inte vara stressigt. Våra **[!DNL Adobe Commerce Services - Analytics]** team erbjuder migreringshjälp - vi gör allt för hårt arbete så att du inte behöver göra det.
 
 För att övergången ska gå så smidigt som möjligt ber vi dig att vara så detaljerad som möjligt när du skickar in din migreringsbegäran. I den här artikeln finns allt du behöver för att skicka en begäran och komma igång med migreringen. Om du ger oss en heltäckande bild av dina behov kan du garantera att projektet får rätt omfattning och att uppskattningen är korrekt.
 

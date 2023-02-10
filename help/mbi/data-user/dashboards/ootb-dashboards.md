@@ -2,9 +2,9 @@
 title: Inkluderade instrumentpaneler
 description: Lär dig hur du kontrollerar hälsan hos viktiga mätvärden som intäkter från användarlivstid, antal upprepade köp med mera, och därmed skapar en stabil grund för framtida utforskande.
 exl-id: f50fc417-e5d4-401c-9baa-cda1468196a2
-source-git-commit: 3557e6370fae637cd74550b2806847bebe61d5d3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '963'
+source-wordcount: '973'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Som en del av våra tjänster erbjuder vi e-handel och `SaaS` Startpaket. Dessa 
 >
 >Tillgängligheten för vissa instrumentpaneler beror på din datamängd.
 
-Om du har frågor eller är intresserad av att lägga till ett paket i ditt konto, skicka ett [supportanmälan](../../guide-overview.md) om du behöver hjälp.
+Om du har frågor eller är intresserad av att lägga till ett paket i ditt konto, skicka ett [supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) om du behöver hjälp.
 
 ## Översikt
 

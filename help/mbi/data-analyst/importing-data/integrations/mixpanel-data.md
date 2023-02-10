@@ -2,9 +2,9 @@
 title: Förväntade data från blandpanelen
 description: Utforska huvuddatatabellerna som du kan importera från Mixpanel till [!DNL MBI] konto.
 exl-id: 87bd337a-63fa-44cf-b1fe-c2f34ca86029
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '216'
 ht-degree: 0%
 
 ---
@@ -30,4 +30,4 @@ I den här artikeln utforskar vi de viktigaste datatabellerna som du kan importe
 ## Relaterad dokumentation
 
 * [Ansluter [!DNL Mixpanel]](../integrations/mixpanel.md)
-* [Återautentisera integreringar](https://support.magento.com/hc/en-us/articles/360016733151-Reauthenticating-integrations)
+* [Återautentisera integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)

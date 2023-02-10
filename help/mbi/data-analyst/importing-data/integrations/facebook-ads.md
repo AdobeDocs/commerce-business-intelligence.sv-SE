@@ -2,9 +2,9 @@
 title: Connect Facebook Ads
 description: Lär dig att analysera era annonsutgifter och se om era pengar används effektivt.
 exl-id: 219a868b-f17c-4299-9e29-94db9156c9b6
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '321'
 ht-degree: 0%
 
 ---
@@ -52,11 +52,11 @@ Du följer en serie steg för att tillåta [!DNL MBI] för att få tillgång til
 
 ## vad kommer härnäst? {#next}
 
-Se till att du spårar [!DNL Facebook] kampanjer i [!DNL Google Analytics] enligt detta [självstudiekurs](https://www.facebook.com/business/google-analytics). Detta säkerställer att `utm\_campaign` fält i [!DNL Google Analytics] är korrekt ifylld för [!DNL Facebook] kampanjer.
+Se till att du spårar [!DNL Facebook] kampanjer i [!DNL Google Analytics]. Detta säkerställer att `utm\_campaign` fält i [!DNL Google Analytics] är korrekt ifylld för [!DNL Facebook] kampanjer.
 
 ## Relaterad
 
-* [Återautentisera integreringar](https://support.magento.com/hc/en-us/articles/360016733151)
+* [Återautentisera integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
 * [Koppla samman [!DNL Google Adwords] konto](../integrations/google-ecommerce.md)
 * [Spåra hänvisningskälla för order via [!DNL Google eCommerce]](../integrations/google-ecommerce.md)
 * [Spåra hänvisningskälla för användare i databasen](../../analysis/google-track-user-acq.md)

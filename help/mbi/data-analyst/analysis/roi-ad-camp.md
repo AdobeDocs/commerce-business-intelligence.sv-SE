@@ -2,9 +2,9 @@
 title: Öka avkastningen på era annonskampanjer
 description: Lär dig mer om några olika metoder för att utvärdera hur kampanjen fungerar.
 exl-id: 4f2bf408-eeaf-4dbf-b62e-89426734640a
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '1284'
+source-wordcount: '1294'
 ht-degree: 0%
 
 ---
@@ -97,7 +97,7 @@ Kör ni produktspecifika annonser? I så fall kan ni mäta avkastningen på dess
 >
 >Vi utgår ifrån att alla kampanjkostnader uteslutande användes för att generera inköp av specifika produkter. Genom att anta att alla kostnader har använts för att generera inköp, kommer den resulterande avkastningen att utgöra det värsta scenariot (den högsta kostnaden per köp), så att du kan vara säker på att den faktiska avkastningen är högre än den här beräkningen. Exempel: Om du utgår ifrån att du spenderade 20 USD på en kampanj som genererade 10 nya användare och 10 inköp blir den faktiska kostnaden per köp 1 USD, men under förutsättning att alla kostnader går till att köpa nya användare är kostnaden per köp 2 USD.)*
 
-Innan vi börjar, [skicka en supportanmälan](../../guide-overview.md) för att koppla följande dimensioner till radobjektregistret (`sales\_flat\_order\_item, order\_item`):
+Innan vi börjar, [skicka en supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) för att koppla följande dimensioner till radobjektregistret (`sales\_flat\_order\_item, order\_item`):
 
 * Orderns källa (om du bara spårar hänvisningskälla på användarnivå ska du ansluta till användarens källa)
 * Beställningens kampanj (om du bara spårar hänvisningskälla på användarnivå ska du gå med i användarens kampanj)

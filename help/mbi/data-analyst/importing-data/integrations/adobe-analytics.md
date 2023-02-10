@@ -2,9 +2,9 @@
 title: Connect Adobe Analytics
 description: Lär dig att sätta samman hela kundresan med fokus på [!DNL Adobe Analytics] och e-handelns fokus kan du lita på [!DNL MBI].
 exl-id: 824e1ee4-6b88-42f7-b265-29330dbc4407
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '317'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ The [!DNL Adobe Analytics] integration för [!DNL MBI] gör att ni kan sätta sa
 
 Mer specifikt finns i [!DNL Adobe Analytics] integration för [!DNL MBI] innehåller funktionalitet så att handlare kan börja kombinera sina Commerce- och Analytics-datauppsättningar.
 - Skapa en anslutning från din befintliga [!DNL Adobe Analytics] konto till [!DNL MBI].
-- Välj upp till 25 mätvärden och dimensioner från en rapportsvit för att replikera till [!DNL MBI] data warehouse.
+- Välj upp till 25 mätvärden och dimensioner från en och samma rapportsvit för att replikera till [!DNL MBI] data warehouse.
 - Använd all standard [!DNL MBI] funktioner för att omvandla, förena och rapportera om replikerade [!DNL Adobe Analytics] data.
 
 ## Anslutningskrav

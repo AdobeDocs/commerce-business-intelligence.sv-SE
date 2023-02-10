@@ -2,9 +2,9 @@
 title: Kontrollera statusen för uppdateringscykeln
 description: Lär dig hur du kontrollerar statusen för uppdateringscykeln.
 exl-id: bd65f2bb-86c1-4e83-a132-797694ddb086
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '289'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ När du loggar in på [!DNL MBI] på kontrollpanelen finns det flera sätt att k
 
 ## Varför ska jag kontrollera statusen för uppdateringscykeln?
 
-Att kontrollera statusuppdateringscykeln är användbart när du granskar data i [!DNL MBI] konto. Om du ser [resultat som inte uppfyller dina förväntningar](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md)t.ex. daglig försäljning [!DNL MBI] matchar inte det du ser i din e-handelsplattform eller i din [[!DNL Google] e-handelsintäkter](https://support.magento.com/hc/en-us/articles/360016505232) Du kan kontrollera den sista datapunkten för att se om problemet kommer att lösas när en uppdatering har slutförts.
+Att kontrollera statusuppdateringscykeln är användbart när du granskar data i [!DNL MBI] konto. Om du ser [resultat som inte uppfyller dina förväntningar](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md)t.ex. daglig försäljning [!DNL MBI] matchar inte det du ser i din e-handelsplattform eller i din [[!DNL Google] e-handelsintäkter](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html?lang=en) Du kan kontrollera den sista datapunkten för att se om problemet kommer att lösas när en uppdatering har slutförts.
 
 ## [!UICONTROL Read-Only] och [!UICONTROL Standard]** Användare
 

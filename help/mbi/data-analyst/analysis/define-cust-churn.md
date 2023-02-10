@@ -2,9 +2,9 @@
 title: Definiera kundomsättning
 description: Lär dig hur du skapar en kontrollpanel som hjälper dig att definiera kundomsättning för dina transaktionskunder.
 exl-id: fea8f7e9-c84c-4d49-a657-8b75140c113a
-source-git-commit: 3557e6370fae637cd74550b2806847bebe61d5d3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: '501'
 ht-degree: 0%
 
 ---
@@ -136,4 +136,4 @@ När du har skapat din kontrollpanel är den vanligaste frågan vi får: Hur anv
 
 När du har kompilerat alla rapporter kan du ordna dem på kontrollpanelen som du vill. Slutresultatet kan se ut som bilden överst på sidan
 
-Om du stöter på några frågor när du bygger upp den här analysen, eller bara vill engagera vårt team med professionella tjänster, [kontakta support](../../guide-overview.md).
+Om du stöter på några frågor när du bygger upp den här analysen, eller bara vill engagera vårt team med professionella tjänster, [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

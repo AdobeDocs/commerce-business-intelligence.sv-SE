@@ -2,9 +2,9 @@
 title: Använd filöverföring
 description: Lär dig hur ni samlar alla era data i en enda data warehouse.
 exl-id: 28db0e78-0222-431d-bbb9-6ef133686603
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '1386'
+source-wordcount: '1392'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Låt oss använda annonskampanjer som exempel. Om ni kör både online- och offl
 ## Begränsningar och krav {#require}
 
 1. **Det enda format som stöds för filöverföringar är `CSV` eller`comma separated values`**. Om du arbetar i Excel kan du använda funktionen Spara som för att spara filen i `.csv` format.
-1. **`CSV`måste använda`UTF-8 encoding`**. Majoriteten av tiden kommer detta inte att vara något problem. Om det här felet uppstår när du överför en fil, [Läs den här supportartikeln](https://support.magento.com/hc/en-us/articles/360016730591).
+1. **`CSV`måste använda`UTF-8 encoding`**. Majoriteten av tiden kommer detta inte att vara något problem. Om det här felet uppstår när du överför en fil, [Läs den här supportartikeln](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html?lang=en).
 1. **Filerna får inte vara större än 100 MB**. Om filen är större än så delar du upp tabellen i segment och sparar dem som enskilda filer. Du kan lägga till data när den första filen har lästs in.
 1. **Alla tabeller måste ha en`primary key`**. Det måste finnas minst en kolumn i tabellen som kan användas som `primary key`eller en unik identifierare för varje rad i tabellen. Valfri kolumn som betecknas som `primary key` kan *aldrig* vara null. A `primary key` kan vara så enkelt som att lägga till en kolumn som ger ett nummer till varje rad, eller kan vara två kolumner sammanfogade för att skapa en kolumn med unika värden (till exempel `campaign name` och `date`).
 

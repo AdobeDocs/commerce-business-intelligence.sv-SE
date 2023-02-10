@@ -2,9 +2,9 @@
 title: Filter
 description: Lär dig hur du använder filter.
 exl-id: eb683dfe-9a90-400a-a0c0-3dc00d1f28b5
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '354'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Ett eller flera filter kan läggas till för att begränsa vilka data som använ
 >
 >En rapport kan innehålla maximalt 3 500 datapunkter. Om du vill minska antalet datapunkter använder du ett filter för att minska mängden data som används för att generera rapporten.
 
-MBI innehåller ett urval av filter som du kan använda &quot;i kartong&quot; eller ändra efter behov. Det finns ingen gräns för hur många filter du kan skapa.
+MBI innehåller ett urval av filter som du kan använda &quot;out of the box (OTB)&quot; eller ändra efter behov. Det finns ingen gräns för hur många filter du kan skapa.
 
 ## Så här lägger du till ett filter:
 

@@ -2,10 +2,10 @@
 title: Avancerade beräknade kolumntyper
 description: Lär dig grunderna för de flesta användningsfall för kolumner - men du kanske vill ha en beräknad kolumn som är lite mer komplex än vad Data warehouse Manager kan skapa.
 exl-id: 9871fa19-95b3-46e4-ae2d-bd7c524d12db
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '902'
-ht-degree: 0%
+source-wordcount: '912'
+ht-degree: 4%
 
 ---
 
@@ -119,8 +119,8 @@ Här är ett exempel:
 
 | **`id`** | **`timestamp`** | **`transaction\_value\_EUR`** | **`transaction\_value\_USD`** |
 |-----|-----|-----|-----|
-| `1` | 2015-01-01 00:00:00 | 30 | 33,57 |
-| `2` | 2015-01-02 00:00:00 | 50 | 55,93 |
+| `1` | 2015-01-01 00:00:00 | 30 | 33.57 |
+| `2` | 2015-01-02 00:00:00 | 50 | 55.93 |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -159,7 +159,7 @@ För att skapa den här typen av beräknad kolumn måste vi känna till:
 
 Oroa dig inte. Bara för att det inte finns med här betyder det inte att det inte är möjligt. Vårt team med Data warehouse Analysts har det som täcker er.
 
-Om du vill definiera en ny beräknad kolumn [skicka en supportanmälan](../../guide-overview.md) med information om exakt vad du vill bygga.
+Om du vill definiera en ny beräknad kolumn [skicka en supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) med information om exakt vad du vill bygga.
 
 ## Relaterad dokumentation
 

@@ -2,9 +2,9 @@
 title: Kupongprestanda
 description: Lär dig hur du analyserar din kupongprestanda.
 exl-id: f6565e33-18ee-4f85-ade0-fd361854475b
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1176'
 ht-degree: 0%
 
 ---
@@ -512,4 +512,4 @@ Ytterligare kolumner som ska skapas om gästorder INTE stöds:
 
 När du har kompilerat alla rapporter kan du ordna dem på kontrollpanelen som du vill. Slutresultatet kan se ut som bilden överst på sidan.
 
-Om du stöter på några frågor när du bygger upp den här analysen, eller bara vill engagera vårt team med professionella tjänster, [kontakta support](../../guide-overview.md).
+Om du stöter på några frågor när du bygger upp den här analysen, eller bara vill engagera vårt team med professionella tjänster, [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

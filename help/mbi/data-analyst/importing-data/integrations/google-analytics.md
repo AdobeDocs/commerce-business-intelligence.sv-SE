@@ -2,9 +2,9 @@
 title: Connect Google Analytics
 description: Lär dig koppla Google Analytics med [!DNL MBI].
 exl-id: 10e813f1-0306-4bdd-8222-e6364ac624de
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: '288'
 ht-degree: 0%
 
 ---
@@ -51,8 +51,7 @@ Identifiera en viss webbplats [!DNL Google Analytics] Profil-ID:
 
 ## Relaterat:
 
-* [Återautentisera integreringar](https://support.magento.com/hc/en-us/articles/360016733151)
+* [Återautentisera integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
 * [Ansluter [!DNL Google Adwords]](../integrations/google-adwords.md)
 * [Analysera webbplatsaktivitet och kundkonverteringsgrader](../../analysis/web-act-cust-conversion.md)
 * [Spåra kundvärvningsdata med [!DNL Google Analytics] cookies](../../analysis/google-track-user-acq.md)
-* [Spåra användarenhets- och webbläsardata med [!DNL Google Analytics] cookies](https://support.magento.com/hc/en-us/articles/360016732911)

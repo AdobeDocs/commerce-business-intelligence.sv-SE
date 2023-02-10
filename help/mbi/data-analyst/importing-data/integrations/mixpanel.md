@@ -2,9 +2,9 @@
 title: Connect Mixpanel
 description: Lär dig hur du analyserar hur användare navigerar och använder dina webbplatser och appar.
 exl-id: e6a9f08f-1063-4d92-93e6-971280239fdb
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '258'
+source-wordcount: '262'
 ht-degree: 0%
 
 ---
@@ -59,4 +59,4 @@ Så ja! Om anslutningen lyckas kan du _Klart!_ visas överst på sidan.
 ### Relaterad
 
 * [Förväntat [!DNL Mixpanel] data](../integrations/mixpanel-data.md)
-* [Återautentisera integreringar](https://support.magento.com/hc/en-us/articles/360016733151)
+* [Återautentisera integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)

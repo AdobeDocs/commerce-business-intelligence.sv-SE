@@ -2,9 +2,9 @@
 title: Skapa filteruppsättningar för mätvärden
 description: Lär dig hur du skapar sparade filteruppsättningar och använder dem på mätvärdena.
 exl-id: 6ef8b67c-bebd-45eb-bca7-95832ec34fc8
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '276'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Om du har flera mätvärden i [!DNL MBI] som måste filtreras på ett liknande sätt (t.ex. filtrera bort testorder) kan du skapa sparade filteruppsättningar och använda dem för mätvärdena. Detta sparar tid eftersom du inte behöver lägga till enskilda filter när du skapar eller redigerar ett mätresultat.
 
-Se vår [utbildningsvideo](https://support.magento.com/hc/en-us/articles/360016730151) om du vill veta mer.
+Se vår [utbildningsvideo](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-filter-sets.html?lang=en) om du vill veta mer.
 
 >[!NOTE]
 >

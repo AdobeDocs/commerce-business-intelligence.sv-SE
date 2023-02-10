@@ -2,16 +2,16 @@
 title: Lagra data i handeln
 description: Lär dig hur data genereras, exakt vad som gör att en ny rad infogas i en av Core Commerce Tables, och hur är åtgärder som att göra ett köp eller skapa ett konto som registrerats i Commerce-databasen?
 exl-id: 436ecdc1-7112-4dec-9db7-1f3757a2a938
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 9974cc5c5cf89829ca522ba620b8c0c2d509610c
 workflow-type: tm+mt
-source-wordcount: '963'
-ht-degree: 0%
+source-wordcount: '960'
+ht-degree: 3%
 
 ---
 
-# Lagra data i [!DNL Magento]
+# Lagra data i [!DNL Adobe Commerce]
 
-Handelsplattformen registrerar och organiserar en mängd värdefulla affärsdata i hundratals tabeller. I det här avsnittet får du lära dig hur data genereras, vilket exakt gör att en ny rad infogas i en av [Core Commerce Tables](../data-warehouse-mgr/common-mage-tables.md)och hur fungerar åtgärder som att göra ett inköp eller skapa ett konto som registrerats i Commerce-databasen. Om du vill förklara dessa begrepp kan du läsa följande exempel:
+Adobe Commerce-plattformen registrerar och organiserar ett stort antal värdefulla affärsdata i hundratals tabeller. I det här avsnittet får du lära dig hur data genereras, vilket exakt gör att en ny rad infogas i en av [Core Commerce Tables](../data-warehouse-mgr/common-mage-tables.md)och hur fungerar åtgärder som att göra ett inköp eller skapa ett konto som registrerats i Commerce-databasen. Om du vill förklara dessa begrepp kan du läsa följande exempel:
 
 `Clothes4U` är en klädhandlare med både online- och murbruk. Magento Open Source används bakom sin webbplats för att samla in och organisera data.
 
@@ -30,15 +30,15 @@ Uppfyrad med alla inställningar för `Throwback Bellbottoms`klickar medarbetare
 * `entity_id` - Detta är primärnyckeln till `catalog_product_entity` tabell, vilket innebär att alla rader i tabellen måste ha olika `entity_id`. Varje `entity_id` i det här registret kan bara associeras med en produkt, och varje produkt kan bara associeras med en `entity_id`
    * Tabellens övre rad ovan, `entity_id` = 205, är den nya raden som skapats för&quot;Throwback Bellbottoms&quot;. Var `entity_id` = 205 visas i Commerce-plattformen och avser produkten &quot;Throwback Bellbottoms&quot;
 * `entity_type_id` - Handeln har flera kategorier av objekt (som kunder, adresser och produkter, för att nämna några), och den här kolumnen används för att ange kategorin som den här raden tillhör.
-   * Detta är `catalog_product_entity` tabell har varje rad samma enhetstyp: produkt. I Magento `entity_type_id` för produkten är 4, vilket är anledningen till att alla tre nya produkter skapade retur 4 för denna kolumn.
+   * Detta är `catalog_product_entity` tabell har varje rad samma enhetstyp: produkt. I Adobe Commerce `entity_type_id` för produkten är 4, vilket är anledningen till att alla tre nya produkter skapade retur 4 för denna kolumn.
 * `attribute_set_id` - Attributuppsättningar används för att identifiera produkter som har samma beskrivning.
    * De två översta raderna i tabellen är `Throwback Bellbottoms` och `Straight Leg Jeans` produkter, som båda är byxor. Dessa produkter skulle ha samma beskrivningar (till exempel namn, inseam, midline) och därför ha samma `attribute_set_id`. Den tredje posten `V-Neck T-Shirt` har en annan `attribute_set_id` eftersom den inte skulle ha samma beskrivningar som byxorna, Skjortor har inte dammar eller insömmar.
-* `sku` - Detta är unika värden som användaren tilldelar varje produkt när han/hon skapar en ny produkt i Magento.
+* `sku` - Detta är unika värden som användaren tilldelar varje produkt när han/hon skapar en ny produkt i Adobe Commerce.
 * `created_at` - Den här kolumnen returnerar tidsstämpeln för när varje produkt skapades
 
 ## `customer\_entity`
 
-Kort efter de tre nya produkterna, en ny kund, `Sammy Customer`, besök `Clothes4U`för första gången. Sedan `Clothes4U` inte [tillåt gästorder](https://support.magento.com/hc/en-us/articles/360016729951-Common-Magento-Misconceptions), `Sammy Customer` måste först skapa ett konto på webbplatsen. Hon anger sina uppgifter och klickar på att skicka, vilket resulterar i följande nya post på [`customer\_entity table`](../data-warehouse-mgr/cust-ent-table.md):
+Kort efter de tre nya produkterna, en ny kund, `Sammy Customer`, besök `Clothes4U`för första gången. Sedan `Clothes4U` tillåter inte gästorder, `Sammy Customer` måste först skapa ett konto på webbplatsen. Hon anger sina uppgifter och klickar på att skicka, vilket resulterar i följande nya post på [`customer\_entity table`](../data-warehouse-mgr/cust-ent-table.md):
 
 | **`entity id`** | **`entity type id`** | **`email`** | **`created at`** |
 |---|---|---|---|
@@ -57,7 +57,7 @@ När kontot är klart `Sammy Customer` är redo att börja köpa. När hon navig
 
 | **`entity id`** | **`customer id**`**`subtotal`****`created at`** |
 |---|---|---|---|
-| 227 | 214 | 94,85 | 2016/09/23 15:41:39 |
+| 227 | 214 | 94.85 | 2016/09/23 15:41:39 |
 
 * `entity_id` - det här är primärnyckeln till `sales_flat_order` tabell.
    * När Sammy Customer lade denna order och raden ovan skrevs till `sales_flat_order` register, ordern har tilldelats `entity_id` = 227.
@@ -73,8 +73,8 @@ Förutom den enstaka raden på `Sales\_flat\_order` tabell, när `Sammy Customer
 
 | **`item\_id`** | **`name`** | **`product\_id`** | **`order\_id`** | **`qty\_ordered`** | **`price`** |
 |---|---|---|---|---|---|
-| 822 | `Throwback Bellbottoms` | 205 | 227 | 2 | 39,95 |
-| 823 | `V-Neck T-Shirt` | 207 | 227 | 1 | 14,95 |
+| 822 | `Throwback Bellbottoms` | 205 | 227 | 2 | 39.95 |
+| 823 | `V-Neck T-Shirt` | 207 | 227 | 1 | 14.95 |
 
 * `item_id` - Den här kolumnen är primärnyckeln för `sales_flat_order_item` table
    * `Sammy Customer`Ordern har skapat två rader i det här registret eftersom hennes beställning innehöll två distinkta produkter

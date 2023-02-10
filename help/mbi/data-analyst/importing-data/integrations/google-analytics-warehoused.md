@@ -2,9 +2,9 @@
 title: Connect Google Analytics Warehouse
 description: Lär dig att spåra hur besökarna använder er webbplats, vilket innehåll som är attraktivt, var besökarna lämnar webbplatsen och mycket annat.
 exl-id: b9879399-9e1a-4f36-b510-8426ebc83aeb
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '513'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Med [!DNL Google Analytics Live] integrering, å andra sidan, [!DNL Google Analy
 
 >[!INFO]
 >
->[!DNL Google Analytics Warehoused] är en `Premium` Integrering. [Kontakta support](../../../guide-overview.md) om du vill lägga till den här integreringen i din prenumeration.
+>[!DNL Google Analytics Warehoused] är en `Premium` Integrering. [Kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) om du vill lägga till den här integreringen i din prenumeration.
 
 1. Gå till `Connections` sida under **[!UICONTROL Admin** > **Integrations]**.
 1. Klicka **[!UICONTROL Add a Add Integration]**, som finns till höger på skärmen.
@@ -61,8 +61,7 @@ Identifiera en viss webbplats [!DNL Google Analytics] Profil-ID:
 
 ## Relaterad dokumentation
 
-* [Återautentisera integreringar](https://support.magento.com/hc/en-us/articles/360016733151)
+* [Återautentisera integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
 * [Ansluter [!DNL Google Adwords]](../integrations/google-adwords.md)
 * [Analysera webbplatsaktivitet och kundkonverteringsgrader](../../analysis/web-act-cust-conversion.md)
 * [Spåra kundvärvningsdata med [!DNL Google Analytics] cookies](../../analysis/google-track-user-acq.md)
-* [Spåra användarenhets- och webbläsardata med [!DNL Google Analytics] cookies](https://support.magento.com/hc/en-us/articles/360016732911)

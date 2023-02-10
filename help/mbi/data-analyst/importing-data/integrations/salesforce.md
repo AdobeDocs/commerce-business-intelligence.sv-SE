@@ -2,9 +2,9 @@
 title: Anslut Salesforce
 description: Läs om hur Salesforce-data möjliggör en rad analyser, från poängsättning och optimering av leads till att nå era mål för konverterade möjligheter.
 exl-id: 249b2b40-8c8a-4616-9383-17690f07003d
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '162'
+source-wordcount: '166'
 ht-degree: 0%
 
 ---
@@ -36,4 +36,4 @@ Så ja! När dina inloggningsuppgifter har validerats [!DNL Salesforce] Installa
 Om du är lite mer teknikkunnig, [[!DNL Salesforce] API-dokumentation](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm) kan vara en användbar resurs för att lära dig mer om hur Salesforce integreras med [!DNL MBI].
 
 * [Förväntat [!DNL Salesforce] data](../integrations/salesforce-data.md)
-* [Återautentisera integreringar](https://support.magento.com/hc/en-us/articles/360016733151)
+* [Återautentisera integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
