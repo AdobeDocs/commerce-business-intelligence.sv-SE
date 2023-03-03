@@ -2,7 +2,7 @@
 title: Aktivera [!DNL MBI] Konto för molnstartprenumerationer
 description: Lär dig hur du aktiverar [!DNL MBI] för Cloud Starter-projekt.
 exl-id: 172439ee-fa1d-4872-b6a9-c61a212a7cbe
-source-git-commit: 9974cc5c5cf89829ca522ba620b8c0c2d509610c
+source-git-commit: 6f018ab220f2ae573cbc9016f9efb83c27a254be
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 0%
@@ -15,7 +15,7 @@ Aktivera [!DNL MBI] for `Cloud Starter` projekt, skapa först [!DNL MBI] skapa s
 
 >[!NOTE]
 >
->Hjälp med aktivering [!DNL MBI] for `Cloud Pro` ska du kontakta din Customer Success Manager eller kundens tekniska rådgivare.
+>Hjälp med aktivering [!DNL MBI] for `Cloud Pro` ska du kontakta ditt Adobe-kontoteam eller kundens tekniska rådgivare.
 
 1. Skapa [!DNL MBI] Konto.
 
@@ -23,7 +23,7 @@ Aktivera [!DNL MBI] for `Cloud Starter` projekt, skapa först [!DNL MBI] skapa s
 
    - Gå till **[!UICONTROL My Account** > **My [!DNL MBI] Instances]**.
 
-   - Klicka **[!UICONTROL Create Instance]**. Om du inte ser den här knappen kontaktar du din Customer Success Manager eller kundens tekniska rådgivare.
+   - Klicka **[!UICONTROL Create Instance]**. Om du inte ser den här knappen kontaktar du kontoteamet på Adobe eller kundens tekniska rådgivare.
 
    - Välj `Cloud Starter` prenumeration. Om du bara har en `cloud starter` den här prenumerationen väljs automatiskt.
 
@@ -198,6 +198,6 @@ Aktivera [!DNL MBI] for `Cloud Starter` projekt, skapa först [!DNL MBI] skapa s
 
 1. Du har nu anslutit till [!DNL MBI] konto.
 
-1. När du har anslutit [!DNL MBI] kontakta din Customer Success Manager för att koordinera nästa steg, till exempel konfigurera integreringar och andra konfigurationssteg, i din Commerce-databas.
+1. När du har anslutit [!DNL MBI] till din Commerce-databas, kontakta ditt kontoteam på Adobe för att koordinera nästa steg, som att skapa integreringar och andra konfigurationssteg.
 
 1. När konfigurationen är klar kan du [logga in](../getting-started/sign-in.md) till [!DNL MBI] konto.

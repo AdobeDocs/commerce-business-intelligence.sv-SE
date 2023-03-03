@@ -2,9 +2,9 @@
 title: Anslut Amazon RDS
 description: Lär dig hur du ansluter RDS-instansen.
 exl-id: 02ad29c8-84d6-4b49-9ac1-e5f4feaa7fda
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 6f018ab220f2ae573cbc9016f9efb83c27a254be
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '540'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Detta är den del av processen där stegen varierar beroende på vilken databas 
 
 När du har beviljat [!DNL MBI] åtkomst till din instans och skapade en användare åt oss. Det sista du behöver göra är att ange anslutningsinformationen i [!DNL MBI].
 
-Autentiseringssidor för `MySQL`, `Microsoft SQL`och `PostgreSQL` öppnas via `Integrations` sida (**[!UICONTROL Manage Data** > **Integrations]**) genom att klicka på **[!UICONTROL Add Integration]**. När listan över integreringar visas klickar du på ikonen för databasen som du använder för att gå till sidan med autentiseringsuppgifter. Kontakta din CSM om du för närvarande inte har tillgång till den integrering du behöver.
+Autentiseringssidor för `MySQL`, `Microsoft SQL`och `PostgreSQL` öppnas via `Integrations` sida (**[!UICONTROL Manage Data** > **Integrations]**) genom att klicka på **[!UICONTROL Add Integration]**. När listan över integreringar visas klickar du på ikonen för databasen som du använder för att gå till sidan med autentiseringsuppgifter. Om du för närvarande inte har tillgång till den integrering du behöver kontaktar du ditt Adobe-kontoteam.
 
 Vi behöver följande information för att slutföra anslutningen:
 
