@@ -2,9 +2,9 @@
 title: Beräknade kolumntyper
 description: Lär dig hur du skapar kolumner för att förbättra och optimera data för analys.
 exl-id: 1af79b9e-77ff-4fc6-917a-4e6743b95035
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '732'
+source-wordcount: '714'
 ht-degree: 0%
 
 ---
@@ -17,9 +17,9 @@ ht-degree: 0%
 * [Referenskarta](#map)
 * [Avancerade beräknade kolumner](#advanced)
 
-I [data warehouse Manager](../data-warehouse-mgr/tour-dwm.md)kan du skapa kolumner för att utöka och optimera data för analys. [Den här funktionen](../data-warehouse-mgr/creating-calculated-columns.md) kan du komma åt genom att markera en tabell i Data warehouse Manager och klicka på **[!UICONTROL Create New Column]**.
+I [data warehouse Manager](../data-warehouse-mgr/tour-dwm.md)kan du skapa kolumner för att förbättra och optimera data för analys. [Den här funktionen](../data-warehouse-mgr/creating-calculated-columns.md) kan du komma åt genom att markera en tabell i Data warehouse Manager och klicka på **[!UICONTROL Create New Column]**.
 
-I den här artikeln beskrivs de typer av kolumner som du kan skapa med Data warehouse Manager, tillsammans med en beskrivning, en visuell genomgång av den kolumnen och en [referenskarta](#map) av alla indata som krävs för att skapa en kolumn. Det finns tre sätt att skapa beräknade kolumner:
+I den här artikeln beskrivs de typer av kolumner som du kan skapa med Data warehouse Manager. Den innehåller även en beskrivning, en visuell genomgång av den kolumnen och en [referenskarta](#map) av alla indata som krävs för att skapa en kolumn. Det finns tre sätt att skapa beräknade kolumner:
 
 * [Samma tabellberäknade kolumner](#sametable)
 * [En-till-många beräknade kolumner](#onetomany)
@@ -33,7 +33,7 @@ Dessa kolumner skapas med indatakolumner från samma tabell.
 
 En kolumn för beräkning av ålder returnerar antalet sekunder mellan den aktuella tiden och en viss indatatid.
 
-I exemplet nedan har vi skapat `Seconds since customer's most recent order` i `customers` tabell. Detta kan utnyttjas för att skapa användarlistor för kunder som inte har köpt (ibland kallat churning) inom `X days`.
+Exemplet nedan skapar `Seconds since customer's most recent order` i `customers` tabell. Detta kan användas för att skapa användarlistor för kunder som inte har gjort inköp (kallas ibland för att churning) inom `X days`.
 
 ![](../../assets/age.gif)
 
@@ -41,7 +41,7 @@ I exemplet nedan har vi skapat `Seconds since customer's most recent order` i `c
 
 En kolumn för valutakonvertering som beräknas konverterar den ursprungliga valutan i en kolumn till önskad ny valuta.
 
-I exemplet nedan har vi skapat `base\_grand\_total In AED`, konvertera `base\_grand\_total` från sin ursprungliga valuta till AED i `sales\_flat\_order` tabell. Den här kolumnen fungerar bra för butiker med flera valutor som vill rapportera i sin lokala valuta.
+Exemplet nedan skapar `base\_grand\_total In AED`, konvertera `base\_grand\_total` från sin ursprungliga valuta till AED i `sales\_flat\_order` tabell. Den här kolumnen fungerar bra för butiker med flera valutor som vill rapportera i sin lokala valuta.
 
 För Commerce-klienter `base\_currency\_code` fältet lagrar vanligtvis inhemska valutor. The `Spot Time` fältet ska matcha det datum som används i mätvärdena.
 
@@ -97,9 +97,9 @@ Om du har lite problem med att komma ihåg vad alla indata är när du skapar en
 
 ## Avancerade beräknade kolumner {#advanced}
 
-I din förfrågan om att analysera och besvara frågor om ditt företag kan du stöta på en situation där du inte kan skapa exakt den kolumn du vill ha. I de här fallen har vi täckt dig!
+I din förfrågan om att analysera och besvara frågor om ditt företag kan du stöta på en situation där du inte kan skapa exakt den kolumn du vill ha.
 
-Vi rekommenderar att du tar en titt på [Avancerade beräknade kolumntyper](../../data-analyst/data-warehouse-mgr/adv-calc-columns.md) för att se vilka kolumner vårt supportteam kan bygga. I den artikeln tar vi även upp den information vi behöver från dig för att skapa kolumnen - bifoga den med din begäran.
+Adobe rekommenderar att du tar en titt på [Avancerade beräknade kolumntyper](../../data-analyst/data-warehouse-mgr/adv-calc-columns.md) för att se vilka kolumner som supportteamet på Adobe kan bygga. Artikeln innehåller även information som du behöver för att skapa kolumnen, och du kan bifoga den med din begäran.
 
 ## Relaterad dokumentation
 

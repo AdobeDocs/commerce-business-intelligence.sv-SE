@@ -2,7 +2,7 @@
 title: Google Analytics - Spåra användarenhets- och webbläsardata i databasen
 description: Lär dig hur många användare som faktiskt loggar in via mobila enheter och hur det påverkar livslängdsvärdet för dessa användare.
 exl-id: 57b1bc45-b139-4370-86ea-2fbd021aa14d
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
 source-wordcount: '435'
 ht-degree: 0%
@@ -30,7 +30,7 @@ Den här informationen kan nås av servern varje gång en begäran görs. I PHP 
 
 ### När ska du registrera dessa data?
 
-Vi rekommenderar att du lägger till ett nytt fält med namnet `Platform` eller `User-Agent` till `Customers` och `Orders` databastabeller som lagrar den här informationen när en användare skapas eller en order placeras. Om du använder en SQL-databas bör fältet vara `VARCHAR(255)`. 
+Adobe rekommenderar att du lägger till ett nytt fält med namnet `Platform` eller `User-Agent` till `Customers` och `Orders` databastabeller som lagrar den här informationen när en användare skapas eller en order placeras. Om du använder en SQL-databas bör fältet vara `VARCHAR(255)`. 
 
 >[!NOTE]
 >

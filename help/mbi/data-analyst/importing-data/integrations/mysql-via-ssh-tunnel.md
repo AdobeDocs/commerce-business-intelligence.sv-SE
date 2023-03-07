@@ -2,9 +2,9 @@
 title: Ansluta MySQL via SSH-tunneln
 description: Lär dig hur du ansluter MySQL via SSH-tunneln.
 exl-id: 6b691a6a-9542-4e47-9b1d-d6d3c3dac357
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
 workflow-type: tm+mt
-source-wordcount: '664'
+source-wordcount: '644'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 * [Hämta [!DNL MBI] publik nyckel](#retrieve)
 * [Tillåt åtkomst till [!DNL MBI] IP-adress](#allowlist)
-* [Skapa en Linux-användare för [!DNL MBI]](#linux)
+* [Skapa en Linux](#linux)
 * [Skapa en MySQL-användare för [!DNL MBI]](#mysql)
 * [Ange anslutningen och användarinformationen i [!DNL MBI]](#finish)
 
@@ -31,11 +31,11 @@ Koppla samman `MySQL` databas till [!DNL MBI] via `SSH tunnel`måste du (eller d
 1. Skapa en `MySQL` användare för [!DNL MBI]
 1. Ange anslutningen och användarinformationen i [!DNL MBI]
 
-Det är inte så komplicerat som det kan låta. Låt oss komma igång.
+Kom igång.
 
 ## Hämtar [!DNL MBI] publik nyckel {#retrieve}
 
-The `public key` används för att auktorisera [!DNL MBI] `Linux` användare. I nästa avsnitt skapar vi användaren och importerar nyckeln.
+The `public key` används för att auktorisera [!DNL MBI] `Linux` användare. I nästa avsnitt skapar du användaren och importerar nyckeln.
 
 1. Gå till **[!UICONTROL Manage Data** > **Connections]** och klicka **[!UICONTROL Add New Data Source]**.
 1. Klicka på `MySQL` ikon.
@@ -50,7 +50,7 @@ Så här navigerar du om du är lite vilse [!DNL MBI] för att hämta nyckeln:
 
 ## Tillåt åtkomst till [!DNL MBI] IP-adress {#allowlist}
 
-För att anslutningen ska lyckas måste du konfigurera brandväggen så att den tillåter åtkomst från våra IP-adresser. De är `54.88.76.97` och `34.250.211.151` men de är också på `MySQL credentials` sida. Ser du den blå lådan i GIF ovan? Så ja!
+För att anslutningen ska lyckas måste du konfigurera brandväggen så att den tillåter åtkomst från dina IP-adresser. De är `54.88.76.97` och `34.250.211.151` men de är också på `MySQL credentials` sida. Ser du den blå lådan i GIF ovan? Så ja!
 
 ## Skapa en `Linux` användare för [!DNL MBI] {#linux}
 
@@ -64,7 +64,7 @@ Detta kan vara en produktionsmaskin eller en sekundär maskin, förutsatt att de
         mkdir /home/rjmetric/.ssh
 ```
 
-1. Kom ihåg `public key` hämtas vi i första avsnittet? För att användaren ska ha åtkomst till databasen måste nyckeln importeras till `authorized\_keys`.
+1. Kom ihåg `public key` hämtas du i första avsnittet? Om du vill vara säker på att användaren har åtkomst till databasen måste du importera nyckeln till `authorized\_keys`.
 
    Kopiera hela nyckeln till `authorized\_keys` på följande sätt:
 
@@ -99,7 +99,7 @@ Om du vill hindra den här användaren från att komma åt data i specifika data
 
 ## Ange anslutningen och användarinformationen i [!DNL MBI] {#finish}
 
-Om du vill slå ihop allt måste vi ange anslutningen och användarinformationen i [!DNL MBI]. Gav du `MySQL credentials` öppnas sidan? Om inte, gå till **[!UICONTROL Data** > **Connections]** och klicka **[!UICONTROL Add New Data Source]** och sedan ikonen MySQL. glöm inte att ange `Encrypted` växla till `Yes`.
+Om du vill slå ihop allt måste du ange anslutningen och användarinformationen i [!DNL MBI]. Gav du `MySQL credentials` öppnas sidan? Om inte, gå till **[!UICONTROL Data** > **Connections]** och klicka **[!UICONTROL Add New Data Source]** och sedan ikonen MySQL. Glöm inte att ställa in `Encrypted` växla till `Yes`.
 
 Ange följande information på den här sidan, med början i avsnittet Databasanslutning:
 
@@ -108,12 +108,12 @@ Ange följande information på den här sidan, med början i avsnittet Databasan
 * `Port`: MySQL-port på servern (3306 som standard)
 * `Host` Som standard är detta localhost. I allmänhet är det bind-adresvärdet för MySQL-servern, som är standard `127.0.0.1 (localhost)`, men kan också vara en lokal nätverksadress (till exempel `192.168.0.1`) eller serverns offentliga IP-adress.
 
-   Värdet finns i `my.cnf` fil (finns oftast på `/etc/my.cnf`) under raden som läser `\[mysqld\]`. Om bind-adresslinjen kommenteras ut i den filen skyddas servern från externa anslutningsförsök.
+   Värdet finns i `my.cnf` fil (finns på `/etc/my.cnf`) under raden som läser `\[mysqld\]`. Om bind-adresslinjen kommenteras ut i den filen skyddas servern från externa anslutningsförsök.
 
 I `SSH Connection` avsnitt:
 
 * `Remote Address`: Serverns IP-adress eller värdnamn [!DNL MBI] tunnlar in i
-* `Username`: Användarnamnet för [!DNL MBI] SSH-användare (Linux)
+* `Username`: Användarnamnet för [!DNL MBI] SSH-användare (Linux®)
 * `SSH Port`: SSH-port på servern (22 som standard)
 
 Så ja! När du är klar klickar du på **[!UICONTROL Save & Test]** för att slutföra installationen.

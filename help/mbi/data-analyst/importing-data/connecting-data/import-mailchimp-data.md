@@ -2,9 +2,9 @@
 title: Importera MailChimp-data
 description: Lär dig importera MailChimp-data till [!DNL MBI].
 exl-id: 5595c6a6-5476-4a0e-a493-ddc32161894e
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '264'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Om du vill få en heltäckande bild av dina kampanjsatsningar kan du importera `
 
 1. Klicka **[!UICONTROL Export]** och spara `.csv` -fil.
 
-   Du måste lägga till `Primary Key`, `date (mm/dd/yyyy)`, `campaign name`och `URL` kolumner till den här filen. Du behöver inte lägga till den fullständiga URL:en, bara något som talar om för dig vad du klickade på.
+   Du måste lägga till `Primary Key`, `date (mm/dd/yyyy)`, `campaign name`och `URL` kolumner till den här filen. Du behöver inte lägga till den fullständiga URL:en, bara något som talar om vad du klickade på.
 
    ![importera mailchimp 7](../../../assets/import-mailchimp-7.png)
 
@@ -71,6 +71,6 @@ Om du vill få en heltäckande bild av dina kampanjsatsningar kan du importera `
 
 ## Förbered filer för överföring till [!DNL MBI] {#upload}
 
-Varje fil - `Opens`, `Clicks`och `Sent` - ska överföras till [!DNL MBI] som en separat fil. Vi rekommenderar även att du namnger filerna med följande namnkonvention: `MailChimp\_ACTION\_DATE`. Ersätt `ACTION` med `Open`, `Click`, eller `Sent`och ersätta `DATE` med exportdatum.
+Varje fil - `Opens`, `Clicks`och `Sent` - ska överföras till [!DNL MBI] som en separat fil. Adobe rekommenderar att du namnger filerna med följande namnkonvention: `MailChimp\_ACTION\_DATE`. Ersätt `ACTION` med `Open`, `Click`, eller `Sent`och ersätta `DATE` med exportdatum.
 
-När du är klar att överföra filerna använder du [`File Upload` funktion](../connecting-data/using-file-uploader.md) för att få in data i data warehouse.
+När du är klar att överföra filerna använder du [`File Upload` funktion](../connecting-data/using-file-uploader.md) för att få in data i Data warehouse.

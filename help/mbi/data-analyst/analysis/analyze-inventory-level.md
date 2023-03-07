@@ -2,16 +2,16 @@
 title: Analyserar lagernivåer
 description: Lär dig hur du analyserar lagernivåer.
 exl-id: 620156c5-7bea-4b36-84c7-e0cb4b5cc8be
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '291'
 ht-degree: 0%
 
 ---
 
 # Analysera lagernivåer
 
-I det här avsnittet visas hur du konfigurerar en instrumentpanel som ger insikter om ditt aktuella lager. Det här avsnittet innehåller instruktioner för klienter om både den äldre arkitekturen och den nya arkitekturen. Du har en äldre arkitektur om du inte har **[!UICONTROL Data Warehouse Views]** alternativ under **[!UICONTROL Manage Data]** meny). Om du har en äldre arkitektur skickar du en [ny supportförfrågan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) med motivet **[!UICONTROL INVENTORY ANALYSIS]** när du har nått det avsedda avsnittet i _Beräknade kolumner_ instruktionerna nedan.
+I det här avsnittet visas hur du konfigurerar en kontrollpanel som ger insikter om din aktuella inventering. Det här avsnittet innehåller instruktioner för klienter om både den äldre arkitekturen och den nya arkitekturen. Du har en äldre arkitektur om du inte har **[!UICONTROL Data Warehouse Views]** alternativ under **[!UICONTROL Manage Data]** meny). Om du har en äldre arkitektur skickar du en [ny supportförfrågan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) med motivet **[!UICONTROL INVENTORY ANALYSIS]** när du har nått det avsedda avsnittet i _Beräknade kolumner_ instruktionerna nedan.
 
 ## Kolumner att spåra:
 
@@ -240,4 +240,4 @@ I det här avsnittet visas hur du konfigurerar en instrumentpanel som ger insikt
       [!UICONTROL Chart type]: `Table`
 
 
-Om du stöter på några frågor när du bygger upp den här analysen, eller bara vill engagera vårt team med professionella tjänster, [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Om du stöter på några frågor när du skapar den här analysen eller bara vill engagera Professional Services-teamet, [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

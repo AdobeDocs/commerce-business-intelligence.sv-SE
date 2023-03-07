@@ -1,21 +1,21 @@
 ---
 title: Skapa och använda Data warehouse-vyer
-description: Lär dig mer om hur du skapar nya lagrade tabeller genom att ändra en befintlig tabell eller genom att förena eller konsolidera flera tabeller med hjälp av SQL.
+description: Lär dig mer om hur du skapar nya lagrade tabeller genom att ändra en befintlig tabell eller genom att sammanfoga eller konsolidera flera tabeller med hjälp av SQL.
 exl-id: 5aa571c9-7f38-462c-8f1b-76a826c9dc55
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '1111'
+source-wordcount: '1064'
 ht-degree: 9%
 
 ---
 
 # Arbeta med Data warehouse-vyer
 
-I det här dokumentet beskrivs syftet med och användningsområdena för `Data Warehouse Views` tillgängliga genom att navigera till **[!UICONTROL Manage Data]** > **[!UICONTROL Data Warehouse Views]**. Nedan finns en förklaring av vad det gör och hur du skapar nya vyer samt ett exempel på hur du använder `Data Warehouse Views` konsolidera [!DNL Facebook] och [!DNL AdWords] spendera data.
+I det här dokumentet beskrivs syftet med och användningsområdena för `Data Warehouse Views` tillgängliga genom att navigera till **[!UICONTROL Manage Data]** > **[!UICONTROL Data Warehouse Views]**. Nedan finns en förklaring av vad det gör och hur du skapar vyer, samt ett exempel på hur du använder `Data Warehouse Views` konsolidera [!DNL Facebook] och [!DNL AdWords] spendera data.
 
 ## Allmänt syfte
 
-The `Data Warehouse Views` är en metod för att skapa nya lagrade tabeller genom att ändra en befintlig tabell eller genom att sammanfoga eller konsolidera flera tabeller tillsammans med hjälp av SQL. En gång en `Data Warehouse View` har skapats och bearbetats i en uppdateringscykel, fylls den i i Data warehouse som en ny tabell under `Data Warehouse Views` rullgardinsmeny enligt nedan:
+The `Data Warehouse Views` är en metod för att skapa nya lagrade tabeller genom att ändra en befintlig tabell eller genom att sammanfoga eller konsolidera flera tabeller med hjälp av SQL. En gång en `Data Warehouse View` har skapats och bearbetats av en uppdateringscykel, fylls i i Data warehouse som en ny tabell under `Data Warehouse Views` rullgardinsmeny enligt nedan:
 
 ![](../../assets/Data_Warehouse.png)
 
@@ -31,22 +31,22 @@ Nytt `Data Warehouse Views` kan skapas och befintliga vyer kan tas bort genom at
 
 ![](../../assets/Data_Warehouse_Views.png)
 
-Härifrån kan du skapa en ny vy genom att följa exempelinstruktionerna nedan:
+Här kan du skapa en vy genom att följa exempelinstruktionerna nedan:
 
 1. Om du observerar en befintlig vy klickar du **[!UICONTROL New Data Warehouse View]** om du vill öppna ett tomt frågefönster. Om ett tomt frågefönster redan är öppet fortsätter du till nästa steg.
-1. Ge vyn ett namn genom att skriva i `View Name` fält. Det namn som anges här bestämmer visningsnamnet för vyn i Data warehouse. `View names` begränsas till gemena bokstäver, siffror och understreck (_). Alla andra tecken tillåts inte.
+1. Ge vyn ett namn genom att skriva i `View Name` fält. Det namn som anges här anger visningsnamnet för vyn i Data warehouse. `View names` begränsas till gemena bokstäver, siffror och understreck (_). Alla andra tecken tillåts inte.
 1. Ange frågan i fönstret `Select Query`, med vanlig PostgreSQL-syntax.
    >[!NOTE]
    >
    >Frågan måste referera till specifika kolumnnamn. Användning av `*`får inte användas för att markera alla kolumner.
 
-1. När du är klar klickar du på **[!UICONTROL Save]** för att spara din vy. Observera att din vy tillfälligt kommer att ha en `Pending` status tills den bearbetas av nästa fullständiga uppdateringscykel, då statusen ändras till `Active`. När vyn har bearbetats av en uppdatering är den klar att användas i rapporter.
+1. När du är klar klickar du på **[!UICONTROL Save]** för att spara din vy. Din vy har en `Pending` status tills den bearbetas av nästa fullständiga uppdateringscykel, då statusen ändras till `Active`. När vyn har bearbetats av en uppdatering är den klar att användas i rapporter.
 
-Det är viktigt att notera att den underliggande frågan som användes när den sparades genererade en `Data Warehouse View` kan inte redigeras. Om du av någon anledning behöver justera strukturen för en `Data Warehouse View`måste du skapa en ny vy och manuellt migrera beräknade kolumner, mätvärden eller rapporter från den ursprungliga vyn till den nya. När migreringen är klar kan du ta bort den ursprungliga vyn. För `Data Warehouse Views` går inte att redigera, vi rekommenderar att du testar frågans utdata med `SQL Report Builder` innan du sparar frågan som en Data warehouse-vy.
+Det är viktigt att notera att den underliggande frågan som användes när den sparades genererade en `Data Warehouse View` kan inte redigeras. Om du behöver justera strukturen för ett `Data Warehouse View`måste du skapa en vy och manuellt migrera beräknade kolumner, mätvärden eller rapporter från den ursprungliga vyn till den nya. När migreringen är klar kan du ta bort den ursprungliga vyn. För `Data Warehouse Views` går inte att redigera, Adobe rekommenderar att du testar frågans utdata med `SQL Report Builder` innan du sparar frågan som en Data warehouse-vy.
 
 ## Exempel: [!DNL Facebook] och [!DNL Google AdWords] data
 
-Låt oss titta närmare på ett av de exempel som nämns ovan i denna artikel: konsolidera [!DNL Facebook] och [!DNL AdWords] lägga in data i en ny konsoliderad annonstabell. Det vanligaste är att konsolidera två tabeller, med exempeldatauppsättningar nedan:
+Titta närmare på ett av de exempel som nämns ovan i den här artikeln: konsolidera [!DNL Facebook] och [!DNL AdWords] lägga in data i en ny konsoliderad annonstabell. Det vanligaste är att konsolidera två tabeller, med exempeldatauppsättningar nedan:
 
 `Ad source: Google AdWords`
 
@@ -76,7 +76,7 @@ Låt oss titta närmare på ett av de exempel som nämns ovan i denna artikel: k
 | 4 | aaa | 110 | 2017-06-08 00:00:00 | 6000 | 10 |
 | 5 | ccc | 5 | 2017-07-06 00:00:00 | 300 | 1.2 |
 
-Så här skapar du en annonsutgivartabell som innehåller båda [!DNL Facebook] och [!DNL AdWords] måste vi skriva en SQL-fråga och använda `UNION ALL` funktion. A `UNION ALL` -satsen används oftast för att kombinera flera olika SQL-frågor samtidigt som resultatet av varje fråga läggs till i ett enda utdata.
+Så här skapar du en annonsutgivartabell som innehåller båda [!DNL Facebook] och [!DNL AdWords] -kampanjer måste du skriva en SQL-fråga och använda `UNION ALL` funktion. A `UNION ALL` -satsen används oftast för att kombinera flera olika SQL-frågor samtidigt som resultatet av varje fråga läggs till i ett enda utdata.
 
 Det finns några krav på `UNION` programsats som är värd att omnämnas enligt PostgreSQL [dokumentation](https://www.postgresql.org/docs/8.3/queries-union.html):
 
@@ -85,7 +85,7 @@ Det finns några krav på `UNION` programsats som är värd att omnämnas enligt
 
 När en `UNION` eller `UNION ALL` -programsats, så återspeglar namnen på kolumnerna i det slutliga resultatet namngivningen av kolumnerna i den första frågan.
 
-I de flesta fall kan du konsolidera [!DNL Facebook] och [!DNL Google AdWords] lägga in data i `Data Warehouse View` kräver att en tabell med sju kolumner skapas, med en fråga som liknar den nedan:
+Oftast konsolideras dina [!DNL Facebook] och [!DNL Google AdWords] lägga in data i `Data Warehouse View` kräver att en tabell med sju kolumner skapas, med en fråga som liknar den nedan:
 
 ```sql
     SELECT
@@ -112,9 +112,9 @@ I de flesta fall kan du konsolidera [!DNL Facebook] och [!DNL Google AdWords] l�
 Några viktiga punkter om det ovanstående:
 
 * För tydlighetens skull är alla kolumner kantutjämnade över så att namnen matchar alla frågor. Detta är dock inget krav. Den ordning som kolumnerna anropas i SELECT-frågor avgör hur de justeras.
-* En ny kolumn anropas `ad_source` skapas för att göra det enklare att filtrera efter [!DNL AdWords] eller [!DNL Facebook] data. Kom ihåg att den här frågan kombinerar alla data från båda tabellerna. Om du inte skapar en kolumn som `ad_source`kommer det inte att finnas något enkelt sätt att identifiera utgifter från en viss källa.
+* En ny kolumn anropas `ad_source` skapas för att göra det enklare att filtrera efter [!DNL AdWords] eller [!DNL Facebook] data. Kom ihåg att den här frågan kombinerar alla data från båda tabellerna. Om du inte skapar en kolumn som `ad_source`, det finns inget enkelt sätt att identifiera utgifter från en viss källa.
 
-Spara frågan ovan som en `Data Warehouse View` skapar en ny tabell med båda [!DNL Facebook] och [!DNL AdWords] utgifter, liknande de nedan:
+Spara frågan ovan som en `Data Warehouse View` skapar en tabell med båda [!DNL Facebook] och [!DNL AdWords] utgifter, liknande de nedan:
 
 | **`id`** | **`ad_source`** | **`date`** | **`campaign`** | **`spend`** | **`impressions`** | **`clicks`** |
 |--- |--- |--- |--- |--- |--- |--- |
@@ -133,11 +133,11 @@ I stället för att skapa en separat uppsättning marknadsföringsstatistik för
 
 **Behöver du mer hjälp?**
 
-Skriver SQL och skapar `Data Warehouse Views` ingår inte i teknisk support.  Men Services-teamet erbjuder hjälp med att skapa vyer. För allt från migrering och konsolidering av en äldre databas med en ny databas till skapandet av en enda Data warehouse-vy för en specifik analys, är de lämpliga för att strukturera SQL-baserade lösningar för alla era datastrukturutmaningar.
+Skriver SQL och skapar `Data Warehouse Views` ingår inte i teknisk support. Men Services-teamet erbjuder hjälp med att skapa vyer. Allt från att migrera en äldre databas med en ny databas till att skapa en enda Data warehouse-vy för en specifik analys kan supportteamet hjälpa till.
 
-I de flesta fall skapas en ny `Data Warehouse View` för konsolidering av 2-3 likartat strukturerade tabeller kräver 5 timmars servicetid, vilket innebär ungefär 1 250 dollar i arbete. Nedan anges dock några vanliga faktorer som kan öka den förväntade investeringen:
+Oftast skapas en ny `Data Warehouse View` för konsolidering av 2-3 likartat strukturerade tabeller krävs fem timmars tid för tjänsterna, vilket innebär ungefär 1 250 dollar i arbete. Nedan anges dock några vanliga faktorer som kan öka den förväntade investeringen:
 
 * Konsolidering av mer än tre tabeller i en enda vy
-* Skapa mer än en vy i data warehouse
+* Skapa mer än en vy i Data warehouse
 * Komplexa föreningslogik eller filtervillkor
 * Konsolidering av två eller flera tabeller med olika datastrukturer

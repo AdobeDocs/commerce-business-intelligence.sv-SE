@@ -1,10 +1,10 @@
 ---
 title: Koppla rand
-description: Lär dig hur du hanterar och håller reda på företagets betalningar och fakturadata.
+description: Lär dig hur du hanterar och spårar företagets betalningar och fakturadata.
 exl-id: c038f2a9-b2bd-4e45-93f9-12d2e5077b31
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '175'
+source-wordcount: '170'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ![](../../../assets/stripe-logo.png)
 
-[!DNL Stripe] gör att du kan hantera och hålla reda på företagets betalningar och fakturadata. Koppla samman [!DNL Stripe] konto till [!DNL MBI] är en enkel tvåstegsprocess:
+[!DNL Stripe] gör att du kan hantera och spåra företagets betalningar och fakturadata. Koppla samman [!DNL Stripe] konto till [!DNL MBI] är en enkel tvåstegsprocess:
 
 1. [Lägg till [!DNL Stripe] som en datakälla i [!DNL MBI]](#stepone)
 1. [Tillåt [!DNL MBI] åtkomst till [!DNL Stripe] Data](#steptwo)
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 1. Gå till `Connections` sida under **[!UICONTROL Admin** > **Connections]**.
 1. Klicka **[!UICONTROL Add a Data Source]**, som finns till höger på skärmen ovanför `Data Sources` tabell.
-1. Klicka på [!DNL Stripe] ikon. Det här visar `[!DNL Stripe] authorization` sida.
+1. Klicka på [!DNL Stripe] ikon. Här visas `[!DNL Stripe] authorization` sida.
 1. Klicka **[!UICONTROL Connect with Stripe]**.
 
 ## Tillåt [!DNL MBI] åtkomst till [!DNL Stripe] data {#steptwo}

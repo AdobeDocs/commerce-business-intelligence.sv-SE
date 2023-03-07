@@ -2,9 +2,9 @@
 title: Hantera instrumentpaneler
 description: Lär dig hur du hanterar användarbehörigheter för kontrollpaneler som du äger, tar bort kontrollpaneler som du inte längre behöver och anger en standardkontrollpanel.
 exl-id: 32c21093-2a7d-4d8e-afc0-19bd702f9b36
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '275'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 >
 >Kräver [Administratörsbehörigheter](../../administrator/user-management/user-management.md).
 
-I **[!DNL Manage Data** > **Dashboards]** kan du hantera användarbehörigheter för kontrollpaneler som du äger, ta bort kontrollpaneler som du inte längre behöver och ange en standardkontrollpanel. Här följer en kort titt på vad vi beskriver i den här artikeln:
+I **[!DNL Manage Data** > **Dashboards]** kan du hantera användarbehörigheter för kontrollpaneler som du äger, ta bort kontrollpaneler som du inte längre behöver och ange en standardkontrollpanel. I den här artikeln:
 
 1. [Byta namn på instrumentpaneler](#rename)
 
@@ -53,7 +53,7 @@ Användarbehörigheter kan ändras på ett av två sätt - för alla användare 
 
 Så här ändrar du standardinstrumentpanelen för kontot:
 
-1. Klicka på namnet på kontrollpanelen som du vill använda som standard.
+1. Klicka på namnet på den kontrollpanel som du vill använda som standard.
 
 1. Klicka **[!UICONTROL Make Default]**.
 

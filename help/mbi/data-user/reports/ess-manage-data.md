@@ -2,16 +2,16 @@
 title: Hantera data
 description: Lär dig hur du använder Hantera data.
 exl-id: 6274eda4-d3ff-47b6-81d9-06ad4f150ef7
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '50'
+source-wordcount: '48'
 ht-degree: 0%
 
 ---
 
 # Hantera data
 
-Med Hantera data får du tillgång till en mängd verktyg för hantering av integreringar, rapporter och diagramdata, kontrollpaneler och export.
+Med Hantera data får du tillgång till olika verktyg för att hantera integreringar, rapporter och diagramdata, instrumentpaneler och exporter.
 
 ## För åtkomst `Manage Data`:
 

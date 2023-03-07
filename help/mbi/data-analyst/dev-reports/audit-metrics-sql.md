@@ -2,9 +2,9 @@
 title: Arbeta med SQL Report Builder
 description: Lär dig hur du granskar data och mätvärden med SQL Report Builder så att du kan jämföra resultaten med data från din lokala databas.
 exl-id: d1d9e099-4138-43e6-aaec-6f15ebc5c4d4
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '519'
+source-wordcount: '514'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ The `SQL Report Builder` används främst för att skapa nya rapporter och itere
 
 ## Fråga ett mått
 
-Öppna `SQL Report Builder` genom att navigera till **[!UICONTROL Report Builder > SQL Report Builder > Create Report]**. Du kan använda sidofältet i SQL-redigeraren för att infoga ett mått direkt i frågan genom att hålla markören över mätvärdet och klicka **[!UICONTROL Insert]**. Då läggs frågedefinitionen för det måttet till i redigeraren. Definitionen kommer att innehålla följande komponenter:
+Öppna `SQL Report Builder` genom att navigera till **[!UICONTROL Report Builder > SQL Report Builder > Create Report]**. Du kan använda sidofältet i SQL-redigeraren för att infoga ett mått direkt i frågan genom att hålla markören över mätvärdet och klicka **[!UICONTROL Insert]**. Då läggs frågedefinitionen för det måttet till i redigeraren. Definitionen innehåller följande komponenter:
 
 - The **måttåtgärd** som utförs, vilket anges av SUM() i exemplet nedan.
 - The **tabell på** vilket mätvärdet är skapat, vilket anges av FROM-satsen.
@@ -28,13 +28,13 @@ Om du vill få en tydligare vy över frågan kan du ändra hur den visas i fråg
 
 ## Begränsa frågan
 
-Om du försöker hitta en viss diskrepans eller datauppsättning bör du begränsa frågan till ett visst prov för att kontrollera mot den lokala databasen. Du kan göra detta genom att redigera frågan så att den matchar dina önskade begränsningar. I följande exempel begränsar vi frågan till att endast inkludera intäkter från 1 januari 2013 eller senare. När du har uppdaterat frågan väljer du **[!UICONTROL Run Query]** igen för att uppdatera resultaten.
+Om du försöker hitta en viss diskrepans eller datauppsättning bör du begränsa frågan till ett visst prov för att kontrollera mot den lokala databasen. Du kan göra detta genom att redigera frågan så att den matchar dina önskade begränsningar. I följande exempel begränsar du frågan till att endast inkludera intäkter från 1 januari 2013 eller senare. När du har uppdaterat frågan väljer du **[!UICONTROL Run Query]** igen för att uppdatera resultaten.
 
 ![](../../assets/restricting-query.gif)
 
 ## Spara och exportera
 
-När rapporten uppfyller dina behov kan du spara den på en kontrollpanel genom att ge rapporten ett tydligt namn och klicka på **[!UICONTROL Save]** och välja vilken typ av rapport du vill spara och kontrollpanelen. När vi granskar mätvärden rekommenderar vi att du sparar rapporten som `Table` och spara det på en testpanel.
+När rapporten uppfyller dina behov kan du spara den på en kontrollpanel genom att ge rapporten ett tydligt namn och klicka på **[!UICONTROL Save]** och välja vilken typ av rapport du vill spara och kontrollpanelen. När du granskar mätvärden rekommenderar Adobe att du sparar rapporten som `Table` och spara det på en testpanel.
 
 När rapporten har sparats navigerar du till den instrumentpanelen genom att välja `Go to Dashboard`. Därifrån kan du exportera data genom att hitta rapporten och välja **[!UICONTROL Options gear > Full `.csv`Exportera]** eller **[!UICONTROL Full Excel Export]**.
 
@@ -46,4 +46,4 @@ Du kan också skriva egna frågor och exportera resultaten som ska jämföras me
 
 ### Fortfarande stumpen?
 
-Om du upptäcker en diskrepans efter att ha granskat dina data kan du titta på [Kontakta support: Dataavvikelser](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies.html?lang=en) om du vill ha mer information om vad du ska göra härnäst.
+Om du hittar en diskrepans efter att ha granskat dina data kan du titta på [Kontakta support: Dataavvikelser](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies.html?lang=en) om du vill ha mer information om vad du ska göra härnäst.

@@ -2,22 +2,22 @@
 title: Förväntad analys av livstidsvärde (LTV) för Pro
 description: Lär dig hur du skapar en kontrollpanel som hjälper dig att förstå kundens livstidsvärde och kundernas förväntade livstidsvärde.
 exl-id: e353b92a-ff3b-466b-b519-4f86d054c0bc
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '317'
 ht-degree: 0%
 
 ---
 
 # Förväntad analys av livstidsvärde
 
-I den här artikeln visar vi hur du skapar en kontrollpanel som hjälper dig att förstå kundens livstidsvärde och förväntat livstidsvärde för dina kunder.
+Den här artikeln visar hur du skapar en kontrollpanel som hjälper dig att förstå kundens livstidsvärde och kundernas förväntade livstidsvärde.
 
 ![](../../assets/exp-lifetim-value-anyalysis.png)
 
 Den här analysen är endast tillgänglig för Pro-kontokunder med den nya arkitekturen. Om ditt konto har åtkomst till `Persistent Views` funktionen under `Manage Data` på den nya arkitekturen och följer instruktionerna här för att själv bygga denna analys.
 
-Innan du börjar vill du bekanta dig med våra [cohort report builder.](../dev-reports/cohort-rpt-bldr.md)
+Innan du börjar, vill du bekanta dig med [cohort report builder.](../dev-reports/cohort-rpt-bldr.md)
 
 ## Beräknade kolumner
 
@@ -151,6 +151,6 @@ Annan diagraminformation
 * [!UICONTROL Cohort date]: `Customer's first order date`
 * [!UICONTROL Perspective]: `Cumulative average value per cohort member`
 
-När du har kompilerat alla rapporter kan du ordna dem på kontrollpanelen som du vill. Slutresultatet kan se ut som bilden överst på sidan.
+När du har kompilerat alla rapporter kan du ordna dem på kontrollpanelen som du vill. Resultatet kan se ut som bilden överst på sidan.
 
-Om du stöter på några frågor när du bygger upp den här analysen, eller bara vill engagera vårt team med professionella tjänster, [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Om du stöter på några frågor när du skapar den här analysen eller bara vill engagera Professional Services-teamet, [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

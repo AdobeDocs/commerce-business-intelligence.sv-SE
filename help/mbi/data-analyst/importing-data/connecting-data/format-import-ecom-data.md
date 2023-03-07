@@ -2,16 +2,16 @@
 title: Formatera och importera e-handelsdata
 description: Lär dig de idealiska dataformat som ska användas för att överföra e-handelsdata.
 exl-id: 7b910f78-9a5a-4d5d-a8b7-1b0b76304afe
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '459'
 ht-degree: 0%
 
 ---
 
 # Formatera och importera data
 
-Om du använder en integrering som för närvarande inte stöds av [!DNL MBI]kan du fortfarande använda [Filöverföring](using-file-uploader.md) för att få in data i data warehouse. I den här artikeln går vi igenom de idealiska dataformat som ska användas för att överföra e-handelsdata.
+Om du använder en integrering som för närvarande inte stöds av [!DNL MBI]kan du fortfarande använda [Filöverföring](using-file-uploader.md) för att få in data i Data warehouse. I den här artikeln beskrivs de idealiska dataformat som ska användas för att överföra e-handelsdata.
 
 ## `Orders` table
 
@@ -19,16 +19,16 @@ The `orders` tabellen ska innehålla en rad för varje transaktion som företage
 
 | Kolumnnamn | Beskrivning |
 |----|----|
-| `Order ID` | Orderns ID ska vara unikt för varje rad i tabellen. Dessutom är detta vanligtvis tabellens primärnyckel. |
+| `Order ID` | Orderns ID ska vara unikt för varje rad i tabellen. Detta är vanligtvis tabellens primärnyckel. |
 | `Customer` | Kunden som gjorde beställningen. |
 | `Order total` | Summan av ordern. Detta kan vara en beräkningsbaserad kolumn där värden i andra kolumner - t.ex. delsumma och frakt - utgör summan för den här kolumnen. |
 | `Currency` | Valutan som ordern har betalats i. Inkludera om relevant. |
-| ` Order status` | Orderns status, till exempel `In Progress`, `Refunded`, eller `Complete`. Värdet för den här kolumnen ändras troligen (om det inte är fullständigt). Nya och uppdaterade data kan importeras med [Funktionen Lägg till data](../../../data-analyst/importing-data/connecting-data/using-file-uploader.md) på `File Uploads` sida. |
+| ` Order status` | Orderns status, till exempel `In Progress`, `Refunded`, eller `Complete`. Värdet för den här kolumnen ändras (om den inte är fullständig). Nya och uppdaterade data kan importeras med [Funktionen Lägg till data](../../../data-analyst/importing-data/connecting-data/using-file-uploader.md) på `File Uploads` sida. |
 | `Acquisition/marketing channel` | Förvärvs- eller marknadsföringskanalen som kunden som beställde refererades till. |
 | `Order datetime` | Datum och tid då ordern skapades. |
 | `Order updated at` | Datum och tid då den senaste ändringen av orderposten gjordes. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## `Order detail/items` table {#itemstable}
 
@@ -36,7 +36,7 @@ The `order_detail / items` tabellen ska innehålla en rad för varje distinkt ob
 
 | Kolumnnamn | Beskrivning |
 |----|----|
-| `Order item ID` | Orderartikel-ID ska vara unikt för varje rad i tabellen. Dessutom är detta vanligtvis `primary key` för tabellen. |
+| `Order item ID` | Orderartikel-ID ska vara unikt för varje rad i tabellen. Detta är vanligtvis `primary key` för tabellen. |
 | `Order ID` | Orderns ID. |
 | `Product ID` | Produktens ID. |
 | `Product name` | Produktens namn. |
@@ -49,7 +49,7 @@ The `customers` tabellen ska innehålla en rad för varje kundkonto. Potentiella
 
 | Kolumnnamn | Beskrivning |
 |----|----|
-| `Customer ID` | Kund-ID ska vara unikt för varje rad i tabellen. Dessutom är detta vanligtvis tabellens primärnyckel. |
+| `Customer ID` | Kund-ID ska vara unikt för varje rad i tabellen. Detta är vanligtvis tabellens primärnyckel. |
 | `Customer created at` | Datum och tid då kundens konto skapades. |
 | `Customer modified at` | Datum och tid då kundens konto senast ändrades. |
 | `Acquisition/marketing channel source` | Förvärvs- eller marknadsföringskanalen som kunden refererades till. |
@@ -62,7 +62,7 @@ The `subscriptions` tabellen ska innehålla en rad för varje prenumerationsbeta
 
 | Kolumnnamn | Beskrivning |
 |----|----|
-| `Subscription ID` | Prenumerations-ID ska vara unikt för varje rad i tabellen. Dessutom är detta vanligtvis tabellens primärnyckel. |
+| `Subscription ID` | Prenumerations-ID ska vara unikt för varje rad i tabellen. Detta är vanligtvis tabellens primärnyckel. |
 | `Customer ID` | ID för den kund som gjorde betalningen. |
 | `Payment amount` | Beloppet för prenumerationsbetalningen. |
 | `Start date` | Startdatum/tid för perioden som betalningen täcker. |

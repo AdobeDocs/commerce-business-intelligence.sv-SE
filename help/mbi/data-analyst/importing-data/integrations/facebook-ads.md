@@ -1,10 +1,10 @@
 ---
 title: Connect Facebook Ads
-description: Lär dig att analysera era annonsutgifter och se om era pengar används effektivt.
+description: Lär dig hur ni analyserar era annonsutgiftsdata och ser om era pengar används effektivt.
 exl-id: 219a868b-f17c-4299-9e29-94db9156c9b6
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '321'
+source-wordcount: '316'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Koppla era Facebook-annonser till [!DNL MBI] är en enkel process i tre steg:
 
 1. Lägg till [!DNL Facebook] integration till ditt konto, navigera till `Connections` sida under **[!UICONTROL Manage Data** > **Integrations]**.
 1. Klicka **[!UICONTROL Add Integration]**, som finns till höger på skärmen ovanför Data `Sources` tabell.
-1. Klicka på [!DNL Facebook] ikon. Det här visar [!DNL Facebook] auktoriseringssida.
+1. Klicka på [!DNL Facebook] ikon. Här visas [!DNL Facebook] auktoriseringssida.
 1. Klicka **[!UICONTROL Authorize]**.
 
 ## Tillåt [!DNL MBI] åtkomst till [!DNL Facebook Ads] data {#steptwo}
@@ -38,7 +38,7 @@ Efter klickning **[!DNL Facebook Authorize]** visas ett litet popup-fönster:
 
 ![](../../../assets/Facebook_Access_Popup.png)
 
-Du följer en serie steg för att tillåta [!DNL MBI] för att få tillgång till data från din offentliga profil, [!DNL Facebook Ads] och tillhörande statistik. Klicka **[!UICONTROL OK]** för att fortsätta.
+Följ en serie steg för att tillåta [!DNL MBI] för att få tillgång till data från din offentliga profil, [!DNL Facebook Ads] och relaterade statistik. Klicka **[!UICONTROL OK]** för att fortsätta.
 
 ## Välj [!DNL Facebook Ads] Konton för att hämta data {#stepthree}
 
@@ -48,9 +48,9 @@ Du följer en serie steg för att tillåta [!DNL MBI] för att få tillgång til
 
 1. Klicka **[!UICONTROL Save Connections]**.
 
-   Om anslutningen lyckas kan du *Anslutningen lyckades!* visas överst på sidan.
+   Om anslutningen lyckas kan du *Anslutningen lyckades!* visas högst upp på sidan.
 
-## vad kommer härnäst? {#next}
+## Vad kommer härnäst? {#next}
 
 Se till att du spårar [!DNL Facebook] kampanjer i [!DNL Google Analytics]. Detta säkerställer att `utm\_campaign` fält i [!DNL Google Analytics] är korrekt ifylld för [!DNL Facebook] kampanjer.
 
@@ -60,7 +60,7 @@ Se till att du spårar [!DNL Facebook] kampanjer i [!DNL Google Analytics]. Dett
 * [Koppla samman [!DNL Google Adwords] konto](../integrations/google-ecommerce.md)
 * [Spåra hänvisningskälla för order via [!DNL Google eCommerce]](../integrations/google-ecommerce.md)
 * [Spåra hänvisningskälla för användare i databasen](../../analysis/google-track-user-acq.md)
-* [Spåra användarenhets-, webbläsar- och operativsystemsdata i databasen](../../analysis/track-usr-dev-browser.md)
+* [Spåra användarenhetsdata, webbläsardata och operativsystemsdata i databasen](../../analysis/track-usr-dev-browser.md)
 * [Upptäck era mest värdefulla förvärvskällor och kanaler](../../analysis/most-value-source-channel.md)
 * [Öka avkastningen på era annonskampanjer](../../analysis/roi-ad-camp.md)
 * [Hur [!DNL Google Analytics] UTM-attribueringsarbete?](../../analysis/utm-attributes.md)

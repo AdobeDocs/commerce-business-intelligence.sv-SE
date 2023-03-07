@@ -2,16 +2,16 @@
 title: Skillnader mellan SQL och Data warehouse Manager
 description: Lär dig skillnaderna mellan SQL och Data warehouse Manager.
 exl-id: 31dd7a04-5c03-4399-b67e-f51703eb9fea
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '222'
 ht-degree: 0%
 
 ---
 
 # Skillnader mellan SQL och Data warehouse Manager
 
-Det finns två viktiga skillnader mellan kolumner som skapas i [SQL Report Builder](../dev-reports/sql-rpt-bldr.md) och de som skapats med [data warehouse Manager](../data-warehouse-mgr/creating-calculated-columns.md): ett är beroende av uppdateringscykler, det andra är hur kolumner sparas i ditt konto.
+Det finns två viktiga skillnader mellan kolumner som skapas i [SQL Report Builder](../dev-reports/sql-rpt-bldr.md) och de som skapats med [data warehouse Manager](../data-warehouse-mgr/creating-calculated-columns.md). Det ena är beroendet av uppdateringscykler och det andra är hur kolumner sparas i ditt konto.
 
 ## Kolumner i `SQL Report Builder`
 
@@ -23,4 +23,4 @@ Kolumnerna är inte beroende av uppdateringscykler, så du behöver inte längre
 
 ## Kolumner i Data warehouse Manager
 
-Kolumnerna är beroende av uppdateringscykler, så en fullständig cykel måste slutföras innan de kan redigeras. De här kolumnerna sparas i Data warehouse Manager och kan användas i den traditionella `Report Builder` eller `SQL Report Builder`.
+Kolumner är beroende av uppdateringscykler, så en fullständig cykel måste slutföras innan de kan redigeras. De här kolumnerna sparas i Data warehouse Manager och kan användas i den traditionella `Report Builder` eller `SQL Report Builder`.

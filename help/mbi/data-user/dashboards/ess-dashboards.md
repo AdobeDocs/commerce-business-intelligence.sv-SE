@@ -2,9 +2,9 @@
 title: Kontrollpaneler
 description: Lär dig hur du skapar och arbetar med en kontrollpanel.
 exl-id: a872344b-ac66-41eb-a471-5a69f8802527
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '622'
 ht-degree: 0%
 
 ---
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 [!DNL MBI] På kontrollpanelerna får du en snabb överblick över butikens resultat och försäljningsaktiviteter. Enskilda kontrollpaneler kan delas med andra användare och organiseras i logiska grupper. Du kan också ange olika behörighetsnivåer för andra användare.
 
-Det är enkelt att skapa en ny rapport, lägga till den på en kontrollpanel och exportera data till Excel. Du kan ändra storlek på diagram och rapporter och dra dem till rätt position på kontrollpanelen.
+Det är enkelt att skapa en rapport, lägga till den på en kontrollpanel och exportera data till Excel. Du kan ändra storlek på diagram och rapporter och dra dem till rätt position på kontrollpanelen.
 
 ![Kontrollpanel](../../assets/magento-bi-report-builder-revenue-by-products-formula-report-holiday-sales-dashboard.png)
 
 ## Skapa instrumentpaneler {#createdash}
 
-Instrumentpaneler är i stort sett delbara, tematiska samlingar för de analyser du skapar i Report Builder. Så här kan du uppmuntra ditt team att samarbeta och upprätthålla en enda källa till sanning i hela organisationen.
+Instrumentpaneler är delbara, tematiska samlingar för de analyser du skapar i Report Builder. Så här kan du uppmuntra ditt team att samarbeta och upprätthålla en enda källa till sanning i hela organisationen.
 
 *Om du är administratör eller standardanvändare* kan du skapa en kontrollpanel genom att klicka på `Dashboard Options` listruta och välja `Create New dashboard`.
 
@@ -27,7 +27,7 @@ Hur de instrumentpaneler du skapar ser ut beror helt på dig. Du kan ordna och �
 
 ![ordna element för att ändra storlek på instrumentpanel](../../assets/arrange_resize_dashboard_element.gif)
 
-### Skapa en ny instrumentpanel
+### Skapa en instrumentpanel
 
 1. På menyn klickar du på **[!UICONTROL Dashboards]**.
 
@@ -39,7 +39,7 @@ Hur de instrumentpaneler du skapar ser ut beror helt på dig. Du kan ordna och �
 
    * Ange `Name` för din instrumentpanel.
 
-   * Skapa en ny `Group` Ange namnet på gruppen för instrumentpanelen.
+   * Skapa en `Group` Ange namnet på gruppen för instrumentpanelen.
 
       Om din Commerce-installation till exempel har flera butiksvyer kan du skapa en grupp för varje butiksvy.
 
@@ -76,7 +76,7 @@ I **[!DNL Manage Data** > **Dashboards]** kan du hantera användarbehörigheter 
 
 ### Dela dina instrumentpaneler {#sharingdash}
 
-Skala [!DNL MBI] i hela organisationen och ge värdefulla insikter rekommenderar vi att du delar kontrollpaneler som du skapar med andra teammedlemmar. *Du kan dela kontrollpaneler som du äger* genom att klicka på `Share Dashboard` längst upp på sidan.
+Skala [!DNL MBI] i hela organisationen och ger värdefulla insikter rekommenderar Adobe att du delar instrumentpaneler som du skapar med andra teammedlemmar. *Du kan dela kontrollpaneler som du äger* genom att klicka på `Share Dashboard` längst upp på sidan.
 
 När du delar en kontrollpanel kan du tilldela behörigheter i hela organisationen ELLER på individnivå, vilket innebär att du får bestämma vem som ska kunna visa och redigera dina rapporter.
 

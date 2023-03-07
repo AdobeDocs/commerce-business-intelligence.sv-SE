@@ -2,7 +2,7 @@
 title: Skapa automatiska e-postsammanfattningar
 description: Lär dig hur du skapar automatiska e-postsammanfattningar.
 exl-id: a9aea4fc-9193-467f-8554-3ad77ac3fa73
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
 source-wordcount: '521'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Skapa automatiska e-postsammanfattningar
 
-E-postsammanfattningar är ett kraftfullt kommunikationsverktyg som du kan använda för att dela aktuell status och trender i din verksamhet med viktiga intressenter. Med e-postsammanfattningar kan du:
+E-postsammanfattningar är ett kraftfullt kommunikationsverktyg som du kan använda för att dela status och trender i din verksamhet med viktiga intressenter. Med e-postsammanfattningar kan du:
 
 * E-posta grafiska sammanfattningar som innehåller rapporter
 * Inkludera eller exkludera e-postsammanfattningens författare från att ta emot e-postmeddelandet
@@ -32,7 +32,7 @@ E-postsammanfattningar är ett kraftfullt kommunikationsverktyg som du kan anvä
 
 1. I `Choose Content` markerar du de rapporter som du vill ta med i sammanfattningen.
 
-   Du kan välja upp till 10 rapporter som du äger. När du har valt en rapport använder du de ikoner som visas för att välja om du vill att rapporten ska skickas som en tabell eller ett diagram. Om du sparade rapporten som ett nummer kan du bara skicka den som ett nummer. Information om hur du skickar en e-postsammanfattning som innehåller en rapport med inaktuella data finns i [Hantera dina kontoinställningar](../../administrator/account-management/managing-account-settings.md).
+   Du kan välja upp till tio rapporter som du äger. När du har valt en rapport använder du de ikoner som visas för att välja om du vill att rapporten ska skickas som en tabell eller ett diagram. Om du sparade rapporten som ett nummer kan du bara skicka den som ett nummer. Information om hur du skickar en e-postsammanfattning som innehåller en rapport med inaktuella data finns i [Hantera dina kontoinställningar](../../administrator/account-management/managing-account-settings.md).
 
    >[!NOTE]
    >

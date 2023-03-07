@@ -1,17 +1,17 @@
 ---
 title: Förstå och utvärdera tabellrelationer
-description: Lär dig hur du förstår hur många möjliga förekomster i en tabell som kan tillhöra en enhet i en annan, och vice versa.
+description: Lär dig hur du förstår hur många möjliga förekomster i en tabell som kan tillhöra en enhet i en annan.
 exl-id: e7256f46-879a-41da-9919-b700f2691013
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '965'
 ht-degree: 0%
 
 ---
 
 # Förstå och utvärdera tabellrelationer
 
-När du utvärderar relationen mellan två angivna tabeller måste du förstå hur många möjliga förekomster i en tabell som kan tillhöra en enhet i en annan, och vice versa. Låt oss till exempel använda en `users` tabell och en `orders` tabell. I det här fallet vill du veta hur många **order** en given **användare** har placerats ut och hur många som är möjliga **användare** en **order** kan tillhöra.
+När du utvärderar relationen mellan två angivna tabeller måste du förstå hur många möjliga förekomster i en tabell som kan tillhöra en enhet i en annan, och vice versa. Använd till exempel en `users` tabell och en `orders` tabell. I det här fallet vill du veta hur många **order** en given **användare** har placerats ut och hur många som är möjliga **användare** en **order** kan tillhöra.
 
 Förståelse av relationer är avgörande för att upprätthålla dataintegriteten, eftersom det påverkar precisionen i dina [beräknade kolumner](../data-warehouse-mgr/creating-calculated-columns.md) och [dimensioner](../data-warehouse-mgr/manage-data-dimensions-metrics.md). Mer information finns på [relationstyper](#types) och [hur du utvärderar tabellerna i Data warehouse.](#eval)
 
@@ -25,9 +25,9 @@ Det finns tre typer av relationer mellan två tabeller:
 
 ### `One-to-One` {#onetoone}
 
-I en `one-to-one` relation, en post i tabell `B` tillhör en och endast en post i tabellen `A`. Och en post i tabellen `A` tillhör en och endast en post i tabellen `B`.
+I en `one-to-one` relation, en post i tabell `B` tillhör endast en post i tabellen `A`. Och en post i tabellen `A` tillhör endast en post i tabellen `B`.
 
-I förhållandet mellan person och körkortsnummer kan en person t.ex. bara ha ett körkortsnummer och ett körkortsnummer tillhör en och endast en person.
+I förhållandet mellan människor och körkortsnummer kan en person t.ex. bara ha ett körkortsnummer och ett körkortsnummer tillhör endast en person.
 
 ![](../../assets/one-to-one.png)
 
@@ -47,22 +47,22 @@ Fundera på relationen mellan **produkter** och **kategorier**: en produkt kan t
 
 ## Utvärdera dina tabeller {#eval}
 
-Med tanke på vilka typer av relationer som finns mellan tabeller kan du lära dig hur du utvärderar tabellerna i data warehouse. När de här relationerna utformar hur flertabellskalkylerade kolumner definieras är det viktigt att du förstår hur du identifierar tabellrelationer och vilken sida - `one` eller `many` - tabellen tillhör.
+Med tanke på vilka typer av relationer som finns mellan tabeller kan du lära dig hur du utvärderar tabellerna i Data warehouse. När de här relationerna utformar hur flertabellskalkylerade kolumner definieras är det viktigt att du förstår hur du identifierar tabellrelationer och vilken sida - `one` eller `many` - tabellen tillhör.
 
-Det finns två metoder som du kan använda för att utvärdera relationen mellan ett givet tabellpar i Data warehouse. Den första metoden använder en [konceptuellt ramverk](#concept) som beaktar hur tabellens enheter interagerar med varandra. Den andra metoden använder [tabellschema](#schema).
+Det finns två metoder som du kan använda för att utvärdera relationerna mellan ett givet tabellpar i Data warehouse. Den första metoden använder en [konceptuellt ramverk](#concept) som beaktar hur tabellens enheter interagerar med varandra. Den andra metoden använder [tabellschema](#schema).
 
 ### Använda konceptuella ramverk {#concept}
 
 Den här metoden använder ett konceptuellt ramverk för att beskriva hur enheter i de två tabellerna kan interagera med varandra. Det är viktigt att förstå att detta ramverk bedömer vad som är möjligt, med tanke på relationen.
 
-När du till exempel tänker på användare och beställningar bör du tänka på allt som är möjligt i relationen. En registrerad användare får inte göra några beställningar, bara en beställning eller flera beställningar under sin livstid. Om du precis har startat din verksamhet och inga beställningar har gjorts ännu är det fortfarande möjligt att en viss användare kan göra många beställningar under sin livstid och tabellerna är byggda för att passa detta.
+När du till exempel tänker på användare och beställningar bör du tänka på allt som är möjligt i relationen. En registrerad användare får inte göra några beställningar, bara en beställning eller flera beställningar under sin livstid. Om du har startat din verksamhet och inga beställningar har gjorts är det möjligt att en viss användare kan göra många beställningar under sin livstid. Tabellerna är byggda för att passa detta.
 
 Så här använder du den här metoden:
 
 1. Identifiera den enhet som beskrivs i varje tabell. **Tips: det är vanligtvis ett substantiv**. Till exempel `user` och `orders` tabeller beskriver uttryckligen användare och order.
-1. Identifiera det eller de verb som beskriver hur dessa enheter interagerar. När man jämför användare med beställningar lägger man order. I den andra riktningen&quot;tillhör&quot; order användare.
+1. Identifiera ett eller flera verb som beskriver hur dessa enheter interagerar. När man jämför användare med beställningar lägger man order. I den andra riktningen&quot;tillhör&quot; order användare.
 
-Den här typen av ramverk kan användas på alla tabellpar i Data warehouse, vilket gör att du enkelt kan identifiera vilken typ av relation det är samt vilken tabell som är en sida och vilken tabell som är en många.
+Den här typen av ramverk kan användas på alla tabellpar i Data warehouse. På så sätt kan du enkelt identifiera relationstypen och vilken tabell som är en sida och vilken tabell som är en många.
 
 När du har identifierat terminologin som beskriver hur de två tabellerna interagerar bildruta interaktionen i båda riktningarna genom att överväga hur en viss instans av den första entiteten relaterar till den andra. Här är några exempel på varje relation:
 
@@ -76,7 +76,7 @@ Det här är en `one-to-one` relation där varje tabell är en sida.
 
 ### `One-to-Many`
 
-En viss order kan innehålla många artiklar. En given artikel tillhör en och endast en order.
+En viss order kan innehålla många artiklar. En given artikel tillhör endast en order.
 
 Det här är en `one-to-many` relation där ordertabellen är den ena sidan och artikeltabellen är många.
 
@@ -92,7 +92,7 @@ Det här är en `many-to-many` en relation där varje tabell är på många sido
 
 ### Använda tabellens schema {#schema}
 
-Den andra metoden utnyttjar tabellschemat. Schemat definierar vilka kolumner som är [`Primary`](http://en.wikipedia.org/wiki/Unique_key) och [`Foreign`](https://en.wikipedia.org/wiki/Foreign_key) nycklar. Du kan använda de här tangenterna för att länka samman tabeller och för att fastställa relationstyper.
+Den andra metoden använder tabellschemat. Schemat definierar vilka kolumner som är [`Primary`](https://en.wikipedia.org/wiki/Unique_key) och [`Foreign`](https://en.wikipedia.org/wiki/Foreign_key) nycklar. Du kan använda de här tangenterna för att länka samman tabeller och för att fastställa relationstyper.
 
 När du har identifierat kolumnerna som länkar samman två tabeller använder du kolumntyperna för att utvärdera tabellrelationen. Här är några exempel:
 
@@ -110,7 +110,7 @@ Till exempel en `users` tabellen kan fånga upp de flesta användarattribut (til
 >
 >Accepterar du gästbeställningar? Se [Gästorder](../data-warehouse-mgr/guest-orders.md) om du vill veta hur gästbeställningar kan påverka registerrelationerna.
 
-När tabeller länkas med en `Foreign key` peka på en `primary key`beskriver denna konfiguration `one-to-many` relation. Enda sidan blir tabellen som innehåller `primary key` och många kommer att vara tabellen som innehåller `foreign key`.
+När tabeller länkas med en `Foreign key` peka på en `primary key`beskriver denna konfiguration `one-to-many` relation. Den ena sidan är tabellen som innehåller `primary key` och många sidor är tabellen som innehåller `foreign key`.
 
 ![](../../assets/one-to-many1.png)
 

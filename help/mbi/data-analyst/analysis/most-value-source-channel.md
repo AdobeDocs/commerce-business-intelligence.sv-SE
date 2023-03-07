@@ -2,9 +2,9 @@
 title: Identifiera era mest värdefulla marknadsföringskällor och kanaler
 description: Läs om några rapporter som du kan använda för att identifiera dina mest värdefulla marknadsföringskanaler.
 exl-id: 8d25bc80-ea60-47db-b01b-04a23a24c14d
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '1009'
+source-wordcount: '979'
 ht-degree: 0%
 
 ---
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 Ni har undersökt er målgrupp, skapat kampanjen och investerat i några marknadsföringskanaler. Nu när tiden har gått, hur fungerar dessa kanaler? Vilken kanal har de senaste användarna fått? Vilken källa har bidragit mest till dina totala intäkter?
 
-Med [!DNL MBI]kan ni enkelt segmentera era intäkter och användare utifrån hänvisningskälla, oavsett om de motsvarar [!DNL [Google Analytics' UTM fields]](https://support.google.com/analytics/answer/1191184?hl=en) eller anpassade datafält. Denna segmentering gör att ni kan hitta de bästa kanalerna och investera er marknadsföringsbudget bättre.
+Med [!DNL MBI]kan ni enkelt segmentera era intäkter och användare utifrån hänvisningskälla, oavsett om de motsvarar [!DNL [Google Analytics' UTM fields]](https://support.google.com/analytics/answer/1191184?hl=en) eller anpassade datafält. Denna segmentering gör att ni kan hitta de kanaler som presterar bäst och investera er marknadsföringsbudget bättre.
 
-I den här artikeln utforskar vi några rapporter som du kan använda för att identifiera dina mest värdefulla marknadsföringskanaler:
+I den här artikeln beskrivs några rapporter som du kan använda för att identifiera dina mest värdefulla marknadsföringskanaler:
 
 * [Nya användare efter källor](#newusersbysource)
 * [Genomsnittlig intäkt för livstid per användarkälla](#avglifetimerev)
@@ -33,12 +33,12 @@ Att utvärdera hur hänvisningskällorna fungerar är avgörande för att avgör
 
 Skapa den här rapporten i [Report Builder](../../tutorials/using-visual-report-builder.md), lägg till **Nya användare** mått (eller ett motsvarande mått som räknar antalet nya användare över tiden) för rapporten. Gör sedan följande:
 
-1. Ange [!UICONTROL Time Period] till den registreringsperiod som du vill analysera.
+1. Ange [!UICONTROL Time Period] till registreringsperioden som du vill analysera.
 1. Ange [!UICONTROL Interval] till månadsvis.
 1. Ange [!UICONTROL Group By] till anskaffningskälla (eller hänvisningskälla) och välj de källor som du vill inkludera.
-1. I det här exemplet använde vi `stacked columns` [!UICONTROL chart type].
+1. I det här exemplet används `stacked columns` [!UICONTROL chart type].
 
-Här är en visuell genomgång:
+Här är en genomgång:
 
 ![Skapa en rapport för nya användare utifrån källa.](../../assets/New_Users_by_source.gif)
 
@@ -51,7 +51,7 @@ Om du vill skapa den här rapporten i Report Builder lägger du till **Genomsnit
 1. Ange [!UICONTROL Time Period] till den tidsperiod som du vill analysera.
 1. Ange [!UICONTROL Interval] till månadsvis.
    [!UICONTROL Group By] till anskaffningskälla (eller hänvisningskälla) och välj de källor som du vill inkludera.
-1. I det här exemplet använde vi `line chart` typ.
+1. I det här exemplet används `line chart` typ.
 
 Här är en genomgång:
 
@@ -61,14 +61,14 @@ I det här exemplet behandlas endast livstidsintäkter, men du kan också upprep
 
 ## Genomsnittligt ordervärde per användarkälla {#avgorderval}
 
-Om du vill få en bättre uppfattning om hur mycket pengar användare får från en viss anskaffningskälla kan du skapa en rapport som tittar på deras genomsnittliga ordervärde. På så sätt kan du spåra om användare som har förvärvats från en viss källa spenderar mer per order än användare från en annan källa.
+Om du vill få en bättre uppfattning om hur mycket pengar användare får från en viss anskaffningskälla kan du skapa en rapport som tittar på deras genomsnittliga ordervärde. På så sätt kan du spåra om användare som förvärvats från en viss källa spenderar mer per order än användare från en annan källa.
 
 Om du vill skapa den här rapporten i Report Builder lägger du till **Genomsnittligt ordervärde** och gör sedan följande:
 
-1. Ange [!UICONTROL Time Period] till den registreringsperiod som du vill analysera.
+1. Ange [!UICONTROL Time Period] till registreringsperioden som du vill analysera.
 1. Ange [!UICONTROL Time Interval] till månadsvis.
 1. Ange [!UICONTROL Group By] till anskaffningskälla (eller hänvisningskälla) och välj de källor som du vill inkludera.
-1. I det här exemplet använde vi **staplade kolumner** diagramtyp.
+1. I det här exemplet används **staplade kolumner** diagramtyp.
 
 Här är en genomgång:
 
@@ -76,14 +76,14 @@ Här är en genomgång:
 
 ## Totala intäkter per datum och källa för användarregistrering {#revbyregdateandsource}
 
-Med den analys av livstidsintäkten som vi gick igenom tidigare kan ni se de genomsnittliga livstidsintäkterna för användare som förvärvats från olika källor, men hur ser det ut med de totala livstidsintäkterna? Med den här rapporten kan du identifiera hur mycket av de totala intäkterna som användare registrerade under en viss tid och från en viss källa genererar.
+Med den analys av livstidsintäkten som gjordes tidigare kan du se de genomsnittliga livstidsintäkterna för användare som förvärvats från olika källor, men hur blir det med de totala livstidsintäkterna? Med den här rapporten kan du identifiera hur mycket av de totala intäkterna som användare registrerade under en viss tid och från en viss källa genererar.
 
 Om du vill skapa den här rapporten i Report Builder lägger du till `Revenue by user registration date` mätvärden. Om du inte har [skapade det här måttet](../../data-user/reports/ess-manage-data-metrics.md) kan du göra det genom att replikera `Revenue` mätvärden och ändra `time stamp` till användarens `creation date`. När du har lagt till måttet gör du följande:
 
-1. Ange [!UICONTROL Time Period] till den registreringsperiod som du vill analysera.
+1. Ange [!UICONTROL Time Period] till registreringsperioden som du vill analysera.
 1. Ange [!UICONTROL Time Interval] till månadsvis.
 1. Ange [!UICONTROL Group By] till anskaffningskälla (eller hänvisningskälla) och välj de källor som du vill inkludera.
-1. I det här exemplet använde vi `stacked columns` diagramtyp.
+1. I det här exemplet används `stacked columns` diagramtyp.
 
 Här är en genomgång:
 
@@ -91,18 +91,18 @@ Här är en genomgång:
 
 ## Upprepa order efter användarkälla {#repeatordersbysource}
 
-Rapporten för genomsnittligt ordervärde visar i genomsnitt hur mycket användare som har förvärvats från en viss källa när en order läggs. Den här rapporten visar dock inte om samma användare är återkommande kunder. Men med Källor för att upprepa beställningar kan du se om användare från en viss källa gör mer eller mindre upprepade inköp.
+I rapporten för genomsnittligt ordervärde visas i genomsnitt hur många användare som har förvärvats från en viss källa när en order läggs. Den här rapporten visar dock inte om samma användare är återkommande kunder. Men med Källor för att upprepa beställningar kan du se om användare från en viss källa gör mer eller mindre upprepade inköp.
 
 Skapa den här rapporten i [Report Builder](../../tutorials/using-visual-report-builder.md), lägg till **Antal order** och gör sedan följande:
 
-1. Ange [!UICONTROL Time Period] till den registreringsperiod som du vill analysera.
+1. Ange [!UICONTROL Time Period] till registreringsperioden som du vill analysera.
 1. Ange [!UICONTROL Time Interval] till månadsvis.
 1. Lägg till en [!UICONTROL filter] så att endast användare med upprepade order inkluderas:
 
    Användarens ordernummer är större än 1
 
 1. Ange [!UICONTROL Group By] till anskaffningskälla (eller hänvisningskälla) och välj de källor som du vill inkludera.
-1. I det här exemplet använde vi `stacked columns` diagramtyp.
+1. I det här exemplet används `stacked columns` diagramtyp.
 
 Här är en genomgång:
 
@@ -111,7 +111,7 @@ Här är en genomgång:
 
 ## Radbrytning {#wrapup}
 
-I den här artikeln har vi berört några analyser som du kan använda för att analysera värdet av era förvärv- och marknadsföringskanaler, men det här är bara toppen av isberget. Om du har gjort en kraftfull analys har vi inte tagit upp det här, låt oss berätta vad du gör i kommentarerna.
+Den här artikeln behandlar bara några analyser som du kan använda för att analysera värdet av era förvärv- och marknadsföringskanaler, men det här är bara toppen av isberget.
 
 ## Relaterad {#related}
 

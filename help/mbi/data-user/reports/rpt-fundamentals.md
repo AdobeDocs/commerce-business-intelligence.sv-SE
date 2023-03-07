@@ -2,9 +2,9 @@
 title: Använd en rapport
 description: Lär dig hur du använder rapportdata.
 exl-id: 94d4db27-0e06-4066-9c03-036b109d2d9b
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '1024'
+source-wordcount: '985'
 ht-degree: 0%
 
 ---
@@ -15,70 +15,70 @@ Använd rapporter i [!DNL MBI] för att hjälpa dig att besvara affärsfrågor -
 
 Hur ser den vägen från fråga till svar ut, exakt?
 
-Vi har kartlagt den vägen nedan för att hjälpa dig att visualisera processen. Det här avsnittet kommer att belysa både hur vi hanterar en analytisk fråga och den backend-logistik som krävs för att du ska få de data du behöver.
+För att hjälpa dig att visualisera den här processen mappas den vägen nedan. I det här avsnittet beskrivs hur du arbetar med en analytisk fråga och hur backend-logistik som krävs för att få tillgång till de data du behöver.
 
 ## Börja med frågan
 
-Vi vet att ni hela tiden ställer frågor för att förbättra er verksamhet, från att öka kundnöjdheten till att minska leveranskostnaderna. Vi kommer att fokusera på hur du kan översätta dina frågor till analyser som hjälper dig att fatta beslut.
+Ni vet att ni hela tiden ställer frågor för att förbättra er verksamhet, från att öka kundnöjdheten till att minska leveranskostnaderna. Ni fokuserar på hur ni kan översätta era frågor till analyser som hjälper er att fatta beslut.
 
-Vi antar till exempel att vi vill svara på följande fråga:
+I det här exemplet antar du att du vill svara på följande fråga:
 
 * Hur snabbt konverterar mina nya registranter?
 
 ## Identifiera ett mått
 
-Med den fråga vi har till hands är det dags att identifiera en lista med möjliga analyser och mätningar för att besvara frågan. I det här exemplet fokuserar du på följande mått:
+Det är dags att identifiera en lista med möjliga analyser och mått för att besvara frågan. I det här exemplet fokuserar du på följande mått:
 
 * Genomsnittlig tid från registrering till första inköpsdatum per användning.
 
-Detta visar den genomsnittliga tiden mellan registreringsdatumet och användarens första inköpsdatum och ger en uppfattning om hur användarna beter sig i det sista steget i konverteringsprocessen.
+Detta visar den genomsnittliga tiden som förfaller mellan registreringsdatumet och användarens första inköpsdatum och ger en uppfattning om hur användarna beter sig i det sista steget i konverteringsprocessen.
 
 ## Söka efter data
 
-Att förstå vad vi ska mäta är bara en del av vägen dit. För att utvärdera den genomsnittliga tiden från registrering till första inköpsdatum per användare måste vi identifiera alla datapunkter som vår åtgärd består av.
+Att förstå vad vi ska mäta är bara en del av vägen dit. Om du vill utvärdera den genomsnittliga tiden från registrering till första inköpsdatum per användare måste du identifiera alla datapunkter som måttet består av.
 
-Dela upp vårt mått i dess kärnkomponenter: vi behöver veta antalet registrerade personer, eller antalet, antalet personer som har köpt något, och tiden mellan dessa två händelser.
+Dela upp måttet i dess kärnkomponenter. Du måste känna till antalet, eller antalet, personer som har registrerat sig, antalet personer som har gjort ett köp och den tid som förflutit mellan dessa två händelser.
 
-På en högre nivå behöver vi veta var vi kan hitta dessa data i databasen, särskilt:
+På en högre nivå behöver du veta var dessa data finns i databasen, och särskilt:
 
 * Tabellen som registrerar en rad med data varje gång någon registrerar
-* Tabellen som registrerar en datarad varje gång någon gör ett köp
-* Kolumnen som kan användas för att förena eller referera till `purchase` tabellen till `customer` table - this will allow us know who made a purchase
+* Tabellen som registrerar en datarad som varje gång någon gör ett köp
+* Kolumnen som kan användas för att förena eller referera till `purchase` tabellen till `customer` tabell - det gör att vi vet vem som har gjort ett köp
 
-På en mer detaljerad nivå måste vi identifiera de exakta datafält som kommer att användas för denna analys:
+På en mer detaljerad nivå måste du identifiera de exakta datafält som används för den här analysen:
 
 * Datatabellen och kolumnen som innehåller en kunds registreringsdatum: till exempel `user.created\_at`
 * Datatabellen och kolumnen som innehåller ett inköpsdatum: till exempel `order.created\_at`
 
 ## Skapa datakolumner för analys
 
-Utöver de inbyggda datakolumner som beskrivs ovan behöver vi även en uppsättning beräknade datafält för att kunna utföra den här analysen, som:
+Utöver de inbyggda datakolumner som beskrivs ovan behöver du även en uppsättning beräknade datafält för att kunna utföra den här analysen, inklusive:
 
 * `Customer's first purchase date` som returnerar en specifik användares `MIN(order.created_at`)
 
-Den används sedan för att skapa:
+Det används sedan för att skapa:
 
-* `Time between a customer's registration date and first purchase date`, som returnerar en viss användares tid mellan registreringsdatumet och det första inköpsdatumet. Detta kommer att bli grunden för våra mätvärden senare.
+* `Time between a customer's registration date and first purchase date`, som returnerar en viss användares tid mellan registreringsdatumet och det första inköpsdatumet. Detta är grunden till mätvärdena senare.
 
-Båda dessa fält måste skapas på användarnivå (till exempel på `user` tabellen), så att genomsnittsanalysen kan normaliseras av användarna (dvs. nämnaren i den här genomsnittliga beräkningen är antalet användare).
+Båda dessa fält måste skapas på användarnivå (till exempel på `user` tabell). Detta gör att genomsnittsanalysen kan normaliseras av användarna (dvs. nämnaren i denna beräkning är antalet användare).
 
-Det är här [!DNL MBI] steg in! Du kan använda [!DNL MBI] data warehouse för att skapa kolumnerna ovan. Kontakta bara vårt analysteam och ge oss den specifika definitionen av dina nya kolumner så skapar vi dem. Du kan också utnyttja våra [Kolumnredigeraren](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md).
+Det är här [!DNL MBI] steg in! Du kan använda dina [!DNL MBI] data warehouse för att skapa kolumnerna ovan. Kontakta Adobe analysteam och ge oss en specifik definition av de nya kolumnerna som du ska skapa. Du kan också använda [Kolumnredigeraren](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md).
 
 Det är en god vana att undvika att skapa dessa beräknade datafält direkt i databasen eftersom det medför en onödig börda för produktionsservrarna.
 
 ## Skapa måttet
 
-Nu när vi har de datafält som krävs för vår analys är det dags att hitta eller skapa relevanta mätvärden för att skapa vår analys.
+Nu när du har de datafält som krävs för analysen är det dags att hitta eller skapa relevanta mätvärden för att skapa din analys.
 
-Här vet vi att vi matematiskt vill göra följande beräkning:
+Här vill du utföra följande beräkning:
 
 
 _[SUMMA `Time between a customer's registration date and first purchase date`] / [Totalt antal kunder som registrerat sig och köpt]_
 
-Och vi vill att beräkningen ska ritas över tiden, eller trendas, enligt kundens registreringsdatum. Så här gör du [skapa det här måttet](../../data-user/reports/ess-manage-data-metrics.md) in [!DNL MBI]:
+Och ni vill se den här beräkningen plottad över tid, eller trendmässigt, enligt kundens registreringsdatum. Så här gör du [skapa det här måttet](../../data-user/reports/ess-manage-data-metrics.md) in [!DNL MBI]:
 
 1. Gå till **[!UICONTROL Data]** och väljer `Metrics` -fliken.
-1. Klicka **[!UICONTROL Add New Metric]** och väljer `user` tabell (där vi skapade dimensionerna ovan).
+1. Klicka **[!UICONTROL Add New Metric]** och väljer `user` tabellen (där du skapade dimensionerna ovan).
 1. Välj `Average` på`Time between a customer's registration date and first purchase date` kolumn i `user` tabellen sorterad efter `Customer's registration date`  kolumn.
 1. Lägg till relevanta filter eller filteruppsättningar.
 
@@ -86,32 +86,32 @@ Det här måttet är nu klart.
 
 ## Skapa rapporten
 
-Med de nya måtten kan vi använda dem för att rapportera den genomsnittliga tiden mellan registrering och första inköpsdatum per registreringsdatum.
+Med de nya måtten kan du använda dem för att rapportera den genomsnittliga tiden mellan registrering och första inköpsdatum per registreringsdatum.
 
-Gå bara till valfri kontrollpanel och [skapa en ny rapport](../../data-user/reports/ess-manage-data-metrics.md) med de mått som skapas ovan.
+Gå bara till valfri kontrollpanel och [skapa en rapport](../../data-user/reports/ess-manage-data-metrics.md) med de mått som skapas ovan.
 
 ### `Visual Report Builder` {#visualrb}
 
-[The `Visual Report Builder`](../../data-user/reports/ess-rpt-build-visual.md) är det enklaste sättet att visualisera data. Om du inte är bekant med SQL eller bara vill skapa en rapport snabbt, är Visual Report Builder ditt bästa val. Med bara några klick kan ni lägga till mätvärden, segmentera data och skapa rapporter i hela organisationen. Det här alternativet är perfekt för såväl nybörjare som experter, eftersom det inte kräver någon teknisk expertis.
+[The `Visual Report Builder`](../../data-user/reports/ess-rpt-build-visual.md) är det enklaste sättet att visualisera data. Om du inte känner till SQL eller snabbt vill skapa en rapport är Visual Report Builder ditt bästa val. Med bara några klick kan ni lägga till mätvärden, segmentera data och skapa rapporter i hela organisationen. Det här alternativet är perfekt för såväl nybörjare som experter, eftersom det inte kräver någon teknisk expertis.
 
 |  |  |
 |--- |--- |
 | **Det här är perfekt för..** | **Det här är inte så bra för..** |
-| - Alla nivåer av analys/teknikerfarenhet<br>- Skapa rapporter snabbt<br>- Skapa analyser att dela med andra användare | - Analyser som kräver SQL-specifika funktioner<br>- Testa nya kolumner - beräknade kolumner är beroende av uppdateringscykler för den inledande datapifieringen, medan de som skapas med SQL inte är |
+| - Alla nivåer av analys/teknikerfarenhet<br>- Skapa rapporter snabbt<br>- Skapa analyser att dela med andra användare | - Analyser som kräver SQL-specifika funktioner<br>- Testning av nya kolumner - beräknade kolumner är beroende av uppdateringscykler för den inledande datapifieringen, medan de som skapas med SQL inte är det. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Rapportbeskrivningar och bilder
 
 #### Lägga till beskrivningar i rapporter
 
-När du skapar rapporter som ska delas med andra medlemmar i ditt team rekommenderar vi att du lägger till beskrivningar som gör att andra användare kan förstå din analys bättre.
+När du skapar rapporter som delas med andra medlemmar i ditt team rekommenderar Adobe att du lägger till beskrivningar som gör att andra användare kan förstå din analys bättre.
 
 1. Klicka **[!UICONTROL i]** överst i alla rapporter.
 1. Ange en beskrivning i ordrutan.
 1. Klicka **[!UICONTROL Save Description]**.
 
-Låt oss ta en titt:
+Se nedan:
 
 ![Diagrambeskrivning](../../assets/Chart_Description.gif)
 
@@ -122,8 +122,8 @@ Behöver du ta med en rapport i en presentation eller ett dokument? Alla rapport
 1. Klicka på kugghjulsikonen i det övre högra hörnet i en rapport.
 1. Välj `Enlarge`.
 1. När rapporten förstoras klickar du på **[!UICONTROL Download]** i rapportens övre högra hörn.
-1. Välj önskat bildformat i listrutan. Nedladdningen börjar omedelbart.
+1. Välj önskat bildformat i listrutan. Nedladdningen startar omedelbart.
 
-Ta en titt:
+Se nedan:
 
 ![](../../assets/exp-rep-as-image.gif)

@@ -1,10 +1,10 @@
 ---
 title: Förväntade Facebook Ads-data
-description: Lär dig en kort översikt över de tabeller vi rekommenderar att du synkroniserar med data warehouse
+description: Lär dig en kort översikt över de tabeller som rekommenderas att du synkroniserar med Data warehouse
 exl-id: 0c8b907b-1a98-470b-bb2c-55327e88e502
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '337'
 ht-degree: 0%
 
 ---
@@ -15,27 +15,27 @@ ht-degree: 0%
 
 Efter att du har [ansluten till din [!DNL Facebook Ads] konto](../integrations/facebook-ads.md)kan du använda [data warehouse Manager](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) för att enkelt spåra relevanta datafält för analys.
 
-I den här artikeln får du en kort översikt över de tabeller vi rekommenderar att du synkroniserar med data warehouse. Det här är inte en fullständig lista eftersom det finns många deltabeller. Vi lyfter bara fram de viktigaste tabellerna.
+I den här artikeln får du en kort översikt över de tabeller som Adobe rekommenderar att du synkroniserar med Data warehouse. Det här är inte en fullständig lista eftersom det finns många deltabeller. Det visar bara huvudtabellerna.
 
 ## Huvudtabeller för annonskampanjer
 
 Dessa tabeller innehåller data om viktiga komponenter i annonskampanjer.
 
-### [`facebook _campaigns_ (account-id)`](https://developers.facebook.com/docs/reference/ads-api/adcampaign/)
+### [`facebook _campaigns_ (account-id)`](https://developers.facebook.com/docs/marketing-api/reference/ad-campaign-group)
 
 Det här registret är huvudtabellen för kampanjer i en [!DNL Facebook Ads] konto. Kolumnerna innehåller `campaign id`, `name`, `status (active/paused)`, `objective`.
 
 ### [`facebook _adsets_ (account-id)`](https://developers.facebook.com/docs/marketing-api/reference/ad-campaign)
 
-Registerposterna är huvudtabellen i [!DNL Facebook Ads] Uppsättningar i en [!DNL Facebook Ads] konto. Kolumnerna innehåller annonsen `Campaign id/name` annonsuppsättningen tillhör, information om budget, budtyp, planering och målgruppsanpassning.
+Den här registerposten är huvudtabellen för [!DNL Facebook Ads] Uppsättningar i en [!DNL Facebook Ads] konto. Kolumnerna innehåller annonsen `Campaign id/name` annonsuppsättningen tillhör, information om budget, budtyp, planering och målgruppsanpassning.
 
-### [`facebook _ads_ (account-id)`](https://developers.facebook.com/docs/reference/ads-api/adgroup/)
+### [`facebook _ads_ (account-id)`](https://developers.facebook.com/docs/marketing-api/reference/adgroup)
 
-Det här registret registrerar alla annonser i en [!DNL Facebook Ads] konto. Kolumnerna innehåller annonsinformationen, inklusive annonsuppsättningen och annonskampanjen som den tillhör, annonsinbjudandena, annonsinriktningen och referensen till specifika kreativa (bild/text) som annonsen använder.
+Det här registret registrerar alla annonser i en [!DNL Facebook Ads] konto. Kolumnerna innehåller annonsinformation, inklusive annonsuppsättningen och annonskampanjen som den tillhör, annonsinbjudanden, annonsinriktning och referens till specifik kreativ (bild/text) som annonsen använder.
 
-### [`facebook _adcreative_ (account-id)`](https://developers.facebook.com/docs/reference/ads-api/adcreative/)
+### [`facebook _adcreative_ (account-id)`](https://developers.facebook.com/docs/marketing-api/reference/ad-creative)
 
-I den här tabellen registreras alla de kreativa som används i [!DNL Facebook Ads]. Dessa innehåller kreativa namn, beskrivning och relevanta bild-URL:er där det är lämpligt.
+Det här registret registrerar kreatörer som används i [!DNL Facebook Ads]. Creative Cloud innehåller kreativa namn, beskrivning och relevanta bild-URL:er där det är lämpligt.
 
 ## Segmenterade kampanjtabeller
 

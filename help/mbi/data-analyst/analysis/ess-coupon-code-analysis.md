@@ -2,9 +2,9 @@
 title: Kupongkodanalys (grundläggande)
 description: Läs mer om hur ert företag presterar i form av kuponger är ett intressant sätt att segmentera era order och bättre förstå kundernas vanor.
 exl-id: 0d486259-b210-42ae-8f79-cd91cc15c2c2
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '438'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Att förstå hur ert företag presterar i form av kuponger är ett intressant sätt att segmentera era order och bättre förstå kundernas vanor.
 
-Vi har dokumenterat de steg som krävs för att skapa den här analysen för att förstå hur kupongköpta kunder fungerar, se trender och spåra användningen av enskilda kupongkoder.
+I den här artikeln beskrivs de steg som krävs för att skapa den här analysen för att förstå hur kupongköpta kunder fungerar, se trender och spåra användningen av enskilda kupongkoder.
 
 ![](../../assets/coupon_analysis_dash_720.png)<!--{: width="807" height="471"}-->
 
@@ -45,7 +45,7 @@ Det första steget är att skapa ett nytt mått med följande steg:
    * Navigera till [!UICONTROL Dashboards > Dashboard Options > Create New Dashboard]**.
    * Ge instrumentpanelen ett namn som `_Coupon Analysis_`.
 
-* Det är här vi skapar och lägger in alla rapporter.
+* Här skapar du och lägger till alla rapporter.
 
 ## Skapar rapporter
 
@@ -53,7 +53,7 @@ Det första steget är att skapa ett nytt mått med följande steg:
 
 >[!NOTE]
 >
->The [!UICONTROL Time Period]** för varje rapport anges som `All-time`. Du kan ändra detta efter dina analysbehov. Vi rekommenderar att alla rapporter på den här instrumentpanelen täcker samma tidsperiod, till exempel `All time`, `Year-to-date`, eller `Last 365 days`.
+>The [!UICONTROL Time Period]** för varje rapport anges som `All-time`. Du kan ändra detta efter dina analysbehov. Adobe rekommenderar att alla rapporter på kontrollpanelen täcker samma tidsperiod, till exempel `All time`, `Year-to-date`, eller `Last 365 days`.
 
 * **Beställningar med kuponger**
    * 
@@ -129,15 +129,15 @@ Det första steget är att skapa ett nytt mått med följande steg:
       * Lägg till filter:
          * [`A`] `coupon_code` **ÄR INTE**`[NULL]`
          * [`B`] `Customer's order number` **Lika med** `1`
-   * Skapa ny formel: `Gross revenue`
+   * Skapa formel: `Gross revenue`
       * [!UICONTROL Formula]: `(B – C)`
       * 
          [!UICONTROL Format]: `Currency`
-   * Skapa ny formel:**% rabatt**
+   * Skapa formel:**% rabatt**
       * Formel: `(C / (B - C))`
       * 
          [!UICONTROL Format]: `Percentage`
-   * Skapa ny formel: `Average order discount`
+   * Skapa formel: `Average order discount`
       * [!UICONTROL Formula]: `(C / A)`
       * 
          [!UICONTROL Format]: `Percentage`

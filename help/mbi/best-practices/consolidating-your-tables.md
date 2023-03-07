@@ -2,9 +2,9 @@
 title: Konsolidera dina tabeller
 description: Lär dig hur du konsoliderar tabeller och databaser.
 exl-id: 6065bed3-fb84-4147-a223-92dc3e1b15a5
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: '469'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Nedan beskrivs när det kan vara lämpligt att använda konsoliderade tabeller i
 
 Om du säljer produkter under olika varumärken och webbplatser är det troligt att tabellerna för varje varumärke eller webbplats är strukturerade på liknande sätt.
 
-Du kan till exempel ha en `orders` tabell för webbplats `A` och en separat, men liknande, `orders` tabell för webbplats `B`. I den här situationen kan det vara användbart att konsolidera `orders` tabeller från webbplats `A` och `B` så att ni kan se de samlade intäkterna och antalet beställningar från webbplatsen `A` och `B`, förutom att kunna segmentera mätvärden på dessa två webbplatser.
+Du kan till exempel ha en `orders` tabell för webbplats `A` och en separat, men liknande, `orders` tabell för webbplats `B`. I den här situationen kan det vara användbart att konsolidera `orders` tabeller från webbplats `A` och `B`. På så sätt kan du se de samlade intäkterna och antalet beställningar från webbplatsen `A` och `B`, förutom att kunna segmentera mätvärden på dessa två webbplatser.
 
 ### Integrera äldre data
 
@@ -39,11 +39,11 @@ Tänk dig en webbplats där användarna kan göra flera saker: ta en undersökni
 
 Du kan använda konsoliderade tabeller för att skapa en enhetlig lista över alla användare och när någon av dessa händelser ägde rum. Du kan sedan köra frågor i den konsoliderade tabellen för att enkelt utföra en sådan analys.
 
-Precis som med alla andra tabeller i data warehouse kan du lägga till ytterligare kolumner för att driva olika typer av diagram och analyser.
+Precis som med alla andra tabeller i Data warehouse kan du lägga till ytterligare kolumner för att driva olika typer av diagram och analyser.
 
 ## Skapa, visa eller uppdatera en konsoliderad tabell
 
-Om du vill lägga till en konsoliderad tabell i data warehouse kontaktar du [!DNL MBI] [support](../guide-overview.md).
+Om du vill lägga till en konsoliderad tabell i Data warehouse kontaktar du [!DNL MBI] [support](../guide-overview.md).
 
 >[!NOTE]
 >

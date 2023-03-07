@@ -2,31 +2,30 @@
 title: Anslut [!DNL MongoDB] via SSH-tunnel
 description: Lär dig ansluta [!DNL MongoDB] via SSH-tunneln.
 exl-id: 3557a8c7-c4c5-4742-ae30-125c719aca39
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '678'
 ht-degree: 0%
 
 ---
 
 # Anslut [!DNL MongoDB] via SSH-tunneln
 
-
 Koppla samman [!DNL MongoDB] databas till [!DNL MBI] via en SSH-tunnel måste du (eller ditt team, om du inte är tekniker) göra några saker:
 
 1. [Hämta [!DNL MBI] publik nyckel](#retrieve)
 1. [Tillåt åtkomst till [!DNL MBI] IP-adress](#allowlist)
-1. [Skapa en Linux-användare för MBI](#linux)
+1. [Skapa en Linux](#linux)
 1. [Skapa en [!DNL MongoDB] användare för MBI](#mongodb)
 1. [Ange anslutningen och användarinformationen i [!DNL MBI]](#finish)
 
 >[!NOTE]
 >
->På grund av den här konfigurationens tekniska karaktär föreslår vi att du gör en slinga i en utvecklare för att hjälpa till om du inte har gjort detta tidigare.
+>På grund av installationens tekniska karaktär rekommenderar Adobe att du gör en slinga i en utvecklare för att få hjälp om du inte gjort detta tidigare.
 
 ## Hämtar [!DNL MBI] publik nyckel {#retrieve}
 
-The `public key` används för att auktorisera [!DNL MBI] `Linux` användare. I nästa avsnitt skapar vi användaren och importerar nyckeln.
+The `public key` används för att auktorisera [!DNL MBI] `Linux` användare. I nästa avsnitt får du hjälp med att skapa användaren och importera nycklarna.
 
 1. Gå till **[!UICONTROL Data** > **Connections]** och klicka **[!UICONTROL Add New Data Source]**.
 1. Klicka på [!DNL MONGODB] ikon.
@@ -41,7 +40,7 @@ Om du är lite vilse gör du så här [!DNL MBI] för att hämta nyckeln:
 
 ## Tillåt åtkomst till [!DNL MBI] IP-adress {#allowlist}
 
-För att anslutningen ska lyckas måste du konfigurera brandväggen så att den tillåter åtkomst från våra IP-adresser. De är `54.88.76.97` och `34.250.211.151`, men det finns också på [!DNL MongoDB] inloggningssida:
+För att anslutningen ska lyckas måste du konfigurera brandväggen så att den tillåter åtkomst från dina IP-adresser. De är `54.88.76.97` och `34.250.211.151`, men det finns också på [!DNL MongoDB] inloggningssida:
 
 ![MBI_Allow_Access_IPs.png](../../../assets/MBI_allow_access_IPs.png)
 
@@ -61,7 +60,7 @@ Om du vill lägga till den nya användaren kör du följande kommandon som rot p
     mkdir /home/rjmetric/.ssh
 ```
 
-Kom ihåg `public key` hämtas vi i första avsnittet? För att användaren ska ha åtkomst till databasen måste nyckeln importeras till `authorized_keys`. Kopiera hela nyckeln till `authorized_keys` på följande sätt:
+Kom ihåg `public key` hämtas du i första avsnittet? Om du vill vara säker på att användaren har åtkomst till databasen måste du importera nyckeln till `authorized_keys`. Kopiera hela nyckeln till `authorized_keys` på följande sätt:
 
 ```bash
     touch /home/rjmetric/.ssh/authorized_keys
@@ -77,7 +76,7 @@ Slutför skapandet av användaren genom att ändra behörigheterna i katalogen /
 
 ## Skapa en [!DNL MBI] [!DNL MongoDB] användare {#mongodb}
 
-[!DNL MongoDB] servrar har två körningslägen - [en med alternativet &quot;auth&quot;](#auth) `(mongod -- auth)` och en utan [som är standard](#default). Stegen för att skapa en [!DNL MongoDB] användaren varierar lite beroende på vilket läge servern använder, så kontrollera att läget är korrekt innan du fortsätter.
+[!DNL MongoDB] servrar har två körningslägen - [en med alternativet &quot;auth&quot;](#auth) `(mongod -- auth)` och en utan [som är standard](#default). Stegen för att skapa en [!DNL MongoDB] användaren varierar beroende på vilket läge servern använder. Kontrollera läget innan du fortsätter.
 
 ### Om servern använder `Auth` Alternativ: {#auth}
 
@@ -101,7 +100,7 @@ Använd det här kommandot för att ge [!DNL MBI] användaråtkomst `to a single
     db.createUser('rjmetric', '< secure password here >', true)
 ```
 
-Då skrivs ett svar ut som ser ut så här:
+Detta skriver ut ett svar som ser ut så här:
 
 ```bash
     {
@@ -114,7 +113,7 @@ Då skrivs ett svar ut som ser ut så här:
 
 ### Om servern använder standardalternativet {#default}
 
-Om servern inte används `auth` läge, ditt [!DNL MongoDB] kan fortfarande nås utan användarnamn och lösenord. Du bör dock se till att `mongodb.conf` fil `(/etc/mongodb.conf)` har följande rader - om inte, starta om servern när du har lagt till dem.
+Om servern inte används `auth` läge, ditt [!DNL MongoDB] -servern är tillgänglig även utan användarnamn och lösenord. Du bör dock se till att `mongodb.conf` fil `(/etc/mongodb.conf)` har följande rader - om inte, starta om servern när du har lagt till dem.
 
 ```bash
     bind_ip = 127.0.0.1
@@ -125,7 +124,7 @@ Så här binder du [!DNL MongoDB] till en annan adress justerar du databasens v�
 
 ## Ange anslutningen och användarinformationen i [!DNL MBI] {#finish}
 
-Om du vill slå ihop allt måste vi ange anslutningen och användarinformationen i [!DNL MBI]. Gav du [!DNL MongoDB] öppnas inloggningssidan? Om inte, gå till **[!UICONTROL Data > Connections]** och klicka **[!UICONTROL Add New Data Source]** och sedan [!DNL MongoDB] ikon. glöm inte att ändra `Encrypted` växla till `Yes`.
+Om du vill slå ihop allt måste du ange anslutningen och användarinformationen i [!DNL MBI]. Gav du [!DNL MongoDB] öppnas inloggningssidan? Om inte, gå till **[!UICONTROL Data > Connections]** och klicka **[!UICONTROL Add New Data Source]** och sedan [!DNL MongoDB] ikon. Glöm inte att ändra `Encrypted` växla till `Yes`.
 
 Ange följande information på den här sidan, med början på `Database Connection` avsnitt:
 
@@ -137,8 +136,8 @@ Ange följande information på den här sidan, med början på `Database Connect
 
 Under `SSH Connection` avsnitt:
 
-* `Remote Address`: IP-adressen eller värdnamnet för servern som vi ska skicka SSH till
-* `Username`: The [!DNL MBI] Linux (SSH), användarnamn (ska vara jmetriskt)
+* `Remote Address`: IP-adressen eller värdnamnet för den server som du ska ansluta till
+* `Username`: The [!DNL MBI] Linux® (SSH), användarnamn (ska vara jmetriskt)
 * `SSH Port`: SSH-porten på servern (22 som standard)
 
 Så ja! När du är klar klickar du på **[!UICONTROL Save Test]** för att slutföra installationen.

@@ -2,30 +2,30 @@
 title: register_quote_item
 description: Lär dig hur du arbetar med tabellen quote_item.
 exl-id: dad36e88-5986-4b52-8a0e-ac084fabb275
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '674'
 ht-degree: 0%
 
 ---
 
 # quote_item Table
 
-The `quote_item` tabell (`sales_flat_quote_item` på M1) 1) innehåller uppgifter om varje artikel som lagts till i en kundvagn, oavsett om vagnen övergavs eller konverterades till ett inköp. Varje rad representerar ett varukorgsobjekt. På grund av tabellens potentiella storlek rekommenderar vi att du regelbundet tar bort poster om vissa villkor uppfylls, t.ex. om det finns några ej konverterade varukorgar som är äldre än 60 dagar.
+The `quote_item` tabell (`sales_flat_quote_item` på M1) 1) innehåller uppgifter om varje artikel som lagts till i en kundvagn, oavsett om vagnen övergavs eller konverterades till ett inköp. Varje rad representerar ett varukorgsobjekt. På grund av tabellens potentiella storlek rekommenderar Adobe att du regelbundet tar bort poster om vissa villkor uppfylls, t.ex. om det finns några okonverterade kort som är äldre än 60 dagar.
 
 >[!NOTE]
 >
->Analys av tidigare övergivna varukorgar är bara möjligt om du inte tar bort poster från `quote` och `quote_item` tabell. Om du tar bort poster kan du bara se varukorgarna som ännu inte tagits bort från databasen.
+>Det går bara att analysera historiska, övergivna varukorgar om du inte tar bort poster från `quote` och `quote_item` tabell. Om du tar bort poster kan du bara se varukorgarna som ännu inte tagits bort från databasen.
 
 ## Vanliga inbyggda kolumner
 
 | **Kolumnnamn** | **Beskrivning** |
 |---|---|
-| `base_price` | Priset för en enskild enhet av en produkt vid den tidpunkt då artikeln lades till i en kundvagn, efter [katalogprisregler, nivårabatter och specialpriser](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) och innan moms, frakt- eller vagnsrabatt tillämpas, som anges i butikens basvaluta |
-| `created_at` | Tidsstämpel för att skapa varukorgen, som vanligtvis lagras lokalt i UTC. Beroende på din konfiguration i [!DNL MBI]kan den här tidsstämpeln konverteras till en rapporttidszon i [!DNL MBI] som skiljer sig från databasens tidszon |
+| `base_price` | Priset för en enskild enhet av en produkt vid den tidpunkt då artikeln lades till i en kundvagn, efter [katalogprisregler, nivårabatter och specialpriser](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) och innan moms, frakt eller kundvagnsrabatt ges. Detta representeras i butikens basvaluta. |
+| `created_at` | Tidsstämpel för att skapa varukorgen, som lagras lokalt i UTC. Beroende på din konfiguration i [!DNL MBI]kan den här tidsstämpeln konverteras till en rapporttidszon i [!DNL MBI] som skiljer sig från databasens tidszon |
 | `item_id` (PK) | Unik identifierare för registret |
 | `name` | Orderartikelns textnamn |
-| `parent_item_id` | `Foreign key` som relaterar en enkel produkt till dess överordnade paket eller konfigurerbara produkt. Gå med i `quote_item.item_id` för att fastställa överordnade produktattribut som är kopplade till en enkel produkt. För artiklar i överordnad kundvagn (dvs. paket eller konfigurerbara produkttyper), `parent_item_id` kommer att `NULL` |
+| `parent_item_id` | `Foreign key` som relaterar en enkel produkt till dess överordnade paket eller konfigurerbara produkt. Gå med i `quote_item.item_id` för att fastställa överordnade produktattribut som är kopplade till en enkel produkt. För artiklar i överordnad kundvagn (dvs. paket eller konfigurerbara produkttyper), `parent_item_id` är `NULL` |
 | `product_id` | `Foreign key` som är kopplade till `catalog_product_entity` tabell. Gå med i `catalog_product_entity.entity_id` för att fastställa produktattribut som är kopplade till orderartikeln |
 | `product_type` | Typ av produkt som lagts till i vagnen. Potentiell [produkttyper](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/product-create.html#product-types) inkludera: enkel, konfigurerbar, grupperad, virtuell, paketerad och nedladdningsbar |
 | `qty` | Antal enheter som ingår i vagnen för den aktuella varukorgen |
@@ -33,7 +33,7 @@ The `quote_item` tabell (`sales_flat_quote_item` på M1) 1) innehåller uppgift
 | `sku` | Unik identifierare för kundvagnsartikeln |
 | `store_id` | Sekundärnyckel som är associerad med `store` tabell. Gå med i `store.store_id` för att avgöra vilken Commerce Store-vy som är associerad med kundvagnsartikeln |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Vanliga beräknade kolumner
 
@@ -45,7 +45,7 @@ The `quote_item` tabell (`sales_flat_quote_item` på M1) 1) innehåller uppgift
 | `Seconds since cart creation` | Förfluten tid mellan kundvagnens datum och nu. Beräknas av koppling `quote_item.quote_id` till `quote.entity_id` och returnera `Seconds since cart creation` fält |
 | `Store name` | Namn på Commerce Store som är associerad med orderartikeln. Beräknas av koppling `sales_order_item.store_id` till `store.store_id` och returnera `name` fält |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Vanliga mått
 
@@ -54,13 +54,13 @@ The `quote_item` tabell (`sales_flat_quote_item` på M1) 1) innehåller uppgift
 | `Number of abandoned cart items` | Total kvantitet artiklar som lagts till i varukorgar som uppfyller specifika villkor för att&quot;kunden överger&quot; | `Operation: Sum`<br/>`Operand: qty`<br/>`Timestamp: Cart creation date`<br>Filter:<br><br>- \[`A`\] `Cart is active? (1/0)` = 1<br>- \[`B`\] `Seconds since cart creation` > x, där &quot;x&quot; motsvarar förfluten tid (i sekunder) sedan vagnen skapades efter vilken en vagn betraktas som övergiven |
 | `Abandoned cart item value` | Summan av de totala intäkterna från varukorgar som uppfyller specifika villkor för att&quot;kunden överger&quot; | `Operation: Sum`<br>`Operand: Cart item total value (qty * base_price)`<br>`Timestamp:` `Cart creation date`<br>Filter:<br><br>- \[`A`\] `Cart is active? (1/0)` = 1<br>- \[`B`\] `Seconds since cart creation` > x, där &quot;x&quot; motsvarar förfluten tid (i sekunder) sedan vagnen skapades efter vilken en vagn betraktas som övergiven |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Förena banor med sekundärnyckel
 
 `catalog_product_entity`
 
-* Gå med i `catalog_product_entity` för att skapa nya kolumner som returnerar produktattribut som är kopplade till kundvagnsartikeln.
+* Gå med i `catalog_product_entity` för att skapa kolumner som returnerar produktattribut som är kopplade till kundvagnsartikeln.
    * Sökväg: `quote_item.product_id` (många) => `catalog_product_entity.entity_id` (ett)
 
 `quote`
@@ -70,10 +70,10 @@ The `quote_item` tabell (`sales_flat_quote_item` på M1) 1) innehåller uppgift
 
 `quote_item`
 
-* Gå med i `quote_item` om du vill skapa nya kolumner som associerar information om den överordnade konfigurerbara enheten eller SKU:n med den enkla produkten. Observera att du måste [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) om du behöver hjälp med att konfigurera dessa beräkningar, om du bygger i Data warehouse.
+* Gå med i `quote_item` om du vill skapa kolumner som associerar information om den överordnade konfigurerbara eller paketerade SKU:n med den enkla produkten. [Kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) om du behöver hjälp med att konfigurera dessa beräkningar, om du bygger i Data warehouse.
    * Sökväg: `quote_item.parent_item_id` (många) => `quote_item.item_id` (ett)
 
 `store`
 
-* Gå med i `store` för att skapa nya kolumner som returnerar information som är relaterad till Commerce Store som är kopplad till kundvagnsartikeln.
+* Gå med i `store` för att skapa kolumner som returnerar information som är relaterad till Commerce Store som är kopplad till kundvagnsartikeln.
    * Sökväg: `quote_item.store_id` (många) => `store.store_id` (ett)

@@ -1,17 +1,17 @@
 ---
 title: Dataverifiering i blandpanelen
-description: Lär dig hur du bekräftar att vi har synkroniserat alla data som är tillgängliga för dig direkt i Mixpanel.
+description: Lär dig hur du bekräftar att du har synkroniserat alla data som är tillgängliga för dig direkt i Mixpanel.
 exl-id: d18ce954-26fe-4440-ad8b-4f266c007b2f
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '111'
+source-wordcount: '113'
 ht-degree: 0%
 
 ---
 
 # Dataverifiering i `Mixpanel`
 
-När [!DNL MBI] först ansluter till [!DNL Mixpanel] data kan din kontohanterare eller analytiker begära att du exporterar data från Mixpanel i valideringssyfte. Detta gör att vi kan bekräfta att vi har synkroniserat alla data som är tillgängliga för dig direkt i [!DNL Mixpanel].
+När [!DNL MBI] först ansluter till [!DNL Mixpanel] data kan din kontohanterare eller analytiker begära att du exporterar data från Mixpanel i valideringssyfte. På så sätt kan du bekräfta att du har synkroniserat alla data som är tillgängliga direkt i [!DNL Mixpanel].
 
 ## Dataexportprocess: `Events`
 
@@ -23,8 +23,8 @@ När [!DNL MBI] först ansluter till [!DNL Mixpanel] data kan din kontohanterar
 
    ![](../../../assets/past-96-hours.png)
 
-1. Bläddra till rapportens nedre högra hörn och exportera en `.csv` fil:
+1. Bläddra till den nedre högra delen av rapporten och exportera en `.csv` fil:
 
    ![](../../../assets/export-csv-mixpanel.png)
 
-1. Skicka `.csv` till den kontoansvarige eller analytikern som du arbetar med i den här valideringsprocessen.
+1. Skicka `.csv` till kontohanteraren eller analytikern som du arbetar med i den här valideringsprocessen.

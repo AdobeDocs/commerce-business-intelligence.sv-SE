@@ -2,9 +2,9 @@
 title: Få åtkomst till dina [!DNL MBI] Konto
 description: Läs mer om hur du loggar in på [!DNL MBI] konto.
 exl-id: 3ee36e0e-f447-4be3-afc8-ccc6d3aa4f20
-source-git-commit: 6f018ab220f2ae573cbc9016f9efb83c27a254be
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '153'
+source-wordcount: '154'
 ht-degree: 0%
 
 ---
@@ -23,11 +23,11 @@ Du kan logga in med [!DNL Adobe ID] eller använda [!DNL MBI] e-postadress och l
 
    ![sign-in-adobe](../assets/sign-in-adobe.png)
 
-1. Ange den e-postadress du använde när du skapade [!DNL MBI] konto. Om du inte redan har ett Adobe-konto klickar du på **[!UICONTROL Create an account]** och ange dina uppgifter. Kom ihåg att använda den e-postadress du använde när du skapade [!DNL MBI] konto. E-postadressen är nyckeln som du behöver för att komma åt ditt Adobe-konto.
+1. Ange den e-postadress som du använde när du skapade [!DNL MBI] konto. Om du inte redan har ett Adobe-konto klickar du på **[!UICONTROL Create an account]** och ange dina uppgifter. Kom ihåg att använda den e-postadress du använde när du skapade [!DNL MBI] konto. E-postadressen är nyckeln som du behöver för att komma åt ditt Adobe-konto.
 
 >[!NOTE]
 >
->Om du loggar in med [!DNL Adobe ID]kan du inte ändra [!DNL MBI] profillösenord.
+>Om du loggar in med [!DNL Adobe ID]kan du inte ändra dina [!DNL MBI] profillösenord.
 
 ## Logga in med ditt användarnamn och lösenord
 

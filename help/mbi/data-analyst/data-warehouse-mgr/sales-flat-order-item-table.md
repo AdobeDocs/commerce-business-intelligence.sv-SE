@@ -2,9 +2,9 @@
 title: register_för försäljningsorder_artikel
 description: Lär dig hur du arbetar med tabellen sales_order_item.
 exl-id: 5c48e985-3ba2-414b-bd1f-555b3da763bd
-source-git-commit: 9974cc5c5cf89829ca522ba620b8c0c2d509610c
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '891'
+source-wordcount: '873'
 ht-degree: 0%
 
 ---
@@ -29,19 +29,19 @@ Det är därför möjligt att rapportera om försäljning av produkter antingen 
 
 | **Kolumnnamn** | **Beskrivning** |
 |----|----|
-| `base_price` | Priset för en enskild enhet av en produkt vid tidpunkten för försäljningen efter [katalogprisregler, nivårabatter och specialpriser](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) och innan moms, frakt- eller vagnsrabatt tillämpas, som anges i butikens basvaluta |
-| `created_at` | Tidsstämpel för att skapa orderobjektet, som vanligtvis lagras lokalt i UTC. Beroende på din konfiguration i [!DNL MBI]kan den här tidsstämpeln konverteras till en rapporttidszon i [!DNL MBI] som skiljer sig från databasens tidszon |
+| `base_price` | Priset för en enskild enhet av en produkt vid tidpunkten för försäljningen efter [katalogprisregler, nivårabatter och specialpriser](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) och innan moms, frakt eller kundvagnsrabatt ges. Detta representeras i butikens basvaluta |
+| `created_at` | Tidsstämpel för att skapa orderobjektet, som lagras lokalt i UTC. Beroende på din konfiguration i [!DNL MBI]kan den här tidsstämpeln konverteras till en rapporttidszon i [!DNL MBI] som skiljer sig från databasens tidszon |
 | `item_id` (PK) | Unik identifierare för registret |
 | `name` | Orderartikelns textnamn |
 | `order_id` | `Foreign key` som är kopplade till `sales_order` tabell. Gå med i `sales_order.entity_id` för att fastställa orderattribut som är kopplade till orderartikeln |
-| `parent_item_id` | `Foreign key` som relaterar en enkel produkt till dess överordnade paket eller konfigurerbara produkt. Gå med i `sales_order_item.item_id` för att fastställa överordnade produktattribut som är kopplade till en enkel produkt. För överordnade orderartiklar (dvs. paket eller konfigurerbara produkttyper), `parent_item_id` kommer att `NULL` |
+| `parent_item_id` | `Foreign key` som relaterar en enkel produkt till dess överordnade paket eller konfigurerbara produkt. Gå med i `sales_order_item.item_id` för att fastställa överordnade produktattribut som är kopplade till en enkel produkt. För överordnade orderartiklar (dvs. paket eller konfigurerbara produkttyper), `parent_item_id` är `NULL` |
 | `product_id` | `Foreign key` som är kopplade till `catalog_product_entity` tabell. Gå med i `catalog_product_entity.entity_id` för att fastställa produktattribut som är kopplade till orderartikeln |
 | `product_type` | Typ av produkt som sålts. Potentiell [produkttyper](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/product-create.html#product-types) inkludera: enkel, konfigurerbar, grupperad, virtuell, paketerad och nedladdningsbar |
 | `qty_ordered` | Antal enheter som ingår i vagnen för den specifika orderartikeln vid tidpunkten för försäljningen |
 | `sku` | Unik identifierare för orderartikeln som köptes |
 | `store_id` | `Foreign key` som är kopplade till `store` tabell. Gå med i `store.store_id` för att avgöra vilken Commerce Store-vy som är kopplad till orderartikeln |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Vanliga beräknade kolumner
 
@@ -57,7 +57,7 @@ Det är därför möjligt att rapportera om försäljning av produkter antingen 
 | `Order's status` | Orderns status. Beräknas av koppling `sales_order_item.order_id` till `sales_order.entity_id` och returnera `status` fält |
 | `Store name` | Namn på Commerce Store som är associerad med orderartikeln. Beräknas av koppling `sales_order_item.store_id` till `store.store_id` och returnera `name` fält |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Vanliga mått
 
@@ -66,13 +66,13 @@ Det är därför möjligt att rapportera om försäljning av produkter antingen 
 | `Products ordered` | Den totala produktkvantitet som ingår i varukorgar vid försäljningstillfället | `Operation: Sum`<br>`Operand: qty_ordered`<br>`Timestamp: created_at` |
 | `Revenue by products ordered` | Totalt värde av produkter som ingår i varukorgar vid tidpunkten för försäljningen efter att regler för katalogpriser, rabattnivåer och specialpriser har tillämpats och innan moms, frakt eller kundrabatt har tillämpats | `Operation: Sum`<br>`Operand: Order item total value (quantity * price)`<br>`Timestamp: created_at` |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## `Foreign Key` Förena banor
 
 `catalog_product_entity`
 
-* Gå med i `catalog_product_entity` för att skapa nya kolumner som returnerar produktattribut som är kopplade till orderartikeln.
+* Gå med i `catalog_product_entity` för att skapa kolumner som returnerar produktattribut som är kopplade till orderartikeln.
    * Sökväg: `sales_order_item.product_id` (många) => `catalog_product_entity.entity_id` (ett)
 
 `sales_order`
@@ -82,10 +82,10 @@ Det är därför möjligt att rapportera om försäljning av produkter antingen 
 
 `sales_order_item`
 
-* Gå med i `sales_order_item` om du vill skapa nya kolumner som associerar information om den överordnade konfigurerbara enheten eller SKU:n med den enkla produkten. Observera att du måste [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) om du behöver hjälp med att konfigurera dessa beräkningar, om du bygger i Data warehouse.
+* Gå med i `sales_order_item` om du vill skapa kolumner som associerar information om den överordnade konfigurerbara eller paketerade SKU:n med den enkla produkten. [Kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) om du behöver hjälp med att konfigurera dessa beräkningar, om du bygger i Data warehouse.
    * Sökväg: `sales_order_item.parent_item_id` (många) => `sales_order_item.item_id` (ett)
 
 `store`
 
-* Gå med i `store` för att skapa nya kolumner som returnerar information som är relaterad till Commerce Store som är kopplad till orderartikeln.
+* Gå med i `store` för att skapa kolumner som returnerar information som är relaterad till Commerce Store som är kopplad till orderartikeln.
    * Sökväg: `sales_order_item.store_id` (många) => `store.store_id` (ett)

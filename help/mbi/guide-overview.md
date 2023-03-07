@@ -5,9 +5,9 @@ breadcrumb-title: Stödlinjeöversikt
 seo-title: MBI User Guide
 seo-description: Describes how to use the MBI features used to gain insights from Adobe Commerce or Magento Open Source data.
 exl-id: f62c7a98-1b4c-4abb-9692-50ce0f3ee1fb
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '433'
 ht-degree: 0%
 
 ---
@@ -34,15 +34,15 @@ Förutom de rollbaserade arbetsflödena ovan innehåller den här guiden även:
 
 ## Få hjälp
 
-Kontakta vårt supportteam om du har frågor eller vill utnyttja vissa av våra professionella tjänster eller om du stöter på problem med vårt konto och vill veta vilka resurser som finns tillgängliga för att hjälpa dig att felsöka problemet.
+Kontakta supportteamet om du har frågor, vill utnyttja vissa av dina professionella tjänster eller stöter på problem med ditt konto.
 
 ### Serviceprinciper
 
-Se en [lista över vilka tjänster vårt kundsupportteam tillhandahåller](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Se en [lista över vilka tjänster som kundsupportteamet tillhandahåller](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
 
 ### Skicka en supportanmälan
 
-Behöver du hjälp med att skapa en avancerad beräknad kolumn? Påträffade ett fel eller ett anslutningsproblem? Om du behöver kontakta vårt supportteam ber vi dig använda våra [riktlinjer för supportanmälan] (https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en). Dessa riktlinjer innehåller en beskrivning av den information Adobe behöver för att lösa problemet.
+Behöver du hjälp med att skapa en avancerad beräknad kolumn? Påträffade ett fel eller ett anslutningsproblem? Om du behöver kontakta supportteamet ber Adobe dig att använda [riktlinjer för supportanmälan] (https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en). Dessa riktlinjer innehåller en beskrivning av den information Adobe behöver för att lösa problemet.
 
 ## Tillgänglig dokumentation
 
@@ -53,4 +53,4 @@ Behöver du hjälp med att skapa en avancerad beräknad kolumn? Påträffade ett
 | [Handböcker för Adobe Commerce 2.4](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html) | Systemdokumentation om koncept, processer, verktyg och bästa metoder för att utveckla, driftsätta och underhålla projekt som körs på Adobe Commerce och Magento Open Source. |
 | [Adobe Commerce 2.4 Developer Documentation](https://developer.adobe.com/commerce/) | Dokumentation för utvecklare som används för att skapa och anpassa Adobe Commerce eller Magento Open Source |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

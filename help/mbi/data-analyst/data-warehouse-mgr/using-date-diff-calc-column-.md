@@ -2,9 +2,9 @@
 title: Använda kolumnen Beräknad datumdifferens
 description: Lär dig syftet med och användningsområdena för den beräknade kolumnen Datumdifferens.
 exl-id: 6ecab794-3466-4b3a-a929-3e56287522aa
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '256'
 ht-degree: 2%
 
 ---
@@ -15,7 +15,7 @@ I det här avsnittet beskrivs syftet med och användningsområdena för `Date Di
 
 **Förklaring**
 
-The `Date Difference` kolumntyp: söker efter tiden mellan två händelser som tillhör en enskild post, baserat på händelsens tidsstämplar. Det råvärde som beräknas i den här kolumnen är i sekunder, men konverteras automatiskt till minuter, timmar, dagar och så vidare för visning i rapporter. När det används som ett filter/en grupp av vill du använda värdet i sekunder.
+The `Date Difference` kolumntyp: söker efter tiden mellan två händelser som tillhör en enskild post, baserat på händelsens tidsstämplar. Det råvärde som beräknas i den här kolumnen är i sekunder, men konverteras automatiskt till minuter, timmar, dagar och så vidare, för visning i rapporter. När det används som ett filter/en grupp av vill du dock använda värdet i sekunder.
 
 A `date difference` Beräknad kolumn kan användas för att skapa ett mått som beräknar den genomsnittliga tiden eller mediantiden mellan två händelser, till exempel den genomsnittliga tiden mellan kundregistrering och deras första order.
 
@@ -26,7 +26,7 @@ A `date difference` Beräknad kolumn kan användas för att skapa ett mått som 
 | `A` | 2015-01-01 00:00:00 | 2015-01-01 12:30:00 | 45000 |
 | `B` | 2015-01-01 08:00:00 | 2015-01-01 10:00:00 | 7200 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 
 I exemplet ovan är `Date Difference` kolumnen är `Seconds between timestamp_2 and timestamp_1` kolumn. Beräkningen utförs `timestamp_2 minus timestamp_1`.
@@ -44,7 +44,7 @@ Följande steg beskriver hur du skapar en `Date Difference` kolumn.
    * Välj `Starting DATETIME` kolumn** > Välj startdatum/tid-fält, vilket vanligtvis är händelsen som inträffar tidigare
 
 1. Ange ett namn för kolumnen och klicka på **[!UICONTROL Save]**.
-1. Kolumnen kommer att vara tillgänglig att använda *omedelbart*.
+1. Kolumnen är tillgänglig att använda *omedelbart*.
 
 Följande exempel är konfigurerat för att beräkna `Seconds between order date and customer's creation date`:
 

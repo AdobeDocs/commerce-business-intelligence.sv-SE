@@ -2,7 +2,7 @@
 title: Connect Adobe Analytics
 description: Lär dig att sätta samman hela kundresan med fokus på [!DNL Adobe Analytics] och e-handelns fokus kan du lita på [!DNL MBI].
 exl-id: 824e1ee4-6b88-42f7-b265-29330dbc4407
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ![](../../../assets/adobe-analytic-slogo.png)
 
-The [!DNL Adobe Analytics] integration för [!DNL MBI] gör att ni kan sätta samman hela kundresan med fokus på [!DNL Adobe Analytics] och e-handelns fokus kan du lita på [!DNL MBI], för att få en mer fullständig bild av butikens totala prestanda.
+The [!DNL Adobe Analytics] integration för [!DNL MBI] gör att ni kan sätta samman hela kundresan med fokus på [!DNL Adobe Analytics] och e-handelns fokus kan du lita på [!DNL MBI]. Detta ger en fullständig bild av butikens totala prestanda.
 
 Mer specifikt finns i [!DNL Adobe Analytics] integration för [!DNL MBI] innehåller funktionalitet så att handlare kan börja kombinera sina Commerce- och Analytics-datauppsättningar.
 - Skapa en anslutning från din befintliga [!DNL Adobe Analytics] konto till [!DNL MBI].
@@ -41,6 +41,6 @@ Följande information krävs för att ansluta:
 1. En lista över tillgängliga rapportsviter visas. Välj den rapportsvit som du vill importera data från och klicka sedan på **[!UICONTROL Continue]**.
 1. Skärmen för att välja mått och mått visas. Välj minst ett mätvärde och minst en dimension, upp till en sammanlagd summa på 25 mätvärden och dimensioner. Sök efter namn eller bläddra för att hitta dina komponenter och klicka sedan på kryssrutorna för att markera dem. Klicka **[!UICONTROL Continue]**.
 1. Den valda rapportsviten visas i en tabell. Klicka **[!UICONTROL Save]** för att bekräfta ditt val.
-1. Informera [!DNL MBI] supportteamet som är behöriga att använda integreringen och kommer att köra den inledande anslutningsprocessen åt dig.
+1. Informera [!DNL MBI] supportteamet som är behöriga att integrera, och de kör den inledande anslutningsprocessen åt dig.
 
-När den inledande anslutningsprocessen har körts är tabellen tillgänglig på Data warehouse-sidan under `All Tables` -fliken. Markera de kolumner som du vill replikera så visas data efter nästa fullständiga uppdatering.
+När den inledande anslutningsprocessen har körts är tabellen tillgänglig på Data warehouse-sidan under `All Tables` -fliken. Markera de kolumner som du vill replikera, så visas data efter nästa fullständiga uppdatering.

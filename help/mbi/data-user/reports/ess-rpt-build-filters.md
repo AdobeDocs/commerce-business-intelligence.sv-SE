@@ -2,9 +2,9 @@
 title: Filter
 description: Lär dig hur du använder filter.
 exl-id: eb683dfe-9a90-400a-a0c0-3dc00d1f28b5
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '354'
+source-wordcount: '352'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ MBI innehåller ett urval av filter som du kan använda &quot;out of the box (OT
 
    * När filtret är klart klickar du på **[!UICONTROL Apply]**.
 
-      Rapporten innehåller nu bara återkommande kunder, och antalet kundposter som hämtats för rapporten har reducerats från 33 kB till 12 600 kB.
+      Rapporten innehåller nu bara återkommande kunder, och antalet kundposter som hämtats för rapporten har reducerats från 33 000 till 12 600.
 
       ![Filtrerad rapport](../../assets/magento-bi-report-builder-filter-report.png)<!--{: .zoom}-->
 

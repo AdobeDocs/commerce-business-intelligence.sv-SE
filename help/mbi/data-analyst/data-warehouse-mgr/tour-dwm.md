@@ -2,9 +2,9 @@
 title: data warehouse Manager
 description: Lär dig hur du hanterar tabell- och kolumnsynkroniseringsinställningar, fördjupar dig i ett tabellschema och skapar beräknade kolumner som kan användas i rapporter.
 exl-id: b9577919-0db0-47f1-a426-1abe48443ac0
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
 workflow-type: tm+mt
-source-wordcount: '1290'
+source-wordcount: '1246'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Data warehouse Manager som du kommer åt genom att klicka **[!UICONTROL Manage Data > Data Warehouse]** i sidlisten är portalen till [!DNL MBI] data warehouse. Med hjälp av Data warehouse Manager kan du hantera tabell- och kolumnsynkroniseringsinställningar, gå nedåt i en tabells schema och skapa beräknade kolumner som kan användas i rapporter.
 
-I den här artikeln ska vi ta upp:
+Denna artikel omfattar
 
 * [Lära dig vägen runt](#learning)
 * [Synkronisera tabeller och kolumner](#syncing)
@@ -28,9 +28,9 @@ I den här artikeln ska vi ta upp:
 
 ## Lära dig vägen runt {#learning}
 
-Den vänstra sidan av `Data Warehouse Manager` sidan innehåller tabelllistan, så att du enkelt kan växla mellan tabeller. När du väljer en tabell från listan fylls tabellhanteringsområdet i med tabellens schema där du kan göra ändringar i den markerade tabellen.
+Den vänstra sidan av `Data Warehouse Manager` sidan innehåller tabelllistan, så att du enkelt kan växla mellan tabeller. När du väljer en tabell från listan fylls tabellhanteringsområdet i med tabellens schema där du kan ändra den markerade tabellen.
 
-I tabelllistan grupperas tabellerna efter anslutningskälla. De här källorna läggs till under [!UICONTROL Manage Data > Integrations] och kan vara antingen en databas, en [API](https://developer.adobe.com/commerce/services/reporting/)eller en anslutning från tredje part. Överst i tabelllistan finns en sökruta där du enkelt kan hitta önskade tabeller.
+I tabelllistan grupperas tabellerna efter anslutningskälla. De här källorna läggs till under [!UICONTROL Manage Data > Integrations] och kan vara antingen en databas, en [API](https://developer.adobe.com/commerce/services/reporting/)eller en anslutning från tredje part. Överst i tabelllistan finns det en sökruta där du enkelt kan hitta de tabeller du söker.
 
 Under sökrutan visas två alternativ: `All Tables` och `Synced Tables`. The `All Tables` anger alla tabeller som du har gjort tillgängliga för Data warehouse, inklusive både synkroniserade och osynkroniserade tabeller.
 
@@ -39,7 +39,7 @@ The `Synced Tables` visar alla tabeller som redan har lagts till i Data warehous
 Visa inte tabellen som du letar efter i `All Tables` lista? Det finns några möjliga orsaker till detta:
 
 * Datakällan har inte lagts till än
-* Datakällan är en databas och [!DNL MBI] användaren som du skapade inte har åtkomst. I så fall måste du eller databasadministratören ge åtkomst.
+* Datakällan är en databas och [!DNL MBI] användare som du har skapat saknar åtkomst. I så fall måste du eller databasadministratören bevilja åtkomst.
 * Datakällan eller tabellen har nyligen lagts till och har inte synkroniserats än
 
 ## Synkronisera tabeller och kolumner {#syncing}
@@ -54,14 +54,14 @@ Med Data warehouse Manager kan du inte bara visa och hantera datakällor, du kan
 
    >[!NOTE]
    >
-   >Kolumner som är inbyggda i en tabell kommer att ha Från databasen i `Location` kolumn.
+   >Kolumner som är inbyggda i en tabell har Från databasen i `Location` kolumn.
 
 1. Kontrollera att `Primary Key` kolumner - de här kolumnerna har en nyckelsymbol bredvid kolumnnamnet. A `Primary Key` krävs för att kunna synkronisera data korrekt till Data warehouse.
 
    Om du synkroniserar en tabell som kommer direkt från databasen är det möjligt att `Primary Keys` får inte betecknas. I så fall kontaktar du databasadministratören och begär att en eller flera primärnycklar läggs till i tabellen.
 1. När du är klar klickar du på ![knapp](../../assets/button.png) -knappen.
 
-A *Klart!* meddelandet visas och statusen ändras till `Pending` för de markerade kolumnerna. När nästa fullständiga uppdatering är klar kommer de nya synkroniserade tabellerna och kolumnerna att vara tillgängliga för användning i rapporter. du kan också ange nya [replikeringsmetoder](./cfg-replication-methods.md) efter den inledande synkroniseringen.
+A *Klart!* visas och statusen ändras till `Pending` för de markerade kolumnerna. När nästa fullständiga uppdatering är klar kommer de nya synkroniserade tabellerna och kolumnerna att vara tillgängliga för användning i rapporter. du kan också ange nya [replikeringsmetoder](./cfg-replication-methods.md) efter den inledande synkroniseringen.
 
 Här är en kort titt på hela processen:
 
@@ -69,7 +69,7 @@ Här är en kort titt på hela processen:
 
 ### Synkronisera nya tabeller i bakgrunden {#syncnew}
 
-När du synkroniserar en stor, ny tabell för första gången måste data warehouse hämta in alla datapunkter i tabellen retroaktivt innan nya data hämtas kontinuerligt. Om tabellen är särskilt stor kanske du inte vill att den inledande synkroniseringen ska köras i sekvens med **uppdateringscykel** — i en situation vill du att den inledande synkroniseringen ska ske i bakgrunden, i *parallell* med alla uppdateringar som körs.
+När du synkroniserar en stor tabell för första gången måste Data warehouse hämta in alla datapunkter i tabellen retroaktivt innan nya data hämtas kontinuerligt. Om tabellen är stor kanske du inte vill att den inledande synkroniseringen ska köras i sekvens med **uppdateringscykel**. I det här fallet vill du att den inledande synkroniseringen ska ske i bakgrunden, i *parallell* med alla uppdateringar som körs.
 
 Om du vill vara säker på att det sker bör du markera `Save and Sync Data Immediately` för att synkronisera tabellen för första gången.
 
@@ -85,25 +85,25 @@ Att bara kunna se och hantera data från alla era källor gör det mycket enklar
 
 Säg att du vill lägga till `user's lifetime revenue` till `users` för att hitta värdefulla användare. Om du vill segmentera intäkterna efter kön kan du lägga till `customer's gender` till `orders` tabell.
 
-För att du ska kunna skapa dessa kolumner överordnad [vi har skapat en självstudiekurs](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md) för att ta dig igenom det.
+Mer information finns här [självstudiekurs](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md).
 
 ## Släpp tabeller och ta bort kolumner {#delete}
 
-På samma sätt som du kan markera tabeller och kolumner som ska synkroniseras med Data warehouse kan du också ta bort eller släppa dem.
+På samma sätt som du kan markera tabeller och kolumner som ska synkroniseras med Data warehouse kan du även ta bort eller släppa dem.
 
 >[!NOTE]
 >
 >När du släpper en tabell eller tar bort kolumner tas alla beroende rapporter, mätvärden, filteruppsättningar och kolumner bort när du har bekräftat borttagningen. Var säker på att du vill göra det här - **den här åtgärden kan inte ångras.**
 
-Var inte orolig om du klickar **[!UICONTROL Delete]** av misstag. En beroendekontroll körs innan något tas bort, så du får möjlighet att granska allt innan du bekräftar.
+Var inte orolig om du klickar **[!UICONTROL Delete]** av misstag. En beroendekontroll körs innan något tas bort, så du har möjlighet att granska allt innan du bekräftar.
 
-Om du vill ta bort kolumner klickar du på tabellen som kolumnen tillhör. Markera de kolumner som du vill ta bort och klicka på ![button\_1.png](../../assets/button_1.png) -knappen.
+Om du vill ta bort kolumner klickar du på tabellen som kolumnen tillhör. Markera kolumnerna som du vill ta bort och klicka på ![button\_1.png](../../assets/button_1.png) -knappen.
 
-Om du vill ta bort en synkroniserad tabell markerar du alla kolumner i tabellen och klickar på knappen ![knapp](../../assets/button_1.png) -knappen. Då tas alla inbyggda och beräknade kolumner som använder den här tabellen bort från data warehouse.
+Om du vill ta bort en synkroniserad tabell markerar du alla kolumner i tabellen och klickar på knappen ![knapp](../../assets/button_1.png) -knappen. Då tas alla inbyggda och beräknade kolumner som använder den här tabellen bort från Data warehouse.
 
 ### Bekräfta ändringar
 
-Oavsett om du släpper en tabell eller tar bort kolumner, kommer en beroendekontroll att köras innan borttagningsprocessen har slutförts. Beroenden är beräknade kolumner, mått, filteruppsättningar och rapporter som använder tabellen eller kolumnerna som tas bort. Alla identifierade beroenden visas - i det här läget kan du antingen avbryta processen eller klicka på **[!UICONTROL Confirm Changes]** för att släppa tabellen/ta bort kolumnerna.
+Oavsett om du släpper en tabell eller tar bort kolumner, körs en beroendekontroll innan borttagningsprocessen slutförs. Beroenden är beräknade kolumner, mått, filteruppsättningar och rapporter som använder tabellen eller kolumnerna som tas bort. Alla identifierade beroenden visas - i det här läget kan du antingen avbryta processen eller klicka på **[!UICONTROL Confirm Changes]** för att släppa tabellen/ta bort kolumnerna.
 
 Det går inte att återställa borttagna beroenden, men tabellerna och kolumnerna är fortfarande tillgängliga om du behöver synkronisera om inbyggda kolumner i framtiden.
 
@@ -117,8 +117,8 @@ Nya synkroniserade kolumner och nya/uppdaterade beräknade kolumner kan använda
 
 När du är redo att använda dina nya kolumner i rapporter, [du måste lägga till dem i mätvärden först](../data-warehouse-mgr/manage-data-dimensions-metrics.md). Även om data inte är tillgängliga förrän en uppdatering har slutförts kan du fortfarande använda nya kolumner i rapporter. Data i rapporten visas när uppdateringen är klar.
 
-## Nu är vi i slutet!
+## Radbrytning
 
-Vi gick igenom mycket material i den här självstudiekursen. Vid det här laget bör du ha en god förståelse för vad en databas är, hur data är ordnade, hur tabeller relaterar till varandra och vad du kan göra med Data warehouse Manager.
+Den här självstudiekursen innehöll mycket material. Vid det här laget bör du ha en god förståelse för vad en databas är, hur data är ordnade, hur tabeller relaterar till varandra och vad du kan göra med Data warehouse Manager.
 
 Underbar! Testa dina nya kunskaper genom att [skapa en beräknad kolumn](../data-warehouse-mgr/creating-calculated-columns.md) eller [skapa intressanta rapporter](../../tutorials/using-visual-report-builder.md).

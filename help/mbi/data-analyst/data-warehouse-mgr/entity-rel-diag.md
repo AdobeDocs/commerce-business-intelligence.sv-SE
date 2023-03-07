@@ -2,9 +2,9 @@
 title: Entitetsrelationsdiagram
 description: Lär dig mer om några ER-diagram som hjälper dig att visualisera relationen mellan en handfull vanliga Commerce-databastabeller.
 exl-id: de7d419f-efbe-4d0c-95a8-155a12aa93f3
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '326'
+source-wordcount: '319'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ En kund kan göra många beställningar. Relationen mellan de här två tabeller
 >
 >`customer\_entity.entity\_id` är inte lika med `sales\_flat\_order.entity\_id`. Den första kan man tänka sig som en `customer\_id` och den andra kan man tänka sig som `order\_id.`
 
-Inom [!DNL MBI]om sökvägen mellan de två tabellerna inte redan finns, kan du [skapa banan](../data-warehouse-mgr/create-paths-calc-columns.md) på fliken Data warehouse. När du är redo att skapa banan definieras den så här:
+Inom [!DNL MBI]om sökvägen mellan de två tabellerna inte finns kan du [skapa banan](../data-warehouse-mgr/create-paths-calc-columns.md) på fliken Data warehouse. När du är redo att skapa banan definieras den så här:
 
 ![](../../assets/SFO___CE_path.png)
 
@@ -45,7 +45,7 @@ Inom [!DNL MBI]om sökvägen mellan de två tabellerna inte redan finns, kan du 
 
 En order kan innehålla många artiklar. Relationen mellan de här två tabellerna är `sales\_flat\_order.entity\_id = sales\_flat\_order\_item.order\_id`.
 
-Inom [!DNL MBI]om sökvägen mellan de två tabellerna inte redan finns, kan du [skapa banan](../data-warehouse-mgr/create-paths-calc-columns.md) på fliken Data warehouse. När du är redo att skapa banan definieras den så här:
+Inom [!DNL MBI]om sökvägen mellan de två tabellerna inte finns kan du [skapa banan](../data-warehouse-mgr/create-paths-calc-columns.md) på fliken Data warehouse. När du är redo att skapa banan definieras den så här:
 
 ![](../../assets/SFOI___SFO_path.png)
 
@@ -55,6 +55,6 @@ Inom [!DNL MBI]om sökvägen mellan de två tabellerna inte redan finns, kan du 
 
 En produkt kan köpas för många artiklar. Relationen mellan de här två tabellerna är `catalog\_product\_entity.entity\_id = sales\_flat\_order\_item.product`.
 
-Inom [!DNL MBI]om sökvägen mellan de två tabellerna inte redan finns, kan du [skapa banan](../data-warehouse-mgr/create-paths-calc-columns.md) på fliken Data warehouse. När du är redo att skapa banan definieras den så här:
+Inom [!DNL MBI]om sökvägen mellan de två tabellerna inte finns kan du [skapa banan](../data-warehouse-mgr/create-paths-calc-columns.md) på fliken Data warehouse. När du är redo att skapa banan definieras den så här:
 
 ![](../../assets/SFOI___CPE_path.png)

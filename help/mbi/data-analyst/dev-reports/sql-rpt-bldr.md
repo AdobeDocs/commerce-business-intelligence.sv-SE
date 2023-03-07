@@ -2,9 +2,9 @@
 title: Använda SQL Report Builder
 description: Lär dig In och ut hur du använder SQL Report Builder.
 exl-id: 3a485b00-c59d-4bc5-b78b-57e9e92dd9d6
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '1501'
+source-wordcount: '1461'
 ht-degree: 0%
 
 ---
@@ -13,21 +13,21 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Kräver [Administratörsbehörigheter](../../administrator/user-management/user-management.md) för att skapa och redigera SQL-diagram. `Standard` kan användarna ordna om dessa diagram på kontrollpaneler, och `Read-only` användarna får samma upplevelse som de har med traditionella diagram. Dessutom `Read-only` -användare har inte åtkomst till frågetexten.
+>Kräver [Administratörsbehörigheter](../../administrator/user-management/user-management.md) för att skapa och redigera SQL-diagram. `Standard` kan användarna ordna om dessa diagram på kontrollpaneler, och `Read-only` användarna har samma upplevelse som de har av traditionella diagram. Dessutom `Read-only` -användare har inte åtkomst till frågetexten.
 
-Se vår [utbildningsvideo](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html?lang=en) om du vill veta mer.
+Se [utbildningsvideo](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html?lang=en) om du vill veta mer.
 
-`SQL`, eller Structured Query Language, är ett programmeringsspråk som används för att kommunicera med databaser. I [!DNL MBI]används SQL för att hämta data från data warehouse. Ta en titt på rapporterna på din instrumentpanel - bakom kulisserna drivs var och en av dem av en SQL-fråga.
+`SQL`, eller Structured Query Language, är ett programmeringsspråk som används för att kommunicera med databaser. I [!DNL MBI]används SQL för att hämta data från Data warehouse. Titta på rapporterna på din kontrollpanel - bakom kulisserna styrs varje rapport av en SQL-fråga.
 
-Du kan använda [`SQL Report Builder`](../dev-reports/sql-rpt-bldr.md) om du vill fråga data warehouse direkt, visa resultaten och omvandla dem till ett diagram. Du kan börja skapa en rapport med `SQL Report Builder` genom att navigera till **[!UICONTROL Report Builder** > **SQL Report Builder]**.
+Du kan använda [`SQL Report Builder`](../dev-reports/sql-rpt-bldr.md) om du vill fråga Data warehouse direkt, visa resultaten och omvandla dem till ett diagram. Du kan börja skapa en rapport med `SQL Report Builder` genom att navigera till **[!UICONTROL Report Builder** > **SQL Report Builder]**.
 
-Se vår [utbildningsvideo](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html?lang=en) om du vill veta mer.
+Se [utbildningsvideo](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html?lang=en) om du vill veta mer.
 
-The `SQL Report Builder` Med kan du ställa frågor direkt i data warehouse, visa resultaten och snabbt omvandla dem till ett diagram. Det bästa med att använda SQL för att skapa rapporter är att du inte behöver vänta på uppdateringscykler för att iterera i kolumner som du skapar. Om resultatet inte blir som du vill kan du snabbt redigera och köra frågan igen tills det matchar dina förväntningar.
+The `SQL Report Builder` Med kan du ställa frågor direkt i Data warehouse, visa resultaten och snabbt omvandla dem till ett diagram. Det bästa med att använda SQL för att skapa rapporter är att du inte behöver vänta på uppdateringscykler för att iterera i kolumner som du skapar. Om resultatet inte ser bra ut kan du snabbt redigera och köra frågan igen tills det matchar dina förväntningar.
 
-I den här artikeln visar vi hur du använder `SQL Report Builder`. När du vet hur du ska gå vidare kan du kolla in vår självstudiekurs om visualiseringar i SQL eller försöka optimera några av de frågor du har skrivit.
+Den här artikeln visar hur du använder `SQL Report Builder`. När du känner till din väg kan du kolla in självstudiekursen om visualiseringar i SQL eller försöka optimera några av frågorna som du har skrivit.
 
-Här är en översikt över vad vi beskriver i den här artikeln:
+I den här artikeln:
 
 1. [Skriva en fråga](#writing)
 
@@ -39,9 +39,9 @@ Här är en översikt över vad vi beskriver i den här artikeln:
 
 ## SQL Report Builder-integreringar
 
-I det nuvarande skedet av världen [[!DNL Google Analytics]](../importing-data/integrations/google-analytics.md) är den enda integreringen som inte går att använda med [`SQL Report Builder`](../dev-reports/sql-rpt-bldr.md). Vi arbetar på att ta med den här funktionen i en senare version.
+I det nuvarande skedet av världen [[!DNL Google Analytics]](../importing-data/integrations/google-analytics.md) är den enda integreringen som inte går att använda med [`SQL Report Builder`](../dev-reports/sql-rpt-bldr.md). Den här funktionen är under utveckling.
 
-Om du vill börja skapa en ny SQL-rapport klickar du på **[!UICONTROL Report Builder]** eller **[!UICONTROL Add Report]** överst på en kontrollpanel. I `Report Picker` skärm, klicka **[!UICONTROL SQL Report Builder]** för att öppna SQL-redigeraren.
+Om du vill börja skapa en SQL-rapport klickar du på **[!UICONTROL Report Builder]** eller **[!UICONTROL Add Report]** överst på en kontrollpanel. I `Report Picker` skärm, klicka **[!UICONTROL SQL Report Builder]** för att öppna SQL-redigeraren.
 
 ## Kom igång
 
@@ -57,7 +57,7 @@ Efter [riktlinjer för frågeoptimering](../../best-practices/optimizing-your-sq
 
 >[!IMPORTANT]
 >
->**Mätvärden i SQL-rapporter** - När du infogar ett mätvärde i en SQL-rapport `current definition` av mätvärdena används.
+>**Mätvärden i SQL-rapporter** - När du infogar ett mätvärde i en SQL-rapport `current definition` av måttet används.
 
 Om mätvärdena uppdateras i framtiden kommer SQL-rapporten *inte* återspeglar ändringarna. Du måste redigera rapporten manuellt för att ändringarna ska börja gälla.
 
@@ -71,7 +71,7 @@ Du kan också använda sidofältet i SQL-redigeraren för att infoga mått, tabe
 >
 >Alla [Funktionen SELECT](https://www.postgresql.org/docs/9.5/sql-select.html#SQL-SELECT-LIST), eller en funktion som inte muterar data, som stöds av PostgreSQL, stöds i SQL Report Builder. Detta omfattar, men är inte begränsat till, AVG, COUNT, COUNT DISTINCT, MIN/MAX och SUM.
 
-Dessutom stöds alla JOIN-typer, men vi rekommenderar att du bara använder INNER JOIN eftersom det är den billigaste typen av JOIN.
+Dessutom stöds alla JOIN-typer, men Adobe rekommenderar endast att INER JOIN används eftersom det är den billigaste typen av JOIN.
 
 ## Köra frågan och visa resultat {#runquery}
 
@@ -79,7 +79,7 @@ När du är klar med din fråga klickar du på **[!UICONTROL Run Query]**. Resul
 
 ![Kör frågan och visa resultat.](../../assets/SQL_Run_Query.gif)
 
-Om något verkar saknas i resultatet kan du redigera frågan och köra den igen tills du är nöjd.
+Om något verkar vara fel i resultatet kan du redigera frågan och köra den igen tills du är nöjd.
 
 Ibland ser du [meddelanden under redigeraren med EXPLAIN i dem](../../best-practices/optimizing-your-sql-queries.md). Om du ser något av detta innebär det att frågan inte har körts och att du behöver finjustera något.
 
@@ -111,9 +111,9 @@ Klicka **[!UICONTROL Save]** längst upp till höger i SQL-redigeraren och välj
 
 #### `SQL Report Builder`
 
-[`The SQL Report Builder`](../dev-reports/sql-rpt-bldr.md) ger er möjlighet att ställa frågor direkt till data warehouse, se resultaten och snabbt omvandla dem till en rapport. Om du använder SQL kan du [för att använda SQL-funktioner som inte är tillgängliga](https://docs.aws.amazon.com/redshift/latest/dg/c_SQL_functions.html) i `Visual` eller `Cohort` Report Builder, vilket ger er större kontroll över era data.
+[`The SQL Report Builder`](../dev-reports/sql-rpt-bldr.md) ger er möjlighet att ställa frågor direkt till Data warehouse, se resultaten och snabbt omvandla dem till en rapport. Om du använder SQL kan du [för att använda SQL-funktioner som inte är tillgängliga](https://docs.aws.amazon.com/redshift/latest/dg/c_SQL_functions.html) i `Visual` eller `Cohort` Report Builder, vilket ger er större kontroll över era data.
 
-Vi vill nämna att beräknade kolumner som skapats med SQL inte är beroende av uppdateringscykler, vilket innebär att du kan upprepa dem som du vill och omedelbart se resultaten.
+Beräknade kolumner som skapats med SQL är inte beroende av uppdateringscykler, vilket innebär att du kan upprepa dem som du vill och omedelbart se resultaten.
 
 >[!NOTE]
 >
@@ -129,7 +129,7 @@ Vi vill nämna att beräknade kolumner som skapats med SQL inte är beroende av 
 
 #### Resultat för databas jämfört med SQL Editor
 
-Större delen av tiden kan skillnader i resultat tillskrivas uppdateringscykler. If [!DNL MBI] är på väg att replikera data från databasen till Data warehouse, kan du se olika resultat även om du använder samma fråga.
+Olika resultat beror oftast på uppdateringscykler. If [!DNL MBI] är på väg att replikera data från databasen till Data warehouse, kan du se olika resultat även om du använder samma fråga.
 
 Anslutningsproblem kan också leda till avvikelser. Navigera till `Connections` sida genom att klicka **[!DNL Manage Data** > **Connections]**) för att ta reda på det - finns det ett fel för databasintegreringen i fråga? I så fall kan du behöva [autentisera integreringen igen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en) för att få igång saker och ting igen.
 
@@ -137,7 +137,7 @@ Om alla integreringar har anslutits och du inte befinner dig mitt i en uppdateri
 
 #### Om du tar bort en SQL-rapport tas även de underliggande kolumnerna bort från Data warehouse?
 
-Nej, du kommer inte att förlora några kolumner från Data warehouse, oavsett hur du har skapat dem.
+Nej, du förlorar inga spalter från Data warehouse, oavsett hur du har skapat dem.
 
 Kolumner som skapats med `Data Warehouse Manager` påverkas inte om du tar bort en rapport eller fråga som använder dem.
 
@@ -146,7 +146,7 @@ Kolumner som skapats med `SQL Report Builder` sparas inte i Data warehouse.
 
 #### `Report Builder` kontra `SQL Report Builder`
 
-The `SQL Report Builder` ger dig större flexibilitet när du skapar och strukturerar diagram - du kan till exempel välja vilka värden som ska visas på `X` och `Y` axlar. Mer information om att skapa diagram finns i `SQL Report Builder`, se vår [Skapa visualiseringar från SQL-frågor](../../tutorials/create-visuals-from-sql.md) självstudiekurs.
+The `SQL Report Builder` ger dig större flexibilitet när du skapar och strukturerar diagram - du kan till exempel välja vilka värden som ska visas på `X` och `Y` axlar. Mer information om att skapa diagram finns i `SQL Report Builder`, kolla in [Skapa visualiseringar från SQL-frågor](../../tutorials/create-visuals-from-sql.md) självstudiekurs.
 
 #### `Cohort Report Builder` {#cohortrb}
 
@@ -154,21 +154,21 @@ Till skillnad från `Visual Report Builder`, [`Cohort Report Builder`](../dev-re
 
 | **Det här är perfekt för..** | **Det här är inte så bra för..** |
 |---|---|
-| Intermediala/avancerade analytiker | Nybörjare - du behöver träna att definiera kohorter. |
-| Identifiera beteendetrender över tid | Kvalitativ analys - den kan [klart](../dev-reports/create-qual-cohort-analysis.md), men behöver vår hjälp. |
+| Intermediala/avancerade analytiker | Nybörjare - du behöver praktiska kohorter. |
+| Identifiera beteendetrender över tid | Kvalitativ analys - den kan [klart](../dev-reports/create-qual-cohort-analysis.md), men behöver hjälp av Adobe. |
 
 ## Återskapa frågor efter uppdateringscykeln
 
-Du behöver inte återskapa dina frågor. Rapporter skapade med [`SQL Report Builder`](../dev-reports/sql-rpt-bldr.md) sparas på samma sätt som i traditionell `Report Builder`. Uppdateringsprocessen för SQL-diagram är exakt densamma - när data har uppdaterats beräknas och visas värdena i diagrammen på nytt.
+Du behöver inte återskapa dina frågor. Rapporter skapade med [`SQL Report Builder`](../dev-reports/sql-rpt-bldr.md) sparas på samma sätt som i traditionell `Report Builder`. Uppdateringsprocessen för SQL-diagram är densamma - när data har uppdaterats beräknas och visas värdena i diagrammen på nytt.
 
 >[!NOTE]
 >
->När du tar bort en SQL-rapport eller -fråga tas de underliggande kolumnerna inte bort från Data warehouse. Du kommer inte att förlora några kolumner, oavsett hur du har skapat dem.
+>När du tar bort en SQL-rapport eller -fråga tas de underliggande kolumnerna inte bort från Data warehouse. Du förlorar inga kolumner, oavsett hur du har skapat dem.
 
-* Kolumner som skapas med hjälp av Data warehouse Manager påverkas inte om du tar bort en rapport eller fråga som använder dem.
+* Kolumner som skapats med Data warehouse Manager påverkas inte om du tar bort en rapport eller fråga som använder dem.
 
 * Kolumner som skapas med SQL Report Builder sparas inte i Data warehouse.
 
 ## Radbrytning {#wrapup}
 
-Om du vill prova något mer utmanande, varför inte skriva en fråga som är optimerad för visualisering? Kolla in vår [Skapa visualiseringar från SQL-frågor, genomgång](../../tutorials/create-visuals-from-sql.md){: target=&quot;_blank&quot;} för att komma igång.
+Om du vill prova något mer utmanande, varför inte skriva en fråga som är optimerad för visualisering? Kolla in [Skapa visualiseringar från SQL-frågor, genomgång](../../tutorials/create-visuals-from-sql.md){: target=&quot;_blank&quot;} för att komma igång.

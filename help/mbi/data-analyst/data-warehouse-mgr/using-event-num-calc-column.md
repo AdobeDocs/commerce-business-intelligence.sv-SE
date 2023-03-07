@@ -2,9 +2,9 @@
 title: Beräknad kolumn för händelsenummer
 description: Lär dig syftet med och användningsområdena för den beräknade kolumnen för händelsenummer.
 exl-id: c234621e-2e68-4e63-8b0d-7034d1b5fe1f
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '382'
 ht-degree: 3%
 
 ---
@@ -17,7 +17,7 @@ I det här avsnittet beskrivs syftet med och användningsområdena för `Event N
 
 The `Event Number` kolumntyp: identifierar i vilken ordning händelser inträffade för en viss **händelseägare**, som `customer` eller `user`. Om du känner till SQL är den här kolumntypen identisk med `RANK` funktion. Den kan användas för att observera skillnader i beteende mellan förstagångshändelser, upprepningar eller nth-händelser i dina data.
 
-Om det finns flera sorters noder innehåller den här kolumnen samma **rankning** för de kopplade händelserna och hoppar över efterföljande nummer. Om den till exempel rankade siffrorna 5,8,10,10,12, skulle rankningarna vara 1,2,3,3,5.
+Vid en slips innehåller den här kolumnen samma **rankning** för de kopplade händelserna och hoppar över efterföljande nummer. Om den till exempel rankade siffrorna 5,8,10,10,12, skulle rankningarna vara 1,2,3,3,5.
 
 Det vanligaste användningsexemplet i den här kolumnen är att analysera förstagångsköpare och upprepa köpare. Första gången köpare identifieras genom att ett filter (till ett mätvärde eller en rapport) läggs till på `Customer's order number` = 1. `Customer's order number` är en kolumn av typen `Event Number`.
 
@@ -46,4 +46,4 @@ Här följer några instruktioner om hur du skapar en `Event Number` kolumn:
 1. Den andra listrutan `Event Rank` Anger den kolumn som tvingar den sekvens som bestämmer radens rangordning. Om `Customer's order number`, `created_at` tidsstämpeln är `Event Rank`.
 1. Under `Options` kan du lägga till filter för att utesluta rader från övervägandet. De uteslutna raderna har en `NULL` värdet för den här kolumnen.
 1. Ange ett namn för kolumnen och klicka på **[!UICONTROL Save]**.
-1. Kolumnen kommer att vara tillgänglig att använda _omedelbart._
+1. Kolumnen är tillgänglig att använda _omedelbart._

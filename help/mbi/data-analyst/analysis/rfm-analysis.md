@@ -1,17 +1,21 @@
 ---
 title: Analys av senaste, frekvenser, monetära tillgångar (RFM)
-description: Lär dig hur du skapar en kontrollpanel som gör det möjligt att segmentera kunderna utifrån deras senaste, frekventa och monetära rankningar.
+description: Lär dig hur du skapar en kontrollpanel där du kan segmentera kunderna utifrån deras senaste, frekventa och monetära rankningar.
 exl-id: 8f0f08fd-710b-4810-9faf-3d0c3cc0a25d
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '538'
 ht-degree: 0%
 
 ---
 
 # RFM-analys
 
-I den här artikeln visar vi hur du skapar en instrumentpanel som gör det möjligt att segmentera kunderna utifrån deras senaste, frekventa och monetära rankningar. RFM-analys är en marknadsföringsteknik som tar hänsyn till kundbeteenden för att hjälpa er att bestämma segmentering för utåtriktad marknadsföring. Den tar tre aspekter i beaktande: Hur nyligen en kund har köpt från din butik, hur ofta de handlar från dig och hur mycket kunden spenderar.
+I den här artikeln beskrivs hur du skapar en instrumentpanel där du kan segmentera kunderna utifrån deras senaste, frekventa och monetära rankningar. RFM-analys är en marknadsföringsteknik som tar hänsyn till kundbeteenden för att hjälpa er att bestämma segmentering för utåtriktad marknadsföring. Den omfattar tre aspekter:
+
+* Hur nyligen en kund har köpt från din butik
+* Hur ofta de köper från dig
+* Pengar in hur mycket kunden spenderar
 
 ![](../../assets/blobid0.png)
 
@@ -19,9 +23,9 @@ RFM-analysen kan bara konfigureras om du har [!DNL MBI] Pro-plan för den nya ar
 
 ## Komma igång
 
-Du måste först överföra en fil som bara innehåller en primärnyckel med värdet 1. Detta gör att det går att skapa vissa nödvändiga beräknade kolumner för analysen.
+Du måste först överföra en fil som bara innehåller en primärnyckel med värdet 1. Detta gör att du kan skapa vissa nödvändiga beräknade kolumner för analysen.
 
-Du kan utnyttja detta [hjälpcenterartikel](../importing-data/connecting-data/using-file-uploader.md) samt bilden nedan för att formatera filen.
+Du kan använda den här [hjälpcenterartikel](../importing-data/connecting-data/using-file-uploader.md) och bilden nedan för att formatera filen.
 
 ## Beräknade kolumner
 
@@ -51,7 +55,7 @@ Kolumner att skapa
 
    [!UICONTROL-datatyp]: `Integer`
 
-* **Räkningsreferens** table (this is the file you just uploaded with the number &quot;1&quot;)
+* **Räkningsreferens** table (this is the file you uploaded with the number &quot;1&quot;)
 * Antal kunder
 * [!UICONTROL Column type]: `Many to One > Count Distinct`
 * [!UICONTROL Path]: `ales_flat_order.(input) reference > Count reference.Primary Key` ELLER `customer_entity.(input)reference > Count Reference`. `Primary Key`
@@ -196,7 +200,7 @@ Inga nya mätvärden!
 
    [!UICONTROL Chart type]: `Table`
 
-* **Kunder med 5 nya poäng**
+* **Kunder med fem senaste poäng**
 * Mått `A`: `New customers`
 * [!UICONTROL Metric]: `New customers`
 * [!UICONTROL Filter]: `Customer's recency score (by percentiles) Equal to 5`
@@ -214,7 +218,7 @@ Inga nya mätvärden!
 
    [!UICONTROL Chart type]: `Table`
 
-* **Kunder med 1 senaste poäng**
+* **Kunder med en senaste poäng**
 * Mått `A`: `New customers`
 * [!UICONTROL Metric]: `New customers`
 * [!UICONTROL Filter]: `Customer's recency score (by percentiles) Equal to 1`
@@ -232,4 +236,4 @@ Inga nya mätvärden!
 
    [!UICONTROL Chart type]: `Table`
 
-När du har kompilerat alla rapporter kan du ordna dem på kontrollpanelen som du vill. Slutresultatet kan se ut som exempelinstrumentpanelen ovan, men de tre genererade tabellerna är bara exempel på den typ av kundsegmentering du kan utföra.
+När du har kompilerat alla rapporter kan du ordna dem på kontrollpanelen som du vill. Resultatet kan se ut som exempelinstrumentpanelen ovan, men de tre genererade tabellerna är bara exempel på den typ av kundsegmentering du kan utföra.

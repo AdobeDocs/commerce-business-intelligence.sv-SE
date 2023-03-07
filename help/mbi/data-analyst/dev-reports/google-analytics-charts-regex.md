@@ -2,9 +2,9 @@
 title: Skapa Google Analytics-diagram
 description: Lär dig hur du skapar diagram utifrån dina Google Analytics-data.
 exl-id: ee80fd0d-e3b1-4331-853d-3c2c11931d3f
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '171'
+source-wordcount: '167'
 ht-degree: 0%
 
 ---
@@ -35,4 +35,4 @@ När du har anslutit [[!DNL Google Analytics] konto](../../data-analyst/importin
 | `)` | `.` | `{` | `}` | `*` |
 | `+` | `?` | `\` | `\` | `-` |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

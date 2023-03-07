@@ -2,9 +2,9 @@
 title: MongoDB-datamodellering
 description: Lär dig hur du undviker datamönster som kan utgöra ett problem.
 exl-id: 556c854b-5d7c-4f72-8ed7-5bc08d9ee5b9
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '134'
+source-wordcount: '128'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Goda nyheter: Alla dessa mönster kan undvikas.
 
 ## Underkapslade arrayer {#subnested}
 
-Om din samling ser ut som exemplet nedan [!DNL MBI] replikerar bara data i arrayen items. Data från underobjektarrayen kommer inte att hämtas.
+Om din samling ser ut som exemplet nedan [!DNL MBI] replikerar bara data i arrayen items. Data från underobjektarrayen hämtas inte.
 
 ```bash
     {
@@ -54,7 +54,7 @@ Samlingar som innehåller objekt med variabla objektnycklar replikeras inte i [!
     }
 ```
 
-Det här inträffar vanligtvis när ett objekt används och en array är lämpligare. Nu ska vi omarbeta exemplet ovan:
+Det här inträffar vanligtvis när ett objekt används och en array är lämpligare. Nu kan du omarbeta ovanstående exempel:
 
 ```bash
     {

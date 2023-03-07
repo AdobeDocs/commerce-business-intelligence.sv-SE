@@ -2,20 +2,20 @@
 title: Speciella filteroperatorer
 description: Lär dig mer om några specialoperatorer som används i filter när du skapar en rapport eller ett mätresultat.
 exl-id: 12837490-b9ca-4040-bb71-8988b5dde485
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '154'
+source-wordcount: '147'
 ht-degree: 0%
 
 ---
 
 # Filteralternativ
 
-I den här artikeln ska vi utforska några speciella `operators` används i `filters` när [skapa en rapport](../../tutorials/using-visual-report-builder.md){: target=&quot;_blank&quot;} eller [skapa ett mått](../../data-user/reports/ess-manage-data-metrics.md){: target=&quot;_blank&quot;}.
+Den här artikeln utforskar några speciella `operators` används i `filters` när [skapa en rapport](../../tutorials/using-visual-report-builder.md){: target=&quot;_blank&quot;} eller [skapa ett mått](../../data-user/reports/ess-manage-data-metrics.md){: target=&quot;_blank&quot;}.
 
 ## `Filter Operators`
 
-* `LIKE` för mönstermatchning. Detta måste användas tillsammans med jokertecknen % (för jokertecken med varierande antal bokstäver) eller _ (för jokertecken med en bokstav).  Begränsningen `LIKE \_ake%` skulle returnera true för `Jake Stein`, `Jake Smith`, eller `Fake Smith`.  Det returnerar false för `Drake Smith`.
+* `LIKE` för mönstermatchning. Detta måste användas med jokertecknen % (för jokertecken med varierande antal bokstäver) eller _ (för jokertecken med en bokstav).  Begränsningen `LIKE \_ake%` skulle returnera true för `Jake Stein`, `Jake Smith`, eller `Fake Smith`.  Det returnerar false för `Drake Smith`.
 
 * `NOT LIKE` liknar mönstermatchning ovan, men kontrollerar för vilka mönster inte matchar.
 

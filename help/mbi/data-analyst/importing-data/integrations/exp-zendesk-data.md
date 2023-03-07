@@ -2,9 +2,9 @@
 title: Förväntade Zendesk-data
 description: Lär dig de viktigaste datatabellerna som du kan importera från Zendesk till MBI, inklusive länkar till ytterligare dokumentation om Zendesk-data.
 exl-id: 838d8d13-e2e1-44c2-a416-f1792200ee6f
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: '436'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Efter [du har anslutit din [!DNL Zendesk] konto](../integrations/zendesk.md)kan du använda [data warehouse Manager](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) för att enkelt spåra relevanta datafält för analys.
 
-I den här artikeln utforskar vi de viktigaste datatabellerna som du kan importera från [!DNL Zendesk] till [!DNL MBI], inklusive länkar till ytterligare dokumentation om [!DNL Zendesk] data.
+I den här artikeln utforskas huvuddatatabellerna som du kan importera från [!DNL Zendesk] till [!DNL MBI], inklusive länkar till ytterligare dokumentation om [!DNL Zendesk] data.
 
 | Tabellnamn | Beskrivning |
 |-----|-----|
@@ -28,7 +28,7 @@ I den här artikeln utforskar vi de viktigaste datatabellerna som du kan importe
 | [`Zendesk\_Tags`](https://developer.zendesk.com/rest_api/docs/core/tags) | The `Tags` tabellen innehåller en lista med alla taggar i ditt konto. |
 | [`Zendesk\_Ticket\_Metrics`](https://developer.zendesk.com/rest_api/docs/core/ticket_metrics#ticket-metrics) | Det här registret innehåller data om biljettmått. Fälten innehåller `ticket ID`, `URL`och antalet grupper, tilldelningar, återöppningar, svar, svarstid (i minuter), full lösningstid och senaste uppdateringsinformation (till exempel status, tilldelad eller begärande). |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Relaterad
 

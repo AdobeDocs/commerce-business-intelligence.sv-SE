@@ -2,9 +2,9 @@
 title: Årsrapporter, månadsrapporter och veckorapporter
 description: Lär dig hur du enkelt ser trender över tid och ändrar perspektiv för tidsperioder som du kanske vill jämföra.
 exl-id: 74cf11c3-7ce0-477f-9a28-9d782e5da3d9
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '295'
+source-wordcount: '289'
 ht-degree: 0%
 
 ---
@@ -15,18 +15,18 @@ ht-degree: 0%
 >
 >Den här artikeln innehåller instruktioner för klienter som använder den ursprungliga arkitekturen och den nya arkitekturen. Du är på [ny arkitektur](../../administrator/account-management/new-architecture.md) om du har _Vyer i data warehouse_ avsnitt som är tillgängliga efter markering `Manage Data` i huvudverktygsfältet.
 
-Med rapportverktyget kan du enkelt se trender över tid och ändra perspektivet för tidsperioder som du kanske vill jämföra. I den här artikeln ska vi visa hur du skapar en kontrollpanel som går en nivå djupare så att du kan skapa rapporter för vecka-, månad- och årsanalyser.
+Med rapportverktyget kan du enkelt se trender över tid och ändra perspektivet för tidsperioder som du kanske vill jämföra. I den här artikeln beskrivs hur du konfigurerar en kontrollpanel så att du kan skapa rapporter för en vecka, en månad i taget och ett år i taget.
 
 ![](../../assets/Wow__mom__yoy.png)
 
-Innan du börjar, vill du bekanta dig med mer detaljerade perspektiv [här](../../tutorials/using-visual-report-builder.md) samt oberoende tidsalternativ [här](../../tutorials/time-options-visual-rpt-bldr.md).
+Innan du börjar, vill du bekanta dig med mer detaljerade perspektiv [här](../../tutorials/using-visual-report-builder.md) och oberoende tidsalternativ [här](../../tutorials/time-options-visual-rpt-bldr.md).
 
 Denna analys innehåller [avancerade beräknade kolumner](../data-warehouse-mgr/adv-calc-columns.md).
 
 ## Beräknade kolumner
 
 * **`Sales_flat_order`** table
-* **Ursprunglig arkitektur:** nedanstående kolumner kommer att skapas av en analytiker som en del av `[YoY WoW MoM ANALYSIS]` biljett
+* **Ursprunglig arkitektur:** nedanstående kolumner skapas av en analytiker som en del av `[YoY WoW MoM ANALYSIS]` biljett
 * `created_at (month-day)`
 * `created_at (month)`
 * `created_at (day of the month)`
@@ -34,11 +34,11 @@ Denna analys innehåller [avancerade beräknade kolumner](../data-warehouse-mgr/
 * `created_at (hour of the day)`
 
 * **Ny arkitektur:** SQL som anges nedan med ett foto på ett exempel för hur du skapar beräkningen
-   * `created_at (month-day)` [!UICONTROL Calculation]:: **to_char(A, &#39;mm-dd&#39;)**
+   * `created_at (month-day)` [!UICONTROL Calculation]: **to_char(A, &#39;mm-dd&#39;)**
    * `created_at (month)` [!UICONTROL Calculation]: **to_char(A, &#39;mm-month&#39;)**
    * `created_at (day of the month)`&lt; [!UICONTROL Calculation]: **to_char(A, &#39;dd&#39;)**
    * `created_at (day of the week)` [!UICONTROL Calculation]: **to_char(A, &#39;d-Day&#39;)**
-   * **`created_at (hour of the day)` [!UICONTROL Calculation]:: **to_char(A, &#39;hh24&#39;)**
+   * **`created_at (hour of the day)` [!UICONTROL Calculation]: **to_char(A, &#39;hh24&#39;)**
 
       ![](../../assets/new-arch-create-calc.png)
 
@@ -79,7 +79,7 @@ Ingen.
 
 * Mått `A`: Den här månaden*
 * Mått `B`: Förra månaden*
-* [!UICONTROL Time period]: För 1 månad sedan till 0 månader sedan
+* [!UICONTROL Time period]: för en månad sedan till för 0 månader sedan
 * 
    [!UICONTROL Interval]: None
 * [!UICONTROL Group by]: `created_at (day of month)`
@@ -120,4 +120,4 @@ Ingen.
 * 
    [!UICONTROL Chart Type]: `Line`
 
-När du har kompilerat alla rapporter kan du ordna dem på kontrollpanelen som du vill. Slutresultatet kan se ut som bilden högst upp på den här sidan.
+När du har kompilerat alla rapporter kan du ordna dem på kontrollpanelen som du vill. Resultatet kan se ut som bilden högst upp på den här sidan.

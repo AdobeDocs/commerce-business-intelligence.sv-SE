@@ -1,10 +1,10 @@
 ---
 title: Gräns för fri frakt
-description: Lär dig hur du konfigurerar en kontrollpanel som ska spåra resultatet för ditt tröskelvärde för fri frakt.
+description: Lär dig hur du konfigurerar en kontrollpanel som spårar prestanda för ditt tröskelvärde för fri frakt.
 exl-id: a90ad89b-96d3-41f4-bfc4-f8c223957113
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '495'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 >
 >Den här artikeln innehåller instruktioner för klienter som använder den ursprungliga arkitekturen och den nya arkitekturen. Du använder den nya arkitekturen om du har sektionen&quot;Vyer i Data warehouse&quot; tillgänglig efter att du har valt&quot;Hantera data&quot; i huvudverktygsfältet.
 
-I den här artikeln demonstrerar vi hur du skapar en kontrollpanel som kan spåra hur ditt tröskelvärde för fri frakt fungerar. Den här instrumentpanelen, som visas nedan, är ett bra sätt att testa två olika tröskelvärden för fri frakt. Företaget kan till exempel vara osäkert om du ska erbjuda fri frakt på 50 eller 100 dollar. Du bör göra ett A/B-test av två slumpmässiga deluppsättningar av dina kunder och utföra analysen i [!DNL MBI].
+I den här artikeln visas hur du konfigurerar en kontrollpanel som spårar prestanda för ditt tröskelvärde för fri frakt. Den här instrumentpanelen, som visas nedan, är ett bra sätt att testa två kostnadsfria leveranströsklar. Företaget kan till exempel vara osäkert om du ska erbjuda fri frakt på 50 eller 100 dollar. Du bör göra ett A/B-test av två slumpmässiga deluppsättningar av dina kunder och utföra analysen i [!DNL MBI].
 
 Innan du börjar vill du identifiera två separata tidsperioder där du har haft olika värden för butikens tröskelvärde för fri frakt.
 
@@ -25,17 +25,17 @@ Denna analys innehåller [avancerade beräknade kolumner](../data-warehouse-mgr/
 
 ## Beräknade kolumner
 
-Om du använder den ursprungliga arkitekturen (till exempel om du inte har `Data Warehouse Views` alternativ under `Manage Data` på menyn) vill du kontakta vårt supportteam för att få fram kolumnerna nedan. På den nya arkitekturen kan dessa kolumner skapas från `Manage Data > Data Warehouse` sida. Detaljerade instruktioner finns nedan.
+Om du använder den ursprungliga arkitekturen (till exempel om du inte har `Data Warehouse Views` alternativ under `Manage Data` -menyn) vill du kontakta supportteamet för att bygga ut kolumnerna nedan. På den nya arkitekturen kan dessa kolumner skapas från `Manage Data > Data Warehouse` sida. Detaljerade instruktioner finns nedan.
 
 * **`sales_flat_order`** table
    * Den här beräkningen skapar buketter i steg i förhållande till dina vanliga kundvagnsstorlekar. Detta kan variera från steg som 5, 10, 50, 100
 
-* **`Order subtotal (buckets)`** Ursprunglig arkitektur: skapas av en analytiker som en del av `[FREE SHIPPING ANALYSIS]` biljett
+* **`Order subtotal (buckets)`** Ursprunglig arkitektur: som skapats av en analytiker som en del av `[FREE SHIPPING ANALYSIS]` biljett
 * **`Order subtotal (buckets)`** Ny arkitektur:
    * Som nämnts ovan skapar den här beräkningen bucklor i steg i förhållande till de typiska kundvagnarna. Om du har en intern delsummeringskolumn som `base_subtotal`, som kan användas som bas för den här nya kolumnen. Annars kan det vara en beräknad kolumn som utesluter frakt och rabatter från intäkter.
    >[!NOTE]
    >
-   >&quot;Bucket&quot;-storlekarna beror på vad som passar dig som kund. Du kan börja med `average order value` och skapa ett visst antal fickor som är mindre än och större än den mängden. När du tittar på beräkningen nedan ser du hur enkelt det är att kopiera en del av frågan, redigera den och skapa ytterligare bucklor. Exemplet görs i steg om 50.
+   >&quot;Bucket&quot;-storlekarna beror på vad som passar dig som kund. Du kan börja med `average order value` och skapa mindre än och större mängder. När du tittar på beräkningen nedan ser du hur enkelt det är att kopiera en del av frågan, redigera den och skapa ytterligare bucklor. Exemplet görs i steg om 50.
 
    * `Column type - Same table, Column definition - Calculation, Column Inputs-` `base_subtotal`, eller `calculated column`, `Datatype`: `Integer`
    * [!UICONTROL Calculation]: `case when A >= 0 and A<=200 then 0 - 200`
@@ -137,4 +137,4 @@ Inga nya mätvärden!
 
 Upprepa stegen ovan och rapporterna för Leverans B och tidsperioden med leveransregel B.
 
-När du har kompilerat alla rapporter kan du ordna dem på kontrollpanelen som du vill. Slutresultatet kan se ut som bilden högst upp på den här sidan.
+När du har kompilerat alla rapporter kan du ordna dem på kontrollpanelen som du vill. Resultatet kan se ut som bilden högst upp på den här sidan.

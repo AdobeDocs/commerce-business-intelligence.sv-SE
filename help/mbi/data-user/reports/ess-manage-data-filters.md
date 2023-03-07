@@ -2,7 +2,7 @@
 title: Skapa filteruppsättningar för mätvärden
 description: Lär dig hur du skapar sparade filteruppsättningar och använder dem på mätvärdena.
 exl-id: 6ef8b67c-bebd-45eb-bca7-95832ec34fc8
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
 source-wordcount: '276'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Om du har flera mätvärden i [!DNL MBI] som måste filtreras på ett liknande sätt (t.ex. filtrera bort testorder) kan du skapa sparade filteruppsättningar och använda dem för mätvärdena. Detta sparar tid eftersom du inte behöver lägga till enskilda filter när du skapar eller redigerar ett mätresultat.
 
-Se vår [utbildningsvideo](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-filter-sets.html?lang=en) om du vill veta mer.
+Se [utbildningsvideo](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-filter-sets.html?lang=en) om du vill veta mer.
 
 >[!NOTE]
 >
@@ -33,7 +33,7 @@ Se vår [utbildningsvideo](https://experienceleague.adobe.com/docs/commerce-know
 
 1. Lägg till alla relevanta filter.
 
-   Om vi t.ex. bara ville inkludera beställningar med statusen&quot;fullständig&quot; i `Total number of orders` metrisk, skulle vi tillämpa ett filter som utesluter alla order som inte har status = `complete`.
+   Om du t.ex. bara vill inkludera beställningar med statusen Fullständig i `Total number of orders` metrisk skulle du använda ett filter som utesluter alla order som inte har status = `complete`.
 
 1. Kontrollera filterlogiken och att parenteser och operatorer är korrekt placerade: till exempel `\[A\] AND \[B\]; (\[A\] OR \[B\]) AND \[C\]`.
 

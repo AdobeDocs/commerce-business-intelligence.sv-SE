@@ -2,7 +2,7 @@
 title: Dela instrumentpaneler med andra användare
 description: Lär dig hur du delar kontrollpaneler med andra användare.
 exl-id: 6279b049-d1b2-4d40-b30b-ee8772e990f4
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
 source-wordcount: '272'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Dela instrumentpaneler med andra användare
 
-Att dela instrumentpaneler är ett bra sätt att se till att teamet är med och uppmuntra till samarbete. Genom att skapa och dela en central kontrollpanel kan du ge teamet den information de behöver samtidigt som ni behåller kontrollen. [Vi rekommenderar](../../best-practices/share-dashboard-best-practice.md){: target=&quot;_blank&quot;} som du beviljar `Edit` behörighet till ett fåtal för att minimera oavsiktliga ändringar.
+Att dela instrumentpaneler är ett bra sätt att se till att teamet är med och uppmuntra till samarbete. Genom att skapa och dela en central kontrollpanel kan du ge teamet den information de behöver samtidigt som ni behåller kontrollen. [Adobe rekommenderar](../../best-practices/share-dashboard-best-practice.md){: target=&quot;_blank&quot;} som du beviljar `Edit` behörighet till ett fåtal för att minimera oavsiktliga ändringar.
 
 >[!NOTE]
 >

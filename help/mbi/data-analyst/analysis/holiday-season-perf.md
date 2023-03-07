@@ -2,9 +2,9 @@
 title: Analyserar semestersäsongens prestanda
 description: Lär dig mer och förstå hur mönstret för årets tillväxt jämfört med tidigare år.
 exl-id: 328f30b8-0db6-48fd-8d97-95f0bc7e4803
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '550'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 För er verksamhet kan helgerna vara en av årets livligaste tider. För detaljhandlare med en stor amerikansk kundbas spänner semestersäsongen vanligen mellan Thanksgiving och New Year.
 
-Penslar kan användas när som helst under året. Om ditt företag till exempel säljer kortbyxor eller poolleveranser kan du få en rusning under sommaren. I det här avsnittet utforskar vi analyser som hjälper dig att jämföra dina högsäsonger över olika år.
+Penslar kan användas när som helst under året. Om ditt företag till exempel säljer kortbyxor eller poolleveranser kan du få en rusning under sommaren. I det här avsnittet beskrivs analyser som hjälper dig att jämföra dina högsäsonger över olika år.
 
 ## Rekommenderade mått
 
@@ -21,7 +21,7 @@ När du analyserar högsäsong bör du överväga att analysera ([eller bygga](.
 
 ### Antal nya kunder, Antal beställningar, Intäkter
 
-För att ni ska förstå hur mönstret för årets tillväxt ser ut jämfört med tidigare år bör ni överväga att analysera dessa åtgärder. Antalet nya kunder, antalet nya beställningar och intäkterna visar hur ert företag presterar varje dag under den tidsperiod (semestersäsong) ni anger. Du kan också analysera dessa mått med ett kumulativt perspektiv för att se hur mätvärdena ändras över tiden.
+För att ni ska förstå hur mönstret för årets tillväxt ser ut jämfört med tidigare år bör ni överväga att analysera dessa åtgärder. Antalet nya kunder, antalet nya beställningar och intäktsbeloppet visar hur ert företag presterar varje dag under den tidsperiod (semestersäsong) ni anger. Du kan också analysera dessa mått med ett kumulativt perspektiv för att se hur mätvärdena ändras över tiden.
 
 ### Genomsnittligt ordervärde
 
@@ -29,7 +29,7 @@ Den här åtgärden visar det totala genomsnittliga ordervärdet under semesters
 
 ## Exempel: Dagens semestersäsongsintäkter
 
-Nu när vi vet vilka mätvärden vi ska analysera tittar vi på några exempeluppgifter om intäkter under semestersäsongen i november och december för både 2014 och 2015.
+Nu när du vet vilka mätvärden du ska analysera kan du titta på några exempelintäkter under semestersäsongen i november och december för både 2014 och 2015.
 
 ![Dagliga intäkter från semestersäsongen för 2014 och 2015](../../assets/Analyzing_holiday_season.png)
 

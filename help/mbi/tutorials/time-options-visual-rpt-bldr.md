@@ -2,9 +2,9 @@
 title: Använd tidsalternativ i Visual Report Builder
 description: Lär dig att analysera data i rapporten under en viss tidsperiod.
 exl-id: a1bb4838-f882-44b1-a29f-84b985032ceb
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '1278'
+source-wordcount: '1269'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 En av funktionerna i `Visual Report Builder` är den globala `Time Range` och `Interval` inställningar. Med de här inställningarna kan du analysera data i rapporten under en viss tidsperiod.
 
-För vissa analyser kan du dock behöva ta hänsyn till olika tidsintervall eller tidsintervall i samma rapport. Det är där `Time` Alternativ kommer in. Så här får du en bättre uppfattning om hur du använder `Time` Den här självstudiekursen omfattar följande användningsområden:
+För vissa analyser kan du dock behöva ta hänsyn till olika tidsintervall eller tidsintervall i samma rapport. Det är där `Time` Alternativ kommer in. Så här får du en bättre uppfattning om hur du använder `Time` Alternativen i rapporterna omfattar den här självstudiekursen följande användningsfall:
 
 * [Analyserar mätvärden utan tidsstämplar](#notimestamp)
 * [Ger ett mätvärde och ett oberoende tidsintervall](#independenttimeinterval)
@@ -31,16 +31,16 @@ När du använder ett sådant mått i din rapportering, märker du att om du lä
 
 ## Ger ett mätvärde och ett oberoende tidsintervall {#independenttimeinterval}
 
-`Time` Med alternativen kan du skapa tidsbaserade 100 %-diagram för att identifiera vilken dag, vecka, månad eller år som har bidragit mest till värdet under ett visst tidsintervall. I det här avsnittet skapar vi ett diagram som visar hur stor procentandel av intäkterna som genereras varje kalendermånad under ett år.
+`Time` Med alternativen kan du skapa tidsbaserade 100 %-diagram för att identifiera vilken dag, vecka, månad eller år som har bidragit mest till värdet under ett visst tidsintervall. I det här avsnittet skapar du ett diagram som visar hur stor procentandel av intäkterna som genereras under varje kalendermånad på ett år.
 
-Den här typen av rapport kan vara användbar om du vill jämföra intäkter som genereras år för år. Om ett diagram för 2015 till exempel visar att januari bidrog med 18 % av årets intäkter och en för 2016 endast visade 8 %, kan du börja undersöka vad som kan ha hänt.
+Den här typen av rapport kan vara användbar om du vill jämföra intäkter som genereras år för år. Ett diagram för 2015 visar t.ex. att januari bidrog med 18 procent av årets intäkter och att ett diagram för 2016 bara visade 8 procent. Du kan börja undersöka vad som kan ha hänt.
 
 1. Lägg till `Revenue` mätvärden till rapporten.
 1. Klicka **[!UICONTROL Duplicate]** för att göra en kopia av måttet.
 1. Klicka på den globala **[!UICONTROL Time Range]** alternativ, sedan **[!UICONTROL Moving Time Range]**. Ange detta till `Last Year`.
 1. Klicka på den globala **[!UICONTROL Time Interval]** och ange `Monthly`.
 1. Report Builder lägger automatiskt till en andra Y-axel för ett andra mått. Avmarkera `Multiple Y-Axes` box.
-1. Därefter använder vi en oberoende `Time Interval` till det första måttet. Klicka **[!UICONTROL Time Options]** (klockikon) till höger om `first Revenue metric`.
+1. Sedan använder du en oberoende `Time Interval` till det första måttet. Klicka **[!UICONTROL Time Options]** (klockikon) till höger om `first Revenue metric`.
 1. Klicka **[!UICONTROL Time Options]** i det utökade fönstret som visas ovanför rapporten.
 1. Ange följande i listrutan:
 
@@ -48,9 +48,9 @@ Den här typen av rapport kan vara användbar om du vill jämföra intäkter som
 
    * `Time Range`: ange detta till `Last Year` genom att först klicka **[!UICONTROL Custom]** sedan **[!UICONTROL Moving Range]** och väljer `Last Year` alternativ.
 
-   * Klicka **[!UICONTROL Apply]** om du vill spara intervall- och intervallinställningarna. Detta skapar ett mätvärde som beräknar den totala intäkten för föregående år. Därefter använder vi det här måttet som nämnare i en formel.
+   * Klicka **[!UICONTROL Apply]** om du vill spara intervall- och intervallinställningarna. Detta skapar ett mätvärde som beräknar den totala intäkten för föregående år. Därefter använder du det här måttet som nämnare i en formel.
 
-   * För att se procentandelen intäkter för varje månad måste vi lägga till en formel i rapporten. Klicka **[!UICONTROL Add Formula]**.
+   * Om du vill se procentandelen av intäkten för varje månad måste du lägga till en formel i rapporten. Klicka **[!UICONTROL Add Formula]**.
 
    * Retur `B/A` i formelfältet och välj `% Percent` i listrutan bredvid textfältet. I denna formel delas intäktsbeloppet från en viss månad förra året upp med det totala intäktsbeloppet förra året.
 
@@ -58,7 +58,7 @@ Den här typen av rapport kan vara användbar om du vill jämföra intäkter som
 
    * Dölj båda indatavärdena och byt namn på formeln.
 
-Nu kan vi se hur effektfullt varje månad var förra året:
+Nu kan du se hur effektfullt varje månad var förra året:
 
 ![](../assets/Independent_Time_Int.png)
 
@@ -68,7 +68,7 @@ I det här exemplet används en anpassad dimension som kallas `Day number of the
 
 De två vanligaste exemplen i den här kategorin är (1) att jämföra tillväxtstatistik (intäkter år för år eller månad för månad) och (2) att bättre förstå de senaste trenderna inom lager- eller artikelförsäljning.
 
-För att visa på det här användningsfallet tittar vi på den dagliga intäkten för föregående månad jämfört med samma månad från föregående år. Låt oss säga att vi vill se på intäkterna för varje dag i januari 2016 och sedan jämföra dem med januari 2015, januari 2014 och så vidare - den här rapporten skulle visa oss det.
+Titta på de dagliga intäkterna för föregående månad jämfört med samma månad från föregående år för att visa hur detta används. Säg att ni vill se på intäkterna för varje dag i januari 2016 och sedan jämföra dem med januari 2015, januari 2014 och så vidare - så visar den här rapporten oss det.
 
 1. Lägg till `Revenue` mätvärden till rapporten.
 1. Klicka **[!UICONTROL Duplicate]** för att göra en kopia av måttet.
@@ -82,19 +82,19 @@ För att visa på det här användningsfallet tittar vi på den dagliga intäkte
    * `Time Interval`: ange detta till `None`.
 
    * `Time Range`: ange detta till `From 14 Months Ago To 13 Months Ago` genom att först klicka **[!UICONTROL Custom]** sedan **[!UICONTROL Moving Range]**. Använd fälten och listrutorna högst upp på menyn för att ange intervallet. Med den här inställningen kan vi se intäkterna för föregående månad, men föregående år.
-   Oroa dig inte om mätvärdena försvinner från rapporten. Om du anger ett oberoende tidsalternativ döljs mätvärdena automatiskt från rapporten. Om du vill visa den igen klickar du på **[!UICONTROL Show]** bredvid måtten.
+   Oroa dig inte om mätvärdena försvinner från rapporten. Om du ställer in ett oberoende tidsalternativ döljs mätvärdena automatiskt från rapporten. Om du vill visa den igen klickar du på **[!UICONTROL Show]** bredvid måtten.
 
    ![](../assets/Different_Time_Ranges.gif)
 
    * Klicka **[!UICONTROL Apply]** om du vill spara intervall- och intervallinställningarna.
 
-   * Nu lägger vi till våra `Day number of the month` dimension genom att klicka **[!UICONTROL Group By]** och välja dimension. Detta returnerar dagsnumret för månaden i en order, t.ex. en beställning som gjorts den 2 mars returnerar `2`.
+   * Sedan lägger du till din egen `Day number of the month` dimension genom att klicka **[!UICONTROL Group By]** och välja dimension. Detta returnerar dagsnumret för månaden i en order, t.ex. en beställning som gjorts den 2 mars returnerar `2`.
 
-   * I `Group By` listruta, välja `Show All` och klicka **[!UICONTROL Apply]**. Detta skapar effektivt X-axelvärdena för rapporten:
+   * I `Group By` listruta, välja `Show All` och klicka **[!UICONTROL Apply]**. Detta skapar rapportens X-axelvärden:
 
    ![](../assets/TO4.png)
 
-   * Byt namn på måtten. I vårt exempel är det första måttet `Revenue - 2015` och den andra är `Revenue - 2014`.
+   * Byt namn på måtten. I exemplet är det första måttet `Revenue - 2015` och den andra är `Revenue - 2014`.
 
 
 
@@ -104,12 +104,12 @@ Kom ihåg att ange tidsintervall till vad du behöver när du skapar den här ra
 
 1. Lägg till `Items Sold` mätvärden till rapporten.
 1. Klicka **[!UICONTROL Duplicate]** för att göra en kopia av måttet.
-1. Byt namn på måtten. Du kan använda samma namn som vi är, eller använda något som liknar:
+1. Byt namn på måtten. Du kan använda samma namn eller något liknande:
    1. Byt namn på det första måttet till `Items sold last 7 days`.
    1. Byt namn på det andra måttet till `Items sold last 28 days`.
-1. På `Items sold last 7 days` , klicka på den globala **[!UICONTROL Time Range]** option then **[!UICONTROL Moving Time Range]**. I det här exemplet ställer vi in det på `Last 7 Days`.
+1. På `Items sold last 7 days` , klicka på den globala **[!UICONTROL Time Range]** option then **[!UICONTROL Moving Time Range]**. I det här exemplet ställer du in det på `Last 7 Days`.
 1. Klicka **[!UICONTROL Time Interval]** och ange `None`.
-1. Sedan definierar vi `Time Options` för `Items sold last 28 days` mätvärden. Klicka **[!UICONTROL Time Options]** (klockikon) till höger om `second Items sold` mätvärden.
+1. Sedan definierar du `Time Options` för `Items sold last 28 days` mätvärden. Klicka **[!UICONTROL Time Options]** (klockikon) till höger om `second Items sold` mätvärden.
 1. Klicka **[!UICONTROL Time Options]** i det utökade fönstret som visas ovanför rapporten.
 1. Ange följande i listrutan:
 
@@ -122,7 +122,7 @@ Kom ihåg att ange tidsintervall till vad du behöver när du skapar den här ra
       * `Time Range`: ändra detta till det datumintervall som är anpassat till kampanjen du är intresserad av genom att klicka på **[!UICONTROL Specific Date Range]** och ange sedan lämpliga datum.
       * Ändra namn på måttet `Items sold during last promotion` eller något liknande.
       * Lägg till `Units on hand` mätvärden.
-      * Därefter måste vi lägga till de beräkningar som visar de aktuella veckorna, med tanke på försäljningstrender, för tidsperioderna (`last 7 days`, `last 28 days`och `last promo` punkt) som vi tar med i rapporten. Du måste göra detta en gång för varje tidsperiod.
+      * Därefter måste du lägga till de beräkningar som visar de aktuella veckorna, med tanke på försäljningstrender, för tidsperioderna (`last 7 days`, `last 28 days`och `last promo` punkt) som du tar med i rapporten. Du måste göra detta en gång för varje tidsperiod.
 
 Om du vill skapa formlerna klickar du på **[!UICONTROL Add Formula]**. Ange formeln nedan och klicka på **[!UICONTROL Apply Changes]** när du är klar. Upprepa detta för var och en av de tre tidsperioderna:
 
@@ -131,7 +131,7 @@ Om du vill skapa formlerna klickar du på **[!UICONTROL Add Formula]**. Ange for
 
    >[!NOTE]
    >
-   >Det är viktigt att normalisera de valda tidsintervallen här. Tjugoåtta dagar ska delas in i fyra veckor i det här exemplet. Du kan behöva använda en annan logik för formeln.
+   >Det är viktigt att normalisera de valda tidsintervallen här. Bryt 28 dagar i fyra veckor i det här exemplet. Du kan behöva använda en annan logik för formeln.
 
 * För `last promo period`, ange `D / C` i `Formula` fält.
 

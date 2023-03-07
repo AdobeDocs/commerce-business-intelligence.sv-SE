@@ -2,9 +2,9 @@
 title: Formler
 description: Lär dig hur du använder formler.
 exl-id: b6432d93-739f-410c-b732-e09a278f8dae
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '472'
+source-wordcount: '470'
 ht-degree: 0%
 
 ---

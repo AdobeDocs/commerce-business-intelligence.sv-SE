@@ -2,28 +2,28 @@
 title: Definiera kundkoncentration
 description: Lär dig hur du skapar en kontrollpanel som hjälper dig att mäta hur de totala intäkterna fördelas mellan era kunder.
 exl-id: 6242019f-a6a5-48d3-b214-94acd7842e00
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '472'
 ht-degree: 0%
 
 ---
 
 # Kundkoncentration
 
-I den här artikeln visar vi hur du skapar en kontrollpanel som hjälper dig att mäta hur de totala intäkterna fördelas mellan era kunder. Förstå vilken procentandel av kunderna som bidrar med vilken procentandel av intäkterna och skapar segmenterade listor på bästa möjliga marknad för och behåller era högkvalitativa kunder.
+I den här artikeln beskrivs hur du ställer in en kontrollpanel som hjälper dig att mäta hur de totala intäkterna fördelas bland kunderna. Förstå vilken procentandel av kunderna som bidrar med vilken procentandel av intäkterna och skapar segmenterade listor på bästa möjliga marknad för och behåller era högkvalitativa kunder.
 
 Denna analys innehåller [avancerade beräknade kolumner](../data-warehouse-mgr/adv-calc-columns.md).
 
 ## Komma igång
 
-Du måste först överföra en fil som bara innehåller en primärnyckel med värdet 1. Detta gör att det går att skapa vissa nödvändiga beräknade kolumner för analysen.
+Du måste först överföra en fil som bara innehåller en primärnyckel med värdet 1. Detta gör att du kan skapa vissa nödvändiga beräknade kolumner för analysen.
 
-Du kan utnyttja [filöverföringen](../importing-data/connecting-data/using-file-uploader.md) samt bilden nedan för att formatera filen.
+Du kan använda [filöverföringen](../importing-data/connecting-data/using-file-uploader.md) och bilden nedan för att formatera filen.
 
 ## Beräknade kolumner
 
-Om du använder den ursprungliga arkitekturen (till exempel om du inte har `Data Warehouse Views` alternativ under `Manage Data` på menyn) vill du kontakta vårt supportteam för att få fram kolumnerna nedan. På den nya arkitekturen kan dessa kolumner skapas från `Manage Data > Data Warehouse` sida. Detaljerade instruktioner finns nedan.
+Om du använder den ursprungliga arkitekturen (till exempel om du inte har `Data Warehouse Views` alternativ under `Manage Data` ska du kontakta supportteamet för att bygga ut kolumnerna nedan. På den nya arkitekturen kan dessa kolumner skapas från `Manage Data > Data Warehouse` sida. Detaljerade instruktioner finns nedan.
 
 Ytterligare en skillnad görs om ditt företag tillåter gästbeställningar. I så fall kan du ignorera alla steg för `customer_entity` tabell. Om gästorder inte tillåts, ignorera alla steg för `sales_flat_order` tabell.
 
@@ -36,7 +36,7 @@ Kolumner att skapa
 * [!UICONTROL Calculation]: - **case when A is null then null else 1 end**
 * [!UICONTROL Datatype]: – `Integer`
 
-* `Customer concentration` tabell (det här är filen som du just överförde med numret) `1`)
+* `Customer concentration` tabell (det här är filen som du överförde med numret) `1`)
 * Antal kunder
 * [!UICONTROL Column type]: – `Many to One > Count Distinct`
 * Sökväg - `sales_flat_order.(input) reference > Customer Concentration.Primary Key` ELLER `customer_entity.(input)reference > Customer Concentration.Primary Key`
@@ -79,7 +79,7 @@ Kolumner att skapa
 
 >[!NOTE]
 >
->De percentiler som används är till och med delar av kunder, vilket representerar den sjätte percentilen av er kundbas. Varje kund kommer att associeras med ett heltal mellan 1 och 100, vilket kan ses som en intäkt under hela livscykeln *rankning*. Om kundens intäktspolicy för en viss kund till exempel är **5**, den här kunden finns i ***5:e percentilen*** av alla kunder i termer av livstidsintäkter.
+>De percentiler som används är till och med delar av kunder, vilket representerar den sjätte percentilen av er kundbas. Varje kund är associerad med ett heltal mellan 1 och 100, som kan ses som en livstidsinkomst *rankning*. Om kundens intäktspolicy för en viss kund till exempel är **5**, den här kunden finns i ***femte percentilen*** av alla kunder i termer av livstidsintäkter.
 
 ## Mått
 
@@ -156,6 +156,6 @@ Kolumner att skapa
 
    [!UICONTROL Chart type]: `Table`
 
-När du har kompilerat alla rapporter kan du ordna dem på kontrollpanelen som du vill. Slutresultatet kan se ut som kontrollpanelen ovan.
+När du har kompilerat alla rapporter kan du ordna dem på kontrollpanelen som du vill. Resultatet kan se ut som kontrollpanelen ovan.
 
-Om du stöter på några frågor när du bygger upp den här analysen, eller bara vill engagera vårt team med professionella tjänster, [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Om du stöter på några frågor när du skapar den här analysen eller bara vill engagera Professional Services-teamet, [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

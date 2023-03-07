@@ -2,7 +2,7 @@
 title: Beräknad kolumn för sekventiell jämförelse
 description: Lär dig syftet med och användningsområdena för kolumnen Beräknad sekventiell jämförelse.
 exl-id: 625062b4-f05d-42aa-94c3-729b39c7d728
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
 source-wordcount: '401'
 ht-degree: 1%
@@ -17,8 +17,8 @@ I det här avsnittet beskrivs syftet med och användningsområdena för `Sequent
 
 The `Sequential Comparison` kolumntyp: söker efter skillnaden mellan efterföljande händelser. Den vanligaste typen av `Sequential Comparison` kolumnen är `Seconds since previous order` kolumn. Det finns tre indata som behövs för den här kolumnen:
 
-1. `Event Owner`: Den här inmatningen avgör för vilken enhet rader grupperas. I `Seconds since previous order` -kolumnen är händelseägaren kunden eftersom vi vill hitta antalet sekunder sedan den föregående ordern från samma kund.
-1. `Event Date`: Den här inmatningen framtvingar händelsesekvensen. Om `Seconds since previous order`, ska kolumnen som innehåller tidsstämpeln för ordern vara `Event Date`. Indata är alltid en tidsstämpel.
+1. `Event Owner`: Den här inmatningen avgör för vilken enhet rader grupperas. I `Seconds since previous order` -kolumnen är händelseägaren kunden eftersom du vill hitta antalet sekunder sedan den föregående ordern från samma kund.
+1. `Event Date`: Den här inmatningen framtvingar händelsesekvensen. I de fall `Seconds since previous order`, ska kolumnen som innehåller tidsstämpeln för ordern vara `Event Date`. Indata är alltid en tidsstämpel.
 1. `Value to Compare`: Indata är det faktiska värde som ska jämföras. Den subtraherar föregående rads värde från den aktuella radens värde. Därför anropas en kolumn som visar tidsskillnaden mellan på varandra följande order från en kund `Seconds since previous order`. Den här inmatningen behöver inte vara en tidsstämpel. Ett exempel på icke-tidsstämpel är att hitta skillnaden i ordervärde mellan på varandra följande order från en kund.
 
 **Exempel**
@@ -31,7 +31,7 @@ The `Sequential Comparison` kolumntyp: söker efter skillnaden mellan efterfölj
 | **`4`** | A | 2015-01-02 13:00:00 | 126000 |
 | **`5`** | B | 2015-01-03 13:00:00 | 217800 |
 
-I exemplet ovan `Seconds since owner's previous event` är `Sequential Comparison` beräknad kolumn. För `owner_id = A`identifierar den först en sekvens som baseras på `timestamp` och sedan subtraherar föregående händelses `timestamp` från den aktuella händelsens tidsstämpel. I den tredje raden i tabellen - den andra raden för `owner_id A` - värdet av `Seconds since owner's previous event` är antalet sekunder mellan &#39;2015-01-01 02:00&#39; och &#39;2015-01-01 00:00:00. Skillnaden är lika med 2 timmar = 7 200 sekunder.
+I exemplet ovan `Seconds since owner's previous event` är `Sequential Comparison` beräknad kolumn. För `owner_id = A`identifierar den först en sekvens som baseras på `timestamp` och sedan subtraherar föregående händelses `timestamp` från den aktuella händelsens tidsstämpel. I den tredje raden i tabellen - den andra raden i `owner_id A` - värdet av `Seconds since owner's previous event` är antalet sekunder mellan &#39;2015-01-01 02:00&#39; och &#39;2015-01-01 00:00:00. Skillnaden är lika med två timmar = 7 200 sekunder.
 
 För den här beräknade kolumntypen har raden som motsvarar ägarens första händelse en `NULL` värde.
 
@@ -48,8 +48,8 @@ Skapa en **Händelsenummer** kolumn:
    - `Event Owner`
    - `Event Date`
    - `Value to Compare`
-1. Du kan också lägga till filter för att utesluta rader från övervägandet. De uteslutna raderna får ett NULL-värde för den här kolumnen.
+1. Du kan också lägga till filter för att utesluta rader från övervägandet. De uteslutna raderna har ett NULL-värde för den här kolumnen.
 1. Ange ett namn för kolumnen högst upp på sidan och klicka på **[!UICONTROL Save]**.
-1. Kolumnen kommer att vara tillgänglig att använda *omedelbart*.
+1. Kolumnen är tillgänglig att använda *omedelbart*.
 
 ![SEK](../../assets/SEC_new.png)

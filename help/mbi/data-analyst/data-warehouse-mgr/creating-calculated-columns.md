@@ -2,9 +2,9 @@
 title: Skapa beräknade kolumner
 description: Lär dig hur du konsoliderar data från olika källor.
 exl-id: 668cbc77-6a96-4687-9f40-3635b1be5c66
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '350'
 ht-degree: 0%
 
 ---
@@ -13,11 +13,11 @@ ht-degree: 0%
 
 När du analyserar data är det bra att konsolidera data från olika källor. Vill du gruppera intäkterna genom anskaffningskälla, länka data från ordertabellen och Google Analytics? Eller hur grupperar man intäkterna efter kundkön eller kopplar ett kundattribut till transaktionsdata för segmentering?
 
-Den här guiden lär dig hur man gör just det. Innan du börjar rekommenderar vi att du går till [Guide för beräknade kolumntyper](../../data-analyst/data-warehouse-mgr/calc-column-types.md). The _Guide för beräknade kolumntyper_ I beskrivs de kolumntyper du kan skapa i Data warehouse Manager tillsammans med definitioner och exempel för dem.
+Den här guiden lär dig hur man gör just det. Innan du börjar rekommenderar Adobe att du går till [Guide för beräknade kolumntyper](../../data-analyst/data-warehouse-mgr/calc-column-types.md). The _Guide för beräknade kolumntyper_ I beskrivs de kolumntyper som du kan skapa i Data warehouse Manager tillsammans med definitioner och exempel.
 
 1. Kom igång genom att klicka **[!DNL Manage Data > Data Warehouse]** i sidlisten.
 
-1. Klicka på tabellen som du vill skapa en kolumn i. Om vi till exempel vill skapa en `Customer Gender` kolumn för intäktssegmentering väljer vi `sales_flat_order` tabell.
+1. Klicka på tabellen som du vill skapa en kolumn i. Om du till exempel vill skapa en `Customer Gender` kolumn för intäktssegmentering väljer du `sales_flat_order` tabell.
 
 1. Tabellschemat visas. Klicka **[!UICONTROL Create New Column]**.
 
@@ -29,7 +29,7 @@ Den här guiden lär dig hur man gör just det. Innan du börjar rekommenderar v
    * För `One to Many` (förenad) och `Many to One` (aggregerade) kolumner måste du markera tabellerna och kolumnerna.
    * För `Same Table calculation`måste du välja önskat datumfält i listrutan.
 
-Om du skapar en `One to Many` (förenad) eller `Many to One` (sammanställd) kolumn måste du välja en sökväg för att koppla ihop de två tabellerna. I det här steget kan du antingen använda en befintlig bana eller skapa en ny.
+Om du skapar en `One to Many` (förenad) eller `Many to One` (sammanställd) kolumn måste du välja en sökväg för att koppla ihop de två tabellerna. I det här steget kan du antingen använda en befintlig bana eller skapa en.
 
 >[!NOTE]
 >

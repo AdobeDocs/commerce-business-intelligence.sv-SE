@@ -2,25 +2,25 @@
 title: Analyserar kupongpåverkan
 description: Lär dig hur du analyserar kupongpåverkan på kundvärvning och kundunderhåll.
 exl-id: b0619365-fa75-49b5-a393-87f3364a390f
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
 workflow-type: tm+mt
-source-wordcount: '1392'
+source-wordcount: '1361'
 ht-degree: 2%
 
 ---
 
 # Kupongpåverkan
 
-Analysera hur kunderna använder era kuponger för att få goda insikter om ert företag. Analysera hur ni förvärvar och behåller kunder via kuponger. I den här artikeln utforskar vi analyser som kan hjälpa dig att svara på följande typer av frågor:
+Analysera hur kunderna använder era kuponger för att få goda insikter om ert företag. Analysera hur ni förvärvar och behåller kunder via kuponger. I den här artikeln behandlas analyser som kan hjälpa dig att besvara följande typer av frågor:
 
 * Hur många kunder köper du via kuponger?
 * Är det mer sannolikt att kupongförvärvade kunder gör återkommande inköp än kunder som inte har köpt via kuponger?
 * Hur skiljer sig de genomsnittliga intäkterna för livstid mellan kupongförvärvade kunder och kunder som inte förvärvats via kuponger?
 * Gör kunder som förvärvats från kuponger återkommande inköp med kuponger?
 
-För att besvara dessa frågor fokuserar vi på [jämföra kupongförvärvade kunder med icke-kupongförvärvade kunder](#compare), [analysera information om första order från kupongförvärv](#firstorder)och [tittar på attributen hos kunder som använder kuponger i sin första order.](#attributes)
+Svara på dessa frågor genom att fokusera på [jämföra kupongförvärvade kunder med icke-kupongförvärvade kunder](#compare), [analysera information om första order från kupongförvärv](#firstorder)och [tittar på attributen hos kunder som använder kuponger i sin första order.](#attributes)
 
-Låt oss komma igång!
+Kom igång!
 
 ## Jämföra kupongförvärvade kunder med icke-kupongförvärvade kunder {#compare}
 
@@ -42,16 +42,16 @@ Den här mätningen visar antalet upprepade order som gjorts av båda typerna av
 
 Här visas antalet upprepade order som gjorts med en kupong och procentandelen upprepade order som gjorts med en kupong. Detta kan hjälpa er att avgöra om kupongförvärvade kunder tenderar att göra fler upprepade order med en kupong än icke-kupongförvärvade kunder och om kupongförvärvade kunder använder kuponger oproportionerligt i sina uppföljningsorder.
 
-Låt oss titta på några exempeldata för kuponganskaffning jämfört med icke-kuponganskaffningsvärden:
+Titta på några exempeldata för inlösen av kuponger jämfört med icke-kuponganskaffningsvärden:
 
 | **Kundvärvning** | **Antal nya kunder** | **Genomsnittlig intäkt för livstid** | **Antal upprepade order** | **Antal upprepade order med kupong** | **% av upprepade order med kupong** |
 |-----|-----|-----|-----|-----|-----|
 | Kupong | 1,206 | $356.91 | 2,570 | 1,248 | 48.56% |
 | Icke-kupong | 11,561 | $498.30 | 20,145 | 3,251 | 16.14% |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-Vad kan vi ta ifrån det här? Låt oss ta en titt:
+Se vad du kan ta bort från detta:
 
 ### Antal nya kunder
 
@@ -71,11 +71,11 @@ På samma sätt är antalet upprepade order som görs med en kupong högre för 
 
 ## #Percent of repeat orders with coupon
 
-Icke-kupongförvärvade kunder har en mycket lägre andel upprepade order med en kupong än kupongförvärvade kunder. För kupongförvärvade kunder gäller alltså en kupong för nästan en av två upprepade order. I det här exemplet brukar kupongköpare göra upprepade inköp med kuponger.
+Icke-kupongförvärvade kunder har en mycket lägre andel upprepade order med en kupong än kupongförvärvade kunder. För kupongförvärvade kunder tillämpas alltså nästan hälften av alla upprepade order på en kupong. I det här exemplet brukar kupongköpare göra upprepade inköp med kuponger.
 
 ## Analyserar information om första order från kupongförvärv {#firstorder}
 
-I det här avsnittet fokuserar vi bara på **första ordern från kupongförvärv, uppdelat efter kupong.** använder vi dessa mått i vår analys:
+Det här avsnittet fokuserar bara på **första ordern från kupongförvärv, uppdelat efter kupong.** Använd dessa mätvärden i analysen:
 
 ### Antal order/kunder
 
@@ -105,7 +105,7 @@ Den här mätningen hjälper till att utvärdera lojalitet och genomsnittligt an
 
 Denna mätning hjälper till att utvärdera lojalitet och genomsnittliga intäkter som genereras av kunder som använder en viss kupong. När du utvärderar om kunder som använder kuponger har större värde än andra måste du ta hänsyn till hur många order varje kupong användes i för att vara säker på att du har ett stort urval.
 
-Låt oss nu titta på ett exempel som innehåller tre olika kuponger som används för kundens första beställning:
+Titta nu på ett exempel med tre olika kuponger som används för kundens första beställning:
 
 | **Kupong** | **Första gången du beställer (FTO)** | **Bruttointäkter från FTO** | **Rabatterna tillämpas på FTO** | **Nettointäkter från FTO** | **Genomsnittligt ordervärde för FTO** |
 |-----|-----|-----|-----|-----|-----|
@@ -113,27 +113,27 @@ Låt oss nu titta på ett exempel som innehåller tre olika kuponger som använd
 | **10 dollar rabatt** | 87 | $3,707.07 | $426.10 | $3,280.97 | $42.61 |
 | **20 % rabatt** | 145 | $10,975.05 | $2,195.01 | $8,780.04 | $75.69 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-Vad kan vi ta ifrån det här? För det första fick kupongen&quot;20 % rabatt&quot; flest beställningar första gången. Antalet beställningar som är kopplade till varje kupong kan dock variera beroende på flera faktorer, bland annat:
+Vad kan man ta av detta? För det första fick kupongen&quot;20 % rabatt&quot; flest beställningar första gången. Antalet beställningar som är kopplade till varje kupong kan dock variera beroende på flera faktorer, bland annat:
 
 * mängden reklam för varje kupong.
 * hur länge kupongen erbjuds.
 * den tidpunkt på dag/vecka/månad/år då kupongen erbjöds.
-* den årstid som kupongen erbjöds, beroende på verksamheten.
+* den säsong då kupongen erbjöds, beroende på verksamheten.
 
    **Exempel:** kupongen&quot;20 % rabatt&quot; erbjöds under sommarmånaderna, men företaget säljer kläder för vintertid.
 * begränsningar för kupongerna.
 
    **Exempel:** kupongen&quot;10 % rabatt&quot; erbjuds endast kunder som köper en vinterjacka i samma ordning.
 
-The **bruttointäkter** för kupongen &quot;25 % rabatt på 100 USD eller mer&quot; är mycket högre än bruttointäkterna för kupongen &quot;$10 off&quot;. Kupongen &quot;$10&quot; har dock en mycket större **antal order**. Analyserar **genomsnittligt ordervärde** ger insikt i dessa skillnader: Även om kupongen &quot;25 % rabatt på 100 USD eller mer&quot; hade färre order är det genomsnittliga ordervärdet mer än tre gånger så mycket som kupongen &quot;$10&quot;. Därför tillskrivs en större bruttointäkt&quot;25 % rabatt på 100 USD eller mer&quot;.
+The **bruttointäkter** för kupongen &quot;25 % rabatt på 100 USD eller mer&quot; är mycket högre än bruttointäkterna för kupongen &quot;$10 off&quot;. Kupongen &quot;$10&quot; har dock en mycket större **antal order**. Analyserar **genomsnittligt ordervärde** ger insikt i dessa skillnader. Även om kupongen&quot;25 % rabatt på 100 USD eller mer&quot; hade färre order är det genomsnittliga ordervärdet mer än tre gånger så mycket som kupongen&quot;10 USD&quot;. Därför tillskrivs en större bruttointäkt&quot;25 % rabatt på 100 USD eller mer&quot;.
 
 The **rabatter** och **nettointäkter** för kupongen&quot;25 % rabatt på 100 USD eller mer&quot; och&quot;20 % rabatt&quot; ligger nära värdet. Även om det genomsnittliga ordervärdet för&quot;25 % rabatt på 100 USD eller mer&quot; är nästan dubbelt så stort som det genomsnittliga ordervärdet för&quot;20 % rabatt&quot; har den senare kupongen lite mindre än tre gånger så många order.
 
 ## Attribut för kunder som använder kuponger i sin första order {#attributes}
 
-Nu när vi har tittat på själva beställningarna kan vi titta på de kunder som använder kuponger i sina första order:
+Nu när ni har tittat på själva beställningarna, titta på de kunder som använder kuponger i sina första order:
 
 | **Kundens första orderkupong** | **Antal kunder** | **Genomsnittligt antal order för livslängd** | **Genomsnittlig intäkt för livstid** |
 |-----|-----|-----|-----|
@@ -141,12 +141,12 @@ Nu när vi har tittat på själva beställningarna kan vi titta på de kunder so
 | **10 dollar rabatt** | 87 | 1.9 | $115.50 |
 | **20 % rabatt** | 145 | 1.3 | $103.75 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-du kommer att märka att antalet förstagångsbeställningar är samma som antalet kunder för varje kupong. Detta är rimligt eftersom varje kund bara kan ha en första order.
+Ni märker att antalet förstagångsbeställningar är samma som antalet kunder för varje kupong. Detta är rimligt eftersom varje kund bara kan ha en första order.
 
 Det största antalet kunder förvärvades genom kupongen&quot;20 % rabatt&quot;. Men de här kunderna har de lägsta **genomsnittligt antal order för livslängd** och **genomsnittlig intäkt för livstid**; I allmänhet gör de flesta kupongköpta kunder inga upprepade order. Dessutom köpte kunderna mer genom kupongen&quot;25 % rabatt på 100 USD eller mer&quot; på en högre nivå **genomsnittligt antal order för livslängd** och i sin tur högre **genomsnittlig intäkt för livstid**. I allmänhet kommer användare som köptes via den här kupongen oftast tillbaka och gör fler återkommande inköp.
 
 ## Radbrytning {#wrapup}
 
-Det finns en mängd analyser som ni kan skapa för att bättre förstå hur era kunder använder kuponger. Har du någonsin funderat på att analysera hur era kunder använder era kuponger eller hur lång tid det tar för kuponger att användas? Vad sägs om att hitta det optimala rabattbeloppet - vilket belopp uppmuntrar fler köpare att köpa, högre genomsnittligt ordervärde och högre intäkter under hela löptiden? Om du behöver hjälp med den här typen av frågor kan du [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Det finns en mängd analyser som ni kan skapa för att bättre förstå hur kunderna använder kuponger. Har du någonsin funderat på att analysera hur era kunder använder era kuponger eller hur lång tid det tar för kuponger att användas? Vad sägs om att hitta det optimala rabattbeloppet - vilket belopp uppmuntrar fler köpare att köpa, högre genomsnittligt ordervärde och högre intäkter under hela löptiden? Om du behöver hjälp med den här typen av frågor kan du [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

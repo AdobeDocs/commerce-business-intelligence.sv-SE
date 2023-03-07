@@ -2,9 +2,9 @@
 title: Importera Bing Ad-utgiftsdata
 description: Lär dig att importera Bing-reklamutgiftsdata till [!DNL MBI] för analys.
 exl-id: c8dec4b4-74ce-41b2-a77d-403fe44e2816
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '157'
+source-wordcount: '156'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Importera [!DNL Bing] annonser som spenderar data på [!DNL MBI] för analys, ex
 
 ## [!DNL Bing] Annonsredigeraren
 
-Om du vill exportera dina Bing Ads-data måste du ha Bing Ads Editor installerat. Du kan ladda ned [Bing Ads Editor](https://advertise.bingads.microsoft.com/en-us/bingads-editor).
+Om du vill exportera dina Bing Ads-data måste du ha Bing Ads Editor installerat. Du kan ladda ned [Bing Ads Editor](https://about.ads.microsoft.com/en-us/solutions/tools/editor).
 
 ## [!DNL Bing] Exportera annonsdata
 
@@ -24,4 +24,4 @@ Om du vill exportera dina Bing Ads-data måste du ha Bing Ads Editor installerat
 1. I `Save As` klickar du på den mapp där du vill spara exportfilen.
 1. I `File name` väljer du ett namn för filexporten.
 1. Klicka **[!UICONTROL Save]**.
-1. När filen har laddats ned  [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en), och vi gör en första överföring åt dig och ställer in de nödvändiga backend-dimensionerna.
+1. När filen har laddats ned  [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) för att göra en första överföring åt dig och ställa in de nödvändiga backend-dimensionerna.

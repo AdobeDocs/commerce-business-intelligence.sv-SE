@@ -2,9 +2,9 @@
 title: Help desk-rapportering för Zendesk
 description: Läs om era mest värdefulla hänvisningskanaler.
 exl-id: b6142ef2-2be8-401f-ac35-f86fc68d204e
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '392'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 0%
 >
 >Detta är bara tillgängligt för klienter som finns på `Pro` planera och använda den nya arkitekturen. Du har den nya arkitekturen om du har `Data Warehouse Views` avsnitt som är tillgängliga efter markering `Manage Data` i huvudverktygsfältet.
 
-Konsoliderar [!DNL Zendesk] data med transaktionsdatabasen är ett utmärkt sätt att bättre förstå hur kunderna interagerar med era sälj- eller kundframgångsgrupper och vilken typ av kunder som använder er supportplattform. I den här artikeln visar vi hur du konfigurerar en kontrollpanel för att få detaljerade rapporter om din [!DNL Zendesk] prestanda och band till era transaktionskunder.
+Konsoliderar [!DNL Zendesk] data med transaktionsdatabasen är ett utmärkt sätt att bättre förstå hur kunderna interagerar med era sälj- eller kundframgångsgrupper. Det hjälper er också att veta vilken typ av kunder som använder er supportplattform. I den här artikeln visas hur du konfigurerar en kontrollpanel för att få detaljerade rapporter om din [!DNL Zendesk] prestanda och band till era transaktionskunder.
 
-Innan du börjar måste du ansluta [[!DNL Zendesk]](../integrations/zendesk.md). Denna analys innehåller [avancerade beräknade kolumner](../../data-warehouse-mgr/adv-calc-columns.md).
+Innan du börjar vill du ansluta [[!DNL Zendesk]](../integrations/zendesk.md). Denna analys innehåller [avancerade beräknade kolumner](../../data-warehouse-mgr/adv-calc-columns.md).
 
 <!-- Getting Started -->
 
@@ -272,7 +272,7 @@ Innan du börjar måste du ansluta [[!DNL Zendesk]](../integrations/zendesk.md).
 * [!UICONTROL Filter]:
 
 * **[!DNL Zendesk]Genomsnittlig/mediantid till första svar**
-   * Biljetter vi räknar
+   * Biljetter som räknas
    * status IN closed, resolved
 
 * I **`[Zendesk] tickets`** table

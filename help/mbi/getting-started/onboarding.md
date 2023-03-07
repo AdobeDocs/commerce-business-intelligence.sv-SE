@@ -2,16 +2,16 @@
 title: Onboarding
 description: Läs mer om introduktion.
 exl-id: e0cce957-af2c-4514-9afd-c9aaa651a4f0
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '189'
 ht-degree: 0%
 
 ---
 
 # Onboarding
 
-Startfrågor som rör `store` och `database` inställningarna säkerställer att vi ställer in din rapportering korrekt. Med dessa svar kommer vi att leverera rapporter som är skräddarsydda efter hur er butik ser ut.
+Startfrågor som rör `store` och `database` inställningarna ser till att du ställer in rapporteringen korrekt. Med dessa svar levererar Adobe rapporter som är skräddarsydda efter hur er butik ser ut.
 
 ## Lagringsinställningar
 
@@ -25,7 +25,7 @@ Startfrågor som rör `store` och `database` inställningarna säkerställer att
 
 - *Vilken version av Commerce använder du?* - Välj `currency` som din butik är verksam i.
 
-- *Är din butik bosatt i EU?* - Om du svarar `Yes` På denna fråga kommer vi att vara värd för er Data warehouse och alla era uppgifter i EU, i enlighet med GDPR.
+- *Är din butik bosatt i EU?* - Om du svarar `Yes` På denna fråga är Adobe värd för Data warehouse och alla era uppgifter i EU, i enlighet med GDPR.
 
 ## Databasinställningar
 

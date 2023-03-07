@@ -2,9 +2,9 @@
 title: Ändra databasen så att den stöder inkrementell replikering
 description: Lär dig hur du ändrar databasen så att den stöder inkrementell replikering.
 exl-id: c9a38892-6096-4eb5-8a53-35b8b7b083dc
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '334'
 ht-degree: 0%
 
 ---
@@ -32,4 +32,4 @@ Kom ihåg att tabeller som använder den här metoden är en kolumn med heltals�
 
 ## Radbrytning
 
-Genom att göra mindre ändringar i tabellerna kan du dra nytta av de snabbare och effektivare inkrementella replikeringsmetoderna. Om detta fortfarande inte är möjligt kan du dock utföra andra åtgärder för att [minska uppdateringstiden](../best-practices/reduce-update-cycle-time.md) och [optimera databasen](../best-practices/opt-db-analysis.md).
+Genom att göra mindre ändringar i tabellerna kan du dra nytta av de snabbare och effektivare inkrementella replikeringsmetoderna. Om detta inte är möjligt kan du dock utföra andra åtgärder för att [minska uppdateringstiden](../best-practices/reduce-update-cycle-time.md) och [optimera databasen](../best-practices/opt-db-analysis.md).

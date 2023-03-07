@@ -2,9 +2,9 @@
 title: Visualiseringsalternativ i Visual Report Builder
 description: Lär dig hur du använder visualiseringsalternativen i Report Builder.
 exl-id: e42a004e-28e3-4484-bb5a-b58c810b23e0
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '1550'
+source-wordcount: '1534'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Att välja rätt visualisering för en viss datauppsättning är en viktig del av analysprocessen. Alla datauppsättningar har en historia att berätta, men effekten av den berättelsen framhävs av dess visuella påverkan och läsbarhet.
 
-The [!DNL MBI] `Visual Report Builder` har 12 olika visualiseringsalternativ, vart och ett med sina egna fördelar och användningsfall. I den här artikeln beskrivs de olika visualiseringsalternativen i [!DNL MBI], inklusive nödvändiga rapportkonfigurationer när det är tillämpligt, samt ett exempel på ett användningsfall. Följande visualiseringar är tillgängliga i MBI:
+The [!DNL MBI] `Visual Report Builder` har 12 olika visualiseringsalternativ, vart och ett med sina egna fördelar och användningsfall. I den här artikeln beskrivs de olika visualiseringsalternativen i [!DNL MBI], inklusive nödvändiga rapportkonfigurationer när det är tillämpligt, och ett exempel på ett användningsfall. Följande visualiseringar är tillgängliga i MBI:
 
 * `Scalar`
 * `Table`
@@ -35,7 +35,7 @@ The [!DNL MBI] `Visual Report Builder` har 12 olika visualiseringsalternativ, va
 
 ![](../../assets/blobid0.png)
 
-Om du vill spara en rapport som en skalär konfigurerar du dina filter och tidsinställningar och klickar sedan på **[!UICONTROL Save]** eller **[!UICONTROL Update]** längst upp till höger i rapporten. Under `Type` väljer du Nummer: Måttnamn för att spara rapporten som det värde som visas på den vänstra sidlisten.
+Om du vill spara en rapport som en skalär konfigurerar du dina filter och tidsinställningar och klickar sedan på **[!UICONTROL Save]** eller **[!UICONTROL Update]** i rapportens övre högra del. Under `Type` väljer du Nummer: Måttnamn för att spara rapporten som det värde som visas på vänster sida.
 
 ![](../../assets/blobid1.png)
 
@@ -47,7 +47,7 @@ Om du vill spara en rapport som en skalär konfigurerar du dina filter och tidsi
 
 ## `Table`
 
-Som namnet antyder, `table` -rapporter passar bra för att visa tabelldetaljer. När det finns ett behov av att visa ett stort antal grupper efter värden eller mätvärden i en enda rapport är en tabell ofta det bästa sättet att gå. Nedan finns en tabell med&quot;Kundinformation&quot; som visar order och intäkter grupperade efter kundens e-postadress:
+Som namnet antyder, `table` -rapporter passar bra för att visa tabelldetaljer. När det finns ett behov av att visa många grupper utifrån värden eller mätvärden i en enda rapport är en tabell ofta det bästa sättet att gå. Nedan finns en tabell med&quot;Kundinformation&quot; som visar order och intäkter grupperade efter kundens e-postadress:
 
 ![](../../assets/blobid2.png)
 
@@ -81,7 +81,7 @@ Om du vill spara en rapport som ett linjediagram justerar du rapporten `Type` ti
 
 ![](../../assets/blobid2.png)
 
-Alla distinkta mått, grupperade efter och tidsintervallkombinationer visas som en egen stapel. Om du har två mätvärden med en `group by`, med tre distinkta `group by` värden visas sex separata fält i rapporten.
+Alla distinkta mått, grupperade efter och tidsintervallkombinationer visas som en egen stapel. Om du har två mätvärden med en `group by`, med tre distinkta `group by` värden visar rapporten sex separata fält.
 
 Om du vill spara en rapport som ett stapeldiagram justerar du rapporten `Type` till `Chart` och väljer `Bar` enligt nedan:
 
@@ -95,7 +95,7 @@ Om du vill spara en rapport som ett stapeldiagram justerar du rapporten `Type` t
 
 `Stacked bar` diagrammen liknar stapeldiagrammets bröder, med möjlighet att visa den proportionella uppdelningen av varje stapel. Oftast skapas staplade stapeldiagram med två eller flera mätvärden och en grupp per, så att varje stapel representerar en unik grupp efter värde som delas mellan de olika måtten.
 
-Rapporten nedan innehåller till exempel två identiska intäktsmått: en filtrerad för första gången och den andra filtrerad för upprepade order. Efter gruppering efter butik kan du se både den totala intäktssumman för varje butik (som representeras av den totala bredden på stapeln) och den första gången, jämfört med upprepad intäktsfördelning för varje butik:
+Rapporten nedan innehåller till exempel två identiska intäktsmått med en filtrerad order för första gången och den andra filtrerad för upprepade order. När du har grupperat efter butik kan du se både det totala intäktsbidraget för varje butik (som representeras av den totala bredden på stapeln) och första gången, jämfört med en upprepad intäktsfördelning för varje butik.
 
 ![](../../assets/blobid4.png)
 
@@ -111,9 +111,9 @@ Om du vill spara en rapport som ett staplat stapeldiagram justerar du rapporten 
 
 ## `Column`
 
-`Column` diagram representerar varje datapunkt som en lodrät kolumn, och är generellt bättre för att visa tidstrenddata än för den vågräta stapeldiagramvisningen. Eftersom varje unikt mätvärde och gruppera efter kombination representeras i en egen serie med staplar, är en kolumnrapport i allmänhet bäst för rapporter med tre eller färre mätvärden, eller ett mätvärde med en enda grupp genom att innehålla 1-3 grupp efter värden.
+`Column` diagram representerar varje datapunkt som en lodrät kolumn, och är bättre för att visa tidsstyrda data än för det vågräta stapeldiagrammet. Varje unik mätmetod och gruppera efter kombination representeras i en egen serie med staplar. En kolumnrapport är bäst för rapporter med tre eller färre värden eller ett mått med en enda grupp genom att innehålla 1-3 grupper med värden.
 
-I exemplet nedan visar vi två intäktsmått, en filtrerad för första gången och den andra för upprepade intäkter, som trendar över tid per månad:
+I exemplet nedan ser du två intäktsmått, en filtrerad för första gången och den andra för upprepade intäkter, som trendar över tid per månad:
 
 ![](../../assets/blobid6.png)
 
@@ -182,7 +182,7 @@ Om du vill spara en rapport som ett ytdiagram justerar du `Type` till `Chart` oc
 
 ![](../../assets/blobid4.png)
 
-I en trattrapport återspeglas det relativa värdet för ett visst steg i tratten av stegets höjd, och i vilken ordning stegen visas avgörs rapportkonfigurationen. Det finns två sätt att konfigurera en trattrapport:
+I en trattrapport återspeglas det relativa värdet för ett visst steg i tratten av stegets höjd. Rapportkonfigurationen avgör i vilken ordning stegen visas. Det finns två sätt att konfigurera en trattrapport:
 
 * `Single metric with one group by`: - Stegen bestäms av inställningen &quot;Visa överkant/underkant&quot; för gruppen efter. Som standard visas trattsteg i ordning från det största till det minsta värdet, men du kan också sortera dem i bokstavsordning efter gruppens namn.
 
@@ -227,7 +227,7 @@ Alternativ 2:
 
 ## `Bubble` diagram
 
-A `bubble` kan visa upp till fyra dimensioner av data där `X` och `Y` axlarna anger placeringen av bubblorna, `Z` är storleken på bubblorna, och genom att ta med två grupper kan du lägga till färg i bubblorna. Den här typen av visualisering används bäst när du vill rita upp flera datamängder i ett enda diagram.
+A `bubble` kan visa upp till fyra dimensioner av data där `X` och `Y` axlarna anger placeringen av bubblorna. The `Z` är storleken på bubblorna, och genom att ta med två grupper kan du lägga till färg i bubblorna. Den här typen av visualisering används bäst när du vill rita upp flera datamängder i ett enda diagram.
 
 I följande diagram visas antalet kunder (bubbelstorlek) grupperade efter en specifik anskaffningskälla (bubbelfärg) och tillstånd (olika bubblor i en viss färg), plottade mot total intäkt och genomsnittlig livstid.
 

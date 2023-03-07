@@ -2,16 +2,16 @@
 title: Importerar marknadsföringsdata för CJ-dotterbolag (Commission Junction)
 description: Lär dig importera CJ-filialdata (Commission Junction) till [!DNL MBI].L MBI].
 exl-id: 1db83f34-15a1-4599-ab0a-65d527ccae01
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '146'
+source-wordcount: '144'
 ht-degree: 0%
 
 ---
 
 # Importera `CJ Affiliate` data
 
-Importera `CJ Affiliate` (kommissionens knutpunkt) data till [!DNL MBI]följer du bara stegen nedan och bifogar den resulterande filen till en supportanmälan. Vi skapar datatabellen för ditt konto och låter dig fortsätta överföra data oberoende av varandra.
+Importera `CJ Affiliate` (kommissionens knutpunkt) data till [!DNL MBI]följer du bara stegen nedan och bifogar den resulterande filen till en supportanmälan. Adobe ställer in datatabellen för ditt konto och låter dig fortsätta överföra data oberoende av varandra.
 
 ## Exportera `CJ Affiliate` Data
 
@@ -31,4 +31,4 @@ Importera `CJ Affiliate` (kommissionens knutpunkt) data till [!DNL MBI]följer d
 
 1. När du har laddat ned filen kan du [ladda upp filen](../connecting-data/using-file-uploader.md) till [!DNL MBI] data warehouse.
 
-   Då skapas en ny tabell i [!DNL MBI] data warehouse som du kan fortsätta att överföra färska data till regelbundet. När du överför filen måste du följa formateringskraven som anges i [Använda filöverföringsprogrammet](../connecting-data/using-file-uploader.md).
+   Då skapas en tabell i [!DNL MBI] data warehouse som du kan fortsätta att överföra färska data till regelbundet. När du överför filen måste du följa formateringskraven i [Använda filöverföringsprogrammet](../connecting-data/using-file-uploader.md).

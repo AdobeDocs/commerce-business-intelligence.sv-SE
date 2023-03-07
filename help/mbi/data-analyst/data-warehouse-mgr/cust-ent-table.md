@@ -2,16 +2,16 @@
 title: customer_entity, tabell
 description: Lär dig hur du får åtkomst till poster för alla registrerade konton.
 exl-id: 24bf0e66-eea0-45ea-8ce6-4ff99b678201
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '617'
+source-wordcount: '601'
 ht-degree: 0%
 
 ---
 
 # customer_entity Table
 
-The `customer_entity` tabellen innehåller poster för alla registrerade konton. Ett konto anses vara registrerat om de registrerar sig för ett konto, oavsett om de någonsin genomför ett köp eller inte. Varje rad motsvarar ett unikt registrerat konto, vilket framgår av kontots `entity_id`.
+The `customer_entity` tabellen innehåller poster för alla registrerade konton. Ett konto anses vara registrerat om de registrerar sig för ett konto, oavsett om de genomför ett köp eller inte. Varje rad motsvarar ett unikt registrerat konto, vilket framgår av kontots `entity_id`.
 
 Det här registret innehåller inga poster med kunder som gör en beställning via gästutcheckning. Om din butik godkänner utcheckning av gäster, [läs hur du konto](../data-warehouse-mgr/guest-orders.md) för dessa kunder.
 
@@ -19,13 +19,13 @@ Det här registret innehåller inga poster med kunder som gör en beställning v
 
 | **Kolumnnamn** | **Beskrivning** |
 |---|---|
-| `created_at` | Tidsstämpel som motsvarar kontots registreringsdatum, som vanligtvis lagras lokalt i UTC. Beroende på din konfiguration i [!DNL MBI]kan den här tidsstämpeln konverteras till en rapporttidszon i [!DNL MBI] som skiljer sig från databasens tidszon |
+| `created_at` | Tidsstämpel som motsvarar kontots registreringsdatum, lagras lokalt i UTC. Beroende på din konfiguration i [!DNL MBI]kan den här tidsstämpeln konverteras till en rapporttidszon i [!DNL MBI] som skiljer sig från databasens tidszon |
 | `email` | E-postadress som är associerad med kontot |
 | `entity_id` (PK) | Unik identifierare för tabellen och används ofta i kopplingar till `customer_id` i andra tabeller i instansen |
 | `group_id` | Sekundärnyckel som är associerad med `customer_group` tabell. Gå med i `customer_group.customer_group_id` för att fastställa kundgruppen som är associerad med det registrerade kontot |
 | `store_id` | Sekundärnyckel som är associerad med `store` tabell. Gå med i `store`.`store_id` för att avgöra vilken Commerce Store-vy som är associerad med det registrerade kontot |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Vanliga beräknade kolumner
 
@@ -42,7 +42,7 @@ Det här registret innehåller inga poster med kunder som gör en beställning v
 | `Seconds since customer's first order date` | Förfluten tid mellan kundens första orderdatum och nu. Beräknas genom subtraktion `Customer's first order date` från serverns tidsstämpel när frågan körs, returneras som ett heltal i sekunder |
 | `Store name` | Namnet på Commerce Store som är associerad med det här registrerade kontot. Beräknas av koppling `customer_entity.store_id` till `store.store_id` och returnera `name` fält |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Vanliga mått
 
@@ -53,18 +53,18 @@ Det här registret innehåller inga poster med kunder som gör en beställning v
 | `Avg lifetime orders` | Genomsnittligt antal beställningar per kund under deras livstid | Åtgärd: Genomsnittlig<br/>Operand: `Customer's lifetime number of orders`<br/>Tidsstämpel: `created_at` |
 | `Avg lifetime revenue` | Genomsnittlig total intäkt per kund för alla beställningar som gjorts under deras livstid | Åtgärd: Genomsnittlig<br/>Operand: `Customer's lifetime revenue`<br/>Tidsstämpel: `created_at` |
 | `New customers` | Antalet kunder med minst en order, räknat på datumet för deras första order. Exkluderar konton som registrerar men aldrig gör en beställning | Åtgärd: Antal<br/>Operand: `entity_id`<br/>Tidsstämpel: `Customer's first order date` |
-| `Registered accounts` | Antalet registrerade konton. Inkluderar alla registrerade konton, oavsett om kontot någonsin beställt eller inte | Åtgärd: Antal<br/>Operand: `entity_id`<br/>Tidsstämpel: `created_at` |
+| `Registered accounts` | Antalet registrerade konton. Inkluderar alla registrerade konton, oavsett om kontot någonsin beställt | Åtgärd: Antal<br/>Operand: `entity_id`<br/>Tidsstämpel: `created_at` |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Förena banor med sekundärnyckel
 
 `customer_group`
 
-* Gå med i `customer_group` för att skapa nya kolumner som returnerar kundgruppnamnet för det registrerade kontot.
+* Gå med i `customer_group` för att skapa kolumner som returnerar kundgruppnamnet för det registrerade kontot.
    * Sökväg: `customer_entity.group_id` (många) => `customer_group.customer_group_id` (ett)
 
 `store`
 
-* Gå med i `store` för att skapa nya kolumner som returnerar information som är relaterad till butiken som är kopplad till det registrerade kontot.
+* Gå med i `store` för att skapa kolumner som returnerar information som är relaterad till butiken som är kopplad till det registrerade kontot.
    * Sökväg: `customer_entity.store_id` (många) => `store.store_id` (ett)

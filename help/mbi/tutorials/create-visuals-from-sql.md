@@ -2,9 +2,9 @@
 title: Skapa visualiseringar från SQL-frågor
 description: Lär dig bekanta dig med den terminologi som används i SQL Report Builder och ge dig en gedigen grund för att skapa SQL-visualiseringar.
 exl-id: 9b9bc205-5b64-4e64-8d23-057072e5dd72
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '626'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Innan du börjar den här självstudiekursen ska du läsa om följande terminolo
 >
 >Datum och tidsstämplar kan också användas som `Categories`. De är bara en annan datakolumn i frågan och måste formateras och ordnas som du vill i själva frågan.
 
-- `Labels`: De används som x-axeletiketter. När du analyserar datatrender över tid anges års- och månadskolumnerna vanligtvis som etiketter. Mer än en kolumn kan anges till Label.
+- `Labels`: De används som x-axeletiketter. När du analyserar datatrender över tid anges år- och månadskolumnerna som etiketter. Mer än en kolumn kan anges till Label.
 
 ## Steg 1: Skriv frågan
 
@@ -35,7 +35,7 @@ Tänk på följande:
 
 - The `SQL Report Builder` använder [`Redshift SQL`](https://docs.aws.amazon.com/redshift/latest/dg/c_redshift-and-postgres-sql.html).
 
-- Om du skapar en rapport med en tidsserie ska du se till att `ORDER BY` tidsstämpelkolumnerna. Detta säkerställer att tidsstämplarna ritas i rätt ordning i rapporten.
+- Om du skapar en rapport med en tidsserie ska du se till att `ORDER BY` tidsstämpelkolumnerna. Detta garanterar att tidsstämplarna ritas i rätt ordning i rapporten.
 
 - The `EXTRACT` är bra att använda för att analysera dag, vecka, månad eller år i tidsstämpeln. Detta är användbart när `time interval` som du vill använda i rapporten är `daily`, `weekly`, `monthly`, eller `yearly`.
 
@@ -60,17 +60,17 @@ Den här frågan returnerar den här resultattabellen:
 
 ## Steg 2: Skapa visualiseringen
 
-Med dessa resultat *hur skapar du visualiseringen?* Klicka på **[!UICONTROL Chart]** i `Results` fönster. Det här visar `Chart settings` -fliken.
+Med dessa resultat *hur skapar du visualiseringen?* Klicka på **[!UICONTROL Chart]** i `Results` fönster. Här visas `Chart settings` -fliken.
 
 När en fråga körs för första gången kan rapporten se ogenomskinlig ut eftersom alla kolumner i frågan är plottade som en serie:
 
 ![](../assets/SQL_initial_report_results.png)
 
-I det här exemplet vill vi att detta ska vara ett linjediagram som utvecklas över tid. Använd följande inställningar för att skapa den:
+I det här exemplet vill du att det här ska vara ett linjediagram som utvecklas över tid. Använd följande inställningar för att skapa den:
 
-- `Series`: Välj `Items sold` kolumn som `Series` eftersom vi vill mäta det. När du har definierat en `Series` visas en enda rad i rapporten.
+- `Series`: Välj `Items sold` kolumn som `Series` eftersom du vill mäta det. När du har definierat en `Series` visas en enda rad i rapporten.
 
-- `Category`: I det här exemplet vill vi visa varje produkt som en rad i rapporten. För att göra detta ställer vi in `Product name` som `Category`.
+- `Category`: I det här exemplet vill du visa varje produkt som en rad i rapporten. För att göra detta ställer du in `Product name` som `Category`.
 
 - `Labels`: Använda kolumnerna `year` och `month` som etiketter på x-axeln som ska kunna visas `Items Sold` som trender över tid.
 
@@ -78,7 +78,7 @@ I det här exemplet vill vi att detta ska vara ett linjediagram som utvecklas ö
 >
 >Frågan måste innehålla en `ORDER BY` -satsen på etiketterna om de `date`/`time` kolumner.
 
-Här är en kort titt på hur vi skapade den här visualiseringen, från att köra frågan till att konfigurera rapporten:
+Nedan följer en kort titt på hur du skapade den här visualiseringen, från att köra frågan till att konfigurera rapporten:
 
 ![](../assets/SQL_report_settings.gif)
 

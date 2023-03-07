@@ -2,9 +2,9 @@
 title: Förstå och bygga upp grundläggande analyser
 description: Lär dig förstå och bygga upp grundläggande analyser.
 exl-id: 23cea7b3-2e66-40c3-b4bd-d197237782e3
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '3153'
+source-wordcount: '3117'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 När du känner till [!DNL MBI] och har en grundläggande förståelse för verktyget, kommer du att vilja börja skapa rapporter. En av de vanligaste frågorna du kanske har är &quot;Vad ska jag titta på?&quot;
 
-Informationen nedan sammanfattar några av de gemensamma mätvärden och rapporter som du kan finna värdefulla. Det finns redan ett antal rapporter på ditt konto, så kontrollera att du granskar de värden och rapporter som finns på ditt konto för att undvika att skapa dubbletter.
+Informationen nedan sammanfattar några av de gemensamma mätvärdena och rapporterna som du kan finna värdefulla. Vissa av dessa rapporter finns på ditt konto, så kontrollera att du granskar mätvärden och rapporter som finns på ditt konto för att undvika att skapa dubbletter.
 
 ## Tabeller och kolumner som du vill förstå
 
@@ -24,13 +24,13 @@ När du bygger upp ett mätresultat måste du känna till fyra informationsdelar
 1. Kolumnen som du vill utföra åtgärden på och
 1. Tidsstämpeln som du vill använda för att spåra data.
 
-De tabellnamn vi använder i de här exemplen skiljer sig förmodligen något från kolumn- och tabellnamnen i databasen eftersom varje databas är unik. Referera till nedanstående definitioner om du behöver hjälp med att identifiera en motsvarande tabell eller kolumn i databasen.
+De tabellnamn som används i dessa exempel skiljer sig förmodligen något från kolumn- och tabellnamnen i databasen eftersom varje databas är unik. Använd definitionerna nedan om du behöver hjälp med att identifiera en motsvarande tabell eller kolumn i databasen.
 
 ## Kundregister
 
-Tabellen innehåller viktig information om varje kund, t.ex. ett unikt kund-ID, e-postadress, datum när kontot skapades osv. I exemplen nedan kommer vi att använda **[!UICONTROL customer_entity]** som namnet på en exempelkundtabell.
+Tabellen innehåller viktig information om varje kund, t.ex. ett unikt kund-ID, e-postadress osv. Exemplen nedan använder **[!UICONTROL customer_entity]** som namnet på en exempelkundtabell.
 
-Om några av dessa beräkningar inte finns i databasen kan alla administratörsanvändare på kontot skapa dem. Dessutom vill du se till att de här dimensionerna är grupperbara för alla relevanta mått.
+Om några av dessa beräkningar inte finns i databasen kan alla administratörsanvändare på kontot skapa dem. Du måste också se till att de här dimensionerna är grupperbara för alla relevanta mått.
 
 **Dimensioner**
 
@@ -44,28 +44,28 @@ Om några av dessa beräkningar inte finns i databasen kan alla administratörsa
 
 **Tar ni emot gästorder?**
 
-*I så fall kanske den här tabellen inte innehåller alla dina kunder. Kontakta oss [supportteam](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) för att säkerställa att era kundanalyser omfattar alla kunder.*
+*I så fall kanske den här tabellen inte innehåller alla dina kunder. Kontakta [supportteam](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) för att säkerställa att era kundanalyser omfattar alla kunder.*
 
 *Är du inte säker på om du godkänner gästbeställningar? Se [det här ämnet](../data-warehouse-mgr/guest-orders.md) för att lära dig mer!*
 
 ## Orderregister
 
-I den här tabellen representerar varje rad en ordning. Kolumnerna i den här tabellen innehåller grundläggande information om varje order, t.ex. orderns ID, skapandedatum, status, ID:t för kunden som beställde ordern osv. I exemplen nedan använder vi **[!UICONTROL sales_flat_order]** som namnet på en exempelordertabell.
+I den här tabellen representerar varje rad en ordning. Kolumnerna i den här tabellen innehåller grundläggande information om varje order, t.ex. orderns ID, skapandedatum, status, ID:t för kunden som beställde ordern osv. Exemplen nedan använder **[!UICONTROL sales_flat_order]** som namnet på en exempelordertabell.
 
 **Dimensioner**
 
-* **[!UICONTROL Customer_id]**: En unik identifierare för den kund som lade ordern. Detta används ofta för att flytta information mellan kund- och orderregister. I våra exempel förväntar vi oss customer_id på **[!UICONTROL sales_flat_order]** tabell som ska justeras mot **[!UICONTROL entitiy_id]** på **[!UICONTROL customer_entity]** tabell.
+* **[!UICONTROL Customer_id]**: En unik identifierare för den kund som lade ordern. Detta används ofta för att flytta information mellan kund- och orderregister. I de här exemplen förväntar du dig customer_id på **[!UICONTROL sales_flat_order]** tabell som ska justeras mot **[!UICONTROL entitiy_id]** på **[!UICONTROL customer_entity]** tabell.
 * **[!UICONTROL Created_at]**: Det datum då ordern skapades eller placerades.
 * **[!UICONTROL Customer_email]**: E-postadressen till den kund som gjorde beställningen. Detta kan också vara den unika identifieraren för kunden.
 * **[!UICONTROL Customer's lifetime number of orders]**: En kopia av kolumnen med samma namn på din `Customers` tabell.
-* **[!UICONTROL Customer's order number]**: Kundens sekventiella ordernummer som är kopplat till ordern. Om raden du tittar på till exempel är en kunds första order är kolumnen&quot;1&quot;; men om det var kundens 15:e beställning visas&quot;15&quot; för den här beställningen i den här kolumnen. Om den här dimensionen inte finns på din `Customers` bord, fråga vår [supportteam](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) för att hjälpa dig att bygga den.
+* **[!UICONTROL Customer's order number]**: Kundens sekventiella ordernummer som är kopplat till ordern. Om raden du tittar på till exempel är en kunds första order är kolumnen&quot;1&quot;; men om det var kundens 15:e beställning visas&quot;15&quot; för den här beställningen i den här kolumnen. Om den här dimensionen inte finns på din `Customers` bord, fråga [supportteam](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) för att hjälpa dig att bygga den.
 * **[!UICONTROL Customer's order number (previous-current)]**: En sammanfogning av två värden i **[!UICONTROL Customer's order number]** kolumn. Den används i en exempelrapport nedan för att visa den förflutna tiden mellan två order. Tiden mellan en kunds första orderdatum och dess andra orderdatum är till exempel&quot;1-2&quot; med den här beräkningen.
 * **[!UICONTROL Coupon_code]**: Visar vilka kuponger som användes på varje order.
 * **[!UICONTROL Seconds since previous order]**: Tiden (i sekunder) mellan en kunds order.
 
 ## Orderartikelregister
 
-I den här tabellen representerar varje rad en artikel som har sålts. Tabellen innehåller information om de artiklar som säljs i varje beställning, t.ex. referensnummer, produktnummer, kvantitet och så vidare. I exemplen nedan använder vi `sales_flat_order_item` som namnet på en exempelorderobjekttabell.
+I den här tabellen representerar varje rad en artikel som har sålts. Tabellen innehåller information om de artiklar som säljs i varje beställning, t.ex. referensnummer, produktnummer, kvantitet och så vidare. Exemplen nedan använder `sales_flat_order_item` som namnet på en exempelorderobjekttabell.
 
 **Dimensioner**
 
@@ -81,12 +81,12 @@ Tabellen används för att hantera din prenumerationsinformation, t.ex. prenumer
 
 **Dimensioner**
 
-* **[!UICONTROL Customer_id]**: En unik identifierare för den kund som lade ordern. Detta är ett vanligt sätt att skapa en sökväg mellan tabellen Kunder och tabellen Beställningar. I våra exempel förväntar vi oss customer_id på **sales_flat_order** tabell som ska justeras mot `entitiy_id` på `customer_entity` tabell.
+* **[!UICONTROL Customer_id]**: En unik identifierare för den kund som lade ordern. Detta är ett vanligt sätt att skapa en sökväg mellan tabellen Kunder och tabellen Beställningar. I de här exemplen förväntar du dig customer_id på **sales_flat_order** tabell som ska justeras mot `entitiy_id` på `customer_entity` tabell.
 * **[!UICONTROL Start date]**: Det datum då en kunds prenumeration började.
 
 ## Utgiftsregister för marknadsföring
 
-När ni analyserar era marknadsföringsutgifter kan ni inkludera [!DNL Facebook], [!DNL Google AdWords]eller andra källor i analyserna. Om ni har flera olika marknadsföringsresurser kan ni kontakta vår [Managed Services Team](https://business.adobe.com/products/magento/fully-managed-service.html) för att få hjälp med att skapa en konsoliderad tabell för era marknadsföringskampanjer.
+När ni analyserar era marknadsföringsutgifter kan ni inkludera [!DNL Facebook], [!DNL Google AdWords]eller andra källor i analyserna. Om ni har flera olika marknadsföringsresurser kontaktar ni [Managed Services Team](https://business.adobe.com/products/magento/fully-managed-service.html) för hjälp med att skapa en samlad tabell för era marknadsföringskampanjer.
 
 **Dimensioner**
 
@@ -95,7 +95,7 @@ När ni analyserar era marknadsföringsutgifter kan ni inkludera [!DNL Facebook]
 * **[!UICONTROL Clicks]**: Det totala antalet klick. I [!DNL Facebook], det här är klickkolumnen i `facebook_ads_insights_####` tabell. I [!DNL Google AdWords]blir det kolumnen adClicks i `campaigns####` tabell.
 * **[!UICONTROL Impressions]**: Totalt antal visningar. I [!DNL Facebook], det här skulle vara intryck i `facebook_ads_insights_####` tabell. I [!DNL Google AdWords], det är imponerande `campaigns####` tabell.
 * **[!UICONTROL Campaign]**: Det totala antalet klick. I [!DNL Facebook], det här skulle vara kolumnen campaign_name i `facebook_ads_insights_####` tabell. I [!DNL Google AdWords], det här skulle vara kampanjkolumnen i `campaigns####` tabell.
-* **[!UICONTROL Date]**: Tidsstämpeln som utgiften, klickningarna eller intrycket inträffade för en viss kampanj. I [!DNL Facebook], skulle det vara `date_start` kolumn i `facebook_ads_insights_####` tabell. I [!DNL Google AdWords]blir det datumkolumnen i `campaigns####` tabell.
+* **[!UICONTROL Date]**: Den tid och det datum då aktiviteten (utgifter, klick eller visningar) inträffade för en viss kampanj. I [!DNL Facebook], skulle det vara `date_start` kolumn i `facebook_ads_insights_####` tabell. I [!DNL Google AdWords]blir det datumkolumnen i `campaigns####` tabell.
 * **[!UICONTROL Customer's first order's source]**: Orderns källa från en kunds första order. Kontrollera först om du har en kolumn med namnet `customer's first order's source` i ditt konto. Om den här kolumnen inte visas kan du skapa den med hjälp av dessa instruktioner.
 * **[!UICONTROL Customer's first order's medium]**: Ordern är ett medium från en kunds första order. Kontrollera först om du har en kolumn med namnet `customer's first order's source` i ditt konto. Om den här kolumnen inte visas kan du skapa den med hjälp av dessa instruktioner.
 * **[!UICONTROL Customer's first order's campaign]**: Orderns kampanj från en kunds första order. Kontrollera först om du har en kolumn med namnet `customer's first order's source` i ditt konto. Om den här kolumnen inte visas kan du skapa den med hjälp av dessa instruktioner.
@@ -112,7 +112,7 @@ Här är några vanliga exempel på rapporter och mätvärden som du kan använd
 
 ### Nya användare
 
-* **Beskrivning**: Antal nyförvärvade användare under en viss tidsperiod. `New Users` skiljer sig från `Unique Customers`, eftersom `New Users` har en tidsstämpel som ett konto skapades med din tjänst (detta innebär inte att de nödvändigtvis har gjort en beställning) medan `Unique Customers` har placerat minst en order.
+* **Beskrivning**: Antal nyförvärvade användare under en viss period. `New Users` skiljer sig från `Unique Customers`, eftersom `New Users` har en tidsstämpel som ett konto skapades med din tjänst (detta innebär inte att de nödvändigtvis har gjort en beställning) medan `Unique Customers` har placerat minst en order.
 * **Måttdefinition**: Detta mått utför en **Antal** av `entity_id` från `customer_entity` tabell sorterad efter `created_at`.
 * **Rapportexempel**: Antal nya användare som skapades förra månaden
    * **[!UICONTROL Metric]**: `New Users`
@@ -123,7 +123,7 @@ Här är några vanliga exempel på rapporter och mätvärden som du kan använd
 
 ### Unika kunder
 
-* **Beskrivning**: Antal distinkta kunder under en viss tidsperiod. Det här skiljer sig från `New Users`eftersom det bara spårar kunder som har gjort minst en beställning. En rapport över distinkta kunder spårar bara en kund en gång inom ett givet tidsintervall. Om du anger tidsintervallet till `By Day` och en kund gör mer än ett inköp den dagen räknas kunden bara en gång. Om du vill se det totala antalet inköp ska du titta på `Number of Orders`.
+* **Beskrivning**: Antal distinkta kunder under en viss period. Det här skiljer sig från `New Users`eftersom det bara spårar kunder som har gjort minst en beställning. En viss kunds rapport spårar bara en kund en gång i ett givet tidsintervall. Om du anger tidsintervallet till `By Day` och en kund gör mer än ett köp den dagen räknas kunden bara en gång. Om du vill se det totala antalet inköp ska du titta på `Number of Orders`.
 * **Måttdefinition**: Detta mått utför en **Distinkt antal** av `customer_id` från `sales_flat_order` tabell sorterad efter `created_at`.
 * **Rapportexempel**: Distinkta kunder per vecka under de senaste 90 dagarna
    * **[!UICONTROL Metric]**: `Distinct Customers`
@@ -134,7 +134,7 @@ Här är några vanliga exempel på rapporter och mätvärden som du kan använd
 
 ### Nya prenumeranter
 
-* **Beskrivning**: Antal nya abonnenter som förvärvats under en viss tidsperiod.
+* **Beskrivning**: Antal nya abonnenter som förvärvats under en viss period.
 * **Måttdefinition**: Detta mått utför en **Distinkt antal** av `customer_id` från `subscriptions` tabell sorterad efter `start_date`.
 * **Rapportexempel**: Nya prenumeranter detta år efter månad
    * **[!UICONTROL Metric]**: `New Subscribers`
@@ -145,7 +145,7 @@ Här är några vanliga exempel på rapporter och mätvärden som du kan använd
 
 ### Upprepa kunder
 
-* **Beskrivning**: Det totala antalet kunder som beställt mer än en order under en tidsperiod. I en rapport om återkommande kunder kan du använda `Distinct Customers` mätvärden och `Customer's Order Number` från `orders` tabell.
+* **Beskrivning**: Det totala antalet kunder som beställt mer än en order under en period. I en rapport om återkommande kunder kan du använda `Distinct Customers` mätvärden och `Customer's Order Number` från `orders` tabell.
 * **Mått som används**: `Distinct Customers`
 * **Exempel på rapporter**: Antal inköp 2 och 3 förra året
    * **[!UICONTROL Metric]**: `Distinct Customers`
@@ -155,7 +155,7 @@ Här är några vanliga exempel på rapporter och mätvärden som du kan använd
 
    ![](../../assets/2nd_and_3rd_purchases_last_year.png)
 
-* **Exempel 2**: Antal återkommande kunder förra året
+* **Exempel 2**: Antalet återkommande kunder de senaste åren
    * **[!UICONTROL Metric]**: `Distinct Customers`
    * **[!UICONTROL Filters]**: `Customer's Order Number Greater Than 1`
    * **[!UICONTROL Time Range]**: `Moving range > Last Year`
@@ -191,13 +191,13 @@ Här är några vanliga exempel på rapporter och mätvärden som du kan använd
 
 ### Genomsnittlig intäkt för livstid per kohort
 
-* **Beskrivning**: Spåra [genomsnittliga livstidsintäkter för distinkta kohorter](../dev-reports/lifetime-rev-cohort-analysis.md) av användare över tiden för att identifiera de mest högpresterande kohorterna. Kohorter grupperas tillsammans efter ett vanligt datum, till exempel första orderdatum eller skapandedatum.
+* **Beskrivning**: Spåra [genomsnittliga livstidsintäkter för distinkta kohorter](../dev-reports/lifetime-rev-cohort-analysis.md) av användare över tiden för att identifiera de mest högpresterande kohorterna. Kohorter grupperas efter ett vanligt datum, till exempel första orderdatum eller skapandedatum.
 * **Mått som används**: `Revenue`
 * **Exempel på rapporter**: Genomsnittlig avkastning på kundens livstid per kohort
    * **[!UICONTROL Metric]**: `Revenue`
    * **[!UICONTROL Cohort Date]**: `Customer's first order date`
    * **[!UICONTROL Time Interval]**: `Month`
-   * **[!UICONTROL Time Period]**: Glidande kohorter i de senaste 8 kohorterna med minst 4 månaders data
+   * **[!UICONTROL Time Period]**: Glidande kohorter för de senaste åtta kohorterna med minst fyra månaders data
    * **[!UICONTROL Duration]**: `12 Month(s)`
    * **[!UICONTROL Table]**: `Customer_entity`
    * **[!UICONTROL Perspective]**: Ackumulerat medelvärde per kohortmedlem
@@ -208,7 +208,7 @@ Här är några vanliga exempel på rapporter och mätvärden som du kan använd
 
 * **Beskrivning**: Antal köpta kunder som har använt en kupong/rabattkod. Detta kan hjälpa er att få en tydlig bild av era rabattsökande jämfört med fullprisköparna.
 * **Mått som används**: `New Users`
-* **Exempel på rapporter**: Kupong och icke-kupongkunder per månad
+* **Exempel på rapporter**: Kupong- och kupongkunder per månad
    * **[!UICONTROL Metric A]**: `Non coupon customers`
    * **[!UICONTROL Metric]**: `New Users`
    * **[!UICONTROL Filters]**: Kundens livstid Antal beställningar som är större än 0 och kundens livstid Antal kuponger som är lika med 0
@@ -237,7 +237,7 @@ Här är några vanliga exempel på rapporter och mätvärden som du kan använd
 
 ![Kuponganvändning](../../assets/Customers_by_coupon_usage_formula.png)<!--{: width="929"}-->
 
-### Genomsnittlig intäkt under de första 30 dagarna
+### Genomsnittlig första 30-dagars intäkt
 
 * **Beskrivning**: Genomsnittligt intäktsbelopp som genererats av kunder som kund under de första 30 dagarna.
 * **Måttbeskrivning**: Det här måttet utför en **Genomsnittlig** av `Customer's First 30 Day Revenue` från `customer_entity` tabell sorterad efter `created_at`.
@@ -251,7 +251,7 @@ Här är några vanliga exempel på rapporter och mätvärden som du kan använd
 ### Genomsnittlig omsättning för kundens livslängd
 
 * **Beskrivning**: Det genomsnittliga intäktsbelopp som genereras av era kunder under deras livstid.
-* **Måttbeskrivning**: Detta mått utför en **Genomsnittlig** i `Customer's Lifetime Revenue` kolumn på `customer_entity` tabell baserad på `created_at`.
+* **Måttbeskrivning**: Det här måttet utför en **Genomsnittlig** i `Customer's Lifetime Revenue` kolumn på `customer_entity` tabell baserad på `created_at`.
 * **Rapportbeskrivning**: Heltidsgenomsnitt av kundens livstidsintäkter
    * **[!UICONTROL Metric]**: `Average Customer Lifetime Revenue`
    * **[!UICONTROL Time Range]**: `All Time`
@@ -264,7 +264,7 @@ Här är några vanliga exempel på rapporter och mätvärden som du kan använd
 ### Intäkter
 
 * **Beskrivning**: Inkomstmåttet visar den totala intäkten under en vald tidsperiod.
-* Den här mätningen utför en **summa** av `grand_total` från `sales_flat_order` tabell sorterad efter `created_at`.
+* Detta mått utför en **summa** av `grand_total` från `sales_flat_order` tabell sorterad efter `created_at`.
 * **Rapportexempel**: Intäkter per månad, hittills i år
    * **[!UICONTROL Metric]**: `Revenue`
    * **[!UICONTROL Time Range]**: `1 Year Ago to 1 Month Ago`
@@ -272,13 +272,13 @@ Här är några vanliga exempel på rapporter och mätvärden som du kan använd
 
 >[!TIP]
 >
->Kontrollera att beräkningen av dina intäkter överensstämmer med definitionen som du diskuterar internt. Du kanske bara vill räkna av intäkter från order som har levererats, du kanske måste konvertera valutor från olika regioner och du kanske vill exkludera moms. Dessutom kan du använda [Filteruppsättningar](../../data-user/reports/ess-manage-data-filters.md) för att säkerställa enhetlighet i alla mätvärden som bygger på samma tabell.
+>Kontrollera att beräkningen av dina intäkter överensstämmer med definitionen som du diskuterar internt. Du kanske vill räkna av intäkter från order som har levererats, konvertera valutor från olika regioner eller exkludera moms. Du kan också använda [Filteruppsättningar](../../data-user/reports/ess-manage-data-filters.md) för att säkerställa enhetlighet i alla mätvärden som bygger på samma tabell.
 
 ![Intäkter](../../assets/revenue.png)<!--{: width="929"}-->
 
 ### Beställningar
 
-* **Beskrivning**: Antal order under en viss tidsperiod. I en beställningsrapport spåras förändringar i ordervolym som orsakas av nya erbjudanden, kampanjer eller annat som kan öka (eller minska) transaktionsvolymen. Du kanske ofta vill segmentera detta mått med ett antal variabler för att besvara dina frågor.
+* **Beskrivning**: En räkning av det totala antalet order under en angiven period. En orderrapport håller reda på förändringar i ordervolym som orsakas av nya erbjudanden, kampanjer eller annat som kan öka (eller minska) transaktionsvolymen. Ofta vill du segmentera detta mätresultat med några variabler för att besvara dina frågor.
 * **Måttdefinition**: Detta mått utför en **Antal** av `entity_id` från `sales_flat_order` tabell sorterad efter `created_at`.
 * **Exempel på rapporter**: Beställningar per månad, hittills i år
    * **[!UICONTROL Metric]**: `number of orders`
@@ -294,7 +294,7 @@ Här är några vanliga exempel på rapporter och mätvärden som du kan använd
 ### Beställda produkter
 
 * **Beskrivning**: De beställda produkterna anger hur många artiklar som sålts under en viss tidsperiod.
-* **Måttdefinition**: Den här mätningen utför en **summa** av `qty_ordered` från `sales_flat_order_item` tabell sorterad efter `created_at`.
+* **Måttdefinition**: Detta mått utför en **summa** av `qty_ordered` från `sales_flat_order_item` tabell sorterad efter `created_at`.
 * **Exempel på rapporter**: Artiklar som säljs per månad, hittills i år
    * **[!UICONTROL Metric]**: `Products ordered`
    * **[!UICONTROL Time Range]**: `1 Year Ago to 1 Month Ago`
@@ -303,11 +303,11 @@ Här är några vanliga exempel på rapporter och mätvärden som du kan använd
    ![Beställda produkter](../../assets/products_ordered_pic1.png)<!--{: width="929"}-->
 
 * Kombinera det här måttet med antalet order för att beräkna antalet artiklar per order. Därefter lägger du till kupongkoder i rapporten för att avgöra hur era kampanjer påverkar kundvagnsstorlek eller segmentera efter nya eller upprepade order för att få en bättre förståelse för kundbeteendet.
-* **Exempel på rapporter**: Produkter per beställning: Första ordern eller upprepade order
-   * **[!UICONTROL Metric A]**: Beställda produkter: Första beställningen
+* **Exempel på rapporter**: Produkter per beställning: första ordern eller upprepade order
+   * **[!UICONTROL Metric A]**: Beställda produkter: första ordern
       * **[!UICONTROL Metric]**: `Products ordered`
       * **[!UICONTROL Filter]**: `Customer's order number = 1`
-   * **[!UICONTROL Metric B]**: Beställningar: Första beställningen
+   * **[!UICONTROL Metric B]**: Beställningar: första ordern
       * **[!UICONTROL Metric]**: `Orders`
       * **[!UICONTROL Filter]**: `Customer's order number = 1`
    * **[!UICONTROL Metric C]**: Beställda produkter: upprepa order
@@ -329,7 +329,7 @@ Här är några vanliga exempel på rapporter och mätvärden som du kan använd
 
 ### Genomsnittligt ordervärde
 
-* **Beskrivning**: Spåra genomsnittsvärdet för beställningar som gjorts under en tidsperiod. Använd detta mätvärde för att snabbt avgöra hur ert genomsnittliga ordervärde (AOV) har fluktuerat till följd av era marknadsföringssatsningar, erbjudanden och/eller andra förändringar i ert företag.
+* **Beskrivning**: Spåra genomsnittsvärdet för beställningar som gjorts över en period. Använd detta mätvärde för att snabbt avgöra hur ert genomsnittliga ordervärde (AOV) har fluktuerat till följd av era marknadsföringssatsningar, erbjudanden och/eller andra förändringar i ert företag.
 * **Måttdefinition**: Det här måttet utför en **medel** av `grand_total` från `sales_flat_order` tabell sorterad efter `created_at`.
 * **Exempel på rapporter**: AOV jämfört med föregående år, hittills i år
    * **[!UICONTROL Metric]**: `Average order value`
@@ -510,7 +510,7 @@ Här är några vanliga exempel på rapporter och mätvärden som du kan använd
 
 >[!NOTE]
 >
->För de två filtren kan du lägga till andra medier som betraktas som&quot;betalda&quot; medier för ditt företag, till exempel cpc eller betalsökningar, och du kan lägga till andra källor som du vill analysera, till exempel Facebook. Du kan även checka ut [den här artikeln](../analysis/roi-ad-camp.md) för mer information om CAC, LTV och ROI.
+>För de två filtren kan du lägga till andra medier som betraktas som&quot;betalda&quot; medier för ditt företag (till exempel cpc eller betalsökningar). Du kan också lägga till andra källor som du vill analysera, t.ex. Facebook. Checka ut [den här artikeln](../analysis/roi-ad-camp.md) för mer information om CAC, LTV och ROI.
 
 ![Livstidsvärde per anskaffningskälla, medium och kampanj](../../assets/LTV_2.png)<!--{: width="929"}-->
 

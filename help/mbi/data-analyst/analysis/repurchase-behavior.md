@@ -2,31 +2,31 @@
 title: Analyserar kundens återköpsbeteende
 description: Lär dig hur du analyserar kundens beteende vid återköp.
 exl-id: 62666d08-5240-4f19-bf8e-e5b2d79a25c4
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '855'
 ht-degree: 1%
 
 ---
 
 # Kundens återköpsbeteende
 
-Om ni erbjuder mer än en produkt undrar ni antagligen hur kunder som köper en viss produkt beter sig annorlunda över tiden jämfört med andra kunder. I den här artikeln utforskar vi analyser som kan hjälpa dig att svara på följande frågor:
+Om ni erbjuder mer än en produkt undrar ni antagligen hur kunder som köper en viss produkt beter sig annorlunda över tiden jämfört med andra kunder. I den här artikeln utforskas analyser som kan hjälpa dig att besvara följande frågor:
 
 Till kunder som köper en *specifikt objekt*,
 
-* Hur sannolikt är det att de kommer att göra ett nytt inköp?
+* Hur sannolikt är det att de gör ett nytt inköp?
 * Hur lång tid tar det för dem att göra ett nytt inköp?
 * Vilket är det genomsnittliga antalet order kunderna lägger på kort/lång sikt?
 * Hur stor är den genomsnittliga intäkten som kunderna genererar på kort eller lång sikt?
 
 ## Rekommenderade mått
 
-När vi bygger analyser av kundåterköp rekommenderar vi att du använder följande mätvärden:
+När du bygger kundrepriser rekommenderar Adobe att du använder följande mått:
 
 ### Sannolikhet för upprepad order
 
-Detta mått definieras som det totala antalet upprepade order, i procent av den totala ordern. Med andra ord är det sannolikt att en order följs av en annan order. Den här åtgärden identifierar objekt som sannolikt kommer att locka kunderna att återvända till din butik.
+Detta mått definieras som det totala antalet upprepade order, i procent av den totala ordern. Med andra ord är detta sannolikheten för att en order följs av en annan order. Den här åtgärden identifierar objekt som sannolikt kommer att locka kunderna att återvända till din butik.
 
 ### Genomsnittligt antal beställningar
 
@@ -42,7 +42,7 @@ Detta mått visar kundens orderfrekvens eller den tid det tar för kunden att be
 
 ## Exempel: kaffeprodukter
 
-Låt oss ta en titt på ett exempel som handlar om kaffeprodukter.
+Se ett exempel på hur man använder kaffeprodukter.
 
 | **Produktnamn** | **Sannolikhet för upprepad order** | **Genomsnittligt antal order under hela livstiden** | **Genomsnittlig intäkt för livstid** | **Mediantid till nästa order** |
 |-----|-----|-----|-----|-----|
@@ -50,19 +50,19 @@ Låt oss ta en titt på ett exempel som handlar om kaffeprodukter.
 | Kaffekapslar | 93.82% | 8.68 | $479.98 | 63.48 dagar |
 | Kaffebönor | 41.92% | 6.07 | $99.82 | 27.31 dagar |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-Nu när vi har våra data kan vi ta en titt på vad detta kan betyda för var och en av våra mätvärden.
+Nu när ni har era data, se vad detta kan betyda för var och en av era mätvärden.
 
 ### Sannolikhet för upprepad order
 
-I det här exemplet är sannolikheten för upprepade order - eller sannolikheten för att en order följs upp av en annan ordning - mycket högre för kaffebryggare och kaffekapslar än för kaffebönor.
+I det här exemplet är sannolikheten för upprepade order - eller sannolikheten för att en order följs av en annan ordning - mycket högre för kaffebryggare och kaffekapslar med en kopp än för kaffebönor.
 
 Eftersom kunder som köper bryggaren är&quot;engagerade&quot; att köpa de kapslar som hör ihop framöver är detta rimligt. På samma sätt har kunder som köpt kapslar en bryggare som är kompatibel med kapslarna. Kaffebönor är dock inte specifika för någon särskild brygga.
 
 ### Genomsnittligt antal order för livslängd
 
-Baserat på ovanstående data kan vi se att personer som köper bryggeriet eller kapslarna i genomsnitt har gjort fler inköp under sin livstid jämfört med kunder som har köpt kaffebönor.
+Baserat på ovanstående data kan du se att personer som köper bryggeriet eller kapslarna i genomsnitt har gjort fler inköp under sin livstid jämfört med kunder som har köpt kaffebönor.
 
 ### Genomsnittlig omsättning för kundens livslängd
 
@@ -70,14 +70,14 @@ Kunder som köper bryggan har den högsta genomsnittliga livstidsintäkten. Dett
 
 ### Tid till nästa order
 
-Bland kunder som köpt kaffekapslar gör hälften en ny beställning på cirka 2 månader. Men bland kunder som har köpt kaffebönor gör hälften en återkommande beställning på ungefär en månad. Detta kan bero på att personer som beställer kapslar antingen (1) inte dricker så mycket kaffe, eller (2) beställer i bulk (till exempel köper två månaders kaffe i en order).
+Bland kunder som köpt kaffekapslar gör hälften en ny beställning på ungefär två månader. Men bland kunder som har köpt kaffebönor gör hälften en återkommande beställning på ungefär en månad. Detta kan bero på att personer som beställer kapslar antingen (1) inte dricker så mycket kaffe, eller (2) beställer i bulk (till exempel köper två månaders kaffe i en order).
 
 ## Vilka andra analyser kan jag bygga?
 
-Med hjälp av de mätvärden som beskrivs i den här artikeln kan du även skapa andra användbara återköpsanalyser. Vi kan till exempel även se hur kunderna återköper **samma objekt** - till exempel om de köper påfyllningar regelbundet. Kapslar och kaffebönor kan återköpas regelbundet, men det skulle vara oväntat att se kunderna göra upprepade inköp av kaffebryggaren. Om ni fokuserar på återfyllnad eller återinsättning är den här analysen mycket användbar.
+Med hjälp av de mätvärden som beskrivs i den här artikeln kan du även skapa andra användbara återköpsanalyser. Du kan till exempel även se hur kunderna återköper **samma objekt** - till exempel om de köper påfyllningar regelbundet. Kapslar och kaffebönor kan återköpas regelbundet, men det skulle vara oväntat att se kunderna göra upprepade inköp av kaffebryggaren. Om ni fokuserar på återfyllnad eller återinsättning är den här analysen användbar.
 
 Förutom att analysera återköpets beteende hos era kunder kan ni också skapa analyser som tittar på kundlojaliteten. Överväg att analysera mönster i kundomsättning - var lämnar era kunder er webbplats och inte kommer tillbaka? I vilken takt inträffar detta?
 
-När du har identifierat varför det händer något kan du använda din analys för att skapa en `reactivation` kampanj. Med hjälp av dessa data kan du identifiera användare som har blivit inaktiva, hur länge det har gått sedan deras senaste besök, vilket deras senaste köp var och så vidare. På så sätt kan ni fatta konkreta beslut som får kunderna att komma tillbaka.
+När du har identifierat varför det händer något kan du använda din analys för att skapa en `reactivation` kampanj. Med hjälp av dessa data kan du identifiera användare som har blivit inaktiva, hur länge det har varit sedan deras senaste besök, vilket deras senaste köp var och så vidare. På så sätt kan ni fatta konkreta beslut som får kunderna att komma tillbaka.
 
 Om du behöver hjälp med analys [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

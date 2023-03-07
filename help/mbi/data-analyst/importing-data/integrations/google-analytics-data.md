@@ -2,16 +2,16 @@
 title: Data för Google Analytics förväntades
 description: Lär dig interagera med Google Analytics-statistik.
 exl-id: db9fdaaa-47a9-4095-b1f8-9b6c74c25b7c
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '182'
+source-wordcount: '172'
 ht-degree: 0%
 
 ---
 
 # Förväntat [!DNL Google Analytics] data
 
-När du har anslutit en [!DNL Google Analytics] kan du interagera med [!DNL Google Analytics] mått *direkt i`Visual Report Builder`*. När du anger `Visual Report Builder`om du klickar **[!UICONTROL Add a Metric]**, en serie mätvärden från [!DNL Google Analytics] profiler visas i en listruta direkt under mätvärdena i data warehouse.
+När du har anslutit en [!DNL Google Analytics] kan du interagera med [!DNL Google Analytics] mått *direkt i`Visual Report Builder`*. När du anger `Visual Report Builder`om du klickar **[!UICONTROL Add a Metric]**, en serie mätvärden från [!DNL Google Analytics] visas i en listruta direkt under måtten i Data warehouse.
 
 The [!DNL Google Analytics] integreringen är *live* - det innebär att `Report Builder` begär data från [!DNL Google Analytics] *omedelbart* när du lägger till ett mätvärde i rapporten. Det innebär också att de mätvärden du kan komma åt definieras exakt som de finns i [!DNL Google Analytics]och att dessa värden inte *lagrad* i [!DNL MBI] konto - visas endast visuellt i dina rapporter.
 
@@ -19,7 +19,7 @@ The [!DNL Google Analytics] integreringen är *live* - det innebär att `Report 
 
 >[!NOTE]
 >
->Om du vill undvika oväntade eller okänsliga resultat måste du kontrollera att de mått du använder är kompatibla med de mått du använder i `Report Builder`. Du kan kontrollera [här](https://developers.google.com/analytics/devguides/reporting/core/dimsmets).
+>För att undvika oväntade eller okänsliga resultat bör du kontrollera att de mått du använder är kompatibla med en eller flera mätvärden som du använder i `Report Builder`. Du kan kontrollera [här](https://ga-dev-tools.google/dimensions-metrics-explorer/).
 
 ## Mätvärden som stöds
 
@@ -73,7 +73,7 @@ The [!DNL Google Analytics] integreringen är *live* - det innebär att `Report 
 | `All Goals Conversion Rate` | `ga:goalConversionRateAll` |
 | `Total Goal Value` | `ga:goal1ValueAll` |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Dimensioner som stöds
 
@@ -142,4 +142,4 @@ The [!DNL Google Analytics] integreringen är *live* - det innebär att `Report 
 | `Custom (User Defined) Value` | `ga:userDefinedValue` | `Yes` |
 | `Year` | `ga:year` | `No` |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

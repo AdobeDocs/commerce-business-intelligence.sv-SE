@@ -2,9 +2,9 @@
 title: Connect PostgreSQL via SSH-tunneln
 description: Lär dig hur du ansluter PostgreSQL-databasen till [!DNL MBI] via en SSH-tunnel.
 exl-id: da610988-21c1-4f5f-b4e2-e2deb175a2aa
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '590'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Koppla samman `PostgreSQL` databas till [!DNL MBI] via `SSH tunnel`måste du (el
 
 1. [Hämta [!DNL MBI] publik nyckel](#retrieve)
 1. [Tillåt åtkomst till [!DNL MBI] IP-adress](#allowlist)
-1. [Skapa en Linux-användare för [!DNL MBI] ](#linux)
+1. [Skapa en Linux](#linux)
 1. [Skapa en Postgres-användare för [!DNL MBI] ](#postgres)
 1. [Ange anslutning och användarinformation i MBI](#finish)
 
@@ -23,11 +23,11 @@ Det är inte så komplicerat som det kan låta. Kom igång.
 
 ## Hämtar [!DNL MBI] `public key` {#retrieve}
 
-The `public key` används för att auktorisera [!DNL MBI] Linux-användare. I nästa avsnitt skapar vi användaren och importerar nyckeln.
+The `public key` används för att auktorisera [!DNL MBI] Linux®-användare. I nästa avsnitt skapar du användaren och importerar nyckeln.
 
 1. Gå till **[!UICONTROL Manage Data** > **Connections]** och klicka **[!UICONTROL Add a Data Source]**.
 1. Klicka på `PostgreSQL` ikon.
-1. Efter `PostgreSQL credentials` öppnas, ange `Encrypted` växla till `Yes`. Det här visar `SSH` installationsformulär.
+1. Efter `PostgreSQL credentials` öppnas, ange `Encrypted` växla till `Yes`. Här visas `SSH` installationsformulär.
 1. The `public key` finns under det här formuläret.
 
 Lämna den här sidan öppen genom hela självstudiekursen - du behöver den i nästa avsnitt och i slutet.
@@ -38,7 +38,7 @@ Om du är lite vilse gör du så här [!DNL MBI] för att hämta nyckeln:
 
 ## Tillåt åtkomst till [!DNL MBI] IP-adress {#allowlist}
 
-För att anslutningen ska lyckas måste du konfigurera brandväggen så att den tillåter åtkomst från vår IP-adress. det är `54.88.76.97/32`, men det finns också på `PostgreSQL` inloggningssida. Ser du den blå lådan i GIF ovan? Så ja!
+För att anslutningen ska lyckas måste du konfigurera brandväggen så att den tillåter åtkomst från din IP-adress. Det är `54.88.76.97/32`, men det finns också på `PostgreSQL` inloggningssida. Ser du den blå lådan i GIF ovan? Så ja!
 
 ## Skapa en `Linux` användare för [!DNL MBI] {#linux}
 
@@ -52,7 +52,7 @@ Detta kan vara en produktionsmaskin eller en sekundär maskin, förutsatt att de
         mkdir /home/rjmetric/.ssh
 ```
 
-1. Kom ihåg `public key` hämtas vi i första avsnittet? För att användaren ska ha åtkomst till databasen måste nyckeln importeras till `authorized\_keys`.
+1. Kom ihåg `public key` hämtas du i första avsnittet? Om du vill vara säker på att användaren har åtkomst till databasen måste du importera nyckeln till `authorized\_keys`.
 
    Kopiera hela nyckeln till `authorized\_keys` på följande sätt:
 
@@ -80,13 +80,13 @@ Din organisation kan behöva utföra en annan process, men det enklaste sättet 
     GRANT CONNECT ON DATABASE <database name> TO rjmetric WITH PASSWORD <secure password>;GRANT USAGE ON SCHEMA <schema name> TO rjmetric;GRANT SELECT ON ALL TABLES IN SCHEMA <schema name> TO rjmetric;ALTER DEFAULT PRIVILEGES IN SCHEMA <schema name> GRANT SELECT ON TABLES TO rjmetric;
 ```
 
-Ersätt `secure password` med ditt eget säkra lösenord, som kan vara ett annat än SSH-lösenordet. Se även till att du ersätter `database name` och `schema name` med rätt namn i databasen.
+Ersätt `secure password` med ditt eget säkra lösenord, som kan skilja sig från SSH-lösenordet. Se även till att ersätta `database name` och `schema name` med rätt namn i databasen.
 
 Om du vill ansluta flera databaser eller scheman upprepar du den här processen efter behov.
 
 ## Ange anslutningen och användarinformationen i [!DNL MBI] {#finish}
 
-Om du vill slå ihop allt måste vi ange anslutningen och användarinformationen i [!DNL MBI]. Har du lämnat PostgreSQL-inloggningssidan öppen? Om inte, gå till **[!UICONTROL Manage Data > Connections]** och klicka **[!UICONTROL Add a Data Source]** och sedan ikonen PostgreSQL. Glöm inte att ställa in `Encrypted` växla till `Yes`.
+Om du vill slå ihop allt måste du ange anslutningen och användarinformationen i [!DNL MBI]. Har du lämnat PostgreSQL-inloggningssidan öppen? Om inte, gå till **[!UICONTROL Manage Data > Connections]** och klicka **[!UICONTROL Add a Data Source]** och sedan ikonen PostgreSQL. Glöm inte att ställa in `Encrypted` växla till `Yes`.
 
 Ange följande information på den här sidan, med början i avsnittet Databasanslutning:
 
@@ -97,8 +97,8 @@ Ange följande information på den här sidan, med början i avsnittet Databasan
 
 Under `SSH Connection`:
 
-* `Remote Address`: IP-adressen eller värdnamnet för servern som vi ska skicka SSH till
-* `Username`: Vårt SSH-inloggningsnamn (bör vara kritiskt)
+* `Remote Address`: IP-adressen eller värdnamnet för den server som du ska ansluta till
+* `Username`: Ditt SSH-inloggningsnamn (bör vara jmetriskt)
 * `SSH Port`: SSH-port på servern (22 som standard)
 
 Så ja! När du är klar klickar du på **Spara och testa** för att slutföra installationen.

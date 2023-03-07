@@ -2,16 +2,16 @@
 title: Ändra en mätnings driftstabell
 description: Lär dig hur du ändrar datatabellen som ett mått använder för att utföra sin åtgärd.
 exl-id: c7a074ca-31f4-43e5-85d9-b64dca95dc23
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '231'
 ht-degree: 0%
 
 ---
 
 # Ändra en mätnings driftstabell
 
-I vissa fall kan du ändra datatabellen som ett mätvärde använder för att utföra åtgärden. Om du t.ex. har en ny användartabell, vill du migrera dina användarrelaterade mått från tabellen&quot;Användare\_Gammal&quot; för att använda tabellen&quot;Användare\_Nytt&quot; i stället.
+I vissa fall kan du ändra datatabellen som ett mätvärde använder för att utföra åtgärden. Om du till exempel har en ny användartabell vill du migrera dina användarrelaterade mått från tabellen&quot;Användare\_Gammal&quot; så att den använder tabellen&quot;Användare\_Nytt&quot; i stället.
 
 1. Gå till **[!UICONTROL Data]** > **[!UICONTROL Metrics]**
 1. Klicka **[!UICONTROL Edit]** bredvid måttet som du vill ändra `operational` tabell.
@@ -23,6 +23,6 @@ I vissa fall kan du ändra datatabellen som ett mätvärde använder för att ut
 
    ![](../../assets/change-metrics-2.png)
 
-1. Om du inte har någon matchande kolumn i den nya tabellen kan du antingen **skapa den i din datatabell** eller [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) om det är en beräkningskolumn eller en dimension som har gjorts av [!DNL MBI]), eller enkelt **ta bort dimensionen från måttet**. Om du vill ta bort en dimension som du inte längre behöver går du tillbaka till måttets redigerare och väljer vilka dimensioner du vill ta bort under `Dimensions`.
+1. Om du inte har någon matchande kolumn i den nya tabellen kan du antingen **skapa den i din datatabell** eller [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) om det är en beräkningskolumn eller en dimension som har gjorts av [!DNL MBI]). Du kan också **ta bort dimensionen från måttet**. Om du vill ta bort en dimension som du inte längre behöver går du tillbaka till måttets redigerare och väljer vilka dimensioner du vill ta bort under `Dimensions`.
 
    ![](../../assets/change-metrics-3.png)

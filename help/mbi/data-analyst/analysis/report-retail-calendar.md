@@ -2,26 +2,26 @@
 title: Rapportering i en butikskalender
 description: Lär dig hur du konfigurerar strukturen så att du kan använda en 4-5-4-kalender i din [!DNL MBI] konto.
 exl-id: 3754151c-4b0f-4238-87f2-134b8409e32b
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '670'
+source-wordcount: '631'
 ht-degree: 0%
 
 ---
 
 # Rapportering i en butikskalender
 
-I den här artikeln visar vi hur du ställer in strukturen för att använda en [4-5-4 butikskalender](https://nrf.com/resources/4-5-4-calendar) inom [!DNL MBI] konto. Den visuella rapportbyggaren tillhandahåller otroligt flexibla tidsintervall, intervall och oberoende inställningar. Vårt team kan också hjälpa er att ändra startdagen i veckan så att den passar era affärsönskemål. Alla dessa inställningar fungerar dock med den traditionella månadskalendern.
+I den här artikeln visas hur du konfigurerar strukturen för att använda en [4-5-4 butikskalender](https://nrf.com/resources/4-5-4-calendar) inom [!DNL MBI] konto. Den visuella rapportbyggaren tillhandahåller otroligt flexibla tidsintervall, intervall och oberoende inställningar. Alla dessa inställningar fungerar dock med den traditionella månadskalendern.
 
-Eftersom många av våra kunder ändrar sin kalender för att använda återförsäljnings- eller redovisningsdatum, visar stegen nedan hur de arbetar med dina data och skapar rapporter med hjälp av återförsäljningsdatum. Instruktionerna nedan hänvisar till butikskalendern för 4-5-4, men du kan ändra dem för alla specifika kalendrar som teamet använder, oavsett om det är ekonomiska eller bara en anpassad tidsram.
+Eftersom många kunder ändrar sin kalender så att den använder återförsäljnings- eller redovisningsdatum visar stegen nedan hur de arbetar med data och skapar rapporter med hjälp av återförsäljningsdatum. Instruktionerna nedan hänvisar till butikskalendern för 4-5-4, men du kan ändra dem för alla specifika kalendrar som teamet använder, oavsett om det är ekonomiska eller bara en anpassad tidsram.
 
-Innan du börjar, vill du bekanta dig med [filöverföringen](../../data-analyst/importing-data/connecting-data/using-file-uploader.md) och se till att du har förlängt `.csv` så att datumen omfattar alla dina historiska data och för in datumen i framtiden.
+Innan du börjar, måste du bekanta dig med [filöverföringen](../../data-analyst/importing-data/connecting-data/using-file-uploader.md) och se till att du har förlängt `.csv` -fil. Detta garanterar att datumen täcker alla dina historiska data och för in datumen i framtiden.
 
 Denna analys innehåller [avancerade beräknade kolumner](../data-warehouse-mgr/adv-calc-columns.md).
 
 ## Komma igång
 
-Du kan [ladda ned](../../assets/454-calendar.csv) a `.csv` version av 4-5-4-kalendern för detaljhandelsår 2014 till 2017. Observera att du kan behöva justera den här filen i enlighet med din interna butikskalender samt utöka datumintervallet för att stödja din historiska och aktuella tidsram. När du har hämtat filen använder du filöverföringsprogrammet för att skapa en tabell för butikskalender i [!DNL MBI] data warehouse. Om du använder en oförändrad version av 4-5-4-kalendern för återförsäljning måste du se till att strukturen och datatyperna för fälten i den här tabellen matchar följande:
+Du kan [ladda ned](../../assets/454-calendar.csv) a `.csv` version av 4-5-4-kalendern för detaljhandelsår 2014 till 2017. Du kan behöva justera den här filen i enlighet med din interna butikskalender och utöka datumintervallet för att stödja din historiska och aktuella tidsram. När du har hämtat filen använder du filöverföringsprogrammet för att skapa en tabell för butikskalender i [!DNL MBI] data warehouse. Om du använder en oförändrad version av 4-5-4-kalendern för återförsäljning måste du se till att strukturen och datatyperna för fälten i den här tabellen matchar följande:
 
 | Kolumnnamn | Kolumndatatyp | Primär nyckel |
 | --- | --- | --- |
@@ -33,7 +33,7 @@ Du kan [ladda ned](../../assets/454-calendar.csv) a `.csv` version av 4-5-4-kale
 | `Month Name Retail` | `Text` (Upp till 255 tecken) | `No` |
 | `Week Number of Month Retail` | `Whole Number` | `No` |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Kolumner att skapa
 
@@ -91,8 +91,8 @@ Du kan [ladda ned](../../assets/454-calendar.csv) a `.csv` version av 4-5-4-kale
    * **Skapad\_at (återförsäljningsvecka)**
       * [!UICONTROL Column type]: `One to Many > JOINED\_COLUMN`
       * Sökväg -
-         * [!UICONTROL Many]:sales\_order.\[INPUT\] skapad (åååå-mm-dd 00):00:00
-         * [!UICONTROL One]:Detaljkalender.Datumåterförsäljning
+         * [!UICONTROL Many]: sales\_order.\[INPUT\] skapad (åååå-mm-dd 00):00:00
+         * [!UICONTROL One]: Butikskalender.Datum Detaljhandel
       * Välj en [!UICONTROL table]: `Retail Calendar`
       * Välj en [!UICONTROL column]: `Week Retail`
    * **Skapad\_at (återförsäljningsmånad)**
@@ -199,8 +199,8 @@ Obs! Inga nya mätvärden behövs för den här analysen. Se dock till att [läg
 
 ## Nästa steg
 
-Ovanstående beskriver hur du konfigurerar en butikskalender så att den är kompatibel med alla mätvärden som bygger på din `sales\_order` tabell (till exempel`Revenue` och `Orders`), men du kan även utöka detta för att stödja butikskalendern för mätvärden som bygger på valfri tabell. Det enda kravet är att det här registret har ett giltigt datetime-fält som kan användas för att ansluta till butikskalendertabellen.
+Ovanstående beskriver hur du konfigurerar en butikskalender så att den är kompatibel med alla mätvärden som bygger på din `sales\_order` tabell (som `Revenue` eller `Orders`). Du kan även utöka den för att stödja butikskalendern för mätvärden som bygger på valfri tabell. Det enda kravet är att det här registret har ett giltigt datetime-fält som kan användas för att ansluta till butikskalendertabellen.
 
-Om du till exempel vill visa kundnivåstatistik i en 4-5-4-kalender skapar du en ny `Same Table` beräkning i `customer\_entity` tabell, liknar `\[INPUT\] created\_at (yyyy-mm-dd 00:00:00)` som beskrivs ovan. Du kan sedan använda den här kolumnen för att återskapa alla `One to Many` JOINED\_COLUMN-beräkningar (som `Created_at (retail year)` och `Include in previous retail year? (Yes/No)` genom att ansluta `customer\_entity` tabellen till `Retail Calendar` tabell.
+Om du till exempel vill visa kundnivåstatistik i en 4-5-4-kalender skapar du en `Same Table` beräkning i `customer\_entity` tabell, liknar `\[INPUT\] created\_at (yyyy-mm-dd 00:00:00)` som beskrivs ovan. Du kan sedan använda den här kolumnen för att återskapa `One to Many` JOINED\_COLUMN-beräkningar (som `Created_at (retail year)` och `Include in previous retail year? (Yes/No)` genom att ansluta `customer\_entity` tabellen till `Retail Calendar` tabell.
 
 Glöm inte att [lägga till alla nya kolumner som dimensioner till mått](../data-warehouse-mgr/manage-data-dimensions-metrics.md) innan du skapar nya rapporter.

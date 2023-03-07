@@ -2,16 +2,16 @@
 title: Hantera användare och behörigheter
 description: Lär dig hantera dina [!DNL MBI] -användare.
 exl-id: 2a5eeabb-3c13-4ca1-b845-ed255b389c9f
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '403'
 ht-degree: 0%
 
 ---
 
 # Hantera användarbehörigheter
 
-MBI är tänkt att vara en enda källa till sanning i hela organisationen. Varje användare får en egen uppsättning kontrollpaneler som de kan [dela med andra användare](../../data-user/dashboards/share-dashboard-with-users.md).
+MBI är tänkt att vara en enda källa till sanning i hela organisationen. Varje användare har en egen uppsättning kontrollpaneler som de kan [dela med andra användare](../../data-user/dashboards/share-dashboard-with-users.md).
 
 ## Behörighetsnivåer för användare
 
@@ -44,7 +44,7 @@ Dessa behörigheter gör att användare kan utföra vissa åtgärder eller komma
 | **Åtkomstfakturering** | ✔ | ✔** |  |
 | **Kontakta supporten** | ✔ | ✔ | ✔ |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 >[!NOTE]
 >
@@ -52,24 +52,24 @@ Dessa behörigheter gör att användare kan utföra vissa åtgärder eller komma
 >
 >**[!UICONTROL Standard] _-användare har åtkomst till Fakturering med en extra behörighetsinställning._
 >
->**[!UICONTROL Read-Only]** kan bara _visa_ Instrumentpaneler som har delats med dem. de inte kan skapa eller redigera något i [!DNL MBI]och de kan inte heller söka efter och lägga till nya instrumentpaneler på sitt konto. Vi rekommenderar att du delar en specifik uppsättning instrumentpaneler med **[!UICONTROL Read-Only]** användare som du eller någon annan medlem i ditt team underhåller. Klona inte en uppsättning instrumentpaneler åt dem.
+>**[!UICONTROL Read-Only]** kan bara _visa_ Instrumentpaneler som har delats med dem. de inte kan skapa eller redigera något i [!DNL MBI]och de kan inte heller söka efter och lägga till nya instrumentpaneler på sitt konto. Adobe rekommenderar att du delar en specifik uppsättning kontrollpaneler med **[!UICONTROL Read-Only]** användare som du eller någon annan medlem i ditt team underhåller. Klona inte en uppsättning instrumentpaneler åt dem.
 
 ## Ytterligare behörigheter: Fakturering och teknisk rådgivning {#billingtech}
 
-Förutom de allmänna behörighetsnivåerna finns det två andra användarbeteckningar - `Billing` och `Technical`. Dessa beteckningar är avsedda att användas tillsammans med de allmänna behörighetsnivåerna.
+Förutom de allmänna behörighetsnivåerna finns det två andra användarbeteckningar - `Billing` och `Technical`. Dessa beteckningar bör användas tillsammans med de allmänna behörighetsnivåerna.
 
 ### Fakturering
 
-`Billing` användare har tillgång till faktureringssidan och kan ändra betalningsinformation. Dessutom kan våra team även kontakta dem för faktureringsfrågor.
+`Billing` användare har tillgång till faktureringssidan och kan ändra betalningsinformation. Adobe kan också kontakta dem för faktureringsfrågor.
 
-`Admin` användare har som standard åtkomst till fliken Fakturering, men standardanvändare kan även få åtkomst till dem om de har `Billing` markerad kryssruta på sin profil.
+`Admin` användare har åtkomst till `Billing` som standard, men `Standard` kan även få åtkomst om de har `Billing` markerad kryssruta på sin profil.
 
 ![fakturering](../../assets/billing.png)<!--{: width="550" height="363"}-->
 
 ### Teknik
 
-`Technical` -användare har inte någon behörighet som är specifik för dem - den här inställningen markerar bara en teknisk kontakt inom organisationen. Dessa användare kan kontaktas av våra team för tekniska frågor.
+`Technical` -användare har inte någon behörighet som är specifik för dem - den här inställningen markerar bara en teknisk kontakt inom organisationen. Dessa användare kan kontaktas av Adobe för tekniska frågor.
 
 `Admin` användare kan lägga till nya användare i sina konton genom att klicka på **[!UICONTROL Account Settings]** > **[!UICONTROL Create Users]** och följer anvisningarna. När användaren har skapats i [!DNL MBI], får den person du bjuder in e-postinstruktioner om hur du slutför kontokonfigurationsprocessen.
 
-När som helst, `Admins` kan visa alla användare på deras konto genom att klicka på **[!UICONTROL Account Settings]** > **[!UICONTROL Manage Users]**. På den här sidan visas användarens behörigheter och vilka mått och instrumentpaneler användaren har tillgång till.
+När som helst, `Admins` kan visa alla användare på deras konto genom att klicka på **[!UICONTROL Account Settings]** > **[!UICONTROL Manage Users]**. På den här sidan visas användarens behörigheter och vilka mått och instrumentpaneler som användaren kan komma åt.

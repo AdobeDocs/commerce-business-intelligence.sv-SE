@@ -2,16 +2,16 @@
 title: Inkluderade instrumentpaneler
 description: Lär dig hur du kontrollerar hälsan hos viktiga mätvärden som intäkter från användarlivstid, antal upprepade köp med mera, och därmed skapar en stabil grund för framtida utforskande.
 exl-id: f50fc417-e5d4-401c-9baa-cda1468196a2
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '973'
+source-wordcount: '962'
 ht-degree: 0%
 
 ---
 
 # Inkluderade instrumentpaneler
 
-Som en del av våra tjänster erbjuder vi e-handel och `SaaS` Startpaket. Dessa paket, som skapats av våra analytiker, innehåller en anpassad uppsättning instrumentpaneler och rapporter för din datamängd. Analyserna i dessa paket gör det möjligt att kontrollera hälsan hos viktiga mätvärden som användarlivstidsintäkter, antal upprepade köp med mera, vilket skapar en stabil grund för framtida utforskande.
+Adobe erbjuder e-handel och `SaaS` Startpaket. Dessa paket, som skapats av analytiker från Adobe, innehåller en anpassad uppsättning instrumentpaneler och rapporter för din datamängd. Analyserna i dessa paket gör det möjligt att kontrollera hälsan hos viktiga mätvärden som användarlivstidsintäkter, antal upprepade köp med mera, vilket skapar en stabil grund för framtida utforskande.
 
 >[!NOTE]
 >
@@ -23,13 +23,13 @@ Om du har frågor eller är intresserad av att lägga till ett paket i ditt kont
 
 The `executive overview` Kontrollpanelen byggs från diagram som finns på andra instrumentpaneler. Den här instrumentpanelen är en översikt på hög nivå över dina data och innehåller diagram som skulle granskas dagligen, medan andra instrumentpaneler innehöll mer detaljerad information. Till att börja med anges den som standardinstrumentpanel för varje konto.
 
-Vi har tagit med en allmän uppsättning diagram åt dig, men vi rekommenderar att du anpassar den här instrumentpanelen efter dina behov genom att lägga till andra diagram som du använder oftast.
+En allmän uppsättning diagram ingår. Adobe rekommenderar att du skräddarsyr den här instrumentpanelen efter dina behov genom att lägga till andra diagram som du använder mest.
 
 ## Kohortanalys
 
-The `cohort analysis` Instrumentpanelen innehåller en uppsättning diagram som visar den genomsnittliga intäktsökningen under användarens livstid och ökningen av inkrementella intäkter grupperade efter registreringscohorts. Detta visar om kundens livstidsvärde, kundens värde för ett företag, ökar med tiden och även identifierar trender kring LTV-tillväxten. Observera att som standard är *vi redovisar för alla registrerade användare (köpare och icke-köpare)* i den genomsnittliga LTV-beräkningen - se [cohort analysis topic](../../data-analyst/dev-reports/cohort-rpt-bldr.md).
+The `cohort analysis` Instrumentpanelen innehåller en uppsättning diagram som visar den genomsnittliga intäktsökningen under användarens livstid och ökningen av inkrementella intäkter grupperade efter registreringscohorts. Detta visar om kundens livstidsvärde, kundens värde för ett företag, ökar med tiden och även identifierar trender kring LTV-tillväxten. Som standard *alla registrerade användare (köpare och icke-köpare) redovisas* i den genomsnittliga LTV-beräkningen - se [cohort analysis topic](../../data-analyst/dev-reports/cohort-rpt-bldr.md).
 
-Kontrollpanelen kan även innehålla kohortdiagram som analyserar användarnas livstidsintäkter från en viss förvärvskälla, kanal eller demografi (t.ex. New York eller Kalifornien). Detta är för att visa hur du kan analysera LTV för mycket specifika segment i din användarbas och se om en grupp eller en annan ger högre LTV över tiden.
+Kontrollpanelen kan även innehålla kohortdiagram som analyserar användarnas livstidsintäkter från en viss förvärvskälla, kanal eller demografi (t.ex. New York eller Kalifornien). Detta är för att visa hur du kan analysera LTV för specifika segment i din användarbas och se om en grupp eller en annan ger högre LTV över tiden.
 
 Mer information om kohorter finns i [Utför kohortanalys](../../data-analyst/dev-reports/cohort-rpt-bldr.md).
 
@@ -43,7 +43,7 @@ The `Email Summary` Instrumentpanelen innehåller en exempeluppsättning diagram
 
 The `Retention health` på kontrollpanelen visas hur din användarbas gör om sina inköp.
 
-The `Time between orders` diagram visar den genomsnittliga och/eller genomsnittliga tiden mellan en användares första och andra order, andra och tredje order osv. Du kan [överväga att använda dessa data för att konfigurera era e-postmarknadsföringskampanjer](http://blog.rjmetrics.com/acting-on-marketing-data-in-your-rjmetrics-online-dashboard/).
+The `Time between orders` diagram visar den genomsnittliga och/eller genomsnittliga tiden mellan en användares första och andra order, andra och tredje ordning osv. Du kan [överväga att använda dessa data för att konfigurera era e-postmarknadsföringskampanjer](http://blog.rjmetrics.com/acting-on-marketing-data-in-your-rjmetrics-online-dashboard/).
 
 The `Users by lifetime number of orders` diagram visar det totala antalet användare för varje antal order under en livstid för att ge en allmän översikt över upprepade inköpsbeteenden.  
 
@@ -63,11 +63,11 @@ I det här exemplet är sannolikheten för att kunder som har gjort ett köp und
 
 The `Customer LTV growth` Instrumentpanelen innehåller en uppsättning diagram som visar den genomsnittliga intäkten per användare. Diagrammen segmenteras utifrån den genomsnittliga intäkten som genereras inom de första 30, 60, 90 eller 365 dagarna efter registreringen.  
 
-Diagrammets nedre rad visar dessa medelvärden, segmenterade efter anskaffningskällor eller demografiska data, för att visa vilka grupper av användare som genererar mest intäkter över tid.
+Diagrammets nedre rad visar att dessa medelvärden segmenteras av anskaffningskällor eller demografiska data för att visa vilka grupper av användare som genererar mest intäkter över tid.
 
 ## Produktprestanda
 
-The `Product Performance` Instrumentpanelen innehåller diagram som avslöjar allmänna produktprestanda genom att visa antalet sålda artiklar och intäkter per artikel, samt att identifiera produkter som presterar bäst.
+The `Product Performance` Instrumentpanelen innehåller diagram som visar allmänna produktprestanda genom att visa antalet sålda artiklar och intäkter per artikel samt identifiera produkter som presterar bäst.
 
 ## Senaste aktivitet
 
@@ -87,12 +87,12 @@ The `Users to target` Kontrollpanelen innehåller tabellliknande diagram som lis
 
 * Lista över de största utgivarna som varit aktiva tidigare `X` dagar (som du kanske vill belöna)
 
-Med våra verktyg för dataexport är det enkelt att [skapa e-postlistor för användare med liknande inköpsbeteende för målmarknadsföring](http://blog.rjmetrics.com/creating-contact-lists-for-top-customers/).
+Det är enkelt att använda dataexportverktygen [skapa e-postlistor för användare med liknande inköpsbeteende för målmarknadsföring](http://blog.rjmetrics.com/creating-contact-lists-for-top-customers/).
 
 ## Användaraktivitet
 
-The `User activity` Instrumentpanelen innehåller diagram som segmenterar användare efter en mängd olika data, inklusive inhämtningskälla, demografi och genomsnittlig förstagångsinställning. Det innehåller även en analys av användarkohorten, inklusive den totala genomsnittliga intäkten för livstid per användarregistreringsmånad.
+The `User activity` Instrumentpanelen innehåller diagram som segmenterar användare efter olika data, inklusive anskaffningskälla, demografiska data och genomsnittlig första beställningsdag. Det innehåller även en analys av användarkohorten, inklusive den totala genomsnittliga intäkten för livstid per användarregistreringsmånad.
 
-The `% of cohort members who have purchased` diagrammet är särskilt värdefullt eftersom det visar konverteringsgraden (mellan 0 och 1) för användare baserat på när de registrerar sig (varje rad representerar en kohort med användare) och när de gör sitt första inköp (till exempel i månad 1, 2, 3...). efter registrering). Detta kan visa att 10 % av användarna aktiverade under månad 1, medan antalet växer under månad 2, 3, 4.. och kan komma att platå senare.
+The `% of cohort members who have purchased` diagram är värdefullt eftersom det visar konverteringsgraden (från 0 till 1) för användare baserat på när de registrerar sig (varje rad representerar en kohort med användare). Det visas också när de gör sitt första köp (till exempel i månad 1, 2, 3... efter registrering). Detta kan visa att 10 % av användarna aktiverade under månad 1, medan antalet växer under månad 2, 3, 4.. och kan komma att platå senare.
 
-Raderna i det här diagrammet blir vanligtvis vågräta efter en viss tid, vilket anger att det finns få ytterligare kohortmedlemmar som konverterar organiskt efter den punkten - det vill säga de flesta användare som kommer att göra ett köp har redan gjort det. I nuläget är det högst osannolikt att dessa medlemmar kommer att konvertera till köpare utan ingripande. [Att nå ut till dem med anpassade kampanjer eller riktade e-postmeddelanden är ett extremt riskfyllt sätt att snabbt komma igång med konverteringen av den här befolkningen.](http://blog.rjmetrics.com/acting-on-marketing-data-in-your-rjmetrics-online-dashboard/)
+Raderna i det här diagrammet blir vanligtvis vågräta efter en viss tidsperiod. Detta visar att få ytterligare kohortmedlemmar konverterar organiskt efter den punkten - de flesta användare som kommer att göra ett köp har redan gjort det. I nuläget är det högst osannolikt att dessa medlemmar kommer att konvertera till köpare utan ingripande. [Att nå ut till dem med anpassade kampanjer eller riktade e-postmeddelanden är ett lågrisksätt att snabbt komma igång med konverteringen av den här befolkningen.](http://blog.rjmetrics.com/acting-on-marketing-data-in-your-rjmetrics-online-dashboard/)

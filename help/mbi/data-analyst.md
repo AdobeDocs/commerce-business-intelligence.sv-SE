@@ -2,9 +2,9 @@
 title: Dataanalytiker
 description: Dataanalytiker
 exl-id: e7c4e0ba-f8fd-4a35-a9b1-1c2c43a1773d
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '85'
+source-wordcount: '77'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,11 @@ ht-degree: 0%
 
 Du är bekväm med att utforma frågor och vara den person som ska ta sig an dataanalysen. Du vet hur du hittar specifika svar på datafrågor och vill underlätta för dina kollegor att få tillgång till självbetjäning.
 
-I det här avsnittet får du lära dig att ansluta och importera data till [!DNL MBI], visa hur data lagras och struktureras i data warehouse, analysera data och använda `SQL report builder`.
+I det här avsnittet visas hur du:
+* ansluta och importera data till [!DNL MBI]
+* visa hur data lagras och struktureras i Data warehouse
+* analysera era data
+* använder `SQL report builder`
 
 ## Relaterad
 

@@ -1,10 +1,10 @@
 ---
 title: Massredigeringsdiagram i kontrollpaneler
-description: Lär dig hur du använder gruppredigeringsfunktionen i [!DNL MBI].
+description: Läs om hur du använder gruppredigeringsfunktionen i [!DNL MBI].
 exl-id: 576ffabb-5e5d-4251-9662-951e2cd30f31
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '253'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Men tänk på det här, trots allt.. *Måste dessa förändringar vara permanent
 
 >[!NOTE]
 >
->Om du gör ändringar i många rapporter kan uppdateringsprocessen ta en liten stund.
+>Om du ändrar många rapporter kan uppdateringsprocessen ta en liten stund.
 
 ## Använda `Find/Replace` {#findreplace}
 

@@ -2,9 +2,9 @@
 title: Inbyggda instrumentpaneler
 description: Lär dig mer om färdiga instrumentpaneler för att få insikt i verksamheten.
 exl-id: fe61c92e-de87-4317-96d7-01d2a9846bf9
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '2245'
+source-wordcount: '2240'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Instrumentpanelen Kunder (tillåten gästutcheckning) ger information om din kun
 | `Subsequent Order Probability (All Time)` | Sannolikheten för att kunder som har lagt en order lägger en annan. |
 | `% of Customers with Multiple Orders (All Time)` | Procent av alla kunder som har gjort mer än en beställning. |
 | `Median Time Between Orders (All Time)` | Genomsnittlig tid varje kund tar mellan att göra en beställning och nästa. |
-| `Subsequent Order Probability` | Sannolikheten för att kunder som har gjort en beställning placerar en annan, uppdelad efter ordernummer (dvs. i procent av kunder med en order som lägger en andra, i procent med två som placerar en tredjedel osv.). |
+| `Subsequent Order Probability` | Sannolikheten för att kunder som har lagt en order lägger en annan order, uppdelad efter ordernummer. Det vill säga procentandelen kunder med en order som lägger en andra, en procent med två som placerar en tredjedel osv.). |
 | `Time Between Orders` | Genomsnittlig och mediantid som kunderna tar mellan beställningarna, uppdelat efter ordernummer (dvs. tiden mellan beställningarna ett och två, två och tre osv.). |
 | `Number of Customers - Lifetime Orders` | För ett givet antal order som läggs under en kunds livstid, antalet kunder som har lagt så många order och den procentandel av hela kundbasen som talet representerar. |
 | `One-Time Customers who Bought 3-6 Months Ago` | Kunder som gjorde sina första inköp för endast tre till sex månader sedan. |
@@ -59,7 +59,7 @@ Instrumentpanelen Kunder (ingen gästutcheckning tillåts) ger information om di
 | Efterföljande ordersannolikhet (hela tiden) | Sannolikheten för att kunder som har lagt en order lägger en annan. |
 | % av kunderna med flera beställningar (hela tiden) | Procent av alla kunder som har gjort mer än en beställning. |
 | Mediantid mellan order (hela tiden) | Genomsnittlig tid varje kund tar mellan att göra en beställning och nästa. |
-| Sannolikhet för efterföljande order | Sannolikheten för att kunder som har gjort en beställning placerar en annan, uppdelad efter ordernummer (dvs. i procent av kunder med en order som lägger en andra, i procent med två som placerar en tredjedel osv.). |
+| Sannolikhet för efterföljande order | Sannolikheten för att kunder som har lagt en order lägger en annan, uppdelad efter ordernummer. Det vill säga, procent av kunderna med en order som lägger en andra, en procent med två som placerar en tredjedel och så vidare. |
 | Tid mellan order | Genomsnittlig och mediantid som kunderna tar mellan beställningarna, uppdelat efter ordernummer (dvs. tiden mellan beställningarna ett och två, två och tre osv.). |
 | Antal kunder - livstidsbeställningar | För ett givet antal order som läggs under en kunds livstid, antalet kunder som har lagt så många order och den procentandel av hela kundbasen som talet representerar. |
 | Engångskunder som köpt för 3-6 månader sedan | Kunder som gjorde sina första inköp för endast tre till sex månader sedan. |
@@ -131,7 +131,7 @@ Instrumentpanelen för beställningar ger insikter om transaktionsvolym för bes
 
 ## Produkter
 
-På produktkontrollpanelen visas den allmänna produktprestandan i termer av beställda produkter, deras bruttovärde för försäljning (GMV) samt de viktigaste produkter som köpts och återbetalats. Det kan hjälpa er att balansera inköp och returer och avgöra om produkterna blir framgångsrika och populära. Din butik måste vara [konfigurerad för att spåra återbetalningar](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html) för att dessa diagram ska fyllas i.
+På kontrollpanelen för produkter visas den allmänna produktprestandan i termer av beställda produkter, deras bruttovärde för försäljning (GMV) samt de viktigaste produkter som köpts och återbetalats. Det kan hjälpa er att balansera inköp och returer och avgöra om produkterna blir framgångsrika och populära. Din butik måste vara [konfigurerad för att spåra återbetalningar](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html) för att dessa diagram ska fyllas i.
 
 >[!NOTE]
 >

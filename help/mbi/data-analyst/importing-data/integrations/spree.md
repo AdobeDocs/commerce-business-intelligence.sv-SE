@@ -2,9 +2,9 @@
 title: Anslut uppslag
 description: Lär dig hur du kan se hur ert företag presterar eller hitta era mest värdefulla förvärvskällor och kanaler.
 exl-id: d443e6ca-04b0-4090-a3be-14db71819356
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '90'
+source-wordcount: '89'
 ht-degree: 0%
 
 ---

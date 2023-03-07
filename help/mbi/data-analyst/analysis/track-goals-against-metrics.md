@@ -2,32 +2,32 @@
 title: Spåra mål mot mätvärden
 description: Lär dig hur du skapar en kontrollpanel som hjälper dig att spåra dina affärsmål mot dina faktiska data - inklusive intäkter, nya registrerade användare och beställningar över tid.
 exl-id: 9d621f40-f9c2-4310-bd96-a46ab7159930
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '391'
 ht-degree: 0%
 
 ---
 
 # Spåra mål mot prestandamått
 
-En stor majoritet av våra kunder vill ofta spåra **verksamhetsmål**, men inser inte att detta är möjligt i [!DNL MBI]. I den här artikeln visar vi hur du skapar en kontrollpanel som hjälper dig att spåra dina affärsmål mot dina faktiska data - inklusive intäkter, nya registrerade användare och beställningar över tid. Vi visar även hur du jämför års prestanda med varandra i en kontrollpanel som den här:
+De flesta kunder vill spåra sina **verksamhetsmål**, men inser inte att detta är möjligt i [!DNL MBI]. I den här artikeln beskrivs hur du konfigurerar en kontrollpanel som hjälper dig att spåra dina affärsmål mot dina faktiska data - inklusive intäkter, nya registrerade användare och beställningar över tid. Du får också lära dig hur du jämför års prestanda, allt på en kontrollpanel som den här:
 
 ![](../../assets/Goals-_dashboard_2.png)
 
-Innan du börjar vill du bekanta dig med våra [filöverföring](../importing-data/connecting-data/using-file-uploader.md) och se till att du har definierat dina affärsmål under en viss tidsperiod.
+Innan du börjar, vill du bekanta dig med [filöverföring](../importing-data/connecting-data/using-file-uploader.md) och se till att du har definierat dina affärsmål för en viss period.
 
 ## Komma igång
 
-Du måste först ladda upp en fil som innehåller specifika mål per dag/månad/kvartal för ditt företag.
+Du måste först överföra en fil som innehåller specifika mål per dag, månad och kvartal för ditt företag.
 
-Du kan använda [filöverföring](../importing-data/connecting-data/using-file-uploader.md) och bilden nedan för att formatera filen. De vanligaste målen som våra kunder spårar in [!DNL MBI] innehåller beställningar, intäkter och nya registrerade konton.
+Du kan använda [filöverföring](../importing-data/connecting-data/using-file-uploader.md) och bilden nedan för att formatera filen. De vanligaste målen som kunderna spårar in [!DNL MBI] innehåller beställningar, intäkter och nya registrerade konton.
 
 ![](../../assets/Goals-_Excel.png)
 
 ## Mått
 
-Du måste skapa ett nytt mått för varje mål. Om du till exempel överför månatliga intäkter och ordermål måste du skapa två nya mätvärden:
+Skapa ett nytt mått för varje mål. Om du till exempel överför månatliga intäkter och ordermål måste du skapa två nya mätvärden:
 
 * **Månadsintäktsmål**
 * I **`Monthly goals`** table
@@ -103,4 +103,4 @@ Som alltid är det bra att ha en blandning av statiska värden och visuella diag
 
 När du har slutfört rapporterna för intäktsmål kan du skapa identiska rapporter för mål runt order, registrerade konton eller andra värden som du har inkluderat i målfilöverföringen.
 
-När du har kompilerat alla rapporter kan du ordna dem på kontrollpanelen som du vill. Slutresultatet kan se ut som bilden högst upp på den här sidan.
+När du har kompilerat alla rapporter kan du ordna dem på kontrollpanelen som du vill. Resultatet kan se ut som bilden högst upp på den här sidan.

@@ -2,9 +2,9 @@
 title: Använda Visual Report Builder
 description: Lär dig att analysera data i rapporten under en viss tidsperiod.
 exl-id: da97b63d-63f0-4fd6-87e3-4cac49a42acc
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '1206'
+source-wordcount: '1188'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Du kan lägga till ytterligare mått när det inledande måttet har valts och t�
 
 `Formulas` läggs till i rapporter genom att klicka **[!UICONTROL Add Formula]**, placerad alldeles ovanför listan med mätvärden i rapporten. I [formelredigerare](../data-analyst/dev-reports/formulas-in-rpt-bldr.md), kan alla mätvärden som ingår i rapporten användas som indata. Grundläggande matematiska operatorer används för att ändra de olika mätvärdena.
 
-Säg att vi ville skapa en rapport som visar de genomsnittliga intäkterna per order. I det här fallet skulle vi dela upp `Revenue` mått efter `Number of orders` mätvärden.
+Säg att du vill skapa en rapport som visar de genomsnittliga intäkterna per order. I det här fallet delar du upp `Revenue` mått efter `Number of orders` mätvärden.
 
 ![](../assets/ave-rev-per-order.png)
 
@@ -43,9 +43,9 @@ Om du vill nollställa en viss tidsrymd kan du ange tidsperioden för analysen. 
 
 ![](../assets/Time_Options_Report_Builder.png)
 
-När du anger ett visst datumintervall för tidsperioden måste du kontrollera att startdatumet är i början av intervallet och att slutdatumet är i slutet av intervallet.
+När du anger ett visst datumintervall för tidsperioden måste du se till att startdatumet är i början av intervallet och att slutdatumet är i slutet av intervallet.
 
-Du kan till exempel ange en tidsperiod från `January 1st to March 1st` och välja `monthly` intervall visas `March` som en datapunkt, men ignorera varje dag i `March` utom `March 1`. I så fall bör du `Time Period` från `January 1 to March 31`.
+Du kan till exempel ange en tidsperiod från `January 1st to March 1st` och välja `monthly` intervallvisning `March` som en datapunkt, men ignorera varje dag i `March` utom `March 1`. I så fall bör du `Time Period` från `January 1 to March 31`.
 
 ## Steg 5: `Group by` / `Segmenting the Analysis` {#groupby}
 
@@ -53,11 +53,11 @@ Du kan till exempel ange en tidsperiod från `January 1st to March 1st` och väl
 
 Du kan välja `None` för att förhindra att ett mätvärde segmenteras. Du kanske vill ha ett mått som returnerar totala intäkter utan att segmenteras, samtidigt som ett annat intäktsmått segmenteras efter region.
 
-Gå tillbaka till vårt exempel med genomsnittliga intäkter per order och ange Group by för att få kampanjkoden. Detta visar den genomsnittliga intäkten per order både med och utan kampanjkod.
+Gå tillbaka till exempel med genomsnittliga intäkter per order och ställ in Group by för att få kampanjkoden. Här visas den genomsnittliga intäkten per order både med och utan kampanjkod.
 
 ![](../assets/Group_By_Report_Builder.png)
 
-Om mätvärdena som ingår i analysen bygger på olika datatabeller kan du i ett popup-fönster välja den matchande datamätningen i varje tabell. Målet här är att hitta dimensioner som har samma typ av värden för segmentering:
+Om mätvärdena som ingår i analysen bygger på olika datatabeller kan du välja matchande datamått i varje tabell i ett popup-fönster. Målet här är att hitta dimensioner som delar värdetyper för segmentering:
 
 ![](../assets/Dimension_Editor.png)
 
@@ -69,15 +69,15 @@ För varje mätvärde som läggs till i analysen kan du lägga till filter, väl
 
 ### `Filters`
 
-`Filters` begränsa den datamängd som ingår i analysen. Filter är mycket användbara när man exempelvis utvärderar enskilda förvärvskanaler och tar bort avvikelser.
+`Filters` begränsa den datamängd som ingår i analysen. Filter är till exempel användbara när du utvärderar enskilda förvärvskanaler och tar bort avvikande värden.
 
 Förutom listrutorna och textrutan kan du även använda speciella filteroperatorer som `LIKE` eller `IN` för att skapa filter.
 
-Användning av jokertecken (`%` eller `_`) i kombination med `LIKE` -programsatser stöds. The `%` jokertecknet kommer att matcha flera tecken, medan `_` kommer endast att matcha ett enskilt tecken. Till exempel:
+Användning av jokertecken (`%` eller `_`) med `LIKE` -programsatser stöds. The `%` jokertecknet matchar flera tecken, medan `_` matchar endast ett tecken. Till exempel:
 
-- `affiliate's name Like B%` tillåter endast data från kunder vars namn börjar med `B`.
+- `affiliate's name Like B%` endast tillåter data från kunder vars namn börjar med `B`.
 
-- `affiliate's name Like _ake` tillåter endast data från kunder vars namn är något som `Jake`, `Rake`, eller `Bake` men inte `Drake` eller `Blake`.
+- `affiliate's name Like _ake` tillåter bara data från kunder vars namn är något som `Jake`, `Rake`, eller `Bake` men inte `Drake` eller `Blake`.
 
 Genom att lägga till flera filter får du noggrann kontroll över diagrammets data. Som standard måste alla filtervillkor vara true för att en datadel ska kunna inkluderas, men du kan skapa ELLER-relationer genom att redigera textrutan Filterregler.
 
@@ -85,13 +85,13 @@ Genom att lägga till flera filter får du noggrann kontroll över diagrammets d
 
 ### `Perspectives`
 
-`Perspectives` gör att du enkelt kan växla mellan olika vyer av dina data. Låt oss titta på vad som finns:
+`Perspectives` Gör att du enkelt kan växla mellan olika vyer av dina data. Se vad som finns:
 
-- `Standard perspective`: I standardperspektivet visas resultatet för matchningsdatumet på x-axeln (till exempel intäkten i januari). Detta är det perspektiv vi använder i exemplet med genomsnittliga intäkter per order.
+- `Standard perspective`: I standardperspektivet visas resultatet för matchningsdatumet på x-axeln (till exempel intäkten i januari). Det här perspektivet använder du i exemplet med genomsnittlig intäkt per order.
 
 ![](../assets/Standard.png)
 
-- `Amount` ELLER `Percent Change` kontra `Previous Period` perspektiv: Det här perspektivet visar mängden eller procentförändringen från ett intervall till nästa och är användbart för att mäta förändringshastigheten i snabbföränderliga mätvärden. Det finns också ett perspektiv för att jämföra intervallet med samma tidsperiod förra året för att visa tillväxten år för år.
+- `Amount` ELLER `Percent Change` kontra `Previous Period` perspektiv: Det här perspektivet visar mängden eller procentförändringen från ett intervall till nästa och är användbart för att mäta förändringshastigheten i snabbföränderliga mätvärden. Det finns också ett perspektiv för att jämföra intervallet med samma tidsperiod förra året för att visa tillväxten år över år.
 
 ![](../assets/Amt_or_Percent_Change.png)
 
@@ -99,11 +99,11 @@ Genom att lägga till flera filter får du noggrann kontroll över diagrammets d
 
 ![](../assets/Cumulative_Perspective.png)
 
-- `Percent of First Value perspective`: Detta perspektiv visar data som en procentandel av det första tidsintervallet som ingår i analysen. Detta är användbart vid mätning av effekten av specifika åtgärder i förhållande till den första periodens resultat.
+- `Percent of First Value perspective`: Detta perspektiv visar data som en procentandel av det första intervallet som ingår i analysen. Detta är användbart vid mätning av effekten av specifika åtgärder i förhållande till den första periodens resultat.
 
 ![](../assets/Percent_of_First_Value.png)
 
-- `Rolling averages window perspective`: Fönsterperspektivet för rullande medelvärden visar det rullande medelvärdet för ett mätvärde över det angivna tidsintervallet. Intervallet måste vara detsamma som det intervall som anges på rapportnivån. Om rapporten t.ex. visar det sista hela kvartalet för Intäkter per vecka, kan du ställa in det rullande genomsnittliga tidsintervallet för fönster till 4 veckor, och de första tre värdena blir null och det fjärde värdet representerar genomsnittet för de första fyra veckorna av Intäkt. Se till att du stänger av `Multiple Y-Axes` om du visar samma mätvärde med ett rullande medelvärde, som i exemplet nedan.
+- `Rolling averages window perspective`: Fönsterperspektivet för rullande medelvärden visar det rullande medelvärdet för ett mätvärde över det angivna tidsintervallet. Intervallet måste vara detsamma som det intervall som anges på rapportnivån. Om rapporten t.ex. visar det sista hela kvartalet av Intäkter per vecka, kan du ställa in det rullande genomsnittliga tidsintervallet till fyra veckor. Detta gör att de första tre värdena är null och det fjärde värdet representerar genomsnittet för de fyra första veckorna av intäkt. Se till att du stänger av `Multiple Y-Axes` om du visar samma mätvärde med ett rullande medelvärde, som i exemplet nedan.
 
 ![](../assets/rolling_avg_window.png)
 
@@ -113,17 +113,17 @@ Det finns två alternativ för mätvärden som används i rapporter: de kan tren
 
 Ändra ett tidsintervall för mätning till `None` returnerar `scalar` tal, vilket är användbart när du skapar formler som innebär att ett tidstrendningsmått delas med ett `scalar` tal. Du kan också ändra tidsintervallet för `scalar` mätvärden till ett tidsintervall som är oberoende av rapportens.
 
-Exempel: vi ville se månadsomsättningen för 2019 uttryckt i procent av de totala intäkterna för 2019. Vi kan lägga till två `Revenue` mätvärden till en rapport med ett globalt tidsintervall från 1 januari 2019 till 31 december 2019, segmenterat efter månadsintervall.
+Exempel: 2019 års månadsinkomst uttryckt i procent av de totala intäkterna 2019. Du kan lägga till två `Revenue` mätvärden till en rapport med ett globalt tidsintervall från 1 januari 2019 till 31 december 2019, segmenterade efter månadsintervall.
 
 >[!NOTE]
 >
->Om du lägger till `group by` mått, välj en ny visualisering eller justera tidsintervallet och spara sedan bara talet (`scalar`) kommer justeringarna inte att behållas nästa gång du öppnar rapporten från en kontrollpanel - bara tidsintervallet behålls.
+>Om du lägger till `group by` mått, välj en ny visualisering eller justera tidsintervallet och spara sedan bara talet (`scalar`). Dessa justeringar behålls inte nästa gång du öppnar rapporten från en kontrollpanel - bara tidsintervallet behålls.
 
 Om du vill veta mer om hur du använder tidsalternativ i dina rapporter kan du läsa detta [självstudiekurs](../tutorials/time-options-visual-rpt-bldr.md).
 
 ## Steg 7: Sparar rapporten
 
-När du skapar ett nytt diagram kan du spara det genom att klicka på **[!UICONTROL Save]** längst upp till höger i `Visual Report Builder`.
+När du skapar ett diagram kan du spara det genom att klicka på **[!UICONTROL Save]** längst upp till höger i `Visual Report Builder`.
 
 Du kan välja att spara ett diagram, en tabell eller en siffra (`scalar`) med `Type` listrutan och kontrollpanelen som rapporten ska sparas på med `Location` listruta.
 

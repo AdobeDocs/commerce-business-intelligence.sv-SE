@@ -2,16 +2,16 @@
 title: Bygga en kontrollpanel för investerare
 description: Lär dig hur du skapar en instrumentpanel för investerare.
 exl-id: 917e7628-3498-4413-a7e1-61799989a7dd
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '284'
 ht-degree: 0%
 
 ---
 
 # Bygg Investor Dashboard
 
-Många av våra kunder arbetar med investerare och behöver dela information från olika plattformar med dem, men de instrumentpaneler ni skapar för att fatta vardagliga affärsbeslut kanske inte är vad en investerare söker. Här beskrivs några tips om hur du kan skapa en kontrollpanel som är omfattande men enkel och idealisk för delning med aktiva och potentiella investerare.
+Många kunder arbetar med investerare och behöver dela information från plattformen, men de instrumentpaneler ni skapar för att fatta vardagliga affärsbeslut kanske inte är vad en investerare är ute efter. Nedan beskrivs några tips om hur du kan skapa en kontrollpanel som är omfattande men enkel och idealisk för delning med aktiva och potentiella investerare.
 
 Här är vad du behöver skapa rapporter för din instrumentpanel för investerare:
 
@@ -28,7 +28,7 @@ Här är vad du behöver skapa rapporter för din instrumentpanel för investera
 * **[!UICONTROL Revenue by quarter]**
    * Mått - intäkt
 * **[!UICONTROL Revenue from 1st time orders vs repeat orders]**
-   * Mått - Intäkt för första ordern
+   * Mått - Inkomster av förstagångsorder
    * Filter - användarens ordernummer är lika med 1
    * Mått 2 - Upprepa orderintäkt
       * Filter - användarens ordernummer är större än 1
@@ -71,8 +71,8 @@ Med [Commerce Data Enrichment Services](https://business.adobe.com/products/mage
 * Använd en tydlig och koncis [namnkonvention](../best-practices/naming-elements.md)
 * Dela instrumentpanelen med investeraranvändare
 * Eller skicka det via **[!UICONTROL Automated email summary]**(../data-user/export-data/email-summaries.md)
-* Skapa bara en kontrollpanel. Detta gör innehållet enklare att underhålla och ni vet exakt vad era investerare tittar på.
+* Skapa bara en kontrollpanel. Detta gör innehållet enklare att underhålla och du vet exakt vad era investerare tittar på.
 
-Ordna dina rapporter noggrant och var uppmärksam på detaljerna. När du är klar ser kontrollpanelen ut ungefär så här:
+Ordna dina rapporter noggrant och var uppmärksam på detaljerna. När kontrollpanelen är klar ser den ut ungefär så här:
 
 ![](../../mbi/assets/investor-dboard-example.png)

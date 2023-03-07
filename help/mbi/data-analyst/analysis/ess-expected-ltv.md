@@ -1,10 +1,10 @@
 ---
 title: Förväntad analys av livstidsvärde (LTV) (grundläggande)
-description: Lär dig hur ni skapar analyser för att förstå era kunders livstidsvärde och förutse hur livstidsvärdet kommer att öka med fler order.
+description: Lär dig hur ni skapar analyser för att förstå era kunders livstidsvärde och förutse hur livstidsvärdet ökar med fler order.
 exl-id: e6f02cf6-f542-4768-969c-3ec998a7caa9
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '331'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Att förutse kundernas livstidsvärde när de gör fler beställningar är en av de viktigaste aspekterna i alla typer av företag av alla storlekar.
 
-Här följer stegen för att skapa analyser för att förstå era nuvarande kunders livstidsvärde och förutse hur livstidsvärdet kommer att öka med fler order:
+Här följer stegen för att skapa analyser för att förstå era nuvarande kunders livstidsvärde och förutse hur livstidsvärdet ökar med fler order:
 
 ![förväntat livstid](../../assets/expected_ltv_720.png)
 
@@ -41,13 +41,13 @@ När mätvärdena har skapats kan du **skapa en kontrollpanel** genom att göra 
 * Navigera till **[!UICONTROL Dashboards > Dashboard Options > Create New Dashboard]**.
 * Ge instrumentpanelen ett namn som `Expected LTV`.
 
-* Det är här vi skapar och lägger in alla rapporter.
+* Här skapar du och lägger till alla rapporter.
 
 ## Skapar rapporter
 
 >[!NOTE]
 >
->På **[!UICONTROL Time Period:]**, anges tidsperioden för varje rapport som `All-time`. Du kan ändra detta efter dina analysbehov. Vi rekommenderar att alla rapporter på den här instrumentpanelen täcker samma tidsperiod, till exempel `All time`, `Year-to-date`, eller `Last 365 days`.
+>På **[!UICONTROL Time Period:]**, anges tidsperioden för varje rapport som `All-time`. Du kan ändra detta efter dina analysbehov. Adobe rekommenderar att alla rapporter på kontrollpanelen täcker samma tidsperiod, till exempel `All time`, `Year-to-date`, eller `Last 365 days`.
 
 * **[!UICONTROL Average LTV (all)]**
    * [!UICONTROL Metric]: `Avg lifetime revenue`
@@ -88,7 +88,7 @@ När mätvärdena har skapats kan du **skapa en kontrollpanel** genom att göra 
       [!UICONTROL-diagramtyp]: `Line`
    >[!NOTE]
    >
-   >Lägg inte till alla värden för `Customer's lifetime number of orders`, i stället ta en titt där antalet nya kunder når ett litet antal och manuellt lägga till varje kunds antal beställningslicenser för hela livstiden till den punkten. Om det till exempel finns 200 kunder på en order, 75 på två, 15 på tre och 3 på fyra lägger du till *1, 2 och 3*.
+   >Lägg inte till alla värden för `Customer's lifetime number of orders`. Titta istället på en punkt där antalet nya kunder når ett litet antal och manuellt lägga till varje kunds antal beställningsvärden för hela livstiden till den punkten. Om det till exempel finns 200 kunder på en order, 75 på två, 15 på tre och 3 på fyra lägger du till *1, 2 och 3*.
 
 * Lägg till befintlig [!UICONTROL Avg customer lifetime revenue by cohort] rapport.
 

@@ -2,9 +2,9 @@
 title: Connect Mixpanel
 description: Lär dig hur du analyserar hur användare navigerar och använder dina webbplatser och appar.
 exl-id: e6a9f08f-1063-4d92-93e6-971280239fdb
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '255'
 ht-degree: 0%
 
 ---
@@ -25,11 +25,11 @@ Koppla samman [!DNL Mixpanel] data till [!DNL MBI] en enkel trestegsprocess:
 1. [Hämta din [!DNL Mixpanel] API-autentiseringsuppgifter](#steptwo)
 1. [Ange [!DNL Mixpanel] API-autentiseringsuppgifter i MBI](#stepthree)
 
-För att slutföra den här processen måste du öppna två webbläsarfönster eller flikar - ett för [!DNL MBI], den andra för [!DNL Mixpanel] konto.
+För att slutföra den här processen måste du öppna två webbläsarfönster eller -flikar - ett för [!DNL MBI], den andra för [!DNL Mixpanel] konto.
 
 ## Öppna [!DNL Mixpanel] inloggningssida {#stepone}
 
-Låt oss komma igång:
+Kom igång:
 
 1. Gå till `Connections` sida under **[!DNL Manage Data** > **Connections]**.
 1. Klicka **[!UICONTROL Add a New Source]**, som finns till höger på skärmen ovanför `Data Sources` tabell.
@@ -43,18 +43,18 @@ Om du inte har loggat in på [!DNL Mixpanel] gör du det och gör sedan följand
 
 1. Klicka **[!UICONTROL Account]** i det övre högra hörnet.
 1. Klicka på **[!UICONTROL Projects]**.
-1. API-autentiseringsuppgifterna visas:
+1. Din API-inloggningsinformation visas:
 
 ![Hämtar API-autentiseringsuppgifter för Mixpanel](../../../assets/Mixpanel_API_creds.png)
 
-Håll det här öppet - vi behöver det för att slå ihop det här.
+Håll det här öppet - du behöver det för att slå ihop det här.
 
 ## Ange [!DNL Mixpanel] API-autentiseringsuppgifter i [!DNL MBI] {#stepthree}
 
 1. Kopiera `API Key` och `Secret` till [!DNL Mixpanel] inloggningssida i [!DNL MBI].
 1. Klicka **[!UICONTROL Connect to Mixpanel]** för att slutföra installationen.
 
-Så ja! Om anslutningen lyckas kan du _Klart!_ visas överst på sidan.
+Så ja! Om anslutningen lyckas kan du _Klart!_ visas högst upp på sidan.
 
 ### Relaterad
 

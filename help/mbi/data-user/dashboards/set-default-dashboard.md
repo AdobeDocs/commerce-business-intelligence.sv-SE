@@ -2,9 +2,9 @@
 title: Ange en standardinstrumentpanel
 description: Lär dig hur du ställer in en standardkontrollpanel.
 exl-id: a3fc64e3-b527-4c2c-848d-c0962cd20ff3
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '63'
+source-wordcount: '64'
 ht-degree: 0%
 
 ---

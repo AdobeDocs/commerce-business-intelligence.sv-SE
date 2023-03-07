@@ -1,10 +1,10 @@
 ---
 title: Hantera datamängder
-description: Lär dig hur data genereras, det som exakt gör att en ny rad infogas i en av kärnhandelstjänsterna, hur är åtgärder som att göra ett köp eller skapa ett konto som registrerats i Commerce-databasen?
+description: Lär dig vad en dimension är och den kan användas för att filtrera eller segmentera diagram baserat på ett mätvärde.
 exl-id: 143a4b1e-2e6f-438a-90e6-bdda13b39cb9
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '446'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Så här tar du bort en eller flera dimensioner från flera mått:
 
 1. Välj den tabell som innehåller dimensionerna.
 
-1. Markera de mått som du vill ta bort från vänster och de dimensioner som du vill ta bort till höger.
+1. Välj de mått som du vill ta bort från vänster och de dimensioner som du vill ta bort till höger.
 
 1. Klicka **[!UICONTROL Remove]**.
 
@@ -63,7 +63,7 @@ Så här tar du bort en eller flera dimensioner från flera mått:
 
 >[!NOTE]
 >
->Alla dimensioner som du vill filtrera eller gruppera efter måste redan spåras i [!DNL MBI]. Om du inte hittar den önskade dimensionen kan vi behöva börja spåra en ny datakolumn i databasen via [data warehouse](../data-warehouse-mgr/tour-dwm.md) sida.
+>Alla dimensioner som du vill filtrera eller gruppera efter måste redan spåras i [!DNL MBI]. Om du inte hittar den önskade dimensionen kan du behöva börja spåra en ny datakolumn i databasen via [data warehouse](../data-warehouse-mgr/tour-dwm.md) sida.
 
 
 **Så här tar du bort dimensioner från ett mått:**
@@ -76,7 +76,7 @@ Så här tar du bort en eller flera dimensioner från flera mått:
 
 >[!NOTE]
 >
->Även efter att du har tagit bort en dimension finns den fortfarande som en kolumn i tabellen i data warehouse. Du kan lägga tillbaka det i alla mätvärden och skapa nya mätvärden med dessa mått. Ta bort datakolumnen från en dimension motsvarar [!DNL MBI]tar du bara bort spåret från datakolumnen via [data warehouse](../data-warehouse-mgr/tour-dwm.md) sida.
+>Även efter att du har tagit bort en dimension finns den fortfarande som en kolumn i tabellen i Data warehouse. Du kan lägga tillbaka det i alla mätvärden och skapa nya mätvärden med dessa mått. Ta bort den datakolumn som en dimension motsvarar från [!DNL MBI]tar du bara bort spåret från datakolumnen via [data warehouse](../data-warehouse-mgr/tour-dwm.md) sida.
 
 ## Relaterad dokumentation
 

@@ -2,9 +2,9 @@
 title: Optimera dina SQL-frågor
 description: Lär dig hur du optimerar dina SQL-frågor.
 exl-id: 2782c707-6a02-4e5d-bfbb-eff20659fbb2
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: '785'
 ht-degree: 0%
 
 ---
@@ -13,53 +13,53 @@ ht-degree: 0%
 
 Med SQL Report Builder kan du fråga efter och upprepa dessa frågor när du vill. Detta är användbart när du behöver ändra en fråga utan att behöva vänta på att en uppdateringscykel ska slutföras innan en kolumn eller rapport som du har skapat realiseras och behöver uppdateras.
 
-Innan en fråga körs [[!DNL MBI] beräknar kostnaden](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html?lang=en). Kostnaden tar hänsyn till hur lång tid och hur många resurser som krävs för att köra en fråga. Om kostnaden anses vara för hög eller om antalet returnerade rader överstiger våra gränser, kommer frågan inte att köras. Vi har sammanställt en lista med rekommendationer om hur du ska ställa frågor till data warehouse, så att du kan vara säker på att du skriver så smidiga frågor som möjligt.
+Innan en fråga körs [[!DNL MBI] beräknar kostnaden](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html?lang=en). Kostnad anger hur lång tid och hur många resurser som krävs för att köra en fråga. Om kostnaden anses vara för hög eller om antalet returnerade rader överstiger MBI-gränserna misslyckas frågan. Adobe rekommenderar följande för att fråga Data warehouse, som ser till att du skriver de mest effektiva frågorna.
 
 ## Använda SELECT eller Markera alla kolumner
 
-Om du markerar alla kolumner blir frågan inte aktuell och enkel att köra. Frågor som använder `SELECT *` kan ta en hel del tid att köra, särskilt om tabellen har ett stort antal kolumner.
+Om du markerar alla kolumner blir frågan inte aktuell och enkel att köra. Frågor som använder `SELECT *` kan ta en hel del tid att köra, särskilt om tabellen har många kolumner.
 
-Därför rekommenderar vi att du undviker att använda `SELECT *` där det är möjligt, och endast inkludera de kolumner du behöver:
+Därför rekommenderar Adobe att du undviker att använda `SELECT *` där det är möjligt, och endast inkludera de kolumner du behöver:
 
 | **Istället för det här..** | **Prova det här!** |
 |-----|-----|
 | ![](../../mbi/assets/Select_all_1.png) | ![](../../mbi/assets/Select_all_2.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Använda fullständiga yttre hörn
 
 Yttre kopplingar markerar hela tabellen som kopplas, vilket ökar frågans beräkningskostnad. Det innebär att det tar längre tid att köra frågan och att den troligtvis misslyckas eftersom det kan ta längre tid än vad som krävs för att returnera resultatet.
 
-I stället för att använda den här typen av förening bör du använda en inre eller vänster koppling. Inre kopplingar returnerar bara resultat där tHere är en kolumnmatchning mellan tabeller (till exempel `order_id` finns i båda en typisk `customers` och `orders` tabell), vänsterkopplingar returnerar alla resultat från den vänstra (första) tabellen tillsammans med matchande resultat i den högra (andra) tabellen.
+I stället för att använda den här typen av förening bör du använda en inre eller vänster koppling. Inre kopplingar returnerar bara resultat när det finns en kolumnmatchning mellan tabeller (till exempel `order_id` finns i båda en typisk `customers` och `orders` tabell). Vänsterfogar returnerar alla resultat från den vänstra (första) tabellen tillsammans med matchande resultat i den högra (andra) tabellen.
 
-Ta en titt på hur vi kan skriva om en FULL OUTER JOIN-fråga:
+Se hur du kan skriva om en FULL OUTER JOIN-fråga:
 
 | **Istället för det här..** | **Prova det här!** |
 |-----|-----|
 | ![](../../mbi/assets/Full_Outer_Join_1.png) | ![](../../mbi/assets/Full_Outer_Join_2.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-Som du ser är de här frågorna identiska på alla sätt förutom den typ av JOIN de använder.
+De här frågorna är identiska på alla sätt förutom den typ av JOIN som de använder.
 
 ## Använda flera hörn
 
-Även om du kan ta med flera kopplingar i frågan måste du komma ihåg att det kan leda till högre kostnader för frågan. För att undvika att hamna på kostnadströskeln rekommenderar vi att du undviker flera kopplingar där det är möjligt.
+Även om du kan ta med flera kopplingar i frågan måste du komma ihåg att det kan leda till högre kostnader för frågan. För att undvika att uppnå kostnadströskeln rekommenderar Adobe att man undviker flera kopplingar där det är möjligt.
 
 ## Använda filter
 
-Använd filter när det är möjligt. `WHERE` och `HAVING` -satser kommer att filtrera dina resultat och ge dig bara de data du verkligen vill ha.
+Använd filter när det är möjligt. `WHERE` och `HAVING` -satser filtrerar resultaten och ger dig bara de data du verkligen vill ha.
 
 ## Använda filter i JOIN-satser
 
-Om du använder ett filter när du gör en koppling måste du använda det på båda tabellerna i kopplingen. Även om det är överflödigt minskar detta beräkningskostnaderna för frågan och förkortar körningstiden.
+Om du använder ett filter när du gör en koppling måste du använda det på båda tabellerna i kopplingen. Även om det är överflödigt minskar detta beräkningskostnaderna för frågan och minskar körningstiden.
 
 | **Istället för det här..** | **Prova det här!** |
 |-----|-----|
 | ![](../../mbi/assets/Join_filters_1.png) | ![](../../mbi/assets/Join_filters_2.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Använda operatorer
 
@@ -69,7 +69,7 @@ Jämförelseoperatorer (>, &lt;, = o.s.v.) är de mest kostsamma, följt av [SOM
 
 ## Använda EXIST jämfört med IN
 
-Använda `EXISTS` kontra `IN` beror på vilken typ av resultat du försöker returnera. Om du bara är intresserad av ett enda värde använder du `EXISTS` -sats i stället för `IN`. `IN` används tillsammans med listor med kommaavgränsade värden, vilket ökar frågans beräkningskostnad.
+Använda `EXISTS` kontra `IN` beror på vilken typ av resultat du försöker returnera. Om du bara är intresserad av ett enda värde använder du `EXISTS` -sats i stället för `IN`. `IN` används med listor med kommaavgränsade värden, vilket ökar frågans beräkningskostnad.
 
 När `IN` frågor körs, systemet måste först bearbeta underfrågan (den `IN` -programsats), sedan hela frågan baserat på relationen som anges i `IN` -programsats. `EXISTS` är mycket effektivare eftersom frågan inte behöver köras flera gånger - ett sant/falskt värde returneras när relationen som anges i frågan kontrolleras.
 
@@ -79,23 +79,23 @@ Kort sagt: systemet inte behöver bearbeta så mycket när det använder `EXISTS
 |-----|-----|
 | ![](../../mbi/assets/Exists_1.png) | ![](../../mbi/assets/Exists_2.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Använda ORDER BY
 
-`ORDER BY` är en dyr funktion i SQL och kan avsevärt öka kostnaden för en fråga. Om du får ett felmeddelande om att EXPLAIN-kostnaden för din fråga är för hög kan du försöka med att ta bort eventuella `ORDER BY`är från din fråga såvida det inte är absolut nödvändigt.
+`ORDER BY` är en dyr funktion i SQL och kan avsevärt öka kostnaden för en fråga. Om du får ett felmeddelande om att EXPLAIN-kostnaden för din fråga är för hög kan du försöka med att ta bort eventuella `ORDER BY`är från din fråga om det inte behövs.
 
-Det här är inte att säga att `ORDER BY` inte kan användas - bara att det bara ska användas när det är nödvändigt.
+Det här är inte att säga att `ORDER BY` kan inte användas - bara att den bara ska användas när det är nödvändigt.
 
 ## Använda GROUP BY och BESTÄLL AV
 
-Även om det finns vissa situationer där detta tillvägagångssätt inte överensstämmer med det du försöker göra, är den allmänna regeln att om du använder en `GROUP BY` och `ORDER BY`ska du placera kolumnerna i båda satserna i samma ordning. Till exempel:
+Det kan finnas situationer där detta tillvägagångssätt inte överensstämmer med vad du försöker göra. Den allmänna regeln är att om du använder en `GROUP BY` och `ORDER BY`ska du placera kolumnerna i båda satserna i samma ordning. Till exempel:
 
 | **Istället för det här..** | **Prova det här!** |
 |-----|-----|
 | ![](../../mbi/assets/Group_by_2.png) | ![](../../mbi/assets/Group_by_1.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Radbrytning
 

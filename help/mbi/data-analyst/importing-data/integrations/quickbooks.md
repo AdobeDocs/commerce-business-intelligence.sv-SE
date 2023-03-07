@@ -2,9 +2,9 @@
 title: Connect QuickBooks
 description: Lär dig mer om hur företagets ekonomi nu kan samverka med era sälj- och marknadsföringsdata, så att ni snabbt och enkelt kan hålla koll på era utgifter, identifiera överutgifter och mycket annat.
 exl-id: e100c88c-af59-4185-b2a2-c8e77bfd7277
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '147'
+source-wordcount: '146'
 ht-degree: 0%
 
 ---

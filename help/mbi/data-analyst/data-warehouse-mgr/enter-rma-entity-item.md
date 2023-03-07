@@ -2,9 +2,9 @@
 title: Enterprise_RMA_Item_Entity Table
 description: Lär dig hur du analyserar information om ett visst objekt från en begärd retur.
 exl-id: aa71cb3f-3e0b-4b6b-b4cc-dad103f79c51
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '275'
 ht-degree: 0%
 
 ---
@@ -23,14 +23,14 @@ Varje rad i `enterprise_rma_item_entity` tabell (anropas ofta `magento_rma_item_
 |---|---|
 | `entity\_id` | Unik identifierare för registret. Varje `entity\_id` representerar ett objekt som har begärts för retur. |
 | `rma\_entity\_id` | Sekundärnyckel som är associerad med `enterprise\_rma` tabell. |
-| `status` | Status för artikelns retur. Värdena är bland annat&quot;mottagen&quot;,&quot;väntande&quot; och&quot;auktoriserad&quot;. Värdena i den här statusen matchar inte nödvändigtvis värdet för den totala returens status. |
+| `status` | Status för artikelns retur. Värdena är bland annat&quot;mottagen&quot;,&quot;väntande&quot; och&quot;auktoriserad&quot;. Värdena i den här statusen kanske inte matchar värdet för den totala returens status. |
 | `qty\_requested` | Kvantiteten som kunden begär för retur. |
 | `qty\_approved` | Den kvantitet som godkänts för retur. |
-| `qty\_returned` | Den kvantitet som faktiskt returnerats. |
+| `qty\_returned` | Returnerad kvantitet. |
 | `order\_item\_id` | Sekundärnyckel som är associerad med `sales\_flat\_order\_item` tabell. |
 | `product\_sku` | Den sku som returneras. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Vanliga beräknade kolumner
 
@@ -40,7 +40,7 @@ Varje rad i `enterprise_rma_item_entity` tabell (anropas ofta `magento_rma_item_
 | `Item price` | Artikelns pris. |
 | `Return item's total value (qty\_returned * price)` | Detta är det totala monetära värdet för de artiklar som returneras. Detta används för att beräkna det totala returbeloppet på `enterprise\_rma` tabell. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Vanliga mått
 
@@ -49,7 +49,7 @@ Varje rad i `enterprise_rma_item_entity` tabell (anropas ofta `magento_rma_item_
 | `Number of items returned` | Antalet artiklar som returneras. | Åtgärdskolumn: returnerad kvantitet<br>Åtgärd: Summa<br>Tidsstämpelkolumn: Begärt returdatum |
 | `Returned items' total value` | Det returnerade penningbeloppet. | Åtgärdskolumn: Returartikelns totala värde (returnerad kvantitet * pris)<br>Åtgärd: Summa<br>Tidsstämpelkolumn: Begärt returdatum |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Anslutningar till andra tabeller
 

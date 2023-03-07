@@ -2,16 +2,16 @@
 title: Definiera kundomsättning
 description: Lär dig hur du skapar en kontrollpanel som hjälper dig att definiera kundomsättning för dina transaktionskunder.
 exl-id: fea8f7e9-c84c-4d49-a657-8b75140c113a
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '486'
 ht-degree: 0%
 
 ---
 
 # Transactional Customer Churn
 
-I den här artikeln demonstrerar vi hur du skapar en kontrollpanel som hjälper dig att definiera kundomsättning för dina transaktionskunder.
+I den här artikeln visas hur du konfigurerar en kontrollpanel som hjälper dig att definiera kundomsättning för dina transaktionskunder.
 
 ![](../../assets/churn-deashboard.png)
 
@@ -28,7 +28,7 @@ Kolumner att skapa
 * Välj en [!UICONTROL column]: **`entity_id`**
 * [!UICONTROL Path]: sales_flat_order.customer_id = customer_entity.entity_id
 * [!UICONTROL Filter]:
-* Beställningar vi räknar
+* Beställningar som räknas
 
 * `sales_flat_order` table
 * `Customer's lifetime number of orders`
@@ -59,11 +59,11 @@ Inga nya mätvärden!
 ## Rapporter
 
 * **Sannolikhet för inledande upprepad order**
-* Mått A: Alla tidsupprepade order
+* Mått A: Upprepa order hela tiden
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]: `Customer's order number greater than 1`
 
-* Mått B: Alla tidsbeställningar
+* Mått B: Heltidsbeställningar
 * [!UICONTROL Metric]: Antal order
 
 * [!UICONTROL Formula]: Sannolikhet för inledande upprepad order
@@ -93,7 +93,7 @@ Inga nya mätvärden!
    [!UICONTROL Perspective]: `Cumulative`
 * [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
 
-* Mått C: Alla upprepade order (dölj)
+* Mått C: Upprepade order hela tiden (dölj)
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]: `Customer's order number greater than 1`
 
@@ -101,7 +101,7 @@ Inga nya mätvärden!
 
    [!UICONTROL Group by]: `Independent`
 
-* Mått D: Alla sista beställningar (dölj)
+* Mått D: Senaste order hela tiden (dölj)
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
 
@@ -128,12 +128,12 @@ Inga nya mätvärden!
 
 Den inledande sannolikhetsrapporten för upprepad order representerar totalt antal upprepade order/totalt antal order. Varje beställning ger möjlighet att göra en upprepad beställning. antalet upprepade order är delmängden av de som faktiskt gör det.
 
-Formeln vi använder förenklar till (Totalt antal upprepade order som har gjorts efter X månader)/ (Totalt antal order som är minst X månader gamla). Det visar oss att det historiskt sett har gått X månader sedan en beställning och att det finns en Y-procentig chans att användaren lägger en ny order.
+Formeln som du använder förenklar till (Totalt antal upprepade order som har inträffat efter X månader)/ (Totalt antal order som är minst X månader gamla). Det visar att det historiskt sett har gått X månader sedan en beställning och att det finns en Y-procentig chans att användaren lägger en annan order.
 
-När du har skapat din kontrollpanel är den vanligaste frågan vi får: Hur använder jag detta för att fastställa ett tröskelvärde för bortfall?
+När du väl har skapat din kontrollpanel är den vanligaste frågan: Hur använder jag detta för att fastställa ett tröskelvärde för bortfall?
 
-**Det finns inget&quot;rätt svar&quot; på detta.** Vi rekommenderar dock att du hittar den punkt där raden korsar värdet som är hälften av den inledande upprepningssannolikheten. Här kan vi säga: &quot;Om en användare skulle göra en ny beställning skulle han eller hon antagligen ha gjort det vid det här laget.&quot; I slutändan är målet att välja tröskeln där det är rimligt att gå över från&quot;kvarhållande&quot; till&quot;reaktivering&quot;.
+**Det finns inget&quot;rätt svar&quot; på detta.** Adobe rekommenderar dock att du hittar den punkt där raden korsar värdet som är hälften av den inledande upprepningssannolikheten. Här kan du säga: &quot;Om en användare tänker göra en ny beställning, skulle han eller hon antagligen ha gjort det vid det här laget.&quot; I slutändan är målet att välja tröskeln där det är rimligt att gå över från&quot;kvarhållande&quot; till&quot;reaktivering&quot;.
 
-När du har kompilerat alla rapporter kan du ordna dem på kontrollpanelen som du vill. Slutresultatet kan se ut som bilden överst på sidan
+När du har kompilerat alla rapporter kan du ordna dem på kontrollpanelen som du vill. Resultatet kan se ut som bilden högst upp på sidan
 
-Om du stöter på några frågor när du bygger upp den här analysen, eller bara vill engagera vårt team med professionella tjänster, [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Om du stöter på några frågor när du skapar den här analysen eller bara vill engagera Professional Services-teamet, [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

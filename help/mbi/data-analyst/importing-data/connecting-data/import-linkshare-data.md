@@ -2,9 +2,9 @@
 title: Importera Länkdelningsdata
 description: Lär dig importera Länkdelning-data till [!DNL MBI].
 exl-id: 1c2025a6-746c-4929-bbb1-62af1afcbc49
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '97'
+source-wordcount: '94'
 ht-degree: 0%
 
 ---
@@ -36,6 +36,6 @@ För att ta med `Linkshare` data till [!DNL MBI]måste du göra två saker:
 
 1. Klicka **[!UICONTROL Download]**.
 
-   I det här skedet `.csv` filen skapas och hämtas.
+   I det här skedet `.csv` och laddas ned.
 
 När filen har laddats ned kan du överföra den till [!DNL MBI] med [`File Upload` funktion](../connecting-data/using-file-uploader.md).

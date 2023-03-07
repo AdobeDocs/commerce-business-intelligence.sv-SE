@@ -2,20 +2,20 @@
 title: Avlasta [!DNL MBI] Konto
 description: Lär dig hur du rensar upp dina [!DNL MBI] konto.
 exl-id: 5fcdac2d-41ca-4011-b646-a699d9ecc6e4
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '891'
+source-wordcount: '878'
 ht-degree: 0%
 
 ---
 
 # Rensa [!DNL MBI] Konto
 
-Om du har varit med [!DNL MBI] i 6 månader eller 6 år är det av största vikt att ha ett konto för att få ut det mesta av plattformen. Med tiden är det naturligt att det finns användare, kontrollpaneler, rapporter, mätvärden och kolumner som inte längre behövs. Du kanske skapade en rapport för engångsbruk och glömde den, eller en användare som lämnade företaget hade aldrig inaktiverat sitt konto.
+Om du har varit med [!DNL MBI] i sex månader eller sex år är det avgörande för att ni ska få ut det mesta av plattformen att ha ett välbekväm konto. Med tiden är det naturligt att det finns användare, kontrollpaneler, rapporter, mätvärden och kolumner som inte längre behövs. Du kanske skapade en rapport för engångsbruk och glömde den eller en användare som lämnade företaget hade aldrig inaktiverat sitt konto.
 
-I kombination med [standardiserad, tydlig namngivning för alla element](../best-practices/naming-elements.md)) [!DNL MBI] kontots granskningssteg nedan hjälper dig att minska trassel och onödiga analyser för dina användare. Ytterligare en förmån innefattar [snabbare uppdateringscykler](../best-practices/reduce-update-cycle-time.md).
+Med [standardiserad, tydlig namngivning för alla element](../best-practices/naming-elements.md)) [!DNL MBI] kontots granskningssteg nedan hjälper dig att minska trassel och onödiga analyser för dina användare. Ytterligare en förmån innefattar [snabbare uppdateringscykler](../best-practices/reduce-update-cycle-time.md).
 
-## Steg 1: Identifiera icke-aktiva användare
+## Steg 1: Identifiera era icke-aktiva användare
 
 Det första steget i att rensa ditt konto är att inaktivera konton för dina icke-aktiva användare, till exempel personer som har lämnat företaget eller inte längre använder [!DNL MBI] i sina nuvarande roller.
 
@@ -27,11 +27,11 @@ Du kan göra detta genom att klicka på företagets namn i det övre högra hör
 
 >[!WARNING]
 >
->Om du inaktiverar en användare tas även diagram, instrumentpaneler och andra resurser som skapats av användaren bort. Om du vill bevara dessa resurser kontaktar du [!DNL MBI] [support](../guide-overview.md) innan användaren inaktiveras. Support kan hjälpa dig att överföra dessa resurser till en annan användare.
+>När du inaktiverar en användare tas diagram, instrumentpaneler och andra resurser som skapats av användaren bort. Om du vill bevara dessa resurser kontaktar du [!DNL MBI] [support](../guide-overview.md) innan användaren inaktiveras. Support kan hjälpa dig att överföra dessa resurser till en annan användare.
 
 ### Återaktivera en användare
 
-Om du vill återaktivera en användare bjuder du in användaren på nytt genom att återskapa kontot med samma e-postadress som inaktiverades, och åtkomst och de data som användaren äger återställs vid inloggningen.
+Om du vill återaktivera en användare bjuder du in användaren på nytt genom att återskapa kontot med samma e-postadress som inaktiverades, och åtkomst och de data användaren äger återställs vid inloggningen.
 
 ## Steg 2: Ta bort oanvända instrumentpaneler och rapporter
 
@@ -45,7 +45,7 @@ Alla användare med `Admin` eller `Standard` kan skapa rapporter och kontrollpan
 
 ### Granska dina instrumentpaneler och rapporter
 
-Innan du tar bort något bör du granska dina rapporter och kontrollpaneler för att se vad som används för närvarande. Du kan använda **[!UICONTROL find unused reports]** som beskrivs nedan kommer eventuella inledande recensioner att öka din produktivitet.
+Innan du tar bort något bör du granska dina rapporter och kontrollpaneler för att se vad som används. Du kan använda **[!UICONTROL find unused reports]** som beskrivs nedan gör en inledande granskning att rensningen blir mycket mer produktiv.
 
 ### Ta bort instrumentpaneler och rapporter
 
@@ -84,37 +84,37 @@ Här följer en titt på borttagningsprocessen som inte används:
 
 ## Steg 3: Ta bort oanvända mått
 
-När du har rensat bort användarlistan, kontrollpanelerna och rapporterna kan du börja granska din lista med mätvärden. Detta hjälper dig att identifiera något som kan vara föråldrat - till exempel har ett nytt mått skapats med en annan definition - eller som inte används.
+När du har rensat bort användarlistan, kontrollpanelerna och rapporterna kan du börja granska din lista med mätvärden. På så sätt kan du identifiera allt som kan vara inaktuellt - till exempel har ett nytt mått skapats med en annan definition - eller som inte används.
 
 1. Om du vill generera en lista med beroende rapporter för ett mätresultat går du till **[!DNL Manage Data]** och sedan klicka på **[!UICONTROL Metrics]**.
 1. Klicka **[!UICONTROL Edit]** bredvid ett mätresultat.
-1. Längst ned på sidan visas ett avsnitt med namnet **[!UICONTROL Dependent Charts]**. Klicka på länken om du vill generera en lista med beroende rapporter för det här måttet.
+1. Längst ned på sidan visas ett avsnitt som kallas **[!UICONTROL Dependent Charts]**. Klicka på länken om du vill generera en lista med beroende rapporter för det här måttet.
 1. När systemet har slutfört kontrollen [!DNL MBI] visar en lista med instrumentpaneler, rapporter och användare som använder det här måttet.
 
 ![](../../mbi/assets/report_dependecies.png)
 
-Om du bestämmer dig för att måttet inte längre behövs går du tillbaka till **[!UICONTROL Metrics]** sida genom att klicka **[!UICONTROL Back to Metric List]** överst på sidan och hitta de mått som du vill ta bort. Klicka **[!UICONTROL Delete]**.
+Om du bestämmer dig för att måttet inte längre behövs går du tillbaka till **[!UICONTROL Metrics]** sida genom att klicka **[!UICONTROL Back to Metric List]** för att hitta måtten som du vill ta bort. Klicka **[!UICONTROL Delete]**.
 
 ## Steg 4: Utvärdera dina synkroniserade kolumner
 
-Det sista steget är att utvärdera de kolumner som synkroniseras i data warehouse. Det går inte bara att avsynkronisera kolumner så att ditt konto rensas, det kan också minska uppdateringstiden.
+Det sista steget är att utvärdera de kolumner som synkroniseras i Data warehouse. Det går inte bara att avsynkronisera kolumner så att ditt konto rensas, det kan också minska uppdateringstiden.
 
 Om du vill fortsätta med detta, kontakta [!DNL MBI] [Support](../guide-overview.md). Supportteamet kan skapa en rapport som innehåller alla kolumner som inte används i någon kontrollpanel för någon användare och som inte används i e-postsammanfattningar, exklusive SQL-rapporter. Du kan sedan använda den här rapporten som vägledning när du markerar kolumner som ska avsynkroniseras via Data warehouse Manager.
 
 >[!NOTE]
 >
->Du kan alltid börja synkronisera de här kolumnerna igen i framtiden. Om du avsynkroniserar en kolumn tas inga data bort från data warehouse. det betyder bara att den här kolumnen inte kommer att kontrolleras för nya eller uppdaterade värden under uppdateringscykeln.
+>Du kan alltid börja synkronisera de här kolumnerna igen i framtiden. Om du avsynkroniserar en kolumn tas alla data bort från Data warehouse; det innebär bara att den här kolumnen inte kontrolleras om det finns nya eller uppdaterade värden under uppdateringscykeln.
 
 **Så här avsynkroniserar du en kolumn (eller kolumner)**
 
 1. Gå till **[!DNL Manage Data]** sedan **[!UICONTROL Data Warehouse]**.
 1. I **[!UICONTROL Synced Tables]** navigera till tabellen som innehåller kolumnen.
-1. Markera kryssrutan/rutorna intill de kolumner som du vill avsynkronisera.
+1. Markera en eller flera rutor bredvid en eller flera kolumner som du vill avsynkronisera.
    >[!NOTE]
    >
    >Du kan inte avsynkronisera en primärnyckelkolumn utan att släppa hela tabellen.
 
-1. Klicka **[!UICONTROL Remove]** om du vill avsynkronisera kolumnerna.
+1. Klicka **[!UICONTROL Remove]** om du vill avsynkronisera en eller flera kolumner.
 
 Här är en titt på hela processen:
 

@@ -2,16 +2,16 @@
 title: Söker efter instrumentpaneler
 description: Lär dig hur du använder funktionen Global sökning för att söka efter instrumentpaneler och hur du söker efter instrumentpaneler som ägs av andra användare.
 exl-id: eea09ee5-e7ec-4002-8257-a35a64c900a9
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '148'
+source-wordcount: '146'
 ht-degree: 0%
 
 ---
 
 # Söka efter en kontrollpanel
 
-I den här artikeln visas hur du använder [`Global Search` funktion](#global) att söka efter kontrollpaneler och hur du söker efter [instrumentpaneler som ägs av andra användare](#other).
+Den här artikeln visar hur du använder [`Global Search` funktion](#global) att söka efter kontrollpaneler och hur du söker efter [instrumentpaneler som ägs av andra användare](#other).
 
 ## Global sökning {#global}
 

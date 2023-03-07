@@ -2,9 +2,9 @@
 title: Sannolikhetsrapport för upprepade order
 description: Lär dig mer och förstå rapporten om sannolikhet för upprepad order.
 exl-id: 2c88b85a-7320-44ca-87a5-5b91250348ea
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '344'
 ht-degree: 0%
 
 ---
@@ -17,17 +17,17 @@ The `incremental event probability` perspektiv är bara tillgängligt när filte
 
 Detta beror på att perspektivet bygger på en dimension som kallas `User's order number` för segmentering, som numrerar en användares inköp (t.ex. Johns första, andra och tredje order).
 
-Om vi lägger till ett filter som använder en dimension som inte är lika för alla order (till exempel `Order's Region`), `User's order number` dimensionen skulle inte längre vara exakt eftersom den inte tar hänsyn till specifika regioner när en användares order numreras (t.ex. så är John:s första, andra och tredje order fortfarande desamma oavsett region).
+Om du har lagt till ett filter som använder en dimension som inte är lika för alla order (till exempel `Order's Region`), `User's order number` dimensionen skulle inte längre vara korrekt. Detta beror på att det inte tar hänsyn till specifika regioner när man numrerar en användares order (t.ex. John&#39;s 1st, 2nd, 3rd order är fortfarande desamma oavsett region).
 
 ## Förvandla en orderspecifik dimension till en användarspecifik dimension
 
-I vissa fall kan vi kanske ändra `order-specific` dimension till en `user-specific` dimension som ska läggas till som filter i `Repeat Order Probability` diagram. I dessa fall returnerar vi beställningsattributet för en användares första order eller senaste order (t.ex. användarens namn för första orderområde).
+I vissa fall kan du kanske ändra `order-specific` dimension till en `user-specific` dimension som ska läggas till som filter i `Repeat Order Probability` diagram. I dessa fall returnerar du attributet order för en användares första order eller senaste order (t.ex. användarens namn för första orderområde).
 
 Om du vill skapa en sådan ny dimension [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
 
 ## Jämföra upprepningssannolikhet för order med olika attribut
 
-Om du vill jämföra antalet upprepade köp för olika orderattribut (till exempel orderns `region`) rekommenderar vi att du skapar ett diagram som liknar `Users by lifetime number of orders` som visar hur många användare som har skapat 1, 2, 3,.. antal order under hela löptiden och lägg till ordernivåfiltret. (med andra ord, detta kan visa dig om användarna gör fler eller mindre upprepade inköp i en region eller en annan.)
+Om du vill jämföra antalet upprepade köp för olika orderattribut (till exempel orderns `region`) rekommenderar Adobe att du skapar ett diagram som liknar `Users by lifetime number of orders`. Här visas hur många användare som har skapat 1, 2, 3,.. antal order under hela löptiden och lägg till ordernivåfiltret. (med andra ord, detta kan visa dig om användarna gör fler eller mindre upprepade inköp i en region eller en annan.)
 
 Siffrorna som utgör ett sådant diagram kan sedan exporteras till excel för att beräkna sannolikhetsförhållandet för upprepade order. Att se sannolikheten för kunder som `(x)` order att skapa `(x+1)` order, enkelt` divide the number of people who've made at least (x+1) purchases by the number of people who have made at least (x)` inköp.
 

@@ -2,20 +2,20 @@
 title: Commerce Churn
 description: Lär dig hur du genererar och analyserar din Commerce Churn-kurs.
 exl-id: 8775cf0a-114d-4b48-8bd2-fc1700c59a12
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '330'
 ht-degree: 2%
 
 ---
 
 # Kurvfrekvens
 
-I det här avsnittet visar vi hur man beräknar en **bortfallstakt** för **e-handelskunder**. Till skillnad från SaaS och traditionella prenumerationsföretag har e-handelskunder vanligtvis ingen konkreta **&quot;churn event&quot;** som visar att de inte längre ska räknas med i era aktiva kunder. Av den anledningen kan du med instruktionerna nedan definiera en kund som&quot;efterfrågad&quot; baserat på en bestämd tidsperiod som gått sedan den senaste ordern.
+I det här avsnittet visas hur du beräknar en **bortfallstakt** för **e-handelskunder**. Till skillnad från SaaS och traditionella prenumerationsföretag har e-handelskunder vanligtvis ingen konkreta **&quot;churn event&quot;** som visar att de inte längre ska räknas med i era aktiva kunder. Av den anledningen kan du med instruktionerna nedan definiera en kund som&quot;efterfrågad&quot; baserat på den tid som gått sedan den senaste ordern.
 
 ![](../../assets/Churn_rate_image.png)
 
-Många kunder vill ha hjälp med att börja förstå vad **tidsram** de bör använda sig av sina uppgifter. Om du vill använda historiska kundbeteenden för att definiera detta **tidsram för bortfall** kan du bekanta dig med [definiera kurva](../analysis/define-cust-churn.md) artikel. Sedan kan du använda resultatet i formeln för bortfallsfrekvens i instruktionerna nedan.
+Många kunder vill ha hjälp med att börja förstå vad **tidsram** de bör använda baserat på sina uppgifter. Om du vill använda historiska kundbeteenden för att definiera detta **tidsram för bortfall** kan du bekanta dig med [definiera kurva](../analysis/define-cust-churn.md) artikel. Sedan kan du använda resultatet i formeln för bortfallsfrekvens i instruktionerna nedan.
 
 ## Beräknade kolumner
 
@@ -40,11 +40,11 @@ Kolumner att skapa
 ## Mått
 
 * **Nya kunder (efter första orderdatum)**
-   * Kunder vi räknar
+   * Räknade kunder
 
 >[!NOTE]
 >
->Det här måttet kan redan finnas på ditt konto.
+>Det här måttet kan finnas på ditt konto.
 
 * I **`customer_entity`** table
 * Detta mått utför en **Antal**
@@ -53,11 +53,11 @@ Kolumner att skapa
 * [!UICONTROL Filter]:
 
 * **Nya kunder (efter sista orderdatum)**
-   * Kunder vi räknar
+   * Räknade kunder
 
 >[!NOTE]
 >
->Det här måttet kan redan finnas på ditt konto.
+>Det här måttet kan finnas på ditt konto.
 
 * I **`customer_entity`** table
 * Detta mått utför en **Antal**
@@ -107,4 +107,4 @@ Nedan finns några vanliga konverteringar för månad > sekund, men Google inneh
 | 9 | 23,328,000 |
 | 12 | 31,104,000 |
 
-När du har kompilerat alla rapporter kan du ordna dem på kontrollpanelen som du vill. Slutresultatet kan se ut som kontrollpanelen ovan.
+När du har kompilerat alla rapporter kan du ordna dem på kontrollpanelen som du vill. Resultatet kan se ut som kontrollpanelen ovan.

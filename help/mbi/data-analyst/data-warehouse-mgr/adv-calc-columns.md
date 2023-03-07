@@ -2,9 +2,9 @@
 title: Avancerade beräknade kolumntyper
 description: Lär dig grunderna för de flesta användningsfall för kolumner - men du kanske vill ha en beräknad kolumn som är lite mer komplex än vad Data warehouse Manager kan skapa.
 exl-id: 9871fa19-95b3-46e4-ae2d-bd7c524d12db
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '912'
+source-wordcount: '900'
 ht-degree: 4%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 4%
 Många analyser du kan försöka skapa är bland annat en **ny kolumn** som du vill `group by` eller `filter by`. The [Skapar beräknade kolumner](../data-warehouse-mgr/creating-calculated-columns.md) I självstudiekursen beskrivs grunderna för de flesta användningsfall, men du kanske vill ha en beräknad kolumn som är lite mer komplex än vad Data warehouse Manager kan skapa.
 {: #top}
 
-Den här typen av kolumner kan skapas av vårt team med Data warehouse-analytiker. Ange följande information om du vill definiera en ny beräknad kolumn:
+Den här typen av kolumner kan skapas av analytikernas Adobe-team i Data warehouse. Ange följande information om du vill definiera en ny beräknad kolumn:
 
 1. The **`definition`** i den här kolumnen (inklusive indata, formler eller formatering)
 1. The **`table`** som du vill skapa kolumnen på
@@ -31,7 +31,7 @@ Här är några vanliga exempel på avancerade beräknade kolumner som användar
 
 ## Jag försöker beställa händelser sekventiellt {#compareevents}
 
-Vi kallar det här **händelsenummer** beräknad kolumn. Det innebär att vi försöker hitta den sekvens i vilken händelser inträffade för en viss händelseägare, som en kund eller användare.
+Detta kallas för en **händelsenummer** beräknad kolumn. Det innebär att du försöker hitta den sekvens i vilken händelser inträffade för en viss händelseägare, som en kund eller användare.
 
 Här är ett exempel:
 
@@ -43,7 +43,7 @@ Här är ett exempel:
 | 4 | `A` | 2015-01-02 13:00:00 | 3 |
 | 5 | `B` | 2015-01-03 13:00:00 | 2 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 En kolumn för beräkning av händelsenummer kan användas för att observera skillnader i beteende mellan förstagångshändelser, upprepningshändelser och nth-händelser i dina data.
 
@@ -51,17 +51,17 @@ Vill du se hur kundens kolumn med ordernummer fungerar? Klicka på bilden för a
 
 ![Använder en kolumn med ett händelsenummer som beräknas för att gruppera efter kundens ordernummer.](../../assets/EventNumber.gif)<!--{: style="max-width: 500px;"}-->
 
-För att skapa den här typen av beräknad kolumn måste vi känna till:
+Om du vill skapa den här typen av beräknad kolumn måste du känna till:
 
 * Tabellen som du vill skapa den här kolumnen för
 * Det fält som identifierar händelsens ägare (`owner\_id` i det här exemplet)
 * Det fält som du vill ordna händelserna efter (`timestamp` i det här exemplet)
 
-[tillbaka till början](#top)
+[Till början](#top)
 
 ## Jag försöker hitta tiden mellan två händelser. {#twoevents}
 
-Vi kallar det här `date difference` beräknad kolumn. Det innebär att vi försöker hitta tiden mellan två händelser som tillhör en enda post, baserat på händelsens tidsstämplar.
+Detta kallas för en `date difference` beräknad kolumn. Det innebär att du försöker hitta tiden mellan två händelser som tillhör en enda post, baserat på händelsens tidsstämplar.
 
 Här är ett exempel:
 
@@ -70,22 +70,22 @@ Här är ett exempel:
 | `A` | 2015-01-01 00:00:00 | 2015-01-01 12:30:00 | 45000 |
 | `B` | 2015-01-01 08:00:00 | 2015-01-01 10:00:00 | 7200 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 En beräknad datumdifferenskolumn kan användas för att skapa ett mått som beräknar medeltiden eller mediantiden mellan två händelser. Klicka på bilden nedan för att se hur `Average time to first order` mätvärden används i en rapport.
 
 ![Använda en datumdifferensberäknad kolumn för att beräkna Genomsnittlig tid till första ordern.](../../assets/DateDifference.gif)<!--{: style="max-width: 500px;"}-->
 
-För att skapa den här typen av beräknad kolumn måste vi känna till:
+Om du vill skapa den här typen av beräknad kolumn måste du känna till:
 
 * Tabellen som du vill skapa den här kolumnen för
 * De två tidsstämplar mellan vilka du vill veta skillnaden
 
-[tillbaka till början](#top)
+[Till början](#top)
 
 ## Jag försöker jämföra värden för sekventiella händelser. {#sequence}
 
-Vi kallar det här **sekventiell händelsejämförelse**. Det innebär att vi försöker hitta delta mellan ett värde (valuta, nummer, tidsstämpel) och motsvarande värde för ägarens föregående händelse.
+Detta kallas för en **sekventiell händelsejämförelse**. Det innebär att du försöker hitta delta mellan ett värde (valuta, nummer, tidsstämpel) och motsvarande värde för ägarens föregående händelse.
 
 Här är ett exempel:
 
@@ -97,19 +97,19 @@ Här är ett exempel:
 | 4 | `A` | 2015-01-02 13:00:00 | 126000 |
 | 5 | `B` | 2015-01-03 13:00:00 | 217800 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 En sekventiell händelsejämförelse kan användas för att hitta den genomsnittliga tiden eller mediantiden mellan varje sekventiell händelse. Klicka på bilden nedan för att se **Genomsnittlig och mediantid mellan order** mätvärden in action.
 
 =![Använda en beräknad kolumn för sekventiell händelsejämförelse för att beräkna Genomsnittlig och Mediantid mellan order.](../../assets/SeqEventComp.gif)<!--{: style="max-width: 500px;"}-->
 
-För att skapa den här typen av beräknad kolumn måste vi känna till:
+Om du vill skapa den här typen av beräknad kolumn måste du känna till:
 
 * Tabellen som du vill skapa den här kolumnen för
 * Det fält som identifierar händelsens ägare (`owner\_id` i exemplet)
 * Det värdefält som du vill se skillnaden mellan för varje sekventiell händelse (`timestamp` i det här exemplet)
 
-[tillbaka till början](#top)
+[Till början](#top)
 
 ## Jag försöker konvertera valuta. {#currency}
 
@@ -122,16 +122,16 @@ Här är ett exempel:
 | `1` | 2015-01-01 00:00:00 | 30 | 33.57 |
 | `2` | 2015-01-02 00:00:00 | 50 | 55.93 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-För att skapa den här typen av beräknad kolumn måste vi känna till:
+Om du vill skapa den här typen av beräknad kolumn måste du känna till:
 
 * Tabellen som du vill skapa den här kolumnen för
 * Transaktionsbeloppskolumnen som du vill konvertera
 * Kolumnen som anger valutan som data spelades in i (vanligtvis en ISO-kod)
 * Standardrapporteringsvaluta
 
-[tillbaka till början](#top)
+[Till början](#top)
 
 ## Jag försöker konvertera tidszoner. {#timezone}
 
@@ -144,20 +144,20 @@ Här är ett exempel:
 | `1` | 2015-01-01 00:00:00 | 2014-12-31 19:00:00 |
 | `2` | 2015-01-01 12:00:00 | 2015-01-01 07:00:00 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-För att skapa den här typen av beräknad kolumn måste vi känna till:
+Om du vill skapa den här typen av beräknad kolumn måste du känna till:
 
 * Tabellen som du vill skapa den här kolumnen för
 * Den tidsstämpelkolumn som du vill konvertera
 * Den tidszon som data spelades in i
 * Rekommenderad tidszon för rapportering
 
-[tillbaka till början](#top)
+[Till början](#top)
 
 ## Jag försöker göra något som inte finns med här. {#else}
 
-Oroa dig inte. Bara för att det inte finns med här betyder det inte att det inte är möjligt. Vårt team med Data warehouse Analysts har det som täcker er.
+Oroa dig inte. Bara för att det inte finns med här betyder det inte att det inte är möjligt. Adobe-teamet hos Data warehouse Analysts kan hjälpa till.
 
 Om du vill definiera en ny beräknad kolumn [skicka en supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) med information om exakt vad du vill bygga.
 
