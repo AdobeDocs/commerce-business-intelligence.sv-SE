@@ -2,7 +2,8 @@
 title: Aktivera [!DNL MBI] Konto för molnstartprenumerationer
 description: Lär dig hur du aktiverar [!DNL MBI] för Cloud Starter-projekt.
 exl-id: 172439ee-fa1d-4872-b6a9-c61a212a7cbe
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+redirect_to: https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/start/onpremise-activation.html?lang=en
+source-git-commit: 807ad89d38ab6c6dfb05afb3b1b9c09947633efa
 workflow-type: tm+mt
 source-wordcount: '540'
 ht-degree: 0%

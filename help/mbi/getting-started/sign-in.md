@@ -2,7 +2,7 @@
 title: Få åtkomst till dina [!DNL MBI] Konto
 description: Läs mer om hur du loggar in på [!DNL MBI] konto.
 exl-id: 3ee36e0e-f447-4be3-afc8-ccc6d3aa4f20
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 7f168ff545a68e5ee9ec2f80928a653fd6a1370b
 workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Få åtkomst till dina aktiverade [!DNL MBI] konto
 
-När du har aktiverat [!DNL MBI] konto antingen [lokal](../getting-started/onpremise-activation.md) eller [molnet](../getting-started/cloud-activation.md) och har arbetat med ditt Adobe-kontoteam för att slutföra konfigurationsstegen kan du nu logga in på ditt konto.
+När du har aktiverat [!DNL MBI] konto antingen [lokalt eller molnet](../getting-started/onpremise-activation.md) och har arbetat med ditt Adobe-kontoteam för att slutföra konfigurationsstegen kan du nu logga in på ditt konto.
 
 Du kan logga in med [!DNL Adobe ID] eller använda [!DNL MBI] e-postadress och lösenord.
 
