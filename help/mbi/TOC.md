@@ -2,9 +2,9 @@
 title: MBI
 description: Lär dig använda [!DNL MBI] funktioner för Adobe Commerce.
 breadcrumb-title: Användarhandbok för MBI
-source-git-commit: 807ad89d38ab6c6dfb05afb3b1b9c09947633efa
+source-git-commit: be09d288755ea32eddf62b1eaf26ce586017320f
 workflow-type: tm+mt
-source-wordcount: '669'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,7 @@ ht-degree: 0%
    - [Onboarding](getting-started/onboarding.md)
    - [Aktivera [!DNL MBI] Konto](getting-started/onpremise-activation.md)
    - [Logga in på [!DNL MBI] Konto](getting-started/sign-in.md)
+   - [MBI Essentials jämfört med MBI Pro](getting-started/essentials-vs-pro.md)
 - Administratör {#administrator}
    - Kontohantering {#acct-mgmt}
       - [Fördelar med [!DNL New Architecture]](../mbi/administrator/account-management/new-architecture.md)
