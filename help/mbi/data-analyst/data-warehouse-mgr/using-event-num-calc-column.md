@@ -2,7 +2,7 @@
 title: Beräknad kolumn för händelsenummer
 description: Lär dig syftet med och användningsområdena för den beräknade kolumnen för händelsenummer.
 exl-id: c234621e-2e68-4e63-8b0d-7034d1b5fe1f
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 3%
@@ -15,7 +15,7 @@ I det här avsnittet beskrivs syftet med och användningsområdena för `Event N
 
 **Förklaring**
 
-The `Event Number` kolumntyp: identifierar i vilken ordning händelser inträffade för en viss **händelseägare**, som `customer` eller `user`. Om du känner till SQL är den här kolumntypen identisk med `RANK` funktion. Den kan användas för att observera skillnader i beteende mellan förstagångshändelser, upprepningar eller nth-händelser i dina data.
+The `Event Number` kolumntyp identifierar den sekvens i vilken händelser inträffade för en viss **händelseägare**, som `customer` eller `user`. Om du känner till SQL är den här kolumntypen identisk med `RANK` funktion. Den kan användas för att observera skillnader i beteende mellan förstagångshändelser, upprepningar eller nth-händelser i dina data.
 
 Vid en slips innehåller den här kolumnen samma **rankning** för de kopplade händelserna och hoppar över efterföljande nummer. Om den till exempel rankade siffrorna 5,8,10,10,12, skulle rankningarna vara 1,2,3,3,5.
 
@@ -40,10 +40,17 @@ Ta till exempel alla rader där `owner_id = A`. Den första raden i tabellen är
 Här följer några instruktioner om hur du skapar en `Event Number` kolumn:
 
 1. Navigera till **[!UICONTROL Manage Data > Data Warehouse]** sida.
+
 1. Navigera till tabellen som du vill skapa den här kolumnen för.
+
 1. Klicka **[!UICONTROL Create a Column]** och väljer `EVENT_NUMBER (…)` kolumntyp: under `Same Table` -avsnitt.
+
 1. Den första listrutan `Event Owner` anger den enhet för vilken rangordningen ska fastställas. Om `Customer's order number`, en kundidentifierare som `customer_id` eller `customer_email` skulle vara `Event Owner`.
+
 1. Den andra listrutan `Event Rank` Anger den kolumn som tvingar den sekvens som bestämmer radens rangordning. Om `Customer's order number`, `created_at` tidsstämpeln är `Event Rank`.
+
 1. Under `Options` kan du lägga till filter för att utesluta rader från övervägandet. De uteslutna raderna har en `NULL` värdet för den här kolumnen.
+
 1. Ange ett namn för kolumnen och klicka på **[!UICONTROL Save]**.
+
 1. Kolumnen är tillgänglig att använda _omedelbart._

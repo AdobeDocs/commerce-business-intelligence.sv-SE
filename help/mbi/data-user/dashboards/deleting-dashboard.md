@@ -2,9 +2,9 @@
 title: Ta bort en instrumentpanel
 description: Lär dig hur du tar bort en kontrollpanel.
 exl-id: 27482dea-0593-46d6-8310-ad505ff9436a
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
 workflow-type: tm+mt
-source-wordcount: '115'
+source-wordcount: '114'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Om du inte vill att kontrollpanelslistan ska bli för rörig kan du ta bort en k
 
 1. [Via `Account Settings` page](#account) - den här metoden kräver [Administratörsbehörigheter](../../administrator/user-management/user-management.md).
 
-1. [Via `Dashboard Options` meny](#do) - den här metoden kräver att du äger kontrollpanelen eller har redigeringsbehörighet.
+1. [Via `Dashboard Options` meny](#do) - den här metoden kräver att du äger kontrollpanelen eller har `Edit` behörigheter.
 
 ## Ta bort instrumentpanelen via `Account Settings` page {#account}
 

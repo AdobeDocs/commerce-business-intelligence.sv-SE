@@ -2,9 +2,9 @@
 title: Visualiseringsalternativ i Visual Report Builder
 description: Lär dig hur du använder visualiseringsalternativen i Report Builder.
 exl-id: e42a004e-28e3-4484-bb5a-b58c810b23e0
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
 workflow-type: tm+mt
-source-wordcount: '1534'
+source-wordcount: '1533'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Att välja rätt visualisering för en viss datauppsättning är en viktig del av analysprocessen. Alla datauppsättningar har en historia att berätta, men effekten av den berättelsen framhävs av dess visuella påverkan och läsbarhet.
 
-The [!DNL MBI] `Visual Report Builder` har 12 olika visualiseringsalternativ, vart och ett med sina egna fördelar och användningsfall. I den här artikeln beskrivs de olika visualiseringsalternativen i [!DNL MBI], inklusive nödvändiga rapportkonfigurationer när det är tillämpligt, och ett exempel på ett användningsfall. Följande visualiseringar är tillgängliga i MBI:
+The [!DNL Commerce Intelligence] [!DNL Visual Report Builder] har 12 olika visualiseringsalternativ, vart och ett med sina egna fördelar och användningsfall. I det här avsnittet beskrivs de olika visualiseringsalternativen i [!DNL Commerce Intelligence], inklusive nödvändiga rapportkonfigurationer när det är tillämpligt, och ett exempel på ett användningsfall. Följande visualiseringar är tillgängliga i [!DNL Commerce Intelligence]:
 
 * `Scalar`
 * `Table`

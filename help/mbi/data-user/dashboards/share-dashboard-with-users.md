@@ -2,16 +2,16 @@
 title: Dela instrumentpaneler med andra användare
 description: Lär dig hur du delar kontrollpaneler med andra användare.
 exl-id: 6279b049-d1b2-4d40-b30b-ee8772e990f4
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '271'
 ht-degree: 0%
 
 ---
 
 # Dela instrumentpaneler med andra användare
 
-Att dela instrumentpaneler är ett bra sätt att se till att teamet är med och uppmuntra till samarbete. Genom att skapa och dela en central kontrollpanel kan du ge teamet den information de behöver samtidigt som ni behåller kontrollen. [Adobe rekommenderar](../../best-practices/share-dashboard-best-practice.md){: target=&quot;_blank&quot;} som du beviljar `Edit` behörighet till ett fåtal för att minimera oavsiktliga ändringar.
+Att dela instrumentpaneler är ett bra sätt att se till att teamet är med och uppmuntra till samarbete. Genom att skapa och dela en central kontrollpanel kan du ge teamet den information de behöver samtidigt som ni behåller kontrollen. [[!DNL Adobe] rekommenderas](../../best-practices/share-dashboard-best-practice.md){: target=&quot;_blank&quot;} som du beviljar `Edit` behörighet till ett fåtal för att minimera oavsiktliga ändringar.
 
 >[!NOTE]
 >
@@ -21,7 +21,7 @@ Att dela instrumentpaneler är ett bra sätt att se till att teamet är med och 
 
 1. Klicka **[!UICONTROL Share Dashboard]** längst upp på skärmen.
 
-   En lista över alla användare i din [!DNL MBI] kontot visas.
+   En lista över alla användare i din [!DNL Commerce Intelligence] kontot visas.
 
 1. Om du vill välja en användare att dela kontrollpanelen med markerar du kryssrutan till vänster om namnet.
 

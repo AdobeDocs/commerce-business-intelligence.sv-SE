@@ -1,8 +1,8 @@
 ---
 title: Dela instrumentpaneler på hela organisationen
-description: Lär dig hur du ser till att alla användare har tillgång till viktiga konsoler på [!DNL MBI].
+description: Lär dig hur du ser till att alla användare har tillgång till viktiga konsoler på [!DNL Commerce Intelligence].
 exl-id: 5afa8c3c-1673-4350-babf-3e4657292871
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
 workflow-type: tm+mt
 source-wordcount: '126'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Dela instrumentpaneler på hela organisationen
 
-Det är enkelt att se till att alla användare har tillgång till viktiga konsoler i [!DNL MBI]. Tack vare den universella funktionen för dashboard-delning blir det enklare att samarbeta och skapa transparens i hela organisationen genom att tillhandahålla en enda&quot;sanningskälla&quot;.
+Det är enkelt att se till att alla användare har tillgång till viktiga konsoler i [!DNL Adobe Commerce Intelligence]. Tack vare den universella funktionen för dashboard-delning blir det enklare att samarbeta och skapa transparens i hela organisationen genom att tillhandahålla en enda&quot;sanningskälla&quot;.
 
 1. Om du vill visa dina insikter för dina medarbetare klickar du på **[!UICONTROL Share this Dashboard]** längst upp på skärmen.
 

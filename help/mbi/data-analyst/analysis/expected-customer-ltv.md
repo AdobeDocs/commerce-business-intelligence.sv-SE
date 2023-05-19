@@ -2,16 +2,16 @@
 title: Förväntad analys av livstidsvärde (LTV) för Pro
 description: Lär dig hur du skapar en kontrollpanel som hjälper dig att förstå kundens livstidsvärde och kundernas förväntade livstidsvärde.
 exl-id: e353b92a-ff3b-466b-b519-4f86d054c0bc
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '317'
+source-wordcount: '315'
 ht-degree: 0%
 
 ---
 
 # Förväntad analys av livstidsvärde
 
-Den här artikeln visar hur du skapar en kontrollpanel som hjälper dig att förstå kundens livstidsvärde och kundernas förväntade livstidsvärde.
+Det här avsnittet visar hur du skapar en instrumentpanel som hjälper dig att förstå kundens livstidsvärde och kundernas förväntade livstidsvärde.
 
 ![](../../assets/exp-lifetim-value-anyalysis.png)
 
@@ -153,4 +153,4 @@ Annan diagraminformation
 
 När du har kompilerat alla rapporter kan du ordna dem på kontrollpanelen som du vill. Resultatet kan se ut som bilden överst på sidan.
 
-Om du stöter på några frågor när du skapar den här analysen eller bara vill engagera Professional Services-teamet, [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Om du stöter på några frågor när du skapar den här analysen eller bara vill engagera Professional Services-teamet, [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

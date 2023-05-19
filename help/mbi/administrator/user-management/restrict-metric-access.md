@@ -2,9 +2,9 @@
 title: Begränsa åtkomst till mätvärden
 description: Lär dig hur du arbetar med tillgång till mätvärden och begränsningar.
 exl-id: 88f5ca7a-8073-4968-9685-95f141b2a87f
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '238'
 ht-degree: 0%
 
 ---
@@ -19,8 +19,8 @@ När du har angett behörighetsnivån kan du välja måtten på **[!UICONTROL St
 
 1. Gå till **[!UICONTROL Account Settings]** > **[!UICONTROL Manage Users]**.
 1. Välj önskat användarkonto.
-1. The **[!UICONTROL Metrics]** visas en lista med tillgängliga värden. Kontrollera de mätvärden som du vill att användaren ska ha tillgång till; avmarkera de som användaren inte ska ha tillgång till.
-1. [!DNL MBI] sparar ändringarna automatiskt. Om ändringen lyckas [!DNL MBI] visar **[!UICONTROL Saved!]** överst på sidan.
+1. The **[!UICONTROL Metrics]** visas en lista med tillgängliga värden. Kontrollera de mätvärden som du vill att användaren ska ha tillgång till och avmarkera dem som användaren inte ska ha tillgång till.
+1. [!DNL Adobe Commerce Intelligence] sparar ändringarna automatiskt. Om ändringen lyckas [!DNL Commerce Intelligence] visar **[!UICONTROL Saved!]** överst på sidan.
 
 >[!NOTE]
 >
@@ -30,4 +30,4 @@ Du kan också begränsa åtkomsten till ett mätresultat genom att redigera mät
 
 >[!NOTE]
 >
->Om du duplicerar ett mätresultat [!DNL MBI] kopierar de användarbehörigheter som angetts i det ursprungliga måttet.
+>Om du duplicerar ett mätresultat [!DNL Commerce Intelligence] kopierar de användarbehörigheter som angetts i det ursprungliga måttet.

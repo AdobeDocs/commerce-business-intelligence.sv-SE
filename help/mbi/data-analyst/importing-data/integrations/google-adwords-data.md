@@ -2,27 +2,30 @@
 title: Förväntade Google Adwords-data
 description: Lär dig hur du kan använda Data warehouse Manager för att enkelt spåra relevanta datafält för analys.
 exl-id: b0085683-7bb1-4da2-b343-4309e4796f0c
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '556'
+source-wordcount: '563'
 ht-degree: 0%
 
 ---
 
-# Förväntade Google Adwords-data
+# Förväntat [!DNL Google Adwords] data
 
 Efter [du har anslutit din [!DNL Google Adwords] konto](../integrations/google-adwords.md)kan du använda [data warehouse Manager](../../data-warehouse-mgr/tour-dwm.md) för att enkelt spåra relevanta datafält för analys.
 
-Det finns två tabeller som kan replikeras till Data warehouse: `campaigns[account-id]` och `adwords[account-id]`.
+Det finns två tabeller som kan replikeras till Data warehouse:
+
+* `campaigns[account-id]`
+* `adwords[account-id]`
 
 The `campaigns` table *ska användas som standard* så att du kan börja med att synkronisera alla relevanta fält från tabellen.
 
 The `adwords` tabellen innehåller fyra kolumner som inte finns i `campaigns` tabell:
 
-* `keyword`
-* `adContent`
-* `adDestinationUrl`
-* `adGroup`
+1. `keyword`
+1. `adContent`
+1. `adDestinationUrl`
+1. `adGroup`
 
 När du är intresserad av att göra en analys som tar hänsyn till dessa attribut måste du använda `adwords` tabell.
 
@@ -30,9 +33,9 @@ När du är intresserad av att göra en analys som tar hänsyn till dessa attrib
 >
 >Den här tabellen exkluderar rader där alla fyra kolumnerna är `null`.
 
-Här följer en titt på det förväntade schemat för båda tabellerna:
+Nedan visas ett schema över det förväntade schemat för båda tabellerna.
 
-## `Campaigns` table
+## [!DNL Campaigns] table
 
 The `campaigns` tabellen innehåller följande kolumner:
 
@@ -52,7 +55,7 @@ The `campaigns` tabellen innehåller följande kolumner:
 
 {style="table-layout:auto"}
 
-## AdWords table
+## [!DNL AdWords] table
 
 The `adwords` tabellen innehåller följande kolumner:
 
@@ -76,12 +79,12 @@ The `adwords` tabellen innehåller följande kolumner:
 
 {style="table-layout:auto"}
 
-Med dessa data kan du börja skapa [mått ](../../../data-user/reports/ess-manage-data-metrics.md) och [rapporter](../../../tutorials/using-visual-report-builder.md) baserat på utgiftsdata och [skapa avkastning på investeringen](../../analysis/roi-ad-camp.md).
+Med dessa data kan du börja skapa [mått](../../../data-user/reports/ess-manage-data-metrics.md) och [rapporter](../../../tutorials/using-visual-report-builder.md) baserat på utgiftsdata och [skapa avkastning på investeringen](../../analysis/roi-ad-camp.md).
 
 ## Konsoliderade tabeller
 
-Adobe rekommenderar att du skapar en `consolidated ad spend` tabell för att kombinera data från alla era olika annonskällor till en enda tabell. På så sätt kan ni använda en enda uppsättning mätvärden för annonsanalys.
+[!DNL Adobe] rekommenderar att du skapar `consolidated ad spend` tabell för att kombinera data från alla era olika annonskällor till en enda tabell. På så sätt kan ni använda en enda uppsättning mätvärden för annonsanalys.
 
-Utan en konsoliderad tabell, om du skapar en vacker kontrollpanel på `adwords` måste du replikera rapporten eller skapa dubblettvärden för att jämföra data med [!DNL Facebook Ads] data. Genom att använda en konsoliderad tabell kan du smidigt införliva [!DNL Facebook Ads] data med befintliga [!DNL Adwords] rapporter. Ni kan även segmentera per annonsplattform.
+Om du inte har någon konsoliderad tabell och du skapar en vacker kontrollpanel på `adwords` måste du replikera rapporten eller skapa dubblettvärden för att jämföra data med [!DNL Facebook Ads] data. Genom att använda en konsoliderad tabell kan du smidigt införliva [!DNL Facebook Ads] data med befintliga [!DNL Adwords] rapporter. Ni kan även segmentera per annonsplattform.
 
-Om du redan har synkroniserat fälten ovan kan du kontakta oss för att konsolidera dina annonskostnader.
+Om du redan har synkroniserat fälten ovan, [kontakta oss](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) för att konsolidera era annonskostnader.

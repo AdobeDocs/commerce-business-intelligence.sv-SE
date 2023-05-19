@@ -1,19 +1,19 @@
 ---
-title: Översätta SQL-frågor till [!DNL MBI] rapporter
-description: Lär dig hur SQL-frågor översätts till beräknade kolumner, mätvärden som du använder i [!DNL MBI].
+title: Översätta SQL-frågor i Commerce Intelligence-rapporter
+description: Lär dig hur SQL-frågor översätts till beräknade kolumner, mätvärden som du använder i Commerce Intelligence.
 exl-id: b3e3905f-6952-4f15-a582-bf892a971fae
-source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
+source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
 workflow-type: tm+mt
 source-wordcount: '932'
 ht-degree: 0%
 
 ---
 
-# Översätt SQL-frågor i MBI
+# Översätta SQL-frågor i Commerce Intelligence
 
-Har någonsin undrat hur SQL-frågor översätts till [beräknade kolumner](../data-warehouse-mgr/creating-calculated-columns.md), [mått](../../data-user/reports/ess-manage-data-metrics.md)och [rapporter](../../tutorials/using-visual-report-builder.md) du använder i [!DNL MBI]? Om du är en tung SQL-användare kan du förstå hur SQL översätts i [!DNL MBI] kan du arbeta smartare i [data warehouse Manager](../data-warehouse-mgr/tour-dwm.md) och få ut så mycket som möjligt av [!DNL MBI] plattform.
+Har någonsin undrat hur SQL-frågor översätts till [beräknade kolumner](../data-warehouse-mgr/creating-calculated-columns.md), [mått](../../data-user/reports/ess-manage-data-metrics.md)och [rapporter](../../tutorials/using-visual-report-builder.md) du använder i [!DNL Commerce Intelligence]? Om du är en tung SQL-användare kan du förstå hur SQL översätts i [!DNL Commerce Intelligence] kan du arbeta smartare i [data warehouse Manager](../data-warehouse-mgr/tour-dwm.md) och få ut så mycket som möjligt av [!DNL Commerce Intelligence] plattform.
 
-I slutet av den här artikeln finns en **översättningsmatris** för SQL-frågesatser och [!DNL MBI] -element.
+I slutet av det här avsnittet finns en **översättningsmatris** för SQL-frågesatser och [!DNL Commerce Intelligence] -element.
 
 Börja med att titta på en allmän fråga:
 
@@ -32,7 +32,7 @@ Det här exemplet omfattar de flesta översättningsfall, men det finns några u
 
 ## Sammanställningsfunktioner
 
-Sammanställningsfunktioner (till exempel `count`, `sum`, `average`, `max`, `min`) i frågor antingen i form av **metrisk aggregering** eller **kolumnaggregeringar** in [!DNL MBI]. Den differentierande faktorn är om en join krävs för att utföra aggregeringen.
+Sammanställningsfunktioner (till exempel `count`, `sum`, `average`, `max`, `min`) i frågor antingen i form av **metrisk aggregering** eller **kolumnaggregeringar** in [!DNL Commerce Intelligence]. Den differentierande faktorn är om en join krävs för att utföra aggregeringen.
 
 Titta på ett exempel för vart och ett av de ovanstående.
 
@@ -40,7 +40,7 @@ Titta på ett exempel för vart och ett av de ovanstående.
 
 Ett mått krävs vid aggregering `within a single table`. Till exempel `SUM(b)` sammanställningsfunktionen från frågan ovan skulle troligtvis representeras av ett mått som summerar kolumnen `B`. 
 
-Titta på ett specifikt exempel på hur en `Total Revenue` kan definieras i [!DNL MBI]. Titta på frågan nedan som du försöker översätta:
+Titta på ett specifikt exempel på hur en `Total Revenue` kan definieras i [!DNL Commerce Intelligence]. Titta på frågan nedan som du försöker översätta:
 
 |  |  |
 |--- |--- |
@@ -71,7 +71,7 @@ Frågan för den här aggregeringen kan se ut ungefär som nedan:
 | `ON c.customer_id = o.customer_id` | Bana |
 | `WHERE o.status = 'success'` | Aggregera, filter |
 
-Konfigurera detta i [!DNL MBI] kräver att du använder din Data warehouse-hanterare, där du bygger en väg mellan `orders` och `customers` skapa sedan en kolumn som kallas `Customer LTV` i kundens register.
+Konfigurera detta i [!DNL Commerce Intelligence] kräver att du använder din Data warehouse-hanterare, där du bygger en väg mellan `orders` och `customers` skapa sedan en kolumn som kallas `Customer LTV` i kundens register.
 
 Se hur man skapar en ny bana mellan `customers` och `orders`. Slutmålet är att skapa en ny aggregerad kolumn i `customers` tabell, så navigera först till `customers` bord i Data warehouse och klicka sedan på **[!UICONTROL Create a Column** > ** Välj en definition **> **SUM]**.
 
@@ -83,9 +83,9 @@ Här bör du noga tänka på relationen mellan de två tabeller som du försöke
 
 >[!NOTE]
 >
->I [!DNL MBI], a *bana* motsvarar en `Join` i SQL.
+>I [!DNL Commerce Intelligence], a `path` motsvarar en `Join` i SQL.
 
-När banan har sparats är du redo att skapa `Customer LTV` kolumn! Titta på bilden nedan:
+När banan har sparats kan du skapa `Customer LTV` kolumn! Se nedan:
 
 ![](../../assets/Customer_LTV.gif)
 
@@ -95,11 +95,11 @@ Nu när du har byggt nya `Customer LTV` i din `customers` kan du skapa en [metri
 >
 >När du skapar en ny beräknad kolumn måste du [lägga till dimensionen i befintliga mätvärden](../data-warehouse-mgr/manage-data-dimensions-metrics.md) innan det blir tillgängligt som `filter` eller `group by`.
 
-Se [skapa beräknade kolumner](../data-warehouse-mgr/creating-calculated-columns.md) med din Data warehouse-chef.
+Se [skapa beräknade kolumner](../data-warehouse-mgr/creating-calculated-columns.md) med Data warehouse Manager.
 
 ## `Group By` klausuler
 
-`Group By` funktioner i frågor representeras ofta i [!DNL MBI] som en kolumn som används för att segmentera eller filtrera en visuell rapport. Låt oss till exempel gå igenom `Total Revenue` fråga som du utforskat tidigare, men den här gången segmenteras intäkterna av `coupon\_code` för att få en bättre förståelse för vilka kuponger som genererar störst intäkter.
+`Group By` funktioner i frågor representeras ofta i [!DNL Commerce Intelligence] som en kolumn som används för att segmentera eller filtrera en visuell rapport. Låt oss till exempel gå igenom `Total Revenue` fråga som du utforskat tidigare, men den här gången segmenteras intäkterna av `coupon\_code` för att få en bättre förståelse för vilka kuponger som genererar störst intäkter.
 
 Börja med frågan nedan:
 
@@ -149,10 +149,10 @@ Anta nu att du redan har ställt in mätvärden för att beräkna `Total Revenue
 
 ## Radbrytning
 
-Om du är en tung SQL-användare kan du tänka på hur frågor översätts i [!DNL MBI] Med kan du skapa beräknade kolumner, mätvärden och rapporter.
+Om du är en tung SQL-användare kan du tänka på hur frågor översätts i [!DNL Commerce Intelligence] Med kan du skapa beräknade kolumner, mätvärden och rapporter.
 
-Se matrisen nedan för snabb referens. Detta visar SQL-satsens motsvarighet [!DNL MBI] -element och hur det kan mappas till mer än ett element, beroende på hur det används i frågan.
+Se matrisen nedan för snabb referens. Detta visar SQL-satsens motsvarighet [!DNL Commerce Intelligence] -element och hur det kan mappas till mer än ett element, beroende på hur det används i frågan.
 
-## MBI Elements
+## Commerce Intelligence Elements
 
 |**`SQL Clause`**|**`Metric`**|**`Filter`**|**`Report group by`**|**`Report time frame`**|**`Path`**|**`Calculated column inputs`**|**`Source table`**| |—|—|—|—|—|—|—|—|—| |`SELECT`|X|-|X|-|-|X|- |`FROM`|-|-|-|-|-|-|X| |`WHERE`|-|X|-|-|-|-|-|- |`WHERE` (med tidselement)|-|-|-|X|-|-|-|- |`JOIN...ON`|-|X|-|-|X|X|-| |`GROUP BY`|-|-|X|-|-|-|-|

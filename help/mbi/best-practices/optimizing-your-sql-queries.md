@@ -2,18 +2,18 @@
 title: Optimera dina SQL-frågor
 description: Lär dig hur du optimerar dina SQL-frågor.
 exl-id: 2782c707-6a02-4e5d-bfbb-eff20659fbb2
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '785'
+source-wordcount: '779'
 ht-degree: 0%
 
 ---
 
 # Optimera dina SQL-frågor
 
-Med SQL Report Builder kan du fråga efter och upprepa dessa frågor när du vill. Detta är användbart när du behöver ändra en fråga utan att behöva vänta på att en uppdateringscykel ska slutföras innan en kolumn eller rapport som du har skapat realiseras och behöver uppdateras.
+The [!DNL SQL Report Builder] låter dig fråga och iterera i dessa frågor när som helst. Detta är användbart när du behöver ändra en fråga utan att behöva vänta på att en uppdateringscykel ska slutföras innan en kolumn eller rapport som du har skapat realiseras och behöver uppdateras.
 
-Innan en fråga körs [[!DNL MBI] beräknar kostnaden](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html?lang=en). Kostnad anger hur lång tid och hur många resurser som krävs för att köra en fråga. Om kostnaden anses vara för hög eller om antalet returnerade rader överstiger MBI-gränserna misslyckas frågan. Adobe rekommenderar följande för att fråga Data warehouse, som ser till att du skriver de mest effektiva frågorna.
+Innan en fråga körs [[!DNL Commerce Intelligence] beräknar kostnaden](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html). Kostnad anger hur lång tid och hur många resurser som krävs för att köra en fråga. Om kostnaden anses vara för hög eller om antalet returnerade rader överstiger [!DNL Commerce Intelligence] begränsningar, frågan misslyckas. För att fråga [data warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md), som ser till att du skriver så smidiga frågor som möjligt, rekommenderar Adobe följande.
 
 ## Använda SELECT eller Markera alla kolumner
 

@@ -2,31 +2,33 @@
 title: Skapa beräknade kolumner
 description: Lär dig hur du konsoliderar data från olika källor.
 exl-id: 668cbc77-6a96-4687-9f40-3635b1be5c66
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '337'
 ht-degree: 0%
 
 ---
 
 # Skapa beräknade kolumner
 
-När du analyserar data är det bra att konsolidera data från olika källor. Vill du gruppera intäkterna genom anskaffningskälla, länka data från ordertabellen och Google Analytics? Eller hur grupperar man intäkterna efter kundkön eller kopplar ett kundattribut till transaktionsdata för segmentering?
+När du analyserar data är det praktiskt att konsolidera data från olika källor. vill gruppera intäkterna genom att hämta in data och länka data från `orders` tabell och [!DNL Google Analytics] data? Kanske vill ni gruppera intäkterna efter kundkön eller koppla ett kundattribut till transaktionsdata för segmentering. Det här avsnittet handlar om hur man gör just det.
 
-Den här guiden lär dig hur man gör just det. Innan du börjar rekommenderar Adobe att du går till [Guide för beräknade kolumntyper](../../data-analyst/data-warehouse-mgr/calc-column-types.md). The _Guide för beräknade kolumntyper_ I beskrivs de kolumntyper som du kan skapa i Data warehouse Manager tillsammans med definitioner och exempel.
+Innan du börjar rekommenderar Adobe att du granskar [Guide för beräknade kolumntyper](../../data-analyst/data-warehouse-mgr/calc-column-types.md) om du vill ha information om vilka typer av kolumner du kan skapa i Data warehouse Manager, tillsammans med definitioner och exempel.
 
-1. Kom igång genom att klicka **[!DNL Manage Data > Data Warehouse]** i sidlisten.
+1. Kom igång genom att klicka **[!DNL Manage Data > Data Warehouse]**.
 
-1. Klicka på tabellen som du vill skapa en kolumn i. Om du till exempel vill skapa en `Customer Gender` kolumn för intäktssegmentering väljer du `sales_flat_order` tabell.
+1. Klicka på den tabell där du vill skapa en kolumn. Om du till exempel vill skapa en `Customer Gender` kolumn för intäktssegmentering väljer du `sales_flat_order` tabell.
 
 1. Tabellschemat visas. Klicka **[!UICONTROL Create New Column]**.
 
-1. Ge kolumnen ett namn, till exempel `Customer Gender`.
+1. Ge kolumnen ett namn. Till exempel: `Customer Gender`.
 
 1. Markera kolumndefinitionen. Det är här [Guide för beräknade kolumntyper](../data-warehouse-mgr/calc-column-types.md) kommer väl till pass!
 
 1. För vissa typer av kolumner krävs lite mer information för att kolumnen ska kunna skapas:
+
    * För `One to Many` (förenad) och `Many to One` (aggregerade) kolumner måste du markera tabellerna och kolumnerna.
+
    * För `Same Table calculation`måste du välja önskat datumfält i listrutan.
 
 Om du skapar en `One to Many` (förenad) eller `Many to One` (sammanställd) kolumn måste du välja en sökväg för att koppla ihop de två tabellerna. I det här steget kan du antingen använda en befintlig bana eller skapa en.
@@ -36,13 +38,14 @@ Om du skapar en `One to Many` (förenad) eller `Many to One` (sammanställd) kol
 >Kom ihåg att definiera tabellen som antingen många eller ett.
 
 * Om du vill kan du använda [filter](../../data-user/reports/ess-manage-data-filters.md) till den nya kolumnen.
+
 * När du är klar klickar du på **[!UICONTROL Save]**.
 
-Så ja! Din nya kolumn visas i den aktuella tabellen med en `Pending` status. När nästa uppdatering är klar är kolumnen tillgänglig för användning i mätvärden och rapporter.
+Din nya kolumn visas i den aktuella tabellen med en `Pending` status. När nästa uppdatering är klar är kolumnen tillgänglig för användning i mätvärden och rapporter.
 
 ## Referenskarta {#map}
 
-Om du har lite problem med att komma ihåg vad alla indata är när du skapar en beräknad kolumn, kan du försöka behålla referenskartan när du skapar:
+Om du har problem med att komma ihåg vad alla indata är när du skapar en beräknad kolumn, kan du försöka behålla referenskartan när du skapar:
 
 ![](../../assets/Calculated_Columns_Example.png)
 

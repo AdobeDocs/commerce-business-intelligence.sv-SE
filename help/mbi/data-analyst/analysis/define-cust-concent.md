@@ -2,16 +2,16 @@
 title: Definiera kundkoncentration
 description: Lär dig hur du skapar en kontrollpanel som hjälper dig att mäta hur de totala intäkterna fördelas mellan era kunder.
 exl-id: 6242019f-a6a5-48d3-b214-94acd7842e00
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '472'
+source-wordcount: '470'
 ht-degree: 0%
 
 ---
 
 # Kundkoncentration
 
-I den här artikeln beskrivs hur du ställer in en kontrollpanel som hjälper dig att mäta hur de totala intäkterna fördelas bland kunderna. Förstå vilken procentandel av kunderna som bidrar med vilken procentandel av intäkterna och skapar segmenterade listor på bästa möjliga marknad för och behåller era högkvalitativa kunder.
+I det här avsnittet beskrivs hur du skapar en kontrollpanel som hjälper dig att mäta hur de totala intäkterna fördelas bland kunderna. Förstå vilken procentandel av kunderna som bidrar med vilken procentandel av intäkterna och skapar segmenterade listor på bästa möjliga marknad för och behåller era högkvalitativa kunder.
 
 Denna analys innehåller [avancerade beräknade kolumner](../data-warehouse-mgr/adv-calc-columns.md).
 
@@ -158,4 +158,4 @@ Kolumner att skapa
 
 När du har kompilerat alla rapporter kan du ordna dem på kontrollpanelen som du vill. Resultatet kan se ut som kontrollpanelen ovan.
 
-Om du stöter på några frågor när du skapar den här analysen eller bara vill engagera Professional Services-teamet, [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Om du stöter på några frågor när du skapar den här analysen eller bara vill engagera Professional Services-teamet, [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

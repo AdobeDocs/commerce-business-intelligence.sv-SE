@@ -2,16 +2,16 @@
 title: register_quote_item
 description: Lär dig hur du arbetar med tabellen quote_item.
 exl-id: dad36e88-5986-4b52-8a0e-ac084fabb275
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '674'
+source-wordcount: '672'
 ht-degree: 0%
 
 ---
 
 # quote_item Table
 
-The `quote_item` tabell (`sales_flat_quote_item` på M1) 1) innehåller uppgifter om varje artikel som lagts till i en kundvagn, oavsett om vagnen övergavs eller konverterades till ett inköp. Varje rad representerar ett varukorgsobjekt. På grund av tabellens potentiella storlek rekommenderar Adobe att du regelbundet tar bort poster om vissa villkor uppfylls, t.ex. om det finns några okonverterade kort som är äldre än 60 dagar.
+The `quote_item` tabell (`sales_flat_quote_item` på M1) innehåller uppgifter om varje artikel som lagts till i en kundvagn, oavsett om vagnen övergavs eller konverterades till ett inköp. Varje rad representerar ett varukorgsobjekt. På grund av tabellens potentiella storlek rekommenderar Adobe att du regelbundet tar bort poster om vissa villkor uppfylls, t.ex. om det finns några okonverterade kort som är äldre än 60 dagar.
 
 >[!NOTE]
 >
@@ -22,7 +22,7 @@ The `quote_item` tabell (`sales_flat_quote_item` på M1) 1) innehåller uppgift
 | **Kolumnnamn** | **Beskrivning** |
 |---|---|
 | `base_price` | Priset för en enskild enhet av en produkt vid den tidpunkt då artikeln lades till i en kundvagn, efter [katalogprisregler, nivårabatter och specialpriser](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) och innan moms, frakt eller kundvagnsrabatt ges. Detta representeras i butikens basvaluta. |
-| `created_at` | Tidsstämpel för att skapa varukorgen, som lagras lokalt i UTC. Beroende på din konfiguration i [!DNL MBI]kan den här tidsstämpeln konverteras till en rapporttidszon i [!DNL MBI] som skiljer sig från databasens tidszon |
+| `created_at` | Tidsstämpel för att skapa varukorgen, som lagras lokalt i UTC. Beroende på din konfiguration i [!DNL Commerce Intelligence]kan den här tidsstämpeln konverteras till en rapporttidszon i [!DNL Commerce Intelligence] som skiljer sig från databasens tidszon |
 | `item_id` (PK) | Unik identifierare för registret |
 | `name` | Orderartikelns textnamn |
 | `parent_item_id` | `Foreign key` som relaterar en enkel produkt till dess överordnade paket eller konfigurerbara produkt. Gå med i `quote_item.item_id` för att fastställa överordnade produktattribut som är kopplade till en enkel produkt. För artiklar i överordnad kundvagn (dvs. paket eller konfigurerbara produkttyper), `parent_item_id` är `NULL` |
@@ -70,7 +70,7 @@ The `quote_item` tabell (`sales_flat_quote_item` på M1) 1) innehåller uppgift
 
 `quote_item`
 
-* Gå med i `quote_item` om du vill skapa kolumner som associerar information om den överordnade konfigurerbara eller paketerade SKU:n med den enkla produkten. [Kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) om du behöver hjälp med att konfigurera dessa beräkningar, om du bygger i Data warehouse.
+* Gå med i `quote_item` om du vill skapa kolumner som associerar information om den överordnade konfigurerbara eller paketerade SKU:n med den enkla produkten. [Kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) om du behöver hjälp med att konfigurera dessa beräkningar, om du bygger i Data warehouse.
    * Sökväg: `quote_item.parent_item_id` (många) => `quote_item.item_id` (ett)
 
 `store`

@@ -2,7 +2,7 @@
 title: Help desk-rapportering för Zendesk
 description: Läs om era mest värdefulla hänvisningskanaler.
 exl-id: b6142ef2-2be8-401f-ac35-f86fc68d204e
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 >
 >Detta är bara tillgängligt för klienter som finns på `Pro` planera och använda den nya arkitekturen. Du har den nya arkitekturen om du har `Data Warehouse Views` avsnitt som är tillgängliga efter markering `Manage Data` i huvudverktygsfältet.
 
-Konsoliderar [!DNL Zendesk] data med transaktionsdatabasen är ett utmärkt sätt att bättre förstå hur kunderna interagerar med era sälj- eller kundframgångsgrupper. Det hjälper er också att veta vilken typ av kunder som använder er supportplattform. I den här artikeln visas hur du konfigurerar en kontrollpanel för att få detaljerade rapporter om din [!DNL Zendesk] prestanda och band till era transaktionskunder.
+Konsoliderar [!DNL Zendesk] data med transaktionsdatabasen är ett utmärkt sätt att bättre förstå hur kunderna interagerar med era sälj- eller kundframgångsgrupper. Det hjälper er också att veta vilken typ av kunder som använder er supportplattform. I det här avsnittet visas hur du konfigurerar en kontrollpanel för att få detaljerade rapporter om din [!DNL Zendesk] prestanda och band till era transaktionskunder.
 
 Innan du börjar vill du ansluta [[!DNL Zendesk]](../integrations/zendesk.md). Denna analys innehåller [avancerade beräknade kolumner](../../data-warehouse-mgr/adv-calc-columns.md).
 
@@ -86,34 +86,34 @@ Innan du börjar vill du ansluta [[!DNL Zendesk]](../integrations/zendesk.md). D
 
       * `Datatype` - `String`
 
-* **`[Zendesk] audits_~_events`** table
+* **`[!DNL Zendesk] audits_~_events`** table
    * Välj en definition: `Joined Column`
    * [!UICONTROL Create Path]:
-   * [!UICONTROL Many]: `[Zendesk] audits_~_events.author_id8`
-   * [!UICONTROL One]: `[Zendesk] users.id`
+   * [!UICONTROL Many]: `[!DNL Zendesk] audits_~_events.author_id8`
+   * [!UICONTROL One]: `[!DNL Zendesk] users.id`
 
-   * Välj en [!UICONTROL table]: `[Zendesk] users`
+   * Välj en [!UICONTROL table]: `[!DNL Zendesk] users`
    * Välj en [!UICONTROL column]: `User is agent? (Yes/No)`
-   * [!UICONTROL Path]: `[Zendesk] audits_~_events.author_id = [!DNL Zendesk] users.id`
+   * [!UICONTROL Path]: `[!DNL Zendesk] audits_~_events.author_id = [!DNL Zendesk] users.id`
 
 * **`Author is agent? (Yes/No)`**
 
-* **`[Zendesk] audits`** table
+* **`[!DNL Zendesk] audits`** table
    * Välj en definition: `Exists`
    * [!UICONTROL Create Path]:
-   * [!UICONTROL Many]: `[Zendesk] audits_~_events._id_of_parent`
-   * [!UICONTROL One]: `[Zendesk] audits._id`
+   * [!UICONTROL Many]: `[!DNL Zendesk] audits_~_events._id_of_parent`
+   * [!UICONTROL One]: `[!DNL Zendesk] audits._id`
 
-   * Välj en [!UICONTROL table]: `[Zendesk] audits_~_events`
-   * [!UICONTROL Path]: `[Zendesk] audits_~_events._id_of_parent = [Zendesk] audits._id`
+   * Välj en [!UICONTROL table]: `[!DNL Zendesk] audits_~_events`
+   * [!UICONTROL Path]: `[!DNL Zendesk] audits_~_events._id_of_parent = [!DNL Zendesk] audits._id`
    * [!UICONTROL Filter]:
    * `field_name` = `status`
    * `type` = `Change`
    * `value` = `solved`
 
    * Välj en definition: `Exists`
-   * Välj en [!UICONTROL table]: `[Zendesk] audits_~_events`
-   * [!UICONTROL Path]: `[Zendesk] audits_~_events._id_of_parent = [Zendesk] audits._id`
+   * Välj en [!UICONTROL table]: `[!DNL Zendesk] audits_~_events`
+   * [!UICONTROL Path]: `[!DNL Zendesk] audits_~_events._id_of_parent = [!DNL Zendesk] audits._id`
    * [!UICONTROL Filter]: `Author is agent? (Yes/No)`
    * `type` = `Comment`
    * `public` = `1`
@@ -121,36 +121,36 @@ Innan du börjar vill du ansluta [[!DNL Zendesk]](../integrations/zendesk.md). D
 * **`Status changes to solved? (1/0)`**
 * **`Is agent comment? (1/0)`**
 
-* **`[Zendesk] Tickets`** table
+* **`[!DNL Zendesk] Tickets`** table
    * Välj en definition: `Joined Column`
    * [!UICONTROL Create Path]:
-   * [!UICONTROL Many]: `[Zendesk] tickets.requester_id`
-   * [!UICONTROL One]: `[Zendesk] users.id`
+   * [!UICONTROL Many]: `[!DNL Zendesk] tickets.requester_id`
+   * [!UICONTROL One]: `[!DNL Zendesk] users.id`
 
-   * Välj en [!UICONTROL table]: `[Zendesk] users`
+   * Välj en [!UICONTROL table]: `[!DNL Zendesk] users`
    * Välj en [!UICONTROL column]: `email`
-   * [!UICONTROL Path]: `[Zendesk] tickets.requester_id = [Zendesk] users.id`
+   * [!UICONTROL Path]: `[!DNL Zendesk] tickets.requester_id = [!DNL Zendesk] users.id`
 
    * Välj en definition: `Joined Column`
-   * Välj en [!UICONTROL table]: `[Zendesk] users`
+   * Välj en [!UICONTROL table]: `[!DNL Zendesk] users`
    * Välj en [!UICONTROL column]: `role`
-   * [!UICONTROL Path]: `[Zendesk] tickets.requester_id = [Zendesk] users.id`
+   * [!UICONTROL Path]: `[!DNL Zendesk] tickets.requester_id = [!DNL Zendesk] users.id`
 
    * Välj en definition: `Max`
    * [!UICONTROL Create Path]:
-   * [!UICONTROL Many]: `[Zendesk] audits.ticket_id`
-   * [!UICONTROL One]: `[Zendesk] tickets.id`
+   * [!UICONTROL Many]: `[!DNL Zendesk] audits.ticket_id`
+   * [!UICONTROL One]: `[!DNL Zendesk] tickets.id`
 
-   * Välj en [!UICONTROL table]: `[Zendesk] audits`
+   * Välj en [!UICONTROL table]: `[!DNL Zendesk] audits`
    * Välj en [!UICONTROL column]: `created_at`
-   * [!UICONTROL Path]: `[Zendesk] audits.ticket_id = [Zendesk] tickets.id`
+   * [!UICONTROL Path]: `[!DNL Zendesk] audits.ticket_id = [!DNL Zendesk] tickets.id`
    * [!UICONTROL Filter]:
    * `status` ändrat till `solved = 1`
 
    * Välj en definition: `Min`
-   * Välj en [!UICONTROL table]: `[Zendesk] audits`
+   * Välj en [!UICONTROL table]: `[!DNL Zendesk] audits`
    * Välj en [!UICONTROL column]: `created_at`
-   * [!UICONTROL Path]: `[Zendesk] audits.ticket_id = [Zendesk] tickets.id`
+   * [!UICONTROL Path]: `[!DNL Zendesk] audits.ticket_id = [!DNL Zendesk] tickets.id`
    * [!UICONTROL Filter]:
    * `Is agent comment? = 1`
 
@@ -202,13 +202,13 @@ Innan du börjar vill du ansluta [[!DNL Zendesk]](../integrations/zendesk.md). D
 * **`customer_entity`** table
    * Välj en definition: `Count`
    * [!UICONTROL Create Path]:
-   * [!UICONTROL Many]: `[Zendesk] tickets.email`
+   * [!UICONTROL Many]: `[!DNL Zendesk] tickets.email`
    * 
 
       [!UICONTROL One]: `customer_entity.email`
 
-   * Välj en [!UICONTROL table]: `[Zendesk] tickets`
-   * [!UICONTROL Path]: `[Zendesk] tickets.email = customer_entity.email`
+   * Välj en [!UICONTROL table]: `[!DNL Zendesk] tickets`
+   * [!UICONTROL Path]: `[!DNL Zendesk] tickets.email = customer_entity.email`
    * [!UICONTROL Filter]:
    * `Tickets we count`
 
@@ -223,11 +223,11 @@ Innan du börjar vill du ansluta [[!DNL Zendesk]](../integrations/zendesk.md). D
 
       * `Datatype` – `String`
 
-* **`[Zendesk] Tickets`** table
+* **`[!DNL Zendesk] Tickets`** table
    * Välj en definition: `Joined Column`
    * Välj en [!UICONTROL table]: `customer_entity`
    * Välj en [!UICONTROL column]: `User's lifetime number of support tickets requested`
-   * [!UICONTROL Path]: `[Zendesk] tickets.email = customer_entity.email`
+   * [!UICONTROL Path]: `[!DNL Zendesk] tickets.email = customer_entity.email`
 
 * **`Requester's lifetime number of support tickets`**
 
@@ -236,7 +236,7 @@ Innan du börjar vill du ansluta [[!DNL Zendesk]](../integrations/zendesk.md). D
 * **[!DNL Zendesk]Nya biljetter**
    * `Tickets we count`
 
-* I **`[Zendesk] tickets`** table
+* I **`[!DNL Zendesk] tickets`** table
 * Detta mått utför en **Antal**
 * På **`id`** kolumn
 * Beställd av **`created_at`** tidsstämpel
@@ -246,7 +246,7 @@ Innan du börjar vill du ansluta [[!DNL Zendesk]](../integrations/zendesk.md). D
    * `Tickets we count`
    * status IN `closed, solved`
 
-* I **`[Zendesk] tickets`** table
+* I **`[!DNL Zendesk] tickets`** table
 * Detta mått utför en **Antal**
 * På **`id`** kolumn
 * Beställd av **`created_at`** tidsstämpel
@@ -255,7 +255,7 @@ Innan du börjar vill du ansluta [[!DNL Zendesk]](../integrations/zendesk.md). D
 * **[!DNL Zendesk]Distinkta användare som arkiverar biljetter**
    * `Tickets we count`
 
-* I **`[Zendesk] tickets`** table
+* I **`[!DNL Zendesk] tickets`** table
 * Detta mått utför en **Distinkt antal**
 * På **`requester_id`** kolumn
 * Beställd av **`created_at`** tidsstämpel
@@ -265,7 +265,7 @@ Innan du börjar vill du ansluta [[!DNL Zendesk]](../integrations/zendesk.md). D
    * `Tickets we count`
    * status IN `closed, solved`
 
-* I **`[Zendesk] tickets`** table
+* I **`[!DNL Zendesk] tickets`** table
 * Det här måttet utför en **Medel (eller Median)**
 * På **`Seconds to resolution`** kolumn
 * Beställd av **`created_at`** tidsstämpel
@@ -275,7 +275,7 @@ Innan du börjar vill du ansluta [[!DNL Zendesk]](../integrations/zendesk.md). D
    * Biljetter som räknas
    * status IN closed, resolved
 
-* I **`[Zendesk] tickets`** table
+* I **`[!DNL Zendesk] tickets`** table
 * Det här måttet utför en **Medel (eller Median)**
 * På **`Seconds to first response`** kolumn
 * Beställd av **`created_at`** tidsstämpel

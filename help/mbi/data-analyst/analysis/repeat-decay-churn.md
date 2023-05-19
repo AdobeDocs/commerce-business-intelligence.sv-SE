@@ -2,7 +2,7 @@
 title: Analyserar sannolikhet för upprepning, minskning och belastning
 description: Lär dig mer och förstå hur tidsfördröjningar mellan order och när kunderna förväntas försvinna.
 exl-id: ea26052d-ac74-43b7-a4a6-977800d4c719
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '947'
 ht-degree: 0%
@@ -39,13 +39,13 @@ Genom att förstå hur många procent av kunderna som förväntas göra upprepad
 
 ## Dagens exempel
 
-Titta på den återkommande sannolikhetsminskningen för ett vanligt e-handelsföretag.
+Titta på den återkommande sannolikhetsminskningen för ett typiskt e-handelsföretag.
 
 ![Initial sannolikhet för upprepad order - sannolikhet för upprepad order angiven i månader sedan ordern.](../../assets/Order_probability_reports.png)
 
 ### Sannolikhet för inledande upprepad order
 
-I det här exemplet är sannolikheten för att en kund gör ett återkommande köp 60 %. Det innebär att 60 % av alla order som läggs i den här verksamheten följs av en efterföljande order.
+I det här exemplet är sannolikheten för att en kund gör ett återkommande köp 60 procent. Det innebär att 60 procent av alla order som läggs i den här verksamheten följs av en efterföljande order.
 
 ### Sannolikhet för upprepade order som har angetts månader sedan ordern
 
@@ -76,7 +76,7 @@ När du har skapat analysen ovan och fastställt ett tröskelvärde för bortfal
 
 Om ni erbjuder mer än en produkt undrar ni antagligen hur kunder som köper en viss produkt beter sig annorlunda över tiden jämfört med andra kunder. Vill du veta mer? Titta på den här självstudiekursen för att utforska hur kundkohorter fungerar hela livet baserat på specifika produkter som de har köpt.
 
-Denna bästa praxis tillhandahålls av [!DNL MBI] Data Analysis Services (DAS). [Kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) för mer information.
+Denna bästa praxis tillhandahålls av [!DNL Adobe Commerce Intelligence] Data Analysis Services (DAS). [Kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) för mer information.
 
 ### Relaterad
 

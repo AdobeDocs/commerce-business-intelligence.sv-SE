@@ -2,16 +2,16 @@
 title: Kupongprestanda
 description: Lär dig hur du analyserar din kupongprestanda.
 exl-id: f6565e33-18ee-4f85-ade0-fd361854475b
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '1173'
+source-wordcount: '1167'
 ht-degree: 0%
 
 ---
 
 # Avancerad kupongkodanalys
 
-Att förstå hur ert företag presterar i form av kuponger är ett intressant sätt att segmentera era order och också bättre förstå era kunder. I den här artikeln får du hjälp med att skapa analyser för att förstå vilka kunder du köper med hjälp av kuponger, hur de fungerar och spåra allmän kuponganvändning.
+Att förstå hur ert företag presterar i form av kuponger är ett intressant sätt att segmentera era order och också bättre förstå era kunder. I det här avsnittet går du igenom stegen för att skapa analyser för att förstå vilka kunder du köper med hjälp av kuponger, hur de fungerar och spåra allmän kuponganvändning.
 
 ![](../../assets/coupon_analysis_-_analysis_library.png)<!--{: width="800" height="375"}-->
 
@@ -19,7 +19,7 @@ Denna analys innehåller [avancerade beräknade kolumner](../data-warehouse-mgr/
 
 ## Komma igång
 
-Som ett första steg måste du se till att följande kolumner synkroniseras med Data warehouse. Om de inte gör det kan du spåra dem genom att gå till Hantera data > Data warehouse och synkronisera följande:
+Som ett första steg måste du se till att följande kolumner synkroniseras med Data warehouse. Om de inte är det, gå vidare och spåra dem genom att navigera till `Manage Data` > `Data Warehouse`och synkronisera följande:
 
 * **sales\_flat\_order** table
 * **kupong\_kod**
@@ -519,4 +519,4 @@ Ytterligare kolumner som ska skapas om gästorder INTE stöds:
 
 När du har kompilerat alla rapporter kan du ordna dem på kontrollpanelen som du vill. Resultatet kan se ut som bilden överst på sidan.
 
-Om du stöter på några frågor när du skapar den här analysen eller bara vill engagera Professional Services-teamet, [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Om du stöter på några frågor när du skapar den här analysen eller bara vill engagera Professional Services-teamet, [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

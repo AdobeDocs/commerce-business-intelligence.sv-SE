@@ -2,7 +2,7 @@
 title: Anslut uppslag
 description: Lär dig hur du kan se hur ert företag presterar eller hitta era mest värdefulla förvärvskällor och kanaler.
 exl-id: d443e6ca-04b0-4090-a3be-14db71819356
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 96e1da59c2f366bdb948ddf907340f7fd8636741
 workflow-type: tm+mt
 source-wordcount: '89'
 ht-degree: 0%
@@ -11,9 +11,11 @@ ht-degree: 0%
 
 # Anslut [!DNL Spree]
 
-Vill du se hur ert företag presterar eller hitta era mest värdefulla förvärvskällor och kanaler? Koppla samman [!DNL Spree] data till [!DNL MBI] låter dig svara på dessa frågor och mycket mer.
+![](../../../assets/spree-commerce-logo.png)
 
-The [!DNL Spree] databasen baseras på `PostgreSQL`kan du ansluta den till [!DNL MBI] med [samma steg som du skulle göra för en normal `Postgres` anslutning](../integrations/postgresql.md).
+Vill du se hur ert företag presterar eller hitta era mest värdefulla förvärvskällor och kanaler? Koppla samman [!DNL Spree] data till [!DNL Commerce Intelligence] låter dig svara på dessa frågor och mycket mer.
+
+The [!DNL Spree] databasen baseras på [!DNL PostgreSQL]kan du ansluta den till [!DNL Commerce Intelligence] med [samma steg som du skulle göra för en normal [!DNL Postgres] anslutning](../integrations/postgresql.md).
 
 ## Relaterad dokumentation
 

@@ -2,16 +2,16 @@
 title: Google Analytics - Spåra användarenhets- och webbläsardata i databasen
 description: Lär dig hur många användare som faktiskt loggar in via mobila enheter och hur det påverkar livslängdsvärdet för dessa användare.
 exl-id: 57b1bc45-b139-4370-86ea-2fbd021aa14d
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '435'
+source-wordcount: '430'
 ht-degree: 0%
 
 ---
 
 # [!UICONTROL Google Analytics] Spårning
 
-Med [!UICONTROL Google Analytics] du kan [spara information om hänvisningskälla](../analysis/google-track-user-acq.md) för att förstå var era mest värdefulla användare kommer ifrån. I det här avsnittet får du lära dig mer om den plattform (till exempel en enhet eller webbläsare) som användarna arbetar med. På så sätt kan du förstå hur många användare som faktiskt loggar in via mobila enheter och hur det påverkar livslängdsvärdet för dessa användare.
+Med [!UICONTROL Google Analytics] du kan [spara information om hänvisningskälla](../analysis/google-track-user-acq.md) för att förstå var era mest värdefulla användare kommer ifrån. I det här avsnittet beskrivs den plattform (till exempel en enhet eller webbläsare) som användarna arbetar med. På så sätt kan du förstå hur många användare som faktiskt loggar in via mobila enheter och hur det påverkar livslängdsvärdet för dessa användare.
 
 ## Sparar användarenhet och webbläsardata
 
@@ -30,7 +30,7 @@ Den här informationen kan nås av servern varje gång en begäran görs. I PHP 
 
 ### När ska du registrera dessa data?
 
-Adobe rekommenderar att du lägger till ett nytt fält med namnet `Platform` eller `User-Agent` till `Customers` och `Orders` databastabeller som lagrar den här informationen när en användare skapas eller en order placeras. Om du använder en SQL-databas bör fältet vara `VARCHAR(255)`. 
+[!DNL Adobe] rekommenderar att du lägger till ett nytt fält med namnet `Platform` eller `User-Agent` till `Customers` och `Orders` databastabeller som lagrar den här informationen när en användare skapas eller en order placeras. Om du använder en SQL-databas bör fältet vara `VARCHAR(255)`. 
 
 >[!NOTE]
 >

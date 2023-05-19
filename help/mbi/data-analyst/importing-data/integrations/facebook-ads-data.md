@@ -2,20 +2,18 @@
 title: Förväntade Facebook Ads-data
 description: Lär dig en kort översikt över de tabeller som rekommenderas att du synkroniserar med Data warehouse
 exl-id: 0c8b907b-1a98-470b-bb2c-55327e88e502
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '337'
+source-wordcount: '329'
 ht-degree: 0%
 
 ---
 
 # Förväntat [!DNL Facebook Ads] data
 
-![](../../../assets/Facebook_Logo.png)
-
 Efter att du har [ansluten till din [!DNL Facebook Ads] konto](../integrations/facebook-ads.md)kan du använda [data warehouse Manager](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) för att enkelt spåra relevanta datafält för analys.
 
-I den här artikeln får du en kort översikt över de tabeller som Adobe rekommenderar att du synkroniserar med Data warehouse. Det här är inte en fullständig lista eftersom det finns många deltabeller. Det visar bara huvudtabellerna.
+I det här avsnittet finns en kort översikt över de tabeller som Adobe rekommenderar att du synkroniserar med Data warehouse. Det här visar bara huvudtabellerna, eftersom det finns några deltabeller.
 
 ## Huvudtabeller för annonskampanjer
 
@@ -60,4 +58,4 @@ Tabellen innehåller samma information som `facebook_ads_insights_{account_id}` 
 ## Relaterad
 
 * [Ansluter [!DNL Facebook Ads]](../integrations/facebook-ads.md)
-* [Återautentisera integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
+* [Återautentisera integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

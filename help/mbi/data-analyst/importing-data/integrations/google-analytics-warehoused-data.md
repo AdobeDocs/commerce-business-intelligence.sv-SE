@@ -2,14 +2,14 @@
 title: Förväntade lagrade data för Google Analytics
 description: Lär dig interagera med lagerdata från Google Analytics.
 exl-id: 2b1305cd-5f34-43d9-b77f-a4f5b1d82c66
-source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
+source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
 
-# Förväntat [!DNL Google Analytics] Lagrade data
+# Förväntat [!DNL Google Analytics Warehoused] Data
 
 >[!NOTE]
 >
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >Viss information används med tillstånd från dina vänner på [[!DNL Stitch]](https://www.stitchdata.com/docs/integrations/saas/google-analytics).
 
-[!DNL Google Analytics Warehoused] integration i [!DNL MBI] använder [!DNL Google Analytics] [API för huvudrapportering](https://developers.google.com/analytics/devguides/reporting/core/v3/).
+[!DNL Google Analytics Warehoused] integration i [!DNL Commerce Intelligence] använder [!DNL Google Analytics] [API för huvudrapportering](https://developers.google.com/analytics/devguides/reporting/core/v3/).
 
 >[!NOTE]
 >
@@ -39,8 +39,8 @@ Tabellen skulle se ut som exemplet nedan.
 | **Kolumnnamn** | **Beskrivning** |
 |-----|-----|
 | `\_id` | Den här kolumnen är `primary key`. |
-| `\_rjm\_record\_hash` | [!DNL MBI] unik identifierare. Den här kolumnen skapas av [!DNL MBI]. |
-| `\_updated\_at` | Den här kolumnen innehåller den senaste gången dataraden uppdaterades. Den här kolumnen skapas av [!DNL MBI]. |
+| `\_rjm\_record\_hash` | [!DNL Commerce Intelligence] unik identifierare. Den här kolumnen skapas av [!DNL Commerce Intelligence]. |
+| `\_updated\_at` | Den här kolumnen innehåller den senaste gången dataraden uppdaterades. Den här kolumnen skapas av [!DNL Commerce Intelligence]. |
 | `start-date` | Identifiering av vilken dag raden är avsedd för. |
 | `end-date` | Identifiering av vilken dag raden är avsedd för. |
 | `month` | Vald dimension: Månad i sessionen, ett tvåsiffrigt heltal mellan 01 och 12. |
@@ -48,7 +48,7 @@ Tabellen skulle se ut som exemplet nedan.
 
 {style="table-layout:auto"}
 
-## Påminnelse: Skillnaden mellan Google Analytics Warehouse och Live Integration
+## Vad är skillnaden mellan [!DNL Google Analytics Warehoused] och [!DNL Live Integration]
 
 Den viktigaste skillnaden är att en integrering sparas ([!DNL Google Analytics Warehoused]) och den andra inte ([!DNL Google Analytics Live]). I fall med [!DNL Google Analytics Warehoused]kan du manipulera [!DNL Google Analytics] data och ger er möjlighet att kombinera [!DNL Google Analytics] och andra datakällor för att skapa insiktsfull rapportering.
 
@@ -56,7 +56,7 @@ Titta på [!DNL Google Analytics] annonskampanjer för ett exempel på vad som k
 
 Kombinationsaspekten tillåter [!DNL Google Analytics] Uppgifter som ska sammanfogas med andra uppgifter för att utföra analyser. Ta till exempel `Total Time On Site By Ad Campaign` data från [!DNL Google Analytics] och förena dem mot `Total Spent Per Campaign` data från [!DNL Facebook Ads] för att få en fullständig bild av hur mycket engagemang kostar er.
 
-Med [!DNL Google Analytics Live] integrering, å andra sidan, [!DNL Google Analytics] diagram är som en liten silo som inte lagras i [!DNL MBI] data warehouse.
+Med [!DNL Google Analytics Live] integrering, å andra sidan, [!DNL Google Analytics] diagram är som en liten silo som inte lagras i [!DNL Commerce Intelligence] data warehouse.
 
 ## Relaterat:
 

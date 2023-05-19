@@ -2,7 +2,7 @@
 title: Öka avkastningen på era annonskampanjer
 description: Lär dig mer om några olika metoder för att utvärdera hur kampanjen fungerar.
 exl-id: 4f2bf408-eeaf-4dbf-b62e-89426734640a
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '1237'
 ht-degree: 0%
@@ -11,14 +11,14 @@ ht-degree: 0%
 
 # Reklamkampanjer och avkastning
 
-Med MBI kan ni enkelt [kombinera information om reklamkostnader och intäkter](../../data-analyst/importing-data/integrations/google-adwords.md) från databasen. Detta hjälper er att identifiera vilka kampanjer som har störst avkastning. I den här artikeln beskrivs några olika metoder för att utvärdera hur kampanjen fungerar.
+[!DNL Adobe Commerce Intelligence] gör att du enkelt kan [kombinera information om reklamkostnader och intäkter](../../data-analyst/importing-data/integrations/google-adwords.md) från databasen. Detta hjälper er att identifiera vilka kampanjer som ger störst avkastning på investeringen. I det här avsnittet beskrivs några olika metoder för att utvärdera hur kampanjen fungerar.
 
 ## Förutsättningar
 
 * Importera era reklamkostnadsuppgifter:
-   * [Koppla samman [!DNL Google AdWords] till [!DNL MBI]](../importing-data/integrations/google-adwords.md): Detta synkroniserar dina [!DNL Adwords] utgifter i [!DNL MBI]
-   * [Överför andra annonskostnadsuppgifter](../importing-data/connecting-data/import-offline-ad-data.md): Detta rekommenderas för kanaler utan direktanslutning till [!DNL MBI]
-   * Om du importerar kostnadsdata från flera källor kan du [konsolidera](../../best-practices/consolidating-your-tables.md) data i [!DNL MBI]. Bara [skicka en supportanmälan](../../guide-overview.md).
+   * [Koppla samman [!DNL Google AdWords] till [!DNL Commerce Intelligence]](../importing-data/integrations/google-adwords.md): Detta synkroniserar dina [!DNL Adwords] utgifter i [!DNL Commerce Intelligence]
+   * [Överför andra annonskostnadsuppgifter](../importing-data/connecting-data/import-offline-ad-data.md): Detta rekommenderas för kanaler utan direktanslutning till [!DNL Commerce Intelligence]
+   * Om du importerar kostnadsdata från flera källor kan du [konsolidera](../../best-practices/consolidating-your-tables.md) data i [!DNL Commerce Intelligence]. Bara [skicka en supportanmälan](../../guide-overview.md#Submitting-a-Support-Ticket).
 * [Spåra kanaldata för kundvärvning](../analysis/google-track-user-acq.md)
 
 ## Kampanjer för att värva användare
@@ -35,7 +35,7 @@ Analyserna (1) och (2) ovan utforskas i en separat självstudiekurs om [identifi
 >
 >I det här exemplet antas att alla kampanjkostnader uteslutande användes för att förvärva nya användare. I själva verket delas kampanjkostnaden också med att köpa okonverterade besök, upprepa köpare och så vidare. Genom att anta att alla kostnader används för att förvärva nya registrerade användare, redovisar den resulterande avkastningen för det värsta scenariot (högsta kostnaden per förvärv). Du kan vara säker på att den faktiska avkastningen är högre än din beräkning.
 >
->Exempel: Om ni spenderade 20 dollar på en kampanj som genererade 10 nya användare och 10 återkommande köpare, blir den faktiska kostnaden per ny användare 1 USD. Men om man utgår ifrån att alla kostnader går till att förvärva nya användare blir kostnaden per förvärv 2 dollar.)
+>Exempel: Om ni spenderade 20 dollar på en kampanj som genererade 10 nya användare och 10 återkommande köpare, blir den faktiska kostnaden per ny användare 1 USD. Men med antagandet att alla kostnader gick till att förvärva nya användare blir kostnaden per förvärv $2.
 
 **1. Börja med att skapa ett diagram som segmenterar era annonskostnader efter kampanjer:**
 
@@ -95,9 +95,9 @@ Kör ni produktspecifika annonser? I så fall kan ni mäta avkastningen på dess
 
 >[!NOTE]
 >
->I det här exemplet antas att alla kampanjkostnader uteslutande användes för att generera inköp av specifika produkter. Om man utgår ifrån att alla kostnader spenderas på att generera inköp, utgör den resulterande avkastningen det värsta scenariot (den högsta kostnaden per inköp). Du kan vara säker på att den faktiska avkastningen är högre än den här beräkningen. Exempel: Om ni spenderade 20 dollar på en kampanj som genererade 10 nya användare och 10 inköp blir den faktiska kostnaden per inköp 1 USD. Under antagandet att alla kostnader gick för att förvärva nya användare är kostnaden per inköp $2.)*
+>I det här exemplet antas att alla kampanjkostnader uteslutande användes för att generera inköp av specifika produkter. Om man utgår ifrån att alla kostnader spenderas på att generera inköp, utgör den resulterande avkastningen det värsta scenariot (den högsta kostnaden per inköp). Du kan vara säker på att den faktiska avkastningen är högre än den här beräkningen. Exempel: Om ni spenderade 20 dollar på en kampanj som genererade 10 nya användare och 10 inköp blir den faktiska kostnaden per inköp 1 USD. Under antagandet att alla kostnader gick för att förvärva nya användare är kostnaden per inköp $2.
 
-Innan du börjar [skicka en supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) för att koppla följande dimensioner till radobjektregistret (`sales\_flat\_order\_item, order\_item`):
+Innan du börjar [skicka en supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) för att koppla följande dimensioner till radobjektregistret (`sales\_flat\_order\_item, order\_item`):
 
 * Orderns källa (om du bara spårar hänvisningskälla på användarnivå ska du ansluta till användarens källa)
 * Beställningens kampanj (om du bara spårar hänvisningskälla på användarnivå ska du gå med i användarens kampanj)

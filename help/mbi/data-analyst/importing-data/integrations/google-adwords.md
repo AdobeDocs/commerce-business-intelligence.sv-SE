@@ -2,9 +2,9 @@
 title: Anslut Google-lösenord
 description: Lär dig mäta kampanjens avkastning genom att kombinera era era annonskostnader med kundens livstidsvärde (CLV) för användare som ni köpt från era kampanjer.
 exl-id: db99f817-2a2e-4194-9dd2-ec2d6b27a118
-source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '326'
+source-wordcount: '323'
 ht-degree: 0%
 
 ---
@@ -17,15 +17,15 @@ ht-degree: 0%
 
 ![](../../../assets/Google_Adwords_logo.png)
 
-Ni forskade, skapade era annonser och lanserade era kampanjer. Nu är det dags att analysera era annonsutgiftsdata och se om era pengar används effektivt. Med hjälp av era annonsutgiftsdata kan ni [mäta kampanjens avkastning genom att analysera annonskostnaderna och kundens livstidsvärde (CLV)](../../analysis/roi-ad-camp.md) av de användare ni köpt från era kampanjer.
+Du gjorde din forskning, du skapade dina annonser, du lanserade dina [!DNL Google] kampanj. Nu är det dags att analysera era annonsutgiftsdata och se om era pengar används effektivt. Med hjälp av era annonsutgiftsdata kan ni [mäta kampanjens avkastning genom att analysera annonskostnaderna och kundens livstidsvärde (CLV)](../../analysis/roi-ad-camp.md) av de användare ni köpt från era kampanjer.
 
-Kom igång genom att ange [!DNL Google Adwords] inloggningsuppgifter till [!DNL MBI]:
+Kom igång genom att ange [!DNL Google Adwords] inloggningsuppgifter till [!DNL Commerce Intelligence].
 
-1. Gå till sidan Anslutningar under **Hantera data > Integreringar**.
+1. Gå till `Connections` sida under **Hantera data > Integreringar**.
 1. Klicka **Lägg till integrering**, som finns längst upp till höger på skärmen.
 1. Klicka på **[!DNL Google Adwords]** ikon. Då öppnas [!DNL Google Adwords] inloggningssida.
-1. Ange [!DNL Google Analytics] autentiseringsuppgifter. När auktoriseringsprocessen är slutförd omdirigeras du tillbaka till [!DNL MBI].
-1. En lista över profil-ID:n visas. Kontrollera de profiler som du vill ansluta till [!DNL MBI].
+1. Ange [!DNL Google Analytics] autentiseringsuppgifter. När auktoriseringsprocessen är slutförd omdirigeras du tillbaka till [!DNL Commerce Intelligence].
+1. En lista över profil-ID:n visas. Kontrollera de profiler som du vill ansluta till [!DNL Commerce Intelligence].
 
    ![](../../../assets/cnnct-profile.png)
 
@@ -33,9 +33,9 @@ Kom igång genom att ange [!DNL Google Adwords] inloggningsuppgifter till [!DNL 
 
 Om du har flera profiler och behöver hjälp med att identifiera vilket som är det, se `Connecting Multiple Google Analytics profiles` nedan.
 
-## `Connecting multiple Google Analytics profiles`
+## Ansluta flera [!DNL Google Analytics] profiler
 
-Du kan ha flera webbplatser anslutna till en enda [!DNL Google Analytics] konto, som identifieras av deras egna [!DNL Google Analytics] Profil-ID. I det här fallet kan du välja att inkludera alla dina profil-ID:n i [!DNL MBI]. Kontrollera de profil-ID som du vill inkludera under steget för profilval.
+Du kan ha flera webbplatser anslutna till en enda [!DNL Google Analytics] konto, som identifieras av deras egna [!DNL Google Analytics] Profil-ID. I det här fallet kan du välja att inkludera alla dina profil-ID:n i [!DNL Commerce Intelligence]. Kontrollera de profil-ID som du vill inkludera under steget för profilval.
 
 **Så här identifierar du en viss webbplats Google Analytics-profil-ID:**
 
@@ -48,12 +48,12 @@ Du kan ha flera webbplatser anslutna till en enda [!DNL Google Analytics] konto,
 ## Kopplar från [!DNL Google Adwords]
 
 1. Besök [!DNL Google] [kontoinställningar](https://www.google.com/account/about/?hl=en) sida.
-1. Under `Security` och klicka **[!UICONTROL edit]** nästa `Authorizing` program och webbplatser.
-1. Klicka **[!UICONTROL revoke access]** nästa [!DNL MBI].
+1. Under `Security` avsnitt, klicka **[!UICONTROL edit]** nästa `Authorizing` program och webbplatser.
+1. Klicka **[!UICONTROL revoke access]**.
 
 ## Relaterad
 
-* [Återautentisera integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
+* [Återautentisera integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [Spåra hänvisningskälla för order via [!DNL Google ECommerce]](../integrations/google-ecommerce.md)
 * [Spåra hänvisningskälla för användare i databasen](../../analysis/google-track-user-acq.md)
 * [Upptäck era mest värdefulla förvärvskällor och kanaler](../../analysis/most-value-source-channel.md)

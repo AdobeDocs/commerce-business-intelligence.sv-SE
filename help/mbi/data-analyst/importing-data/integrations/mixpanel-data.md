@@ -1,10 +1,10 @@
 ---
 title: Förväntade data från blandpanelen
-description: Utforska huvuddatatabellerna som du kan importera från Mixpanel till [!DNL MBI] konto.
+description: Utforska huvuddatatabellerna som du kan importera från Mixpanel till [!DNL Commerce Intelligence] konto.
 exl-id: 87bd337a-63fa-44cf-b1fe-c2f34ca86029
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '207'
+source-wordcount: '204'
 ht-degree: 0%
 
 ---
@@ -13,11 +13,11 @@ ht-degree: 0%
 
 Efter [du har anslutit din [!DNL Mixpanel] konto](../integrations/mixpanel.md)kan du använda [data warehouse Manager](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) för att enkelt spåra relevanta datafält för analys.
 
-I den här artikeln utforskas huvuddatatabellerna som du kan importera från [!DNL Mixpanel] i [!DNL MBI] konto. Följande tabeller skapas i Data warehouse efter att Mixpanel har anslutits. Om du vill visa alla fält som är tillgängliga för spårning klickar du på länkarna i tabellnamnskolumnen.
+I det här avsnittet beskrivs de huvuddatatabeller som du kan importera från [!DNL Mixpanel] i [!DNL Commerce Intelligence] konto. Följande tabeller skapas i Data warehouse efter att du har anslutit [!DNL Mixpanel]. Om du vill visa alla fält som är tillgängliga för spårning klickar du på länkarna i tabellnamnskolumnen.
 
 >[!NOTE]
 >
->På grund av begränsningarna i [!DNL Mixpanel] API, historiska data - data som är äldre än sju (7) dagar från datumet för anslutningen till [!DNL MBI] - replikeras inte.
+>På grund av begränsningarna i [!DNL Mixpanel] API, historiska data - data som är äldre än sju (7) dagar från datumet för anslutningen till [!DNL Commerce Intelligence] - replikeras inte.
 
 | **Tabellnamn** | **Beskrivning** |
 |-----|-----|
@@ -30,4 +30,4 @@ I den här artikeln utforskas huvuddatatabellerna som du kan importera från [!D
 ## Relaterad dokumentation
 
 * [Ansluter [!DNL Mixpanel]](../integrations/mixpanel.md)
-* [Återautentisera integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
+* [Återautentisera integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

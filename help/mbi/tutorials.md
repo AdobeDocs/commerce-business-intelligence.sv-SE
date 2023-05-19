@@ -1,7 +1,7 @@
 ---
 title: Tutorials
 description: Tutorials
-source-git-commit: 28976ea30c73f8caa2efbd9f52a194c993035275
+source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
 workflow-type: tm+mt
 source-wordcount: '12'
 ht-degree: 0%
@@ -10,4 +10,4 @@ ht-degree: 0%
 
 # Tutorials
 
-Följ dessa självstudiekurser för att lära dig hur [!DNL MBI].
+Följ dessa självstudiekurser för att lära dig hur [!DNL Adobe Commerce Intelligence].

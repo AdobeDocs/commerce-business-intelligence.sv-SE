@@ -2,16 +2,16 @@
 title: Använda Visual Report Builder
 description: Lär dig att analysera data i rapporten under en viss tidsperiod.
 exl-id: da97b63d-63f0-4fd6-87e3-4cac49a42acc
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
 workflow-type: tm+mt
 source-wordcount: '1188'
 ht-degree: 0%
 
 ---
 
-# Använd `Visual Report Builder`
+# Använd [!DNL Visual Report Builder]
 
-The [`Visual Report Builder`](../data-user/reports/ess-rpt-build-visual.md) gör att ni kan utforska era data visuellt för att få insikter och fatta affärsbeslut. I den här självstudiekursen får du hjälp med att skapa en grundläggande rapport.
+The [[!DNL Visual Report Builder]](../data-user/reports/ess-rpt-build-visual.md) gör att ni kan utforska era data visuellt för att få insikter och fatta affärsbeslut. I den här självstudiekursen får du hjälp med att skapa en grundläggande rapport.
 
 >[!NOTE]
 >
@@ -19,9 +19,9 @@ The [`Visual Report Builder`](../data-user/reports/ess-rpt-build-visual.md) gör
 
 ## Steg 1: Skapa en rapport
 
-Klicka på **[!UICONTROL Report Builder]** på sidlisten eller **[!UICONTROL Add Report]** överst på en kontrollpanel. När `Report Builder` markeringssidan visas, klicka på **[!UICONTROL Visual Report Builder]** alternativ.
+Klicka på **[!UICONTROL Report Builder]** på sidlisten eller **[!UICONTROL Add Report]** överst på en kontrollpanel. När `Report Builder` visas klickar du på **[!UICONTROL Visual Report Builder]** alternativ.
 
-Redigera en rapport som skapats i `Visual Report Builder`, klicka på kugghjulsikonen (Alternativ) i det övre högra hörnet av ett diagram och klicka sedan på **[!UICONTROL Edit]**.
+Redigera en rapport som skapats i [!DNL Visual Report Builder], klicka på kugghjulsikonen (Alternativ) i det övre högra hörnet av ett diagram och klicka sedan på **[!UICONTROL Edit]**.
 
 ## Steg 2: Lägga till mått
 
@@ -45,7 +45,7 @@ Om du vill nollställa en viss tidsrymd kan du ange tidsperioden för analysen. 
 
 När du anger ett visst datumintervall för tidsperioden måste du se till att startdatumet är i början av intervallet och att slutdatumet är i slutet av intervallet.
 
-Du kan till exempel ange en tidsperiod från `January 1st to March 1st` och välja `monthly` intervallvisning `March` som en datapunkt, men ignorera varje dag i `March` utom `March 1`. I så fall bör du `Time Period` från `January 1 to March 31`.
+Du kan till exempel ange en tidsperiod från `January 1st` till `March 1st` och välja `monthly` intervallvisning `March` som en datapunkt, men ignorera varje dag i `March` utom `March 1`. I så fall bör du `Time Period` från `January 1 to March 31`.
 
 ## Steg 5: `Group by` / `Segmenting the Analysis` {#groupby}
 

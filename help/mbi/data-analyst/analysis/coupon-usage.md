@@ -2,24 +2,22 @@
 title: Analyserar kuponganvändning
 description: Lär dig hur du analyserar kuponganvändning när du köper och behåller kunder.
 exl-id: d4d1393f-1695-43f2-980a-84525f84031e
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '1144'
+source-wordcount: '1141'
 ht-degree: 2%
 
 ---
 
 # Kuponganvändning
 
-Undrar du någonsin hur erbjudandet påverkar ditt företag? Vill du veta vilka kuponger som hjälper till eller skadar prestandan? I den här artikeln utforskas analyser som ger en bra bild av dina kunders kuponganvändning genom att svara på följande frågor:
+Undrar du någonsin hur erbjudandet påverkar ditt företag? Vill du veta vilka kuponger som hjälper till eller skadar prestandan? I det här avsnittet behandlas analyser som ger en bra bild av dina kunders kuponganvändning genom att svara på följande frågor:
 
 * Hur många kunder använder kuponger?
 * Hur många kuponger används?
 * Vad har du för intäkter före och efter kuponger?
 * Vilket är det genomsnittliga ordervärdet före och efter kuponger?
 * Vilken typ av kunder drar du till dig med kuponger?
-
-Kom igång!
 
 ## Rekommenderade mått {#metrics}
 
@@ -109,7 +107,7 @@ För genomsnittliga intäkter för livstid ser du att de genomsnittliga intäkte
 
 ## Vad mer kan jag analysera? {#otheranalyses}
 
-De analyser som omnämns i den här artikeln kan ge er värdefulla insikter om hur era kunder använder era kuponger, men det finns en mängd andra analyser som gör att ni kan fördjupa er lite mer.
+Analyserna som nämns i det här avsnittet kan ge er värdefulla insikter om hur era kunder använder era kuponger, men det finns en mängd andra analyser som gör att ni kan fördjupa er lite mer.
 
 **Ni kan analysera era kundförvärv utifrån kuponger.**
 

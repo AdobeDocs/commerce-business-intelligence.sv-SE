@@ -2,9 +2,9 @@
 title: Rekommenderade Dimensioner för segmentering och filtrering
 description: Läs om de bästa sätten att segmentera och filtrera.
 exl-id: 66391bce-bdeb-4e9d-8089-1c796e00d91e
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '911'
+source-wordcount: '909'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Bra segmentering är vad som förvandlar en ytlig statistik till ett affärsmåt
 
 Vill du veta vilka era mest värdefulla kunder är? Vilka av era mest värdefulla marknadsföringskanaler är? Vilka av era produkter rör sig snabbare och varför? För att komma till något av dessa svar måste ni börja med att segmentera era data.
 
-I den här artikeln beskrivs viktiga segment som ofta rekommenderas för kunder. Det går också närmare in på vilka frågor dessa segment kan hjälpa dig att svara på. Tekniskt sett är segment datakolumner i din databas. I [!DNL MBI]kallas de för dimensioner.
+Det här avsnittet behandlar viktiga segment som ofta rekommenderas för kunderna. Det går också närmare in på vilka frågor dessa segment kan hjälpa dig att svara på. Tekniskt sett är segment datakolumner i din databas. I [!DNL Adobe Commerce Intelligence]kallas de för dimensioner.
 
 ![](../../mbi/assets/mbi-critical-segments.png)
 
@@ -28,7 +28,7 @@ Användarsegment hjälper dig att förstå vilka användare som är och hur de b
 * **Kön**: Fungerar olika genrer med er webbplats annorlunda?
 * **Adress**: Varifrån kommer dina användare? Bör ni fokusera era marknadsföringssatsningar på en viss region? Har era senaste annonskampanjer genomförts som förväntat i era målregioner?
 * **Kundvärvningskälla**\: Vet ni vilken marknadsföringskanal era användare kommer ifrån? Klickade de på en annons eller hittade dig via sökning? [Segmentera era data utifrån inhämtningskälla](../data-analyst/analysis/google-track-user-acq.md) är det första steget i att optimera er nya kundvärvning. Steg två är att spendera mer pengar på det som fungerar och döda det som inte gör det.
-* **Registreringsenhet**: Registrerade sig användare via din mobilapp eller din webbplats? iOS eller Android™? Är er mobilbas stor nog att tilldela mer resurser för att utveckla er mobilprodukt? (Om du inte har spårat detta ännu, se det här avsnittet [om spårning av användarenhet](../data-analyst/analysis/track-usr-dev-browser.md).
+* **Registreringsenhet**: Registrerade sig användare via din mobilapp eller din webbplats? iOS eller Android™? Är er mobilbas stor nog att tilldela mer resurser för att utveckla er mobilprodukt? Om du inte har spårat detta än kan du läsa det här avsnittet [om spårning av användarenhet](../data-analyst/analysis/track-usr-dev-browser.md).
 * **Refereras av**: Vilka är era största påverkare? Hur många användare fick direktkontakt av andra?
 * **Bransch**: Om du är ett B2B-företag, i vilka branscher arbetar dina användare? Vilka branschorganisationer är det värt att gå med i?
 * **Undersökningssvar**: Om ni genomför kundundersökningar kan ni använda svaren som segment för en djupare profileringsnivå. Du kan ställa frågor som kompletterar det du redan vet om dina användare eller bekräfta dina gissningar.
@@ -63,13 +63,13 @@ Om du är intresserad av att handla, se [hur man kan använda produktsegment fö
 
 Segmenteringsexperter kan vilja gå steget längre än endimensionella segment och börja skapa riktiga kundprofiler. Personer mellan 13 och 24 år som registrerat sig via en mobil enhet placerade till exempel i gruppen&quot;Ung och mobil&quot;. Hur fungerar den här gruppens beteende jämfört med resten av din användarbas?
 
-Den här typen av analyser är vad marknadsförarna på Fortune 1000-företag gör hela dagen. Före lanseringen av molnbaserade plattformar för affärsinformation som [!DNL MBI]...det var i stort sett utom räckhåll för oss andra. Som tur är så är det inte längre så.
+Den här typen av analyser är vad marknadsförarna på Fortune 1000-företag gör hela dagen. Före lanseringen av molnbaserade plattformar för affärsinformation som [!DNL Commerce Intelligence]...det var i stort sett utom räckhåll för oss andra. Som tur är så är det inte längre så.
 
 ## Spåra nya segment
 
 Det första steget för att segmentera mätvärdena med ovanstående mått är att se till att du spårar dessa data i databasen. Om den inte spåras kan du kontakta din tekniker och hitta ett sätt att börja spåra dessa data.
 
-När du har bekräftat att data spåras i din databas, [kontakta supportteamet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) för att flytta måtten till [!DNL MBI] mått och diagram. Du kan också använda *Fälthantering* verktyg för att spåra fälten i [!DNL MBI].
+När du har bekräftat att data spåras i din databas, [kontakta supportteamet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) för att flytta måtten till [!DNL Commerce Intelligence] mått och diagram. Du kan också använda *Fälthantering* verktyg för att spåra fälten i [!DNL Commerce Intelligence].
 
 ## Relaterad
 

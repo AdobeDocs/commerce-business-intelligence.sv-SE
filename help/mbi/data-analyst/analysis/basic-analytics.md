@@ -2,16 +2,16 @@
 title: Förstå och bygga upp grundläggande analyser
 description: Lär dig förstå och bygga upp grundläggande analyser.
 exl-id: 23cea7b3-2e66-40c3-b4bd-d197237782e3
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '3117'
+source-wordcount: '3113'
 ht-degree: 0%
 
 ---
 
 # Grundläggande analyser
 
-När du känner till [!DNL MBI] och har en grundläggande förståelse för verktyget, kommer du att vilja börja skapa rapporter. En av de vanligaste frågorna du kanske har är &quot;Vad ska jag titta på?&quot;
+När du känner till [!DNL Adobe Commerce Intelligence] och har en grundläggande förståelse för verktyget, kommer du att vilja börja skapa rapporter. En av de vanligaste frågorna du kanske har är &quot;Vad ska jag titta på?&quot;
 
 Informationen nedan sammanfattar några av de gemensamma mätvärdena och rapporterna som du kan finna värdefulla. Vissa av dessa rapporter finns på ditt konto, så kontrollera att du granskar mätvärden och rapporter som finns på ditt konto för att undvika att skapa dubbletter.
 
@@ -44,7 +44,7 @@ Om några av dessa beräkningar inte finns i databasen kan alla administratörsa
 
 **Tar ni emot gästorder?**
 
-*I så fall kanske den här tabellen inte innehåller alla dina kunder. Kontakta [supportteam](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) för att säkerställa att era kundanalyser omfattar alla kunder.*
+*I så fall kanske den här tabellen inte innehåller alla dina kunder. Kontakta [supportteam](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) för att säkerställa att era kundanalyser omfattar alla kunder.*
 
 *Är du inte säker på om du godkänner gästbeställningar? Se [det här ämnet](../data-warehouse-mgr/guest-orders.md) för att lära dig mer!*
 
@@ -58,7 +58,7 @@ I den här tabellen representerar varje rad en ordning. Kolumnerna i den här ta
 * **[!UICONTROL Created_at]**: Det datum då ordern skapades eller placerades.
 * **[!UICONTROL Customer_email]**: E-postadressen till den kund som gjorde beställningen. Detta kan också vara den unika identifieraren för kunden.
 * **[!UICONTROL Customer's lifetime number of orders]**: En kopia av kolumnen med samma namn på din `Customers` tabell.
-* **[!UICONTROL Customer's order number]**: Kundens sekventiella ordernummer som är kopplat till ordern. Om raden du tittar på till exempel är en kunds första order är kolumnen&quot;1&quot;; men om det var kundens 15:e beställning visas&quot;15&quot; för den här beställningen i den här kolumnen. Om den här dimensionen inte finns på din `Customers` bord, fråga [supportteam](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) för att hjälpa dig att bygga den.
+* **[!UICONTROL Customer's order number]**: Kundens sekventiella ordernummer som är kopplat till ordern. Om raden du tittar på till exempel är en kunds första order är kolumnen&quot;1&quot;; men om det var kundens 15:e beställning visas&quot;15&quot; för den här beställningen i den här kolumnen. Om den här dimensionen inte finns på din `Customers` bord, fråga [supportteam](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) för att hjälpa dig att bygga den.
 * **[!UICONTROL Customer's order number (previous-current)]**: En sammanfogning av två värden i **[!UICONTROL Customer's order number]** kolumn. Den används i en exempelrapport nedan för att visa den förflutna tiden mellan två order. Tiden mellan en kunds första orderdatum och dess andra orderdatum är till exempel&quot;1-2&quot; med den här beräkningen.
 * **[!UICONTROL Coupon_code]**: Visar vilka kuponger som användes på varje order.
 * **[!UICONTROL Seconds since previous order]**: Tiden (i sekunder) mellan en kunds order.

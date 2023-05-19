@@ -2,9 +2,9 @@
 title: tabell för försäljning_order
 description: Lär dig hur du arbetar med tabellen sales_order.
 exl-id: 19a8ab88-de51-48f8-af39-ae4897834afe
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
-source-wordcount: '1199'
+source-wordcount: '1197'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Det här registret innehåller alla kundorder, oavsett om beställningen har bea
 | `base_tax_amount` | Momsvärde som tillämpas på ordern |
 | `billing_address_id` | `Foreign key` som är kopplade till `sales_order_address` tabell. Gå med i `sales_order_address.entity_id` för att fastställa faktureringsadressuppgifter som är kopplade till ordern |
 | `coupon_code` | Kupongen tillämpas på ordern. Om ingen kupong används är detta fält `NULL` |
-| `created_at` | Tidsstämpel för att skapa ordern, som lagras lokalt i UTC. Beroende på din konfiguration i [!DNL MBI]kan den här tidsstämpeln konverteras till en rapporttidszon i [!DNL MBI] som skiljer sig från databasens tidszon |
+| `created_at` | Tidsstämpel för att skapa ordern, som lagras lokalt i UTC. Beroende på din konfiguration i [!DNL Commerce Intelligence]kan den här tidsstämpeln konverteras till en rapporttidszon i [!DNL Commerce Intelligence] som skiljer sig från databasens tidszon |
 | `customer_email` | E-postadress till den kund som beställer. Detta fylls i i alla situationer, inklusive order som bearbetas via gästutcheckning |
 | `customer_group_id` | Sekundärnyckel som är associerad med `customer_group` tabell. Gå med i `customer_group.customer_group_id` för att fastställa kundgruppen som är kopplad till ordern |
 | `customer_id` | `Foreign key` som är kopplade till `customer_entity` om kunden är registrerad. Gå med i `customer_entity.entity_id` för att avgöra vilka kundattribut som är kopplade till ordern. Om beställningen gjordes via gästutcheckning är det här fältet `NULL` |
@@ -55,7 +55,7 @@ Det här registret innehåller alla kundorder, oavsett om beställningen har bea
 | `Customer's lifetime revenue` | Summan av intäkten för alla order som läggs av den här kunden. Beräknas genom att summera `base_grand_total` fält för alla order för varje unik kund |
 | `Customer's order number` | Sekventiell orderrankning för den här kundens order. Beräknas genom att identifiera alla order som lagts av en kund och sortera dem i stigande ordning efter `created_at` tidsstämpla och tilldela varje order ett stegvis ökande heltalsvärde. Till exempel returnerar kundens första order en `Customer's order number` av 1 returnerar kundens andra order `Customer's order number` av 2 och så vidare. |
 | `Customer's order number (previous-current)` | Rankning av kundens tidigare order sammanfogad med rangordningen för den här ordern, åtskild med en `-` tecken. Beräknas genom sammanfogning (&quot;`Customer's order number` - 1&quot;) med &quot;`-`&quot; följt av &quot;`Customer's order number`&quot;. För den order som är associerad med kundens andra inköp returnerar den här kolumnen till exempel värdet `1-2`. Används oftast för att representera tiden mellan två orderhändelser (d.v.s. i tabellen&quot;Tid mellan order&quot;) |
-| `Is customer's last order?` | Avgör om ordern motsvarar kundens senaste, eller senaste, order. Beräknas genom att jämföra `Customer's order number` värde med `Customer's lifetime number of orders`. När dessa två fält är lika för den angivna ordningen returnerar kolumnen &quot;Ja&quot;; annars returneras&quot;Nej&quot; |
+| `Is customer's last order?` | Avgör om ordern motsvarar kundens senaste, eller senaste, order. Beräknas genom att jämföra `Customer's order number` värde med `Customer's lifetime number of orders`. När dessa två fält är lika för den angivna ordningen returneras den här kolumnen `Yes`; annars returneras `No` |
 | `Number of items in order` | Total kvantitet artiklar som ingår i ordern. Beräknas av koppling `sales_order`.`entity_id` till `sales_order_item`.`order_id` och sammanfatta `sales_order_item`.`qty_ordered` fält |
 | `Seconds between customer's first order date and this order` | Förfluten tid mellan denna beställning och kundens första beställning. Beräknas genom subtraktion `Customer's first order date` från `created_at` för varje order, returneras som ett heltal i sekunder |
 | `Seconds since previous order` | Förfluten tid mellan denna beställning och kundens närmast föregående order. Beräknas genom att subtrahera `created_at` för föregående order från `created_at` i den här ordningen, returneras som ett heltal i sekunder. För orderposten som motsvarar en kunds tredje order returnerar den här kolumnen antalet sekunder mellan kundens andra order och tredje order. För kundens första order returnerar det här fältet `NULL` |

@@ -1,30 +1,30 @@
 ---
 title: Importera Länkdelningsdata
-description: Lär dig importera Länkdelning-data till [!DNL MBI].
+description: Lär dig importera Länkdelning-data till [!DNL Commerce Intelligence].
 exl-id: 1c2025a6-746c-4929-bbb1-62af1afcbc49
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
 workflow-type: tm+mt
 source-wordcount: '94'
 ht-degree: 0%
 
 ---
 
-# Importera `Linkshare` data
+# Importera [!DNL Linkshare] data
 
-För att ta med `Linkshare` data till [!DNL MBI]måste du göra två saker:
+För att ta med [!DNL Linkshare] data till [!DNL Adobe Commerce Intelligence]måste du göra två saker:
 
 1. [Exportera länkdelningsdata i ](#export)
-1. [Överför kalkylbladet till [!DNL MBI]](../connecting-data/using-file-uploader.md)
+1. [Överför kalkylbladet till [!DNL Commerce Intelligence]](../connecting-data/using-file-uploader.md)
 
 ## Exportera data från Länkshare {#export}
 
-1. I `Linkshare` konto, gå till **[!UICONTROL Reports** > **Run Reports].**
+1. I [!DNL Linkshare] konto, gå till **[!UICONTROL Reports** > **Run Reports].**
 
 1. I `Report` listruta, välja **[!UICONTROL Sales & Activity Report]**.
 
 1. Låt alla andra alternativ i listrutan vara standardval.
 
-1. I `Date Range` listruta, välj valfritt alternativ (`Sun - Sat`, `Mon - Sun`) matchar `Start of Week` inställningar i [!DNL MBI].
+1. I `Date Range` listruta, välj valfritt alternativ (`Sun - Sat`, `Mon - Sun`) matchar `Start of Week` inställningar i [!DNL Commerce Intelligence].
 
 1. Rensa `Compare Year-Over-Year Data` kryssrutan.
 
@@ -38,4 +38,4 @@ För att ta med `Linkshare` data till [!DNL MBI]måste du göra två saker:
 
    I det här skedet `.csv` och laddas ned.
 
-När filen har laddats ned kan du överföra den till [!DNL MBI] med [`File Upload` funktion](../connecting-data/using-file-uploader.md).
+När filen har laddats ned kan du överföra den till [!DNL Commerce Intelligence] med [`File Upload` funktion](../connecting-data/using-file-uploader.md).

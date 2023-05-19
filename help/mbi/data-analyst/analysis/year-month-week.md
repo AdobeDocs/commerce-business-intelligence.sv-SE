@@ -2,9 +2,9 @@
 title: Årsrapporter, månadsrapporter och veckorapporter
 description: Lär dig hur du enkelt ser trender över tid och ändrar perspektiv för tidsperioder som du kanske vill jämföra.
 exl-id: 74cf11c3-7ce0-477f-9a28-9d782e5da3d9
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '286'
 ht-degree: 0%
 
 ---
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Den här artikeln innehåller instruktioner för klienter som använder den ursprungliga arkitekturen och den nya arkitekturen. Du är på [ny arkitektur](../../administrator/account-management/new-architecture.md) om du har _Vyer i data warehouse_ avsnitt som är tillgängliga efter markering `Manage Data` i huvudverktygsfältet.
+>Det här avsnittet innehåller instruktioner för klienter som använder den ursprungliga arkitekturen och den nya arkitekturen. Du är på [ny arkitektur](../../administrator/account-management/new-architecture.md) om du har [!DNL _Vyer i data warehouse_] avsnitt som är tillgängliga efter markering [!DNL Manage Data] i huvudverktygsfältet.
 
-Med rapportverktyget kan du enkelt se trender över tid och ändra perspektivet för tidsperioder som du kanske vill jämföra. I den här artikeln beskrivs hur du konfigurerar en kontrollpanel så att du kan skapa rapporter för en vecka, en månad i taget och ett år i taget.
+Med rapportverktyget kan du enkelt se trender över tid och ändra perspektivet för tidsperioder som du kanske vill jämföra. I det här avsnittet visas hur du konfigurerar en kontrollpanel så att du kan skapa rapporter för en vecka, en månad i taget och en år i taget.
 
 ![](../../assets/Wow__mom__yoy.png)
 
-Innan du börjar, vill du bekanta dig med mer detaljerade perspektiv [här](../../tutorials/using-visual-report-builder.md) och oberoende tidsalternativ [här](../../tutorials/time-options-visual-rpt-bldr.md).
+Innan du börjar bör du gå igenom perspektiven i detalj [här](../../tutorials/using-visual-report-builder.md) och oberoende tidsalternativ [här](../../tutorials/time-options-visual-rpt-bldr.md).
 
 Denna analys innehåller [avancerade beräknade kolumner](../data-warehouse-mgr/adv-calc-columns.md).
 

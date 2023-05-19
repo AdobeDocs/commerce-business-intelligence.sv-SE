@@ -2,31 +2,32 @@
 title: Konfigurera datakontroller
 description: Lär dig hur du konfigurerar datakolumner med ändringsbara värden.
 exl-id: c31ef32e-ba5a-4902-b632-fbab551cc632
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '563'
+source-wordcount: '562'
 ht-degree: 0%
 
 ---
 
 # Konfigurera datakontroller
 
-I en databastabell kan det finnas datakolumner med ändringsbara värden. I en `orders`) kan det finnas en kolumn som kallas `status`. När en order skrivs till databasen från början kan statuskolumnen innehålla värdet _väntar_. Ordningen replikeras i [data warehouse](../data-warehouse-mgr/tour-dwm.md) med `pending` värde.
+I en databastabell kan det finnas datakolumner med ändringsbara värden. I en `orders` tabellen kan innehålla en kolumn som kallas `status`. När en order skrivs till databasen från början kan statuskolumnen innehålla värdet _väntar_. Ordningen replikeras i [data warehouse](../data-warehouse-mgr/tour-dwm.md) med `pending` värde.
 
-Orderstatus kan dock ändras - de finns inte alltid i `pending` status. Så småningom kan det bli `complete` eller `cancelled`. Om du vill vara säker på att Data warehouse synkroniserar den här ändringen måste du kontrollera om kolumnen innehåller nya värden.
+Orderstatus kan ändras även om de inte alltid finns i en `pending` status. Så småningom kan det bli `complete` eller `cancelled`. Om du vill vara säker på att Data warehouse synkroniserar den här ändringen måste du kontrollera om kolumnen innehåller nya värden.
 
 Hur passar det ihop med [replikeringsmetoder](../data-warehouse-mgr/cfg-replication-methods.md) som diskuterades? Bearbetningen av omkontroller varierar beroende på den valda replikeringsmetoden. The `Modified\_At` replikeringsmetod är det bästa alternativet för bearbetning av ändrade värden eftersom omkontroller inte behöver konfigureras. The `Auto-Incrementing Primary Key` och `Primary Key Batch Monitoring` metoder kräver omkontroll av konfigurationen.
 
 Om du använder någon av dessa metoder måste ändringsbara kolumner flaggas för omkontroll. Det finns tre sätt att göra detta:
 
-* En granskningsprocess som körs som en del av uppdateringen flaggar kolumner som ska kontrolleras igen.
+1. En granskningsprocess som körs som en del av uppdateringen flaggar kolumner som ska kontrolleras igen.
 
    >[!NOTE]
    >
    >Revisorn förlitar sig på en urvalsprocess och de ändrade kolumnerna kanske inte fångas omedelbart.
 
-* Du kan ange dem själv genom att markera kryssrutan bredvid kolumnen i Data warehouse-hanteraren och klicka på **[!UICONTROL Set Recheck Frequency]** och välja ett lämpligt tidsintervall för när du ska söka efter ändringar.
-* En medlem i [!DNL MBI] data warehouse team kan markera kolumnerna manuellt för omkontroll i Data warehouse. Om du känner till ändringsbara kolumner kan du kontakta teamet och begära att omkontroller är inställda. Inkludera en lista med kolumner, tillsammans med frekvens, med din begäran.
+1. Du kan ange dem själv genom att markera kryssrutan bredvid kolumnen i Data warehouse-hanteraren och klicka på **[!UICONTROL Set Recheck Frequency]** och välja ett lämpligt tidsintervall för när du ska söka efter ändringar.
+
+1. En medlem i [!DNL Adobe Commerce Intelligence] data warehouse team kan markera kolumnerna manuellt för omkontroll i Data warehouse. Om du känner till ändringsbara kolumner kan du kontakta teamet och begära att omkontroller är inställda. Inkludera en lista med kolumner, tillsammans med frekvens, med din begäran.
 
 ## Kontrollera frekvenser {#frequency}
 
@@ -55,7 +56,7 @@ Om du vill ändra frekvensen för omkontroll klickar du i kryssrutan bredvid de 
 
 Ibland ser du `Paused` i `Changes?` kolumn. Det här värdet visas när tabellen [replikeringsmetod](../../data-analyst/data-warehouse-mgr/cfg-data-rechecks.md) är inställd på `Paused`.
 
-Adobe rekommenderar att du granskar dessa kolumner för att både optimera dina uppdateringar och se till att ändringsbara kolumner kontrolleras igen. Om frekvensen för omkontroll av en kolumn är hög med tanke på hur ofta data ändras rekommenderar Adobe att du minskar den för att optimera uppdateringarna.
+[!DNL Adobe] rekommenderar att du granskar dessa kolumner för att både optimera uppdateringar och se till att ändringsbara kolumner kontrolleras igen. Om frekvensen för omkontroll av en kolumn är hög med tanke på hur ofta data ändras rekommenderar Adobe att du minskar den för att optimera uppdateringarna.
 
 Kontakta oss med frågor eller fråga om aktuella replikeringsmetoder eller omkontroller.
 

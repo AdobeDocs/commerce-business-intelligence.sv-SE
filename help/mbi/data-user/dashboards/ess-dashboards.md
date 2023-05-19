@@ -2,7 +2,7 @@
 title: Kontrollpaneler
 description: Lär dig hur du skapar och arbetar med en kontrollpanel.
 exl-id: a872344b-ac66-41eb-a471-5a69f8802527
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
 workflow-type: tm+mt
 source-wordcount: '622'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Kontrollpaneler
 
-[!DNL MBI] På kontrollpanelerna får du en snabb överblick över butikens resultat och försäljningsaktiviteter. Enskilda kontrollpaneler kan delas med andra användare och organiseras i logiska grupper. Du kan också ange olika behörighetsnivåer för andra användare.
+[!DNL Adobe Commerce Intelligence] På kontrollpanelerna får du en snabb överblick över butikens resultat och försäljningsaktiviteter. Enskilda kontrollpaneler kan delas med andra användare och organiseras i logiska grupper. Du kan också ange olika behörighetsnivåer för andra användare.
 
 Det är enkelt att skapa en rapport, lägga till den på en kontrollpanel och exportera data till Excel. Du kan ändra storlek på diagram och rapporter och dra dem till rätt position på kontrollpanelen.
 
@@ -76,7 +76,7 @@ I **[!DNL Manage Data** > **Dashboards]** kan du hantera användarbehörigheter 
 
 ### Dela dina instrumentpaneler {#sharingdash}
 
-Skala [!DNL MBI] i hela organisationen och ger värdefulla insikter rekommenderar Adobe att du delar instrumentpaneler som du skapar med andra teammedlemmar. *Du kan dela kontrollpaneler som du äger* genom att klicka på `Share Dashboard` längst upp på sidan.
+Skala [!DNL Commerce Intelligence] i hela organisationen och ger värdefulla insikter rekommenderar Adobe att du delar instrumentpaneler som du skapar med andra teammedlemmar. *Du kan dela kontrollpaneler som du äger* genom att klicka på `Share Dashboard` längst upp på sidan.
 
 När du delar en kontrollpanel kan du tilldela behörigheter i hela organisationen ELLER på individnivå, vilket innebär att du får bestämma vem som ska kunna visa och redigera dina rapporter.
 
@@ -113,7 +113,7 @@ När du delar en kontrollpanel kan du tilldela behörigheter i hela organisation
 
    **`Default`**
 
-   1. Så här gör du den här instrumentpanelen till standard för [!DNL MBI] konto, klicka på **[!UICONTROL Make Default]**.
+   1. Så här gör du den här instrumentpanelen till standard för [!DNL Commerce Intelligence] konto, klicka på **[!UICONTROL Make Default]**.
 
    **`Remove`**
 

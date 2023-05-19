@@ -2,9 +2,9 @@
 title: Granska Zendesk-data
 description: Lär dig hur du exporterar dina Zendesk-data.
 exl-id: 3c8dcc72-3623-4c4e-a941-f431a97571e0
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '294'
+source-wordcount: '290'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Hittade något konstigt i [[!DNL Zendesk] data](../integrations/exp-zendesk-data
 
 ## Aktivera dataexport
 
-Dataexport är för närvarande inte aktiverad för alla [!DNL Zendesk] konton. Om du vill aktivera den här funktionen [skicka en supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en), som talar om [!DNL Zendesk] underdomännamn.
+Dataexport är för närvarande inte aktiverad för alla [!DNL Zendesk] konton. Om du vill aktivera den här funktionen [skicka en supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html), som talar om [!DNL Zendesk] underdomännamn.
 
 >[!NOTE]
 >
@@ -36,6 +36,6 @@ När dataexporten är aktiverad kan bara administratörer i en viss e-postdomän
 
    Den här nedladdningslänken gäller i minst tre dagar.
 
-Den här processen skapar en XML-fil som innehåller all information som finns lagrad i den aktuella [!DNL Zendesk] konto, inklusive biljettdata (med kommentarer), användardata och kontodata. Nu kan du [skicka en supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) (bifoga den här filen!) så att ni kan ta en närmare titt på era data. Om filen är för stor kan du dela den med [!DNL MBI] team via [!DNL Dropbox] eller [!DNL Google Drive].
+Den här processen skapar en XML-fil som innehåller all information som finns lagrad i den aktuella [!DNL Zendesk] konto, inklusive biljettdata (med kommentarer), användardata och kontodata. Nu kan du [skicka en supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) (bifoga den här filen!) så att ni kan ta en närmare titt på era data. Om filen är för stor kan du dela den med [!DNL Commerce Intelligence] team via [!DNL Dropbox] eller [!DNL Google Drive].
 
 Mer information om [!DNL Zendesk] filexport, se den officiella [[!DNL Zendesk] exportdokumentation](https://support.zendesk.com/hc/en-us/articles/4408886165402-Exporting-data-to-a-JSON-CSV-or-XML-file).

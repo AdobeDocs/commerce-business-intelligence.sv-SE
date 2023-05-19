@@ -1,25 +1,25 @@
 ---
-title: Lagra data i handeln
-description: Lär dig hur data genereras, vad som gör att en ny rad infogas och hur åtgärder registreras i Commerce-databasen.
+title: Lagra data i Adobe Commerce
+description: Lär dig hur data genereras, vad som gör att en ny rad infogas och hur åtgärder registreras i Adobe Commerce-databasen.
 exl-id: 436ecdc1-7112-4dec-9db7-1f3757a2a938
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '928'
 ht-degree: 3%
 
 ---
 
 # Lagra data i [!DNL Adobe Commerce]
 
-Adobe Commerce-plattformen registrerar och organiserar ett stort antal värdefulla affärsdata i hundratals tabeller. I det här avsnittet beskrivs:
+The [!DNL Adobe Commerce] registrerar och organiserar ett stort antal värdefulla affärsdata i hundratals tabeller. I det här avsnittet beskrivs:
 
 * hur dessa data genereras
-* exakt det som gör att en ny rad infogas i en av [Core Commerce Tables](../data-warehouse-mgr/common-mage-tables.md)
-* hur åtgärder som att göra ett köp eller skapa ett konto registreras i Commerce-databasen
+* vad gör att en ny rad infogas i en av [Core Commerce Tables](../data-warehouse-mgr/common-mage-tables.md)
+* hur åtgärder som att göra ett köp eller skapa ett konto registreras i [!DNL Adobe Commerce] databas
 
-Om du vill förklara dessa begrepp kan du läsa följande exempel:
+Om du vill diskutera dessa begrepp kan du läsa följande exempel:
 
-`Clothes4U` är en klädhandlare med både online- och murbruk. Magento Open Source används bakom sin webbplats för att samla in och organisera data.
+`Clothes4U` är en klädhandlare med både online- och murbruk. Den använder [!DNL Magento Open Source] bakom sin webbplats för att samla in och organisera data.
 
 ## `catalog\_product\_entity`
 
@@ -57,7 +57,7 @@ Kort efter de tre nya produkterna, en ny kund, `Sammy Customer`, besök `Clothes
 * `email` - det här fältet fylls i av det e-postmeddelande som en ny kund anger när han/hon skapar sitt konto
 * `created_at` - Den här kolumnen returnerar tidsstämpeln för när varje användare ansluter
 
-## `sales\_flat\_order (or Sales\_order` om du har Commerce 2.0 eller senare)
+## `sales\_flat\_order (or Sales\_order` om du har [!DNL Adobe Commerce 2.x]
 
 När kontot har skapats är `Sammy Customer` är redo att börja göra ett köp. På webbplatsen lägger kunden till två par av `Throwback Bellbottoms` och en `V-Neck T-Shirt` till varukorgen. Kunden är nöjd med valen och övergår till kassan och skickar ordern, vilket skapar följande post på [plan ordertabell för försäljning](../data-warehouse-mgr/sales-flat-order-table.md):
 
@@ -73,7 +73,9 @@ När kontot har skapats är `Sammy Customer` är redo att börja göra ett köp.
    * De två paren&quot;Throwback Bellbottoms&quot; och&quot;V-Neck T-Shirt&quot; kostar totalt 94,85 dollar
 * `created_at` - Den här kolumnen returnerar tidsstämpeln för när varje order skapades
 
-## `sales\_flat\_order\_item ( or Sales\_order\_item` om du har Commerce 2.0 eller senare)
+## `sales\_flat\_order\_item ( or Sales\_order\_item`
+
+(om du har Commerce 2.0 eller senare)
 
 Förutom den enstaka raden på `Sales\_flat\_order` tabell, när `Sammy Customer` skickar ordern, en rad för varje unik artikel i den ordningen infogas i [`sales\_flat\_order\_item` table](../data-warehouse-mgr/sales-flat-order-item-table.md):
 

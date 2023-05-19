@@ -2,7 +2,7 @@
 title: Dela instrumentpaneler
 description: Lär dig hur du arbetar med och delar dina instrumentpaneler.
 exl-id: 73df627f-bc08-45c0-aa5e-410c4fd0642d
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 0%
@@ -11,13 +11,13 @@ ht-degree: 0%
 
 # Dela en instrumentpanel
 
-När du delar kontrollpaneler har du och ditt team samma information när som helst, vilket möjliggör samarbete och diskussion. Här är några rekommendationer för att dela instrumentpaneler och behålla dina [!DNL MBI] kontot är olöst.
+När du delar kontrollpaneler har du och ditt team samma information när som helst, vilket möjliggör samarbete och diskussion. Här är några rekommendationer för att dela instrumentpaneler och behålla dina [!DNL Adobe Commerce Intelligence] kontot är olöst.
 
 ## Undvik dubbletter av instrumentpaneler
 
 Ibland kan du hitta flera instrumentpaneler med samma namn - det beror vanligtvis på att andra användare har skapat och delat liknande instrumentpaneler med dig. Dessa instrumentpaneler kan vara dubbletter av en primär kopia. I det här fallet rekommenderar Adobe att du låter en användare dela den primära kopian av kontrollpanelen och sedan ta bort alla dubblettinstrumentpaneler.
 
-Om du vill se vem som äger en kontrollpanel klickar du på kontrollpanelens listruta högst upp till vänster. Alla instrumentpaneler som inte har något namn nedanför dem tillhör dig.
+Om du vill se vem som äger en kontrollpanel klickar du på kontrollpanelens listruta i det övre vänstra hörnet. Alla instrumentpaneler som inte har något namn nedanför dem tillhör dig.
 
 ![](../../mbi/assets/Dash_ownership.gif)
 

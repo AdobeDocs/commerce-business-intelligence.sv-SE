@@ -2,7 +2,7 @@
 title: Kohort Report Builder
 description: Lär dig mer om analysen av användargrupper som delar liknande egenskaper under sina livscykler.
 exl-id: d80c5389-7256-40e0-86e0-49903113f93d
-source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '1556'
 ht-degree: 0%
@@ -11,19 +11,19 @@ ht-degree: 0%
 
 # Kohort Report Builder
 
-Har du någonsin velat studera hur olika delar av dina användare beter sig över tiden? Har du till exempel undrat om användare som registrerar sig under en kampanjperiod har en högre genomsnittlig livstidsintäkt än de som inte gör det? Om svaret är `Yes`och sedan `Cohort Report Builder` är det perfekta verktyget för dig. [!DNL MBI] är optimerad för att utföra den här analysen och göra den relevant för ditt företag.
+Har du någonsin velat studera hur olika delar av dina användare beter sig över tiden? Har du till exempel undrat om användare som registrerar sig under en kampanjperiod har en högre genomsnittlig livstidsintäkt än de som inte gör det? Om svaret är `Yes`och sedan `Cohort Report Builder` är det perfekta verktyget för dig. [!DNL Adobe Commerce Intelligence] är optimerad för att utföra den här analysen och göra den relevant för ditt företag.
 
 ## Vad är kohortanalys? {#what}
 
 `Cohort` analys kan definieras brett som en analys av användargrupper som delar liknande egenskaper under sina livscykler. Det gör att du kan identifiera beteendetrender för olika användargrupper.
 
-För en mer detaljerad introduktion på `cohort` analys, [här](https://www.cohortanalysis.com/).
+För en grundlig introduktion på `cohort` analys, granskning [den här sidan](https://www.cohortanalysis.com/).
 
-I [!DNL MBI] kontrollpanel, är det enkelt att skapa användare `cohorts` baserat på en `cohort` datum och ett mått i ditt konto.
+I [!DNL Commerce Intelligence] kontrollpanel, är det enkelt att skapa användare `cohorts` baserat på en `cohort` datum och ett mått i ditt konto.
 
 ## Varför är kohortanalys viktigt? {#important}
 
-Som nämnts ovan `cohort` Med hjälp av analys kan du identifiera beteendetrender mellan olika användargrupper. Med en god förståelse för hur vissa grupper beter sig kan ni skräddarsy era beslut och utgifter för att maximera försäljningen. Exempel: en livstidsintäkt `cohort` analys - även om den här typen av analys är fördelaktig av många skäl är den omedelbara en bättre kundvärvningsbeslut.
+Som nämnts ovan `cohort` Med hjälp av analys kan du identifiera beteendetrender mellan olika användargrupper. Med en god förståelse för hur vissa grupper beter sig kan ni skräddarsy era beslut och utgifter för att maximera försäljningen. Ta till exempel en intäkt för livstid `cohort` analys - även om den här typen av analys är fördelaktig av många skäl är den omedelbara en bättre kundvärvningsbeslut.
 
 ## Hur skapar jag en egen `cohort` analys?
 
@@ -99,7 +99,7 @@ Här är ett exempel på hur du kan samla ihop allt. I det här exemplet vill ja
 
 #### Äldre arkitektur {#personalinfo}
 
-Nedan finns instruktioner som är specifika för den äldre versionen av `Cohort Report Builder`. Om du är intresserad av att använda den nya versionen finns mer information i [Ny arkitektur](../../administrator/account-management/new-architecture.md) för mer information om migrering till en [!DNL MBI] Nytt arkitekturkonto.
+Nedan finns instruktioner som är specifika för den äldre versionen av `Cohort Report Builder`. Om du är intresserad av att använda den nya versionen finns mer information i [Ny arkitektur](../../administrator/account-management/new-architecture.md) för mer information om migrering till en [!DNL Commerce Intelligence] Nytt arkitekturkonto.
 
 #### Hur skapar jag en egen `cohort` analys? {#create}
 
@@ -107,7 +107,7 @@ Nedan finns instruktioner som är specifika för den äldre versionen av `Cohort
 
 `Cohort` analys in action! Här kan du se hur intäkterna ökar med tiden på kumulativ basis och per användare.
 
-I det här avsnittet får du hjälp med att skapa egna `cohort` analys. Exempel (och animerad GIF som demonstrerar processen) finns i [Exempel](#examples) i den här artikeln.
+I det här avsnittet får du hjälp med att skapa egna `cohort` analys. Exempel (och animerad GIF som demonstrerar processen) finns i [Exempel](#examples) i detta ämne.
 
 1. Klicka **[!UICONTROL Report Builder]** på den vänstra fliken eller **[!UICONTROL Add Report** > **Create Report]** i en kontrollpanel.
 

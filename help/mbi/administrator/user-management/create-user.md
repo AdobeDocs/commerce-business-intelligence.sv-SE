@@ -1,15 +1,15 @@
 ---
-title: Lägg till/redigera en ny användare
-description: Lär dig hur du lägger till en ny [!DNL MBI] användare och hur du uppdaterar ditt användarnamn eller lösenord.
+title: Lägg till en ny Adobe Commerce Intelligence-användare
+description: Lär dig hur du lägger till en ny [!DNL Commerce Intelligence] användare och hur du uppdaterar ditt användarnamn eller lösenord.
 exl-id: 6b846e3d-fce0-4145-b298-9a9c57e6bd26
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '243'
+source-wordcount: '237'
 ht-degree: 0%
 
 ---
 
-# Lägg till en användare
+# Lägg till en ny [!DNL Adobe Commercer Intelligence] användare
 
 1. Klicka på företagets namn i det övre högra hörnet och välj **[!UICONTROL Invite User]** i listrutan.
 1. Ange användarens namn och e-postadress.
@@ -30,12 +30,12 @@ Den nya användaren får ett e-postmeddelande med inloggnings- och lösenordsinf
 
 ## Uppdatera din e-postadress eller ditt lösenord
 
-Du kan uppdatera din e-postadress och/eller ditt lösenord genom att klicka på företagsnamnet i det övre högra hörnet och sedan klicka på Klicka **[!UICONTROL Edit Profile]**.
+Du kan uppdatera din e-postadress och/eller ditt lösenord genom att klicka på företagsnamnet i det övre högra hörnet och sedan klicka på **[!UICONTROL Edit Profile]**.
 
 ## Skicka inbjudan igen
 
-Om du behöver skicka om inbjudan till den nya användaren går du till [inloggningssida](https://dashboard.rjmetrics.com/v2/session/create), klicka **[!UICONTROL Forgot?]**, ange den nya användarens e-postadress och klicka på **[!UICONTROL Reset Password]**. Detta skickar inbjudan igen och låter användaren logga in.
+Om du behöver skicka om inbjudan går du till [inloggningssida](https://dashboard.rjmetrics.com/v2/session/create), klicka **[!UICONTROL Forgot?]**, ange den nya användarens e-postadress och klicka på **[!UICONTROL Reset Password]**. Detta skickar inbjudan igen och låter användaren logga in.
 
 >[!IMPORTANT]
 >
->Varje konto har ett avtalat antal licenser, eller licenser. Om du når gränsen eller vill veta mer, [skicka en supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+>Varje konto har ett avtalat antal licenser, eller licenser. Om du når gränsen eller vill veta mer, [skicka en supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

@@ -1,8 +1,8 @@
 ---
 title: Förväntade stripe-data
-description: Utforska de viktigaste datatabeller som du kan importera från Stripe till [!DNL MBI].
+description: Utforska huvuddatatabellerna som du kan importera från Stripe till Commerce Intelligence.
 exl-id: 694577b2-48f9-4376-850d-acae1776afe3
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Efter [du har anslutit din [!DNL Stripe] konto](../integrations/stripe.md)kan du använda [data warehouse Manager](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) för att enkelt spåra relevanta datafält för analys.
 
-I den här artikeln utforskas huvuddatatabellerna som du kan importera från [!DNL Stripe] till [!DNL MBI]. När installationen är klar skapas följande tabeller i Data warehouse. Klicka på länkarna i kolumnen Tabellnamn om du vill veta mer om attributen i varje tabell.
+I det här avsnittet beskrivs de huvuddatatabeller som du kan importera från [!DNL Stripe] till [!DNL Commerce Intelligence]. När installationen är klar skapas följande tabeller i Data warehouse. Klicka på länkarna i kolumnen Tabellnamn om du vill veta mer om attributen i varje tabell.
 
 | **Tabellnamn** | **Beskrivning** |
 |-----|-----|
@@ -34,4 +34,4 @@ I den här artikeln utforskas huvuddatatabellerna som du kan importera från [!D
 ## Relaterat:
 
 * [Ansluter [!DNL Stripe]](../integrations/stripe.md)
-* [Återautentisera integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
+* [Återautentisera integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

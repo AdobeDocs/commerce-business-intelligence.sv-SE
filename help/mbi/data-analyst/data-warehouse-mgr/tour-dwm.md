@@ -2,9 +2,9 @@
 title: data warehouse Manager
 description: Lär dig hur du hanterar tabell- och kolumnsynkroniseringsinställningar, fördjupar dig i ett tabellschema och skapar beräknade kolumner som kan användas i rapporter.
 exl-id: b9577919-0db0-47f1-a426-1abe48443ac0
-source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
+source-git-commit: c4094e780f83255846520d18f4d0806b1dd9a9ef
 workflow-type: tm+mt
-source-wordcount: '1246'
+source-wordcount: '1240'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 0%
 >
 >Kräver [Administratörsbehörigheter](../../administrator/user-management/user-management.md)
 
-Data warehouse Manager som du kommer åt genom att klicka **[!UICONTROL Manage Data > Data Warehouse]** i sidlisten är portalen till [!DNL MBI] data warehouse. Med hjälp av Data warehouse Manager kan du hantera tabell- och kolumnsynkroniseringsinställningar, gå nedåt i en tabells schema och skapa beräknade kolumner som kan användas i rapporter.
+Data warehouse Manager som du kommer åt genom att klicka **[!UICONTROL Manage Data > Data Warehouse]**, är portalen för [!DNL Adobe Commerce Intelligence] data warehouse. Med hjälp av Data warehouse Manager kan du hantera tabell- och kolumnsynkroniseringsinställningar, gå nedåt i en tabells schema och skapa beräknade kolumner som kan användas i rapporter.
 
-Denna artikel omfattar
+Det här ämnet handlar om:
 
 * [Lära dig vägen runt](#learning)
 * [Synkronisera tabeller och kolumner](#syncing)
@@ -39,7 +39,7 @@ The `Synced Tables` visar alla tabeller som redan har lagts till i Data warehous
 Visa inte tabellen som du letar efter i `All Tables` lista? Det finns några möjliga orsaker till detta:
 
 * Datakällan har inte lagts till än
-* Datakällan är en databas och [!DNL MBI] användare som du har skapat saknar åtkomst. I så fall måste du eller databasadministratören bevilja åtkomst.
+* Datakällan är en databas och [!DNL Commerce Intelligence] användare som du har skapat saknar åtkomst. I så fall måste du eller databasadministratören bevilja åtkomst.
 * Datakällan eller tabellen har nyligen lagts till och har inte synkroniserats än
 
 ## Synkronisera tabeller och kolumner {#syncing}
@@ -61,7 +61,7 @@ Med Data warehouse Manager kan du inte bara visa och hantera datakällor, du kan
    Om du synkroniserar en tabell som kommer direkt från databasen är det möjligt att `Primary Keys` får inte betecknas. I så fall kontaktar du databasadministratören och begär att en eller flera primärnycklar läggs till i tabellen.
 1. När du är klar klickar du på ![knapp](../../assets/button.png) -knappen.
 
-A *Klart!* visas och statusen ändras till `Pending` för de markerade kolumnerna. När nästa fullständiga uppdatering är klar kommer de nya synkroniserade tabellerna och kolumnerna att vara tillgängliga för användning i rapporter. du kan också ange nya [replikeringsmetoder](./cfg-replication-methods.md) efter den inledande synkroniseringen.
+A *Klart!* visas meddelandet och statusen ändras till `Pending` för de markerade kolumnerna. När nästa fullständiga uppdatering är klar är de nya synkroniserade tabellerna och kolumnerna tillgängliga för användning i rapporter. Du kan också ange nya [replikeringsmetoder](./cfg-replication-methods.md) efter den inledande synkroniseringen.
 
 Här är en kort titt på hela processen:
 
@@ -119,6 +119,6 @@ När du är redo att använda dina nya kolumner i rapporter, [du måste lägga t
 
 ## Radbrytning
 
-Den här självstudiekursen innehöll mycket material. Vid det här laget bör du ha en god förståelse för vad en databas är, hur data är ordnade, hur tabeller relaterar till varandra och vad du kan göra med Data warehouse Manager.
+Den här artikeln omfattade mycket material. Vid det här laget bör du ha en god förståelse för vad en databas är, hur data är ordnade, hur tabeller relaterar till varandra och vad du kan göra med Data warehouse Manager.
 
-Underbar! Testa dina nya kunskaper genom att [skapa en beräknad kolumn](../data-warehouse-mgr/creating-calculated-columns.md) eller [skapa intressanta rapporter](../../tutorials/using-visual-report-builder.md).
+Testa dina kunskaper med [skapa en beräknad kolumn](../data-warehouse-mgr/creating-calculated-columns.md) eller [skapa intressanta rapporter](../../tutorials/using-visual-report-builder.md).

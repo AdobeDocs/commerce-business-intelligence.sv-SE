@@ -2,9 +2,9 @@
 title: customer_entity, tabell
 description: Lär dig hur du får åtkomst till poster för alla registrerade konton.
 exl-id: 24bf0e66-eea0-45ea-8ce6-4ff99b678201
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
-source-wordcount: '601'
+source-wordcount: '604'
 ht-degree: 0%
 
 ---
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 The `customer_entity` tabellen innehåller poster för alla registrerade konton. Ett konto anses vara registrerat om de registrerar sig för ett konto, oavsett om de genomför ett köp eller inte. Varje rad motsvarar ett unikt registrerat konto, vilket framgår av kontots `entity_id`.
 
-Det här registret innehåller inga poster med kunder som gör en beställning via gästutcheckning. Om din butik godkänner utcheckning av gäster, [läs hur du konto](../data-warehouse-mgr/guest-orders.md) för dessa kunder.
+Det här registret innehåller inga poster med kunder som gör en beställning via gästutcheckning. Om din butik godkänner utcheckning av gäster finns mer information i [så här för att hantera gästorder](../data-warehouse-mgr/guest-orders.md) för beställningarna.
 
 ## Vanliga kolumner
 
 | **Kolumnnamn** | **Beskrivning** |
 |---|---|
-| `created_at` | Tidsstämpel som motsvarar kontots registreringsdatum, lagras lokalt i UTC. Beroende på din konfiguration i [!DNL MBI]kan den här tidsstämpeln konverteras till en rapporttidszon i [!DNL MBI] som skiljer sig från databasens tidszon |
+| `created_at` | Tidsstämpel som motsvarar kontots registreringsdatum, lagras lokalt i UTC. Beroende på din konfiguration i [!DNL Commerce Intelligence]kan den här tidsstämpeln konverteras till en rapporttidszon i [!DNL Commerce Intelligence] som skiljer sig från databasens tidszon |
 | `email` | E-postadress som är associerad med kontot |
 | `entity_id` (PK) | Unik identifierare för tabellen och används ofta i kopplingar till `customer_id` i andra tabeller i instansen |
 | `group_id` | Sekundärnyckel som är associerad med `customer_group` tabell. Gå med i `customer_group.customer_group_id` för att fastställa kundgruppen som är associerad med det registrerade kontot |

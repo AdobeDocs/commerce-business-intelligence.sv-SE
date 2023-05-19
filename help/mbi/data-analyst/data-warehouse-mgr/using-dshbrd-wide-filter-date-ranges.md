@@ -2,16 +2,16 @@
 title: Instrumentpanelsövergripande filtrering
 description: Lär dig göra massredigeringar av alla rapporter på en specifik kontrollpanel.
 exl-id: 379d0027-8a7a-4062-a66a-4f06c37b806c
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '459'
 ht-degree: 0%
 
 ---
 
 # Instrumentpanelsövergripande filtrering
 
-Med filtrering på hela kontrollpanelen kan du göra massredigeringar av alla rapporter på en specifik kontrollpanel. Du kan snabbt visa samma analys över olika tidsperioder eller för olika butiker. Du kan enkelt jämföra prestanda för ett föregående år, en månad eller en vecka per butik. Dessutom kan ni uppdatera en hel kontrollpanel för att passa en ny kampanj.
+Med filtrering på hela kontrollpanelen kan du göra massredigeringar av alla rapporter på en specifik kontrollpanel. Du kan snabbt visa samma analys över olika tidsperioder eller för olika butiker. Du kan enkelt jämföra prestanda för ett föregående år, en månad eller en vecka per butik. Du kan uppdatera en hel instrumentpanel för att passa en nyligen lanserad kampanj.
 
 ## Datumfilter
 
@@ -45,7 +45,7 @@ Om du vill analysera hur en viss butik fungerar klickar du på butiksikonen i de
 
 >[!NOTE]
 >
->Ett arkivfilter är aktiverat eller inaktiverat för en hel [!DNL MBI] konto. Om en kontrollpanel innehåller rapporter som inte påverkas av filtret (t.ex. rapporter som inte baseras på Commerce data()), uppdateras inte dessa rapporter när arkivfiltret används. Du kan [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) om du anser att en rapport ska uppdateras baserat på val av butik eller om du tror att ditt kontoarkivfilter har inaktiverats av misstag.
+>Ett arkivfilter är aktiverat eller inaktiverat för en hel [!DNL Commerce Intelligence] konto. Om en kontrollpanel innehåller rapporter som inte påverkas av filtret (t.ex. rapporter som inte bygger på några [!DNL Adobe Commerce] data) uppdateras inte dessa rapporter när arkivfiltret används. Du kan [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) om du anser att en rapport ska uppdateras baserat på val av butik eller om du tror att ditt kontoarkivfilter har inaktiverats av misstag.
 
 När du väljer en butik på `Store Filter`behåller filtret markeringen när du navigerar mellan kontrollpaneler. Om du behåller markeringen kan du visa data för den valda butiken överallt tills du väljer `All Stores`.
 

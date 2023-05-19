@@ -1,25 +1,25 @@
 ---
-title: Avlasta [!DNL MBI] Konto
-description: Lär dig hur du rensar upp dina [!DNL MBI] konto.
+title: Avlasta [!DNL Commerce Intelligence] Konto
+description: Lär dig hur du rensar upp dina [!DNL Commerce Intelligence] konto.
 exl-id: 5fcdac2d-41ca-4011-b646-a699d9ecc6e4
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
 workflow-type: tm+mt
-source-wordcount: '878'
+source-wordcount: '869'
 ht-degree: 0%
 
 ---
 
-# Rensa [!DNL MBI] Konto
+# Rensa [!DNL Adobe Commerce Intelligence] Konto
 
-Om du har varit med [!DNL MBI] i sex månader eller sex år är det avgörande för att ni ska få ut det mesta av plattformen att ha ett välbekväm konto. Med tiden är det naturligt att det finns användare, kontrollpaneler, rapporter, mätvärden och kolumner som inte längre behövs. Du kanske skapade en rapport för engångsbruk och glömde den eller en användare som lämnade företaget hade aldrig inaktiverat sitt konto.
+Om du har varit med [!DNL Commerce Intelligence] i sex månader eller sex år är det avgörande för att ni ska få ut det mesta av plattformen att ha ett välbekväm konto. Med tiden är det naturligt att det finns användare, kontrollpaneler, rapporter, mätvärden och kolumner som inte längre behövs. Du kanske skapade en rapport för engångsbruk och glömde den eller en användare som lämnade företaget hade aldrig inaktiverat sitt konto.
 
-Med [standardiserad, tydlig namngivning för alla element](../best-practices/naming-elements.md)) [!DNL MBI] kontots granskningssteg nedan hjälper dig att minska trassel och onödiga analyser för dina användare. Ytterligare en förmån innefattar [snabbare uppdateringscykler](../best-practices/reduce-update-cycle-time.md).
+Med [standardiserad, tydlig namngivning för alla element](../best-practices/naming-elements.md)) [!DNL Commerce Intelligence] kontots granskningssteg nedan hjälper dig att minska trassel och onödiga analyser för dina användare. Ytterligare en förmån innefattar [snabbare uppdateringscykler](../best-practices/reduce-update-cycle-time.md).
 
-## Steg 1: Identifiera era icke-aktiva användare
+## Steg 1: Identifiera icke-aktiva användare
 
-Det första steget i att rensa ditt konto är att inaktivera konton för dina icke-aktiva användare, till exempel personer som har lämnat företaget eller inte längre använder [!DNL MBI] i sina nuvarande roller.
+Det första steget i att rensa ditt konto är att inaktivera konton för dina icke-aktiva användare, till exempel personer som har lämnat företaget eller inte längre använder [!DNL Commerce Intelligence] i sina nuvarande roller.
 
-Du kan göra detta genom att klicka på företagets namn i det övre högra hörnet av navigeringsfältet och sedan välja **[!UICONTROL Manage Users]**. Välj sedan den användare som du vill inaktivera och klicka på **[!UICONTROL Deactivate User]**.
+Det gör du genom att klicka på företagets namn i det övre högra navigeringsfältet och sedan välja **[!UICONTROL Manage Users]**. Välj sedan den användare som du vill inaktivera och klicka på **[!UICONTROL Deactivate User]**.
 
 >[!NOTE]
 >
@@ -27,7 +27,7 @@ Du kan göra detta genom att klicka på företagets namn i det övre högra hör
 
 >[!WARNING]
 >
->När du inaktiverar en användare tas diagram, instrumentpaneler och andra resurser som skapats av användaren bort. Om du vill bevara dessa resurser kontaktar du [!DNL MBI] [support](../guide-overview.md) innan användaren inaktiveras. Support kan hjälpa dig att överföra dessa resurser till en annan användare.
+>När du inaktiverar en användare tas diagram, instrumentpaneler och andra resurser som skapats av användaren bort. Om du vill bevara dessa resurser kontaktar du [!DNL Commerce Intelligence] [support](../guide-overview.md#Submitting-a-Support-Ticket) innan användaren inaktiveras. Support kan hjälpa dig att överföra dessa resurser till en annan användare.
 
 ### Återaktivera en användare
 
@@ -89,7 +89,7 @@ När du har rensat bort användarlistan, kontrollpanelerna och rapporterna kan d
 1. Om du vill generera en lista med beroende rapporter för ett mätresultat går du till **[!DNL Manage Data]** och sedan klicka på **[!UICONTROL Metrics]**.
 1. Klicka **[!UICONTROL Edit]** bredvid ett mätresultat.
 1. Längst ned på sidan visas ett avsnitt som kallas **[!UICONTROL Dependent Charts]**. Klicka på länken om du vill generera en lista med beroende rapporter för det här måttet.
-1. När systemet har slutfört kontrollen [!DNL MBI] visar en lista med instrumentpaneler, rapporter och användare som använder det här måttet.
+1. När systemet har slutfört kontrollen [!DNL Commerce Intelligence] visar en lista med instrumentpaneler, rapporter och användare som använder det här måttet.
 
 ![](../../mbi/assets/report_dependecies.png)
 
@@ -99,7 +99,7 @@ Om du bestämmer dig för att måttet inte längre behövs går du tillbaka till
 
 Det sista steget är att utvärdera de kolumner som synkroniseras i Data warehouse. Det går inte bara att avsynkronisera kolumner så att ditt konto rensas, det kan också minska uppdateringstiden.
 
-Om du vill fortsätta med detta, kontakta [!DNL MBI] [Support](../guide-overview.md). Supportteamet kan skapa en rapport som innehåller alla kolumner som inte används i någon kontrollpanel för någon användare och som inte används i e-postsammanfattningar, exklusive SQL-rapporter. Du kan sedan använda den här rapporten som vägledning när du markerar kolumner som ska avsynkroniseras via Data warehouse Manager.
+Om du vill fortsätta med detta, kontakta [!DNL Commerce Intelligence] [Support](../guide-overview.md#Submitting-a-Support-Ticket). Supportteamet kan skapa en rapport som innehåller alla kolumner som inte används i någon kontrollpanel för någon användare och som inte används i e-postsammanfattningar, exklusive SQL-rapporter. Du kan sedan använda den här rapporten som vägledning när du markerar kolumner som ska avsynkroniseras via Data warehouse Manager.
 
 >[!NOTE]
 >
@@ -122,4 +122,4 @@ Här är en titt på hela processen:
 
 ## Radbrytning
 
-Så ja! Dina [!DNL MBI] kontot ska nu vara mer tidsinställt och enklare att navigera i för dig och ditt team.
+Dina [!DNL Commerce Intelligence] kontot ska nu vara mer tidsinställt och enklare att navigera i för dig och ditt team.

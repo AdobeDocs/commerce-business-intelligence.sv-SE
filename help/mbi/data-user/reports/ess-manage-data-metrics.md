@@ -2,9 +2,9 @@
 title: Skapa mätvärden
 description: Lär dig hur du använder statistik för att skapa diagram.
 exl-id: d4c25546-3c51-4d32-b9d8-c424ec103be5
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '612'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 0%
 >
 >Kräver [Administratörsbehörigheter](../../administrator/user-management/user-management.md).
 
-Med andra ord, ett mått är ett mått. I SQL- och databasstrukturer fungerar ett mått som en lagrad fråga över en variabelperiod.
+Ett mätvärde är ett mått. I SQL- och databasstrukturer fungerar ett mått som en lagrad fråga över en variabelperiod.
 
-I [!DNL MBI]kan du använda mätvärden för att [skapa diagram](../../data-user/reports/ess-rpt-build-visual.md). Exempelvis måttet `revenue` är det totala antalet order. Måttet `average customer revenue per order` är vad den genomsnittliga kunden spenderar per order.
+I [!DNL Commerce Intelligence]kan du använda mätvärden för att [skapa diagram](../../data-user/reports/ess-rpt-build-visual.md). Exempelvis måttet `revenue` är det totala antalet order. Måttet `average customer revenue per order` är vad den genomsnittliga kunden spenderar per order.
 
 När de används i rapporter kan mätvärden analyseras över en angiven tidsperiod och [filtrerad eller segmenterad](../../best-practices/segment-filter.md) efter olika kategorier. Överväg att analysera genomsnittliga kundintäkter grupperade efter kön - i det här fallet `average customer revenue per order` är mätvärdet och kön är grupperingen.
 
@@ -68,7 +68,7 @@ The `Filter Logic` är där du kan definiera hur ett mätresultat ska fungera.
 
 The [`Dimensions`](../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) I avsnittet visas alla tillgängliga datadimensioner för filtrering eller gruppering. Som standard listas alla tillgängliga datakolumner som dimensioner. Om du vill segmentera dina intäkter utifrån hänvisningskälla kan du göra det här.
 
-Förutom att ange alla tillgängliga datakolumner som dimensioner, [!DNL MBI] gissar på vilka kolumner som kan grupperas. *Segmentera eller gruppera data i rapporter*, kolumner måste markeras som grupperbara.
+Förutom att ange alla tillgängliga datakolumner som dimensioner, [!DNL Commerce Intelligence] gissar på vilka kolumner som kan grupperas. *Segmentera eller gruppera data i rapporter*, kolumner måste markeras som grupperbara.
 
 ## Slutför {#finish}
 

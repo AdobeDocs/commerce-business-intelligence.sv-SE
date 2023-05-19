@@ -2,16 +2,16 @@
 title: Beräknad kolumn för sekventiell jämförelse
 description: Lär dig syftet med och användningsområdena för kolumnen Beräknad sekventiell jämförelse.
 exl-id: 625062b4-f05d-42aa-94c3-729b39c7d728
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
-source-wordcount: '401'
-ht-degree: 1%
+source-wordcount: '397'
+ht-degree: 2%
 
 ---
 
 # Beräknad kolumn för sekventiell jämförelse
 
-I det här avsnittet beskrivs syftet med och användningsområdena för `Sequential Comparison` beräknad kolumn tillgänglig i **[!DNL Manage Data > Data Warehouse]** sida. Nedan visas en förklaring av vad det gör, följt av ett exempel, och hur det går till att skapa det.
+I det här avsnittet beskrivs syftet med och användningsområdena för `Sequential Comparison` beräknad kolumn tillgänglig i **[!DNL Manage Data > Data Warehouse]** sida. Nedan visas en förklaring av vad det gör, följt av ett exempel och hur det går till att skapa det.
 
 **Förklaring**
 
@@ -39,17 +39,25 @@ För den här beräknade kolumntypen har raden som motsvarar ägarens första h�
 
 Skapa en **Händelsenummer** kolumn:
 
-1. Navigera till **[!DNL Manage Data** > **Data Warehouse]** sida.
+1. Navigera till **[!DNL Manage Data > Data Warehouse]** sida.
+
 1. Navigera till tabellen som du vill skapa den här kolumnen för.
-1. Klicka **[!UICONTROL Create New Column]** längst upp till höger på skärmen.
+
+1. Klicka **[!UICONTROL Create New Column]** i det övre högra hörnet.
+
 1. Välj `Same Table` som `Definition Type` (om kolumnerna som du vill jämföra inte finns i samma tabell kan du behöva flytta dem).
+
 1. Välj `SEQUENTIAL_COMPARISON` som `Column Definition Equation`.
+
 1. Välj indata enligt ovan:
    - `Event Owner`
    - `Event Date`
    - `Value to Compare`
-1. Du kan också lägga till filter för att utesluta rader från övervägandet. De uteslutna raderna har ett NULL-värde för den här kolumnen.
+
+1. Du kan också lägga till filter för att utesluta rader från övervägandet. De uteslutna raderna har en `NULL` värdet för den här kolumnen.
+
 1. Ange ett namn för kolumnen högst upp på sidan och klicka på **[!UICONTROL Save]**.
+
 1. Kolumnen är tillgänglig att använda *omedelbart*.
 
 ![SEK](../../assets/SEC_new.png)

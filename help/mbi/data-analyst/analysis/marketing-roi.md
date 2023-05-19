@@ -2,9 +2,9 @@
 title: Marknadsföringsavkastning
 description: Lär dig hur du konfigurerar en kontrollpanel som spårar din kanalanalys, inklusive avkastning på investering i aggregat och per kampanj.
 exl-id: 5de83998-e6cf-478d-bb6a-7a3dc77c2c0c
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '540'
 ht-degree: 0%
 
 ---
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Den här artikeln innehåller instruktioner för klienter som använder den ursprungliga arkitekturen och den nya arkitekturen. Du är på [ny arkitektur](../../administrator/account-management/new-architecture.md) om du har delen &quot;Vyer i Data warehouse&quot; tillgänglig efter att du har valt &quot;Hantera data&quot; i huvudverktygsfältet.
+>Det här avsnittet innehåller instruktioner för klienter som använder den ursprungliga arkitekturen och den nya arkitekturen. Du är på [ny arkitektur](../../administrator/account-management/new-architecture.md) om du har delen &quot;Vyer i Data warehouse&quot; tillgänglig efter att du har valt &quot;Hantera data&quot; i huvudverktygsfältet.
 
-Om ni spenderar pengar på onlinereklam vill ni följa upp er avkastning på dessa utgifter och fatta datadrivna beslut om ytterligare investeringar. Den här artikeln visar hur du konfigurerar en kontrollpanel som spårar din kanalanalys, inklusive avkastning på investering i aggregat och per kampanj.
+Om ni spenderar pengar på onlinereklam vill ni följa upp er avkastning på dessa utgifter och fatta datadrivna beslut om ytterligare investeringar. I det här avsnittet visas hur du konfigurerar en kontrollpanel som spårar din kanalanalys, inklusive avkastning på investering i aggregat och per kampanj.
 
 ![](../../assets/Marketing_dashboard_example.png)
 
@@ -23,7 +23,7 @@ Innan du börjar vill du ansluta [!DNL [Facebook Ads]](../importing-data/integra
 
 ## Konsoliderade tabeller
 
-**Ursprunglig arkitektur:** För att samla dina utgifter från olika källor (som [!DNL Facebook Ads] eller [!DNL Google Adwords]), Adobe rekommenderar att du skapar en **konsoliderad tabell** av alla era annonskostnader. Du behöver en analytiker som slutför det här steget åt dig. Om du inte har gjort det, [arkivera en supportförfrågan](../../guide-overview.md) med motivet `[MARKETING ROI ANALYSIS]`och en analytiker skapar tabellen.
+**Ursprunglig arkitektur:** för att samla era utgifter från olika källor, som [!DNL Facebook Ads] eller [!DNL Google Adwords], Adobe rekommenderar att du skapar en **konsoliderad tabell** av alla era annonskostnader. Du behöver en analytiker som slutför det här steget åt dig. Om du inte har gjort det, [arkivera en supportförfrågan](../../guide-overview.md#Submitting-a-Support-Ticket) med motivet `[MARKETING ROI ANALYSIS]`och en analytiker skapar tabellen.
 
 **Ny arkitektur:** Du kan följa exemplet i [det här analysbiblioteket](../../data-analyst/data-warehouse-mgr/create-dw-views.md) ämne. Konsoliderade tabeller kallas nu Data warehouse-vyer för den nya arkitekturen.
 
@@ -32,11 +32,7 @@ Innan du börjar vill du ansluta [!DNL [Facebook Ads]](../importing-data/integra
 Kolumner att skapa
 
 * **`Consolidated Digital Ad Spend`** table
-* **`Campaign name`** skapas av en analytiker som en del av **[AVKASTNING PÅ MARKNADSFÖRING]** biljett
-
->[!NOTE]
->
->Se ovan för nya skillnader i arkitektur.
+* **`Campaign name`** har skapats av en Adobe-analytiker som en del av **[AVKASTNING PÅ MARKNADSFÖRING]** biljett
 
 **Ursprungliga och nya arkitekturer:**
 
@@ -63,7 +59,6 @@ Kolumner att skapa
       * Välj en [!UICONTROL table]: `ecommerce####`
       * Välj en [!UICONTROL column]: `source`
       * [!UICONTROL Path]: sales_flat_order.increment_id = ecommerance###.transactionId ^
-
 
 
 
@@ -295,7 +290,7 @@ Kolumner att skapa
 
    [!UICONTROL Chart Type]: `Table`
 
-Om du stöter på några frågor när du skapar den här analysen eller bara vill engagera Professional Services-teamet, [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Om du stöter på några frågor när du skapar den här analysen eller bara vill engagera Professional Services-teamet, [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ### Relaterad
 

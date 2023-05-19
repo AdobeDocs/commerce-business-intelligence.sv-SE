@@ -2,30 +2,30 @@
 title: Analys av senaste, frekvenser, monetära tillgångar (RFM)
 description: Lär dig hur du skapar en kontrollpanel där du kan segmentera kunderna utifrån deras senaste, frekventa och monetära rankningar.
 exl-id: 8f0f08fd-710b-4810-9faf-3d0c3cc0a25d
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '527'
 ht-degree: 0%
 
 ---
 
 # RFM-analys
 
-I den här artikeln beskrivs hur du skapar en instrumentpanel där du kan segmentera kunderna utifrån deras senaste, frekventa och monetära rankningar. RFM-analys är en marknadsföringsteknik som tar hänsyn till kundbeteenden för att hjälpa er att bestämma segmentering för utåtriktad marknadsföring. Den omfattar tre aspekter:
+I det här avsnittet beskrivs hur du skapar en instrumentpanel där du kan segmentera kunderna utifrån deras senaste, frekventa och monetära rankningar. RFM-analys är en marknadsföringsteknik som tar hänsyn till kundbeteenden för att hjälpa er att bestämma segmentering för utåtriktad marknadsföring. Den omfattar tre aspekter:
 
-* Hur nyligen en kund har köpt från din butik
-* Hur ofta de köper från dig
-* Pengar in hur mycket kunden spenderar
+1. Hur nyligen en kund har köpt från din butik
+1. Hur ofta de köper från dig
+1. Pengar in hur mycket kunden spenderar
 
 ![](../../assets/blobid0.png)
 
-RFM-analysen kan bara konfigureras om du har [!DNL MBI] Pro-plan för den nya arkitekturen (om du till exempel har alternativet &quot;Vyer i Data warehouse&quot; på menyn &quot;Hantera data&quot;). Dessa kolumner kan skapas från sidan Hantera data > Data warehouse. Detaljerade instruktioner finns nedan.
+RFM-analysen kan bara konfigureras om du har [!DNL Adobe Commerce Intelligence] Pro-plan för den nya arkitekturen (om du till exempel har `Data Warehouse Views` alternativ under `Manage Data` meny). Dessa kolumner kan skapas från **[!DNL Manage Data > Data Warehouse]** sida. Detaljerade instruktioner finns nedan.
 
 ## Komma igång
 
 Du måste först överföra en fil som bara innehåller en primärnyckel med värdet 1. Detta gör att du kan skapa vissa nödvändiga beräknade kolumner för analysen.
 
-Du kan använda den här [hjälpcenterartikel](../importing-data/connecting-data/using-file-uploader.md) och bilden nedan för att formatera filen.
+Du kan använda den här [artikel](../importing-data/connecting-data/using-file-uploader.md) och bilden nedan för att formatera filen.
 
 ## Beräknade kolumner
 
@@ -174,13 +174,15 @@ Kolumner att skapa
 
 >[!NOTE]
 >
->De percentiler som används är till och med delar av kunderna (till exempel 20 % för att returnera 1-5). Om du har ett anpassat sätt att väga dessa kan du meddela analytikern när du skickar in biljetten.
+>De percentiler som används är till och med delar av kunderna (till exempel 20 procent för att returnera 1-5). Om du har ett anpassat sätt att väga dessa kan du meddela analytikern när du skickar in biljetten.
 
 ## Mått
 
 Inga nya mätvärden!
 
-**Anteckning**: Se till att [lägga till alla nya kolumner som dimensioner till mått](../data-warehouse-mgr/manage-data-dimensions-metrics.md) innan du skapar nya rapporter.
+>[!NOTE]
+>
+>Se till att [lägga till alla nya kolumner som dimensioner till mått](../data-warehouse-mgr/manage-data-dimensions-metrics.md) innan du skapar nya rapporter.
 
 ## Rapporter
 

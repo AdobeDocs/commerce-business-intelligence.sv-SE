@@ -2,16 +2,16 @@
 title: Dataverifiering i blandpanelen
 description: Lär dig hur du bekräftar att du har synkroniserat alla data som är tillgängliga för dig direkt i Mixpanel.
 exl-id: d18ce954-26fe-4440-ad8b-4f266c007b2f
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
 workflow-type: tm+mt
-source-wordcount: '113'
+source-wordcount: '112'
 ht-degree: 0%
 
 ---
 
-# Dataverifiering i `Mixpanel`
+# Dataverifiering i [!DNL Mixpanel]
 
-När [!DNL MBI] först ansluter till [!DNL Mixpanel] data kan din kontohanterare eller analytiker begära att du exporterar data från Mixpanel i valideringssyfte. På så sätt kan du bekräfta att du har synkroniserat alla data som är tillgängliga direkt i [!DNL Mixpanel].
+När [!DNL Adobe Commerce Intelligence] först ansluter till [!DNL Mixpanel] data kan din kontohanterare eller analytiker begära att du exporterar data från [!DNL Mixpanel] för valideringsändamål. På så sätt kan du bekräfta att du har synkroniserat alla data som är tillgängliga direkt i [!DNL Mixpanel].
 
 ## Dataexportprocess: `Events`
 

@@ -2,7 +2,7 @@
 title: Speciella filteroperatorer
 description: Lär dig mer om några specialoperatorer som används i filter när du skapar en rapport eller ett mätresultat.
 exl-id: 12837490-b9ca-4040-bb71-8988b5dde485
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Filteralternativ
 
-Den här artikeln utforskar några speciella `operators` används i `filters` när [skapa en rapport](../../tutorials/using-visual-report-builder.md){: target=&quot;_blank&quot;} eller [skapa ett mått](../../data-user/reports/ess-manage-data-metrics.md){: target=&quot;_blank&quot;}.
+Det här avsnittet utforskar några speciella `operators` används i `filters` när [skapa en rapport](../../tutorials/using-visual-report-builder.md){: target=&quot;_blank&quot;} eller [skapa ett mått](../../data-user/reports/ess-manage-data-metrics.md){: target=&quot;_blank&quot;}.
 
 ## `Filter Operators`
 

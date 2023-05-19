@@ -2,9 +2,9 @@
 title: Hantera instrumentpaneler
 description: Lär dig hur du hanterar användarbehörigheter för kontrollpaneler som du äger, tar bort kontrollpaneler som du inte längre behöver och anger en standardkontrollpanel.
 exl-id: 32c21093-2a7d-4d8e-afc0-19bd702f9b36
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '274'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 >
 >Kräver [Administratörsbehörigheter](../../administrator/user-management/user-management.md).
 
-I **[!DNL Manage Data** > **Dashboards]** kan du hantera användarbehörigheter för kontrollpaneler som du äger, ta bort kontrollpaneler som du inte längre behöver och ange en standardkontrollpanel. I den här artikeln:
+I **[!DNL Manage Data** > **Dashboards]** kan du hantera användarbehörigheter för kontrollpaneler som du äger, ta bort kontrollpaneler som du inte längre behöver och ange en standardkontrollpanel. Det här ämnet handlar om:
 
 1. [Byta namn på instrumentpaneler](#rename)
 
@@ -35,7 +35,7 @@ Så här byter du namn på en kontrollpanel:
 
 ## Hantera användarbehörigheter {#userperm}
 
-Det finns tre åtkomstnivåer i [!DNL MBI] för kontrollpaneler - `View`, `Edit`och `None`.
+Det finns tre åtkomstnivåer i [!DNL Commerce Intelligence] för kontrollpaneler - `View`, `Edit`och `None`.
 
 * `View` låter utvalda användare visa kontrollpanelen men inte redigera den. Användarna kan också ändra storlek på diagram, exportera data och kopiera diagram till sina egna kontrollpaneler med funktionen Spara som om de har behörighet som Standard eller Admin.
 

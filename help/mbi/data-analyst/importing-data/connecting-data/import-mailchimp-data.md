@@ -1,21 +1,21 @@
 ---
 title: Importera MailChimp-data
-description: Lär dig importera MailChimp-data till [!DNL MBI].
+description: Lär dig importera MailChimp-data till [!DNL Commerce Intelligence].
 exl-id: 5595c6a6-5476-4a0e-a493-ddc32161894e
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '263'
 ht-degree: 0%
 
 ---
 
-# Importera `MailChimp` data
+# Importera [!DNL Mailchimp] data
 
-Om du vill få en heltäckande bild av dina kampanjsatsningar kan du importera `MailChimp` mejla kampanjdata till [!DNL MBI]. För att slutföra importen måste du göra följande för varje `MailChimp` kampanj du har:
+Om du vill få en heltäckande bild av dina kampanjsatsningar kan du importera [!DNL Mailchimp] mejla kampanjdata till [!DNL Commerce Intelligence]. För att slutföra importen måste du göra följande för varje [!DNL Mailchimp] kampanj du har:
 
 ## Exportera Öppnar data {#opens}
 
-1. Efter inloggning `MailChimp`, går till `Campaigns` -fliken.
+1. Efter inloggning [!DNL Mailchimp], går till `Campaigns` -fliken.
 
    ![importera mailchimp 1](../../../assets/import-mailchimp-1.png)
 
@@ -41,7 +41,7 @@ Om du vill få en heltäckande bild av dina kampanjsatsningar kan du importera `
 
    ![importera mailchimp 5](../../../assets/import-mailchimp-5.png)
 
-1. Klicka ANTINGEN på siffran under `Total Clicks` ELLER `Unique Clicks` kolumn.
+1. Klicka på siffran under `Total Clicks` ELLER `Unique Clicks` kolumn.
 
    ![importera mailchimp 6](../../../assets/import-mailchimp-6.png)
 
@@ -55,7 +55,7 @@ Om du vill få en heltäckande bild av dina kampanjsatsningar kan du importera `
 
 ## Exportera skickade data {#sent}
 
-1. Gå in på `Campaigns` fliken MailChimp.
+1. Gå in på `Campaigns` flik för [!DNL Mailchimp].
 
 1. Klicka **[!UICONTROL View Report]** bredvid kampanjnamnet.
 
@@ -69,8 +69,8 @@ Om du vill få en heltäckande bild av dina kampanjsatsningar kan du importera `
 
    ![importera mailchimp 9](../../../assets/import-mailchimp-9.png)
 
-## Förbered filer för överföring till [!DNL MBI] {#upload}
+## Förbered filer för överföring till [!DNL Commerce Intelligence] {#upload}
 
-Varje fil - `Opens`, `Clicks`och `Sent` - ska överföras till [!DNL MBI] som en separat fil. Adobe rekommenderar att du namnger filerna med följande namnkonvention: `MailChimp\_ACTION\_DATE`. Ersätt `ACTION` med `Open`, `Click`, eller `Sent`och ersätta `DATE` med exportdatum.
+Varje fil - `Opens`, `Clicks`och `Sent` - ska överföras till [!DNL Commerce Intelligence] som en separat fil. Adobe rekommenderar att du namnger filerna med följande namnkonvention: `MailChimp\_ACTION\_DATE`. Ersätt `ACTION` med `Open`, `Click`, eller `Sent`och ersätta `DATE` med exportdatum.
 
 När du är klar att överföra filerna använder du [`File Upload` funktion](../connecting-data/using-file-uploader.md) för att få in data i Data warehouse.

@@ -2,9 +2,9 @@
 title: Skapa och använda Data warehouse-vyer
 description: Lär dig mer om hur du skapar nya lagrade tabeller genom att ändra en befintlig tabell eller genom att sammanfoga eller konsolidera flera tabeller med hjälp av SQL.
 exl-id: 5aa571c9-7f38-462c-8f1b-76a826c9dc55
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '1064'
+source-wordcount: '1071'
 ht-degree: 9%
 
 ---
@@ -36,6 +36,7 @@ Här kan du skapa en vy genom att följa exempelinstruktionerna nedan:
 1. Om du observerar en befintlig vy klickar du **[!UICONTROL New Data Warehouse View]** om du vill öppna ett tomt frågefönster. Om ett tomt frågefönster redan är öppet fortsätter du till nästa steg.
 1. Ge vyn ett namn genom att skriva i `View Name` fält. Det namn som anges här anger visningsnamnet för vyn i Data warehouse. `View names` begränsas till gemena bokstäver, siffror och understreck (_). Alla andra tecken tillåts inte.
 1. Ange frågan i fönstret `Select Query`, med vanlig PostgreSQL-syntax.
+
    >[!NOTE]
    >
    >Frågan måste referera till specifika kolumnnamn. Användning av `*`får inte användas för att markera alla kolumner.
@@ -76,7 +77,7 @@ Titta närmare på ett av de exempel som nämns ovan i den här artikeln: konsol
 | 4 | aaa | 110 | 2017-06-08 00:00:00 | 6000 | 10 |
 | 5 | ccc | 5 | 2017-07-06 00:00:00 | 300 | 1.2 |
 
-Så här skapar du en annonsutgivartabell som innehåller båda [!DNL Facebook] och [!DNL AdWords] -kampanjer måste du skriva en SQL-fråga och använda `UNION ALL` funktion. A `UNION ALL` -satsen används oftast för att kombinera flera olika SQL-frågor samtidigt som resultatet av varje fråga läggs till i ett enda utdata.
+Så här skapar du en annonsutgivartabell som innehåller båda [!DNL Facebook] och [!DNL Google AdWords] -kampanjer måste du skriva en SQL-fråga och använda `UNION ALL` funktion. A `UNION ALL` -satsen används oftast för att kombinera flera olika SQL-frågor samtidigt som resultatet av varje fråga läggs till i ett enda utdata.
 
 Det finns några krav på `UNION` programsats som är värd att omnämnas enligt PostgreSQL [dokumentation](https://www.postgresql.org/docs/8.3/queries-union.html):
 
@@ -129,13 +130,13 @@ Spara frågan ovan som en `Data Warehouse View` skapar en tabell med båda [!DNL
 | **5** | [!DNL Facebook] | 2017-07-06 00:00:00 | ccc | 1.2 | 300 | 5 |
 | **5** | [!DNL Google AdWords] | 2017-07-10 00:00:00 | fff | 28.5 | 10200 | 280 |
 
-I stället för att skapa en separat uppsättning marknadsföringsstatistik för varje annonskälla kan ni nu skapa en enda uppsättning mätvärden med tabellen ovan för att fånga upp alla era annonser.
+I stället för att skapa en separat uppsättning marknadsföringsstatistik för varje annonskälla kan ni skapa en enda uppsättning mätvärden med tabellen ovan för att fånga upp alla era annonser.
 
 **Behöver du mer hjälp?**
 
-Skriver SQL och skapar `Data Warehouse Views` ingår inte i teknisk support. Men Services-teamet erbjuder hjälp med att skapa vyer. Allt från att migrera en äldre databas med en ny databas till att skapa en enda Data warehouse-vy för en specifik analys kan supportteamet hjälpa till.
+Skriver SQL och skapar `Data Warehouse Views` ingår inte i teknisk support. Men [Tjänstteam](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) ger hjälp med att skapa vyer. Allt från att migrera en äldre databas med en ny databas till att skapa en enda Data warehouse-vy för en specifik analys kan supportteamet hjälpa till.
 
-Oftast skapas en ny `Data Warehouse View` för konsolidering av 2-3 likartat strukturerade tabeller krävs fem timmars tid för tjänsterna, vilket innebär ungefär 1 250 dollar i arbete. Nedan anges dock några vanliga faktorer som kan öka den förväntade investeringen:
+Oftast skapas en ny `Data Warehouse View` för konsolidering av 2-3 likartat strukturerade tabeller krävs fem timmars tjänstetid, vilket innebär ungefär 1 250 dollar i arbete. Nedan anges dock några vanliga faktorer som kan öka den förväntade investeringen:
 
 * Konsolidering av mer än tre tabeller i en enda vy
 * Skapa mer än en vy i Data warehouse

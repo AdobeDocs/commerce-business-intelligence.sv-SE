@@ -2,18 +2,18 @@
 title: Skapa filteruppsättningar för mätvärden
 description: Lär dig hur du skapar sparade filteruppsättningar och använder dem på mätvärdena.
 exl-id: 6ef8b67c-bebd-45eb-bca7-95832ec34fc8
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '276'
+source-wordcount: '274'
 ht-degree: 0%
 
 ---
 
 # Skapa filteruppsättningar
 
-Om du har flera mätvärden i [!DNL MBI] som måste filtreras på ett liknande sätt (t.ex. filtrera bort testorder) kan du skapa sparade filteruppsättningar och använda dem för mätvärdena. Detta sparar tid eftersom du inte behöver lägga till enskilda filter när du skapar eller redigerar ett mätresultat.
+Om du har flera mätvärden i [!DNL Commerce Intelligence] som måste filtreras på ett liknande sätt (t.ex. filtrera bort testorder) kan du skapa sparade filteruppsättningar och använda dem för mätvärdena. Detta sparar tid eftersom du inte behöver lägga till enskilda filter när du skapar eller redigerar ett mätresultat.
 
-Se [utbildningsvideo](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-filter-sets.html?lang=en) om du vill veta mer.
+Se [utbildningsvideo](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-filter-sets.html) för mer information.
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ Se [utbildningsvideo](https://experienceleague.adobe.com/docs/commerce-knowledge
 
 1. Kontrollera filterlogiken och att parenteser och operatorer är korrekt placerade: till exempel `\[A\] AND \[B\]; (\[A\] OR \[B\]) AND \[C\]`.
 
-   Ett felaktigt filter orsakar ofta avvikelser i data mellan [!DNL MBI] rapporter och förväntade resultat.
+   Ett felaktigt filter orsakar ofta avvikelser i data mellan [!DNL Commerce Intelligence] rapporter och förväntade resultat.
 
 1. Spara `Filter Set`.
 
@@ -45,7 +45,7 @@ När en filteruppsättning har sparats kan du använda den på alla mätvärden 
 
 >[!NOTE]
 >
->`Filter Sets` kan även användas på beräknade kolumner i [!DNL MBI]. Du kan begära att en filteruppsättning används för en datamängd som skapats i [!DNL MBI] genom att kontakta supporten.
+>`Filter Sets` kan även användas på beräknade kolumner i [!DNL Commerce Intelligence]. Du kan begära att en filteruppsättning används för en datamängd som skapats i [!DNL Commerce Intelligence] genom att kontakta supporten.
 
 ## Relaterad
 

@@ -2,16 +2,16 @@
 title: Analyserar kupongpåverkan
 description: Lär dig hur du analyserar kupongpåverkan på kundvärvning och kundunderhåll.
 exl-id: b0619365-fa75-49b5-a393-87f3364a390f
-source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '1361'
+source-wordcount: '1359'
 ht-degree: 2%
 
 ---
 
 # Kupongpåverkan
 
-Analysera hur kunderna använder era kuponger för att få goda insikter om ert företag. Analysera hur ni förvärvar och behåller kunder via kuponger. I den här artikeln behandlas analyser som kan hjälpa dig att besvara följande typer av frågor:
+Analysera hur kunderna använder era kuponger för att få goda insikter om ert företag. Analysera hur ni förvärvar och behåller kunder via kuponger. I det här avsnittet behandlas analyser som kan hjälpa dig att besvara följande typer av frågor:
 
 * Hur många kunder köper du via kuponger?
 * Är det mer sannolikt att kupongförvärvade kunder gör återkommande inköp än kunder som inte har köpt via kuponger?
@@ -69,7 +69,7 @@ Antalet upprepade order för icke-kupongförvärv är mycket högre än kupongf�
 
 På samma sätt är antalet upprepade order som görs med en kupong högre för icke-kupongförvärv.
 
-## #Percent of repeat orders with coupon
+## Procent upprepade order med kupong
 
 Icke-kupongförvärvade kunder har en mycket lägre andel upprepade order med en kupong än kupongförvärvade kunder. För kupongförvärvade kunder tillämpas alltså nästan hälften av alla upprepade order på en kupong. I det här exemplet brukar kupongköpare göra upprepade inköp med kuponger.
 
@@ -149,4 +149,4 @@ Det största antalet kunder förvärvades genom kupongen&quot;20 % rabatt&quot;.
 
 ## Radbrytning {#wrapup}
 
-Det finns en mängd analyser som ni kan skapa för att bättre förstå hur kunderna använder kuponger. Har du någonsin funderat på att analysera hur era kunder använder era kuponger eller hur lång tid det tar för kuponger att användas? Vad sägs om att hitta det optimala rabattbeloppet - vilket belopp uppmuntrar fler köpare att köpa, högre genomsnittligt ordervärde och högre intäkter under hela löptiden? Om du behöver hjälp med den här typen av frågor kan du [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Det finns en mängd analyser som ni kan skapa för att bättre förstå hur kunderna använder kuponger. Har du någonsin funderat på att analysera hur era kunder använder era kuponger eller hur lång tid det tar för kuponger att användas? Vad sägs om att hitta det optimala rabattbeloppet - vilket belopp uppmuntrar fler köpare att köpa, högre genomsnittligt ordervärde och högre intäkter under hela löptiden? Om du behöver hjälp med den här typen av frågor kan du [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

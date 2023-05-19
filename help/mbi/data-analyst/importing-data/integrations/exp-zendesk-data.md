@@ -1,19 +1,19 @@
 ---
 title: Förväntade Zendesk-data
-description: Lär dig de viktigaste datatabellerna som du kan importera från Zendesk till MBI, inklusive länkar till ytterligare dokumentation om Zendesk-data.
+description: Lär dig de viktigaste datatabellerna som du kan importera från Zendesk till Commerce Intelligence, inklusive länkar till ytterligare dokumentation om Zendesk-data.
 exl-id: 838d8d13-e2e1-44c2-a416-f1792200ee6f
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: '434'
 ht-degree: 0%
 
 ---
 
-# Förväntade Zendesk-data
+# Förväntat [!DNL Zendesk] data
 
 Efter [du har anslutit din [!DNL Zendesk] konto](../integrations/zendesk.md)kan du använda [data warehouse Manager](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) för att enkelt spåra relevanta datafält för analys.
 
-I den här artikeln utforskas huvuddatatabellerna som du kan importera från [!DNL Zendesk] till [!DNL MBI], inklusive länkar till ytterligare dokumentation om [!DNL Zendesk] data.
+I det här avsnittet beskrivs de huvuddatatabeller som du kan importera från [!DNL Zendesk] till [!DNL Adobe Commerce Intelligence], inklusive länkar till ytterligare dokumentation om [!DNL Zendesk] data.
 
 | Tabellnamn | Beskrivning |
 |-----|-----|
@@ -33,4 +33,4 @@ I den här artikeln utforskas huvuddatatabellerna som du kan importera från [!D
 ## Relaterad
 
 * [Ansluter Zendesk](../integrations/zendesk.md)
-* [Återautentisera integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
+* [Återautentisera integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

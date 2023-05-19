@@ -2,9 +2,9 @@
 title: Skapa eller ta bort banor för beräknade kolumner
 description: Lär dig hur du definierar en sökväg som beskriver hur tabellen du skapar en kolumn i är relaterad till tabellen som du hämtar information från.
 exl-id: 734a8046-8058-4f03-93a2-8d59b9be6d2d
-source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '1016'
+source-wordcount: '1019'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ När [skapa beräknade kolumner](../data-warehouse-mgr/creating-calculated-colum
 1. Hur tabellerna i databaserna relaterar till varandra
 1. Primära och utländska nycklar som definierar relationen
 
-Om du känner till den här informationen kan du enkelt skapa en sökväg enligt instruktionerna i den här artikeln. En översikt över dessa koncept om du känner dig lite osäker, men du kanske vill fråga en teknisk expert i din organisation eller kontakta supportteamet på Adobe.
+Om du känner till den här informationen kan du enkelt skapa en sökväg enligt instruktionerna i det här avsnittet. Du kan fråga en teknisk expert i din organisation eller kontakta [Professional Services Team](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ## Uppdaterar tabellrelationer och nyckeltyper {#refresher}
 
@@ -57,7 +57,7 @@ Använd relationen mellan **kunder** och **order** för att visa hur man gör. N
 Nu kan du skapa banan.
 
 1. Klicka **[!UICONTROL Data > Data Warehouse]**.
-1. Klicka i tabelllistan på den tabell som du vill skapa kolumnen i. I det här exemplet är det `customers` tabell.
+1. Klicka på den tabell i vilken du vill skapa kolumnen i tabelllistan. I det här exemplet är det `customers` tabell.
 1. Tabellschemat visas. Klicka **[!UICONTROL Create New Column]**.
 1. Ge kolumnen ett namn, till exempel `Customer's orders`.
 1. Markera kolumndefinitionen. Kolla in [Beräknad kolumnstödlinje](../data-warehouse-mgr/creating-calculated-columns.md) för ett praktiskt kalkylblad.
@@ -75,20 +75,23 @@ Nu kan du skapa banan.
 
 ### Begränsningar för att skapa banor {#limits}
 
-* **[!DNL MBI]kan inte gissa relationer för primär-/sekundärnyckel**. Du vill inte infoga felaktiga data i ditt konto, så du måste skapa sökvägar manuellt.
-* **För närvarande kan sökvägar bara anges mellan två olika tabeller**. Innebär logiken du försöker återskapa fler än två tabeller? Det kan sedan vara bra att (1) förena kolumnerna med en mellanliggande tabell först, sedan med den&quot;slutliga destinationstabellen&quot; eller (2) rådfråga Adobe-teamet för att hitta det bästa sättet att uppnå era mål.
+* **[!DNL Commerce Intelligence]kan inte gissa relationer för primär-/sekundärnyckel**. Du vill inte infoga felaktiga data i ditt konto, så du måste skapa sökvägar manuellt.
+
+* **För närvarande kan sökvägar bara anges mellan två olika tabeller**. Innebär logiken du försöker återskapa fler än två tabeller? Det kan sedan vara bra att (1) koppla kolumnerna till en mellanliggande tabell först, sedan till tabellen&quot;Slutdestination&quot; eller (2) läsa med [Professional Services Team](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) för att hitta det bästa sättet att se på era mål.
+
 * **En kolumn kan bara vara sekundärnyckelreferens för en bana åt gången**. Om `order_items.order_id` pekar på `orders.id`sedan `order_items.order_id` kan inte peka på något annat.
+
 * **`Many-to-many`banor kan tekniskt sett skapas, men ofta skapas felaktiga data eftersom ingen sida är sann `one-to-many` sekundärnyckel**. Det bästa sättet att närma sig dessa banor beror alltid på den önskade analysen. Kontakta RJ:s analysteam för att hitta den bästa lösningen.
 
 Om du inte kan skapa en beräknad kolumn på grund av en eller flera av begränsningarna ovan kontaktar du supporten med en beskrivning av kolumnen som du är
 
 ## Ta bort en beräknad kolumnsökväg {#delete}
 
-Har du skapat en felaktig sökväg i Data warehouse? Eller kanske du ska göra lite vårrengöring och vill städa upp? Om du behöver ta bort en sökväg från ditt konto kan du [skicka över en biljett till Adobe supportanalytiker](../../guide-overview.md). **Var noga med att ta med namnet på sökvägen!**
+Har du skapat en felaktig sökväg i Data warehouse? Eller kanske du ska göra lite vårrengöring och vill städa upp? Om du behöver ta bort en sökväg från ditt konto kan du [skicka över en biljett till Adobe supportanalytiker](../../guide-overview.md#Submitting-a-Support-Ticket). **Var noga med att ta med namnet på sökvägen!**
 
 ## Radbrytning {#wrapup}
 
-Nu när du är bekväm med att skapa banor för beräknade kolumner i Data warehouse. Om du fortfarande är osäker på en viss bana kan du alltid klicka **[!UICONTROL Support]** i [!DNL MBI] för att få hjälp.
+Nu när du är bekväm med att skapa banor för beräknade kolumner i Data warehouse. Om du fortfarande är osäker på en viss bana kan du alltid klicka **[!UICONTROL Support]** i [!DNL Commerce Intelligence] för att få hjälp.
 
 ## Relaterad
 

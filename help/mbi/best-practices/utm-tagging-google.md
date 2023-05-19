@@ -2,16 +2,16 @@
 title: UTM-spårning i Google Analytics
 description: Läs mer om de effektivaste strategierna för UTM-spårning (taggning) i Google Analytics.
 exl-id: 70bfd855-3b3f-469b-99bc-deb8251904b7
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 8d4e71363edad0613cc0ab277c2a43aad000965e
 workflow-type: tm+mt
-source-wordcount: '453'
+source-wordcount: '454'
 ht-degree: 0%
 
 ---
 
 # UTM-spårning
 
-`UTM` tracking är en märkordskonvention för URL:er som gör att du kan analysera varifrån användarna kommer. Om du tittar på de URL:er du klickar på i de flesta marknadsföringsannonser eller banners visas UTM-taggning. Det är de långa länkarna som slutar med saker som `utm\_source` och `utm\_medium`.
+`UTM` tracking är en taggningskonvention för URL:er som gör att du kan analysera varifrån användarna kommer. Om du tittar på de URL:er du klickar på i de flesta marknadsföringsannonser eller banners visas UTM-taggning. Det är de långa länkarna som slutar med saker som `utm\_source` och `utm\_medium`.
 
 [!DNL Google Analytics] använder `UTM` taggning för att ta reda på var trafiken kommer ifrån. En del av den här informationen kommer från [HTTP-referens](https://en.wikipedia.org/wiki/HTTP_referer) men resten måste du ge dig själv `UTM` parametrar. När du ser `google adwords` eller `email marketing`betyder det `UTM` parametrar som spelas in från den ursprungliga länkklickningen och sedan lagras i användarens cookies. Därifrån [!DNL Google Analytics] använder dessa data för [attributintressanta beteenden](../data-analyst/analysis/google-track-user-acq.md) på din webbplats. Genom att förstå vad de här parametrarna är till för får du en förståelse för hur du bäst konfigurerar och använder UTM-taggning.
 

@@ -2,7 +2,7 @@
 title: Konsolidera dina tabeller
 description: Lär dig hur du konsoliderar tabeller och databaser.
 exl-id: 6065bed3-fb84-4147-a223-92dc3e1b15a5
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
 workflow-type: tm+mt
 source-wordcount: '469'
 ht-degree: 0%
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 # Konsolidera dina tabeller
 
-Om du har flera butiker eller flera marknader kan liknande databaser lagras separat. I [!DNL MBI]är det enkelt att sammanfoga liknande tabeller från olika databaser.
+Om du har flera butiker eller flera marknader kan liknande databaser lagras separat. I [!DNL Adobe Commerce Intelligence]är det enkelt att sammanfoga liknande tabeller från olika databaser.
 
-Du kan till exempel ha en `orders` tabell för `Market A`och liknande `orders` tabell för `Market B`. [!DNL MBI] kan konsolidera båda tabellerna och göra det möjligt för dig att titta på sammanställda orderdata från båda `Market A` och `B`, förutom att segmentera den efter en viss marknad.
+Du kan till exempel ha en `orders` tabell för `Market A`och liknande `orders` tabell för `Market B`. [!DNL Commerce Intelligence] kan konsolidera båda tabellerna och göra det möjligt för dig att titta på sammanställda orderdata från båda `Market A` och `B`, förutom att segmentera den efter en viss marknad.
 
 Indatatabeller måste vara **liknande strukturerad**. Alla indatatabeller måste alltså innehålla de datakolumner som krävs i den konsoliderade tabellen.
 
@@ -43,8 +43,8 @@ Precis som med alla andra tabeller i Data warehouse kan du lägga till ytterliga
 
 ## Skapa, visa eller uppdatera en konsoliderad tabell
 
-Om du vill lägga till en konsoliderad tabell i Data warehouse kontaktar du [!DNL MBI] [support](../guide-overview.md).
+Om du vill lägga till en konsoliderad tabell i Data warehouse kontaktar du [!DNL Commerce Intelligence] [support](../guide-overview.md#Submitting-a-Support-Ticket).
 
 >[!NOTE]
 >
->Eftersom konsoliderade tabeller inte kan visas i `Data Warehouse Manager`kan du bara visa och uppdatera de här tabellerna genom att [!DNL MBI] support.
+>Eftersom konsoliderade tabeller inte kan visas i `Data Warehouse Manager`kan du bara visa och uppdatera de här tabellerna genom att [!DNL Commerce Intelligence] support.

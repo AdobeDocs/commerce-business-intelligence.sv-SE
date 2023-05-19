@@ -2,16 +2,16 @@
 title: Avancerade beräknade kolumntyper
 description: Lär dig grunderna för de flesta användningsfall för kolumner - men du kanske vill ha en beräknad kolumn som är lite mer komplex än vad Data warehouse Manager kan skapa.
 exl-id: 9871fa19-95b3-46e4-ae2d-bd7c524d12db
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '900'
+source-wordcount: '898'
 ht-degree: 4%
 
 ---
 
 # Avancerade beräknade kolumntyper
 
-Många analyser du kan försöka skapa är bland annat en **ny kolumn** som du vill `group by` eller `filter by`. The [Skapar beräknade kolumner](../data-warehouse-mgr/creating-calculated-columns.md) I självstudiekursen beskrivs grunderna för de flesta användningsfall, men du kanske vill ha en beräknad kolumn som är lite mer komplex än vad Data warehouse Manager kan skapa.
+Många analyser du kan vilja skapa innehåller en **ny kolumn** som du vill `group by` eller `filter by`. The [Skapar beräknade kolumner](../data-warehouse-mgr/creating-calculated-columns.md) I självstudiekursen beskrivs grunderna för de flesta användningsfall, men du kanske vill ha en beräknad kolumn som är lite mer komplex än vad Data warehouse Manager kan skapa.
 {: #top}
 
 Den här typen av kolumner kan skapas av analytikernas Adobe-team i Data warehouse. Ange följande information om du vill definiera en ny beräknad kolumn:
@@ -159,7 +159,7 @@ Om du vill skapa den här typen av beräknad kolumn måste du känna till:
 
 Oroa dig inte. Bara för att det inte finns med här betyder det inte att det inte är möjligt. Adobe-teamet hos Data warehouse Analysts kan hjälpa till.
 
-Om du vill definiera en ny beräknad kolumn [skicka en supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) med information om exakt vad du vill bygga.
+Om du vill definiera en ny beräknad kolumn [skicka en supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) med information om exakt vad du vill bygga.
 
 ## Relaterad dokumentation
 

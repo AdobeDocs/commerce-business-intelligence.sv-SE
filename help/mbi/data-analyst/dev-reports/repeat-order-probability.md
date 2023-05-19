@@ -2,7 +2,7 @@
 title: Sannolikhetsrapport för upprepade order
 description: Lär dig mer och förstå rapporten om sannolikhet för upprepad order.
 exl-id: 2c88b85a-7320-44ca-87a5-5b91250348ea
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 ## När är `Incremental Event Probability` tillgängliga perspektiv?
 
-The `incremental event probability` perspektiv är bara tillgängligt när filter använder dimensioner som är lika för alla order (till exempel användarens `gender`, användarens `age` eller användarens `source`)
+The `incremental event probability` perspektiv är bara tillgängligt när filter använder dimensioner som är lika för alla order (till exempel användarens `gender`, användarens `age` eller användarens `source`).
 
 Detta beror på att perspektivet bygger på en dimension som kallas `User's order number` för segmentering, som numrerar en användares inköp (t.ex. Johns första, andra och tredje order).
 
@@ -23,7 +23,7 @@ Om du har lagt till ett filter som använder en dimension som inte är lika för
 
 I vissa fall kan du kanske ändra `order-specific` dimension till en `user-specific` dimension som ska läggas till som filter i `Repeat Order Probability` diagram. I dessa fall returnerar du attributet order för en användares första order eller senaste order (t.ex. användarens namn för första orderområde).
 
-Om du vill skapa en sådan ny dimension [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Om du vill skapa en sådan ny dimension [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ## Jämföra upprepningssannolikhet för order med olika attribut
 
@@ -33,7 +33,7 @@ Siffrorna som utgör ett sådant diagram kan sedan exporteras till excel för at
 
 ### Exempel:
 
-|  |  |
+| Kategori | Värde |
 |---|---|
 | Antal kunder som gjort ett köp under sin livstid | `90` |
 | Antal kunder som gjort två inköp under sin livstid | `30` |

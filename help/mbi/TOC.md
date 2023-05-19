@@ -1,24 +1,24 @@
 ---
-title: MBI
-description: Lär dig använda [!DNL MBI] funktioner för Adobe Commerce.
-breadcrumb-title: Användarhandbok för MBI
-source-git-commit: be09d288755ea32eddf62b1eaf26ce586017320f
+title: Commerce Intelligence
+description: Lär dig använda [!DNL Commerce Intelligence] funktioner för Adobe Commerce.
+breadcrumb-title: Användarhandbok för Commerce Intelligence
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '680'
 ht-degree: 0%
 
 ---
 
 
-# [!DNL MBI] Användarhandbok {#mbi}
+# [!DNL Commerce Intelligence] Användarhandbok {#mbi}
 
-- [[!DNL MBI] Översikt över användarhandboken](guide-overview.md)
-- [[!DNL MBI] Introduktion](getting-started/getting-started.md)
+- [[!DNL Commerce Intelligence] Användarhandbok](guide-overview.md)
+- [[!DNL Commerce Intelligence] Introduktion](getting-started/getting-started.md)
 - Komma igång {#start}
    - [Onboarding](getting-started/onboarding.md)
-   - [Aktivera [!DNL MBI] Konto](getting-started/onpremise-activation.md)
-   - [Logga in på [!DNL MBI] Konto](getting-started/sign-in.md)
-   - [MBI Essentials jämfört med MBI Pro](getting-started/essentials-vs-pro.md)
+   - [Aktivera [!DNL Commerce Intelligence] Konto](getting-started/onpremise-activation.md)
+   - [Logga in på [!DNL Commerce Intelligence] Konto](getting-started/sign-in.md)
+   - [Commerce Intelligence Essentials vs Commerce Intelligence Pro](getting-started/essentials-vs-pro.md)
 - Administratör {#administrator}
    - Kontohantering {#acct-mgmt}
       - [Fördelar med [!DNL New Architecture]](../mbi/administrator/account-management/new-architecture.md)
@@ -53,7 +53,7 @@ ht-degree: 0%
       - [[!DNL MongoDB] datamodelleringsguide](data-analyst/data-warehouse-mgr/mongodb-data-modeling.md)
       - [Replikerar [!DNL Google Analytics] kanaler](data-analyst/data-warehouse-mgr/rep-google-analytics-channels.md)
       - [Standardisera data med mappningstabeller](data-analyst/data-warehouse-mgr/stndrd-data-map-tables.md)
-      - [Översätta SQL-frågor till [!DNL MBI] rapporter](data-analyst/dev-reports/sql-queries-reports.md)
+      - [Översätta SQL-frågor till [!DNL Commerce Intelligence] rapporter](data-analyst/dev-reports/sql-queries-reports.md)
       - [Förstå och utvärdera tabellrelationer](data-analyst/data-warehouse-mgr/table-relationships.md)
       - [Använda beräkningsdatumdifferensen](data-analyst/data-warehouse-mgr/using-date-diff-calc-column-.md)
       - [Använda omfattande filtrering på instrumentpanelen](data-analyst/data-warehouse-mgr/using-dshbrd-wide-filter-date-ranges.md)
@@ -74,7 +74,7 @@ ht-degree: 0%
       - [Skapa en kvalitativ kohortanalys](data-analyst/dev-reports/create-qual-cohort-analysis.md)
       - [Utforska speciella filteroperatorer](data-analyst/dev-reports/explr-special-filter-ops.md)
       - [Exportera resultatet av min fråga](data-analyst/dev-reports/export-query-results.md)
-      - [Använda formler i [!DNL Report Builder]](../mbi/data-analyst/dev-reports/formulas-in-rpt-bldr.md)
+      - [Använda formler i [Report Builder]](../mbi/data-analyst/dev-reports/formulas-in-rpt-bldr.md)
       - [Skapa [!DNL Google Analytics] diagram](data-analyst/dev-reports/google-analytics-charts-regex.md)
       - [Betydelsen av [!DNL Lifetime Revenue Cohort Analysis]](data-analyst/dev-reports/lifetime-rev-cohort-analysis.md)
       - [Ordna data med [!DNL Show Top/Bottom] funktion](data-analyst/dev-reports/order-data-top-bottom-feat.md)
@@ -129,8 +129,8 @@ ht-degree: 0%
    - Databasintegreringar {#integration}
       - [Ansluter [!DNL Amazon RDS]](data-analyst/importing-data/integrations/amazon-rds.md)
       - [Ansluta databaser via VPN](data-analyst/importing-data/integrations/databases-via-a-vpn.md)
-      - [Anslut dina [!DNL MySQL Database] till [!DNL MBI]](data-analyst/importing-data/integrations/db-to-mbi.md)
-      - [Kopplar handel](data-analyst/importing-data/integrations/magento.md)
+      - [Anslut dina [!DNL MySQL Database] till [!DNL Commerce Intelligence]](data-analyst/importing-data/integrations/db-to-mbi.md)
+      - [Ansluta Adobe Commerce](data-analyst/importing-data/integrations/magento.md)
       - [Förväntade handelsdata](data-analyst/importing-data/integrations/magento-data.md)
       - [Ansluter [!DNL Microsoft SQL Server]](data-analyst/importing-data/integrations/microsoft-sql-server.md)
       - [Ansluter [!DNL MongoDB] via [!DNL SSH Tunnel]](data-analyst/importing-data/integrations/mongodb-via-ssh-tunnel.md)
@@ -221,11 +221,11 @@ ht-degree: 0%
       - [Ändra databasen så att den stöder inkrementell replikering](best-practices/mod-db-inc-replication.md)
       - [Optimera databasen för analys](best-practices/opt-db-analysis.md)
       - [Optimera dina [!DNL SQL] Frågor](best-practices/optimizing-your-sql-queries.md)
-      - [Förstå [!DNL MBI] Miljö](best-practices/understanding-magento.md)
+      - [Förstå [!DNL Commerce Intelligence] Miljö](best-practices/understanding-magento.md)
    - Projektorganisation {#project}
-      - [Namnge rapporter och element i [!DNL MBI]](best-practices/naming-elements.md)
+      - [Namnge rapporter och element i [!DNL Commerce Intelligence]](best-practices/naming-elements.md)
       - [Konsoliderar tabeller](best-practices/consolidating-your-tables.md)
-      - [Deklarera [!DNL MBI] konto](best-practices/declutter-account.md)
+      - [Deklarera [!DNL Commerce Intelligence] konto](best-practices/declutter-account.md)
    - Arbeta med kontrollpaneler {#working-dashboards}
       - [Dela instrumentpaneler](best-practices/share-dashboard-best-practice.md)
       - [Bygga en Investor Dashboard](best-practices/build-investor-dashboard.md)

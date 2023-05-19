@@ -2,20 +2,20 @@
 title: Kohort Report Builder för icke-datumbaserade kohorter
 description: Lär dig att gruppera användare efter en liknande aktivitet eller attribut.
 exl-id: c7b85ce9-113c-4ffc-855f-3d53fe2347d8
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '457'
 ht-degree: 0%
 
 ---
 
-# `Cohort Report Builder for Non-Date-Based Cohorts`
+# [!DNL Cohort Report Builder] för ej datumbaserade kohorter
 
-The [`Cohort Report Builder`](../dev-reports/cohort-rpt-bldr.md) har varit bra på att hjälpa handlare att studera hur olika delar av användare beter sig över tid. Tidigare var `Cohort Report Builder` optimerades för att gruppera användare efter en gemensam `cohort date` (t.ex. en uppsättning med alla kunder som gjorde sitt första köp under en viss månad). The `Non-Date Based Cohort` ger dig nu möjlighet att gruppera användare efter en liknande aktivitet eller attribut. Titta på några exempel på användning av den här funktionen.
+The [`Cohort Report Builder`](../dev-reports/cohort-rpt-bldr.md) är bra att hjälpa handlare att studera hur olika delar av användare beter sig över tid. Tidigare var `Cohort Report Builder` optimerades för att gruppera användare efter en gemensam `cohort date` (t.ex. en uppsättning med alla kunder som gjorde sitt första köp under en viss månad). The `Non-Date Based Cohort` ger dig nu möjlighet att gruppera användare efter en liknande aktivitet eller attribut. Titta på några exempel på användning av den här funktionen.
 
 ## Användningsexempel
 
-Det här är inte en omfattande lista, men här är några möjliga analyser som kan utföras med den här funktionen:
+Det här är ingen omfattande lista, men här finns några möjliga analyser som kan utföras med den här funktionen.
 
 * Granska intäkterna från kunder som förvärvats från [!DNL Google] kontra [!DNL Facebook]
 * Analysera kunder vars första köp gjordes i USA och Kanada
@@ -33,7 +33,7 @@ Nu när du är i `Report Builder`lägger du till de mätvärden som du vill utf�
 
 >[!NOTE]
 >
->Inbyggt [!DNL Google Analytics] mätvärden är inte kompatibla med `Cohort Report Builder`. Målet med detta exempel är att se på intäkterna över tiden för förstagångskunder som förvärvats via olika GA-källor.
+>Inbyggt [!DNL Google Analytics] mätvärden är inte kompatibla med `Cohort Report Builder`. Målet med det här exemplet är att se på intäkterna över tiden för förstahandskunder som förvärvats via olika [!DNL Google Analytics] källor.
 
 ### Växla `Metric View` till `Cohort`
 
@@ -49,9 +49,9 @@ Fem specifikationer krävs för att skapa en Cohortrapport:
 1. Tidsintervall för första åtgärd för kohort
 1. Tidsintervall efter kohortförekomst
 
-![cohort-groups](../../assets/2-cohort-groups.png){: width=&quot;200&quot; height=&quot;224&quot;}
+![cohort-groups](../../assets/2-cohort-groups.png)<!--{: width="200" height="224"}-->
 
-![cohort-first-action-time-range](../../assets/3-cohort-first-action-time-range.png){: width=&quot;400&quot; height=&quot;554&quot;}
+!![cohort-first-action-time-range]<!--(../../assets/3-cohort-first-action-time-range.png){: width="400" height="554"}-->
 
 #### 1. Gruppering `cohorts`
 
@@ -77,7 +77,10 @@ Vill du se `cohorts` över tid per månad, vecka eller år? Här gör du dessa v
 
 ![cohort-first-action-time-range](../../assets/5-cohort-first-action-time-range.png)<!--{: width="400" height="557"}-->
 
-### Övriga anmärkningar
+>[!NOTE]
+>
+>[!UICONTROL Filters] som tillämpas på mätvärdena förblir intakta när du växlar mellan `Standard` och `Cohort` vyer.
 
-* [!UICONTROL Filters]: som tillämpas på mätvärdena förblir intakta när du växlar mellan `Standard` och `Cohort` vyer
-* Se [`Perspectives`](../../data-analyst/dev-reports/cohort-rpt-bldr.md).
+### Relaterad
+
+Se [`Perspectives`](../../data-analyst/dev-reports/cohort-rpt-bldr.md).

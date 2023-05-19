@@ -2,16 +2,16 @@
 title: Definiera kundomsättning
 description: Lär dig hur du skapar en kontrollpanel som hjälper dig att definiera kundomsättning för dina transaktionskunder.
 exl-id: fea8f7e9-c84c-4d49-a657-8b75140c113a
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '484'
 ht-degree: 0%
 
 ---
 
 # Transactional Customer Churn
 
-I den här artikeln visas hur du konfigurerar en kontrollpanel som hjälper dig att definiera kundomsättning för dina transaktionskunder.
+I det här avsnittet visas hur du konfigurerar en kontrollpanel som hjälper dig att definiera kundomsättning för dina transaktionskunder.
 
 ![](../../assets/churn-deashboard.png)
 
@@ -136,4 +136,4 @@ När du väl har skapat din kontrollpanel är den vanligaste frågan: Hur använ
 
 När du har kompilerat alla rapporter kan du ordna dem på kontrollpanelen som du vill. Resultatet kan se ut som bilden högst upp på sidan
 
-Om du stöter på några frågor när du skapar den här analysen eller bara vill engagera Professional Services-teamet, [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Om du stöter på några frågor när du skapar den här analysen eller bara vill engagera Professional Services-teamet, [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

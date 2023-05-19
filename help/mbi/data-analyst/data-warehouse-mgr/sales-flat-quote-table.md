@@ -2,7 +2,7 @@
 title: Citattabell
 description: Lär dig hur du arbetar med offerttabellen.
 exl-id: 3a1e9239-33a7-429e-bfc8-628c68701710
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '605'
 ht-degree: 0%
@@ -24,7 +24,7 @@ The `quote` tabell (`sales_flat_quote` på M1) innehåller uppgifter om varje ku
 | `base_currency_code` | Valuta för alla värden som hämtas i `base_*` fält (det vill säga `base_grand_total`, `base_subtotal`och så vidare). Detta återspeglar vanligtvis Commerce Stores standardvaluta |
 | `base_grand_total` | Slutligt pris som anges till kunden för vagnen, efter att alla skatter, frakt och rabatter har tillämpats. Även om det går att anpassa den exakta beräkningen så är det i allmänhet `base_grand_total` beräknas som `base_subtotal` + `base_tax_amount` + `base_shipping_amount` + `base_discount_amount` - `base_gift_cards_amount` - `base_customer_balance_amount` |
 | `base_subtotal` | Bruttovaruvärde för alla artiklar som ingår i vagnen. Skatter, frakt, rabatter o.s.v. ingår inte |
-| `created_at` | Tidsstämpel för att skapa kundvagnen, som lagras lokalt i UTC. Beroende på din konfiguration i [!DNL MBI]kan den här tidsstämpeln konverteras till en rapporttidszon i [!DNL MBI] som skiljer sig från databasens tidszon |
+| `created_at` | Tidsstämpel för att skapa kundvagnen, som lagras lokalt i UTC. Beroende på din konfiguration i [!DNL Commerce Intelligence]kan den här tidsstämpeln konverteras till en rapporttidszon i [!DNL Commerce Intelligence] som skiljer sig från databasens tidszon |
 | `customer_email` | E-postadress till den kund som skapade vagnen |
 | `customer_id` | `Foreign key` som är kopplade till `customer_entity` om kunden är registrerad. Gå med i `customer_entity.entity_id` för att avgöra vilka kundattribut som är kopplade till användaren som skapade kundvagnen. Om vagnen skapades via gästutcheckning är det här fältet `NULL` |
 | `entity_id` (PK) | Unik identifierare för tabellen och används ofta i kopplingar till andra tabeller i Commerce-instansen |

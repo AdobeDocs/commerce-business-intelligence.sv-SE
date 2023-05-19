@@ -2,16 +2,16 @@
 title: Analyserar lagernivåer
 description: Lär dig hur du analyserar lagernivåer.
 exl-id: 620156c5-7bea-4b36-84c7-e0cb4b5cc8be
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '291'
+source-wordcount: '286'
 ht-degree: 0%
 
 ---
 
 # Analysera lagernivåer
 
-I det här avsnittet visas hur du konfigurerar en kontrollpanel som ger insikter om din aktuella inventering. Det här avsnittet innehåller instruktioner för klienter om både den äldre arkitekturen och den nya arkitekturen. Du har en äldre arkitektur om du inte har **[!UICONTROL Data Warehouse Views]** alternativ under **[!UICONTROL Manage Data]** meny). Om du har en äldre arkitektur skickar du en [ny supportförfrågan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) med motivet **[!UICONTROL INVENTORY ANALYSIS]** när du har nått det avsedda avsnittet i _Beräknade kolumner_ instruktionerna nedan.
+I det här avsnittet visas hur du konfigurerar en instrumentpanel som ger insikter om ditt nuvarande lager och innehåller instruktioner för kunder om både den äldre arkitekturen eller den nya arkitekturen. Du har en äldre arkitektur om du inte har **[!UICONTROL Data Warehouse Views]** alternativ under **[!UICONTROL Manage Data]** -menyn. Om du har en äldre arkitektur skickar du en [ny supportförfrågan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) med motivet **[!UICONTROL INVENTORY ANALYSIS]** när du har nått det avsedda avsnittet i _Beräknade kolumner_ instruktionerna nedan.
 
 ## Kolumner att spåra:
 
@@ -29,7 +29,7 @@ I det här avsnittet visas hur du konfigurerar en kontrollpanel som ger insikter
 
 ## Beräknade kolumner:
 
-### Ny arkitektur
++++ Ny arkitektur
 
 * **[!UICONTROL catalog_product_entity]** tabell:
    * **`Product's most recent order date`**
@@ -118,7 +118,8 @@ I det här avsnittet visas hur du konfigurerar en kontrollpanel som ger insikter
 
 
 
-### Äldre arkitektur
++++
++++ Äldre arkitektur
 
 * **[!UICONTROL catalog_product_entity]** tabell:
    * **`Product's most recent order date`**
@@ -189,6 +190,8 @@ I det här avsnittet visas hur du konfigurerar en kontrollpanel som ger insikter
 
 
 
++++
+
 ## Mått
 
 ### Mätinstruktioner
@@ -240,4 +243,4 @@ I det här avsnittet visas hur du konfigurerar en kontrollpanel som ger insikter
       [!UICONTROL Chart type]: `Table`
 
 
-Om du stöter på några frågor när du skapar den här analysen eller bara vill engagera Professional Services-teamet, [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Om du stöter på några frågor när du skapar den här analysen eller bara vill engagera Professional Services-teamet, [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

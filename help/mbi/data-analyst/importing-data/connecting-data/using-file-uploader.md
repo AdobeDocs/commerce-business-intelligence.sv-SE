@@ -2,7 +2,7 @@
 title: Använd filöverföring
 description: Lär dig hur ni samlar alla era data i en enda Data warehouse.
 exl-id: 28db0e78-0222-431d-bbb9-6ef133686603
-source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '1369'
 ht-degree: 0%
@@ -15,14 +15,14 @@ ht-degree: 0%
 >
 >Kräver [Administratörsbehörigheter](../../../administrator/user-management/user-management.md).
 
-[!DNL MBI] är kraftfull inte bara på grund av visualiseringsfunktionerna, utan även för att den ger er möjlighet att samla alla data i en enda Data warehouse. Även data som finns utanför era databaser och integreringar kan föras in i [!DNL MBI] genom att använda filöverföringsverktyget i Data warehouse Manager.
+[!DNL Adobe Commerce Intelligence] är kraftfull inte bara på grund av visualiseringsfunktionerna, utan även för att den ger er möjlighet att samla alla data i en enda Data warehouse. Även data som finns utanför era databaser och integreringar kan föras in i [!DNL Commerce Intelligence] genom att använda filöverföringsverktyget i Data warehouse Manager.
 
 Använd annonskampanjer som exempel. Om ni kör både online- och offlinekampanjer kan ni inte få hela bilden om ni bara analyserar data från en onlineintegrering. Om du överför ett kalkylblad med offlinekampanjdata kan du analysera båda uppsättningarna data och få en mer robust förståelse för kampanjresultaten.
 
 ## Begränsningar och krav {#require}
 
 1. **Det enda format som stöds för filöverföringar är `CSV` eller`comma separated values`**. Om du arbetar i Excel kan du använda funktionen Spara som för att spara filen i `.csv` format.
-1. **`CSV`måste använda`UTF-8 encoding`**. För det mesta är detta inte något problem. Om det här felet uppstår när du överför en fil, [Läs den här supportartikeln](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html?lang=en).
+1. **`CSV`måste använda`UTF-8 encoding`**. För det mesta är detta inte något problem. Om det här felet uppstår när du överför en fil, [Läs den här supportartikeln](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html).
 1. **Filerna får inte vara större än 100 MB**. Om filen är större än så delar du upp tabellen i segment och sparar dem som enskilda filer. Du kan lägga till data när den första filen har lästs in.
 1. **Alla tabeller måste ha en`primary key`**. Det måste finnas minst en kolumn i tabellen som kan användas som `primary key`eller en unik identifierare för varje rad i tabellen. Valfri kolumn som betecknas som `primary key` kan *aldrig* vara null. A `primary key` kan vara så enkelt som att lägga till en kolumn som ger ett nummer till varje rad, eller kan vara två kolumner sammanfogade för att skapa en kolumn med unika värden (till exempel `campaign name` och `date`).
 
@@ -30,7 +30,7 @@ Använd annonskampanjer som exempel. Om ni kör både online- och offlinekampanj
 
 ## Formatera data för överföring {#formatting}
 
-Innan du kan överföra dina data till [!DNL MBI]kontrollerar du att den är formaterad enligt riktlinjerna i det här avsnittet.
+Innan du kan överföra dina data till [!DNL Commerce Intelligence]kontrollerar du att den är formaterad enligt riktlinjerna i det här avsnittet.
 
 ### Rubrikrad {#header}
 
@@ -77,7 +77,7 @@ För [!DNL Google Docs] och [!DNL Apple Numbers] resurser, se [Relaterad](#relat
 
 ## Överför data {#uploading}
 
-Nu när kalkylbladet är korrekt formaterat och [!DNL MBI]-vänligt, lägg till det i Data warehouse.
+Nu när kalkylbladet är korrekt formaterat och [!DNL Commerce Intelligence]-vänligt, lägg till det i Data warehouse.
 
 1. För att komma igång, gå till **[!UICONTROL Data** > **File Uploads]**.
 
@@ -85,7 +85,7 @@ Nu när kalkylbladet är korrekt formaterat och [!DNL MBI]-vänligt, lägg till 
 
 1. Klicka **[!UICONTROL Choose File]** och markera filen. Klicka **[!UICONTROL Open]** för att starta överföringen.
 
-   När överföringen är klar visas en lista med kolumnerna [!DNL MBI] som finns i din fil visas.
+   När överföringen är klar visas en lista med kolumnerna [!DNL Commerce Intelligence] som finns i din fil visas.
 
 1. Kontrollera att kolumnnamnen och datatyperna är korrekta. Kontrollera i synnerhet att datumkolumner läses som datum och inte nummer.
 
@@ -111,7 +111,7 @@ Om du behöver en bild, titta på hela processen:
 
 ## Uppdatera eller bifoga data till en befintlig tabell {#appending}
 
-Har du några nya data att lägga till i en fil som du redan har överfört? Inga problem - du kan enkelt uppdatera och lägga till data i [!DNL MBI].
+Har du några nya data att lägga till i en fil som du redan har överfört? Inga problem - du kan enkelt uppdatera och lägga till data i [!DNL Commerce Intelligence].
 
 1. För att komma igång, gå till **[!UICONTROL Manage Data** > **File Uploads]**.
 
@@ -121,7 +121,7 @@ Har du några nya data att lägga till i en fil som du redan har överfört? Ing
 
 1. Använd listrutan för att välja alternativet för hantering av dubblettrader:
 
-   |  |  |
+   | Alternativ | Beskrivning |
    |---|---|
    | `Overwrite old row with new row` | Befintliga data skrivs över med nya data om en rad har samma primärnyckel både i den befintliga tabellen och i den nya filen. Det här är den metod som ska användas för kolumner med värden som ändras över tid, till exempel en statuskolumn. Befintliga data skrivs över och uppdateras med nya data. Rader med primärnycklar som inte finns i den befintliga tabellen läggs till som nya rader. |
    | `Retain old row; discard new row` | Detta gör att nya data ignoreras om en rad har samma primärnyckel både i den befintliga tabellen och i den nya filen. |
@@ -131,7 +131,7 @@ Har du några nya data att lägga till i en fil som du redan har överfört? Ing
 
 1. Klicka **[!UICONTROL Open]** för att starta överföringen.
 
-   När överföringen är klar [!DNL MBI] validerar filens datastruktur. A *Klart!* visas högst upp på skärmen när tabellen har sparats.
+   När överföringen är klar [!DNL Commerce Intelligence] validerar filens datastruktur. A *Klart!* visas högst upp på skärmen när tabellen har sparats.
 
 ## Datatillgänglighet {#availability}
 
@@ -139,9 +139,9 @@ Precis som beräknade kolumner är data från filöverföringar tillgängliga n�
 
 ## Radbrytning {#wrapup}
 
-I den här artikeln beskrivs endast grunderna för hur du importerar data, men du kanske vill göra något mer avancerat. Läs mer i Relaterade artiklar om hur du formaterar och importerar ekonomiska data, e-handel, annonskostnader och andra typer av data.
+Det här avsnittet handlar endast om grunderna för att importera data, men du kanske vill göra något mer avancerat. Läs mer i Relaterade artiklar om hur du formaterar och importerar ekonomiska data, e-handel, annonskostnader och andra typer av data.
 
-Filöverföring är inte heller det enda sättet att få in data i [!DNL MBI]. The [API för dataimport](https://developer.adobe.com/commerce/services/reporting/import-api/) kan du överföra godtyckliga data till [!DNL MBI] data warehouse.
+Filöverföring är inte heller det enda sättet att få in data i [!DNL Commerce Intelligence]. The [API för dataimport](https://developer.adobe.com/commerce/services/reporting/import-api/) kan du överföra godtyckliga data till [!DNL Commerce Intelligence] data warehouse.
 
 ## Relaterad {#related}
 

@@ -1,23 +1,28 @@
 ---
-title: Översikt över användarhandboken för MBI
-description: Omfattande information för MBI-dataadministratörer.
+title: Användarhandbok för Commerce Intelligence
+description: Omfattande information för dataadministratörer i Commerce Intelligence.
 breadcrumb-title: Stödlinjeöversikt
-seo-title: MBI User Guide
-seo-description: Describes how to use the MBI features used to gain insights from Adobe Commerce or Magento Open Source data.
+seo-title: Commerce Intelligence User Guide
+seo-description: Describes how to use Adobe Commerce Intelligence features used to gain insights from Adobe Commerce or Magento Open Source data, along with other third-party data sources.
 exl-id: f62c7a98-1b4c-4abb-9692-50ce0f3ee1fb
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '433'
+source-wordcount: '459'
 ht-degree: 0%
 
 ---
 
-# [!DNL MBI] Översikt över användarhandboken
+
+# [!DNL Adobe Commerce Intelligence] Användarhandbok
+
+>[!NOTE]
+>
+>[!DNL Adobe Commerce Intelligence] tidigare känt som [!DNL Magento Business Intelligence]. Ett antal uppdateringar pågår för att den här guiden ska kunna fånga upp ändringarna.
 
 Det finns två områden för dataadministratörer:
 
 - Administratören: Använd det här området för att komma åt konfigurationsgränssnittet och rapporter.
-- Kommandoradsgränssnittet: Använd det här verktyget för att utföra installations- och backend-konfigurationsuppgifter.
+- Kommandoradsgränssnittet (CLI): Använd det här verktyget för att utföra installations- och backend-konfigurationsuppgifter.
 
 ## Så här använder du den här handboken
 
@@ -25,24 +30,24 @@ Den här guiden innehåller följande avsnitt som är ordnade baserat på vilken
 
 - [Dataanvändare](data-user.md): Ni använder data för att fatta affärsbeslut. Du kan få rapporter och kontrollpaneler från en dataanalytiker i ditt team, men du vill också lära dig hur du skapar rapporterna och kontrollpanelerna.
 - [Dataanalytiker](data-analyst.md): Du är bekväm med att utforma frågor och vara den person som ska ta sig an dataanalysen. Du vet hur du hittar specifika svar på datafrågor och vill underlätta för dina kollegor att få tillgång till självbetjäning.
-- Administratör: Du hanterar [!DNL MBI] konto, inklusive licensiering, tillägg och borttagning av användare samt hantering av viktiga administrativa uppgifter.
+- Administratör: Du hanterar [!DNL Commerce Intelligence] konto, inklusive licensiering, tillägg och borttagning av användare samt hantering av viktiga administrativa uppgifter.
 
 Förutom de rollbaserade arbetsflödena ovan innehåller den här guiden även:
 
-- God praxis: [!UICONTROL MBI] är en robust och flexibel plattform, vilket betyder att det finns många olika sätt att utföra liknande uppgifter. Detta avsnitt sammanfogar [!DNL MBI] rekommenderade metoder för att hämta, analysera och visa data.
-- Tutorials: Följ dessa självstudiekurser för att lära dig hur [!DNL MBI].
+- God praxis: [!UICONTROL Commerce Intelligence] är en robust och flexibel plattform, vilket betyder att det finns många olika sätt att utföra liknande uppgifter. Detta avsnitt sammanfogar [!DNL Commerce Intelligence] rekommenderade metoder för att hämta, analysera och visa data.
+- Tutorials: Följ dessa självstudiekurser för att lära dig hur [!DNL Commerce Intelligence].
 
 ## Få hjälp
 
-Kontakta supportteamet om du har frågor, vill utnyttja vissa av dina professionella tjänster eller stöter på problem med ditt konto.
+Kontakta [supportteam](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) om du har frågor och vill utnyttja vissa av dina Professional Services eller om du har problem med ditt konto.
 
 ### Serviceprinciper
 
-Se en [lista över vilka tjänster som kundsupportteamet tillhandahåller](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Se en [lista över vilka tjänster som kundsupportteamet tillhandahåller](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ### Skicka en supportanmälan
 
-Behöver du hjälp med att skapa en avancerad beräknad kolumn? Påträffade ett fel eller ett anslutningsproblem? Om du behöver kontakta supportteamet ber Adobe dig att använda [riktlinjer för supportanmälan] (https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en). Dessa riktlinjer innehåller en beskrivning av den information Adobe behöver för att lösa problemet.
+Behöver du hjälp med att skapa en avancerad beräknad kolumn? Påträffade ett fel eller ett anslutningsproblem? Om du behöver kontakta supportteamet ber Adobe dig att använda [riktlinjer för supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html). Dessa riktlinjer innehåller en beskrivning av den information Adobe behöver för att lösa problemet.
 
 ## Tillgänglig dokumentation
 

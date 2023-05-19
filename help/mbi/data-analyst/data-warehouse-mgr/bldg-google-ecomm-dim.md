@@ -2,9 +2,9 @@
 title: Bygge[!DNL Google ECommerce]dimensioner
 description: Lär dig skapa dimensioner som länkar e-handelsdata till era order och kunddata.
 exl-id: f8a557ae-01d7-4886-8a1c-c0f245c7bc49
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
 workflow-type: tm+mt
-source-wordcount: '988'
+source-wordcount: '983'
 ht-degree: 0%
 
 ---
@@ -15,13 +15,13 @@ ht-degree: 0%
 >
 >Kräver [Administratörsbehörigheter](../../administrator/user-management/user-management.md).
 
-Nu när du är klar [ansluta[!DNL Google ECommerce]konto](../../data-analyst/importing-data/integrations/google-ecommerce.md), vad kan du göra med dessa data i [!DNL MBI]? I den här artikeln får du hjälp med att skapa dimensioner som länkar e-handelsdata till dina beställningar och kunddata.
+Nu när du är klar [ansluta[!DNL Google ECommerce] konto](../../data-analyst/importing-data/integrations/google-ecommerce.md), vad kan du göra med dessa data i [!DNL Commerce Intelligence]? I det här avsnittet går vi igenom hur du bygger upp dimensioner som länkar e-handelsdata till dina beställningar och kunddata.
 
-Med de mått som omfattas kan du skapa analyser som [svara på viktiga frågor om era marknadsföringskanaler och kampanjer](../../data-analyst/analysis/most-value-source-channel.md). Hur stor procent av intäkterna kommer från varje källa? Hur är livslängdsvärdet för Facebook förvärvade kunder jämfört med [!DNL Google]?
+Med de mått som omfattas kan du skapa analyser som [svara på viktiga frågor om era marknadsföringskanaler och kampanjer](../../data-analyst/analysis/most-value-source-channel.md). Hur stor procent av intäkterna kommer från varje källa? Hur påverkar livstidsvärdet [!DNL Facebook] förvärvade kunder jämfört med [!DNL Google]?
 
 ## Krav och översikt
 
-Om du vill skapa måtten i den här artikeln behöver du en [!DNL Google ECommerce] tabell, `orders` och en `customers` tabell. Tabellerna måste [synkad till Data warehouse](../../data-analyst/data-warehouse-mgr/tour-dwm.md) innan mått kan skapas. Tabeller som synkroniseras visas i `Synced Tables` i `Data Warehouse Manager`.
+För att skapa dimensionerna i det här avsnittet behöver du en [!DNL Google ECommerce] tabell, `orders` och en `customers` tabell. Tabellerna måste [synkad till Data warehouse](../../data-analyst/data-warehouse-mgr/tour-dwm.md) innan mått kan skapas. Tabeller som synkroniseras visas i `Synced Tables` i `Data Warehouse Manager`.
 
 Här är en snabbtitt på synkronisering av tabeller och kolumner om du behöver en uppdaterare:
 
@@ -121,12 +121,12 @@ Slutför genom att gå med i `Customer's first order's` medium och `campaign` di
 
 Du är klar med att skapa dimensionerna, vilket betyder att du nu kan skapa kraftfulla analyser som spårar resultatet för olika kanaler och kampanjer. Kom ihåg att **nya kolumner är inte tillgängliga förrän nästa uppdatering har slutförts**.
 
-Några av de populärare dimensionerna beskrivs i den här artikeln, men himlen är gränsen - prova att skapa din egen eller låt oss plocka oss om du vill ha hjälp med att utforska andra alternativ. 
+Några av de populärare dimensionerna behandlas i det här avsnittet, men himlen är gränsen - prova att skapa din egen eller låt oss plocka oss om du vill ha hjälp med att utforska andra alternativ. 
 
-### Jag sitter fast! Vad är annorlunda? {#stuck}
+### Ytterligare information
 
-**`Orders`tabell 1:** När du skapar `Order's [!DNL Google Analytics]` medium och `campaign` mått är skillnaden de kolumner som är markerade i steg 12. I det här exemplet var kolumnen `Source`.
+**`Orders`tabell 1**: När du skapar `Order's [!DNL Google Analytics]` medium och `campaign` mått är skillnaden de kolumner som är markerade i steg 12. I det här exemplet var kolumnen `Source`.
 
-**`Customers`tabell:** När du skapar `Customer's first order's [!DNL Google Analytics]` medium och `campaign` dimensionerna är skillnaden de kolumner som är markerade i steg 5. I det här exemplet var kolumnen `Order's [!DNL Google Analytics]` källa.
+**`Customers`table**: När du skapar `Customer's first order's [!DNL Google Analytics]` medium och `campaign` dimensionerna är skillnaden de kolumner som är markerade i steg 5. I det här exemplet var kolumnen `Order's [!DNL Google Analytics]` källa.
 
-**`Orders`tabell 2:** När du ansluter till `Customer's first order's [!DNL Google Analytics]` medium och `campaign` kolumner till `orders` tabellen är skillnaden de kolumner som är markerade i steg 5. I det här exemplet var kolumnen `Customer's first order's [!DNL Google Analytics]` källa.
+**`Orders`tabell 2**: När du ansluter till `Customer's first order's [!DNL Google Analytics]` medium och `campaign` kolumner till `orders` tabellen är skillnaden de kolumner som är markerade i steg 5. I det här exemplet var kolumnen `Customer's first order's [!DNL Google Analytics]` källa.

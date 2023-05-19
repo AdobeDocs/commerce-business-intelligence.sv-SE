@@ -2,7 +2,7 @@
 title: Prognos
 description: Prognos
 exl-id: 61e0516a-941c-4e32-b051-6ff664962198
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
 workflow-type: tm+mt
 source-wordcount: '58'
 ht-degree: 0%

@@ -2,16 +2,16 @@
 title: Google Analytics och UTM-attribuering
 description: Läs mer om Google Analytics källattribueringsprocessen.
 exl-id: 48b8a3d3-f1ac-4d3f-8f65-db1245c9ae0a
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '773'
+source-wordcount: '769'
 ht-degree: 0%
 
 ---
 
-# Google Analytics och UTM-attribuering
+# [!DNL Google Analytics] och UTM-attribut
 
-Det är viktigt att [spåra källa för användarförvärv](../../data-analyst/analysis/google-track-user-acq.md) till [identifiera de annonskampanjer som fungerar bäst](../../data-analyst/analysis/most-value-source-channel.md). I den här artikeln utforskas Google Analytics källattribueringsprocessen. Med andra ord, vilken information som registreras när.
+Det är viktigt att [spåra källa för användarförvärv](../../data-analyst/analysis/google-track-user-acq.md) till [identifiera de annonskampanjer som fungerar bäst](../../data-analyst/analysis/most-value-source-channel.md). Det här avsnittet förklarar [!DNL Google Analytics] källattribueringsprocess. Med andra ord, vilken information som registreras när.
 
 ## Vad är attribuering?
 
@@ -31,11 +31,11 @@ När UTM-parametrarna anges på URL:en tolkas de ut och placeras i en [!DNL Goog
 
 Sista klickattribuering är den vanligaste attribueringsmodellen som används av [!DNL Google Analytics]. I det här fallet [!DNL Google Analytics] cookie representerar UTM-parametrarna för den senaste källan före konverteringshändelsen, och detta är [som registrerats i databasen](../../data-analyst/analysis/google-track-user-acq.md). The [!DNL Google Analytics] cookie skriver bara över de tidigare UTM-parametrarna om användaren klickar på en ny URL som innehåller en ny uppsättning UTM-parametrar.
 
-Tänk dig en användare som först besöker en webbplats via [!DNL Google Analytics][!DNL Google Analytics][!DNL Google Analytics] *betalsökningar* returnerar sedan via *organisk sökning*, och till sist kommer tillbaka till *direkt* eller via *e-postlänk* **utan UTM-parametrar** före konverteringshändelsen. I det här exemplet [!DNL Google Analytics] cookie säger att användarens källa är organisk, eftersom det är den sista källan före konverteringen. The *bana* av användaren innan den sista konverteringshändelsen ignoreras. Om användaren i stället besökte webbplatsen via en e-postlänk med UTM, kommer [!DNL Google Analytics] cookie säger att källan är &quot;e-post&quot;. Om det därför finns UTM-parametrar i cookien och användaren kommer in direkt, kommer [!DNL Google Analytics] cookie visar UTM-parametrarna i stället för &quot;direct&quot;.
+Tänk dig en användare som först besöker en webbplats via [!DNL Google Analytics] *betalsökningar* returnerar sedan via *organisk sökning*, och till sist kommer tillbaka till *direkt* eller via *e-postlänk* **utan UTM-parametrar** före konverteringshändelsen. I det här exemplet [!DNL Google Analytics] cookie säger att användarens källa är organisk, eftersom det är den sista källan före konverteringen. The *bana* av användaren innan den sista konverteringshändelsen ignoreras. Om användaren i stället besökte webbplatsen via en e-postlänk med UTM, kommer [!DNL Google Analytics] cookie säger att källan är &quot;e-post&quot;. Om det därför finns UTM-parametrar i cookien och användaren kommer in direkt, kommer [!DNL Google Analytics] cookie visar UTM-parametrarna i stället för &quot;direct&quot;.
 
 >[!NOTE]
 >
->En specifik användares [!DNL Google Analytics] cookie-parametrar tas bort när cookien [förfaller](https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage), eller när en användare rensar sina cookies i webbläsaren.*)
+>En specifik användares [!DNL Google Analytics] cookie-parametrar tas bort när cookien [förfaller](https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage)eller när en användare rensar sina cookies i webbläsaren.*
 
 ### Första klickattribuering
 
@@ -45,10 +45,10 @@ Med vissa betalda attribueringsverktyg kan du fånga &quot;pankakestacken&quot; 
 
 [!DNL Google Analytics] har en viss robust funktionalitet i webbgränssnittet som gör att du kan utföra fyra olika attribueringsmodeller:
 
-* klicka först
-* klicka senast
-* linjärt (dividera intäkterna jämnt över alla källor i banan)
-* viktad (anpassad attribuering)
+1. klicka först
+1. klicka senast
+1. linjärt (dividera intäkterna jämnt över alla källor i banan)
+1. viktad (anpassad attribuering)
 
 Nu när du förstår vad attribueringsmodellen för varje mikro- eller makrokonvertering är blir frågan&quot;Vad gör du med en användares totala konverteringar?&quot;.  Titta till exempel på de UTM-minnen som spelats in baserat på GA:s logik för senaste klickning:
 

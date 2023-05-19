@@ -2,9 +2,9 @@
 title: Google Analytics - Spåra översikt över källdata för användarförvärv
 description: Lär dig segmentera data utifrån källa för kundvärvning.
 exl-id: 2ce3e4f9-4741-4ada-b822-ec6a5ca94497
-source-git-commit: ad95a03193853eebf2b695cd6f5c3cb5a9837f93
+source-git-commit: af1e3839839b4c419beabb0cc666c996ea2179d4
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '791'
 ht-degree: 1%
 
 ---
@@ -13,27 +13,27 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Processen nedan stöder inte [!DNL GoogleUniversal Analytics].
+>Processen nedan stöder inte [!DNL Google Universal Analytics].
 
 Förmågan att segmentera data med hjälp av källan för kundvärvning är avgörande för att er marknadsföringsplan ska kunna hanteras effektivt. Genom att känna till nya användares anskaffningskälla kan ni visa vilka kanaler som ger störst avkastning, och teamet kan tryggt tilldela marknadsföringsbudgeten.
 
-Om du inte redan spårar källor för kundvärvning i din databas [!DNL MBI] kan hjälpa dig att komma igång:
+Om du inte redan spårar källor för kundvärvning i din databas [!DNL Adobe Commerce Intelligence] kan hjälpa dig att komma igång:
 
 ## Spåra källa för kundvärvning
 
-Adobe rekommenderar att du använder två metoder för att spåra hänvisningsdata baserat på dina inställningar:
+[!DNL Adobe] rekommenderar att du använder två metoder för att spåra hänvisningsdata baserat på dina inställningar:
 
 ### (Alternativ 1) Spåra källdata för orderreferenser via [!DNL Google Analytics E-Commerce] (Inklusive [!DNL Shopify] Lager)
 
-Om du använder [!DNL Google Analytics E-Commerce] för att spåra din beställning och dina säljdata kan du använda [!DNL [Google Analytics E-Commerce Connector]](../importing-data/integrations/google-ecommerce.md) för att synkronisera varje orders hänvisningskälldata. På så sätt kan du segmentera intäkter och order efter hänvisningskälla (till exempel `utm_source` eller `utm_medium`). Ni får också en känsla av kundvärvningskällor via [!DNL MBI] anpassade dimensioner som `User's first order source`.
+Om du använder [!DNL Google Analytics E-Commerce] för att spåra din beställning och dina säljdata kan du använda [!DNL [Google Analytics E-Commerce Connector]](../importing-data/integrations/google-ecommerce.md) för att synkronisera varje orders hänvisningskälldata. På så sätt kan du segmentera intäkter och order efter hänvisningskälla (till exempel `utm_source` eller `utm_medium`). Ni får också en känsla av kundvärvningskällor via [!DNL Commerce Intelligence] anpassade dimensioner som `User's first order source`.
 
 >[!NOTE]
 >
->För användare av Shopify**: Aktivera [!DNL [Google Analytics E-Commerce] tracking in Shopify](https://help.shopify.com/en/manual/reports-and-analytics/google-analytics#ecommerce-tracking) innan du ansluter [!DNL Google Analytics E-Commerce] konto till [!DNL MBI].
+>**För användare med Förminska**: Aktivera [!DNL [Google Analytics E-Commerce] tracking in Shopify](https://help.shopify.com/en/manual/reports-and-analytics/google-analytics#ecommerce-tracking) innan du ansluter [!DNL Google Analytics E-Commerce] konto till [!DNL Commerce Intelligence].
 
 ### (Alternativ 2) Spara [!DNL Google Analytics]&#39; hämta källdata i databasen
 
-I den här artikeln beskrivs hur du sparar [!DNL Google Analytics] information om inhämtningskanaler i din egen databas, det vill säga `source`, `medium`, `term`, `content`, `campaign`och `gclid` parametrar som fanns på en användares första besök på webbplatsen. En förklaring av de här parametrarna finns i [!DNL [Google Analytics] documentation](https://support.google.com/analytics/answer/1191184?hl=en#zippy=%2Cin-this-article). Sedan kan du utforska några av de kraftfulla marknadsföringsanalyser som kan utföras med den här informationen i [!DNL MBI].
+I det här avsnittet beskrivs hur du sparar [!DNL Google Analytics] information om inhämtningskanaler i din egen databas, det vill säga `source`, `medium`, `term`, `content`, `campaign`och `gclid` parametrar som fanns på en användares första besök på webbplatsen. En förklaring av de här parametrarna finns i [!DNL [Google Analytics] documentation](https://support.google.com/analytics/answer/1191184?hl=en#zippy=%2Cin-this-article). Sedan kan du utforska några av de kraftfulla marknadsföringsanalyser som kan utföras med den här informationen i [!DNL Commerce Intelligence].
 
 #### Varför?
 
@@ -51,7 +51,7 @@ Vad händer om du vill skicka ett uppföljningserbjudande via e-post till alla k
 
 > `100000000.12345678.1.1.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=rj metrics`
 
-Det är tydligt att en del data för förvärvskälla är kodade i strängen. Detta testas för att bekräfta att detta är besökarens senaste anskaffningskälla och tillhörande kampanjdata. Nu behöver ni veta hur ni extraherar data. Som tur är har Justin Cutroni tidigare beskrivit hur den här kodningen fungerar och delat en del JavaScript-kod för att extrahera viktiga informationsbitar.
+Det är tydligt att en del data för förvärvskälla är kodade i strängen. Detta testas för att bekräfta att detta är besökarens senaste anskaffningskälla och tillhörande kampanjdata. Nu behöver ni veta hur ni extraherar data.
 
 Den här koden har översatts till en [PHP-bibliotek på github](https://github.com/RJMetrics/referral-grabber-php). Om du vill använda biblioteket `include` en referens till `ReferralGrabber.php` och sedan ringa
 
@@ -59,7 +59,7 @@ Den här koden har översatts till en [PHP-bibliotek på github](https://github.
 
 Den returnerade `$data` arrayen är en karta över nycklarna `source`, `medium`, `term`, `content`, `campaign`, `gclid`och deras respektive värden.
 
-Adobe rekommenderar att du lägger till en tabell i databasen som till exempel kallas `user_referral`, med kolumnerna som: `id INT PRIMARY KEY, user_id INT NOT NULL, source VARCHAR(255), medium VARCHAR(255), term VARCHAR(255), content VARCHAR(255), campaign VARCHAR(255), gclid VARCHAR(255)`. När en användare registrerar sig hämtar du hänvisningsinformationen och sparar den i den här tabellen.
+[!DNL Adobe] rekommenderar att du lägger till en tabell i databasen som till exempel kallas `user_referral`, med kolumnerna som: `id INT PRIMARY KEY, user_id INT NOT NULL, source VARCHAR(255), medium VARCHAR(255), term VARCHAR(255), content VARCHAR(255), campaign VARCHAR(255), gclid VARCHAR(255)`. När en användare registrerar sig hämtar du hänvisningsinformationen och sparar den i den här tabellen.
 
 #### Så här använder du dessa data
 

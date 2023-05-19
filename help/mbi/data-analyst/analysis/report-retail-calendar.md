@@ -1,27 +1,27 @@
 ---
 title: Rapportering i en butikskalender
-description: Lär dig hur du konfigurerar strukturen så att du kan använda en 4-5-4-kalender i din [!DNL MBI] konto.
+description: Lär dig hur du konfigurerar strukturen så att du kan använda en 4-5-4-kalender i din [!DNL Commerce Intelligence] konto.
 exl-id: 3754151c-4b0f-4238-87f2-134b8409e32b
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '627'
 ht-degree: 0%
 
 ---
 
 # Rapportering i en butikskalender
 
-I den här artikeln visas hur du konfigurerar strukturen för att använda en [4-5-4 butikskalender](https://nrf.com/resources/4-5-4-calendar) inom [!DNL MBI] konto. Den visuella rapportbyggaren tillhandahåller otroligt flexibla tidsintervall, intervall och oberoende inställningar. Alla dessa inställningar fungerar dock med den traditionella månadskalendern.
+I det här avsnittet visas hur du konfigurerar strukturen för att använda en [4-5-4 butikskalender](https://nrf.com/resources/4-5-4-calendar) inom [!DNL Adobe Commerce Intelligence] konto. Den visuella rapportbyggaren tillhandahåller otroligt flexibla tidsintervall, intervall och oberoende inställningar. Alla dessa inställningar fungerar dock med den traditionella månadskalendern.
 
 Eftersom många kunder ändrar sin kalender så att den använder återförsäljnings- eller redovisningsdatum visar stegen nedan hur de arbetar med data och skapar rapporter med hjälp av återförsäljningsdatum. Instruktionerna nedan hänvisar till butikskalendern för 4-5-4, men du kan ändra dem för alla specifika kalendrar som teamet använder, oavsett om det är ekonomiska eller bara en anpassad tidsram.
 
-Innan du börjar, måste du bekanta dig med [filöverföringen](../../data-analyst/importing-data/connecting-data/using-file-uploader.md) och se till att du har förlängt `.csv` -fil. Detta garanterar att datumen täcker alla dina historiska data och för in datumen i framtiden.
+Innan du börjar bör du granska [filöverföringen](../../data-analyst/importing-data/connecting-data/using-file-uploader.md) och se till att du har förlängt `.csv` -fil. Detta garanterar att datumen täcker alla dina historiska data och för in datumen i framtiden.
 
 Denna analys innehåller [avancerade beräknade kolumner](../data-warehouse-mgr/adv-calc-columns.md).
 
 ## Komma igång
 
-Du kan [ladda ned](../../assets/454-calendar.csv) a `.csv` version av 4-5-4-kalendern för detaljhandelsår 2014 till 2017. Du kan behöva justera den här filen i enlighet med din interna butikskalender och utöka datumintervallet för att stödja din historiska och aktuella tidsram. När du har hämtat filen använder du filöverföringsprogrammet för att skapa en tabell för butikskalender i [!DNL MBI] data warehouse. Om du använder en oförändrad version av 4-5-4-kalendern för återförsäljning måste du se till att strukturen och datatyperna för fälten i den här tabellen matchar följande:
+Du kan [ladda ned](../../assets/454-calendar.csv) a `.csv` version av 4-5-4-kalendern för detaljhandelsår 2014 till 2017. Du kan behöva justera den här filen i enlighet med din interna butikskalender och utöka datumintervallet för att stödja din historiska och aktuella tidsram. När du har hämtat filen använder du filöverföringsprogrammet för att skapa en tabell för butikskalender i [!DNL Commerce Intelligence] data warehouse. Om du använder en oförändrad version av 4-5-4-kalendern för återförsäljning måste du se till att strukturen och datatyperna för fälten i den här tabellen matchar följande:
 
 | Kolumnnamn | Kolumndatatyp | Primär nyckel |
 | --- | --- | --- |
@@ -54,7 +54,7 @@ Du kan [ladda ned](../../assets/454-calendar.csv) a `.csv` version av 4-5-4-kale
 
          >[!NOTE]
          >
-         >The `now()` funktionen ovan är specifik för PostgreSQL. Fast de [!DNL MBI] data warehouse ligger på PostgreSQL, vissa kan ligga på Redshift. Om beräkningen ovan returnerar ett fel kan du behöva använda funktionen för omflyttning `getdate()` i stället för `now()`.
+         >The `now()` funktionen ovan är specifik för PostgreSQL. Fast de [!DNL Commerce Intelligence] data warehouse ligger på PostgreSQL, vissa kan ligga på Redshift. Om beräkningen ovan returnerar ett fel kan du behöva använda funktionen för omflyttning `getdate()` i stället för `now()`.
    * **Aktuellt år** (Måste skapas av supportanalytiker)
       * [!UICONTROL Column type]: E`vent Counter`
       * [!UICONTROL Local Key]: `Current date`
@@ -201,6 +201,6 @@ Obs! Inga nya mätvärden behövs för den här analysen. Se dock till att [läg
 
 Ovanstående beskriver hur du konfigurerar en butikskalender så att den är kompatibel med alla mätvärden som bygger på din `sales\_order` tabell (som `Revenue` eller `Orders`). Du kan även utöka den för att stödja butikskalendern för mätvärden som bygger på valfri tabell. Det enda kravet är att det här registret har ett giltigt datetime-fält som kan användas för att ansluta till butikskalendertabellen.
 
-Om du till exempel vill visa kundnivåstatistik i en 4-5-4-kalender skapar du en `Same Table` beräkning i `customer\_entity` tabell, liknar `\[INPUT\] created\_at (yyyy-mm-dd 00:00:00)` som beskrivs ovan. Du kan sedan använda den här kolumnen för att återskapa `One to Many` JOINED\_COLUMN-beräkningar (som `Created_at (retail year)` och `Include in previous retail year? (Yes/No)` genom att ansluta `customer\_entity` tabellen till `Retail Calendar` tabell.
+Om du till exempel vill visa kundnivåstatistik i en 4-5-4-kalender skapar du en `Same Table` beräkning i `customer\_entity` tabell, liknar `\[INPUT\] created\_at (yyyy-mm-dd 00:00:00)` som beskrivs ovan. Du kan sedan använda den här kolumnen för att återskapa `One to Many` JOINED\_COLUMN-beräkningar (som `Created_at (retail year)`) och `Include in previous retail year? (Yes/No)` genom att ansluta `customer\_entity` tabellen till `Retail Calendar` tabell.
 
 Glöm inte att [lägga till alla nya kolumner som dimensioner till mått](../data-warehouse-mgr/manage-data-dimensions-metrics.md) innan du skapar nya rapporter.

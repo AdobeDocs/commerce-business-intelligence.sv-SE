@@ -1,23 +1,23 @@
 ---
-title: Connect Commerce
+title: Connect Adobe Commerce
 description: Lär dig hitta era mest värdefulla förvärvskällor och kanaler.
 exl-id: c20e7673-9aa3-4e5e-979c-6adaa4164793
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
 workflow-type: tm+mt
-source-wordcount: '103'
+source-wordcount: '100'
 ht-degree: 0%
 
 ---
 
-# Connect Commerce
+# Anslut [!DNL Adobe Commerce]
 
 >[!NOTE]
 >
 >Kräver [Administratörsbehörigheter](../../../administrator/user-management/user-management.md).
 
-Vill du se hur ert företag presterar eller hitta era mest värdefulla förvärvskällor och kanaler? Koppla dina Commerce-data till [!DNL MBI] låter dig svara på dessa frågor och mycket mer.
+Vill du se hur ert företag presterar eller hitta era mest värdefulla förvärvskällor och kanaler? Koppla samman [!DNL Adobe Commerce] data till [!DNL Commerce Intelligence] låter dig svara på dessa frågor och mycket mer.
 
-När Commerce-databasen baseras på MySQL kan du ansluta den till [!DNL MBI] via [direktanslutning](../integrations/mysql-via-a-direct-connection.md), [cPanel](../integrations/mysql-via-cpanel.md), eller [via en SSH-tunnel](../integrations/mysql-via-ssh-tunnel.md). SSH-metoden rekommenderas eftersom den är den säkraste.
+Som [!DNL Adobe Commerce] databasen baseras på MySQL, du kan ansluta den till [!DNL Commerce Intelligence] via [direktanslutning](../integrations/mysql-via-a-direct-connection.md), [[!DNL cPanel]](../integrations/mysql-via-cpanel.md), eller [via en SSH-tunnel](../integrations/mysql-via-ssh-tunnel.md). SSH-metoden rekommenderas eftersom den är den säkraste.
 
 ## Relaterad information
 

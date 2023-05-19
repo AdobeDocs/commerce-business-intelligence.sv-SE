@@ -2,9 +2,9 @@
 title: Formler
 description: Lär dig hur du använder formler.
 exl-id: b6432d93-739f-410c-b732-e09a278f8dae
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '468'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ En formel kombinerar flera mätvärden och matematisk logik för att besvara en 
 
    Gör följande:
 
-   * I `Enter your Formul` inmatningsruta, ange `A/B`.
+   * I `Enter your Formula` inmatningsruta, ange `A/B`.
 
       Detta dividerar intäkterna efter beställda produkter med antalet nya kunder.
 
@@ -71,7 +71,7 @@ En formel kombinerar flera mätvärden och matematisk logik för att besvara en 
 
    * Välj datumintervall i kalendrarna.
 
-      I det här exemplet är julsäsongen mellan 1 november och 31 december.
+      I det här exemplet kommer julsäsongen `November 1` via `December 31`.
 
    * Under `Select Time Interval`, välja `Day`.
 

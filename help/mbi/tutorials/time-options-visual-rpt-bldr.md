@@ -2,24 +2,24 @@
 title: Använd tidsalternativ i Visual Report Builder
 description: Lär dig att analysera data i rapporten under en viss tidsperiod.
 exl-id: a1bb4838-f882-44b1-a29f-84b985032ceb
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '1269'
+source-wordcount: '1267'
 ht-degree: 0%
 
 ---
 
-# Använd `Time` Alternativ i `Visual Report Builder`
+# Använd [!DNL Time] Alternativ i [!DNL Visual Report Builder]
 
-En av funktionerna i `Visual Report Builder` är den globala `Time Range` och `Interval` inställningar. Med de här inställningarna kan du analysera data i rapporten under en viss tidsperiod.
+En av funktionerna i [!DNL Visual Report Builder] är den globala `Time Range` och `Interval` inställningar. Med de här inställningarna kan du analysera data i rapporten under en viss tidsperiod.
 
-För vissa analyser kan du dock behöva ta hänsyn till olika tidsintervall eller tidsintervall i samma rapport. Det är där `Time` Alternativ kommer in. Så här får du en bättre uppfattning om hur du använder `Time` Alternativen i rapporterna omfattar den här självstudiekursen följande användningsfall:
+För vissa analyser kan du dock behöva ta hänsyn till olika tidsintervall eller tidsintervall i samma rapport. Det är där `Time` Alternativ kommer in. Så här får du en bättre uppfattning om hur du använder `Time` i dina rapporter omfattar den här självstudiekursen följande användningsområden:
 
 * [Analyserar mätvärden utan tidsstämplar](#notimestamp)
 * [Ger ett mätvärde och ett oberoende tidsintervall](#independenttimeinterval)
 * [Jämföra samma mått över olika tidsintervall](#difftimerange)
 
-Om du vill följa med i några av exempelrapporterna som beskrivs i det här avsnittet öppnar du [`Visual Report Builder`](../data-user/reports/ess-rpt-build-visual.md) innan du fortsätter.
+Om du vill följa med i några av exempelrapporterna som beskrivs i det här avsnittet öppnar du [[!DNL Visual Report Builder]](../data-user/reports/ess-rpt-build-visual.md) innan du fortsätter.
 
 ## Analyserar mätvärden utan tidsstämplar {#notimestamp}
 
@@ -64,7 +64,7 @@ Nu kan du se hur effektfullt varje månad var förra året:
 
 ## Jämföra samma mått över olika tidsintervall {#difftimerange}
 
-I det här exemplet används en anpassad dimension som kallas `Day number of the month`. Om du vill skapa den här rapporten och inte redan har den här dimensionen i Data warehouse, [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) om du behöver hjälp.
+I det här exemplet används en anpassad dimension som kallas `Day number of the month`. Om du vill skapa den här rapporten och inte redan har den här dimensionen i Data warehouse, [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) om du behöver hjälp.
 
 De två vanligaste exemplen i den här kategorin är (1) att jämföra tillväxtstatistik (intäkter år för år eller månad för månad) och (2) att bättre förstå de senaste trenderna inom lager- eller artikelförsäljning.
 

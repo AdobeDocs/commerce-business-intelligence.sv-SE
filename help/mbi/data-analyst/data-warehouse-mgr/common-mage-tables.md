@@ -1,19 +1,19 @@
 ---
 title: Vanliga handelstabeller
-description: Läs om några av de vanligaste tabellerna som [!DNL MBI] kunderna använder.
+description: Läs om några av de vanligaste tabellerna som [!DNL Commerce Intelligence] kunderna använder.
 exl-id: 8b316130-55c6-4771-ae6e-97ac605fc6cc
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '457'
 ht-degree: 0%
 
 ---
 
 # Vanliga handelstabeller
 
-När du ansluter en Commerce-instans till [[!DNL MBI]](../importing-data/integrations/magento.md), [!DNL MBI] replikerar automatiskt data från vissa av dina handelstabeller (vanligen 4-6 tabeller) för att konfigurera den första uppsättningen instrumentpaneler och rapporter. Även om detta är en bra startpunkt genererar de flesta butiksinstanser tiotals eller till och med hundratals ytterligare tabeller som kan ge viktiga insikter i verksamhetens prestanda.
+När du ansluter en [!DNL Adobe Commerce] instans till [[!DNL Adobe Commerce Intelligence]](../importing-data/integrations/magento.md), [!DNL Commerce Intelligence] replikerar automatiskt data från vissa av dina handelstabeller (vanligen 4-6 tabeller) för att konfigurera den första uppsättningen instrumentpaneler och rapporter. Även om detta är en bra startpunkt genererar de flesta butiksinstanser tiotals eller till och med hundratals ytterligare tabeller som kan ge viktiga insikter i verksamhetens prestanda.
 
-Nedan finns en lista över några av de vanligaste tabellerna som [!DNL MBI] kunderna använder. Efter [ansluta din Commerce-instans till MBI](../../data-analyst/importing-data/integrations/magento.md)kan du använda [data warehouse Manager](../../data-analyst/data-warehouse-mgr/tour-dwm.md) för att spåra relevanta datafält.
+Nedan finns en lista över några av de vanligaste tabellerna som [!DNL Commerce Intelligence] kunderna använder. Efter [koppla din Commerce-instans till Commerce Intelligence](../../data-analyst/importing-data/integrations/magento.md)kan du använda [data warehouse Manager](../../data-analyst/data-warehouse-mgr/tour-dwm.md) för att spåra relevanta datafält.
 
 | Tabellnamn | Beskrivning |
 |---|---|

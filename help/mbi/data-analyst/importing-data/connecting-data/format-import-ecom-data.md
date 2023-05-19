@@ -2,7 +2,7 @@
 title: Formatera och importera e-handelsdata
 description: Lär dig de idealiska dataformat som ska användas för att överföra e-handelsdata.
 exl-id: 7b910f78-9a5a-4d5d-a8b7-1b0b76304afe
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
 workflow-type: tm+mt
 source-wordcount: '459'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Formatera och importera data
 
-Om du använder en integrering som för närvarande inte stöds av [!DNL MBI]kan du fortfarande använda [Filöverföring](using-file-uploader.md) för att få in data i Data warehouse. I den här artikeln beskrivs de idealiska dataformat som ska användas för att överföra e-handelsdata.
+Om du använder en integrering som för närvarande inte stöds av [!DNL Adobe Commerce Intelligence]kan du fortfarande använda [Filöverföring](using-file-uploader.md) för att få in data i Data warehouse. I det här avsnittet beskrivs de idealiska dataformat som ska användas för att överföra e-handelsdata.
 
 ## `Orders` table
 

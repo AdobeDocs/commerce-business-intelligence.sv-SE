@@ -2,20 +2,20 @@
 title: Anslut Salesforce
 description: Läs om hur Salesforce-data möjliggör en rad analyser, från poängsättning och optimering av leads till att nå era mål för konverterade möjligheter.
 exl-id: 249b2b40-8c8a-4616-9383-17690f07003d
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '166'
+source-wordcount: '151'
 ht-degree: 0%
 
 ---
 
-# Anslut Salesforce
+# Anslut [!DNL Salesforce]
+
+![](../../../assets/Salesforce_Logo.png)
 
 >[!NOTE]
 >
 >Kräver [Administratörsbehörigheter](../../../administrator/user-management/user-management.md).
-
-![](../../../assets/Salesforce_Logo.png)
 
 Koppla samman [!DNL Salesforce] data möjliggör en rad analyser, från poängsättning och optimering av leads till att nå era mål för konverterade möjligheter.
 
@@ -29,11 +29,9 @@ Koppla samman [!DNL Salesforce] data möjliggör en rad analyser, från poängs�
 1. Klicka **[!UICONTROL Connect to Salesforce]**.
 1. Ange [!DNL Salesforce] inloggningsuppgifter och klicka på **[!UICONTROL Login to Salesforce]**.
 
-Så ja! När dina inloggningsuppgifter har validerats [!DNL Salesforce] Installationen är klar.
-
 ## Relaterat:
 
-Om du är lite mer teknikkunnig, [[!DNL Salesforce] API-dokumentation](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm) kan vara en användbar resurs för att lära dig mer om hur Salesforce integreras med [!DNL MBI].
+Om du är lite mer teknikkunnig, [[!DNL Salesforce] API-dokumentation](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm) kan vara en användbar resurs för att lära dig mer om hur Salesforce integreras med [!DNL Commerce Intelligence].
 
 * [Förväntat [!DNL Salesforce] data](../integrations/salesforce-data.md)
-* [Återautentisera integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
+* [Återautentisera integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

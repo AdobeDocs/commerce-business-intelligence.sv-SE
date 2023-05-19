@@ -1,25 +1,25 @@
 ---
-title: Namnge rapporter och element i MBI
-description: Lär dig de bästa sätten att namnge rapporter och element i [!DNL MBI].
+title: Namnge rapporter och element i Commerce Intelligence
+description: Lär dig de bästa sätten att namnge rapporter och element i [!DNL Commerce Intelligence].
 exl-id: c662cedd-c779-4254-b04b-f3092a538c85
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '724'
+source-wordcount: '723'
 ht-degree: 0%
 
 ---
 
 # Namnge rapporter och element
 
-Innan du börjar bygga in[!DNL MBI], vill Adobe dela med sig av några hemligheter till framgång. Det är viktigt att du vet hur man skapar mätvärden, filter och så vidare, men allt arbete kan vara bra om du inte hittar det du behöver eller om det är tvetydigt.
+Innan du börjar bygga in[!DNL Adobe Commerce Intelligence], vill Adobe dela med sig av några hemligheter till framgång. Det är viktigt att du vet hur man skapar mätvärden, filter och så vidare, men allt arbete kan vara bra om du inte hittar det du behöver eller om det är tvetydigt.
 
 ## Varför är nomenklatur viktigt? {#why}
 
-Det sätt på vilket du namnger beräknade kolumner, mätvärden och rapporter avgör hur enkelt det är att navigera bland olika användare [!DNL MBI] konto. När du namnger de här funktionerna bör du tänka på de tre CSS-formaten:
+Det sätt på vilket du namnger beräknade kolumner, mätvärden och rapporter avgör hur enkelt det är att navigera bland olika användare [!DNL Commerce Intelligence] konto. När du namnger de här funktionerna bör du tänka på de tre CSS-formaten:
 
 * **TYDLIGHET** - Så att ni snabbt kan se vad en rapport visar, vad en mätare gör och så vidare.
 * **ENHETLIGHET** - så att du (och Adobe supportteam) enkelt kan hitta och förstå element och rapporter i ditt konto.
-* **KREDIGERBARHET** - För att ge inspiration och stärka andra datadrivna [!DNL MBI] -användare måste ni känna er säkra på hur de förstår och använder data!
+* **KREDIGERBARHET** - För att ge inspiration och stärka andra datadrivna [!DNL Commerce Intelligence] -användare måste ni känna er säkra på hur de förstår och använder data!
 
 Läs vidare för att få tips om hur du använder vår egen nomenklatur!
 
@@ -41,7 +41,7 @@ Exemplen är specifika, vilket minskar risken för förvirring.
 
 ### Var konsekvent med versaler {#capitalize}
 
-Adobe rekommenderar att stora bokstäver visas med de övriga gemena bokstäverna, såvida inte du har använt rätt skiftläge för inledande bokstäver. Till exempel: **Användarens ordernummer** i stället för **Användarens ordernummer.**
+[!DNL Adobe] rekommenderar inledande versal med resten av tecknen i gemener, såvida inte rätt nummerformat används. Till exempel: **Användarens ordernummer** i stället för **Användarens ordernummer.**
 
 Det här är en fråga om att föredra, men det som är viktigt att komma ihåg är att vara konsekvent med vad du än väljer.
 
@@ -101,4 +101,4 @@ Intäkter (levererad\_at) Inkomster (skapad)
 
 ## Radbrytning {#wrapup}
 
-Genom att etablera formaterings- och namnkonventioner tidigt får du hjälp med att skapa [!DNL MBI] konto. Kom ihåg de tre CS: tydlighet, konsekvens och trovärdighet.
+Genom att etablera formaterings- och namnkonventioner tidigt får du hjälp med att skapa [!DNL Commerce Intelligence] konto. Kom ihåg de tre CS: tydlighet, konsekvens och trovärdighet.

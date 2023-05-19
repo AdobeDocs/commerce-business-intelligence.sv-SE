@@ -2,16 +2,16 @@
 title: Standardisera data med mappningstabeller
 description: Lär dig hur du arbetar med att mappa tabeller.
 exl-id: e452ff87-f298-43d5-acc3-af58e53bd0bc
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '757'
+source-wordcount: '743'
 ht-degree: 0%
 
 ---
 
 # Standardisera data med mappningstabeller
 
-Bild: du är i `Report Builder`, bygga en `Revenue by State` rapport. Du är i zonen. Allt går bra tills du lägger till en `billing state` gruppera efter rapporten och du ser detta:
+Tänk dig att du är i `Report Builder` bygga en `Revenue by State` rapport. Allt går bra tills du försöker lägga till en `billing state` gruppera efter rapporten och du ser detta:
 
 ![](../../assets/Messy_State_Segments.png)
 
@@ -45,9 +45,9 @@ I den andra kolumnen anger du vilka dessa värden är **bör**. Fortsätta med e
 
 ![](../../assets/Mapping_table_examples.jpg)
 
-## Vad behöver jag göra i [!DNL MBI] för att använda den? {#use}
+## Vad behöver jag göra i [!DNL Commerce Intelligence] för att använda den? {#use}
 
-När du är klar med att skapa mappningstabellen måste du [ladda upp filen](../../data-analyst/importing-data/connecting-data/using-file-uploader.md) till [!DNL MBI] och [skapa en kopplad kolumn](../../data-analyst/data-warehouse-mgr/calc-column-types.md) som omplacerar det nya fältet i den önskade tabellen. Du kan göra detta när filen har synkroniserats med Data warehouse.
+När du har skapat mappningstabellen måste du [ladda upp filen](../../data-analyst/importing-data/connecting-data/using-file-uploader.md) till [!DNL Commerce Intelligence] och [skapa en kopplad kolumn](../../data-analyst/data-warehouse-mgr/calc-column-types.md) som omplacerar det nya fältet i den önskade tabellen. Du kan göra detta när filen har synkroniserats med Data warehouse.
 
 Det här exemplet flyttar kolumnen som du skapade på `mapping_state` tabell (`state_input`) till `customer_address` tabell som använder en sammanfogad kolumn. Detta gör att vi kan gruppera efter `state_input` i dina rapporter i stället för `state` kolumn.
 
@@ -70,15 +70,13 @@ Skapa `joined` navigera till den tabell som fältet ska flyttas till i Data ware
 1. Sökvägen kanske inte fylls i omedelbart efter att du har sparat - om det händer klickar du på `Path` och markera den bana du skapade.
 1. Klicka **[!UICONTROL Save]** för att skapa kolumnen.
 
-Så ja!
-
 ## Vad ska jag göra nu? {#wrapup}
 
 När en uppdateringscykel är klar kan du använda den nya sammanfogade kolumnen för att segmentera data på rätt sätt i stället för den galna kolumnen i databasen. Titta på grupperingsalternativen nu - ingen mer stress:
 
 ![](../../assets/Clean_State_Segments.png)
 
-Det är praktiskt att mappa tabeller när du vill rensa upp lite information i Data warehouse. Mappningstabeller kan dock även användas för andra coola användningsområden, som [replikera dina Google Analytics-kanaler i MBI](../data-warehouse-mgr/rep-google-analytics-channels.md).
+Det är praktiskt att mappa tabeller när du vill rensa upp lite information i Data warehouse. Mappningstabeller kan dock även användas för andra coola användningsområden, som [replikera [!DNL Google Analytics channels] in [!DNL Commerce Intelligence]](../data-warehouse-mgr/rep-google-analytics-channels.md).
 
 ### Relaterad
 

@@ -2,20 +2,20 @@
 title: enterprise_rma-tabell
 description: Lär dig hur du analyserar information om en viss returbegäran.
 exl-id: a19cbc9a-e34f-4f4e-820f-9e413d1a552d
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '269'
 ht-degree: 0%
 
 ---
 
 # enterprise_rma-tabell
 
-Varje rad i `enterprise_rma` tabell (anropas ofta `magento_rma` i Commerce 2.x, men namnet kan anpassas) innehåller information om en viss returbegäran.
+Varje rad i `enterprise_rma` tabell (anropas ofta `magento_rma` i Adobe Commerce 2.x, men namnet kan anpassas) innehåller information om en viss returbegäran.
 
 >[!NOTE]
 >
->Det här registret levereras endast som standard med ditt Commerce-konto om du är en `Enterprise Edition` eller `Enterprise Cloud Edition` kund.
+>Tabellen levereras som standard med ditt Adobe Commerce-konto om du är en `Enterprise Edition` eller `Enterprise Cloud Edition` kund.
 
 ## Vanliga inbyggda kolumner
 

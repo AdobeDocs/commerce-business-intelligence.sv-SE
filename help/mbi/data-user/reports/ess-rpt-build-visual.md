@@ -2,24 +2,24 @@
 title: Visual Report Builder
 description: Lär dig hur du använder Visual Report Builder.
 exl-id: 1101f43d-e014-4df2-be21-12d90a9d8a56
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
 workflow-type: tm+mt
 source-wordcount: '672'
 ht-degree: 0%
 
 ---
 
-# `Visual Report Builder`
+# [!DNL Visual Report Builder]
 
-`Visual Report Builder` gör det enkelt att skapa snabba rapporter baserat på fördefinierade mätvärden. Varje mätvärde innehåller en fråga som definierar rapportens datauppsättning.
+[!DNL Visual Report Builder] gör det enkelt att skapa snabba rapporter baserat på fördefinierade mätvärden. Varje mätvärde innehåller en fråga som definierar rapportens datauppsättning.
 
 I följande exempel visas hur du skapar en enkel rapport, grupperar data efter ytterligare en dimension, anger datum och tidsintervall, ändrar diagramtyp och sparar rapporten på en kontrollpanel.
 
 ## Så här skapar du en enkel rapport:
 
-1. I [!DNL MBI] meny, klicka **[!UICONTROL Report Builder]**.
+1. I [!DNL Commerce Intelligence] meny, klicka **[!UICONTROL Report Builder]**.
 
-1. Under `Visual Report Builder`, klicka **[!UICONTROL Create Report]** och gör följande:
+1. Under [!UICONTROL Visual Report Builder], klicka **[!UICONTROL Create Report]** och gör följande:
 
    * Klicka **[!UICONTROL Add Metric]**.
 

@@ -1,19 +1,19 @@
 ---
 title: Exportera rådata
-description: Lär dig exportera poster från [!DNL MBI] data warehouse för att få en närmare titt på vad som ligger bakom instrumentpanelen.
+description: Lär dig exportera poster från [!DNL Commerce Intelligence] data warehouse för att få en närmare titt på vad som ligger bakom instrumentpanelen.
 exl-id: 26decdaf-2b2c-4ca2-b3d5-0386892662e8
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '477'
 ht-degree: 0%
 
 ---
 
 # Exportera rådata
 
-Med export av rådata kan du exportera poster från [!DNL MBI] data warehouse för att få en närmare titt på vad som ligger bakom instrumentpanelen. Export av rådata kan också hjälpa dig [identifiera datamatchningsavvikelser](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html?lang=en).
+Med export av rådata kan du exportera poster från Data warehouse för att få en närmare bild av vad som ligger bakom instrumentpanelen. Export av rådata kan också hjälpa dig [identifiera datamatchningsavvikelser](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html).
 
-Export av rådata ger tillgång till ytterligare kolumner och dimensioner som genereras genom avnormalisering och föraggning av relevanta mått. Till exempel: `User's first order date` är en dimension som du kan exportera för varje användare i [!DNL MBI], även om den inte är tillgänglig i din databas.
+Export av rådata ger tillgång till ytterligare kolumner och dimensioner som genereras genom avnormalisering och föraggning av relevanta mått. Till exempel: `User's first order date` är en dimension som du kan exportera för varje användare i [!DNL Commerce Intelligence], även om den inte är tillgänglig i din databas.
 
 Den här självstudiekursen handlar om följande:
 
@@ -23,13 +23,16 @@ Den här självstudiekursen handlar om följande:
 
 ## Steg 1: Markera data som ska exporteras {#select}
 
-Det finns två sätt att exportera rådata på [!DNL MBI]: på diagramnivå eller tabellnivå.
+Det finns två sätt att exportera rådata på [!DNL Commerce Intelligence]:
 
-### Exportera på tabellnivå i `Manage Data` Tabb
+1. på diagramnivå
+1. på tabellnivå
 
-Om du vill exportera tabellen från `Manage Data` -flik, du behöver [Administratör](../administrator/user-management/user-management.md) behörigheter.
+### Exportera på tabellnivå i [!UICONTROL Manage Data] Tabb
 
-1. Klicka **[!UICONTROL Manage Data** > ** Exportera data **> **Raw-dataexport]** för att komma igång.
+Om du vill exportera tabellen från [!UICONTROL Manage Data] -flik, du behöver [Administratör](../administrator/user-management/user-management.md) behörigheter.
+
+1. Klicka **[!UICONTROL Manage Data** > ** Exportera data **> **Raw-dataexport]**.
 1. Du ser `Export List` av nyligen skapade dataexporter, om sådana finns. Klicka **[!UICONTROL Add Export]** för att skapa en export.
 1. The `New Raw Data Export` visas. Här kan du anpassa exporten genom att markera eller avmarkera kolumner och filter:
 
@@ -43,8 +46,11 @@ Om du vill exportera tabellen från `Manage Data` -flik, du behöver [Administra
 ### Exportera på diagramnivå från kontrollpanelen
 
 1. Klicka på kugghjulsikonen i det övre högra hörnet av ett diagram.
+
 1. Välj `Raw Export` från listrutan för att visa `Raw Export` -dialogrutan.
+
 1. Anpassa exporten genom att välja `table`, `columns`och `filters` att inkludera eller exkludera. Mer information om fälten i den här modulen finns i föregående avsnitt.
+
    >[!NOTE]
    >
    >Tabellen som visas i `Table` -fältet är som standard tabellen som styr diagrammet.
@@ -66,5 +72,3 @@ Om du vill kontrollera om exporten är klar klickar du på **[!UICONTROL Raw Dat
 ## Steg 3: Få tillgång till historikexport {#historical}
 
 Om du vill visa tidigare exporter klickar du på **[!UICONTROL Raw Data Export]** i skärmens övre högra hörn. Väntande och slutförda rapporter kan användas i upp till sju dagar.
-
-Grattis! Du är färdig.

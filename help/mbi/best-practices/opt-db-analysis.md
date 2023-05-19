@@ -2,16 +2,16 @@
 title: Optimera databasen för analys
 description: Lär dig hur du optimerar databasen för analys.
 exl-id: e73e1a1e-c933-476d-97bc-bd8f52bb2fa1
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '872'
 ht-degree: 0%
 
 ---
 
 # Optimera databasen
 
-Den främsta fördelen med att använda en databas för affärsinformation är att inget behöver skapas eller ändras för att samla in data. Det finns redan värdefull information. Allt du behöver göra är att låsa upp den.
+Den största fördelen med att använda en databas för [!DNL Adobe Commerce Intelligence] Inget behöver byggas eller ändras för att samla in data. Värdefull information finns redan - du behöver bara låsa upp den.
 
 Det här avsnittet innehåller några rekommendationer som hjälper dig att optimera databasen för analys och hämta åtgärdbara insikter från rådata.
 
@@ -51,16 +51,16 @@ Alltför många företag fokuserar enbart på att hitta kanaler som ger nya anv�
 
 ### Ange en primärnyckel
 
-A [primärnyckel](https://en.wikipedia.org/wiki/Unique_key) är en oföränderlig kolumn (eller en uppsättning kolumner) som skapar unika värden i en tabell. Primära nycklar är oerhört viktiga eftersom de ser till att dina tabeller är korrekt replikerade i [!DNL MBI].
+A [primärnyckel](https://en.wikipedia.org/wiki/Unique_key) är en oföränderlig kolumn (eller en uppsättning kolumner) som skapar unika värden i en tabell. Primära nycklar är oerhört viktiga eftersom de ser till att dina tabeller är korrekt replikerade i [!DNL Commerce Intelligence].
 
 När du skapar primärnycklar ska du använda en heltalsdatatyp för kolumnen som ökar automatiskt. Adobe rekommenderar att du undviker att använda flera kolumnprimärnycklar där det är möjligt.
 
-Om tabellen är en SQL-vy lägger du till en kolumn som kan fungera som primärnyckel. [!DNL MBI] kan automatiskt identifiera den här kolumnen som en primärnyckel.
+Om tabellen är en SQL-vy lägger du till en kolumn som kan fungera som primärnyckel. [!DNL Commerce Intelligence] kan automatiskt identifiera den här kolumnen som en primärnyckel.
 
 ### Tilldela en datatyp till din datakolumn
 
-Om en datakolumn inte har tilldelats [datatyp](https://en.wikipedia.org/wiki/Data_type), [!DNL MBI] definierar vilken datatyp som ska användas. Om systemet gissar fel kanske du inte kan utföra de relevanta analyserna förrän supportteamet på Adobe justerar kolumnen till rätt datatyp. Om till exempel en datumkolumn tolkas som en numerisk datatyp kan du använda den datumdimensionen för att skapa en trend över tiden.
+Om en datakolumn inte har tilldelats [datatyp](https://en.wikipedia.org/wiki/Data_type), [!DNL Commerce Intelligence] definierar vilken datatyp som ska användas. Om systemet gissar fel kanske du inte kan utföra de relevanta analyserna förrän supportteamet på Adobe justerar kolumnen till rätt datatyp. Om till exempel en datumkolumn tolkas som en numerisk datatyp kan du använda den datumdimensionen för att skapa en trend över tiden.
 
 ### Lägg till prefix i datatabellerna om du har flera databaser
 
-Om du har fler än en databas ansluten till [!DNL MBI]rekommenderar Adobe att du lägger till prefix i tabellerna för att undvika förvirring. Prefix hjälper dig att komma ihåg varifrån mätvärden eller datamängder kommer.
+Om du har fler än en databas ansluten till [!DNL Commerce Intelligence]rekommenderar Adobe att du lägger till prefix i tabellerna för att undvika förvirring. Prefix hjälper dig att komma ihåg varifrån mätvärden eller datamängder kommer.

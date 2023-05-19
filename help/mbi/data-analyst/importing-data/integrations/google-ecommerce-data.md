@@ -2,7 +2,7 @@
 title: Förväntat[!DNL Google ECommerce]data
 description: Lär dig vilka typer av data som delas med Google ECommerce.
 exl-id: 8e5d8863-f003-4c38-95c5-660bcbff48da
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 8d4e71363edad0613cc0ab277c2a43aad000965e
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Förväntat[!DNL Google ECommerce] data
 
-Efter [!DNL Google ECommerce] kontot har anslutits till [!DNL MBI]kommer systemet att börja importera data till en tabell med namnet `ecommerce`. Det här registret registrerar en datarad för varje transaktion. Detta inkluderar följande datakolumner på ordningsnivå:
+Efter [!DNL Google ECommerce] kontot har anslutits till [!DNL Commerce Intelligence]kommer systemet att börja importera data till en tabell med namnet `ecommerce`. Det här registret registrerar en datarad för varje transaktion. Detta inkluderar följande datakolumner på ordningsnivå:
 
 | Kolumnnamn | Beskrivning |
 |-----|-----|

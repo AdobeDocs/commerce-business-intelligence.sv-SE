@@ -1,23 +1,23 @@
 ---
 title: Skapa och använda en SQL-beräknad kolumn
-description: Lär dig hur avancerade kolumner kan skapas i form av SQL Calculation-kolumner i den nya MBI-arkitekturen.
+description: Lär dig hur avancerade kolumner kan skapas i form av SQL Calculation-kolumner i den nya Adobe Commerce Intelligence-arkitekturen.
 exl-id: f16e4ee4-ed73-4ddb-b701-1fe3db14346a
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
 workflow-type: tm+mt
-source-wordcount: '817'
+source-wordcount: '816'
 ht-degree: 0%
 
 ---
 
 # Skapa en SQL-beräknad kolumn
 
-I det här avsnittet beskrivs syftet med och användningsområdena för `Calculation` kolumntyp: som kan läggas till i tabeller med [data warehouse Manager](../data-warehouse-mgr/tour-dwm.md). Nedan visas en förklaring av vad SQL-beräkningar gör, varför de används, processen för att skapa en SQL-beräkning och två exempel.
+I det här avsnittet beskrivs syftet med och användningsområdena för `Calculation` kolumntyp, som kan läggas till i tabeller med [data warehouse Manager](../data-warehouse-mgr/tour-dwm.md). Nedan förklaras vad SQL-beräkningar gör, varför de används, processen för att skapa en SQL-beräkning och innehåller två exempel.
 
 **Förklaring**
 
-Tidigare bedömdes kolumner `advanced` kan bara utföras av en analytiker i Customer Success Team här på [!DNL MBI]. Nu har slutanvändaren allt som behövs och avancerade kolumner kan skapas i form av `SQL Calculation` kolumner på nya [!DNL MBI] arkitektur.
+Tidigare bedömdes kolumner `advanced` kan bara utföras av en analytiker i Customer Success Team här på [!DNL Adobe Commerce Intelligence]. Nu har slutanvändaren allt som behövs och avancerade kolumner kan skapas i form av `SQL Calculation` kolumner på nya [!DNL Commerce Intelligence] arkitektur.
 
-The `Calculation` kolumntypen, som nu finns som ett alternativ i Data warehouse Manager, är samma tabellåtgärd som gör att du kan omforma kolumnerna i en tabell med hjälp av PostgreSQL-logik. Dokumentation om funktioner och operatorer som kan användas i `Calculatio`Det finns ingen kolumntyp på PostgreSQL-webbplatsen [här](https://www.postgresql.org/docs/9.6/functions.html).
+The `Calculation` kolumntypen, som nu finns som ett alternativ i Data warehouse Manager, är samma tabellåtgärd som gör att du kan omforma kolumnerna i en tabell med hjälp av PostgreSQL-logik. Dokumentation om funktioner och operatorer som kan användas i `Calculation` kolumntypen finns på PostgreSQL-webbplatsen [här](https://www.postgresql.org/docs/9.6/functions.html).
 
 De olika kolumner som kan skapas med `Calculation` -kolumnen är nästan obegränsad, men de flesta kolumner kan skapas med IF-THEN-programsatser och grundläggande aritmetik, som används i exemplen nedan.
 
@@ -73,4 +73,5 @@ Här kan du skapa en `Calculation` kolumn genom att följa stegen nedan:
    * `Datetime` - yyyy-MM-dd hh:mm:ss-format
 
 1. Klicka **[!UICONTROL test column]**. Detta genererar en lista med fem testvärden för var och en av dina indata och visar resultatet av logiken från steg 6 för varje uppsättning med testvärden. Om någon del av SQL genererar ett fel returneras felmeddelandet. Exempelresultat kan bara genereras om alla indatakolumner är inbyggda fält. Om någon av indatakolumnerna är beräknade kolumner måste du validera resultatet genom att lägga till kolumnen i ett mätresultat och visa den i Report Builder
+
 1. När du är nöjd med resultatet klickar du på **[!UICONTROL Save]**. Kolumnen kan användas.

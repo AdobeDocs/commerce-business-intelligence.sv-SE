@@ -2,9 +2,9 @@
 title: Identifiera era mest värdefulla marknadsföringskällor och kanaler
 description: Läs om några rapporter som du kan använda för att identifiera dina mest värdefulla marknadsföringskanaler.
 exl-id: 8d25bc80-ea60-47db-b01b-04a23a24c14d
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '979'
+source-wordcount: '978'
 ht-degree: 0%
 
 ---
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 Ni har undersökt er målgrupp, skapat kampanjen och investerat i några marknadsföringskanaler. Nu när tiden har gått, hur fungerar dessa kanaler? Vilken kanal har de senaste användarna fått? Vilken källa har bidragit mest till dina totala intäkter?
 
-Med [!DNL MBI]kan ni enkelt segmentera era intäkter och användare utifrån hänvisningskälla, oavsett om de motsvarar [!DNL [Google Analytics' UTM fields]](https://support.google.com/analytics/answer/1191184?hl=en) eller anpassade datafält. Denna segmentering gör att ni kan hitta de kanaler som presterar bäst och investera er marknadsföringsbudget bättre.
+Med [!DNL Adobe Commerce Intelligence]kan ni enkelt segmentera era intäkter och användare utifrån hänvisningskälla, oavsett om de motsvarar [!DNL [Google Analytics' UTM fields]](https://support.google.com/analytics/answer/1191184?hl=en) eller anpassade datafält. Denna segmentering gör att ni kan hitta de kanaler som presterar bäst och investera er marknadsföringsbudget bättre.
 
-I den här artikeln beskrivs några rapporter som du kan använda för att identifiera dina mest värdefulla marknadsföringskanaler:
+I det här avsnittet beskrivs några rapporter som du kan använda för att identifiera dina mest värdefulla marknadsföringskanaler:
 
 * [Nya användare efter källor](#newusersbysource)
 * [Genomsnittlig intäkt för livstid per användarkälla](#avglifetimerev)
@@ -25,7 +25,7 @@ I den här artikeln beskrivs några rapporter som du kan använda för att ident
 
 ## Förutsättningar {#prereqs}
 
-För att kunna bygga upp analyserna i den här artikeln måste ni ha tillgång till källdata för marknadsföringsinhämtning/hänskjutning. Om du inte redan spårar den måste du ta med [referera till källdata för order från [!DNL Google ECommerce]](../importing-data/integrations/google-ecommerce.md) till [!DNL MBI] innan du kan fortsätta. Genom att lägga till information om användarenheter i analyserna kan du dessutom se vilken teknik dina hänvisningar använder.
+För att kunna bygga upp analyserna i det här avsnittet måste du ha tillgång till källdata för marknadsföring/referens. Om du inte redan spårar den måste du ta med [referera till källdata för order från [!DNL Google ECommerce]](../importing-data/integrations/google-ecommerce.md) till [!DNL Adobe Commerce Intelligence] innan du kan fortsätta. Genom att lägga till information om användarenheter i analyserna kan du också se vilken teknik som används i dina hänvisningar.
 
 ## Nya användare efter källa {#newusersbysource}
 
@@ -111,7 +111,7 @@ Här är en genomgång:
 
 ## Radbrytning {#wrapup}
 
-Den här artikeln behandlar bara några analyser som du kan använda för att analysera värdet av era förvärv- och marknadsföringskanaler, men det här är bara toppen av isberget.
+Det här avsnittet handlar bara om några analyser du kan använda för att analysera värdet av era förvärv- och marknadsföringskanaler, men det här är bara toppen av isberget.
 
 ## Relaterad {#related}
 

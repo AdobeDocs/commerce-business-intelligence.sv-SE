@@ -2,7 +2,7 @@
 title: Ta bort ett diagram permanent
 description: Lär dig hur du permanent tar bort ett diagram.
 exl-id: 34234ff6-b258-4369-9774-946d8423d4da
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 8d4e71363edad0613cc0ab277c2a43aad000965e
 workflow-type: tm+mt
 source-wordcount: '103'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Ta bort ett diagram permanent
 
-Även om du [ta bort ett diagram från kontrollpanelen](../../data-user/dashboards/remove-charts-dashboard.md)finns den fortfarande i [!DNL MBI] konto.
+Även om du [ta bort ett diagram från kontrollpanelen](../../data-user/dashboards/remove-charts-dashboard.md)finns den fortfarande i [!DNL Commerce Intelligence] konto.
 
 Så här tar du bort ett diagram permanent:
 

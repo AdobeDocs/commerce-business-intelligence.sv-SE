@@ -2,9 +2,9 @@
 title: Ordna data med funktionen Visa överkant/nederkant
 description: Lär dig hur du beställer data med funktionen Visa överkant/underkant.
 exl-id: d47119f4-cdc5-4fa7-a606-d4b8555a8843
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '665'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Den här sorteringen och sorteringen av data kan göras i rapporter där både e
 
 ## Hur använder jag den här? {#how}
 
-När du klickat på **[!UICONTROL Show Top/Bottom link]** visas ett fönster där du kan ange parametrarna för visning och sortering. Talet i textrutan kan vara ett heltal (som `5`) eller `ALL`. Därefter kan du välja att sortera rapporten antingen efter måttet ELLER efter grupperingen.
+Klicka på **[!UICONTROL Show Top/Bottom link]** för att ställa in visnings- och sorteringsparametrar. Talet i textrutan kan vara ett heltal (som `5`) eller `ALL`. Därefter kan du välja att sortera rapporten antingen efter måttet ELLER efter grupperingen.
 
 Om du till exempel vill visa de fem hänvisningskällorna som gav störst intäkter är det så här du gör:
 

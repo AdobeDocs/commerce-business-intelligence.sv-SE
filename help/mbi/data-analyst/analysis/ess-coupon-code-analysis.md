@@ -2,9 +2,9 @@
 title: Kupongkodanalys (grundläggande)
 description: Läs mer om hur ert företag presterar i form av kuponger är ett intressant sätt att segmentera era order och bättre förstå kundernas vanor.
 exl-id: 0d486259-b210-42ae-8f79-cd91cc15c2c2
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '439'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Att förstå hur ert företag presterar i form av kuponger är ett intressant sätt att segmentera era order och bättre förstå kundernas vanor.
 
-I den här artikeln beskrivs de steg som krävs för att skapa den här analysen för att förstå hur kupongköpta kunder fungerar, se trender och spåra användningen av enskilda kupongkoder.
+I det här avsnittet beskrivs stegen som krävs för att skapa den här analysen för att förstå hur kupongköpta kunder fungerar, se trender och spåra användningen av enskilda kupongkoder.
 
 ![](../../assets/coupon_analysis_dash_720.png)<!--{: width="807" height="471"}-->
 
@@ -21,7 +21,7 @@ I den här artikeln beskrivs de steg som krävs för att skapa den här analysen
 
 Först en anteckning om hur kupongkoder spåras. Om en kund har tillämpat en kupong på en order händer tre saker:
 
-* Rabatten framgår av `base_grand_total` mängd (din `Revenue` mått i MBI)
+* Rabatten framgår av `base_grand_total` mängd (din `Revenue` mått i Commerce Intelligence)
 * Kupongkoden lagras i `coupon_code` fält. Om det här fältet är NULL (tomt) är ordern inte kopplad till någon kupong.
 * Det diskonterade beloppet lagras i `base_discount_amount`. Beroende på din konfiguration kan det här värdet vara negativt eller positivt.
 

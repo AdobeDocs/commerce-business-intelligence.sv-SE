@@ -2,24 +2,24 @@
 title: MongoDB-datamodellering
 description: Lär dig hur du undviker datamönster som kan utgöra ett problem.
 exl-id: 556c854b-5d7c-4f72-8ed7-5bc08d9ee5b9
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
-source-wordcount: '128'
+source-wordcount: '129'
 ht-degree: 0%
 
 ---
 
 # [!DNL MongoDB] Datamodellering
 
-När [!DNL MBI] pullin [!DNL MongoDB] data, översätts dessa data till en relationsmodell.
+När [!DNL Adobe Commerce Intelligence] pullin [!DNL MongoDB] data, översätts dessa data till en relationsmodell.
 
-De dåliga nyheterna: Även om de flesta datamönster inte utgör något problem finns det några som, på grund av översättningen till en relationsmodell, [!DNL MBI] stöder inte.
+De dåliga nyheterna: De flesta datamönster utgör inte något problem, men det finns några som inte stöds av [!DNL Commerce Intelligence], på grund av översättningen till en relationsmodell.
 
 Goda nyheter: Alla dessa mönster kan undvikas.
 
 ## Underkapslade arrayer {#subnested}
 
-Om din samling ser ut som exemplet nedan [!DNL MBI] replikerar bara data i arrayen items. Data från underobjektarrayen hämtas inte.
+Om din samling ser ut som exemplet nedan [!DNL Commerce Intelligence] replikerar bara data i arrayen items. Data från underobjektarrayen hämtas inte.
 
 ```bash
     {
@@ -41,7 +41,7 @@ Om din samling ser ut som exemplet nedan [!DNL MBI] replikerar bara data i array
 
 ## Variabla objektnycklar {#varobjectkeys}
 
-Samlingar som innehåller objekt med variabla objektnycklar replikeras inte i [!DNL MBI]. Till exempel:
+Samlingar som innehåller objekt med variabla objektnycklar replikeras inte i [!DNL Commerce Intelligence]. Till exempel:
 
 ```bash
     {

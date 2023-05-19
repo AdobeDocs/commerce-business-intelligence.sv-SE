@@ -2,28 +2,28 @@
 title: Konfigurerar replikeringsmetoder
 description: Lär dig hur tabeller är ordnade och hur tabelldata fungerar gör att du kan välja den bästa replikeringsmetoden för tabellerna.
 exl-id: 83895c48-a6ec-4b01-9890-164e0b21dcbc
-source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '1413'
+source-wordcount: '1414'
 ht-degree: 0%
 
 ---
 
 # Konfigurerar replikeringsmetoder
 
-`Replication` metoder och [omkontroller](../data-warehouse-mgr/cfg-data-rechecks.md) används för att identifiera nya eller uppdaterade data i dina databastabeller. Att ställa in dem på rätt sätt är avgörande för att både datakvaliteten och optimerade uppdateringstider ska kunna garanteras. Den här artikeln fokuserar på replikeringsmetoder.
+`Replication` metoder och [omkontroller](../data-warehouse-mgr/cfg-data-rechecks.md) används för att identifiera nya eller uppdaterade data i dina databastabeller. Att ställa in dem på rätt sätt är avgörande för att både datakvaliteten och optimerade uppdateringstider ska kunna garanteras. Det här avsnittet fokuserar på replikeringsmetoder.
 
-När nya tabeller synkroniseras i Data warehouse Manager väljs automatiskt en replikeringsmetod för tabellen. Om du förstår de olika replikeringsmetoderna, hur tabeller är ordnade och hur tabelldata fungerar kan du välja den bästa replikeringsmetoden för tabellerna.
+När nya tabeller synkroniseras i [data warehouse Manager](../data-warehouse-mgr/tour-dwm.md)väljs automatiskt en replikeringsmetod för tabellen. Om du förstår de olika replikeringsmetoderna, hur tabeller är ordnade och hur tabelldata fungerar kan du välja den bästa replikeringsmetoden för tabellerna.
 
 ## Vilka är replikeringsmetoderna?
 
 `Replication` metoder kan delas in i tre grupper - `Incremental`, `Full Table`och `Paused`.
 
-[**[!UICONTROL Incremental Replication]**](#incremental) innebär att [!DNL MBI] replikerar endast nya eller uppdaterade data vid varje replikeringsförsök. Eftersom dessa metoder minskar fördröjningen avsevärt rekommenderar Adobe att du använder den där det är möjligt.
+[**[!UICONTROL Incremental Replication]**](#incremental) innebär att [!DNL Commerce Intelligence] replikerar endast nya eller uppdaterade data vid varje replikeringsförsök. Eftersom dessa metoder minskar fördröjningen avsevärt rekommenderar Adobe att du använder den där det är möjligt.
 
-[**[!UICONTROL Full Table Replication]**](#fulltable) innebär att [!DNL MBI] replikerar hela innehållet i en tabell vid varje replikeringsförsök. På grund av den potentiellt stora mängd data som kan replikeras kan dessa metoder öka fördröjningen och uppdateringstiden. Om en tabell innehåller tidstämpling- eller datetime-kolumner rekommenderar Adobe att du använder en Stegvis metod i stället.
+[**[!UICONTROL Full Table Replication]**](#fulltable) innebär att [!DNL Commerce Intelligence] replikerar hela innehållet i en tabell vid varje replikeringsförsök. På grund av den potentiellt stora mängd data som kan replikeras kan dessa metoder öka fördröjningen och uppdateringstiden. Om en tabell innehåller tidstämpling- eller datetime-kolumner rekommenderar Adobe att du använder en Stegvis metod i stället.
 
-**[!UICONTROL Paused]** anger att replikeringen för tabellen har stoppats eller pausats. [!DNL MBI] inte söker efter nya eller uppdaterade data under en uppdateringscykel, Detta innebär att inga data replikeras från en tabell som har detta som replikeringsmetod.
+**[!UICONTROL Paused]** anger att replikeringen för tabellen har stoppats eller pausats. [!DNL Commerce Intelligence] inte söker efter nya eller uppdaterade data under en uppdateringscykel, Detta innebär att inga data replikeras från en tabell som har detta som replikeringsmetod.
 
 ## Stegvisa replikeringsmetoder {#incremental}
 
@@ -37,7 +37,7 @@ The `Modified At` replikeringsmetoden använder en datetime-kolumn, som fylls i 
 
 Utöver dessa kriterier rekommenderar Adobe att **indexering** den `datetime` kolumn som används för `Modified At` replikering, eftersom detta bidrar till att optimera replikeringshastigheten.
 
-När uppdateringen körs identifieras nya eller ändrade data genom sökning efter rader som har ett värde i `datetime` -kolumn som inträffade efter den senaste uppdateringen. När nya rader upptäcks replikeras de till Data warehouse. Om det finns rader i Data warehouse skrivs de över med de aktuella databasvärdena.
+När uppdateringen körs identifieras nya eller ändrade data genom sökning efter rader som har ett värde i `datetime` -kolumn som inträffade efter den senaste uppdateringen. När nya rader upptäcks replikeras de till Data warehouse. Om det finns några rader i [data warehouse Manager](../data-warehouse-mgr/tour-dwm.md), skrivs de över med de aktuella databasvärdena.
 
 En tabell kan till exempel ha en kolumn som kallas `modified\_at` som anger senaste gången data ändrades. Om den senaste uppdateringen kördes tisdag klockan 12.00 söker uppdateringen efter alla rader som har en `modified\_at` större än tisdag klockan tolv. Alla identifierade rader som antingen har skapats eller ändrats sedan 19.00 på tisdagen replikeras till Data warehouse.
 
@@ -74,7 +74,7 @@ När en tabell använder `Add Date` nya data upptäcks genom att söka efter tid
 
 `Full table` hela tabellen uppdateras när nya rader upptäcks. Detta är den i särklass minst effektiva replikeringsmetoden eftersom alla data måste bearbetas om under varje uppdatering, förutsatt att det finns nya rader.
 
-Nya rader upptäcks genom att du skickar en fråga till databasen i början av synkroniseringsprocessen och räknar antalet rader. Om den lokala databasen innehåller fler rader än [!DNL MBI], uppdateras tabellen. Om antalet rader är identiskt, eller om [!DNL MBI] innehåller *mer* rader än din lokala databas, hoppas tabellen över.
+Nya rader upptäcks genom att du skickar en fråga till databasen i början av synkroniseringsprocessen och räknar antalet rader. Om den lokala databasen innehåller fler rader än [!DNL Commerce Intelligence], uppdateras tabellen. Om antalet rader är identiskt, eller om [!DNL Commerce Intelligence] innehåller *mer* rader än din lokala databas, hoppas tabellen över.
 
 Detta leder till den viktiga punkten att **`Full Table`replikeringen är inte kompatibel när:**
 
@@ -104,11 +104,11 @@ Replikeringsmetoderna anges tabell för tabell. Om du vill ange en replikeringsm
 1. I Data warehouse Manager väljer du tabellen i `Synced Tables` lista för att visa tabellens schema.
 1. Den aktuella replikeringsmetoden visas under tabellnamnet. Klicka på länken om du vill ändra den.
 1. Klicka på alternativknappen bredvid antingen `Incremental` eller `Full Table` replikering för att välja en replikeringstyp.
-1. Klicka sedan på **[!UICONTROL Replication Method]** listruta för att välja en metod, till exempel `Paused` eller `Modified At`.
+1. Klicka sedan på **[!UICONTROL Replication Method]** för att välja en metod. Till exempel: `Paused` eller `Modified At`.
 
    >[!NOTE]
    >
-   >**Vissa inkrementella metoder kräver att du anger en`Replication Key`**. [!DNL MBI] använder den här nyckeln för att bestämma var nästa uppdateringscykel ska börja.
+   >**Vissa inkrementella metoder kräver att du anger en`Replication Key`**. [!DNL Commerce Intelligence] använder den här nyckeln för att bestämma var nästa uppdateringscykel ska börja.
    >
    >Om du till exempel vill använda `modified at` metod för `orders` måste du ange en `date column` som replikeringsnyckeln. Det kan finnas flera alternativ för replikeringsnycklar, men du väljer `created at`eller när ordern skapades. Om den senaste uppdateringscykeln stoppades 12/1/2015 00:10:00, nästa cykel börjar replikera data med en `created at` datum större än detta.
 

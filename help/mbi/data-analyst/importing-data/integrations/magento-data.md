@@ -1,19 +1,19 @@
 ---
 title: Förväntade handelsdata
-description: Utforska huvuddatatabellerna som Commerce-användare importerar till MBI
+description: Utforska de viktigaste datatabeller som Commerce-användare importerar till Commerce Intelligence
 exl-id: b481c8fc-41b6-4094-8901-17d57f26bfc0
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '245'
 ht-degree: 0%
 
 ---
 
-# Förväntade handelsdata
+# Förväntat [!DNL Adobe Commerce] Data
 
-Efter att du har [har anslutit din Commerce Store](../../../data-analyst/importing-data/integrations/magento.md)kan du använda Data warehouse Manager för att enkelt spåra relevanta datafält från din Commerce-databas för analys.
+Efter att du har [ansluten till din [!DNL Adobe Commerce] store](../../../data-analyst/importing-data/integrations/magento.md)kan du använda Data warehouse Manager för att enkelt spåra relevanta datafält från din Commerce-databas för analys.
 
-I den här artikeln utforskas huvuddatatabellerna som Commerce-användare importerar till [!DNL MBI].
+I det här avsnittet utforskas de viktigaste datatabeller som Commerce-användare importerar till [!DNL Commerce Intelligence].
 
 | **Tabellnamn** | **Beskrivning** |
 |-----|-----|
@@ -28,4 +28,4 @@ I den här artikeln utforskas huvuddatatabellerna som Commerce-användare import
 ## Relaterad
 
 * [Ansluter [!DNL Adobe Commerce]](../integrations/magento.md)
-* [Återautentisera integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
+* [Återautentisera integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

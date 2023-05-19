@@ -2,22 +2,22 @@
 title: Analysera webbplatsaktivitet och kundkonverteringsgrader
 description: Lär dig hur du konfigurerar en kontrollpanel som kan spåra webbplatsens aktivitet - inklusive sidvisningar, sessioner och användare - och hur stor kundkonverteringen är över tid.
 exl-id: 2b57d5b3-3bbf-4ec9-86a6-9fa850c1c459
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '743'
+source-wordcount: '744'
 ht-degree: 0%
 
 ---
 
 # Analyserar webbplatsaktivitet
 
-[!DNL MBI] kan ni enkelt integrera era annonsdata med resten av era data. Detta gör det inte bara möjligt för er att förstå webbplatsens aktivitet, utan gör det möjligt för er att ta reda på hur många besökare på er webbplats som blir registrerade användare eller gör ett köp.
+[!DNL Adobe Commerce Intelligence] kan ni enkelt integrera era annonsdata med resten av era data. Detta gör det inte bara möjligt för er att förstå webbplatsens aktivitet, utan gör det möjligt för er att ta reda på hur många besökare på er webbplats som blir registrerade användare eller gör ett köp.
 
-I den här artikeln beskrivs hur du konfigurerar en kontrollpanel som kan spåra webbplatsens aktivitet - inklusive sidvisningar, sessioner och användare - och hur stor kundkonverteringsgraden är över tiden.
+I det här avsnittet visas hur du konfigurerar en kontrollpanel som ska spåra webbplatsens aktivitet - inklusive sidvisningar, sessioner och användare - och hur stor kundkonverteringsgraden är över tiden.
 
 ## Förutsättningar
 
-**Importera kostnadsdata för annonsering** - Connect [!DNL [Google AdWords]](../importing-data/integrations/google-adwords.md) till [!DNL MBI] - detta synkroniserar automatiskt [!DNL AdWords] utgifter i MBI.
+**Importera kostnadsdata för annonsering** - Connect [!DNL [Google AdWords]](../importing-data/integrations/google-adwords.md) till [!DNL Adobe Commerce Intelligence] - detta synkroniserar automatiskt [!DNL AdWords] utgifter i Commerce Intelligence.
 
 **Spåra kanaldata för kundvärvning** - för att knyta [!DNL Google AdWords] data till specifika order i din databas måste du [spåra användarförvärv](../analysis/google-track-user-acq.md) via [!DNL Google Analytics E-commerce]. På så sätt kan du koppla varje beställning till en utm-källa och ett medium.
 
@@ -103,4 +103,4 @@ Den här rapportsamlingen skapas med följande:
 
 Nu när du har tillgång till data om din webbtrafik och konverteringsgrader kan du börja med att lösa detta för att fatta affärsbeslut, som vilka webbplatser som är bäst på att köra trafik till din webbplats? eller vilka av era kampanjer som är mest effektiva när det gäller att värva kunder med ett högt värde för hela livet?
 
-När ni anpassar annonskostnaderna och marknadsföringsstrategin kan ni fortsätta att följa resultaten i [!DNL MBI], och itererar på den här instrumentpanelen för att uppfylla företagets föränderliga prioriteringar.
+När ni anpassar annonskostnaderna och marknadsföringsstrategin kan ni fortsätta att följa resultaten i [!DNL Commerce Intelligence], och itererar på den här instrumentpanelen för att uppfylla företagets föränderliga prioriteringar.

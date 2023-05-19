@@ -2,9 +2,9 @@
 title: Hantera dina kontoinställningar
 description: Lär dig hur du anpassar dina kontoinställningar för Data warehouse.
 exl-id: 847d51b1-287e-4c14-b64e-0bd9bfcccedc
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 8d4e71363edad0613cc0ab277c2a43aad000965e
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '341'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 >
 >Kräver [Administratörsbehörigheter.](../../administrator/user-management/user-management.md)
 
-I [!DNL MBI] kan du anpassa dina kontoinställningar för Data warehouse. Du kommer åt dessa genom att välja organisationens namn i det övre högra hörnet på valfri skärm och sedan välja **[!UICONTROL Account Settings]** i listrutan.
+I [!DNL Commerce Intelligence] kan du anpassa dina kontoinställningar för Data warehouse. Du kommer åt dessa genom att välja organisationens namn i det övre högra hörnet på valfri skärm och sedan välja **[!UICONTROL Account Settings]** i listrutan.
 
 * **[!UICONTROL Client Name:]** Den här inställningen visas i det övre högra hörnet av alla instrumentpaneler och på andra ställen i ditt konto. Om du vill ändra **[!UICONTROL "Vandelay Industries Co., Ltd]** till bara **[!UICONTROL "Vandelay]**, det är här vi ska göra det.
 

@@ -1,17 +1,17 @@
 ---
 title: Kohortanalys för livstidsintäkt
-description: Utforska möjligheterna i [!DNL MBI] kohortanalys.
+description: Utforska kraften i Commerce Intelligence-kohortanalyser.
 exl-id: f2b55745-d364-4ba6-9857-ce9cee05c3ae
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '935'
 ht-degree: 0%
 
 ---
 
-# `Lifetime Revenue Cohort` Analys
+# [!DNL Lifetime Revenue Cohort] Analys
 
-Det finns många sätt att se på data i [!DNL MBI]och du vet att tolkning och förståelse är lika viktiga som beräkning och visualisering. Den här artikeln utforskar möjligheterna i [!DNL MBI] `cohort` analys.
+Det finns många sätt att se på data i [!DNL Adobe Commerce Intelligence]och du vet att tolkning och förståelse är lika viktiga som beräkning och visualisering. Det här avsnittet utforskar möjligheterna i [!DNL Commerce Intelligence] `cohort` analys.
 
 ## Vad gör `lifetime revenue cohort` betyder analys?
 

@@ -2,7 +2,7 @@
 title: Förstå och utvärdera tabellrelationer
 description: Lär dig hur du förstår hur många möjliga förekomster i en tabell som kan tillhöra en enhet i en annan.
 exl-id: e7256f46-879a-41da-9919-b700f2691013
-source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
+source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
 source-wordcount: '965'
 ht-degree: 0%
@@ -19,13 +19,13 @@ Förståelse av relationer är avgörande för att upprätthålla dataintegritet
 
 Det finns tre typer av relationer mellan två tabeller:
 
-* [&quot;1:1&quot;](#onetoone)
-* [&quot;en-till-många&quot;](#onetomany)
-* [&quot;många-till-många&quot;](#manytomany)
+1. [&quot;1:1&quot;](#onetoone)
+1. [&quot;en-till-många&quot;](#onetomany)
+1. [&quot;många-till-många&quot;](#manytomany)
 
 ### `One-to-One` {#onetoone}
 
-I en `one-to-one` relation, en post i tabell `B` tillhör endast en post i tabellen `A`. Och en post i tabellen `A` tillhör endast en post i tabellen `B`.
+I en `one-to-one` relation, en post i register `B` tillhör endast en post i registret `A`. Och en post i tabellen `A` tillhör endast en post i tabellen `B`.
 
 I förhållandet mellan människor och körkortsnummer kan en person t.ex. bara ha ett körkortsnummer och ett körkortsnummer tillhör endast en person.
 
@@ -33,13 +33,13 @@ I förhållandet mellan människor och körkortsnummer kan en person t.ex. bara 
 
 ### `One-to-Many` {#onetomany}
 
-I en `one-to-many` relation, en post i tabell `A` kan eventuellt tillhöra flera poster i tabellen `B`. Fundera på relationen mellan `orders` och `items` - en order kan innehålla många artiklar, men en artikel tillhör en enda order. I det här fallet `orders` tabellen är den ena sidan och `items` bordet är många sidor.
+I en `one-to-many` relation, en post i register `A` kan eventuellt tillhöra flera poster i tabellen `B`. Fundera på relationen mellan `orders` och `items` - en order kan innehålla många artiklar, men en artikel tillhör en enda order. I det här fallet `orders` tabellen är den ena sidan och `items` bordet är många sidor.
 
 ![](../../assets/one-to-many_001.png)
 
 ### `Many-to-Many` {#manytomany}
 
-I en `many-to-many` relation, en post i tabell `B` kan eventuellt tillhöra flera poster i tabellen `A`. Och vice versa, en post i Tabell `A` kan eventuellt tillhöra flera poster i tabellen `B`.
+I en `many-to-many` relation, en post i register `B` kan eventuellt tillhöra flera poster i tabellen `A`. Och vice versa, en post i tabellen `A` kan eventuellt tillhöra flera poster i tabellen `B`.
 
 Fundera på relationen mellan **produkter** och **kategorier**: en produkt kan tillhöra många kategorier och en kategori kan innehålla många produkter.
 
@@ -60,6 +60,7 @@ När du till exempel tänker på användare och beställningar bör du tänka p�
 Så här använder du den här metoden:
 
 1. Identifiera den enhet som beskrivs i varje tabell. **Tips: det är vanligtvis ett substantiv**. Till exempel `user` och `orders` tabeller beskriver uttryckligen användare och order.
+
 1. Identifiera ett eller flera verb som beskriver hur dessa enheter interagerar. När man jämför användare med beställningar lägger man order. I den andra riktningen&quot;tillhör&quot; order användare.
 
 Den här typen av ramverk kan användas på alla tabellpar i Data warehouse. På så sätt kan du enkelt identifiera relationstypen och vilken tabell som är en sida och vilken tabell som är en många.

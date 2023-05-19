@@ -2,7 +2,7 @@
 title: Visa instrumentpaneler på flera skärmar
 description: Lär dig hur du visar dina instrumentpaneler på kontoret.
 exl-id: aabe5c8f-0809-467c-9713-099aed6926b9
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 8d4e71363edad0613cc0ab277c2a43aad000965e
 workflow-type: tm+mt
 source-wordcount: '227'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Visa instrumentpaneler på kontoret
 
-För [!DNL MBI] användare som är intresserade av att visa sina instrumentpaneler och rapporter på skärmar på hela kontoret, finns det olika maskinvarualternativ som enkelt kan aktivera den här konfigurationen.
+För [!DNL Commerce Intelligence] användare som är intresserade av att visa sina instrumentpaneler och rapporter på skärmar på hela kontoret, finns det olika maskinvarualternativ som enkelt kan aktivera den här konfigurationen.
 
 Här är den rekommenderade listan med saker som du behöver för alternativet:
 

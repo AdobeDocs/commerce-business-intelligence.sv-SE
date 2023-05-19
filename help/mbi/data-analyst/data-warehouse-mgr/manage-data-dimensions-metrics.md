@@ -2,9 +2,9 @@
 title: Hantera datamängder
 description: Lär dig vad en dimension är och den kan användas för att filtrera eller segmentera diagram baserat på ett mätvärde.
 exl-id: 143a4b1e-2e6f-438a-90e6-bdda13b39cb9
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '412'
 ht-degree: 0%
 
 ---
@@ -21,9 +21,9 @@ En dimension är ett fält i samma tabell som ett mått som kan användas för a
 
 Så här lägger du till en eller flera dimensioner till flera mått samtidigt:
 
-1. I huvudnavigeringsfältet går du till **[!UICONTROL Manage Data > Metrics]**.
+1. Gå till **[!UICONTROL Manage Data > Metrics]**.
 
-1. Klicka på längst upp på sidan **[!UICONTROL Add Dimensions To Metric(s)]**.
+1. Klicka **[!UICONTROL Add Dimensions To Metric(s)]**.
 
 1. Välj den tabell som innehåller dimensionerna.
 
@@ -39,9 +39,9 @@ Så här lägger du till en eller flera dimensioner till flera mått samtidigt:
 
 Så här tar du bort en eller flera dimensioner från flera mått:
 
-1. I huvudnavigeringsfältet går du till **[!UICONTROL Data > Metrics]**.
+1. Gå till **[!UICONTROL Data > Metrics]**.
 
-1. Klicka på längst upp på sidan **[!UICONTROL Remove Dimensions From Metric(s)]**.
+1. Klicka **[!UICONTROL Remove Dimensions From Metric(s)]**.
 
 1. Välj den tabell som innehåller dimensionerna.
 
@@ -49,26 +49,26 @@ Så här tar du bort en eller flera dimensioner från flera mått:
 
 1. Klicka **[!UICONTROL Remove]**.
 
-1. Om dimensionerna används för rapporter visas en varning och en lista med diagram som använder dimensionerna. Klicka **[!UICONTROL Delete]** om du vill ta bort de markerade dimensionerna och alla deras underordnade, inklusive rapporter.
+1. Om dimensionerna används för rapporter visas en varning med listan över diagram som använder dimensionerna. Klicka **[!UICONTROL Delete]** om du vill ta bort de markerade dimensionerna och alla deras underordnade, inklusive rapporter.
 
 ## Hantera mått i mätvärden
 
 **Så här lägger du till dimensioner i ett mått:**
 
-1. I huvudnavigeringsfältet går du till **[!UICONTROL Data > Metrics]**.
+1. Gå till **[!UICONTROL Data > Metrics]**.
 
 1. Klicka **[!UICONTROL Edit]** på mätvärdena vill du ha en ny dimension.
 
-1. Under `Dimensions` -avsnittet använder du `Add a dimension` för att välja en dimension att lägga till.
+1. I `Dimensions` -avsnittet använder du `Add a dimension` för att välja en dimension att lägga till.
 
 >[!NOTE]
 >
->Alla dimensioner som du vill filtrera eller gruppera efter måste redan spåras i [!DNL MBI]. Om du inte hittar den önskade dimensionen kan du behöva börja spåra en ny datakolumn i databasen via [data warehouse](../data-warehouse-mgr/tour-dwm.md) sida.
+>Alla dimensioner som du vill filtrera eller gruppera efter måste redan spåras i [!DNL Commerce Intelligence]. Om du inte hittar den önskade dimensionen kan du behöva börja spåra en ny datakolumn i databasen via [data warehouse](../data-warehouse-mgr/tour-dwm.md) sida.
 
 
 **Så här tar du bort dimensioner från ett mått:**
 
-1. I huvudnavigeringsfältet går du till **[!UICONTROL Manage Data > Metrics]**.
+1. Gå till **[!UICONTROL Manage Data > Metrics]**.
 
 1. Klicka **[!UICONTROL Edit]** på mätvärdena vill du ha en ny dimension.
 
@@ -76,7 +76,7 @@ Så här tar du bort en eller flera dimensioner från flera mått:
 
 >[!NOTE]
 >
->Även efter att du har tagit bort en dimension finns den fortfarande som en kolumn i tabellen i Data warehouse. Du kan lägga tillbaka det i alla mätvärden och skapa nya mätvärden med dessa mått. Ta bort den datakolumn som en dimension motsvarar från [!DNL MBI]tar du bara bort spåret från datakolumnen via [data warehouse](../data-warehouse-mgr/tour-dwm.md) sida.
+>Även efter att du har tagit bort en dimension finns den fortfarande som en kolumn i tabellen i Data warehouse. Du kan lägga tillbaka det i alla mätvärden och skapa nya mätvärden med dessa mått. Ta bort den datakolumn som en dimension motsvarar från [!DNL Commerce Intelligence]tar du bara bort spåret från datakolumnen via [data warehouse](../data-warehouse-mgr/tour-dwm.md) sida.
 
 ## Relaterad dokumentation
 

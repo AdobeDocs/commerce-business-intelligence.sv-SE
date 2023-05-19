@@ -2,7 +2,7 @@
 title: Använd en rapport
 description: Lär dig hur du använder rapportdata.
 exl-id: 94d4db27-0e06-4066-9c03-036b109d2d9b
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '985'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Använd en rapport
 
-Använd rapporter i [!DNL MBI] för att hjälpa dig att besvara affärsfrågor - om du bara vill se månadens intäkter jämfört med förra året eller förstå dina anskaffningskostnader för den senaste [!DNL Google AdWords] kampanj.
+Använd rapporter i [!DNL Adobe Commerce Intelligence] för att hjälpa dig att besvara affärsfrågor - om du bara vill se månadens intäkter jämfört med förra året eller förstå dina anskaffningskostnader för den senaste [!DNL Google AdWords] kampanj.
 
 Hur ser den vägen från fråga till svar ut, exakt?
 
@@ -62,7 +62,7 @@ Det används sedan för att skapa:
 
 Båda dessa fält måste skapas på användarnivå (till exempel på `user` tabell). Detta gör att genomsnittsanalysen kan normaliseras av användarna (dvs. nämnaren i denna beräkning är antalet användare).
 
-Det är här [!DNL MBI] steg in! Du kan använda dina [!DNL MBI] data warehouse för att skapa kolumnerna ovan. Kontakta Adobe analysteam och ge oss en specifik definition av de nya kolumnerna som du ska skapa. Du kan också använda [Kolumnredigeraren](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md).
+Det är här [!DNL Commerce Intelligence] steg in! Du kan använda dina [!DNL Commerce Intelligence] data warehouse för att skapa kolumnerna ovan. Kontakta Adobe analysteam och ge oss en specifik definition av de nya kolumnerna som du ska skapa. Du kan också använda [Kolumnredigeraren](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md).
 
 Det är en god vana att undvika att skapa dessa beräknade datafält direkt i databasen eftersom det medför en onödig börda för produktionsservrarna.
 
@@ -75,7 +75,7 @@ Här vill du utföra följande beräkning:
 
 _[SUMMA `Time between a customer's registration date and first purchase date`] / [Totalt antal kunder som registrerat sig och köpt]_
 
-Och ni vill se den här beräkningen plottad över tid, eller trendmässigt, enligt kundens registreringsdatum. Så här gör du [skapa det här måttet](../../data-user/reports/ess-manage-data-metrics.md) in [!DNL MBI]:
+Och ni vill se den här beräkningen plottad över tid, eller trendmässigt, enligt kundens registreringsdatum. Så här gör du [skapa det här måttet](../../data-user/reports/ess-manage-data-metrics.md) in [!DNL Commerce Intelligence]:
 
 1. Gå till **[!UICONTROL Data]** och väljer `Metrics` -fliken.
 1. Klicka **[!UICONTROL Add New Metric]** och väljer `user` tabellen (där du skapade dimensionerna ovan).

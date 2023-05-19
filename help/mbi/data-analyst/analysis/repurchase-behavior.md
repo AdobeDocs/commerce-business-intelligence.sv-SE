@@ -2,16 +2,16 @@
 title: Analyserar kundens återköpsbeteende
 description: Lär dig hur du analyserar kundens beteende vid återköp.
 exl-id: 62666d08-5240-4f19-bf8e-e5b2d79a25c4
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '855'
+source-wordcount: '851'
 ht-degree: 1%
 
 ---
 
 # Kundens återköpsbeteende
 
-Om ni erbjuder mer än en produkt undrar ni antagligen hur kunder som köper en viss produkt beter sig annorlunda över tiden jämfört med andra kunder. I den här artikeln utforskas analyser som kan hjälpa dig att besvara följande frågor:
+Om ni erbjuder mer än en produkt undrar ni antagligen hur kunder som köper en viss produkt beter sig annorlunda över tiden jämfört med andra kunder. I det här avsnittet behandlas analyser som kan hjälpa dig att svara på följande frågor.
 
 Till kunder som köper en *specifikt objekt*,
 
@@ -52,7 +52,7 @@ Se ett exempel på hur man använder kaffeprodukter.
 
 {style="table-layout:auto"}
 
-Nu när ni har era data, se vad detta kan betyda för var och en av era mätvärden.
+Nu när ni har era data, vad innebär detta för alla mätvärden?
 
 ### Sannolikhet för upprepad order
 
@@ -66,7 +66,7 @@ Baserat på ovanstående data kan du se att personer som köper bryggeriet eller
 
 ### Genomsnittlig omsättning för kundens livslängd
 
-Kunder som köper bryggan har den högsta genomsnittliga livstidsintäkten. Detta är rimligt med tanke på att bryggerikostnaderna ingår i denna åtgärd. Kunder som köper kaffebönor köper däremot normalt bara lågkostnadsprodukter.
+Kunder som köper ett bryggeri har den högsta genomsnittliga livstidsintäkten, vilket är rimligt med tanke på att kostnaden för bryggaren ingår i denna åtgärd. Kunder som köper kaffebönor köper däremot normalt bara lågkostnadsprodukter.
 
 ### Tid till nästa order
 
@@ -74,10 +74,10 @@ Bland kunder som köpt kaffekapslar gör hälften en ny beställning på ungefä
 
 ## Vilka andra analyser kan jag bygga?
 
-Med hjälp av de mätvärden som beskrivs i den här artikeln kan du även skapa andra användbara återköpsanalyser. Du kan till exempel även se hur kunderna återköper **samma objekt** - till exempel om de köper påfyllningar regelbundet. Kapslar och kaffebönor kan återköpas regelbundet, men det skulle vara oväntat att se kunderna göra upprepade inköp av kaffebryggaren. Om ni fokuserar på återfyllnad eller återinsättning är den här analysen användbar.
+Med hjälp av de mätvärden som beskrivs i det här avsnittet kan du även skapa andra användbara återköpsanalyser. Du kan till exempel även se hur kunderna återköper **samma objekt** - till exempel om de köper påfyllningar regelbundet. Kapslar och kaffebönor kan återköpas regelbundet, men det skulle vara oväntat att se kunderna göra upprepade inköp av kaffebryggaren. Om ni fokuserar på återfyllnad eller återinsättning är den här analysen användbar.
 
 Förutom att analysera återköpets beteende hos era kunder kan ni också skapa analyser som tittar på kundlojaliteten. Överväg att analysera mönster i kundomsättning - var lämnar era kunder er webbplats och inte kommer tillbaka? I vilken takt inträffar detta?
 
 När du har identifierat varför det händer något kan du använda din analys för att skapa en `reactivation` kampanj. Med hjälp av dessa data kan du identifiera användare som har blivit inaktiva, hur länge det har varit sedan deras senaste besök, vilket deras senaste köp var och så vidare. På så sätt kan ni fatta konkreta beslut som får kunderna att komma tillbaka.
 
-Om du behöver hjälp med analys [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Om du behöver hjälp med analys [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

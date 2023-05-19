@@ -2,16 +2,16 @@
 title: Formler i Report Builder
 description: Lär dig hur formler kan användas i Report Builder.
 exl-id: 7a0ad07a-5bcc-474f-95bc-ccc2b74073b2
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '546'
 ht-degree: 0%
 
 ---
 
 # Formler i `Report Builder`
 
-I [`Report Builder`](../../tutorials/using-visual-report-builder.md)kan du skapa kraftfulla visualiseringar med [definierade mått](../../data-user/reports/ess-manage-data-metrics.md) i ditt konto. Genom att kombinera dessa mätvärden i en formel kan ni få ytterligare insikter från era data. Den här artikeln handlar om hur formler kan användas i `Report Builder` - hoppar in!
+I [`Report Builder`](../../tutorials/using-visual-report-builder.md)kan du skapa kraftfulla visualiseringar med [definierade mått](../../data-user/reports/ess-manage-data-metrics.md) i ditt konto. Genom att kombinera dessa mätvärden i en formel kan ni få ytterligare insikter från era data. Det här avsnittet handlar om hur formler kan användas i `Report Builder` - hoppar in!
 
 ## Vad är en `formula`? {#what}
 
@@ -63,4 +63,4 @@ I det här exemplet använde du `Stacked Columns` för att visa resultaten per m
 
 Observera i exemplen ovan att formeln `timestamp`, `groupings`, `perspectives`och `filters` ärvs från indatavärden? Kom ihåg att formler kan användas `perspectives` och [oberoende tidsalternativ](../../tutorials/time-options-visual-rpt-bldr.md){: target=&quot;_blank&quot;}, precis som mätvärden kan.
 
-Om du har ytterligare frågor om hur du använder formler i `Report Builder`, [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Om du har ytterligare frågor om hur du använder formler i `Report Builder`, [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

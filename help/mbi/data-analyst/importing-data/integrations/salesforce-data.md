@@ -2,16 +2,16 @@
 title: Förväntade Salesforce-data
 description: Lär dig mer om objekt som stöds och som inte stöds i Salesforce-data.
 exl-id: 6625349f-2ec0-402d-8635-889a1f29811c
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '164'
+source-wordcount: '162'
 ht-degree: 0%
 
 ---
 
 # Förväntat [!DNL Salesforce] data
 
-[Efter [!DNL Salesforce] installationen är klar](../integrations/salesforce.md), en tabell för varje frågningsbar [object](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_concepts.htm) - namngivna `sf_/\{sobject-name}` - skapas i Data warehouse.
+Efter [[!DNL Salesforce] konfiguration](../integrations/salesforce.md) är klar, en tabell för varje frågerbar [object](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_concepts.htm) - namngivna `sf_/\{sobject-name}` - skapas i Data warehouse.
 
 >[!NOTE]
 >
@@ -48,4 +48,4 @@ För närvarande [!DNL Salesforce] visar för närvarande inte följande objekt 
 ## Relaterat:
 
 * [Ansluter [!DNL Salesforce]](../integrations/salesforce.md)
-* [Återautentisera integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
+* [Återautentisera integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

@@ -2,9 +2,9 @@
 title: Data för Google Analytics förväntades
 description: Lär dig interagera med Google Analytics-statistik.
 exl-id: db9fdaaa-47a9-4095-b1f8-9b6c74c25b7c
-source-git-commit: 0e9d30155432a29cf67d29a10646a2971ea0382f
+source-git-commit: 8d4e71363edad0613cc0ab277c2a43aad000965e
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '282'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 När du har anslutit en [!DNL Google Analytics] kan du interagera med [!DNL Google Analytics] mått *direkt i`Visual Report Builder`*. När du anger `Visual Report Builder`om du klickar **[!UICONTROL Add a Metric]**, en serie mätvärden från [!DNL Google Analytics] visas i en listruta direkt under måtten i Data warehouse.
 
-The [!DNL Google Analytics] integreringen är *live* - det innebär att `Report Builder` begär data från [!DNL Google Analytics] *omedelbart* när du lägger till ett mätvärde i rapporten. Det innebär också att de mätvärden du kan komma åt definieras exakt som de finns i [!DNL Google Analytics]och att dessa värden inte *lagrad* i [!DNL MBI] konto - visas endast visuellt i dina rapporter.
+The [!DNL Google Analytics] integreringen är *live* - det innebär att `Report Builder` begär data från [!DNL Google Analytics] *omedelbart* när du lägger till ett mätvärde i rapporten. Det innebär också att de mätvärden du kan komma åt definieras exakt som de finns i [!DNL Google Analytics]och att dessa värden inte *lagrad* i [!DNL Commerce Intelligence] konto - visas endast visuellt i dina rapporter.
 
 +++Mätvärden och Dimensioner som stöds (Google Analytics 3 eller Universal Analytics)
 
@@ -21,7 +21,7 @@ The [!DNL Google Analytics] integreringen är *live* - det innebär att `Report 
 >
 >1 juli 2023, standard-Universal Analytics ([!DNL Google Analytics] 3) kommer inte längre att bearbeta data. Du kan se dina Universal Analytics-rapporter under en tidsperiod efter 1 juli 2023. Nya data flödar dock bara in i [!DNL Google Analytics] 4 egenskaper.
 
-[!DNL Google Analytics] integreringar i [!DNL MBI] använder [!DNL Google Analytics] [API för huvudrapportering](https://developers.google.com/analytics/devguides/reporting/core/v3/)och stöder följande mått och mått.
+[!DNL Google Analytics] integreringar i [!DNL Commerce Intelligence] använder [!DNL Google Analytics] [API för huvudrapportering](https://developers.google.com/analytics/devguides/reporting/core/v3/)och stöder följande mått och mått.
 
 >[!NOTE]
 >
@@ -29,7 +29,7 @@ The [!DNL Google Analytics] integreringen är *live* - det innebär att `Report 
 
 ## Mätvärden som stöds
 
-| [!DNL MBI] Visningsnamn | [!DNL Google Analytics] Namn/formel |
+| [!DNL Commerce Intelligence] Visningsnamn | [!DNL Google Analytics] Namn/formel |
 | --- | --- |
 | `Page Views` | `ga:pageviews` |
 | `Total Time Spent On Page` | `ga:timeOnPage` |
@@ -83,7 +83,7 @@ The [!DNL Google Analytics] integreringen är *live* - det innebär att `Report 
 
 ## Dimensioner som stöds
 
-| [!DNL MBI] Visningsnamn | [!DNL Google Analytics] Namn/formel | Grupperbar? |
+| [!DNL Commerce Intelligence] Visningsnamn | [!DNL Google Analytics] Namn/formel | Grupperbar? |
 | --- | --- | --- |
 | `Ad Content` | `ga:adContent` | `Yes` |
 | `Ad Group` | `ga:adGroup` | `Yes` |
@@ -154,11 +154,11 @@ The [!DNL Google Analytics] integreringen är *live* - det innebär att `Report 
 
 +++Mätvärden och Dimensioner som stöds (Google Analytics 4)
 
-[!DNL Google Analytics] integreringar i [!DNL MBI] använder [!DNL Google Analytics] [Data API v1 (GA4)](https://developers.google.com/analytics/devguides/reporting/data/v1).
+[!DNL Google Analytics] integreringar i [!DNL Commerce Intelligence] använder [!DNL Google Analytics] [Data API v1 (GA4)](https://developers.google.com/analytics/devguides/reporting/data/v1).
 
 >[!NOTE]
 >
-> MBI stöder inte följande dimensioner: `cohort`, `cohortNthDay`, `cohortNthMonth`och `cohortNthWeek`.
+> Commerce Intelligence stöder inte följande dimensioner: `cohort`, `cohortNthDay`, `cohortNthMonth`och `cohortNthWeek`.
 >
 >För att undvika oväntade eller okänsliga resultat bör du kontrollera att de mått du använder är kompatibla med en eller flera mätvärden som du använder i `Visual Report Builder`. Du kan kontrollera [GA4 Dimensions &amp; Metrics Explorer](https://ga-dev-tools.google/ga4/dimensions-metrics-explorer/).
 

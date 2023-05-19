@@ -2,7 +2,7 @@
 title: Commerce Churn
 description: Lär dig hur du genererar och analyserar din Commerce Churn-kurs.
 exl-id: 8775cf0a-114d-4b48-8bd2-fc1700c59a12
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 2%
@@ -15,7 +15,7 @@ I det här avsnittet visas hur du beräknar en **bortfallstakt** för **e-handel
 
 ![](../../assets/Churn_rate_image.png)
 
-Många kunder vill ha hjälp med att börja förstå vad **tidsram** de bör använda baserat på sina uppgifter. Om du vill använda historiska kundbeteenden för att definiera detta **tidsram för bortfall** kan du bekanta dig med [definiera kurva](../analysis/define-cust-churn.md) artikel. Sedan kan du använda resultatet i formeln för bortfallsfrekvens i instruktionerna nedan.
+Många kunder vill ha hjälp med att börja förstå vad **tidsram** de bör använda baserat på sina uppgifter. Om du vill använda historiska kundbeteenden för att definiera detta **tidsram för bortfall** kan du bekanta dig med [definiera kurva](../analysis/define-cust-churn.md) ämne. Sedan kan du använda resultatet i formeln för bortfallsfrekvens i instruktionerna nedan.
 
 ## Beräknade kolumner
 
@@ -55,9 +55,9 @@ Kolumner att skapa
 * **Nya kunder (efter sista orderdatum)**
    * Räknade kunder
 
->[!NOTE]
->
->Det här måttet kan finnas på ditt konto.
+   >[!NOTE]
+   >
+   >Det här måttet kan finnas på ditt konto.
 
 * I **`customer_entity`** table
 * Detta mått utför en **Antal**

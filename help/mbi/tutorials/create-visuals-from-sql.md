@@ -2,18 +2,18 @@
 title: Skapa visualiseringar från SQL-frågor
 description: Lär dig bekanta dig med den terminologi som används i SQL Report Builder och ge dig en gedigen grund för att skapa SQL-visualiseringar.
 exl-id: 9b9bc205-5b64-4e64-8d23-057072e5dd72
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '625'
 ht-degree: 0%
 
 ---
 
 # Skapa visualiseringar från SQL-frågor
 
-Målet med den här självstudiekursen är att bekanta dig med den terminologi som används i `SQL Report Builder` och ger dig en stabil grund för att skapa `SQL visualizations`.
+Målet med den här självstudiekursen är att bekanta dig med den terminologi som används i [!DNL SQL Report Builder] och ger dig en stabil grund för att skapa `SQL visualizations`.
 
-The [`SQL Report Builder`](../data-analyst/dev-reports/sql-rpt-bldr.md) är en rapportbyggare med alternativ: du kan köra en fråga enbart i syfte att hämta en datatabell, eller så kan du omvandla dessa resultat till en rapport. I den här självstudiekursen beskrivs hur du skapar en visualisering från en SQL-fråga.
+The [[!DNL SQL Report Builder]](../data-analyst/dev-reports/sql-rpt-bldr.md) är en rapportbyggare med alternativ: du kan köra en fråga enbart i syfte att hämta en datatabell, eller så kan du omvandla dessa resultat till en rapport. I den här självstudiekursen beskrivs hur du skapar en visualisering från en SQL-fråga.
 
 ## Terminologi
 
@@ -33,13 +33,13 @@ Innan du börjar den här självstudiekursen ska du läsa om följande terminolo
 
 Tänk på följande:
 
-- The `SQL Report Builder` använder [`Redshift SQL`](https://docs.aws.amazon.com/redshift/latest/dg/c_redshift-and-postgres-sql.html).
+- The [!DNL SQL Report Builder] använder [`Redshift SQL`](https://docs.aws.amazon.com/redshift/latest/dg/c_redshift-and-postgres-sql.html).
 
 - Om du skapar en rapport med en tidsserie ska du se till att `ORDER BY` tidsstämpelkolumnerna. Detta garanterar att tidsstämplarna ritas i rätt ordning i rapporten.
 
 - The `EXTRACT` är bra att använda för att analysera dag, vecka, månad eller år i tidsstämpeln. Detta är användbart när `time interval` som du vill använda i rapporten är `daily`, `weekly`, `monthly`, eller `yearly`.
 
-Öppna `SQL Report Builder` genom att klicka **[!UICONTROL Report Builder** > **SQL Report Builder]**.
+Öppna [!DNL SQL Report Builder] genom att klicka **[!UICONTROL Report Builder** > **SQL Report Builder]**.
 
 Ta som exempel den här frågan som returnerar det totala antalet artiklar som sålts per månad för varje produkt:
 
@@ -94,6 +94,6 @@ Om du vill använda rapporten igen ger du rapporten ett namn och klickar på **[
 
 I listrutan väljer du `Chart` som `Type` och sedan en kontrollpanel där du vill spara rapporten.
 
-## Grattis! Du är färdig.
+## Radbrytning
 
 Vill du ta ett steg längre? Kolla in [god praxis för frågeoptimering](../best-practices/optimizing-your-sql-queries.md).

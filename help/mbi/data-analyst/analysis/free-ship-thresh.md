@@ -2,9 +2,9 @@
 title: Gräns för fri frakt
 description: Lär dig hur du konfigurerar en kontrollpanel som spårar prestanda för ditt tröskelvärde för fri frakt.
 exl-id: a90ad89b-96d3-41f4-bfc4-f8c223957113
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '490'
 ht-degree: 0%
 
 ---
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Den här artikeln innehåller instruktioner för klienter som använder den ursprungliga arkitekturen och den nya arkitekturen. Du använder den nya arkitekturen om du har sektionen&quot;Vyer i Data warehouse&quot; tillgänglig efter att du har valt&quot;Hantera data&quot; i huvudverktygsfältet.
+>Det här avsnittet innehåller instruktioner för klienter som använder den ursprungliga arkitekturen och den nya arkitekturen. Du har den nya arkitekturen om du har `Data Warehouse Views` avsnitt som är tillgängliga efter markering `Manage Data` i huvudverktygsfältet.
 
-I den här artikeln visas hur du konfigurerar en kontrollpanel som spårar prestanda för ditt tröskelvärde för fri frakt. Den här instrumentpanelen, som visas nedan, är ett bra sätt att testa två kostnadsfria leveranströsklar. Företaget kan till exempel vara osäkert om du ska erbjuda fri frakt på 50 eller 100 dollar. Du bör göra ett A/B-test av två slumpmässiga deluppsättningar av dina kunder och utföra analysen i [!DNL MBI].
+I det här avsnittet visas hur du konfigurerar en kontrollpanel som spårar prestanda för ditt tröskelvärde för fri frakt. Den här instrumentpanelen, som visas nedan, är ett bra sätt att testa två kostnadsfria leveranströsklar. Företaget kan till exempel vara osäkert om du ska erbjuda fri frakt på 50 eller 100 dollar. Du bör göra ett A/B-test av två slumpmässiga deluppsättningar av dina kunder och utföra analysen i [!DNL Commerce Intelligence].
 
 Innan du börjar vill du identifiera två separata tidsperioder där du har haft olika värden för butikens tröskelvärde för fri frakt.
 

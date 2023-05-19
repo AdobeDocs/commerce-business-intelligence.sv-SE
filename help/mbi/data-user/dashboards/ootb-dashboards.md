@@ -2,22 +2,22 @@
 title: Inkluderade instrumentpaneler
 description: Lär dig hur du kontrollerar hälsan hos viktiga mätvärden som intäkter från användarlivstid, antal upprepade köp med mera, och därmed skapar en stabil grund för framtida utforskande.
 exl-id: f50fc417-e5d4-401c-9baa-cda1468196a2
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '962'
+source-wordcount: '958'
 ht-degree: 0%
 
 ---
 
 # Inkluderade instrumentpaneler
 
-Adobe erbjuder e-handel och `SaaS` Startpaket. Dessa paket, som skapats av analytiker från Adobe, innehåller en anpassad uppsättning instrumentpaneler och rapporter för din datamängd. Analyserna i dessa paket gör det möjligt att kontrollera hälsan hos viktiga mätvärden som användarlivstidsintäkter, antal upprepade köp med mera, vilket skapar en stabil grund för framtida utforskande.
+[!DNL Adobe] erbjudanden `eCommerce` och `SaaS` Startpaket. Dessa paket, som skapats av analytiker från Adobe, innehåller en anpassad uppsättning instrumentpaneler och rapporter för din datamängd. Analyserna i dessa paket gör det möjligt att kontrollera hälsan hos viktiga mätvärden som användarlivstidsintäkter, antal upprepade köp med mera, vilket skapar en stabil grund för framtida utforskande.
 
 >[!NOTE]
 >
 >Tillgängligheten för vissa instrumentpaneler beror på din datamängd.
 
-Om du har frågor eller är intresserad av att lägga till ett paket i ditt konto, skicka ett [supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) om du behöver hjälp.
+Om du har frågor eller är intresserad av att lägga till ett paket i ditt konto, skicka ett [supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) om du behöver hjälp.
 
 ## Översikt
 

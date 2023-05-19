@@ -2,7 +2,7 @@
 title: Lägg till diagram på instrumentpaneler
 description: Lär dig hur du lägger till diagram på kontrollpaneler med funktionen Lägg till rapport.
 exl-id: 4a4f14c3-a6ab-4abc-9451-2a0f2fcf06a2
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
 workflow-type: tm+mt
 source-wordcount: '120'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Lägg till diagram på instrumentpaneler
 
-Befintliga diagram kan läggas till på kontrollpaneler med `Add Report` -funktionen, som finns i skärmens övre högra del. Samma diagram kan läggas till på flera instrumentpaneler, vilket innebär att om diagrammet redigeras återspeglas ändringen i alla instrumentpaneler med det här diagrammet.
+Befintliga diagram kan läggas till på kontrollpaneler med [!UICONTROL Add Report] -funktionen, som finns i skärmens övre högra del. Samma diagram kan läggas till på flera instrumentpaneler, vilket innebär att om diagrammet redigeras återspeglas ändringen i alla instrumentpaneler med det här diagrammet.
 
 >[!NOTE]
 >

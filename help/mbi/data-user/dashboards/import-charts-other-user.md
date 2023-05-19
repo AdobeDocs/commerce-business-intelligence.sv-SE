@@ -2,9 +2,9 @@
 title: Importera diagram från en annan användare
 description: Lär dig hur du redigerar ett diagram som en annan användare äger eller skapar något liknande.
 exl-id: defcb72d-6027-4ae7-b974-e2f39773fe32
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
 workflow-type: tm+mt
-source-wordcount: '168'
+source-wordcount: '169'
 ht-degree: 0%
 
 ---

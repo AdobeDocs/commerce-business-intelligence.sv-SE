@@ -2,7 +2,7 @@
 title: Förväntad analys av livstidsvärde (LTV) (grundläggande)
 description: Lär dig hur ni skapar analyser för att förstå era kunders livstidsvärde och förutse hur livstidsvärdet ökar med fler order.
 exl-id: e6f02cf6-f542-4768-969c-3ec998a7caa9
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Att förutse kundernas livstidsvärde när de gör fler beställningar är en av de viktigaste aspekterna i alla typer av företag av alla storlekar.
 
-Här följer stegen för att skapa analyser för att förstå era nuvarande kunders livstidsvärde och förutse hur livstidsvärdet ökar med fler order:
+Nedan följer stegen för att skapa analyser för att förstå era nuvarande kunders livstidsvärde och förutse hur livstidsvärdet ökar med fler order.
 
 ![förväntat livstid](../../assets/expected_ltv_720.png)
 

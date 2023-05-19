@@ -2,9 +2,9 @@
 title: Information om data och uppdateringar
 description: Lär dig hur du kontrollerar status för uppdateringscykeln.
 exl-id: a4a2e487-b826-4888-baf0-9d246a8ff153
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '417'
+source-wordcount: '406'
 ht-degree: 0%
 
 ---
@@ -22,11 +22,11 @@ ht-degree: 0%
 
 Diagramvärdena kan ändras under dagen på grund av att nya data synkroniseras med Data warehouse. Dessutom kan värden för befintliga datakolumner ändras på grund av [omkontroller](../data-warehouse-mgr/cfg-data-rechecks.md). En omkontroll är en process som söker efter ändrade värden i datakolumner, till exempel en orderstatus som flyttas från `open` till `shipped`.
 
-Det finns några olika sätt [för att kontrollera uppdateringscykelns status](../../best-practices/check-update-cycle.md), beroende på vilken typ av användarbehörigheter du har.
+Det finns några olika sätt [för att kontrollera uppdateringscykelns status](../../best-practices/check-update-cycle.md), beroende på användarens behörighetsinställningar.
 
 ## Vad är skillnaden mellan en vanlig och tvingad uppdatering? {#regularforcedupdates}
 
-Vanliga uppdateringar är **schemalagd** processer medan framtvingade uppdateringar **manuella processer som du har initierat**. Om du har mörkt av - eller en tidsperiod där [!DNL MBI] ska inte uppdatera dina data - om du tvingar fram en uppdatering startar en cykel som inte respekterar begränsningarna för den utmattade perioden.
+Vanliga uppdateringar är **schemalagd** processer medan framtvingade uppdateringar **manuella processer som du har initierat**. Om du har mörkt ned timmar (eller en tidsperiod där [!DNL Commerce Intelligence] bör inte uppdatera dina data), så tvingar en uppdatering att starta en cykel som inte respekterar begränsningarna för den utmattade perioden.
 
 ## Varför tar uppdateringscykeln lång tid? {#updatecycletime}
 
@@ -38,8 +38,8 @@ Om en uppdatering pågår finns det en länk på `Connections` sida som du kan a
 
 ## Varför[!DNL Google ECommerce]data som skiljer sig från min databas? {#ecommdatabase}
 
-Skillnader mellan [!DNL Google Analytics] och databasen kan uppstå av olika anledningar. Spårning är inte korrekt aktiverat, användare som besöker incognito och klickningshändelser fungerar inte korrekt är bara några exempel. Om era intäkter och beställningar inte ser bra ut, [använd den här artikeln](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html?lang=en) för att diagnostisera problemet.
+Skillnader mellan [!DNL Google Analytics] och databasen kan uppstå av olika anledningar. Spårning är inte korrekt aktiverat, användare som besöker incognito och klickningshändelser fungerar inte korrekt är bara några exempel. Om era intäkter och beställningar inte ser bra ut, [se det här avsnittet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html) för att diagnostisera ett problem.
 
 ## Hur felsöker jag en diskrepans? {#datadiscrepancy}
 
-Adobe vet att inkonsekventa data kan vara en frustrerande upplevelse. Prova att använda [Checklista för dataavvikelse](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.html?lang=en) eller [Självstudiekurs om dataexport](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html?lang=en) för att diagnostisera problemet. Om du fortfarande stöter, [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Adobe vet att inkonsekventa data kan vara en frustrerande upplevelse. Prova att använda [Checklista för dataavvikelse](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.html) eller [Självstudiekurs om dataexport](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html) för att diagnostisera problemet. Om du fortfarande stöter, [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

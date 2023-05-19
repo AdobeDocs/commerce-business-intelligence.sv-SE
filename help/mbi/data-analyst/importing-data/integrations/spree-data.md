@@ -1,10 +1,10 @@
 ---
 title: Förväntade uppslagsdata
-description: Upptäck de viktigaste datatabellerna som du kan importera från Spree till [!DNL MBI] konto.
+description: Upptäck de viktigaste datatabellerna som du kan importera från Spree till [!DNL Commerce Intelligence] konto.
 exl-id: 203a2d4b-e7ad-4704-a3c1-8e22ff0bf2d6
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '277'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Efter att du har [ansluten till din [!DNL Spree] store](../../../data-analyst/importing-data/integrations/spree.md)kan du använda [data warehouse Manager](../../data-warehouse-mgr/tour-dwm.md) för att enkelt spåra relevanta datafält från [!DNL Spree] plattform för analys.
 
-I den här artikeln utforskas huvuddatatabellerna som du kan importera från [!DNL Spree] i [!DNL MBI] konto, inklusive länkar till [ytterligare dokumentation](https://guides.spreecommerce.org/developer/addresses.html#address) om [!DNL Spree] data.
+I det här avsnittet beskrivs de huvuddatatabeller som du kan importera från [!DNL Spree] i [!DNL Commerce Intelligence] konto, inklusive länkar till [ytterligare dokumentation](https://guides.spreecommerce.org/developer/addresses.html#address) om [!DNL Spree] data.
 
 | **Tabellnamn** | **Beskrivning** |
 |-----|-----|
@@ -28,4 +28,4 @@ I den här artikeln utforskas huvuddatatabellerna som du kan importera från [!D
 ## Relaterat:
 
 * [Ansluter [!DNL Spree]](../integrations/spree.md)
-* [Återautentisera integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
+* [Återautentisera integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

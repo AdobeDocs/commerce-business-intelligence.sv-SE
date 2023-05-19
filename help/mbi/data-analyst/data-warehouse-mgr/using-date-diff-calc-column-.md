@@ -2,7 +2,7 @@
 title: Använda kolumnen Beräknad datumdifferens
 description: Lär dig syftet med och användningsområdena för den beräknade kolumnen Datumdifferens.
 exl-id: 6ecab794-3466-4b3a-a929-3e56287522aa
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 2%
@@ -15,9 +15,9 @@ I det här avsnittet beskrivs syftet med och användningsområdena för `Date Di
 
 **Förklaring**
 
-The `Date Difference` kolumntyp: söker efter tiden mellan två händelser som tillhör en enskild post, baserat på händelsens tidsstämplar. Det råvärde som beräknas i den här kolumnen är i sekunder, men konverteras automatiskt till minuter, timmar, dagar och så vidare, för visning i rapporter. När det används som ett filter/en grupp av vill du dock använda värdet i sekunder.
+The `Date Difference` kolumntypen beräknar tiden mellan två händelser som tillhör en enskild post, baserat på händelsens tidsstämplar. Det råvärde som beräknas i den här kolumnen är i sekunder, men konverteras automatiskt till minuter, timmar, dagar och så vidare, för visning i rapporter. När det används som ett filter/en grupp av vill du dock använda värdet i sekunder.
 
-A `date difference` Beräknad kolumn kan användas för att skapa ett mått som beräknar den genomsnittliga tiden eller mediantiden mellan två händelser, till exempel den genomsnittliga tiden mellan kundregistrering och deras första order.
+A `date difference` Du kan använda en beräknad kolumn för att skapa ett mått som beräknar den genomsnittliga eller mediantiden tiden mellan två händelser, till exempel den genomsnittliga tiden mellan kundregistrering och deras första order.
 
 **Exempel**
 

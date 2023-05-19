@@ -2,30 +2,30 @@
 title: Replikera Google Analytics-kanaler med hjälp av förvärvskällor
 description: Lär dig hur du replikerar Google Analytics-kanaler med hjälp av förvärvskällor.
 exl-id: e7248fe4-94db-4cdf-8f58-1f65061a207d
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
-source-wordcount: '725'
+source-wordcount: '698'
 ht-degree: 0%
 
 ---
 
-# Google Analytics som använder förvärvskällor
+# [!DNL Google Analytics] med förvärvskällor
 
 ## Vad är kanaler? {#channels}
 
-Att skapa anpassade segment för att se hur olika trafik fungerar och för att observera trender är ett av de mest kraftfulla användningsområdena för  [!DNL Google Analytics ]. En segmentklass som finns som standard i [!DNL Google Analytics ] är `Channels`. Kanaler är en gruppering av vanliga sätt som folk kommer till din webbplats.  [!DNL Google Analytics ] sorterar automatiskt de olika sätt som du köper en användare på - sociala medier, betala per klick, e-post eller hänvisningslänkar - och paketerar dem i en bucket eller kanal.
+Att skapa anpassade segment för att se hur olika trafik fungerar och för att observera trender är ett av de mest kraftfulla användningsområdena för [!DNL Google Analytics]. En segmentklass som finns som standard i [!DNL Google Analytics] är `Channels`. Kanaler är en gruppering av vanliga sätt som folk kommer till din webbplats.  [!DNL Google Analytics] sorterar automatiskt de olika sätt som du köper en användare på - sociala medier, betala per klick, e-post eller hänvisningslänkar - och paketerar dem i en bucket eller kanal.
 
-## Varför ser jag inte min `channels` i MBI? {#nochannels}
+## Varför ser jag inte min `channels` i Commerce Intelligence? {#nochannels}
 
-`Channels` är enkla, sammansatta dataområden. För att sortera dina förvärv i kanalintervall ställer Google in distinkta regler och definitioner med hjälp av specifika parametrar: en kombination av förvärv [Källa](https://support.google.com/analytics/answer/1033173?hl=en) (trafikens ursprung) och värvning [Medel](https://support.google.com/analytics/answer/6099206?hl=en) (källans allmänna kategori).
+`Channels` är enkla, sammansatta dataområden. Så här sorterar du dina förvärv i kanalgrupper: [!DNL Google] anger distinkta regler och definitioner med hjälp av specifika parametrar: en kombination av förvärv [Källa](https://support.google.com/analytics/answer/1033173?hl=en) (trafikens ursprung) och värvning [Medel](https://support.google.com/analytics/answer/6099206?hl=en) (källans allmänna kategori).
 
-Även om dessa bucklar kan hjälpa dig att förstå var trafiken kommer ifrån är dessa data inte taggade av kanalen utan av en kombination av källa och medium. Eftersom Google skickar kanalinformation som två separata datapunkter visas inte kanalgrupperingar automatiskt i [!DNL MBI].
+Även om dessa bucklar kan hjälpa dig att förstå var trafiken kommer ifrån är dessa data inte taggade av kanalen utan av en kombination av källa och medium. För [!DNL Google] skickar kanalinformation som två separata datapunkter, kanalgrupperingar visas inte automatiskt i [!DNL Commerce Intelligence].
 
 ## Vilka är standardkanalgrupperingarna? Hur skapas de?
 
-Som standard konfigurerar Google dig med åtta olika kanaler. Titta på reglerna som bestämmer hur de skapas:
+Som standard [!DNL Google] skapar åtta olika kanaler. Reglerna som bestämmer hur kanaler skapas är nedan.
 
-| Kanal | Vad är det? | Hur skapas den? |
+| **Kanal** | **Vad är det?** | **Hur skapas den?** |
 |---|---|---|
 | Direkt | Alla som kommer in direkt på er webbplats. | Källa = `Direct`<br>AND Medium = `(not set); OR Medium = (none)` |
 | Organic Search | Trafik som har rankats organiskt i obetalda sökmotorer. | Medel = `organic` |
@@ -48,9 +48,9 @@ Nu när du vet att kanaler bara är kombinationer av källor och medier är det 
 
 1. **Överför en mappning av Google kanalgrupperingar**
 
-   För att spara tid har Commerce redan skapat en tabell med standardgrupperingarna mappade som en fil som du kan [ladda ned](../../assets/ga-channel-mapping.csv).
+   Adobe Commerce skapar en tabell med standardgrupperingarna mappade som en fil som du kan [ladda ned](../../assets/ga-channel-mapping.csv).
 
-   Om du är Google Analytics-proffs och har skapat egna kanaler vill du lägga till dina specifika regler i mappningstabellen innan du överför filen till [!DNL MBI].
+   Om du är en [!DNL Google Analytics] proffsen och skapat egna kanaler vill du lägga till specifika regler i mappningstabellen innan du överför filen till [!DNL Commerce Intelligence].
 
    Ta in den i Data warehouse som en [Filöverföring](../importing-data/connecting-data/using-file-uploader.md).
 
@@ -58,13 +58,13 @@ Nu när du vet att kanaler bara är kombinationer av källor och medier är det 
 
 1. **Upprätta en relation mellan[!DNL Google ECommerce]och mappningsfilöverföring**
 
-   Så här skapar du en relation mellan[!DNL Google ECommerce]och mappningstabellen, [skicka en supportförfrågan](../../guide-overview.md) till ditt Data Analyst-team och hänvisa till den här artikeln. Analytikern skapar en ny beräknad kolumn som kallas **Kanal** i tabellen ECommerce. **Efter en fullständig uppdateringscykel**, kan den här kolumnen användas i ett filter eller en grupp efter.
+   Så här skapar du en relation mellan[!DNL Google ECommerce] och mappningstabellen, [skicka en supportförfrågan](../../guide-overview.md#Submitting-a-Support-Ticket) till ditt Data Analyst-team och hänvisa till det här avsnittet. Analytikern skapar en ny beräknad kolumn som kallas **Kanal** i tabellen ECommerce. **Efter en fullständig uppdateringscykel**&#x200B;är den här kolumnen klar att användas i en `Filter` eller `Group by`.
 
-Grattis! Nu har du Google Analytics Channel-grupperingar i Data warehouse, vilket innebär att du kan analysera dina data ur ett nytt perspektiv:
+Du har nu [!DNL Google Analytics Channel] grupperingar i Data warehouse, vilket innebär att du kan analysera data från ett nytt perspektiv:
 
 ![Segmentera måttet Antal order per kanal](../../assets/GA_Channel_Gif.gif)
 
-I det här exemplet började du enkelt - segmentera **Antal order** mått efter **Kanal**. Nu är det din tur - testa din nya kolumn och se vilka trender du kan identifiera i dina kanaldata för Google Analytics!
+I det här exemplet började du enkelt med att segmentera **Antal order** mått efter **Kanal**. Testa din nya kolumn och se vilka trender du kan identifiera i [!DNL Google Analytics Channel] data!
 
 ## Relaterad dokumentation
 

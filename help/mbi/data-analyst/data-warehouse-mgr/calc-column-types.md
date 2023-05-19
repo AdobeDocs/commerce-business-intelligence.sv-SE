@@ -2,9 +2,9 @@
 title: Beräknade kolumntyper
 description: Lär dig hur du skapar kolumner för att förbättra och optimera data för analys.
 exl-id: 1af79b9e-77ff-4fc6-917a-4e6743b95035
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '714'
+source-wordcount: '710'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,11 @@ ht-degree: 0%
 
 I [data warehouse Manager](../data-warehouse-mgr/tour-dwm.md)kan du skapa kolumner för att förbättra och optimera data för analys. [Den här funktionen](../data-warehouse-mgr/creating-calculated-columns.md) kan du komma åt genom att markera en tabell i Data warehouse Manager och klicka på **[!UICONTROL Create New Column]**.
 
-I den här artikeln beskrivs de typer av kolumner som du kan skapa med Data warehouse Manager. Den innehåller även en beskrivning, en visuell genomgång av den kolumnen och en [referenskarta](#map) av alla indata som krävs för att skapa en kolumn. Det finns tre sätt att skapa beräknade kolumner:
+I det här avsnittet beskrivs de typer av kolumner som du kan skapa med Data warehouse Manager. Den innehåller även en beskrivning, en visuell genomgång av den kolumnen och en [referenskarta](#map) av alla indata som krävs för att skapa en kolumn. Det finns tre sätt att skapa beräknade kolumner:
 
-* [Samma tabellberäknade kolumner](#sametable)
-* [En-till-många beräknade kolumner](#onetomany)
-* [Många-till-ett-beräknade kolumner](#manytoone)
+1. [Samma tabellberäknade kolumner](#sametable)
+1. [En-till-många beräknade kolumner](#onetomany)
+1. [Många-till-ett-beräknade kolumner](#manytoone)
 
 ## Samma tabellberäknade kolumner {#sametable}
 
@@ -85,13 +85,13 @@ Detta kan användas för att skapa kundnivådimensioner som `Customer's first or
 
 ### Finns {#exists}
 
-En befintlig beräknad kolumn är ett binärt test som fastställer förekomsten av en post på många sidor. Med andra ord returnerar den nya kolumnen ett `1` om banan förbinder minst en rad i varje tabell, och `0` om ingen anslutning kan göras.
+En beräknad kolumn är ett binärt test som fastställer förekomsten av en post på många sidor. Med andra ord returnerar den nya kolumnen ett `1` om banan förbinder minst en rad i varje tabell, och `0` om ingen anslutning kan göras.
 
 Den här typen av dimension kan till exempel avgöra om en kund någonsin köpt en viss produkt. Använda ett hörn mellan en `customers` tabell och `orders` register, ett filter för en viss produkt, en dimension `Customer has purchased Product X?` kan byggas.
 
 ## Referenskarta {#map}
 
-Om du har lite problem med att komma ihåg vad alla indata är när du skapar en beräknad kolumn, kan du försöka behålla referenskartan när du skapar:
+Om du har problem med att komma ihåg vad alla indata är när du skapar en beräknad kolumn, bör du behålla referenskartan när du skapar:
 
 ![](../../assets/merged_reference_map.png)
 
@@ -99,7 +99,7 @@ Om du har lite problem med att komma ihåg vad alla indata är när du skapar en
 
 I din förfrågan om att analysera och besvara frågor om ditt företag kan du stöta på en situation där du inte kan skapa exakt den kolumn du vill ha.
 
-Adobe rekommenderar att du tar en titt på [Avancerade beräknade kolumntyper](../../data-analyst/data-warehouse-mgr/adv-calc-columns.md) för att se vilka kolumner som supportteamet på Adobe kan bygga. Artikeln innehåller även information som du behöver för att skapa kolumnen, och du kan bifoga den med din begäran.
+Adobe rekommenderar att du tar en titt på [Avancerade beräknade kolumntyper](../../data-analyst/data-warehouse-mgr/adv-calc-columns.md) för att se vilka kolumner som supportteamet på Adobe kan bygga. Det avsnittet innehåller även information som du behöver för att skapa kolumnen. Ta med den tillsammans med din begäran.
 
 ## Relaterad dokumentation
 

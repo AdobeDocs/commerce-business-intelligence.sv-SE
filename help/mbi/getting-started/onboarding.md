@@ -1,15 +1,15 @@
 ---
-title: Onboarding
-description: Läs mer om introduktion.
+title: Onboarding Adobe Commerce Intelligence
+description: Läs mer om hur du kommer igång med Adobe Commerce Intelligence.
 exl-id: e0cce957-af2c-4514-9afd-c9aaa651a4f0
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '194'
 ht-degree: 0%
 
 ---
 
-# Onboarding
+# Onboarding [!DNL Adobe Commerce Intelligence]
 
 Startfrågor som rör `store` och `database` inställningarna ser till att du ställer in rapporteringen korrekt. Med dessa svar levererar Adobe rapporter som är skräddarsydda efter hur er butik ser ut.
 
@@ -29,6 +29,6 @@ Startfrågor som rör `store` och `database` inställningarna ser till att du st
 
 ## Databasinställningar
 
-- `Database name` - Vad är *namnet på MySQL-databasen* var finns era transaktionsdata i Commerce?
+- `Database name` - Vad är *namnet på [!DNL MySQL] databas* var finns era transaktionsdata i Commerce?
 
 - `Table prefix (optional)` - Föreskrivs tabellerna i din Commerce-databas av något (till exempel `store_`)? Detta är vanligtvis inte fallet, men det är en anpassning som kan göras.
