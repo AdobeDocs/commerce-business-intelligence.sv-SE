@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Konsolidera dina tabeller
 
-Om du har flera butiker eller flera marknader kan liknande databaser lagras separat. I [!DNL Adobe Commerce Intelligence]är det enkelt att sammanfoga liknande tabeller från olika databaser.
+Om du har flera butiker eller flera marknader kan du ha liknande databaser lagrade separat. I [!DNL Adobe Commerce Intelligence]Det är dock lätt att sammanföra liknande tabeller från olika databaser.
 
 Du kan till exempel ha en `orders` tabell för `Market A`och liknande `orders` tabell för `Market B`. [!DNL Commerce Intelligence] kan konsolidera båda tabellerna och göra det möjligt för dig att titta på sammanställda orderdata från båda `Market A` och `B`, förutom att segmentera den efter en viss marknad.
 
@@ -27,7 +27,7 @@ Nedan beskrivs när det kan vara lämpligt att använda konsoliderade tabeller i
 
 Om du säljer produkter under olika varumärken och webbplatser är det troligt att tabellerna för varje varumärke eller webbplats är strukturerade på liknande sätt.
 
-Du kan till exempel ha en `orders` tabell för webbplats `A` och en separat, men liknande, `orders` tabell för webbplats `B`. I den här situationen kan det vara användbart att konsolidera `orders` tabeller från webbplats `A` och `B`. På så sätt kan du se de samlade intäkterna och antalet beställningar från webbplatsen `A` och `B`, förutom att kunna segmentera mätvärden på dessa två webbplatser.
+Du kan till exempel ha en `orders` tabell för webbplats `A` och en separat, men liknande, `orders` tabell för webbplats `B`. I denna situation kan det vara lämpligt att konsolidera `orders` tabeller från webbplats `A` och `B`. På så sätt kan du se de samlade intäkterna och antalet beställningar från webbplatsen `A` och `B`, förutom att kunna segmentera mätvärden på dessa två webbplatser.
 
 ### Integrera äldre data
 
@@ -43,8 +43,8 @@ Precis som med alla andra tabeller i Data warehouse kan du lägga till ytterliga
 
 ## Skapa, visa eller uppdatera en konsoliderad tabell
 
-Om du vill lägga till en konsoliderad tabell i Data warehouse kontaktar du [!DNL Commerce Intelligence] [support](../guide-overview.md#Submitting-a-Support-Ticket).
+Om du vill lägga till en konsoliderad Data Warehouse kontaktar du [!DNL Commerce Intelligence] [bära](../guide-overview.md#Submitting-a-Support-Ticket).
 
 >[!NOTE]
 >
->Eftersom konsoliderade tabeller inte kan visas i `Data Warehouse Manager`kan du bara visa och uppdatera de här tabellerna genom att [!DNL Commerce Intelligence] support.
+>Eftersom konsoliderade tabeller inte visas i `Data Warehouse Manager`kan du bara visa och uppdatera dessa tabeller genom att [!DNL Commerce Intelligence] stöd.

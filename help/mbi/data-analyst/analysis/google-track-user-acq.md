@@ -25,25 +25,25 @@ Om du inte redan spårar källor för kundvärvning i din databas [!DNL Adobe Co
 
 ### (Alternativ 1) Spåra källdata för orderreferenser via [!DNL Google Analytics E-Commerce] (Inklusive [!DNL Shopify] Lager)
 
-Om du använder [!DNL Google Analytics E-Commerce] för att spåra din beställning och dina säljdata kan du använda [!DNL [Google Analytics E-Commerce Connector]](../importing-data/integrations/google-ecommerce.md) för att synkronisera varje orders hänvisningskälldata. På så sätt kan du segmentera intäkter och order efter hänvisningskälla (till exempel `utm_source` eller `utm_medium`). Ni får också en känsla av kundvärvningskällor via [!DNL Commerce Intelligence] anpassade dimensioner som `User's first order source`.
+Om du använder [!DNL Google Analytics E-Commerce] för att spåra din beställning och dina säljdata kan du använda [!DNL [Google Analytics E-Commerce Connector]](../importing-data/integrations/google-ecommerce.md) för att synkronisera varje orders hänvisningskälldata. På så sätt kan du segmentera intäkter och order efter hänvisningskälla (till exempel `utm_source` eller `utm_medium`). Man får också en känsla av kundvärvningskällor via [!DNL Commerce Intelligence] egna dimensioner, till exempel `User's first order source`.
 
 >[!NOTE]
 >
->**För användare med Förminska**: Aktivera [!DNL [Google Analytics E-Commerce] tracking in Shopify](https://help.shopify.com/en/manual/reports-and-analytics/google-analytics#ecommerce-tracking) innan du ansluter [!DNL Google Analytics E-Commerce] konto till [!DNL Commerce Intelligence].
+>**För Shopify-användare**: Slå på [!DNL [Google Analytics E-Commerce] tracking in Shopify](https://help.shopify.com/en/manual/reports-and-analytics/google-analytics#ecommerce-tracking) innan du ansluter [!DNL Google Analytics E-Commerce] konto till [!DNL Commerce Intelligence].
 
-### (Alternativ 2) Spara [!DNL Google Analytics]&#39; hämta källdata i databasen
+### (Alternativ 2) Spara [!DNL Google Analytics]&#39; Hämta källdata i databasen
 
-I det här avsnittet beskrivs hur du sparar [!DNL Google Analytics] information om inhämtningskanaler i din egen databas, det vill säga `source`, `medium`, `term`, `content`, `campaign`och `gclid` parametrar som fanns på en användares första besök på webbplatsen. En förklaring av de här parametrarna finns i [!DNL [Google Analytics] documentation](https://support.google.com/analytics/answer/1191184?hl=en#zippy=%2Cin-this-article). Sedan kan du utforska några av de kraftfulla marknadsföringsanalyser som kan utföras med den här informationen i [!DNL Commerce Intelligence].
+Det här avsnittet förklarar hur du sparar [!DNL Google Analytics] inhämtningskanalinformation i din egen databas - nämligen `source`, `medium`, `term`, `content`, `campaign`och `gclid` parametrar som fanns vid en användares första besök på din webbplats. En förklaring av de här parametrarna finns i [!DNL [Google Analytics] documentation](https://support.google.com/analytics/answer/1191184?hl=en#zippy=%2Cin-this-article). Sedan kan du utforska några av de kraftfulla marknadsföringsanalyser som kan utföras med den här informationen i [!DNL Commerce Intelligence].
 
 #### Varför?
 
-Om du bara tittar på standardinställningen [!DNL Google Analytics] konverterings- och förvärvsstatistik får ni inte hela bilden. Även om det är intressant att se antalet konverteringar från organiska sökningar till betalda sökningar, vad kan du göra med den informationen? Borde du spendera mer pengar på betald sökning? Det beror på värdet hos kunder som kommer från den kanalen, vilket inte är något Google Analytics tillhandahåller.
+Om du bara tittar på standardinställningen [!DNL Google Analytics] konverterings- och förvärvsstatistik får ni inte hela bilden. Även om det är intressant att se antalet konverteringar från ekologisk sökning kontra betald sökning, vad kan du göra med den informationen? Ska du lägga mer pengar på betalsökningar? Det beror på hur många kunder som kommer från den kanalen, vilket inte är något som Google Analytics tillhandahåller.
 
 >[!NOTE]
 >
->[!DNL [Google Analytics eCommerce Tracking]](https://developers.google.com/analytics/devguides/collection/gajs/gaTrackingEcommerce) minskar problemet genom att transaktionsdata lagras i [!DNL Google Analytics]men den här lösningen fungerar inte för andra webbplatser än e-handelssajter. Vissa verktyg som kohortanalyser är inte heller enkla att göra i [!DNL Google Analytics] gränssnitt.
+>[!DNL [Google Analytics eCommerce Tracking]](https://developers.google.com/analytics/devguides/collection/gajs/gaTrackingEcommerce) åtgärdar problemet genom att lagra transaktionsdata i [!DNL Google Analytics], men den här lösningen fungerar inte för andra webbplatser än e-handelsplatser. Dessutom är vissa verktyg som kohortanalys inte lätta att göra i [!DNL Google Analytics] gränssnitt.
 
-Vad händer om du vill skicka ett uppföljningserbjudande via e-post till alla kunder som skaffats via en viss e-postkampanj? Eller integrera kundvärvningsdata med CRM-systemet? Detta är omöjligt i [!DNL Google Analytics] - det strider mot användarvillkoren för [!DNL Google Analytics] för att lagra data som identifierar en individ. Men du kan lagra dessa data själv.
+Vad händer om du vill skicka ett uppföljningsavtal via e-post till alla kunder som har förvärvats från en viss e-postkampanj? Eller integrera värvningsdata med CRM-systemet? Detta är omöjligt i [!DNL Google Analytics] - det strider mot användarvillkoren för [!DNL Google Analytics] för att lagra data som identifierar en individ. Men du kan lagra dessa data själv.
 
 #### Metoden
 
@@ -63,16 +63,16 @@ Den returnerade `$data` arrayen är en karta över nycklarna `source`, `medium`,
 
 #### Så här använder du dessa data
 
-Nu när du sparar en källa för kundvärvning, hur kan du använda den?
+Nu när du sparar en källa för användarförvärv, hur kan du använda den?
 
 Anta att du använder en SQL-databas och har en `users` tabell med följande struktur:
 
 | ID | E-POST | JOIN_DATE | ACQ_SOURCE | ACQ_MEDIUM |
 |--- |--- |--- |--- |--- |
-| 1 | john@abc.com | 2012-01-24 | google | organisk |
+| 1 | john@abc.com | 2012-01-24 | googla | organisk |
 | 2 | jim@abc.com | 2012-01-24 | google | cpc |
 | 3 | joe@def.com | 2012-01-25 | direkt | - |
-| 4 | jess@ghi.com | 2012-01-26 | hänskjutande | techcrunch.com |
+| 4 | jess@ghi.com | 2012-01-26 | hänvisning | techcrunch.com |
 | 5 | jen@ghi.net | 2012-01-30 | övriga | organisk |
 | ... | ... | ... | ... | ... |
 
@@ -86,8 +86,8 @@ Resultatet ser ut ungefär så här:
 |--- |--- |
 | google | 294 |
 | direkt | 156 |
-| hänskjutande | 55 |
-| övriga | 16 |
+| hänvisning | 55 |
+| annan | 16 |
 
 Detta är intressant, men av begränsad användning. Det du verkligen vill veta är:
 
@@ -103,4 +103,4 @@ De frågor som krävs för att utföra dessa analyser är komplexa. Med hjälp a
 * **[Upptäck era mest värdefulla förvärvskällor och kanaler](../analysis/most-value-source-channel.md)**
 * **[Koppla samman [!DNL Google Adwords] konto](../importing-data/integrations/google-adwords.md)**
 * **[Öka avkastningen på era annonskampanjer](../analysis/roi-ad-camp.md)**
-* **[Hur [!DNL Google Analytics] UTM-attribueringsarbete?](../analysis/utm-attributes.md)**
+* **[Hur fungerar [!DNL Google Analytics] Arbete med UTM-attribuering?](../analysis/utm-attributes.md)**

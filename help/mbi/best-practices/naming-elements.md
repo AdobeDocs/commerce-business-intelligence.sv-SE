@@ -21,13 +21,13 @@ Det sätt på vilket du namnger beräknade kolumner, mätvärden och rapporter a
 * **ENHETLIGHET** - så att du (och Adobe supportteam) enkelt kan hitta och förstå element och rapporter i ditt konto.
 * **KREDIGERBARHET** - För att ge inspiration och stärka andra datadrivna [!DNL Commerce Intelligence] -användare måste ni känna er säkra på hur de förstår och använder data!
 
-Läs vidare för att få tips om hur du använder vår egen nomenklatur!
+Läs vidare för beprövade och sanna nomenklaturtips!
 
 ## Allmän bästa praxis {#general}
 
 ### Var meningsfull {#meaningful}
 
-Var specifik när det är möjligt! Om det till exempel är landet, vet du om det är fraktlandet eller faktureringslandet? Är det användarens stad, eller så är det erbjudandets stad?
+Var specifik när det är möjligt! Om det till exempel är landet, vet du om det är frakt- eller faktureringslandet? Är det användarens stad eller är det affärens stad?
 
 **Felaktigt exempel:**
 Intäkter
@@ -64,12 +64,12 @@ Vid namngivning [diagram](../tutorials/using-visual-report-builder.md)är det me
 **Felaktigt exempel:**
 Intäkter
 
-Det här berättar ingenting om rapporten, som är dålig.
+Detta säger ingenting om betänkandet, vilket är dåligt.
 
-**Exempel:**
-Ackumulerade intäkter de senaste 30 dagarna per månad
+**Bra exempel:**
+Ackumulerade intäkter under de senaste 30 dagarna per månad
 
-Det säger oss **exakt** vad som står i rapporten, som är fantastisk.
+Detta säger oss **exakt** betänkandet, som är fantastiskt.
 
 ## Kontrollpaneler {#dashboards}
 
@@ -91,9 +91,9 @@ Användarens första 30-dagars intäkt
 
 ## Mått {#metrics}
 
-[Mått](../data-user/reports/ess-manage-data-metrics.md) är i huvudsak frågor som du vill ha svar på regelbundet. Hur många beställningar har gjorts under den senaste månaden? Vilket är det genomsnittliga livstidsvärdet för era kunder? Det är bäst att namnge mätvärden så att de avspeglar svaret de ger användarna. Om du har samma mätvärden filtrerade för en viss butik eller avdelning bör de märkas som sådana. Till exempel:
+[Metrisk](../data-user/reports/ess-manage-data-metrics.md) är väsentligen frågor som du vill ha svar på regelbundet. Hur många beställningar har gjorts den senaste månaden? Vilket är det genomsnittliga livstidsvärdet för era kunder? Det är bästa praxis att namnge mätvärden för att återspegla det svar de ger användarna. Om du har filtrerat samma mått för en viss butik eller avdelning bör de också märkas som sådana. Exempel:
 
-Genomsnittlig kundservice (de första 30 dagarna) Butiksnamn - intäkt
+Genomsnittlig kund LTV (första 30 dagar) Butiksnamn - Intäkt
 
 Slutligen kan samma mätvärden ibland ordnas med olika tidsstämplar, beroende på hur enskilda användare beräknar dem. I så fall måste du se till att inkludera tidsstämpeln i namnet:
 

@@ -1,6 +1,6 @@
 ---
 title: Avancerade beräknade kolumntyper
-description: Lär dig grunderna för de flesta användningsfall för kolumner - men du kanske vill ha en beräknad kolumn som är lite mer komplex än vad Data warehouse Manager kan skapa.
+description: Lär dig grunderna för de flesta kolumnfall, men du kanske vill ha en beräknad Data Warehouse som är lite mer komplex än vad kolumnhanteraren kan skapa.
 exl-id: 9871fa19-95b3-46e4-ae2d-bd7c524d12db
 source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
@@ -11,7 +11,7 @@ ht-degree: 4%
 
 # Avancerade beräknade kolumntyper
 
-Många analyser du kan vilja skapa innehåller en **ny kolumn** som du vill `group by` eller `filter by`. The [Skapar beräknade kolumner](../data-warehouse-mgr/creating-calculated-columns.md) I självstudiekursen beskrivs grunderna för de flesta användningsfall, men du kanske vill ha en beräknad kolumn som är lite mer komplex än vad Data warehouse Manager kan skapa.
+Många analyser som du kanske vill skapa innebär att du använder en **ny kolumn** som du vill `group by` eller `filter by`. The [Skapar beräknade kolumner](../data-warehouse-mgr/creating-calculated-columns.md) I självstudiekursen beskrivs grunderna för de flesta användningsfall, men du kanske vill ha en beräknad kolumn som är lite mer komplex än vad Data warehouse Manager kan skapa.
 {: #top}
 
 Den här typen av kolumner kan skapas av analytikernas Adobe-team i Data warehouse. Ange följande information om du vill definiera en ny beräknad kolumn:
@@ -49,7 +49,7 @@ En kolumn för beräkning av händelsenummer kan användas för att observera sk
 
 Vill du se hur kundens kolumn med ordernummer fungerar? Klicka på bilden för att se den användas som en grupp efter dimension i en rapport.
 
-![Använder en kolumn med ett händelsenummer som beräknas för att gruppera efter kundens ordernummer.](../../assets/EventNumber.gif)<!--{: style="max-width: 500px;"}-->
+![Använder en beräknad kolumn för händelsenummer för att gruppera efter kundens ordernummer.](../../assets/EventNumber.gif)<!--{: style="max-width: 500px;"}-->
 
 Om du vill skapa den här typen av beräknad kolumn måste du känna till:
 
@@ -61,7 +61,7 @@ Om du vill skapa den här typen av beräknad kolumn måste du känna till:
 
 ## Jag försöker hitta tiden mellan två händelser. {#twoevents}
 
-Detta kallas för en `date difference` beräknad kolumn. Det innebär att du försöker hitta tiden mellan två händelser som tillhör en enda post, baserat på händelsens tidsstämplar.
+Detta kallas en `date difference` beräknad kolumn. Det innebär att du försöker hitta tiden mellan två händelser som tillhör samma post, baserat på tidsstämplarna för händelsen.
 
 Här är ett exempel:
 
@@ -72,9 +72,9 @@ Här är ett exempel:
 
 {style="table-layout:auto"}
 
-En beräknad datumdifferenskolumn kan användas för att skapa ett mått som beräknar medeltiden eller mediantiden mellan två händelser. Klicka på bilden nedan för att se hur `Average time to first order` mätvärden används i en rapport.
+En beräknad kolumn för datumskillnad kan användas för att skapa ett mått som beräknar medeltiden eller mediantiden mellan två händelser. Klicka på bilden nedan för att se hur `Average time to first order` måttet används i en rapport.
 
-![Använda en datumdifferensberäknad kolumn för att beräkna Genomsnittlig tid till första ordern.](../../assets/DateDifference.gif)<!--{: style="max-width: 500px;"}-->
+![Använd en beräknad kolumn för datumdifferens för att beräkna Genomsnittlig tid för första ordern.](../../assets/DateDifference.gif)<!--{: style="max-width: 500px;"}-->
 
 Om du vill skapa den här typen av beräknad kolumn måste du känna till:
 
@@ -128,14 +128,14 @@ Om du vill skapa den här typen av beräknad kolumn måste du känna till:
 
 * Tabellen som du vill skapa den här kolumnen för
 * Transaktionsbeloppskolumnen som du vill konvertera
-* Kolumnen som anger valutan som data spelades in i (vanligtvis en ISO-kod)
+* Den kolumn som anger i vilken valuta data har registrerats (vanligtvis en ISO-kod)
 * Standardrapporteringsvaluta
 
 [Till början](#top)
 
 ## Jag försöker konvertera tidszoner. {#timezone}
 
-A **tidszonskonvertering** beräknad kolumn konverterar tidsstämplarna för en viss datakälla från den registrerade tidszonen till en rapporttidszon.
+A **tidszonskonvertering** beräknad kolumn konverterar tidsstämplarna för en viss datakälla från deras registrerade tidszon till en rapporteringstidszon.
 
 Här är ett exempel:
 
@@ -157,7 +157,7 @@ Om du vill skapa den här typen av beräknad kolumn måste du känna till:
 
 ## Jag försöker göra något som inte finns med här. {#else}
 
-Oroa dig inte. Bara för att det inte finns med här betyder det inte att det inte är möjligt. Adobe-teamet hos Data warehouse Analysts kan hjälpa till.
+Oroa dig inte. Bara för att det inte står här betyder det inte att det inte är möjligt. Adobe-teamet hos Data warehouse Analysts kan hjälpa till.
 
 Om du vill definiera en ny beräknad kolumn [skicka en supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) med information om exakt vad du vill bygga.
 

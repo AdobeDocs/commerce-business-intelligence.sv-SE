@@ -21,8 +21,8 @@ The `quote_item` tabell (`sales_flat_quote_item` på M1) innehåller uppgifter 
 
 | **Kolumnnamn** | **Beskrivning** |
 |---|---|
-| `base_price` | Priset för en enskild enhet av en produkt vid den tidpunkt då artikeln lades till i en kundvagn, efter [katalogprisregler, nivårabatter och specialpriser](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) och innan moms, frakt eller kundvagnsrabatt ges. Detta representeras i butikens basvaluta. |
-| `created_at` | Tidsstämpel för att skapa varukorgen, som lagras lokalt i UTC. Beroende på din konfiguration i [!DNL Commerce Intelligence]kan den här tidsstämpeln konverteras till en rapporttidszon i [!DNL Commerce Intelligence] som skiljer sig från databasens tidszon |
+| `base_price` | Priset på en enskild enhet av en produkt när artikeln lades till i en varukorg, efter [katalogprisregler, nivårabatter och specialpriser](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) tillämpas och innan några skatter, frakt eller kundvagnsrabatter tillämpas. Detta representeras i butikens basvaluta. |
+| `created_at` | Tidsstämpel för att skapa kundvagnsartikeln, lagrad lokalt i UTC. Beroende på din konfiguration i [!DNL Commerce Intelligence]kan den här tidsstämpeln konverteras till en rapporttidszon i [!DNL Commerce Intelligence] som skiljer sig från databasens tidszon |
 | `item_id` (PK) | Unik identifierare för registret |
 | `name` | Orderartikelns textnamn |
 | `parent_item_id` | `Foreign key` som relaterar en enkel produkt till dess överordnade paket eller konfigurerbara produkt. Gå med i `quote_item.item_id` för att fastställa överordnade produktattribut som är kopplade till en enkel produkt. För artiklar i överordnad kundvagn (dvs. paket eller konfigurerbara produkttyper), `parent_item_id` är `NULL` |
@@ -40,8 +40,8 @@ The `quote_item` tabell (`sales_flat_quote_item` på M1) innehåller uppgifter 
 | **Kolumnnamn** | **Beskrivning** |
 |---|---|
 | `Cart creation date` | Tidsstämpel som är associerad med datumet då vagnen skapades. Beräknas av koppling `quote_item.quote_id` till `quote.entity_id` och returnera `created_at` tidsstämpel |
-| `Cart is active? (1/0)` | Booleskt fält som returnerar &quot;1&quot; om kundvagnen har skapats och ännu inte konverterats till en order. Returnerar &quot;0&quot; för konverterade varukorgar eller varukorgar som skapats med administratören. Beräknas av koppling `quote_item.quote_id` till `quote.entity_id` och returnera `is_active` fält |
-| `Cart item total value (qty * base_price)` | Totalt värde för en artikel när artikeln lades till i en kundvagn, efter [katalogprisregler, nivårabatter och specialpriser](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) och innan moms, frakt eller kundvagnsrabatt ges. Beräknas genom att multiplicera `qty` av `base_price` |
+| `Cart is active? (1/0)` | Booleskt fält som returnerar &quot;1&quot; om vagnen skapades av en kund och ännu inte har konverterats till en order. Returnerar &quot;0&quot; för konverterade kundvagnar eller kundvagnar som skapats via administratören. Beräknas genom sammanfogning `quote_item.quote_id` till `quote.entity_id` och återlämna `is_active` fält |
+| `Cart item total value (qty * base_price)` | Totalt värde på en artikel när artikeln lades till i en varukorg, efter [katalogprisregler, nivårabatter och specialpriser](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) tillämpas och innan några skatter, frakt eller kundvagnsrabatter tillämpas. Beräknas genom att multiplicera `qty` av `base_price` |
 | `Seconds since cart creation` | Förfluten tid mellan kundvagnens datum och nu. Beräknas av koppling `quote_item.quote_id` till `quote.entity_id` och returnera `Seconds since cart creation` fält |
 | `Store name` | Namn på Commerce Store som är associerad med orderartikeln. Beräknas av koppling `sales_order_item.store_id` till `store.store_id` och returnera `name` fält |
 
@@ -65,12 +65,12 @@ The `quote_item` tabell (`sales_flat_quote_item` på M1) innehåller uppgifter 
 
 `quote`
 
-* Gå med i `quote` för att skapa nya varukorg på kundvagnsnivå som är associerade med varukorgsobjektet.
+* Gå med i `quote` tabell för att skapa nya kolumner på kundvagnsnivå som är kopplade till kundvagnsartikeln.
    * Sökväg: `quote_item.quote_id` (många) => `quote.entity_id` (ett)
 
 `quote_item`
 
-* Gå med i `quote_item` om du vill skapa kolumner som associerar information om den överordnade konfigurerbara eller paketerade SKU:n med den enkla produkten. [Kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) om du behöver hjälp med att konfigurera dessa beräkningar, om du bygger i Data warehouse.
+* Gå med i `quote_item` för att skapa kolumner som associerar information om den överordnade konfigurerbara artikeln eller SKU-paketet med den enkla produkten. [Kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) om du behöver hjälp med att konfigurera dessa beräkningar, om du bygger i Data warehouse.
    * Sökväg: `quote_item.parent_item_id` (många) => `quote_item.item_id` (ett)
 
 `store`

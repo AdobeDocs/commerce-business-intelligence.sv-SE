@@ -25,7 +25,7 @@ En formel kombinerar flera mätvärden och matematisk logik för att besvara en 
 
 1. Klicka **[!UICONTROL Add Metric]** igen och välj det andra måttet för rapporten.
 
-   I det här exemplet `New Customers` mätvärden används.
+   I det här exemplet visas `New Customers` mått används.
 
 1. Klicka på **[!UICONTROL Details]** för att visa information om varje mätvärde.
 
@@ -35,15 +35,15 @@ En formel kombinerar flera mätvärden och matematisk logik för att besvara en 
 
    ![Måttinställningar](../../assets/magento-bi-report-builder-revenue-by-products-metric-detail.png)
 
-1. Om du vill återgå till rapporten klickar du på fliken för föregående webbläsare.
+1. Klicka på föregående webbläsarflik om du vill återgå till rapporten.
 
-1. Håll markören över ett fåtal datapunkter på varje rad för att se hur mycket varje mätvärde har.
+1. Håll markören över några datapunkter på varje rad i diagrammet för att se hur mycket varje mätresultat har.
 
 ## Steg 2: Lägg till en formel
 
-1. Klicka på längst upp i sidlisten **[!UICONTROL Add Formula]**.
+1. Klicka på **[!UICONTROL Add Formula]**.
 
-   Formelrutan visar mätvärden som tillgängliga indata `A` och `B`och innehåller en inmatningsruta där du kan ange formeln.
+   Formelrutan visar mätvärdena som tillgängliga indata `A` och `B`och innehåller en inmatningsruta där du kan ange formeln.
 
    Gör följande:
 
@@ -85,9 +85,9 @@ En formel kombinerar flera mätvärden och matematisk logik för att besvara en 
 
 ## Steg 4: Spara rapporten
 
-I det här steget sparar du rapporten som ett diagram och som en tabell.
+I det här steget sparar du rapporten som ett diagram och även som en tabell.
 
-1. Klicka `Untitled Report` överst på sidan och ange en beskrivande rubrik. I det här exemplet är rapporttiteln `2017 Holiday Sales`.
+1. Klicka `Untitled Report` längst upp på sidan och ange en beskrivande titel. I det här exemplet är rapportens titel `2017 Holiday Sales`.
 
    Gör sedan följande:
 
@@ -95,11 +95,11 @@ I det här steget sparar du rapporten som ett diagram och som en tabell.
 
    * För `Type`, acceptera standard `Chart` inställning.
 
-   * Välj `Dashboard` om rapporten ska vara tillgänglig.
+   * Välj `Dashboard` där rapporten skall finnas tillgänglig.
 
    * Klicka **[!UICONTROL Save to Dashboard]**.
 
-1. Klicka på rapporttiteln och ändra namnet. I det här exemplet ändras rapporttiteln till `2017 Holiday Sales Data`.
+1. Klicka på rapporttiteln och ändra namnet. I det här exemplet ändras rapportrubriken till `2017 Holiday Sales Data`.
 
    Gör sedan följande:
 
@@ -111,8 +111,8 @@ I det här steget sparar du rapporten som ett diagram och som en tabell.
 
    * Klicka **[!UICONTROL Save a Copy to Dashboard]**.
 
-1. Gör något av följande om du vill visa rapporterna på kontrollpanelen:
+1. Gör något av följande för att se rapporterna på kontrollpanelen:
 
    * Klicka **[!UICONTROL Go to Dashboard]** i meddelandet längst upp på sidan.
 
-   * Välj **[!UICONTROL Dashboards]**. Klicka på namnet på den aktuella instrumentpanelen för att visa listan. Klicka sedan på namnet på kontrollpanelen där rapporten sparades.
+   * Välj **[!UICONTROL Dashboards]**. Klicka på namnet på den aktuella kontrollpanelen för att visa listan. Klicka sedan på namnet på kontrollpanelen där rapporten sparades.

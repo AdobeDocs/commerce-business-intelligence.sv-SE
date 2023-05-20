@@ -19,9 +19,9 @@ Det är viktigt att [spåra källa för användarförvärv](../../data-analyst/a
 
 Helst registreras en hänvisningskälla varje gång en konverteringshändelse inträffar. Men hur bestäms källan?
 
-I verkligheten kommer användarna ofta från många olika källor innan de slår till/utför en mikro- eller makrokonvertering. De kan t.ex. komma till webbplatsen via organiska tjänster, sedan lämna platsen, sedan komma via betalsökningar, sedan lämna platsen och sedan komma direkt till själva webbplatsen. Den här källspårningsinformationen tillhandahålls ofta till webbplatsen via UTM-parametrar, men det finns mer avancerade system där ute också. Fokusera på [UTM](https://support.google.com/analytics/answer/1033867?hl=en&amp;ref_topic=1032998).
+Verkligheten är att användare ofta kommer från många källor innan de träffar/utför en mikro- eller makrokonvertering. Till exempel kan de komma till webbplatsen via ekologisk, sedan lämna, sedan komma via betald sökning, sedan lämna, sedan komma direkt till själva webbplatsen. Denna källspårningsinformation tillhandahålls ofta till webbplatsen via UTM-parametrar, men det finns mer sofistikerade system ute också. Fokusera på [UTM](https://support.google.com/analytics/answer/1033867?hl=en&amp;ref_topic=1032998).
 
-## Hur [!DNL Google Analytics] attributreferenskällor via UTM-parametrar?
+## Hur fungerar [!DNL Google Analytics] Vill du tilldela referenskällor via UTM-parametrar?
 
 När UTM-parametrarna anges på URL:en tolkas de ut och placeras i en [!DNL Google Analytics] [cookie](https://en.wikipedia.org/wiki/HTTP_cookie). Om en webbplats inte har [!DNL Google Analytics]är det ingen mening med att ha UTM. [!DNL Google Analytics] har regler för hur den hanterar en användare som träffar flera URL:er med UTM:er under sin livstid (mer därtill senare). Om webbplatsen är konfigurerad att hämta UTM-parametrar till en extern databas när en mikro- eller makrokonvertering inträffar, oavsett vad som finns i [!DNL Google Analytics] cookie vid konverteringen replikeras till databasen.
 
@@ -50,9 +50,9 @@ Med vissa betalda attribueringsverktyg kan du fånga &quot;pankakestacken&quot; 
 1. linjärt (dividera intäkterna jämnt över alla källor i banan)
 1. viktad (anpassad attribuering)
 
-Nu när du förstår vad attribueringsmodellen för varje mikro- eller makrokonvertering är blir frågan&quot;Vad gör du med en användares totala konverteringar?&quot;.  Titta till exempel på de UTM-minnen som spelats in baserat på GA:s logik för senaste klickning:
+Nu när du förstår vad som är attribueringsmodellen för varje mikro- eller makrokonvertering blir frågan &quot;Vad gör du med de totala konverteringarna?&quot;.  Titta till exempel på UTM:er som spelats in baserat på logiken GA senaste klick:
 
-* Användarregister under organisk
+* Användarregister under ekologiska
 * Användarens första köp under betald sökning $5.00
 * Användarens andra köp via e-post $50.00
 * Användarens tredje köp under 10,00 USD
@@ -67,4 +67,4 @@ Här frågar du: &quot;Hur mycket fick jag i intäkter från betalsökningar? Fr
 * [Upptäck era mest värdefulla förvärvskällor och kanaler](../analysis/most-value-source-channel.md)
 * [Koppla samman [!DNL Google Adwords] konto](../importing-data/integrations/google-adwords.md)
 * [Öka avkastningen på era annonskampanjer](../analysis/roi-ad-camp.md)
-* [Fem bästa sätten att tagga UTM i [!DNL Google Analytics]](../../best-practices/utm-tagging-google.md)
+* [Fem bästa metoder för UTM-märkning i [!DNL Google Analytics]](../../best-practices/utm-tagging-google.md)

@@ -67,7 +67,7 @@ Det är praktiskt att ha en blandning av statiska värden och visuella diagram n
 
    [!UICONTROL Format]: `Number`
 
-* [!UICONTROL Time period]: (Vilken tidsperiod du vill ha)
+* [!UICONTROL Time period]: (Vilken tidsperiod som helst)
 * 
    [!UICONTROL Interval]: `Month`
 * 

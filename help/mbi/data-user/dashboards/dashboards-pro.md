@@ -23,7 +23,7 @@ För `Customers` och `Executive Summary` på kontrollpaneler är vissa rapporter
 
 ## Kunder (gästutcheckning tillåts)
 
-Instrumentpanelen Kunder (tillåten gästutcheckning) ger information om din kundbas, till exempel om deras köpbeteende. Den här kontrollpanelen kan hjälpa er att få fler kunder att stanna kvar och avgöra vilka kunder som får störst intäkter.
+Kontrollpanelen Kunder (gästutcheckning tillåts) innehåller information om din kundbas, till exempel deras köpbeteende. Den här instrumentpanelen kan hjälpa er att förbättra kundlojaliteten och avgöra vilka kunder som får störst intäkter.
 
 ### Rapporter
 
@@ -33,7 +33,7 @@ Instrumentpanelen Kunder (tillåten gästutcheckning) ger information om din kun
 | `Orders by Existing Customers (Past 30 Days)` | Beställ de senaste 30 dagarna från kunder som tidigare har gjort minst en beställning. |
 | `Total Unique Customers (Past 30 Days)` | Antal unika kunder som lagt order de senaste 30 dagarna. |
 | `Orders by New vs Existing Customers` | Antal beställningar som gjorts av kunder utan tidigare beställningar jämfört med kunder med minst en tidigare beställning. |
-| `Subsequent Order Probability (All Time)` | Sannolikheten för att kunder som har lagt en order lägger en annan. |
+| `Subsequent Order Probability (All Time)` | Sannolikheten att kunder som har gjort en beställning lägger en annan. |
 | `% of Customers with Multiple Orders (All Time)` | Procent av alla kunder som har gjort mer än en beställning. |
 | `Median Time Between Orders (All Time)` | Genomsnittlig tid varje kund tar mellan att göra en beställning och nästa. |
 | `Subsequent Order Probability` | Sannolikheten för att kunder som har lagt en order lägger en annan order, uppdelad efter ordernummer. Det vill säga procentandelen kunder med en order som lägger en andra, en procent med två som placerar en tredjedel osv. |
@@ -87,7 +87,7 @@ Instrumentpanelen för den verkställande sammanfattningen (gästutcheckning til
 
 ## Sammanfattning (ingen gästutcheckning tillåts)
 
-Instrumentpanelen för den verkställande sammanfattningen (ingen gästutcheckning tillåts) ger dig en kort bild av hur verksamheten fungerar när det gäller order, intäkter och kontoregistreringar. Kontrollpanelen är utformad för chefer som vill få en övergripande förståelse för hur verksamheten fungerar, men den kan även vara insiktsfull för andra.
+Den sammanfattande instrumentpanelen (ingen gästutcheckning tillåts) ger dig en kortfattad bild av hur det går för företaget när det gäller beställningar, intäkter och kontoregistreringar. Den här instrumentpanelen är utformad för att chefer ska få en övergripande förståelse för affärsprestanda, men den kan även vara insiktsfull för andra.
 
 ### Rapporter
 
@@ -96,8 +96,8 @@ Instrumentpanelen för den verkställande sammanfattningen (ingen gästutcheckni
 | `Revenue (Current Month)` | Intäkterna som har genererats av din butik den här månaden. I det här fallet definieras intäkter som det slutpris som en kund betalar på en order. |
 | `Revenue (Past 6 Months by Day)` | Total daglig intäkt, utöver den genomsnittliga dagliga intäkten under de föregående sju dagarna. I det här fallet definieras intäkter som det slutpris som en kund betalar på en order. |
 | `% Change in Revenue (MoM MTD)` | Jämförelse av intäkter hittills i den här månaden jämfört med samma del av föregående månad. |
-| `Revenue from New vs Existing Customers (Current Month)` | Intäkter för den innevarande månaden (hittills) som tilldelats nya (första gången) kunder jämfört med befintliga kunder (andra eller senare). |
-| `Average Order Value (Current Month)` | Dagsmedelvärde för order som lagts under den aktuella månaden (hittills). Ordervärdet definieras som det slutpris som en kund betalar på en order. |
+| `Revenue from New vs Existing Customers (Current Month)` | Intäkterna för innevarande månad (hittills) hänförs till nya (första gången) kunder jämfört med befintliga kunder (andra eller senare beställningar). |
+| `Average Order Value (Current Month)` | Medelvärde för orderingång under innevarande månad (hittills). Ordervärde definieras som det slutliga pris som en kund betalar för en order. |
 | `Orders (Current Month)` | Antalet order som lagts i din butik för den aktuella månaden (hittills). |
 | `% Change in Orders (MoM MTD)` | Jämförelse mellan antalet order för den aktuella månaden (hittills) och samma del av föregående månad. |
 | `Account Registrations (Current Month)` | Antalet nyregistrerade konton hittills under den här månaden. |

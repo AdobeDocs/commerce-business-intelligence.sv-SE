@@ -17,7 +17,7 @@ I listrutan för val av kontrollpanel visas kontrollpanelsgrupper i alfabetisk o
 
 ## Gruppdelning på instrumentpanel
 
-Instrumentpanelsgrupper kan inte delas direkt mellan användare. När en kontrollpanel delas med användare skapas den instrumentpanelsgrupp som den är underställd automatiskt för de användarna om den inte finns. Om instrumentpanelsgruppen finns läggs instrumentpanelen till i listan.
+Instrumentpanelsgrupper kan inte delas direkt mellan användare. När en kontrollpanel delas med användare skapas den instrumentpanelsgrupp som den är underställd automatiskt för de användarna om den inte finns. Om kontrollpanelsgruppen finns läggs kontrollpanelen till i listan.
 
 När en kontrollpanels grupp ändras av dess ägare återspeglas ändringen automatiskt för alla användare som kontrollpanelen har delats med. Användare kan inte ändra kontrollpanelsgruppen för kontrollpaneler som de inte äger.
 

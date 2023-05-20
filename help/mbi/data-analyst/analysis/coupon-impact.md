@@ -40,11 +40,11 @@ Den här mätningen visar antalet upprepade order som gjorts av båda typerna av
 
 ### Antal och procent upprepade order med kupong
 
-Här visas antalet upprepade order som gjorts med en kupong och procentandelen upprepade order som gjorts med en kupong. Detta kan hjälpa er att avgöra om kupongförvärvade kunder tenderar att göra fler upprepade order med en kupong än icke-kupongförvärvade kunder och om kupongförvärvade kunder använder kuponger oproportionerligt i sina uppföljningsorder.
+Detta visar antalet upprepade order som gjorts med en kupong tillämpad och procentandelen upprepade order som gjorts med en kupong. Detta kan hjälpa dig att avgöra om kupongförvärvade kunder tenderar att göra fler upprepade order med en kupong än icke-kupongförvärvade kunder och om kupongförvärvade kunder använder oproportionerligt kuponger i sina uppföljningsorder.
 
-Titta på några exempeldata för inlösen av kuponger jämfört med icke-kuponganskaffningsvärden:
+Titta på några exempeldata för kupongförvärv kontra icke-kupongförvärv mått:
 
-| **Kundvärvning** | **Antal nya kunder** | **Genomsnittlig intäkt för livstid** | **Antal upprepade order** | **Antal upprepade order med kupong** | **% av upprepade order med kupong** |
+| **Kundvärvning** | **Antal nya kunder** | **Genomsnittlig livstidsintäkt** | **Antal upprepade order** | **Antal upprepade order med kupong** | **% av upprepade order med kupong** |
 |-----|-----|-----|-----|-----|-----|
 | Kupong | 1,206 | $356.91 | 2,570 | 1,248 | 48.56% |
 | Icke-kupong | 11,561 | $498.30 | 20,145 | 3,251 | 16.14% |
@@ -63,21 +63,21 @@ I det här exemplet har förvärv utan kupong en högre genomsnittlig intäkt f�
 
 ### Antal upprepade order
 
-Antalet upprepade order för icke-kupongförvärv är mycket högre än kupongförvärv. Detta är förväntat eftersom det finns många fler kunder som inte har kupongköp.
+Antalet upprepade order för förvärv utan kupong är mycket högre än för förvärv av kuponger. Detta förväntas eftersom det finns många fler icke-kupongförvärvade kunder.
 
 ### Antal upprepade order med kupong
 
-På samma sätt är antalet upprepade order som görs med en kupong högre för icke-kupongförvärv.
+På samma sätt är antalet upprepade order som görs med en kupong högre för förvärv utan kupong.
 
-## Procent upprepade order med kupong
+## Procent av upprepade order med kupong
 
-Icke-kupongförvärvade kunder har en mycket lägre andel upprepade order med en kupong än kupongförvärvade kunder. För kupongförvärvade kunder tillämpas alltså nästan hälften av alla upprepade order på en kupong. I det här exemplet brukar kupongköpare göra upprepade inköp med kuponger.
+Kunder som inte har förvärvat kuponger har en mycket lägre andel upprepade order med en kupong som tillämpas än kupongförvärvade kunder. Således, för kupongförvärvade kunder, nästan hälften av upprepade order har en kupong tillämpas. I det här exemplet tenderar kupongförvärvade kunder att göra upprepade köp med kuponger.
 
-## Analyserar information om första order från kupongförvärv {#firstorder}
+## Analyserar information om första ordern från kupongförvärv {#firstorder}
 
-Det här avsnittet fokuserar bara på **första ordern från kupongförvärv, uppdelat efter kupong.** Använd dessa mätvärden i analysen:
+Detta avsnitt fokuserar endast på **första order från kupongförvärv, segmenterade efter kupong.** Använd dessa värden i din analys:
 
-### Antal order/kunder
+### Antal beställningar/kunder
 
 Den här mätningen visar antalet första beställningar för varje kupong, eller antalet kunder som använde kupongen i sin första order. Detta kan hjälpa till att avgöra om en viss kupong uppmuntrar fler förstagångsköp än andra kuponger.
 
@@ -115,27 +115,27 @@ Titta nu på ett exempel med tre olika kuponger som används för kundens först
 
 {style="table-layout:auto"}
 
-Vad kan man ta av detta? För det första fick kupongen&quot;20 % rabatt&quot; flest beställningar första gången. Antalet beställningar som är kopplade till varje kupong kan dock variera beroende på flera faktorer, bland annat:
+Vad kan man ta av detta? Först, &quot;20% off&quot; kupongen hade flest antal första gången order. Antalet order som är kopplade till varje kupong kan dock variera beroende på flera faktorer, inklusive:
 
-* mängden reklam för varje kupong.
-* hur länge kupongen erbjuds.
-* den tidpunkt på dag/vecka/månad/år då kupongen erbjöds.
-* den säsong då kupongen erbjöds, beroende på verksamheten.
+* reklambeloppet för varje kupong.
+* den tidsperiod för vilken kupongerna erbjöds.
+* den tidpunkt på dagen/veckan/månaden/året som kupongerna erbjöds.
+* den säsong som kupongerna erbjöds, beroende på verksamheten.
 
-   **Exempel:** kupongen&quot;20 % rabatt&quot; erbjöds under sommarmånaderna, men företaget säljer kläder för vintertid.
-* begränsningar för kupongerna.
+   **Exempel:** Kupongen &quot;20% off&quot; erbjöds under sommarmånaderna, men företaget säljer vinterkläder.
+* Kupongrestriktionerna.
 
-   **Exempel:** kupongen&quot;10 % rabatt&quot; erbjuds endast kunder som köper en vinterjacka i samma ordning.
+   **Exempel:** Kupongen &quot;10% off&quot; erbjuds endast till kunder som köper en vinterrock i samma ordning.
 
-The **bruttointäkter** för kupongen &quot;25 % rabatt på 100 USD eller mer&quot; är mycket högre än bruttointäkterna för kupongen &quot;$10 off&quot;. Kupongen &quot;$10&quot; har dock en mycket större **antal order**. Analyserar **genomsnittligt ordervärde** ger insikt i dessa skillnader. Även om kupongen&quot;25 % rabatt på 100 USD eller mer&quot; hade färre order är det genomsnittliga ordervärdet mer än tre gånger så mycket som kupongen&quot;10 USD&quot;. Därför tillskrivs en större bruttointäkt&quot;25 % rabatt på 100 USD eller mer&quot;.
+Den **bruttointäkt** för &quot;25% off $100 eller mer&quot; kupongen är mycket högre än bruttointäkterna för &quot;$10 off&quot; kupongen. Men den &quot;$10 off&quot; kupongen har en mycket större **antal order**. Analysera **genomsnittligt ordervärde** ger insikt i dessa skillnader. Även om &quot;25% off $100 eller mer&quot; kupongen hade färre antal beställningar, är det genomsnittliga ordervärdet över trippel så med &quot;$10 off&quot; kupongen. Således, en större bruttointäkter tillskrivs &quot;25% av $ 100 eller mer&quot; kupong.
 
-The **rabatter** och **nettointäkter** för kupongen&quot;25 % rabatt på 100 USD eller mer&quot; och&quot;20 % rabatt&quot; ligger nära värdet. Även om det genomsnittliga ordervärdet för&quot;25 % rabatt på 100 USD eller mer&quot; är nästan dubbelt så stort som det genomsnittliga ordervärdet för&quot;20 % rabatt&quot; har den senare kupongen lite mindre än tre gånger så många order.
+Den **rabatter** och **nettointäkter** för &quot;25% off $100 eller mer&quot; och &quot;20% off&quot; kuponger är nära i värde. Även om det genomsnittliga ordervärdet för &quot;25% off $100 eller mer&quot; är nästan dubbelt så mycket som det genomsnittliga ordervärdet för &quot;20% off&quot;, den senare kupongen har lite mindre än tre gånger antalet order.
 
 ## Attribut för kunder som använder kuponger i sin första order {#attributes}
 
-Nu när ni har tittat på själva beställningarna, titta på de kunder som använder kuponger i sina första order:
+Nu när du har tittat på själva beställningarna, titta på de kunder som använder kuponger i sina första beställningar:
 
-| **Kundens första orderkupong** | **Antal kunder** | **Genomsnittligt antal order för livslängd** | **Genomsnittlig intäkt för livstid** |
+| **Kundens första orderkupong** | **Antal kunder** | **Genomsnittligt livstidsantal order** | **Genomsnittlig livstidsintäkt** |
 |-----|-----|-----|-----|
 | **25 % rabatt på 100 USD eller mer** | 56 | 2.8 | $554.54 |
 | **10 dollar rabatt** | 87 | 1.9 | $115.50 |

@@ -9,7 +9,7 @@ role: User
 index: true
 source-git-commit: 8e4854e5b8820eb1fa0aee0d23f7e1ecd36c538b
 workflow-type: tm+mt
-source-wordcount: '133'
+source-wordcount: '127'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ The `metadata.md` -filen innehåller metadata på postnivå som skickas till anv
 | mini-toc-nivåer | Anger antalet rubriknivåer som visas i den högra listen. standard är 2 |
 | git-repo | Anger platsen för den överordnad rapporten för intern användning |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 I filen TOC.md
 
@@ -38,4 +38,4 @@ I filen TOC.md
 | user-guide-title | Används i artikelrubriken som länk |
 | user-guide-url | Öppnar navet för hjälpfunktioner |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
