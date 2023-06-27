@@ -2,7 +2,7 @@
 title: Översätta SQL-frågor i Commerce Intelligence-rapporter
 description: Lär dig hur SQL-frågor översätts till beräknade kolumner, mätvärden som du använder i Commerce Intelligence.
 exl-id: b3e3905f-6952-4f15-a582-bf892a971fae
-source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
+source-git-commit: fa65bd909495d4d73cabbc264e9a47b3e0a0da3b
 workflow-type: tm+mt
 source-wordcount: '932'
 ht-degree: 0%
@@ -17,7 +17,7 @@ I slutet av det här avsnittet finns en **översättningsmatris** för SQL-fråg
 
 Börja med att titta på en allmän fråga:
 
-|  |  |
+| | |
 |--- |--- |
 | `SELECT` |  |
 | `a,` | Rapport `group by` |
@@ -42,7 +42,7 @@ Ett mått krävs vid aggregering `within a single table`. Till exempel `SUM(b)`
 
 Titta på ett specifikt exempel på hur en `Total Revenue` kan definieras i [!DNL Commerce Intelligence]. Titta på frågan nedan som du försöker översätta:
 
-|  |  |
+| | |
 |--- |--- |
 | `SELECT` |  |
 | `SUM(order_total) as "Total Revenue"` | `Metric operation` (kolumn) |
@@ -63,7 +63,7 @@ Frågan för den här aggregeringen kan se ut ungefär som nedan:
 
 |  |  |
 |--- |--- |
-| `Select` |  |
+| `Select` | |
 | `c.customer_id` | Ägare av sammanställd |
 | `SUM(o.order_total) as "Customer LTV"` | Sammanställningsåtgärd (kolumn) |
 | `FROM customers c` | Sammanställd ägarregister |
@@ -103,7 +103,7 @@ Se [skapa beräknade kolumner](../data-warehouse-mgr/creating-calculated-columns
 
 Börja med frågan nedan:
 
-|  |  |
+| | |
 |--- |--- |
 | `SELECT coupon_code,` | Rapport `group by` |
 | `SUM(order_total) as "Total Revenue"` | `Metric operation`(kolumn) |
@@ -132,7 +132,7 @@ Den första metoden skulle innebära att ett nytt mätvärde skapas som utför e
 
 Ta ett steg tillbaka och se den övergripande frågan för `Average order value`:
 
-|  |  |
+| | |
 |--- |--- |
 | `SELECT` |  |
 | `SUM(order_total) as "Total Revenue"` | Mått `operation` (kolumn) |
@@ -155,4 +155,11 @@ Se matrisen nedan för snabb referens. Detta visar SQL-satsens motsvarighet [!DN
 
 ## Commerce Intelligence Elements
 
-|**`SQL Clause`**|**`Metric`**|**`Filter`**|**`Report group by`**|**`Report time frame`**|**`Path`**|**`Calculated column inputs`**|**`Source table`**| |—|—|—|—|—|—|—|—|—| |`SELECT`|X|-|X|-|-|X|- |`FROM`|-|-|-|-|-|-|X| |`WHERE`|-|X|-|-|-|-|-|- |`WHERE` (med tidselement)|-|-|-|X|-|-|-|- |`JOIN...ON`|-|X|-|-|X|X|-| |`GROUP BY`|-|-|X|-|-|-|-|
+| **`SQL Clause`** | **`Metric`** | **`Filter`** | **`Report group by`** | **`Report time frame`** | **`Path`** | **`Calculated column inputs`** | **`Source table`** |
+|---|---|---|---|---|---|---|---|
+| `SELECT` | X | - | X | - | - | X | - |
+| `FROM` | - | - | - | - | - | - | X |
+| `WHERE` | - | X | - | - | - | - | - |
+| `WHERE` (med tidselement) | - | - | - | X | - | - | - |
+| `JOIN...ON` | - | X | - | - | X | X | - |
+| `GROUP BY` | - | - | X | - | - | - | - |
