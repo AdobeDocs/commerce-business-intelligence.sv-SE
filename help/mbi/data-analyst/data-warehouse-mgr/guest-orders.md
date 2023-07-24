@@ -2,7 +2,9 @@
 title: Gästorder
 description: Lär dig mer om hur gästbeställningarna påverkar dina data och vilka alternativ du måste ha för att hantera gästbeställningar på rätt sätt i dina [!DNL Commerce Intelligence] data warehouse.
 exl-id: cd5120ca-454c-4cf4-acb4-3aebe06cdc9a
-source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '550'
 ht-degree: 0%
@@ -21,13 +23,13 @@ I den typiska e-handelsdatabasen finns en `orders` tabell som sammanfogas med en
 
 * **Om alla kunder är registrerade** och gästorder är inte tillåtna, vilket innebär att alla poster i `orders` tabellen har ett värde i `customer\_id` kolumn. Därför går varje order tillbaka till `customers` tabell.
 
-   ![](../../assets/guest-orders-4.png)
+  ![](../../assets/guest-orders-4.png)
 
 * **Om gästorder tillåts** betyder det att vissa order inte har något värde i `customer\_id` kolumn. Endast registrerade kunder får ett värde för `customer\_id` kolumn på `orders` tabell. Kunder som inte är registrerade får en `NULL` (eller tomt) värde för den här kolumnen. Därför har inte alla orderposter matchande poster i `customers` tabell.
 
-   >[!NOTE]
-   >
-   >För att identifiera den unika personen som gjorde ordern måste det finnas ett annat unikt användarattribut bredvid `customer\_id` kopplade till en order. Normalt används kundens e-postadress.
+  >[!NOTE]
+  >
+  >För att identifiera den unika personen som gjorde ordern måste det finnas ett annat unikt användarattribut bredvid `customer\_id` kopplade till en order. Normalt används kundens e-postadress.
 
 ## Så här tar du med gästbeställningar i Data warehouse
 

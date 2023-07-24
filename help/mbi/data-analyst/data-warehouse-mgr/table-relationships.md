@@ -2,7 +2,9 @@
 title: Förstå och utvärdera tabellrelationer
 description: Lär dig hur du förstår hur många möjliga förekomster i en tabell som kan tillhöra en enhet i en annan.
 exl-id: e7256f46-879a-41da-9919-b700f2691013
-source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '965'
 ht-degree: 0%
@@ -120,7 +122,7 @@ När tabeller länkas med en `Foreign key` peka på en `primary key`beskriver de
 Om något av följande är sant är relationen `many-to-many`:
 
 * `Non-primary key` kolumner används för att länka två tabeller
-   ![](../../assets/many-to-many1.png)
+  ![](../../assets/many-to-many1.png)
 * Del av en sammansatt bild `primary key` används för att länka två tabeller
 
 ![](../../assets/many-to-mnay2.png)

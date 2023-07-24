@@ -2,7 +2,9 @@
 title: Begränsa åtkomst till mätvärden
 description: Lär dig hur du arbetar med tillgång till mätvärden och begränsningar.
 exl-id: 88f5ca7a-8073-4968-9685-95f141b2a87f
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, User
+feature: User Management
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '238'
 ht-degree: 0%

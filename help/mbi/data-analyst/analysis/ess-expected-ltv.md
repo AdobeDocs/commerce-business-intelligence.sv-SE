@@ -1,8 +1,10 @@
 ---
-title: Analys av förväntat livstidsvärde (grundläggande)
-description: Lär dig hur ni skapar analyser för att förstå era kunders livstidsvärde och förutse hur livstidsvärdet ökar med fler order.
+title: Förväntad analys av livstidsvärde (LTV) (grundläggande)
+description: Lär dig hur ni skapar analyser för att förstå era nuvarande kunders livstidsvärde och förutse hur livstidsvärdet ökar med fler order.
 exl-id: e6f02cf6-f542-4768-969c-3ec998a7caa9
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, User
+feature: Data Warehouse Manager, Reports
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 0%
@@ -15,35 +17,34 @@ Att förutse kundernas livstidsvärde när de gör fler beställningar är en av
 
 Nedan följer stegen för att skapa analyser för att förstå era nuvarande kunders livstidsvärde och förutse hur livstidsvärdet ökar med fler order.
 
-![förväntat livstidsvärde](../../assets/expected_ltv_720.png)
+![förväntat livstid](../../assets/expected_ltv_720.png)
 
-## Skapa ett mått
+## Bygga ett mått
 
-Det första steget är att konstruera ett nytt mätvärde med följande steg:
-* Gå till **[!UICONTROL Manage Data > Metrics]**
-   * Visa befintliga **[!UICONTROL Avg lifetime revenue]**.
+Det första steget är att skapa ett nytt mått med följande steg:
+* Navigera till **[!UICONTROL Manage Data > Metrics]**
+   * Visa befintlig **[!UICONTROL Avg lifetime revenue]**.
 
-   >[!NOTE]
-   >
-   >Tabellen detta mått är konstruerat på (troligen `customer_entity` eller `sales_order` beroende på butikens förmåga att ta emot gästutcheckning.).
+  >[!NOTE]
+  >
+  >Tabellen som måttet är uppbyggt på (troligen `customer_entity` eller `sales_order` beroende på butikens förmåga att acceptera utcheckning av gäster.)
 
    * Klicka **[!UICONTROL Create New Metric]** och markera tabellen ovan.
    * Detta mått utför en **Median** på `Customer's lifetime revenue` kolumn, sorterad efter `created_at`.
       * [!UICONTROL Filters]:
          * Lägg till `Customers we count (Saved Filter Set)` (eller `Registered accounts we count`)
+
    * Ge måttet ett namn, till exempel `Median lifetime revenue`.
 
+## Skapa en instrumentpanel
 
+När mätvärdena har skapats kan du **skapa en kontrollpanel** genom att göra detta:
+* Navigera till **[!UICONTROL Dashboards > Dashboard Options > Create New Dashboard]**.
+* Ge instrumentpanelen ett namn som `Expected LTV`.
 
-## Skapa din instrumentpanel
+* Här skapar du och lägger till alla rapporter.
 
-När måttet har skapats kan du **skapa en kontrollpanel** genom att göra detta:
-* Gå till **[!UICONTROL Dashboards > Dashboard Options > Create New Dashboard]**.
-* Ge kontrollpanelen ett namn som `Expected LTV`.
-
-* Här skapar och lägger du till alla rapporter.
-
-## Skapa rapporter
+## Skapar rapporter
 
 >[!NOTE]
 >
@@ -53,7 +54,7 @@ När måttet har skapats kan du **skapa en kontrollpanel** genom att göra detta
    * [!UICONTROL Metric]: `Avg lifetime revenue`
    * [!UICONTROL Time period]: `All time`
    * 
-      [!UICONTROL-intervall]: `None`
+     [!UICONTROL-intervall]: `None`
    * [!UICONTROL Chart Type]: `Number (scalar)`
 
 * **[!UICONTROL Average LTV (customers / non-guest checkout)]**
@@ -61,11 +62,11 @@ När måttet har skapats kan du **skapa en kontrollpanel** genom att göra detta
       * Lägg till [!UICONTROL filters]:
          * [`A`] `Customer's group code` **Inte lika med** `Not Logged In`
          * [`B`] `Customer's lifetime number of orders` **Större än**`0`
+
    * [!UICONTROL Time period]: `All time`
    * 
-      [!UICONTROL-intervall]: `None`
+     [!UICONTROL-intervall]: `None`
    * [!UICONTROL Chart Type]: `Number (scalar)`
-
 
 * **[!UICONTROL Average and Median LTV]**
    * Mått `1`: `Avg lifetime revenue`
@@ -73,22 +74,22 @@ När måttet har skapats kan du **skapa en kontrollpanel** genom att göra detta
    * [!UICONTROL Time period]: `All time`
    * [!UICONTROL Interval]: `By Month`
    * 
-      [!UICONTROL-DIAGRAMTYP]: `Line`
+     [!UICONTROL-diagramtyp]: `Line`
    * Avmarkera `Multiple Y-Axes`
 
-* **Belastningsgräns efter antalet beställningar under deras livstid**
-   * Metrisk `1`: `Avg lifetime revenue`
-   * Metrisk `2`: `New customers`
+* **LTV efter antal beställningar under hela livstiden**
+   * Mått `1`: `Avg lifetime revenue`
+   * Mått `2`: `New customers`
    * [!UICONTROL Time period]: `All time`
    * 
-      [!UICONTROL-intervall]: `None`
+     [!UICONTROL-intervall]: `None`
    * [!UICONTROL Group by]: `Customer's lifetime number of orders`
    * 
+     [!UICONTROL-diagramtyp]: `Line`
 
-      [!UICONTROL-diagramtyp]: `Line`
-   >[!NOTE]
-   >
-   >Lägg inte till alla värden för `Customer's lifetime number of orders`. I stället kan du titta på en punkt där antalet nya kunder når ett litet antal och manuellt lägga till varje kunds livstidsvärde till den punkten. Om det till exempel finns 200 kunder på en order, 75 på två, 15 på tre och 3 på fyra, lägger du till *1, 2 och 3*.
+  >[!NOTE]
+  >
+  >Lägg inte till alla värden för `Customer's lifetime number of orders`. Titta istället på en punkt där antalet nya kunder når ett litet antal och manuellt lägga till varje kunds antal beställningsvärden för hela livstiden till den punkten. Om det till exempel finns 200 kunder på en order, 75 på två, 15 på tre och 3 på fyra lägger du till *1, 2 och 3*.
 
 * Lägg till befintlig [!UICONTROL Avg customer lifetime revenue by cohort] rapport.
 

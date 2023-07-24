@@ -2,7 +2,9 @@
 title: Spåra mål mot mätvärden
 description: Lär dig hur du skapar en kontrollpanel som hjälper dig att spåra dina affärsmål mot dina faktiska data - inklusive intäkter, nya registrerade användare och beställningar över tid.
 exl-id: 9d621f40-f9c2-4310-bd96-a46ab7159930
-source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
+role: Admin, User
+feature: Data Warehouse Manager, Reports, Dashboards, Reports
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 0%
@@ -54,51 +56,46 @@ Det är praktiskt att ha en blandning av statiska värden och visuella diagram n
 * **Återstående intäkter för att uppnå målet**
 * Mått `A`: `Revenue`
 * 
-
-   [!UICONTROL-mått]: `Revenue`
+  [!UICONTROL-mått]: `Revenue`
 
 * Mått `B`: `Target Revenue`
 * [!UICONTROL Metric]: `Monthly Revenue Target`
 
 * [!UICONTROL Formula]: `Revenue left to achieve target`
 * 
-   [!UICONTROL-formel]: `(B-A)`
+  [!UICONTROL-formel]: `(B-A)`
 * 
+  [!UICONTROL Format]: `Number`
 
-   [!UICONTROL Format]: `Number`
-
-* [!UICONTROL Time period]: (Vilken tidsperiod som helst)
+* [!UICONTROL Time period]: (Vilken tidsperiod du vill ha)
 * 
-   [!UICONTROL Interval]: `Month`
+  [!UICONTROL Interval]: `Month`
 * 
-
-   [!UICONTROL-diagramtyp]: `Scalar`
+  [!UICONTROL-diagramtyp]: `Scalar`
 
 * **Intäktsmål**
 * Mått `A`: `Revenue`
 * 
-
-   [!UICONTROL-mått]: `Revenue`
+  [!UICONTROL-mått]: `Revenue`
 
 * Mått `B`: `Target Revenue`
 * [!UICONTROL Metric]: `Monthly Revenue Target`
 
 * Mått `C`: `Revenue (amount change since previous year)` (dölj)
 * 
-   [!UICONTROL-mått]: `Revenue`
+  [!UICONTROL-mått]: `Revenue`
 * [!UICONTROL Perspective]: `Amount change vs. Previous year`
 
 * [!UICONTROL Formula]: (Den här månaden förra året)
 * 
-   [!UICONTROL-formel]: `(A-C)`
+  [!UICONTROL-formel]: `(A-C)`
 * 
-
-   [!UICONTROL Format]: `Currency`
+  [!UICONTROL Format]: `Currency`
 
 * Stäng av `Multiple Y-Axes`
 * [!UICONTROL Time period]: (Vilken tidsperiod du vill ha)*
 * 
-   [!UICONTROL Interval]: `Month`
+  [!UICONTROL Interval]: `Month`
 * [!UICONTROL Chart Type]: `Line Chart`
 
 När du har slutfört rapporterna för intäktsmål kan du skapa identiska rapporter för mål runt order, registrerade konton eller andra värden som du har inkluderat i målfilöverföringen.

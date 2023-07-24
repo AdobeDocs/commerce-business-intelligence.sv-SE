@@ -2,7 +2,9 @@
 title: Standardisera data med mappningstabeller
 description: Lär dig hur du arbetar med att mappa tabeller.
 exl-id: e452ff87-f298-43d5-acc3-af58e53bd0bc
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '743'
 ht-degree: 0%
@@ -64,7 +66,7 @@ Skapa `joined` navigera till den tabell som fältet ska flyttas till i Data ware
    * På `One` sida väljer du `mapping` tabellen och `Primary key` kolumn. I så fall väljer du `state_input` kolumn från `mapping_state` tabell.
    * Här ser du hur banan ser ut:
 
-      ![](../../assets/State_Mapping_Path.png)
+     ![](../../assets/State_Mapping_Path.png)
 
 1. När du är klar klickar du på **[!UICONTROL Save]** för att skapa banan.
 1. Sökvägen kanske inte fylls i omedelbart efter att du har sparat - om det händer klickar du på `Path` och markera den bana du skapade.

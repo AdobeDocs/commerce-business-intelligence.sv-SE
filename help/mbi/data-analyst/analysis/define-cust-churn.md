@@ -2,7 +2,9 @@
 title: Definiera kundomsättning
 description: Lär dig hur du skapar en kontrollpanel som hjälper dig att definiera kundomsättning för dina transaktionskunder.
 exl-id: fea8f7e9-c84c-4d49-a657-8b75140c113a
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Warehouse Manager, Reports, Dashboards
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '484'
 ht-degree: 0%
@@ -68,29 +70,27 @@ Inga nya mätvärden!
 
 * [!UICONTROL Formula]: Sannolikhet för inledande upprepad order
 * 
-   [!UICONTROL-formel]: `A/B`
+  [!UICONTROL-formel]: `A/B`
 * 
-
-   [!UICONTROL Format]: `Percent`
+  [!UICONTROL Format]: `Percent`
 
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]: `None`
 * 
-
-   [!UICONTROL Chart type]: `Scalar`
+  [!UICONTROL Chart type]: `Scalar`
 
 * **Sannolikhet för upprepade order som har angetts månader sedan ordern**
 * Mått A: Upprepa order efter månader sedan föregående order (dölj)
 * [!UICONTROL Metric]: `Number of orders`
 * 
-   [!UICONTROL Perspective]: `Cumulative`
+  [!UICONTROL Perspective]: `Cumulative`
 * [!UICONTROL Filter]: `Customer's order number greater than 1`
 
 * Mått B: Senaste order per månad sedan ordern (dölj)
 * [!UICONTROL Metric]: `Number of orders`
 * 
-   [!UICONTROL Perspective]: `Cumulative`
+  [!UICONTROL Perspective]: `Cumulative`
 * [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
 
 * Mått C: Upprepade order hela tiden (dölj)
@@ -98,33 +98,29 @@ Inga nya mätvärden!
 * [!UICONTROL Filter]: `Customer's order number greater than 1`
 
 * 
-
-   [!UICONTROL Group by]: `Independent`
+  [!UICONTROL Group by]: `Independent`
 
 * Mått D: Senaste order hela tiden (dölj)
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
 
 * 
-
-   [!UICONTROL Group by]: `Independent`
+  [!UICONTROL Group by]: `Independent`
 
 * [!UICONTROL Formula]: Sannolikhet för inledande upprepad order
 * 
-   [!UICONTROL-formel]: `(C-A)/(C+D-A-B)`
+  [!UICONTROL-formel]: `(C-A)/(C+D-A-B)`
 * 
-
-   [!UICONTROL Format]: `Percent`
+  [!UICONTROL Format]: `Percent`
 
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Months since previous order`
 * Visa top.bottom: De 24 viktigaste kategorierna, sorterade efter kategorinamn
 
 * 
-
-   [!UICONTROL Chart type]: `Line`
+  [!UICONTROL Chart type]: `Line`
 
 Den inledande sannolikhetsrapporten för upprepad order representerar totalt antal upprepade order/totalt antal order. Varje beställning ger möjlighet att göra en upprepad beställning. antalet upprepade order är delmängden av de som faktiskt gör det.
 

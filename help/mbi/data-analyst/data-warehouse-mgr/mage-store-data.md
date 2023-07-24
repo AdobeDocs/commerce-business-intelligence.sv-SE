@@ -2,7 +2,9 @@
 title: Lagra data i Adobe Commerce
 description: Lär dig hur data genereras, vad som gör att en ny rad infogas och hur åtgärder registreras i Adobe Commerce-databasen.
 exl-id: 436ecdc1-7112-4dec-9db7-1f3757a2a938
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '928'
 ht-degree: 3%
@@ -61,7 +63,7 @@ Kort efter de tre nya produkterna, en ny kund, `Sammy Customer`, besök `Clothes
 
 När kontot har skapats är `Sammy Customer` är redo att börja göra ett köp. På webbplatsen lägger kunden till två par av `Throwback Bellbottoms` och en `V-Neck T-Shirt` till varukorgen. Kunden är nöjd med valen och övergår till kassan och skickar ordern, vilket skapar följande post på [plan ordertabell för försäljning](../data-warehouse-mgr/sales-flat-order-table.md):
 
-| **`entity id`** | **`customer id**`**`subtotal`****`created at`** |
+| **`entity id`** | **`customer id**` | **`subtotal`** | **`created at`** |
 |---|---|---|---|
 | 227 | 214 | 94.85 | 2016/09/23 15:41:39 |
 

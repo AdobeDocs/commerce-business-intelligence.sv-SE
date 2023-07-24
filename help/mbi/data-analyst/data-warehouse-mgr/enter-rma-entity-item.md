@@ -2,7 +2,9 @@
 title: Enterprise_RMA_Item_Entity Table
 description: Lär dig hur du analyserar information om ett visst objekt från en begärd retur.
 exl-id: aa71cb3f-3e0b-4b6b-b4cc-dad103f79c51
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '275'
 ht-degree: 0%
@@ -64,4 +66,4 @@ Varje rad i `enterprise_rma_item_entity` tabell (anropas ofta `magento_rma_item_
 * Skapa kopplade kolumner på  `enterprise_rma_item_entity` tabellen via följande join:
 
 * Commerce 1.x: `enterprise_rma_item_entity.order_item_id ` (många) => `sales_flat_order_item.item_id` (ett)
-* Commerce 2.x: `magento_rma_item_entity.order_item_id ` (många) => `sales_order_item.item_id` (ett)
+* Commerce 2.x: `magento_rma_item_entity.order_item_id ` (många) => `sales_order_item.item_id` (ett)

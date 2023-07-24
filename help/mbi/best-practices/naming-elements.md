@@ -2,7 +2,9 @@
 title: Namnge rapporter och element i Commerce Intelligence
 description: Lär dig de bästa sätten att namnge rapporter och element i [!DNL Commerce Intelligence].
 exl-id: c662cedd-c779-4254-b04b-f3092a538c85
-source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
+role: Admin, User
+feature: Reports
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '723'
 ht-degree: 0%
@@ -11,7 +13,7 @@ ht-degree: 0%
 
 # Namnge rapporter och element
 
-Innan du börjar bygga in[!DNL Adobe Commerce Intelligence], vill Adobe dela med sig av några hemligheter till framgång. Det är viktigt att du vet hur man skapar mätvärden, filter och så vidare, men allt arbete kan vara bra om du inte hittar det du behöver eller om det är tvetydigt.
+Innan du börjar bygga in [!DNL Adobe Commerce Intelligence], vill Adobe dela med sig av några hemligheter till framgång. Det är viktigt att du vet hur man skapar mätvärden, filter och så vidare, men allt arbete kan vara bra om du inte hittar det du behöver eller om det är tvetydigt.
 
 ## Varför är nomenklatur viktigt? {#why}
 
@@ -21,13 +23,13 @@ Det sätt på vilket du namnger beräknade kolumner, mätvärden och rapporter a
 * **ENHETLIGHET** - så att du (och Adobe supportteam) enkelt kan hitta och förstå element och rapporter i ditt konto.
 * **KREDIGERBARHET** - För att ge inspiration och stärka andra datadrivna [!DNL Commerce Intelligence] -användare måste ni känna er säkra på hur de förstår och använder data!
 
-Läs vidare för beprövade och sanna nomenklaturtips!
+Läs vidare för att få tips om hur du använder vår egen nomenklatur!
 
 ## Allmän bästa praxis {#general}
 
 ### Var meningsfull {#meaningful}
 
-Var specifik när det är möjligt! Om det till exempel är landet, vet du om det är frakt- eller faktureringslandet? Är det användarens stad eller är det affärens stad?
+Var specifik när det är möjligt! Om det till exempel är landet, vet du om det är fraktlandet eller faktureringslandet? Är det användarens stad, eller så är det erbjudandets stad?
 
 **Felaktigt exempel:**
 Intäkter
@@ -64,12 +66,12 @@ Vid namngivning [diagram](../tutorials/using-visual-report-builder.md)är det me
 **Felaktigt exempel:**
 Intäkter
 
-Detta säger ingenting om betänkandet, vilket är dåligt.
+Det här berättar ingenting om rapporten, som är dålig.
 
-**Bra exempel:**
-Ackumulerade intäkter under de senaste 30 dagarna per månad
+**Exempel:**
+Ackumulerade intäkter de senaste 30 dagarna per månad
 
-Detta säger oss **exakt** betänkandet, som är fantastiskt.
+Det säger oss **exakt** vad som står i rapporten, som är fantastisk.
 
 ## Kontrollpaneler {#dashboards}
 
@@ -91,9 +93,9 @@ Användarens första 30-dagars intäkt
 
 ## Mått {#metrics}
 
-[Metrisk](../data-user/reports/ess-manage-data-metrics.md) är väsentligen frågor som du vill ha svar på regelbundet. Hur många beställningar har gjorts den senaste månaden? Vilket är det genomsnittliga livstidsvärdet för era kunder? Det är bästa praxis att namnge mätvärden för att återspegla det svar de ger användarna. Om du har filtrerat samma mått för en viss butik eller avdelning bör de också märkas som sådana. Exempel:
+[Mått](../data-user/reports/ess-manage-data-metrics.md) är i huvudsak frågor som du vill ha svar på regelbundet. Hur många beställningar har gjorts under den senaste månaden? Vilket är det genomsnittliga livstidsvärdet för era kunder? Det är bäst att namnge mätvärden så att de avspeglar svaret de ger användarna. Om du har samma mätvärden filtrerade för en viss butik eller avdelning bör de märkas som sådana. Till exempel:
 
-Genomsnittlig kund LTV (första 30 dagar) Butiksnamn - Intäkt
+Genomsnittlig kundservice (de första 30 dagarna) Butiksnamn - intäkt
 
 Slutligen kan samma mätvärden ibland ordnas med olika tidsstämplar, beroende på hur enskilda användare beräknar dem. I så fall måste du se till att inkludera tidsstämpeln i namnet:
 

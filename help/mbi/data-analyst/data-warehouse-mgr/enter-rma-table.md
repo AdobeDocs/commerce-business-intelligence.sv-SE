@@ -2,7 +2,9 @@
 title: enterprise_rma-tabell
 description: Lär dig hur du analyserar information om en viss returbegäran.
 exl-id: a19cbc9a-e34f-4f4e-820f-9e413d1a552d
-source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 0%
@@ -44,10 +46,10 @@ Varje rad i `enterprise_rma` tabell (anropas ofta `magento_rma` i Adobe Commerce
 
 | **Måttnamn** | **Beskrivning** | **Konstruktion** |
 |---|---|---|
-| `Number of returns` | Antalet begärda returer. | `Operation` kolumn: `entity id`<br>`Operation`: `Count`<br>`Timestamp` Kolumn: `date requested` |
-| `Total returned amount` | Det totala penningbelopp som returneras. | `Operation `Kolumn: `Return's total value`<br>`Operation`: Summa<br>`Timestamp` Kolumn: begärt datum |
-| `Average returned amount` | Det genomsnittliga penningbelopp som returneras. | `Operation`` Column: Return's total value`<br>`Operation`: `Average`<br>`Timestamp` Kolumn: `date requested` |
-| `Average time to return` | Genomsnittlig tid från order till retur. | `Operation` Kolumn: Sekunder mellan order som skapats vid och begärt returdatum<br>`Operation`: `Average`<br>`Timestamp` Kolumn: `date requested` |
+| `Number of returns` | Antalet begärda returer. | `Operation` kolumn: `entity id`<br>`Operation`: `Count`<br>`Timestamp` Kolumn: `date requested` |
+| `Total returned amount` | Det totala penningbelopp som returneras. | `Operation `Kolumn: `Return's total value`<br>`Operation`: Summa<br>`Timestamp` Kolumn: begärt datum |
+| `Average returned amount` | Det genomsnittliga penningbelopp som returneras. | `Operation`` Column: Return's total value`<br>`Operation`: `Average`<br>`Timestamp` Kolumn: `date requested` |
+| `Average time to return` | Genomsnittlig tid från order till retur. | `Operation` Kolumn: Sekunder mellan order som skapats vid och begärt returdatum<br>`Operation`: `Average`<br>`Timestamp` Kolumn: `date requested` |
 
 {style="table-layout:auto"}
 

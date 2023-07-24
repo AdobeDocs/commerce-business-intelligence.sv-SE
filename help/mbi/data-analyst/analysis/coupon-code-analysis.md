@@ -2,7 +2,9 @@
 title: Kupongprestanda
 description: Lär dig hur du analyserar din kupongprestanda.
 exl-id: f6565e33-18ee-4f85-ade0-fd361854475b
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, User
+feature: Data Warehouse Manager, Reports
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '1167'
 ht-degree: 0%
@@ -34,19 +36,19 @@ Kolumner som ska skapas oavsett gästorderprincip:
    * [!UICONTROL Column type]: `Same Table => CALCULATION`
    * [!UICONTROL Inputs]:
       * `A`: `coupon\_code`
-   * 
-      [!UICONTROL-datatyp]: `String`
-   * [!UICONTROL Calculation]: case when `A` är null då `No coupon` else `Coupon` end
 
+   * 
+     [!UICONTROL-datatyp]: `String`
+   * [!UICONTROL Calculation]: case when `A` är null då `No coupon` else `Coupon` end
 
 * **\[INPUT\] customer\_id - kupongkod**
    * [!UICONTROL Column type]: `Same Table => CALCULATION`
    * [!UICONTROL Inputs]:
       * `A`: `customer\_id`
       * `B`: `coupon\_code`
+
    * [!UICONTROL Datatype] Sträng
    * [!UICONTROL Calculation]: `concat(A,' - ',B)`
-
 
 * **Antal order med denna kupong**
    * [!UICONTROL Column type]: `Same Table => EVENT\_NUMBER`
@@ -64,6 +66,7 @@ Ytterligare kolumner som ska skapas om gästorder INTE stöds:
    * [!UICONTROL Filters]:
       * `A`: `Orders we count`
       * `B`: `Customer's order number = 1`
+
    * **Kundens första orderkupong**
       * [!UICONTROL Column type]: `Many to One => MAX`
       * [!UICONTROL Path]: `sales\_flat\_order.customer\_id = customer\_entity.entity\_id`
@@ -71,42 +74,41 @@ Ytterligare kolumner som ska skapas om gästorder INTE stöds:
       * [!UICONTROL Filter]:
          * `A`: `Orders we count`
          * `B`: `Customer's order number = 1`
+
    * **Kundens livstidsantal använda kuponger**
       * [!UICONTROL Column type]: `Many to One => COUNT`
       * [!UICONTROL Path]: `sales\_flat\_order.customer\_id = customer\_entity.entity\_id`
       * [!UICONTROL Filter]:
          * `A`: `Orders we count`
          * `B`: `Order has coupon applied? (Coupon/No coupon) = Coupon`
+
    * **Kund eller kund som förvärvar kupong**
       * [!UICONTROL Column type]: `Same Table => CALCULATION`
       * [!UICONTROL Inputs]:
          * `A`: `Customer's first order included a coupon? (Coupon/No coupon)`
+
       * 
-         [!UICONTROL-datatyp]: `String`
+        [!UICONTROL-datatyp]: `String`
       * [!UICONTROL Calculation]: **case when A=&#39;Coupon&#39; then &#39;Coupon purchase customer&#39; else &#39;Non-coupon purchase customer&#39; end**
+
    * **Procent av kundens order med kupong**
       * [!UICONTROL Column type]: `Same Table => CALCULATION`
       * [!UICONTROL Inputs]:
          * `A`: `User's lifetime number of coupons used`
          * `B`: `User's lifetime number of orders`
+
       * 
-         [!UICONTROL-datatyp]: `Decimal`
+        [!UICONTROL-datatyp]: `Decimal`
       * [!UICONTROL Calculation]: **case when A is null or B is null or B=0, then null else A/B end**
+
    * **Kundens kuponganvändning**
       * [!UICONTROL Column type]: `Same Table => Calculation`
       * [!UICONTROL Inputs]:
          * `A`: `Percent of customer's orders with coupon`
+
       * 
-         [!UICONTROL-datatyp]: `String`
+        [!UICONTROL-datatyp]: `String`
       * [!UICONTROL Calculation]: **fall när A är null, då A=0 och sedan &#39;Används aldrig kupong&#39; när A&lt;0.5 och sedan &#39;Mest fullt pris&#39; när A=0.5 och sedan &#39;50/50&#39; när A=1 och &#39;Endast kuponger&#39; när A>0.5, sedan &#39;Mest kupong&#39; else &#39;Odefinierad&#39; slut**
-
-
-
-
-
-
-
-
 
 * `sales\_flat\_order` table
    * **Kundens första order innehåller kupong? (kupong/ingen kupong)**
@@ -114,11 +116,11 @@ Ytterligare kolumner som ska skapas om gästorder INTE stöds:
       * [!UICONTROL Path]: `sales\_flat\_order.customer\_id = customer\_entity.entity\_id`
       * Välj en [!UICONTROL column]: `Customer's first order included a coupon? (Coupon/No coupon)`
 ^
+
    * **Kundens första orderkupong**
       * [!UICONTROL Column type]: `One to Many => JOINED\_COLUMN`
       * [!UICONTROL Path]: `sales\_flat\_order.customer\_id = customer\_entity.entity\_id`
       * Välj en [!UICONTROL column]: `Customer's first order coupon?`
-
 
 Ytterligare kolumner som ska skapas om gästorder INTE stöds:
 
@@ -131,29 +133,29 @@ Ytterligare kolumner som ska skapas om gästorder INTE stöds:
    * [!UICONTROL Column type]: `Same Table => CALCULATION`
    * [!UICONTROL Inputs]:
       * `A`: `Customer's first order included a coupon? (Coupon/No coupon)`
-   * 
-      [!UICONTROL-datatyp]: `String`
-   * [!UICONTROL Calculation]: **case when A=&#39;Coupon&#39; then &#39;Coupon purchase customer&#39; else &#39;Non-coupon purchase customer&#39; end**
 
+   * 
+     [!UICONTROL-datatyp]: `String`
+   * [!UICONTROL Calculation]: **case when A=&#39;Coupon&#39; then &#39;Coupon purchase customer&#39; else &#39;Non-coupon purchase customer&#39; end**
 
 * **Procent av kundens order med kupong**
    * [!UICONTROL Column type]: `Same Table => CALCULATION`
    * [!UICONTROL Inputs]:
       * `A`: `User's lifetime number of coupons used`
       * `B`: `User's lifetime number of orders`
-   * 
-      [!UICONTROL-datatyp]: `Decimal`
-   * [!UICONTROL Calculation]: **case when A is null or B is null or B=0, then null else A/B end**
 
+   * 
+     [!UICONTROL-datatyp]: `Decimal`
+   * [!UICONTROL Calculation]: **case when A is null or B is null or B=0, then null else A/B end**
 
 * **Kundens kuponganvändning**
    * [!UICONTROL Column type]: `Same Table => Calculation`
    * [!UICONTROL Inputs]:
       * `A`: `Percent of customer's orders with coupon`
-   * 
-      [!UICONTROL-datatyp]: `String`
-   * [!UICONTROL Calculation]: **fall när A är null, då A=0 och sedan &#39;Används aldrig kupong&#39; när A&lt;0.5 och sedan &#39;Mest fullt pris&#39; när A=0.5 och sedan &#39;50/50&#39; när A=1 och &#39;Endast kuponger&#39; när A>0.5, sedan &#39;Mest kupong&#39; else &#39;Odefinierad&#39; slut**
 
+   * 
+     [!UICONTROL-datatyp]: `String`
+   * [!UICONTROL Calculation]: **fall när A är null, då A=0 och sedan &#39;Används aldrig kupong&#39; när A&lt;0.5 och sedan &#39;Mest fullt pris&#39; när A=0.5 och sedan &#39;50/50&#39; när A=1 och &#39;Endast kuponger&#39; när A>0.5, sedan &#39;Mest kupong&#39; else &#39;Odefinierad&#39; slut**
 
 ## Mått
 
@@ -189,11 +191,10 @@ Ytterligare kolumner som ska skapas om gästorder INTE stöds:
 * Mått `A`: `Coupon acquisitions`
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL-intervall]: `None`
+  [!UICONTROL-intervall]: `None`
 * [!UICONTROL Group by]: `Coupon acquisitions customer` eller `Non coupon acquisition customer`
 * 
-
-   [!UICONTROL-diagramtyp]: `Pie`
+  [!UICONTROL-diagramtyp]: `Pie`
 
 * **Antal kupongförvärvade och icke kupongförvärvade kunder**
    * [!UICONTROL Metric]: `New customers`
@@ -212,10 +213,9 @@ Ytterligare kolumner som ska skapas om gästorder INTE stöds:
 * Mått `A`: `Average lifetime revenue (at least 3 months age)`
 * [!UICONTROL Time period]: `X years ago to 90 days ago`
 * 
-   [!UICONTROL-intervall]: `None`
+  [!UICONTROL-intervall]: `None`
 * 
-
-   [!UICONTROL-diagramtyp]: `Scalar`
+  [!UICONTROL-diagramtyp]: `Scalar`
 
 * **Inkomster för genomsnittlig livstid: Acq utan kupong (90+ dagar)**
    * [!UICONTROL Metric]: Genomsnittlig intäkt för livstid
@@ -225,10 +225,9 @@ Ytterligare kolumner som ska skapas om gästorder INTE stöds:
 * Mått `A`: `Average lifetime revenue (at least 3 months age)`
 * [!UICONTROL Time period]: `X years ago to 90 days ago`
 * 
-   [!UICONTROL-intervall]: `None`
+  [!UICONTROL-intervall]: `None`
 * 
-
-   [!UICONTROL-diagramtyp]: `Scalar`
+  [!UICONTROL-diagramtyp]: `Scalar`
 
 * **Genomsnittlig livslängdsintäkt per kupong för första ordern**
    * [!UICONTROL Metric]: `Average lifetime revenue`
@@ -236,11 +235,10 @@ Ytterligare kolumner som ska skapas om gästorder INTE stöds:
 * Mått `A`: `Average lifetime revenue`
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL-intervall]: `None`
+  [!UICONTROL-intervall]: `None`
 * [!UICONTROL Group by]: `Customer's first order's coupon`
 * 
-
-   [!UICONTROL-diagramtyp]: `Column`
+  [!UICONTROL-diagramtyp]: `Column`
 
 >[!NOTE]
 >
@@ -250,23 +248,23 @@ Ytterligare kolumner som ska skapas om gästorder INTE stöds:
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Filter]:
       * Kundens första order innehöll en kupong (kupong/ingen kupong) = kupong
+
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Filter]:
       * Kundens första order innehöll en kupong (kupong/ingen kupong) = kupong
       * Är kundens senaste order? = Nej
    * 
-      [!UICONTROL-formel]: `B/A`
+     [!UICONTROL-formel]: `B/A`
    * [!UICONTROL Format]: `Percentage %`
 
    * Välj statistiskt signifikant antal från `Customer's by lifetime orders` diagram. När du tittar på diagrammet är det en bra regel att söka efter ordernummer med 30 eller fler kunder i bucket. Beroende på datauppsättningen kan det vara ett stort tal så du kan lägga till 1-10.
-
 
 * Mått `A`: `Number of orders`
 * Mått `B`: `Number of non last orders`
 * [!UICONTROL Formula]: `Repeat order probability`
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL-intervall]: `None`
+  [!UICONTROL-intervall]: `None`
 * [!UICONTROL Group by]: `Customer's order number`
 * [!UICONTROL Chart type]: `Bar chart`
 
@@ -274,24 +272,24 @@ Ytterligare kolumner som ska skapas om gästorder INTE stöds:
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Filter]:
       * Kundens första order innehöll en kupong (kupong/ingen kupong) = ingen kupong
+
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Filter]:
       * Kundens första order innehöll en kupong (kupong/ingen kupong) = ingen kupong
       * Är kundens senaste order? = Nej
+
    * 
-      [!UICONTROL-formel]: `B/A`
+     [!UICONTROL-formel]: `B/A`
    * [!UICONTROL Format]: `Percentage %`
 
    * Välj statistiskt signifikant antal från `Customer's by lifetime orders` eller 1-5.
-
-
 
 * Mått `A`: `Number of orders`
 * Mått `B`: `Number of non last orders`
 * [!UICONTROL Formula]: `Repeat order probability`
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL-intervall]: `None`
+  [!UICONTROL-intervall]: `None`
 * [!UICONTROL Group by]: `Customer's order number`
 * [!UICONTROL Chart type]: `Bar chart`
 
@@ -299,21 +297,21 @@ Ytterligare kolumner som ska skapas om gästorder INTE stöds:
    * [!UICONTROL Metric]: `New customers`
    * [!UICONTROL Filter]:
       * Kupongförvärvskund eller förvärvskund utan kupong = Kupongförvärv
+
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Filter]:
       * Kundens ordernummer > 1
       * Kundens första order innehöll en kupong? (kupong/ingen kupong) = kupong
+
    * [!UICONTROL Metric]:`Number of orders`
    * [!UICONTROL Filter]:
       * Kundens ordernummer > 1
       * Kundens första order innehöll en kupong? (kupong/ingen kupong) = kupong
       * Har kupong tillämpats på ordern? (kupong/ingen kupong) = kupong
+
    * 
-      [!UICONTROL-formel]: `C/B`
+     [!UICONTROL-formel]: `C/B`
    * [!UICONTROL Format]: `Percentage %`
-
-
-
 
 * Mått `A`: `Coupon-acquired customers`
 * Mått `B`: `Number of repeat orders`
@@ -321,30 +319,29 @@ Ytterligare kolumner som ska skapas om gästorder INTE stöds:
 * [!UICONTROL Formula]: `% of repeat orders with coupon`
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL-intervall]: `None`
+  [!UICONTROL-intervall]: `None`
 * 
-
-   [!UICONTROL-diagramtyp]: `Table` (kan införliva den här tabellen för bättre visualisering)
+  [!UICONTROL-diagramtyp]: `Table` (kan införliva den här tabellen för bättre visualisering)
 
 * **Icke-kupongförvärvad kunds kuponganvändning (upprepade order)**
    * [!UICONTROL Metric]: `New customers`
    * [!UICONTROL Filter]:
       * Kupongförvärvskund eller förvärvskund utan kupong = Förvärv utan kupong
+
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Filter]:
       * Kundens ordernummer > 1
       * Kundens första order innehöll en kupong? (kupong/ingen kupong) = ingen kupong
+
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Filter]:
       * Kundens ordernummer > 1
       * Kundens första order innehöll en kupong? (kupong/ingen kupong) = ingen kupong
       * Har kupong tillämpats på ordern? (kupong/ingen kupong) = kupong
+
    * 
-      [!UICONTROL-formel]: `C/B`
+     [!UICONTROL-formel]: `C/B`
    * [!UICONTROL Format]: `Percentage %`
-
-
-
 
 * Mått `A`: `Non-coupon-acquired customers`
 * Mått `B`: `Number of repeat orders`
@@ -352,37 +349,35 @@ Ytterligare kolumner som ska skapas om gästorder INTE stöds:
 * [!UICONTROL Formula]: `% of repeat orders with coupon`
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL-intervall]: `None`
+  [!UICONTROL-intervall]: `None`
 * 
-
-   [!UICONTROL-diagramtyp]: `Table` (kan införliva den här tabellen för bättre visualisering)
+  [!UICONTROL-diagramtyp]: `Table` (kan införliva den här tabellen för bättre visualisering)
 
 * **Kuponganvändningsinformation (första beställningen)**
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Filter]:
       * Kundens ordernummer = 1
       * Antal order med denna kupong > 10
+
    * 
-      [!UICONTROL-mått]: `Revenue`
+     [!UICONTROL-mått]: `Revenue`
    * [!UICONTROL Filter]:
       * Kundens ordernummer = 1
       * Antal order med denna kupong > 10
+
    * [!UICONTROL Metric]: `Coupon discount amount`
    * [!UICONTROL Filter]:
       * Kundens ordernummer = 1
       * Antal order med denna kupong > 10
+
    * [!UICONTROL Formula]: `B-C` (om C är negativt) B+C (om C är positivt)
    * 
-
-      [!UICONTROL-format]: `Currency`
+     [!UICONTROL-format]: `Currency`
 
    * [!UICONTROL Metric]: `Average order value`
    * [!UICONTROL Filter]:
       * Kundens ordernummer = 1
       * Antal order med denna kupong > 10
-
-
-
 
 * Mått `A`: `First time orders (FTO)`
 * Mått `B`: `Revenue from FTO`
@@ -391,11 +386,10 @@ Ytterligare kolumner som ska skapas om gästorder INTE stöds:
 * Mått `E`: `Average order value for FTO`
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL-intervall]: `None`
+  [!UICONTROL-intervall]: `None`
 * [!UICONTROL Group by]: `coupon code`
 * 
-
-   [!UICONTROL-diagramtyp]: `Table`
+  [!UICONTROL-diagramtyp]: `Table`
 >[!NOTE]
 >
 >Mängden 10 för &quot;Antal order med denna kupong&quot; är godtycklig. Du kan använda den lämpligaste kvantiteten för det här filtret.
@@ -406,24 +400,22 @@ Ytterligare kolumner som ska skapas om gästorder INTE stöds:
 * Mått `A`: `Number or orders with coupon`
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL-intervall]: `None`
+  [!UICONTROL-intervall]: `None`
 * 
-
-   [!UICONTROL-diagramtyp]: `Scalar`
+  [!UICONTROL-diagramtyp]: `Scalar`
 
 * **Nettointäkter från order med kuponger (hela tiden)**
    * 
-      [!UICONTROL-mått]: `Revenue`
+     [!UICONTROL-mått]: `Revenue`
    * [!UICONTROL Filter]:
       * Har kupong tillämpats på ordern? (kupong/ingen kupong) = kupong
 
 * Mått `A`: `Net revenue from orders with coupons`
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL-intervall]: `None`
+  [!UICONTROL-intervall]: `None`
 * 
-
-   [!UICONTROL-diagramtyp]: `Scalar`
+  [!UICONTROL-diagramtyp]: `Scalar`
 
 * **Rabatter från kuponger (hela tiden)**
    * [!UICONTROL Metric]: `Number of coupons used`
@@ -431,10 +423,9 @@ Ytterligare kolumner som ska skapas om gästorder INTE stöds:
 * Mått `A`: `Coupon discount amount`
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL-intervall]: `None`
+  [!UICONTROL-intervall]: `None`
 * 
-
-   [!UICONTROL-diagramtyp]: `Scalar`
+  [!UICONTROL-diagramtyp]: `Scalar`
 
 * **Antal order med och utan kuponger**
    * [!UICONTROL Metric]: `Number of orders`
@@ -442,7 +433,7 @@ Ytterligare kolumner som ska skapas om gästorder INTE stöds:
 * Mått `A`: `Number of orders`
 * [!UICONTROL Time period]: `Last 24 months`
 * 
-   [!UICONTROL-intervall]: `None`
+  [!UICONTROL-intervall]: `None`
 * [!UICONTROL Group by]: `Order has coupon applied? (Coupon/No coupon)`
 * [!UICONTROL Chart type]: `Stacked column`
 
@@ -454,49 +445,45 @@ Ytterligare kolumner som ska skapas om gästorder INTE stöds:
 * Mått `A`: `New customers`
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL-intervall]: `None`
+  [!UICONTROL-intervall]: `None`
 * [!UICONTROL Group by]: `Customer's coupon usage`
 * 
-
-   [!UICONTROL-diagramtyp]: `Pie`
+  [!UICONTROL-diagramtyp]: `Pie`
 
 * **Kuponganvändningsinformation**
    * [!UICONTROL Metric]: `Number of orders with coupon`
    * [!UICONTROL Filter]:
       * Antal order med denna kupong > 10
+
    * 
-      [!UICONTROL-mått]: `Revenue`
+     [!UICONTROL-mått]: `Revenue`
    * [!UICONTROL Filter]:
       * Antal order med denna kupong > 10
+
    * [!UICONTROL Metric]: `Coupon discount amount`
    * [!UICONTROL Filter]:
       * Antal order med denna kupong > 10
+
    * [!UICONTROL Formula]: `B-C` (om `C` är negativt), `B+C` (om `C` är positivt)
    * 
-
-      [!UICONTROL-format]: `Currency`
+     [!UICONTROL-format]: `Currency`
 
    * [!UICONTROL Formula]: `C/(B-C)` (om `C` är negativt), `C/(B+C)` (om `C` är positivt)
    * 
-
-      [!UICONTROL-format]: `Percentage`
+     [!UICONTROL-format]: `Percentage`
 
    * [!UICONTROL Metric]: `Average order value`
    * [!UICONTROL Filter]:
       * Antal order med denna kupong > 10
-   * 
-      [!UICONTROL-formel]: `C/A`
-   * 
 
-      [!UICONTROL-format]: `Currency`
+   * 
+     [!UICONTROL-formel]: `C/A`
+   * 
+     [!UICONTROL-format]: `Currency`
 
    * [!UICONTROL Metric]: `Distinct buyers`
    * [!UICONTROL Filter]:
       * Antal order med denna kupong > 10
-
-
-
-
 
 * Mått `A`: `Number of orders`
 * Mått `B`: `Net revenue from orders`
@@ -508,10 +495,10 @@ Ytterligare kolumner som ska skapas om gästorder INTE stöds:
 * Mått `H`: `Distinct buyers`
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL-intervall]: `None`
+  [!UICONTROL-intervall]: `None`
 * [!UICONTROL Group by]: `coupon code`
 * 
-   [!UICONTROL-diagramtyp]: `Table`
+  [!UICONTROL-diagramtyp]: `Table`
 
 >[!NOTE]
 >

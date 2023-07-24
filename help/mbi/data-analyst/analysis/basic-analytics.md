@@ -2,7 +2,9 @@
 title: Förstå och bygga upp grundläggande analyser
 description: Lär dig förstå och bygga upp grundläggande analyser.
 exl-id: 23cea7b3-2e66-40c3-b4bd-d197237782e3
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Warehouse Manager, Dashboards, Data Integration
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '3113'
 ht-degree: 0%
@@ -153,7 +155,7 @@ Här är några vanliga exempel på rapporter och mätvärden som du kan använd
    * **[!UICONTROL Time Interval]**: `By Month`
    * **[!UICONTROL Group By]**: `Customer's Order Number`väljer `2` och `3`
 
-   ![](../../assets/2nd_and_3rd_purchases_last_year.png)
+  ![](../../assets/2nd_and_3rd_purchases_last_year.png)
 
 * **Exempel 2**: Antalet återkommande kunder de senaste åren
    * **[!UICONTROL Metric]**: `Distinct Customers`
@@ -161,7 +163,7 @@ Här är några vanliga exempel på rapporter och mätvärden som du kan använd
    * **[!UICONTROL Time Range]**: `Moving range > Last Year`
    * **[!UICONTROL Time Interval]**: `By Month`
 
-   ![Upprepa kunder förra året](../../assets/Repeat_customers_last_year.png)<!--{: width="929"}-->
+  ![Upprepa kunder förra året](../../assets/Repeat_customers_last_year.png)<!--{: width="929"}-->
 
 ### De vanligaste kunderna efter antal order som gäller hela livet
 
@@ -174,7 +176,7 @@ Här är några vanliga exempel på rapporter och mätvärden som du kan använd
    * **[!UICONTROL Group By]**: `customer_email`
    * **[!UICONTROL Show Top/Bottom]**: Top 25 sorted by Orders
 
-   ![Top 25 Customers by Orders](../../assets/Top_25_customers_by_lifetime_orders.png)<!--{: width="929"}-->
+  ![Top 25 Customers by Orders](../../assets/Top_25_customers_by_lifetime_orders.png)<!--{: width="929"}-->
 
 ### De främsta kunderna efter livstidsintäkter
 
@@ -187,7 +189,7 @@ Här är några vanliga exempel på rapporter och mätvärden som du kan använd
    * **[!UICONTROL Group By]**: `customer_email`
    * **[!UICONTROL Show Top Bottom]**: Top 25 sorted by Lifetime Revenue
 
-   ![De 25 bästa kunderna per intäkt](../../assets/top_25_customers_by_lifetime_revneue.png)<!--{: width="929"}-->
+  ![De 25 bästa kunderna per intäkt](../../assets/top_25_customers_by_lifetime_revneue.png)<!--{: width="929"}-->
 
 ### Genomsnittlig intäkt för livstid per kohort
 
@@ -202,7 +204,7 @@ Här är några vanliga exempel på rapporter och mätvärden som du kan använd
    * **[!UICONTROL Table]**: `Customer_entity`
    * **[!UICONTROL Perspective]**: Ackumulerat medelvärde per kohortmedlem
 
-   ![Customer Lifetime Revenue by Cohort](../../assets/Avg_customer_lifetime_revenue_by_cohort.png)<!--{: width="929"}-->
+  ![Customer Lifetime Revenue by Cohort](../../assets/Avg_customer_lifetime_revenue_by_cohort.png)<!--{: width="929"}-->
 
 ### Kunder efter kuponganvändning
 
@@ -218,7 +220,7 @@ Här är några vanliga exempel på rapporter och mätvärden som du kan använd
    * **[!UICONTROL Time range]**: `All Time`
    * **[!UICONTROL Time interval]**: `By Month`
 
-   ![Kunder efter kuponganvändning](../../assets/Customers_by_coupon_usage.png)<!--{: width="929"}-->
+  ![Kunder efter kuponganvändning](../../assets/Customers_by_coupon_usage.png)<!--{: width="929"}-->
 
 * **Exempel 2**: Procent av kupongkunder och icke-kupongkunder per månad
    * **[!UICONTROL Metric A]**: `Non coupon customers` (dölj mått)
@@ -300,7 +302,7 @@ Här är några vanliga exempel på rapporter och mätvärden som du kan använd
    * **[!UICONTROL Time Range]**: `1 Year Ago to 1 Month Ago`
    * **[!UICONTROL Time Interval]**: `By Month`
 
-   ![Beställda produkter](../../assets/products_ordered_pic1.png)<!--{: width="929"}-->
+  ![Beställda produkter](../../assets/products_ordered_pic1.png)<!--{: width="929"}-->
 
 * Kombinera det här måttet med antalet order för att beräkna antalet artiklar per order. Därefter lägger du till kupongkoder i rapporten för att avgöra hur era kampanjer påverkar kundvagnsstorlek eller segmentera efter nya eller upprepade order för att få en bättre förståelse för kundbeteendet.
 * **Exempel på rapporter**: Produkter per beställning: första ordern eller upprepade order
@@ -337,7 +339,7 @@ Här är några vanliga exempel på rapporter och mätvärden som du kan använd
    * **[!UICONTROL Time Interval]**: `By Month`
    * **[!UICONTROL Perspective]**: `Amount Change vs Previous Year`
 
-   ![AOV](../../assets/aov_pic.png)<!--{: width="929"}-->
+  ![AOV](../../assets/aov_pic.png)<!--{: width="929"}-->
 
 ### Produkter som köpts mest med kuponger
 
@@ -351,7 +353,7 @@ Här är några vanliga exempel på rapporter och mätvärden som du kan använd
    * **[!UICONTROL Group By**]: `name` (eller `SKU`eller någon annan produkt-id)
    * **[!UICONTROL Show top/bottom]**: Top 25 sorted by Products ordered
 
-   ![Produkter med kuponger](../../assets/prod_coupons_pic.png)<!--{: width="929"}-->
+  ![Produkter med kuponger](../../assets/prod_coupons_pic.png)<!--{: width="929"}-->
 
 ### Tid mellan order
 
@@ -398,7 +400,7 @@ Här är några vanliga exempel på rapporter och mätvärden som du kan använd
    * **[!UICONTROL Time Range]**: `1 Year Ago to 3 Months Ago`
    * **[!UICONTROL Time Interval]**: `By Day`
 
-   ![Annonsexponeringar](../../assets/ad_impressions.png)<!--{: width="929"}-->
+  ![Annonsexponeringar](../../assets/ad_impressions.png)<!--{: width="929"}-->
 
 ### Klickfrekvens (CTR)
 
@@ -482,7 +484,7 @@ Här är några vanliga exempel på rapporter och mätvärden som du kan använd
       * För mått `A`, markera `Customer's first order's campaign`
       * För mått `B`, markera `campaign`
 
-   ![Nya användare.](../../assets/New_Users_Last_Month.png)
+  ![Nya användare.](../../assets/New_Users_Last_Month.png)
 
 >[!NOTE]
 >

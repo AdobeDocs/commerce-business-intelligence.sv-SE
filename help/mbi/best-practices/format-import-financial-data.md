@@ -2,7 +2,9 @@
 title: Formatera och importera finansiella data
 description: Lär dig formatera och importera ekonomiska data.
 exl-id: cdbed262-7cf1-4fd6-ad5a-c44d26dffba7
-source-git-commit: 8d4e71363edad0613cc0ab277c2a43aad000965e
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Integration, Data Import/Export, Data Warehouse Manager
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 0%

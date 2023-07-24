@@ -2,7 +2,9 @@
 title: Optimera dina SQL-frågor
 description: Lär dig hur du optimerar dina SQL-frågor.
 exl-id: 2782c707-6a02-4e5d-bfbb-eff20659fbb2
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Integration, Data Import/Export, Data Warehouse Manager
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '779'
 ht-degree: 0%

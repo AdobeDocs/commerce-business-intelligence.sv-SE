@@ -2,7 +2,9 @@
 title: Definiera kundkoncentration
 description: Lär dig hur du skapar en kontrollpanel som hjälper dig att mäta hur de totala intäkterna fördelas mellan era kunder.
 exl-id: 6242019f-a6a5-48d3-b214-94acd7842e00
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Warehouse Manager, Reports, Dashboards
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '470'
 ht-degree: 0%
@@ -99,17 +101,16 @@ Kolumner att skapa
 * [!UICONTROL Filter]: `Customer's revenue percentile IS NOT NULL`
 
 * 
-   [!UICONTROL Group by]: `Independent`
+  [!UICONTROL Group by]: `Independent`
 * Mått `A`: `Total customer lifetime revenue by percentile`
 * Mått `B`: `Total customer lifetime revenue (ungrouped)`
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Customer's revenue percentile`
 * Visa över/under: `100% of Customer's revenue percentile Name`
 * 
-
-   [!UICONTROL Chart type]: `Line`
+  [!UICONTROL Chart type]: `Line`
 
 * **Högsta koncentration på 10 %**
 * [!UICONTROL Filter]: `Customer's revenue percentile <= 10`
@@ -117,13 +118,12 @@ Kolumner att skapa
 * Mått `A`: `Total customer lifetime revenue`
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]: `None`
 * Dölj diagram
 * 
-   [!UICONTROL Group by]: `Email`
+  [!UICONTROL Group by]: `Email`
 * 
-
-   [!UICONTROL Chart type]: `Table`
+  [!UICONTROL Chart type]: `Table`
 
 * **Lägsta 50 % koncentration med endast ett köp**
 
@@ -134,13 +134,12 @@ Kolumner att skapa
 
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]: `None`
 * Dölj diagram
 * 
-   [!UICONTROL Group by]: `Email`
+  [!UICONTROL Group by]: `Email`
 * 
-
-   [!UICONTROL Chart type]: `Table`
+  [!UICONTROL Chart type]: `Table`
 
 * **Lägsta koncentration 10 %**
 * [!UICONTROL Filter]: `Customer's revenue percentile > 90`
@@ -148,13 +147,12 @@ Kolumner att skapa
 * Mått `A`: `Total customer lifetime revenue`
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]: `None`
 * Dölj diagram
 * 
-   [!UICONTROL Group by]: `Email`
+  [!UICONTROL Group by]: `Email`
 * 
-
-   [!UICONTROL Chart type]: `Table`
+  [!UICONTROL Chart type]: `Table`
 
 När du har kompilerat alla rapporter kan du ordna dem på kontrollpanelen som du vill. Resultatet kan se ut som kontrollpanelen ovan.
 

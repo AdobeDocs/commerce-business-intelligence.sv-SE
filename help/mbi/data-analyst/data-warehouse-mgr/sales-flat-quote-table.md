@@ -2,7 +2,9 @@
 title: Citattabell
 description: Lär dig hur du arbetar med offerttabellen.
 exl-id: 3a1e9239-33a7-429e-bfc8-628c68701710
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '605'
 ht-degree: 0%

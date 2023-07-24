@@ -2,7 +2,9 @@
 title: Öka avkastningen på era annonskampanjer
 description: Lär dig mer om några olika metoder för att utvärdera hur kampanjen fungerar.
 exl-id: 4f2bf408-eeaf-4dbf-b62e-89426734640a
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, User
+feature: Data Warehouse Manager, Reports, Campaigns
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '1237'
 ht-degree: 0%

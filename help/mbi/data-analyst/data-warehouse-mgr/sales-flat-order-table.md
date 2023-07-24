@@ -2,7 +2,9 @@
 title: tabell för försäljning_order
 description: Lär dig hur du arbetar med tabellen sales_order.
 exl-id: 19a8ab88-de51-48f8-af39-ae4897834afe
-source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '1197'
 ht-degree: 0%

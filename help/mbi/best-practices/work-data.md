@@ -1,8 +1,10 @@
 ---
 title: Arbeta med data
-description: Lär dig de bästa metoderna för att organisera och arbeta med data.
+description: Lär dig de bästa sätten att ordna och arbeta med dessa data.
 exl-id: cd898aa0-afec-481a-b800-d156d57aba85
-source-git-commit: 8d4e71363edad0613cc0ab277c2a43aad000965e
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Integration, Data Import/Export, Data Warehouse Manager
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '65'
 ht-degree: 0%
@@ -11,6 +13,6 @@ ht-degree: 0%
 
 # Arbeta med data
 
-[!DNL Adobe Commerce Intelligence] gör att du kan importera data från flera källor. I det här avsnittet får du lära dig de bästa metoderna för att organisera och arbeta med data.
+[!DNL Adobe Commerce Intelligence] gör att du kan importera data från flera källor. I det här avsnittet får du lära dig de bästa sätten att ordna och arbeta med data.
 
-Du får lära dig hur du optimerar databasen och SQL-frågorna, hur du kontrollerar uppdateringscykelstatus och hur du minskar uppdateringscykeltiden.
+Du får lära dig hur du optimerar databasen och dina SQL-frågor, hur du kontrollerar statusen för uppdateringscykeln och hur du minskar tiden för uppdateringscykeln.

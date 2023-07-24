@@ -2,7 +2,9 @@
 title: MongoDB-datamodellering
 description: Lär dig hur du undviker datamönster som kan utgöra ett problem.
 exl-id: 556c854b-5d7c-4f72-8ed7-5bc08d9ee5b9
-source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '129'
 ht-degree: 0%

@@ -2,7 +2,9 @@
 title: Kupongkodanalys (grundläggande)
 description: Läs mer om hur ert företag presterar i form av kuponger är ett intressant sätt att segmentera era order och bättre förstå kundernas vanor.
 exl-id: 0d486259-b210-42ae-8f79-cd91cc15c2c2
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, User
+feature: Data Warehouse Manager, Reports
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '439'
 ht-degree: 0%
@@ -57,142 +59,140 @@ Det första steget är att skapa ett nytt mått med följande steg:
 
 * **Beställningar med kuponger**
    * 
-      [!UICONTROL-mått]: `Orders`
+     [!UICONTROL-mått]: `Orders`
       * Lägg till filter:
          * [`A`] `coupon_code` **ÄR INTE** `[NULL]`
+
    * [!UICONTROL Time period]: `All time`
    * 
-      [!UICONTROL-intervall]: `None`
+     [!UICONTROL-intervall]: `None`
    * [!UICONTROL Chart type]:`Number (scalar)`
-
 
 * **Beställningar utan kuponger**
    * 
-      [!UICONTROL-mått]: `Orders`
+     [!UICONTROL-mått]: `Orders`
       * Lägg till filter:
          * [`A`] `coupon_code` **ÄR** `[NULL]`
+
    * [!UICONTROL Time period]: `All time`
    * 
-      [!UICONTROL-intervall]: `None`
+     [!UICONTROL-intervall]: `None`
    * [!UICONTROL Chart type]:`Number (scalar)`
-
 
 * **Nettointäkter från order med kuponger**
    * 
-      [!UICONTROL-mått]: `Revenue`
+     [!UICONTROL-mått]: `Revenue`
       * Lägg till filter:
          * [`A`] `coupon_code` **ÄR INTE** `[NULL]`
+
    * [!UICONTROL Time period]: `All time`
    * 
-      [!UICONTROL-intervall]: `None`
+     [!UICONTROL-intervall]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
-
 
 * **Rabatter från kuponger**
    * [!UICONTROL Metric]: `Coupon discount amount`
    * [!UICONTROL Time period]: `All time`
    * 
-      [!UICONTROL-intervall]: `None`
+     [!UICONTROL-intervall]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
 
 * **Inkomster för genomsnittlig livstid: Kupongförvärvade kunder**
    * [!UICONTROL Metric]: `Avg lifetime revenue`
       * Lägg till filter:
          * [`A`] `Customer's first order's coupon_code` **ÄR INTE** `[NULL]`
+
    * [!UICONTROL Time period]: `All time`
    * 
-      [!UICONTROL-intervall]: `None`
+     [!UICONTROL-intervall]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
-
 
 * **Inkomster för genomsnittlig livstid: Icke-kupongförvärvade kunder**
    * [!UICONTROL Metric]: `Avg lifetime revenue`
       * Lägg till filter:
          * [A] `Customer's first order's coupon_code` **ÄR**`[NULL]`
+
    * [!UICONTROL Time period]: `All time`
    * 
-      [!UICONTROL-intervall]: `None`
+     [!UICONTROL-intervall]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
-
 
 * **Kuponganvändningsinformation (första beställningen)**
    * Mått `1`: `Orders`
       * Lägg till filter:
          * [`A`] `coupon_code` **ÄR INTE**`[NULL]`
          * [`B`] `Customer's order number` **Lika med** `1`
+
    * Mått `2`: `Revenue`
       * Lägg till filter:
          * [`A`] `coupon_code` **ÄR INTE**`[NULL]`
          * [`B`] `Customer's order number` **Lika med** `1`
+
       * Byt namn:  `Net revenue`
+
    * Mått `3`: `Coupon discount amount`
       * Lägg till filter:
          * [`A`] `coupon_code` **ÄR INTE**`[NULL]`
          * [`B`] `Customer's order number` **Lika med** `1`
+
    * Skapa formel: `Gross revenue`
       * [!UICONTROL Formula]: `(B – C)`
       * 
-         [!UICONTROL Format]: `Currency`
+        [!UICONTROL Format]: `Currency`
+
    * Skapa formel:**% rabatt**
       * Formel: `(C / (B - C))`
       * 
-         [!UICONTROL Format]: `Percentage`
+        [!UICONTROL Format]: `Percentage`
+
    * Skapa formel: `Average order discount`
       * [!UICONTROL Formula]: `(C / A)`
       * 
-         [!UICONTROL Format]: `Percentage`
+        [!UICONTROL Format]: `Percentage`
+
    * [!UICONTROL Time period]: `All time`
    * 
-      [!UICONTROL-intervall]: `None`
+     [!UICONTROL-intervall]: `None`
    * 
-
-      [!UICONTROL-diagramtyp]: `Table`
-
-
-
-
-
-
-
+     [!UICONTROL-diagramtyp]: `Table`
 
 * **Genomsnittlig livslängdsintäkt per kupong för första ordern**
    * [!UICONTROL Metric]:**Genomsnittlig intäkt för livstid**
       * Lägg till filter:
          * [`A`] `coupon_code` **ÄR**`[NULL]`
+
    * [!UICONTROL Time period]: `All time`
    * 
-      [!UICONTROL-intervall]: `None`
+     [!UICONTROL-intervall]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
-
 
 * **Kuponganvändningsinformation (första beställningen)**
    * [!UICONTROL Metric]: `Avg lifetime revenue`
       * Lägg till filter:
          * [`A`] `Customer's first order's coupon_code` **ÄR INTE** `[NULL]`
+
    * [!UICONTROL Time period]: `All time`
    * 
-      [!UICONTROL-intervall]: `None`
+     [!UICONTROL-intervall]: `None`
    * [!UICONTROL Group by]: `Customer's first order's coupon_code`
    * 
-
-      [!UICONTROL-diagramtyp]: **Column**
-
+     [!UICONTROL-diagramtyp]: **Column**
 
 * **Nya kunder per kupong/icke-kupongförvärv**
    * Mått `1`: `New customers`
       * Lägg till filter:
          * [`A`] `Customer's first order's coupon_code` **ÄR INTE** `[NULL]`
+
       * [!UICONTROL Rename]: `Coupon acquisition customer`
+
    * Mått `2`: `New customers`
       * Lägg till filter:
          * [`A`] `coupon_code` **ÄR**`[NULL]`
+
       * [!UICONTROL Rename]: `Non-coupon acquisition customer`
+
    * [!UICONTROL Time period]: `All time`
    * [!UICONTROL Interval]: `By Month`
    * [!UICONTROL Chart type]: `Stacked Column`
-
-
-
-
 
 När du har skapat rapporterna kan du se bilden högst upp i det här avsnittet för att se hur du kan ordna rapporterna på din kontrollpanel.

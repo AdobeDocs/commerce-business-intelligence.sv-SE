@@ -2,7 +2,9 @@
 title: Analyserar returnerade order
 description: Lär dig hur du konfigurerar en kontrollpanel som ger en detaljerad analys av butikernas intäkter.
 exl-id: 6a948561-45b7-4813-9661-ab42197ca5bd
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, User
+feature: Data Warehouse Manager, Reports, Dashboards
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 0%
@@ -60,10 +62,9 @@ Kolumner att skapa
 * Välj en definition: `Joined Column`
 * [!UICONTROL Create Path]:
 * 
-   [!UICONTROL Many]: `enterprise_rma.order_id`
+  [!UICONTROL Many]: `enterprise_rma.order_id`
 * 
-
-   [!UICONTROL One]: `sales_flat_order.entity_id`
+  [!UICONTROL One]: `sales_flat_order.entity_id`
 
 * Välj en [!UICONTROL table]: `sales_flat_order`
 * Välj en [!UICONTROL column]: `created_at`
@@ -82,10 +83,9 @@ Kolumner att skapa
 * Välj en definition: `Joined Column`
 * [!UICONTROL Create Path]:
    * 
-      [!UICONTROL Many]: `enterprise_rma_item_entity.rma_entity_id`
+     [!UICONTROL Many]: `enterprise_rma_item_entity.rma_entity_id`
    * 
-
-      [!UICONTROL One]: `enterprise_rma.entity_id`
+     [!UICONTROL One]: `enterprise_rma.entity_id`
 
 * Välj en [!UICONTROL table]: `enterprise_rma`
 * Välj en [!UICONTROL column]: `date_requested`
@@ -158,15 +158,14 @@ Kolumner att skapa
 * Formel: Sannolikhet för upprepad order
 * [!UICONTROL Formula]: `B / A`
 * 
-
-   [!UICONTROL Format]: `Percentage`
+  [!UICONTROL Format]: `Percentage`
 
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL-intervall]: `None`
+  [!UICONTROL-intervall]: `None`
 * [!UICONTROL Group by]: `Customer's order number`
 * 
-   [!UICONTROL-diagramtyp]: `Bar`
+  [!UICONTROL-diagramtyp]: `Bar`
 
 * **Genomsnittlig tid för retur (hela tiden)**
 * Mått `A`: `Avg time between order and return`
@@ -174,10 +173,9 @@ Kolumner att skapa
 
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL-intervall]: `None`
+  [!UICONTROL-intervall]: `None`
 * 
-
-   [!UICONTROL-diagramtyp]: `Number`
+  [!UICONTROL-diagramtyp]: `Number`
 
 * **Procent av order med returvärde**
 * Mått `A`: `Number of orders`
@@ -191,12 +189,11 @@ Kolumner att skapa
 * Formel: % av beställningar med avkastning
 * [!UICONTROL Formula]: `B / A`
 * 
-
-   [!UICONTROL Format]: `Percentage`
+  [!UICONTROL Format]: `Percentage`
 
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL-intervall]: `None`
+  [!UICONTROL-intervall]: `None`
 * [!UICONTROL Chart Type]: `Number - % of orders with return`
 
 * **Intäkter per månad**
@@ -206,8 +203,7 @@ Kolumner att skapa
 * [!UICONTROL Time period]: `All time`
 * [!UICONTROL Interval]: `By month`
 * 
-
-   [!UICONTROL-diagramtyp]: `Line`
+  [!UICONTROL-diagramtyp]: `Line`
 
 * **Kunder som har gjort en retur och inte köpt igen**
 * Mått `A`: `Number of orders with returns`
@@ -218,12 +214,11 @@ Kolumner att skapa
 
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL-intervall]: `None`
+  [!UICONTROL-intervall]: `None`
 * 
-   [!UICONTROL Group by]: `Customer_email`
+  [!UICONTROL Group by]: `Customer_email`
 * 
-
-   [!UICONTROL-diagramtyp]: `Table`
+  [!UICONTROL-diagramtyp]: `Table`
 
 * **Returränta per artikel**
 * Mått `A`: `Returned items` (Dölj)
@@ -236,15 +231,14 @@ Kolumner att skapa
 * [!UICONTROL Formula]: `Return %`
 * [!UICONTROL Formula]: `B / A`
 * 
-
-   [!UICONTROL Format]: `Percentage`
+  [!UICONTROL Format]: `Percentage`
 
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL-intervall]: `None`
+  [!UICONTROL-intervall]: `None`
 * [!UICONTROL Group by]: `product_sku AND/OR product_name`
 * 
-   [!UICONTROL-diagramtyp]: `Table`
+  [!UICONTROL-diagramtyp]: `Table`
 
 När du har kompilerat alla rapporter kan du ordna dem på kontrollpanelen som du vill. Resultatet kan se ut som kontrollpanelen ovan.
 

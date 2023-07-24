@@ -2,7 +2,9 @@
 title: Analyserar kundens återköpsbeteende
 description: Lär dig hur du analyserar kundens beteende vid återköp.
 exl-id: 62666d08-5240-4f19-bf8e-e5b2d79a25c4
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, User
+feature: Data Warehouse Manager, Reports, Dashboards
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '851'
 ht-degree: 1%

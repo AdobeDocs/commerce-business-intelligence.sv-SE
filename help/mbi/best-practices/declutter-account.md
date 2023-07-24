@@ -2,7 +2,9 @@
 title: Avlasta [!DNL Commerce Intelligence] Konto
 description: Lär dig hur du rensar upp dina [!DNL Commerce Intelligence] konto.
 exl-id: 5fcdac2d-41ca-4011-b646-a699d9ecc6e4
-source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
+role: Admin, User
+feature: Accounts
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '869'
 ht-degree: 0%
@@ -15,7 +17,7 @@ Om du har varit med [!DNL Commerce Intelligence] i sex månader eller sex år ä
 
 Med [standardiserad, tydlig namngivning för alla element](../best-practices/naming-elements.md)) [!DNL Commerce Intelligence] kontots granskningssteg nedan hjälper dig att minska trassel och onödiga analyser för dina användare. Ytterligare en förmån innefattar [snabbare uppdateringscykler](../best-practices/reduce-update-cycle-time.md).
 
-## Steg 1: Identifiera icke-aktiva användare
+## Steg 1: Identifiera era icke-aktiva användare
 
 Det första steget i att rensa ditt konto är att inaktivera konton för dina icke-aktiva användare, till exempel personer som har lämnat företaget eller inte längre använder [!DNL Commerce Intelligence] i sina nuvarande roller.
 

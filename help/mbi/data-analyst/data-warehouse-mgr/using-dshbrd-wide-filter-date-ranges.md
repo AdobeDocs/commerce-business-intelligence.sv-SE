@@ -2,7 +2,9 @@
 title: Instrumentpanelsövergripande filtrering
 description: Lär dig göra massredigeringar av alla rapporter på en specifik kontrollpanel.
 exl-id: 379d0027-8a7a-4062-a66a-4f06c37b806c
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '459'
 ht-degree: 0%

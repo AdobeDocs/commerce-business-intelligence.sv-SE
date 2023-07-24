@@ -2,7 +2,9 @@
 title: Förstå [!DNL Commerce Intelligence] Miljö
 description: Lär dig hur du arbetar med och förbättrar dina [!DNL Commerce Intelligence] miljö.
 exl-id: 601b5fba-da02-4cc8-96ed-147c24f326f9
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Warehouse Manager
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '755'
 ht-degree: 0%
@@ -19,7 +21,7 @@ Många av tabellerna innehåller en kolumn med namnet `entity\_id`. I varje tab
 
 Till exempel varje rad i `sales\_order` tabellen är en unik order. Primärnyckeln i den här tabellen anropas `entity\_id`. Den här kolumnen kan tolkas som `order\_id`. I en separat tabell `customer\_entity`representerar varje rad en unik kund. Primärnyckeln i den här tabellen anropas också `entity\_id`som man kan tänka sig som `customer\_id`.
 
-I de tabellerna `sales\_order.entity\_id` är inte lika med `customer\_entity.entity\_id`. Detta gäller för alla tabelluppsättningar som innehåller `entity\_id`: `table\_A.entity\_id` är inte lika med `table\_B.entity\_id`.
+I de tabellerna `sales\_order.entity\_id` är inte lika med `customer\_entity.entity\_id`. Detta gäller för alla tabelluppsättningar som innehåller `entity\_id`: `table\_A.entity\_id` är inte lika med `table\_B.entity\_id`.
 
 ## [!DNL Guest orders]
 

@@ -2,7 +2,9 @@
 title: Vanliga handelstabeller
 description: Läs om några av de vanligaste tabellerna som [!DNL Commerce Intelligence] kunderna använder.
 exl-id: 8b316130-55c6-4771-ae6e-97ac605fc6cc
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '457'
 ht-degree: 0%

@@ -2,7 +2,9 @@
 title: Hantera Adobe Commerce-användare och behörigheter
 description: Lär dig hur du hanterar dina Commerce Intelligence-användare.
 exl-id: 2a5eeabb-3c13-4ca1-b845-ed255b389c9f
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, User
+feature: User Management
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '405'
 ht-degree: 0%
@@ -23,25 +25,25 @@ I [!DNL Commerce Intelligence], finns det tre allmänna behörighetsnivåer som 
 
 Dessa behörigheter gör att användare kan utföra vissa åtgärder eller komma åt specifika delar av [!DNL Commerce Intelligence]. Här följer en tabell över vad varje behörighetsnivå kan göra i [!DNL Commerce Intelligence]:
 
-|  | `Admin` | `Standard` | `Read Only` |
+|   | `Admin` | `Standard` | `Read Only` |
 | -----|-----|-----|----|
-| **Skapa/hantera användare** | ✔ |  |  |
-| **Skapa e-postsammanfattningar** | ✔ | ✔ |  |
-| **Skapa/redigera/dela kontrollpaneler** | ✔ | ✔ |  |
+| **Skapa/hantera användare** | ✔ |   |   |
+| **Skapa e-postsammanfattningar** | ✔ | ✔ |   |
+| **Skapa/redigera/dela kontrollpaneler** | ✔ | ✔ |   |
 | **Visa instrumentpaneler** | ✔ | ✔ | ✔ |
-| **Skapa/redigera/ta bort visuella rapporter** | ✔ | ✔* |  |
-| **Skapa/redigera/ta bort SQL-rapporter** | ✔ |  |  |
-| **Klona instrumentpaneler** | ✔ |  |  |
-| **Lägg till/hantera integreringar** | ✔ |  |  |
-| **Öppna Data warehouse Manager** | ✔ |  |  |
-| **Synkronisera/avsynkronisera tabeller och kolumner** | ✔ |  |  |
-| **Skapa/redigera mätvärden** | ✔ |  |  |
-| **Skapa/redigera filteruppsättningar** | ✔ |  |  |
-| **Skapa/redigera beräknade kolumner** | ✔ |  |  |
-| **Skapa en lista med beroende rapporter** | ✔ |  |  |
-| **Översikt över Access System** | ✔ |  |  |
-| **Åtkomstinställningar för tidszon** | ✔ |  |  |
-| **Åtkomstfakturering** | ✔ | ✔** |  |
+| **Skapa/redigera/ta bort visuella rapporter** | ✔ | ✔* |   |
+| **Skapa/redigera/ta bort SQL-rapporter** | ✔ |  |   |
+| **Klona instrumentpaneler** | ✔ |   |   |
+| **Lägg till/hantera integreringar** | ✔ |   |   |
+| **Öppna Data warehouse Manager** | ✔ |   |   |
+| **Synkronisera/avsynkronisera tabeller och kolumner** | ✔ |   |   |
+| **Skapa/redigera mätvärden** | ✔ |   |   |
+| **Skapa/redigera filteruppsättningar** | ✔ |   |   |
+| **Skapa/redigera beräknade kolumner** | ✔ |   |   |
+| **Skapa en lista med beroende rapporter** | ✔ |   |   |
+| **Översikt över Access System** | ✔ |   |   |
+| **Åtkomstinställningar för tidszon** | ✔ |   |   |
+| **Åtkomstfakturering** | ✔ | ✔** |   |
 | **Kontakta supporten** | ✔ | ✔ | ✔ |
 
 {style="table-layout:auto"}

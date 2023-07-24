@@ -2,7 +2,9 @@
 title: Årsrapporter, månadsrapporter och veckorapporter
 description: Lär dig hur du enkelt ser trender över tid och ändrar perspektiv för tidsperioder som du kanske vill jämföra.
 exl-id: 74cf11c3-7ce0-477f-9a28-9d782e5da3d9
-source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
+role: Admin, Data Architect, Data Engineer, Leader, User
+feature: Reports, Dashboards
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '286'
 ht-degree: 0%
@@ -39,8 +41,7 @@ Denna analys innehåller [avancerade beräknade kolumner](../data-warehouse-mgr/
    * `created_at (day of the month)`&lt; [!UICONTROL Calculation]: **to_char(A, &#39;dd&#39;)**
    * `created_at (day of the week)` [!UICONTROL Calculation]: **to_char(A, &#39;d-Day&#39;)**
    * **`created_at (hour of the day)` [!UICONTROL Calculation]: **to_char(A, &#39;hh24&#39;)**
-
-      ![](../../assets/new-arch-create-calc.png)
+     ![](../../assets/new-arch-create-calc.png)
 
 ## Mått
 
@@ -64,10 +65,10 @@ Ingen.
 * Mått `B`: `Last year`
 * [!UICONTROL Time period]: `1 year ago to 0 years ago`
 * 
-   [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `created_at (month-day)`
 * 
-   [!UICONTROL Chart Type]: `Line`
+  [!UICONTROL Chart Type]: `Line`
 
 * **MoM-diagram**
    * [!UICONTROL Metric]: `Number of orders`
@@ -81,10 +82,10 @@ Ingen.
 * Mått `B`: Förra månaden*
 * [!UICONTROL Time period]: för en månad sedan till för 0 månader sedan
 * 
-   [!UICONTROL Interval]: None
+  [!UICONTROL Interval]: None
 * [!UICONTROL Group by]: `created_at (day of month)`
 * 
-   [!UICONTROL Chart Type]: Line
+  [!UICONTROL Chart Type]: Line
 
 * **WoW-diagram**
    * [!UICONTROL Metric]: `Number of orders`
@@ -98,10 +99,10 @@ Ingen.
 * Mått `B`: `Last week`
 * [!UICONTROL Time period]: `1 week ago to 0 weeks ago`
 * 
-   [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `created_at (day of week)`
 * 
-   [!UICONTROL Chart Type]: `Line`
+  [!UICONTROL Chart Type]: `Line`
 
 * **DoD-diagram**
    * [!UICONTROL Metric]: `Number of orders`
@@ -115,9 +116,9 @@ Ingen.
 * Mått B: `Yesterday`
 * [!UICONTROL Time period]: `1 day ago to 0 days ago`
 * 
-   [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `created_at (hour of day)`
 * 
-   [!UICONTROL Chart Type]: `Line`
+  [!UICONTROL Chart Type]: `Line`
 
 När du har kompilerat alla rapporter kan du ordna dem på kontrollpanelen som du vill. Resultatet kan se ut som bilden högst upp på den här sidan.

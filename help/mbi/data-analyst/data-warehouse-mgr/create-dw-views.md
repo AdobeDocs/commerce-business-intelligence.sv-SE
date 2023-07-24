@@ -2,7 +2,9 @@
 title: Skapa och använda Data warehouse-vyer
 description: Lär dig mer om hur du skapar nya lagrade tabeller genom att ändra en befintlig tabell eller genom att sammanfoga eller konsolidera flera tabeller med hjälp av SQL.
 exl-id: 5aa571c9-7f38-462c-8f1b-76a826c9dc55
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '1071'
 ht-degree: 9%

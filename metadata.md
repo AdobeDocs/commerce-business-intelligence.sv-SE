@@ -1,13 +1,16 @@
 ---
-solution: Commerce
+solution: Commerce, Commerce Intelligence
 product: magento
 type: Documentation
 audience: end-user
 mini-toc-levels: 2
 git-repo: https://github.com/AdobeDocs/commerce-business-intelligence.sv-SE
 role: User
+feature-set: Commerce Intelligence
+level: Beginner, Intermediate
+topic: Commerce
 index: true
-source-git-commit: 8e4854e5b8820eb1fa0aee0d23f7e1ecd36c538b
+source-git-commit: c212256ff32e308cb67a84afd3fd86b0f756ae24
 workflow-type: tm+mt
 source-wordcount: '127'
 ht-degree: 0%

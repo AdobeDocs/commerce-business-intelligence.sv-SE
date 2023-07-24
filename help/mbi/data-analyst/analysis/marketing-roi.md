@@ -2,7 +2,9 @@
 title: Marknadsföringsavkastning
 description: Lär dig hur du konfigurerar en kontrollpanel som spårar din kanalanalys, inklusive avkastning på investering i aggregat och per kampanj.
 exl-id: 5de83998-e6cf-478d-bb6a-7a3dc77c2c0c
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin,  User
+feature: Reports, Dashboards
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '540'
 ht-degree: 0%
@@ -41,26 +43,25 @@ Kolumner att skapa
       * Välj en definition: `Joined Column`
       * [!UICONTROL Create Path]:
       * 
-         [!UICONTROL Many]: `sales_flat_order.increment_id`
+        [!UICONTROL Many]: `sales_flat_order.increment_id`
       * 
-
-         [!UICONTROL One]: `ecommerce####.transaction_id`
+        [!UICONTROL One]: `ecommerce####.transaction_id`
 
       * Välj en [!UICONTROL table]: `ecommerce####`
       * Välj en [!UICONTROL column]: `campaign`
       * [!UICONTROL Path]: `sales_flat_order.increment_id = ecommerce#####.transactionID`
+
    * **`Order's GA medium`**
       * Välj en definition: Ansluten kolumn
       * Välj en [!UICONTROL table]: `ecommerce####`
       * Välj en [!UICONTROL column]: `medium`
       * [!UICONTROL Path]: sales_flat_order.increment_id = ecommerce###.transactionId
+
    * **`Order's GA source`**
       * Välj en definition: Ansluten kolumn
       * Välj en [!UICONTROL table]: `ecommerce####`
       * Välj en [!UICONTROL column]: `source`
       * [!UICONTROL Path]: sales_flat_order.increment_id = ecommerance###.transactionId ^
-
-
 
 * **`customer_entity`** table
 * **`Customer's first order GA campaign`**
@@ -141,10 +142,9 @@ Kolumner att skapa
 * Mått `A`: Annonskostnader
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL-intervall]: `None`
+  [!UICONTROL-intervall]: `None`
 * 
-
-   [!UICONTROL Chart Type]: `Scalar`
+  [!UICONTROL Chart Type]: `Scalar`
 
 * **Annonsköp av kunder (hela tiden)**
    * [!UICONTROL Metric]: `New customers`
@@ -158,10 +158,9 @@ Kolumner att skapa
 * Mått `A`: `Ad customer acquisitions`
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL-intervall]: `None`
+  [!UICONTROL-intervall]: `None`
 * 
-
-   [!UICONTROL Chart Type]: `Scalar`
+  [!UICONTROL Chart Type]: `Scalar`
 
 * **Annonsavkastning**
    * [!UICONTROL Metric]: Annonskostnader
@@ -173,6 +172,7 @@ Kolumner att skapa
       * `User's first order's source LIKE %fb%`
       * `User's first order's medium IN cpc, ppc`
       * Filterlogik: ([`A`] ELLER [`B`] ELLER [`C`]) OCH [`D`]
+
    * [!UICONTROL Metric]: Genomsnittlig intäkt för livstid
    * [!UICONTROL Filters]:
       * `User's first order's source LIKE %google%`
@@ -180,12 +180,10 @@ Kolumner att skapa
       * `User's first order's source LIKE %fb%`
       * `User's first order's medium IN cpc, ppc`
       * Filterlogik: ([`A`] ELLER [`B`] ELLER [`C`]) OCH [`D`]
+
    * [!UICONTROL Formula]: `((C - (A / B)) / (A / B))`
    * 
-
-      [!UICONTROL Format]: `Percentage`
-
-
+     [!UICONTROL Format]: `Percentage`
 
 * Mått `A`: `Ad Spend (hide)`
 * Mått `B`: `Ad customer acquisitions (hide)`
@@ -193,23 +191,20 @@ Kolumner att skapa
 * [!UICONTROL Formula]: `Ads ROI`
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL-intervall]: `None`
+  [!UICONTROL-intervall]: `None`
 * 
-
-   [!UICONTROL Chart Type]: `Scalar`
+  [!UICONTROL Chart Type]: `Scalar`
 
 * **Beställningar per gastorlek**
    * 
-
-      [!UICONTROL-mått]: `Orders`
+     [!UICONTROL-mått]: `Orders`
 
 * Mått `A`: `Orders`
 * [!UICONTROL Time period]: `All time`
 * [!UICONTROL Interval]: `By Month`
 * [!UICONTROL Group by]: `Order's medium`
 * 
-
-   [!UICONTROL Chart Type]: `Area`
+  [!UICONTROL Chart Type]: `Area`
 
 * **Annonsavkastning per kampanj**
    * [!UICONTROL Metric]: `Ad Spend`
@@ -221,6 +216,7 @@ Kolumner att skapa
       * `User's first order's source LIKE %fb%`
       * `User's first order's medium IN cpc, ppc`
       * Filterlogik: ([`A`] ELLER [`B`] ELLER [`C`]) OCH [`D`]
+
    * [!UICONTROL Metric]: Genomsnittlig intäkt för livstid
    * [!UICONTROL Filters]:
       * `User's first order's source LIKE %google%`
@@ -228,6 +224,7 @@ Kolumner att skapa
       * `User's first order's source LIKE %fb%`
       * `User's first order's medium IN cpc, ppc`
       * Filterlogik: ([`A`] ELLER [`B`] ELLER [`C`]) OCH [`D`]
+
    * [!UICONTROL Metric]: Genomsnittligt antal order för livslängd
    * [!UICONTROL Filters]:
       * `User's first order's source LIKE %google%`
@@ -235,20 +232,18 @@ Kolumner att skapa
       * `User's first order's source LIKE %fb%`
       * `User's first order's medium IN cpc, ppc`
       * Filterlogik: ([`A`] ELLER [`B`] ELLER [`C`]) OCH [`D`]
+
    * [!UICONTROL Formula]: `(A / B)`
    * 
-
-      [!UICONTROL Format]: `Currency`
+     [!UICONTROL Format]: `Currency`
 
    * [!UICONTROL Formula]: `(C - (A / B))`
    * 
-
-      [!UICONTROL Format]: `Currency`
+     [!UICONTROL Format]: `Currency`
 
    * [!UICONTROL Formula]: `((C - (A / B)) / (A / B))`
    * 
-
-      [!UICONTROL Format]: `Percentage`
+     [!UICONTROL Format]: `Percentage`
 
    * [!UICONTROL Metric]: `Ad Clicks`
 
@@ -256,39 +251,33 @@ Kolumner att skapa
 
    * [!UICONTROL Formula]: `(H / I)`
    * 
-
-      [!UICONTROL Format]: `Percentage`
+     [!UICONTROL Format]: `Percentage`
 
    * [!UICONTROL Formula]: `(A / H)`
    * 
-
-      [!UICONTROL Format]: `Currency`
-
-
-
+     [!UICONTROL Format]: `Currency`
 
 * Mått `A`: `Ad Spend` (dölj)
 * Mått `B`: `Ad customer acquisitions`
 * Mått `C`: `Average LTV`
 * Mått `D`: `Average lifetime # of orders`
 * 
-   [!UICONTROL-formel]: `CAC`
+  [!UICONTROL-formel]: `CAC`
 * [!UICONTROL Formula]: `Avg return`
 * [!UICONTROL Formula]: `Ads ROI`
 * Mått `H`: `adClicks`
 * Mått `I`: `Impressions`
 * 
-   [!UICONTROL-formel]: `CTR`
+  [!UICONTROL-formel]: `CTR`
 * 
-   [!UICONTROL-formel]: `CPC`
+  [!UICONTROL-formel]: `CPC`
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL-intervall]: `None`
+  [!UICONTROL-intervall]: `None`
 * 
-   [!UICONTROL Group by]: `campaign` (Använd kundens första beställningskampanj för statistik över icke-annonsutgifter)
+  [!UICONTROL Group by]: `campaign` (Använd kundens första beställningskampanj för statistik över icke-annonsutgifter)
 * 
-
-   [!UICONTROL Chart Type]: `Table`
+  [!UICONTROL Chart Type]: `Table`
 
 Om du stöter på några frågor när du skapar den här analysen eller bara vill engagera Professional Services-teamet, [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 

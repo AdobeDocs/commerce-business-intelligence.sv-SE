@@ -2,7 +2,9 @@
 title: Optimera databasen för analys
 description: Lär dig hur du optimerar databasen för analys.
 exl-id: e73e1a1e-c933-476d-97bc-bd8f52bb2fa1
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Business Performance, Data Integration, Data Import/Export, Data Warehouse Manager
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '872'
 ht-degree: 0%

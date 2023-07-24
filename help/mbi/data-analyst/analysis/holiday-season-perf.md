@@ -2,7 +2,9 @@
 title: Analyserar semestersäsongens prestanda
 description: Lär dig mer och förstå hur mönstret för årets tillväxt jämfört med tidigare år.
 exl-id: 328f30b8-0db6-48fd-8d97-95f0bc7e4803
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+role: Admin, User
+feature: Data Warehouse Manager, Reports, Dashboards
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '550'
 ht-degree: 0%

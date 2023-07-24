@@ -2,7 +2,9 @@
 title: Commerce Churn
 description: Lär dig hur du genererar och analyserar din Commerce Churn-kurs.
 exl-id: 8775cf0a-114d-4b48-8bd2-fc1700c59a12
-source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Warehouse Manager, Reports
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 2%
@@ -55,9 +57,9 @@ Kolumner att skapa
 * **Nya kunder (efter sista orderdatum)**
    * Räknade kunder
 
-   >[!NOTE]
-   >
-   >Det här måttet kan finnas på ditt konto.
+  >[!NOTE]
+  >
+  >Det här måttet kan finnas på ditt konto.
 
 * I **`customer_entity`** table
 * Detta mått utför en **Antal**
@@ -75,7 +77,7 @@ Kolumner att skapa
    * [!UICONTROL Metric]: Nya kunder (efter första orderdatum)
    * [!UICONTROL Filter]: `Lifetime number of orders Greater Than 0`
    * 
-      [!UICONTROL Perspective]: `Cumulative`
+     [!UICONTROL Perspective]: `Cumulative`
    * [!UICONTROL Metric]: `New customers (by last order date)`
    * [!UICONTROL Filter]:
    * Sekunder sedan kundens senaste orderdatum >= [En självdefinierad klippgräns för kunder som blivit bortskurna ]**`^`**
@@ -84,11 +86,10 @@ Kolumner att skapa
    * [!UICONTROL Metric]: `New customers (by last order date)`
    * [!UICONTROL Filter]: `Lifetime number of orders Greater Than 0`
    * 
-      [!UICONTROL Perspective]: Cumulative
+     [!UICONTROL Perspective]: Cumulative
    * [!UICONTROL Formula]: `(B / ((A + B) - C)`
    * 
-
-      [!UICONTROL Format]: Percentage
+     [!UICONTROL Format]: Percentage
 
 * *Mått `A`:`New customers cumulative`*
 * *Mått `B`:`Churned customers by last order date`*
