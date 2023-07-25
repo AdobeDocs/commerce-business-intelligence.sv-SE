@@ -2,7 +2,9 @@
 title: Introduktion till Adobe Commerce Intelligence
 description: Läs om Adobe Commerce Intelligence.
 exl-id: 0c960d8c-9bb7-429e-a88e-21678a77b710
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, Leader, User
+feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '251'
 ht-degree: 0%

@@ -2,7 +2,9 @@
 title: Importera MailChimp-data
 description: Lär dig importera MailChimp-data till [!DNL Commerce Intelligence].
 exl-id: 5595c6a6-5476-4a0e-a493-ddc32161894e
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '263'
 ht-degree: 0%

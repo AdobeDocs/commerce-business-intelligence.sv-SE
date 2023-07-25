@@ -2,7 +2,9 @@
 title: Commerce Intelligence Essentials vs Pro
 description: Läs om hur Commerce Intelligence Essentials skiljer sig från Commerce Intelligence Pro.
 exl-id: 624a6285-8497-43d9-a56d-8ae503e0e2dd
-source-git-commit: 8d4e71363edad0613cc0ab277c2a43aad000965e
+role: Admin, Data Architect, Data Engineer, Leader, User
+feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '74'
 ht-degree: 5%
@@ -13,7 +15,7 @@ ht-degree: 5%
 
 I följande tabell beskrivs element som ingår i en äldre `Essentials` konto kontra ett aktuellt Commerce Intelligence-konto. Adobe erbjuder inte längre `Essentials`.
 
-|  | **`Commerce Intelligence Essentials`** | **`Commerce Intelligence Pro`** |
+|   | **`Commerce Intelligence Essentials`** | **`Commerce Intelligence Pro`** |
 |-----|-----|-----|
 | `Pre-Defined Reports` | Upp till 100 | Egen |
 | `Pre-Defined Dashboards` | 5-6 | Egen |

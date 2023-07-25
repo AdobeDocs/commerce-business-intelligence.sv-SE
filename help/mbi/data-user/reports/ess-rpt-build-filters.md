@@ -2,7 +2,9 @@
 title: Filter
 description: Lär dig hur du använder filter.
 exl-id: eb683dfe-9a90-400a-a0c0-3dc00d1f28b5
-source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 0%
@@ -37,21 +39,21 @@ Ett eller flera filter kan läggas till för att begränsa vilka data som använ
 
    * Klicka på den första delen av filtret och välj den kolumn som du vill använda som ämne i uttrycket.
 
-      ![Välj första delen av filtret](../../assets/magento-bi-report-builder-filter-part1.png)
+     ![Välj första delen av filtret](../../assets/magento-bi-report-builder-filter-part1.png)
 
    * Klicka på den andra delen av filtret och välj operatorn.
 
-      ![Välj operator](../../assets/magento-bi-report-builder-filter-part2.png)
+     ![Välj operator](../../assets/magento-bi-report-builder-filter-part2.png)
 
    * I den tredje delen av filtret anger du det värde som behövs för att slutföra uttrycket.
 
-      ![Ange värdet](../../assets/magento-bi-report-builder-filter-part3.png)
+     ![Ange värdet](../../assets/magento-bi-report-builder-filter-part3.png)
 
    * När filtret är klart klickar du på **[!UICONTROL Apply]**.
 
-      Rapporten innehåller nu bara återkommande kunder, och antalet kundposter som hämtats för rapporten har reducerats från 33 000 till 12 600.
+     Rapporten innehåller nu bara återkommande kunder, och antalet kundposter som hämtats för rapporten har reducerats från 33 000 till 12 600.
 
-      ![Filtrerad rapport](../../assets/magento-bi-report-builder-filter-report.png)<!--{: .zoom}-->
+     ![Filtrerad rapport](../../assets/magento-bi-report-builder-filter-report.png)<!--{: .zoom}-->
 
 1. Klicka på perspektivet ( ![](../../assets/magento-bi-btn-perspective.png)).
 

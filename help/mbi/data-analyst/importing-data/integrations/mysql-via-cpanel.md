@@ -2,7 +2,9 @@
 title: Anslut MySQL via cPanel
 description: Lär dig hur du ansluter MySQL via cPanel.
 exl-id: 90b0a0b0-8c6b-4144-95b4-f588f18616c7
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 0%

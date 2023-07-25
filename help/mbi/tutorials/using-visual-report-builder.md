@@ -2,7 +2,9 @@
 title: Använda Visual Report Builder
 description: Lär dig att analysera data i rapporten under en viss tidsperiod.
 exl-id: da97b63d-63f0-4fd6-87e3-4cac49a42acc
-source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '1188'
 ht-degree: 0%

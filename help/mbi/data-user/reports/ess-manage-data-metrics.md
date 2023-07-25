@@ -2,7 +2,9 @@
 title: Skapa mätvärden
 description: Lär dig hur du använder statistik för att skapa diagram.
 exl-id: d4c25546-3c51-4d32-b9d8-c424ec103be5
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Reports
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '612'
 ht-degree: 0%
@@ -45,12 +47,12 @@ När de används i rapporter kan mätvärden analyseras över en angiven tidsper
       * `Median` - Den här åtgärden beräknar medianvärdet för datakolumnvärdena
       * `First and Third Quartiles` - Dessa åtgärder beräknar den 25 respektive 75:e percentilen av datakolumnvärdena
       * `Tenth and Ninetieth Percentiles` - Dessa åtgärder beräknar den 10 respektive 90:e percentilen av datakolumnvärdena
+
    * Välj en kolumn som åtgärden ska utföras på. Om du till exempel vill hitta den totala intäkten utför du en summaåtgärd på `order total` kolumn.
 
-      Om du redigerar ett befintligt mått kan du även [ändra måttets driftstabell](../../data-analyst/data-warehouse-mgr/change-metric-op-table.md) i det här avsnittet.
+     Om du redigerar ett befintligt mått kan du även [ändra måttets driftstabell](../../data-analyst/data-warehouse-mgr/change-metric-op-table.md) i det här avsnittet.
 
    * Välj en datumdimension som kan användas för att trenda måttet. Till exempel: `order date`.
-
 
 ## Lägga till filter {#filters}
 

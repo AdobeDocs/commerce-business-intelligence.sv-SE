@@ -2,7 +2,9 @@
 title: Exportera diagramdata
 description: Lär dig hur du visar data bakom ett diagram.
 exl-id: 3c75ff3c-c4e2-4ff8-a303-6f24ccfca0ff
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
+source-git-commit: 7ad99cbe08f6f6dee82cf804fabe1ea9cf440289
 workflow-type: tm+mt
 source-wordcount: '103'
 ht-degree: 0%

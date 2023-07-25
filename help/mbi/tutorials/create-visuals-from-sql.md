@@ -2,7 +2,9 @@
 title: Skapa visualiseringar från SQL-frågor
 description: Lär dig bekanta dig med den terminologi som används i SQL Report Builder och ge dig en gedigen grund för att skapa SQL-visualiseringar.
 exl-id: 9b9bc205-5b64-4e64-8d23-057072e5dd72
-source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
+role: Admin, Data Architect, Data Engineer, Leader, User
+feature: SQL Report Builder, Data Warehouse Manager, Reports, Data Integration
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 0%

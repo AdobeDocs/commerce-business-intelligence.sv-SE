@@ -2,7 +2,9 @@
 title: Formler
 description: Lär dig hur du använder formler.
 exl-id: b6432d93-739f-410c-b732-e09a278f8dae
-source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '468'
 ht-degree: 0%
@@ -25,7 +27,7 @@ En formel kombinerar flera mätvärden och matematisk logik för att besvara en 
 
 1. Klicka **[!UICONTROL Add Metric]** igen och välj det andra måttet för rapporten.
 
-   I det här exemplet visas `New Customers` mått används.
+   I det här exemplet `New Customers` mätvärden används.
 
 1. Klicka på **[!UICONTROL Details]** för att visa information om varje mätvärde.
 
@@ -35,21 +37,21 @@ En formel kombinerar flera mätvärden och matematisk logik för att besvara en 
 
    ![Måttinställningar](../../assets/magento-bi-report-builder-revenue-by-products-metric-detail.png)
 
-1. Klicka på föregående webbläsarflik om du vill återgå till rapporten.
+1. Om du vill återgå till rapporten klickar du på fliken för föregående webbläsare.
 
-1. Håll markören över några datapunkter på varje rad i diagrammet för att se hur mycket varje mätresultat har.
+1. Håll markören över ett fåtal datapunkter på varje rad för att se hur mycket varje mätvärde har.
 
 ## Steg 2: Lägg till en formel
 
-1. Klicka på **[!UICONTROL Add Formula]**.
+1. Klicka på längst upp i sidlisten **[!UICONTROL Add Formula]**.
 
-   Formelrutan visar mätvärdena som tillgängliga indata `A` och `B`och innehåller en inmatningsruta där du kan ange formeln.
+   Formelrutan visar mätvärden som tillgängliga indata `A` och `B`och innehåller en inmatningsruta där du kan ange formeln.
 
    Gör följande:
 
    * I `Enter your Formula` inmatningsruta, ange `A/B`.
 
-      Detta dividerar intäkterna efter beställda produkter med antalet nya kunder.
+     Detta dividerar intäkterna efter beställda produkter med antalet nya kunder.
 
    * Ange `Select format` till `123Number`.
 
@@ -71,11 +73,11 @@ En formel kombinerar flera mätvärden och matematisk logik för att besvara en 
 
    * Välj datumintervall i kalendrarna.
 
-      I det här exemplet kommer julsäsongen `November 1` via `December 31`.
+     I det här exemplet kommer julsäsongen `November 1` via `December 31`.
 
    * Under `Select Time Interval`, välja `Day`.
 
-      ![Fast datumintervall](../../assets/magento-bi-report-builder-revenue-by-products-formula-report-fixed-date-range.png)
+     ![Fast datumintervall](../../assets/magento-bi-report-builder-revenue-by-products-formula-report-fixed-date-range.png)
 
    * När du är klar klickar du på **[!UICONTROL Apply]**.
 
@@ -85,9 +87,9 @@ En formel kombinerar flera mätvärden och matematisk logik för att besvara en 
 
 ## Steg 4: Spara rapporten
 
-I det här steget sparar du rapporten som ett diagram och även som en tabell.
+I det här steget sparar du rapporten som ett diagram och som en tabell.
 
-1. Klicka `Untitled Report` längst upp på sidan och ange en beskrivande titel. I det här exemplet är rapportens titel `2017 Holiday Sales`.
+1. Klicka `Untitled Report` överst på sidan och ange en beskrivande rubrik. I det här exemplet är rapporttiteln `2017 Holiday Sales`.
 
    Gör sedan följande:
 
@@ -95,11 +97,11 @@ I det här steget sparar du rapporten som ett diagram och även som en tabell.
 
    * För `Type`, acceptera standard `Chart` inställning.
 
-   * Välj `Dashboard` där rapporten skall finnas tillgänglig.
+   * Välj `Dashboard` om rapporten ska vara tillgänglig.
 
    * Klicka **[!UICONTROL Save to Dashboard]**.
 
-1. Klicka på rapporttiteln och ändra namnet. I det här exemplet ändras rapportrubriken till `2017 Holiday Sales Data`.
+1. Klicka på rapporttiteln och ändra namnet. I det här exemplet ändras rapporttiteln till `2017 Holiday Sales Data`.
 
    Gör sedan följande:
 
@@ -111,8 +113,8 @@ I det här steget sparar du rapporten som ett diagram och även som en tabell.
 
    * Klicka **[!UICONTROL Save a Copy to Dashboard]**.
 
-1. Gör något av följande för att se rapporterna på kontrollpanelen:
+1. Gör något av följande om du vill visa rapporterna på kontrollpanelen:
 
    * Klicka **[!UICONTROL Go to Dashboard]** i meddelandet längst upp på sidan.
 
-   * Välj **[!UICONTROL Dashboards]**. Klicka på namnet på den aktuella kontrollpanelen för att visa listan. Klicka sedan på namnet på kontrollpanelen där rapporten sparades.
+   * Välj **[!UICONTROL Dashboards]**. Klicka på namnet på den aktuella instrumentpanelen för att visa listan. Klicka sedan på namnet på kontrollpanelen där rapporten sparades.

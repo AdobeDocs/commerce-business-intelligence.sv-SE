@@ -2,7 +2,9 @@
 title: Dela instrumentpaneler med andra användare
 description: Lär dig hur du delar kontrollpaneler med andra användare.
 exl-id: 6279b049-d1b2-4d40-b30b-ee8772e990f4
-source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Dashboards
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 0%

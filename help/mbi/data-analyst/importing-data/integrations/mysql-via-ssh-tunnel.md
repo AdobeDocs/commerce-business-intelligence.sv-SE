@@ -2,7 +2,9 @@
 title: Ansluter [!DNL MySQL] via SSH-tunnel
 description: Lär dig ansluta [!DNL MySQL] via SSH-tunneln.
 exl-id: 6b691a6a-9542-4e47-9b1d-d6d3c3dac357
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '611'
 ht-degree: 0%
@@ -106,7 +108,7 @@ Ange följande information på den här sidan, med början på `Database Connect
 * `Port`: [!DNL MySQL] port på servern (3306 som standard)
 * `Host` Som standard är detta localhost. I allmänhet är det bind-adresvärdet för [!DNL MySQL] server, som är standard `127.0.0.1 (localhost)`, men kan också vara en lokal nätverksadress (till exempel `192.168.0.1`) eller serverns offentliga IP-adress.
 
-   Värdet finns i `my.cnf` fil (finns på `/etc/my.cnf`) under raden som läser `\[mysqld\]`. Om bind-adresslinjen kommenteras ut i den filen skyddas servern från externa anslutningsförsök.
+  Värdet finns i `my.cnf` fil (finns på `/etc/my.cnf`) under raden som läser `\[mysqld\]`. Om bind-adresslinjen kommenteras ut i den filen skyddas servern från externa anslutningsförsök.
 
 I `SSH Connection` avsnitt:
 

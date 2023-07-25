@@ -2,7 +2,9 @@
 title: Formatera och importera e-handelsdata
 description: Lär dig de idealiska dataformat som ska användas för att överföra e-handelsdata.
 exl-id: 7b910f78-9a5a-4d5d-a8b7-1b0b76304afe
-source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '459'
 ht-degree: 0%

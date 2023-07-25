@@ -2,7 +2,9 @@
 title: Kontrollpaneler
 description: Lär dig hur du skapar och arbetar med en kontrollpanel.
 exl-id: a872344b-ac66-41eb-a471-5a69f8802527
-source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Dashboards
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '622'
 ht-degree: 0%
@@ -11,15 +13,15 @@ ht-degree: 0%
 
 # Kontrollpaneler
 
-[!DNL Adobe Commerce Intelligence] Kontrollpaneler ger dig en snabb överblick över butikens resultat och försäljningsaktivitet. Enskilda kontrollpaneler kan delas med andra användare och ordnas i logiska grupper. Du kan också ange olika behörighetsnivåer för andra användare.
+[!DNL Adobe Commerce Intelligence] På kontrollpanelerna får du en snabb överblick över butikens resultat och försäljningsaktiviteter. Enskilda kontrollpaneler kan delas med andra användare och organiseras i logiska grupper. Du kan också ange olika behörighetsnivåer för andra användare.
 
-Det är enkelt att skapa en rapport, lägga till den på en kontrollpanel och exportera data till Excel. Du kan ändra storlek på diagram och rapporter och dra dem till rätt plats på kontrollpanelen.
+Det är enkelt att skapa en rapport, lägga till den på en kontrollpanel och exportera data till Excel. Du kan ändra storlek på diagram och rapporter och dra dem till rätt position på kontrollpanelen.
 
-![Instrumentpanel](../../assets/magento-bi-report-builder-revenue-by-products-formula-report-holiday-sales-dashboard.png)
+![Kontrollpanel](../../assets/magento-bi-report-builder-revenue-by-products-formula-report-holiday-sales-dashboard.png)
 
-## Skapa kontrollpaneler {#createdash}
+## Skapa instrumentpaneler {#createdash}
 
-Kontrollpaneler är delbara, temahinkar för de analyser du gör på Report Builder. På så sätt kan ni uppmuntra teamet att samarbeta och upprätthålla en enda sanningskälla i hela organisationen.
+Instrumentpaneler är delbara, tematiska samlingar för de analyser du skapar i Report Builder. Så här kan du uppmuntra ditt team att samarbeta och upprätthålla en enda källa till sanning i hela organisationen.
 
 *Om du är administratör eller standardanvändare* kan du skapa en kontrollpanel genom att klicka på `Dashboard Options` listruta och välja `Create New dashboard`.
 
@@ -41,14 +43,13 @@ Hur de instrumentpaneler du skapar ser ut beror helt på dig. Du kan ordna och �
 
    * Skapa en `Group` Ange namnet på gruppen för instrumentpanelen.
 
-      Om din Commerce-installation till exempel har flera butiksvyer kan du skapa en grupp för varje butiksvy.
+     Om din Commerce-installation till exempel har flera butiksvyer kan du skapa en grupp för varje butiksvy.
 
    * Klicka **[!UICONTROL Create]**.
 
    ![instrumentpanelsnamn](../../assets/magento-bi-dashboard-create-name.png)
 
-   * Namnet på den nya instrumentpanelen visas i det övre vänstra hörnet. Klicka på nedåtpilen (![](../../assets/magento-bi-btn-down.png)) för att visa alternativen. Om du har skapat en grupp visas den nya kontrollpanelen under gruppen i listan.
-
+   * Namnet på den nya instrumentpanelen visas i det övre vänstra hörnet. Klicka på nedpilen (![](../../assets/magento-bi-btn-down.png)) för att visa alternativen. Om du har skapat en grupp visas den nya kontrollpanelen under gruppen i listan.
 
 ### Lägg till en rapport
 
@@ -58,7 +59,7 @@ Hur de instrumentpaneler du skapar ser ut beror helt på dig. Du kan ordna och �
 
    * Klicka på **[!UICONTROL Add Report]**.
 
-      ![Lägg till rapport](../../assets/magento-bi-dashboard-create-add-report.png)
+     ![Lägg till rapport](../../assets/magento-bi-dashboard-create-add-report.png)
 
 1. Klicka **[!UICONTROL Create Report]** för att visa **[!UICONTROL Report Builder Options]**.
 
@@ -82,13 +83,13 @@ När du delar en kontrollpanel kan du tilldela behörigheter i hela organisation
 
 >[!NOTE]
 >
->`Read-Only` -användare har bara tillgång till kontrollpaneler som delas direkt med dem - de kan inte själva söka efter och lägga till kontrollpaneler. Glöm inte att hålla dem i slingan!
+>`Read-Only` -användare har bara tillgång till kontrollpaneler som delas direkt med dem - de kan inte själva söka efter och lägga till kontrollpaneler. Glöm inte att ha dem i slingan!
 
-### Åtkomst till delade kontrollpaneler {#accessshared}
+### Åtkomst till delade instrumentpaneler {#accessshared}
 
-*Om du är administratör eller standardanvändare* och vill lägga till en delad kontrollpanel i ditt konto kan du göra det genom att klicka på **[!UICONTROL Dashboard Options]** och klicka sedan på **[!UICONTROL Find]** i listrutan.
+*Om du är administratör eller standardanvändare* och om du vill lägga till en delad instrumentpanel i ditt konto kan du göra det genom att klicka på **[!UICONTROL Dashboard Options]** och sedan klicka **[!UICONTROL Find]** i listrutan.
 
-![sök efter instrumentpanel](../../assets/find_dashboard.png)<!--{: width="1000" height="535"}-->
+![hitta instrumentpanel](../../assets/find_dashboard.png)<!--{: width="1000" height="535"}-->
 
 ### Hantera panelinställningar
 
@@ -107,6 +108,7 @@ När du delar en kontrollpanel kan du tilldela behörigheter i hela organisation
       * `View`
       * `Edit`
       * `None`
+
    1. När du uppmanas att bekräfta klickar du på **[!UICONTROL OK]** för att uppdatera behörighetsnivån för varje användare.
 
    1. Om du vill ändra behörighetsnivån för en individ söker du efter användaren i listan och ändrar behörighetsnivån. Ändringen sparas automatiskt.

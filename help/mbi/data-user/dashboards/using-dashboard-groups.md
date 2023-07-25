@@ -2,7 +2,9 @@
 title: Använd instrumentpanelsgrupper
 description: Lär dig hur du kan ordna kontrollpaneler bättre.
 exl-id: e48b7345-62d0-4898-997e-3c3c02040ad3
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Dashboards
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '301'
 ht-degree: 0%
@@ -17,7 +19,7 @@ I listrutan för val av kontrollpanel visas kontrollpanelsgrupper i alfabetisk o
 
 ## Gruppdelning på instrumentpanel
 
-Instrumentpanelsgrupper kan inte delas direkt mellan användare. När en kontrollpanel delas med användare skapas den instrumentpanelsgrupp som den är underställd automatiskt för de användarna om den inte finns. Om kontrollpanelsgruppen finns läggs kontrollpanelen till i listan.
+Instrumentpanelsgrupper kan inte delas direkt mellan användare. När en kontrollpanel delas med användare skapas den instrumentpanelsgrupp som den är underställd automatiskt för de användarna om den inte finns. Om instrumentpanelsgruppen finns läggs instrumentpanelen till i listan.
 
 När en kontrollpanels grupp ändras av dess ägare återspeglas ändringen automatiskt för alla användare som kontrollpanelen har delats med. Användare kan inte ändra kontrollpanelsgruppen för kontrollpaneler som de inte äger.
 

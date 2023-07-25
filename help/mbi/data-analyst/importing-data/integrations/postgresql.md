@@ -2,7 +2,9 @@
 title: Connect PostgreSQL via SSH-tunneln
 description: Lär dig hur du ansluter PostgreSQL-databasen till Commerce Intelligence via en SSH-tunnel.
 exl-id: da610988-21c1-4f5f-b4e2-e2deb175a2aa
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 0%
@@ -15,8 +17,8 @@ Koppla samman [!DNL PostgreSQL] databas till [!DNL Commerce Intelligence] via `S
 
 1. [Hämta [!DNL Commerce Intelligence] publik nyckel](#retrieve)
 1. [Tillåt åtkomst till [!DNL Commerce Intelligence] IP-adress](#allowlist)
-1. [Skapa en [!DNL Linux] användare för [!DNL Commerce Intelligence] ](#linux)
-1. [Skapa en [!DNL PostgreSQL] användare för [!DNL Commerce Intelligence] ](#postgres)
+1. [Skapa en [!DNL Linux] användare för [!DNL Commerce Intelligence]](#linux)
+1. [Skapa en [!DNL PostgreSQL] användare för [!DNL Commerce Intelligence]](#postgres)
 1. [Ange anslutningen och användarinformationen i [!DNL Commerce Intelligence]](#finish)
 
 ## Hämtar [!DNL Commerce Intelligence] [!DNL public key] {#retrieve}

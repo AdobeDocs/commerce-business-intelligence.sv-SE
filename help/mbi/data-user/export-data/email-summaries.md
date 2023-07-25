@@ -2,7 +2,9 @@
 title: Skapa automatiska e-postsammanfattningar
 description: Lär dig hur du skapar automatiska e-postsammanfattningar.
 exl-id: a9aea4fc-9193-467f-8554-3ad77ac3fa73
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '521'
 ht-degree: 0%

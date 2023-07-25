@@ -2,7 +2,9 @@
 title: Förväntade lagrade data för Google Analytics
 description: Lär dig interagera med lagerdata från Google Analytics.
 exl-id: 2b1305cd-5f34-43d9-b77f-a4f5b1d82c66
-source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 0%

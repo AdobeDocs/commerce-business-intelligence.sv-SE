@@ -2,7 +2,9 @@
 title: Kohort Report Builder
 description: Lär dig mer om analysen av användargrupper som delar liknande egenskaper under sina livscykler.
 exl-id: d80c5389-7256-40e0-86e0-49903113f93d
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Reports
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '1556'
 ht-degree: 0%
@@ -181,7 +183,7 @@ I det här exemplet analyserade du `Revenue` mätvärden, grupperade dina kohort
 
 ### Jag vill i genomsnitt veta hur många order en användare gör vid olika tidpunkter under sin livstid.
 
-!![Average number of orders users make at different points in their lifetimes](../../assets/cohort2.gif
+(../../assets/cohort2.gif
 
 I det här exemplet har du analyserat `Number of orders` mätvärden, grupperade dina kohorter efter `customer's first order date`och inkluderade de åtta senaste kohorterna (definieras i `Time Period` i analysen. Om du vill se det genomsnittliga antalet order för varje kohort ändrade du `perspective` till `Average Value per Cohort Member`.
 

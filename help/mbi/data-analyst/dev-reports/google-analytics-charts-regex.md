@@ -2,7 +2,9 @@
 title: Skapa Google Analytics-diagram
 description: Lär dig hur du skapar diagram utifrån dina Google Analytics-data.
 exl-id: ee80fd0d-e3b1-4331-853d-3c2c11931d3f
-source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Reports
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 0%
@@ -29,7 +31,7 @@ När du har anslutit [[!DNL Google Analytics] konto](../../data-analyst/importin
 >
 >De enda specialtecken som måste föregås av ett \-tecken är Metatecken nedan:
 
-|  |  |  |  |  |
+| | | | | |
 |-----|-----|-----|-----|-----|
 | `^` | `[` | `]` | `$` | `(` |
 | `)` | `.` | `{` | `}` | `*` |

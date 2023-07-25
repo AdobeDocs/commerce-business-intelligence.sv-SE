@@ -2,7 +2,9 @@
 title: Dela data
 description: Översikt över datadelning.
 exl-id: 5c434d3b-0519-4980-a666-60bed122a93b
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
+source-git-commit: 7ad99cbe08f6f6dee82cf804fabe1ea9cf440289
 workflow-type: tm+mt
 source-wordcount: '51'
 ht-degree: 0%
