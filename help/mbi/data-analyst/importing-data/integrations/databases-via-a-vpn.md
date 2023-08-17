@@ -24,9 +24,9 @@ Utöver databasinloggningsuppgifterna måste du ange autentiseringsuppgifter fö
 
 ## Skapa en databasanvändare för [!DNL Commerce Intelligence] {#database}
 
-Hur du skapar en databasanvändare varierar beroende på vilken databastyp du ansluter. Klicka på länkarna nedan om du vill se instruktionerna för de olika databastyperna.
+Hur du skapar en databasanvändare varierar beroende på vilken databastyp du ansluter. Klicka på länkarna nedan om du vill se instruktionerna för varje databastyp.
 
-* [Microsoft SQL](../integrations/microsoft-sql-server.md)
+* [MICROSOFT SQL](../integrations/microsoft-sql-server.md)
 * [MongoDB](../integrations/databases-via-a-vpn.md)
 * [MySQL](../integrations/mysql-via-a-direct-connection.md)
 * [PostgreSQL](../integrations/postgresql.md)
@@ -47,15 +47,15 @@ Om du vill slå ihop allt måste du ange anslutningen och användarinformationen
 
 Ange följande information på den här sidan, med början på `Database Connection` avsnitt:
 
-* `Username`: Användarnamnet för [!DNL Commerce Intelligence] databasanvändare
+* `Username`: Användarnamn för [!DNL Commerce Intelligence] databasanvändare
 * `Password`: Lösenordet för [!DNL Commerce Intelligence] databasanvändare
 * `Port`: Databasens port på servern. Standardvärdena är:
    * `MicrosoftSQL`: `1433`
    * `MongoDB`: `27017`
    * `MySQL`: `3306`
    * `PostgreSQL`: `5432`
-* `Host`: Som standard är detta localhost `127.0.0.1`, men det kan också vara serverns offentliga IP-adress eller en lokal nätverksadress.
-* `Database Name (optional)`: Om du bara tillåter åtkomst till en databas (detta anges när användaren skapar en databas), anger du namnet på den databasen här.
+* `Host`: Detta är som standard localhost `127.0.0.1`, men det kan också vara serverns offentliga IP-adress eller en lokal nätverksadress.
+* `Database Name (optional)`: Om du bara tillåtit åtkomst till en databas (detta anges när databasanvändaren skapar en databas) anger du namnet på den databasen här.
 
 Under `Encryption Connection` avsnitt:
 
@@ -63,7 +63,7 @@ Under `Encryption Connection` avsnitt:
 * `Gateway Address`: VPN-serverns IP-adress
 * `Group Name`: Namnet på gruppen som används för gruppautentisering
 * `Group Secret`: Lösenordet som motsvarar gruppen.
-* `Username`: The [!DNL Commerce Intelligence] `VPN` användarnamn
-* `Password`: The [!DNL Commerce Intelligence] `VPN` användarlösenord
+* `Username`: [!DNL Commerce Intelligence] `VPN` användarnamn
+* `Password`: [!DNL Commerce Intelligence] `VPN` användarlösenord
 
-När du är klar klickar du på **[!UICONTROL Save & Test]** för att slutföra installationen.
+När du är klar klickar du **[!UICONTROL Save & Test]** för att slutföra installationen.

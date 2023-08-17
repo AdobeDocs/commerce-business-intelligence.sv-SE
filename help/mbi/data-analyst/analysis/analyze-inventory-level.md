@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Analysera lagernivåer
 
-I det här avsnittet visas hur du konfigurerar en instrumentpanel som ger insikter om ditt nuvarande lager och innehåller instruktioner för kunder om både den äldre arkitekturen eller den nya arkitekturen. Du har en äldre arkitektur om du inte har **[!UICONTROL Data Warehouse Views]** alternativ under **[!UICONTROL Manage Data]** -menyn. Om du har en äldre arkitektur skickar du en [ny supportförfrågan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) med motivet **[!UICONTROL INVENTORY ANALYSIS]** när du har nått det avsedda avsnittet i _Beräknade kolumner_ instruktionerna nedan.
+I det här avsnittet visas hur du konfigurerar en instrumentpanel som ger insikter om ditt nuvarande lager och innehåller instruktioner för kunder om både den äldre arkitekturen eller den nya arkitekturen. Om du inte har **[!UICONTROL Data Warehouse Views]** alternativ under **[!UICONTROL Manage Data]** -menyn. Om du har en äldre arkitektur skickar du en [ny supportförfrågan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) med motivet **[!UICONTROL INVENTORY ANALYSIS]** när du har nått det avsedda avsnittet i _Beräknade kolumner_ instruktionerna nedan.
 
 ## Kolumner att spåra:
 
@@ -77,7 +77,7 @@ I det här avsnittet visas hur du konfigurerar en instrumentpanel som ger insikt
       * 
         [!UICONTROL Datatype]: `Decimal`
       * Definition:
-         * case when A is null or B is null, then null else round(A::decimal/(extract(epoch from (current_timestamp - B))::decimal/604800.0),2) end
+         * case when A is null or B is null else round(A::decimal/(extract(epoch from (current_timestamp - B))::decimal/604800.0),2) end
 
 * **[!UICONTROL cataloginventory_stock_item]** tabell:
    * **`Sku`**

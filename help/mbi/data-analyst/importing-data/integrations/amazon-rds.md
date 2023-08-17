@@ -29,13 +29,13 @@ På inloggningssidan (**[!UICONTROL Manage Data** > **Integrations]**) för varj
 
 För [!DNL Commerce Intelligence] för att ansluta till [!DNL RDS] Du måste till exempel lägga till dessa IP-adresser i rätt databassäkerhetsgrupp via AWS hanteringskonsol. Dessa IP-adresser kan läggas till i en befintlig grupp eller så kan du skapa en - det viktiga är att gruppen har behörighet att komma åt instansen som du vill ansluta till [!DNL Commerce Intelligence].
 
-När du lägger till [!DNL Commerce Intelligence] IP-adresser måste du lägga till en `/32` till slutet av adressen för att ange [!DNL Amazon] att det är en exakt IP-adress. Var inte orolig. AWS gränssnitt gör det klart att detta är nödvändigt.
+När [!DNL Commerce Intelligence] IP-adresser måste du lägga till en `/32` till slutet av adressen för att ange att [!DNL Amazon] att det är en exakt IP-adress. Var inte orolig - AWS gränssnitt visar tydligt att detta är nödvändigt.
 
 ## Skapa en `Linux` användare för [!DNL Commerce Intelligence] {#linux}
 
 >[!NOTE]
 >
->Det här steget krävs bara om du använder en krypterad anslutning. Instruktioner om hur du gör detta finns i konfigurationsavsnittet för den databas du använder (t.ex.: MySQL). The `Linux` kan vi skapa en `SSH tunnel`, som är det säkraste sättet att skicka data via Internet.
+>Det här steget krävs bara om du använder en krypterad anslutning. Instruktioner om hur du gör detta finns i konfigurationsavsnittet för den databas du använder (t.ex. MySQL). The `Linux` kan vi skapa en `SSH tunnel`, som är det säkraste sättet att skicka data via Internet.
 
 ## Skapa en databasanvändare för [!DNL Commerce Intelligence]
 
@@ -43,13 +43,13 @@ Detta är den del av processen där stegen varierar beroende på vilken databas 
 
 ## Ange anslutningsinformation i [!DNL Commerce Intelligence]
 
-När du har beviljat [!DNL Commerce Intelligence] åtkomst till din instans och skapade en användare åt oss. Det sista du behöver göra är att ange anslutningsinformationen i [!DNL Commerce Intelligence].
+Efter att du har beviljat [!DNL Commerce Intelligence] åtkomst till din instans och skapade en användare åt oss. Det sista du behöver göra är att ange anslutningsinformationen i [!DNL Commerce Intelligence].
 
 Autentiseringssidor för `MySQL`, `Microsoft SQL`och `PostgreSQL` öppnas via `Integrations` sida (**[!UICONTROL Manage Data** > **Integrations]**) genom att klicka på **[!UICONTROL Add Integration]**. När listan över integreringar visas klickar du på ikonen för databasen som du använder för att gå till sidan med autentiseringsuppgifter. Om du för närvarande inte har tillgång till den integrering du behöver kontaktar du ditt Adobe-kontoteam.
 
 Du behöver följande information för att slutföra anslutningen:
 
-* Den offentliga adressen för din RDS-instans: Detta finns i [!DNL AWS] hanteringskonsol.
+* Den offentliga adressen för RDS-instansen: Den finns i [!DNL AWS] hanteringskonsol.
 * Den port som databasinstansen använder: Vissa databaser har en standardport som automatiskt fyller i `Port` fält. Den här informationen finns även i installationsdokumentationen för databasen.
 * Användarnamnet och lösenordet för användaren som du skapade för [!DNL Commerce Intelligence].
 

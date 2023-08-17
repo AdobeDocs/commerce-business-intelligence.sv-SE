@@ -1,6 +1,6 @@
 ---
 title: Avancerade beräknade kolumntyper
-description: Lär dig grunderna för de flesta användningsfall för kolumner - men du kanske vill ha en beräknad kolumn som är lite mer komplex än vad Data warehouse Manager kan skapa.
+description: Lär dig grunderna för de flesta användningsfall för kolumner - men du kanske vill ha en beräknad kolumn som är lite mer komplex än vad Data Warehouse Manager kan skapa.
 exl-id: 9871fa19-95b3-46e4-ae2d-bd7c524d12db
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager
@@ -13,10 +13,10 @@ ht-degree: 4%
 
 # Avancerade beräknade kolumntyper
 
-Många analyser du kan vilja skapa innehåller en **ny kolumn** som du vill `group by` eller `filter by`. The [Skapar beräknade kolumner](../data-warehouse-mgr/creating-calculated-columns.md) I självstudiekursen beskrivs grunderna för de flesta användningsfall, men du kanske vill ha en beräknad kolumn som är lite mer komplex än vad Data warehouse Manager kan skapa.
+Många analyser du kan vilja skapa innehåller en **ny kolumn** som du vill `group by` eller `filter by`. The [Skapar beräknade kolumner](../data-warehouse-mgr/creating-calculated-columns.md) I självstudiekursen beskrivs grunderna för de flesta användningsfall, men du kanske vill ha en beräknad kolumn som är lite mer komplex än vad Data Warehouse Manager kan skapa.
 {: #top}
 
-Den här typen av kolumner kan skapas av analytikernas Adobe-team i Data warehouse. Ange följande information om du vill definiera en ny beräknad kolumn:
+Den här typen av Data Warehouse kan skapas av Adobe-teamet hos analytiker. Ange följande information om du vill definiera en ny beräknad kolumn:
 
 1. The **`definition`** i den här kolumnen (inklusive indata, formler eller formatering)
 1. The **`table`** som du vill skapa kolumnen på
@@ -29,7 +29,7 @@ Här är några vanliga exempel på avancerade beräknade kolumner som användar
 * [Jämför sekventiella händelsevärden](#sequence)
 * [Konvertera valuta](#currency)
 * [Konvertera tidszoner](#timezone)
-* [Något annat](#else)
+* [Någonting annat](#else)
 
 ## Jag försöker beställa händelser sekventiellt {#compareevents}
 
@@ -59,7 +59,7 @@ Om du vill skapa den här typen av beräknad kolumn måste du känna till:
 * Det fält som identifierar händelsens ägare (`owner\_id` i det här exemplet)
 * Det fält som du vill ordna händelserna efter (`timestamp` i det här exemplet)
 
-[Till början](#top)
+[Tillbaka till början](#top)
 
 ## Jag försöker hitta tiden mellan två händelser. {#twoevents}
 
@@ -83,7 +83,7 @@ Om du vill skapa den här typen av beräknad kolumn måste du känna till:
 * Tabellen som du vill skapa den här kolumnen för
 * De två tidsstämplar mellan vilka du vill veta skillnaden
 
-[Till början](#top)
+[Tillbaka till början](#top)
 
 ## Jag försöker jämföra värden för sekventiella händelser. {#sequence}
 
@@ -111,7 +111,7 @@ Om du vill skapa den här typen av beräknad kolumn måste du känna till:
 * Det fält som identifierar händelsens ägare (`owner\_id` i exemplet)
 * Det värdefält som du vill se skillnaden mellan för varje sekventiell händelse (`timestamp` i det här exemplet)
 
-[Till början](#top)
+[Tillbaka till början](#top)
 
 ## Jag försöker konvertera valuta. {#currency}
 
@@ -129,11 +129,11 @@ Här är ett exempel:
 Om du vill skapa den här typen av beräknad kolumn måste du känna till:
 
 * Tabellen som du vill skapa den här kolumnen för
-* Transaktionsbeloppskolumnen som du vill konvertera
+* Den kolumn med transaktionsbelopp som du vill konvertera
 * Kolumnen som anger valutan som data spelades in i (vanligtvis en ISO-kod)
-* Standardrapporteringsvaluta
+* Den föredragna rapporteringsvalutan
 
-[Till början](#top)
+[Tillbaka till början](#top)
 
 ## Jag försöker konvertera tidszoner. {#timezone}
 
@@ -152,14 +152,14 @@ Om du vill skapa den här typen av beräknad kolumn måste du känna till:
 
 * Tabellen som du vill skapa den här kolumnen för
 * Den tidsstämpelkolumn som du vill konvertera
-* Den tidszon som data spelades in i
+* Tidszonen där data spelades in
 * Rekommenderad tidszon för rapportering
 
-[Till början](#top)
+[Tillbaka till början](#top)
 
 ## Jag försöker göra något som inte finns med här. {#else}
 
-Oroa dig inte. Bara för att det inte finns med här betyder det inte att det inte är möjligt. Adobe-teamet hos Data warehouse Analysts kan hjälpa till.
+Oroa dig inte. Bara för att det inte finns med här betyder det inte att det inte är möjligt. Adobe-teamet hos Data Warehouse Analysts kan hjälpa till.
 
 Om du vill definiera en ny beräknad kolumn [skicka en supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) med information om exakt vad du vill bygga.
 

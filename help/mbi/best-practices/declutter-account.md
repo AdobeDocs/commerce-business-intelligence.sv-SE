@@ -17,11 +17,11 @@ Om du har varit med [!DNL Commerce Intelligence] i sex månader eller sex år ä
 
 Med [standardiserad, tydlig namngivning för alla element](../best-practices/naming-elements.md)) [!DNL Commerce Intelligence] kontots granskningssteg nedan hjälper dig att minska trassel och onödiga analyser för dina användare. Ytterligare en förmån innefattar [snabbare uppdateringscykler](../best-practices/reduce-update-cycle-time.md).
 
-## Steg 1: Identifiera era icke-aktiva användare
+## Steg 1: Identifiera dina icke-aktiva användare
 
 Det första steget i att rensa ditt konto är att inaktivera konton för dina icke-aktiva användare, till exempel personer som har lämnat företaget eller inte längre använder [!DNL Commerce Intelligence] i sina nuvarande roller.
 
-Det gör du genom att klicka på företagets namn i det övre högra navigeringsfältet och sedan välja **[!UICONTROL Manage Users]**. Välj sedan den användare som du vill inaktivera och klicka på **[!UICONTROL Deactivate User]**.
+Klicka på företagets namn i det övre högra navigeringsfältet och välj **[!UICONTROL Manage Users]**. Välj sedan den användare som du vill inaktivera och klicka på **[!UICONTROL Deactivate User]**.
 
 >[!NOTE]
 >
@@ -29,7 +29,7 @@ Det gör du genom att klicka på företagets namn i det övre högra navigerings
 
 >[!WARNING]
 >
->När du inaktiverar en användare tas diagram, instrumentpaneler och andra resurser som skapats av användaren bort. Om du vill bevara dessa resurser kontaktar du [!DNL Commerce Intelligence] [support](../guide-overview.md#Submitting-a-Support-Ticket) innan användaren inaktiveras. Support kan hjälpa dig att överföra dessa resurser till en annan användare.
+>När du inaktiverar en användare tas diagram, instrumentpaneler och andra resurser som skapats av användaren bort. Kontakta [!DNL Commerce Intelligence] [support](../guide-overview.md#Submitting-a-Support-Ticket) innan användaren inaktiveras. Support kan hjälpa dig att överföra dessa resurser till en annan användare.
 
 ### Återaktivera en användare
 
@@ -57,15 +57,15 @@ När du har öppnat dina instrumentpaneler och rapporter kan du börja rensa dit
 
 1. Leta reda på rapporten som du vill ta bort på instrumentpanelen.
 1. Välj **[!UICONTROL Options]** i rapportens övre högra hörn.
-1. Klicka **[!UICONTROL Remove From Dashboard]**.
+1. Klicka på **[!UICONTROL Remove From Dashboard]**.
 
 **Ta bort en hel instrumentpanel**
 
 1. Välj **[!UICONTROL Manage Data]**, sedan **[!UICONTROL Dashboards**].
 1. Klicka på den kontrollpanel som du vill ta bort.
-1. Klicka **[!UICONTROL Delete Dashboard]**.
+1. Klicka på **[!UICONTROL Delete Dashboard]**.
 
-Du kan också välja **[!UICONTROL Dashboard Options]** sedan **[!UICONTROL Delete]** från kontrollpanelen.
+Du kan också välja **[!UICONTROL Dashboard Options]** sedan **[!UICONTROL Delete]** från själva kontrollpanelen.
 
 ![](../../mbi/assets/Delete_from_dashboard.png)
 
@@ -78,7 +78,7 @@ Du kan också välja **[!UICONTROL Dashboard Options]** sedan **[!UICONTROL Dele
 1. Välj **[!UICONTROL Manage Data]** sedan **[!UICONTROL Reports]**.
 1. Kontrollera **Visa endast oanvända rapporter** rutan under mätvärdeslistan. Detta skapar en lista med rapporter som inte används i en instrumentpanel eller e-postsammanfattning.
 1. Markera de rapporter som du vill ta bort. Du kan markera alla genom att klicka i kryssrutan ovanför rapportlistan.
-1. Klicka **[!UICONTROL Delete Selected]**.
+1. Klicka på **[!UICONTROL Delete Selected]**.
 
 Här följer en titt på borttagningsprocessen som inte används:
 
@@ -91,21 +91,21 @@ När du har rensat bort användarlistan, kontrollpanelerna och rapporterna kan d
 1. Om du vill generera en lista med beroende rapporter för ett mätresultat går du till **[!DNL Manage Data]** och sedan klicka på **[!UICONTROL Metrics]**.
 1. Klicka **[!UICONTROL Edit]** bredvid ett mätresultat.
 1. Längst ned på sidan visas ett avsnitt som kallas **[!UICONTROL Dependent Charts]**. Klicka på länken om du vill generera en lista med beroende rapporter för det här måttet.
-1. När systemet har slutfört kontrollen [!DNL Commerce Intelligence] visar en lista med instrumentpaneler, rapporter och användare som använder det här måttet.
+1. När kontrollen är klar [!DNL Commerce Intelligence] visar en lista med instrumentpaneler, rapporter och användare som använder det här måttet.
 
 ![](../../mbi/assets/report_dependecies.png)
 
-Om du bestämmer dig för att måttet inte längre behövs går du tillbaka till **[!UICONTROL Metrics]** sida genom att klicka **[!UICONTROL Back to Metric List]** för att hitta måtten som du vill ta bort. Klicka **[!UICONTROL Delete]**.
+Om du bestämmer dig för att måttet inte längre behövs går du tillbaka till **[!UICONTROL Metrics]** sida genom att klicka **[!UICONTROL Back to Metric List]** för att hitta måtten som du vill ta bort. Klicka på **[!UICONTROL Delete]**.
 
 ## Steg 4: Utvärdera dina synkroniserade kolumner
 
-Det sista steget är att utvärdera de kolumner som synkroniseras i Data warehouse. Det går inte bara att avsynkronisera kolumner så att ditt konto rensas, det kan också minska uppdateringstiden.
+Det sista steget är att utvärdera de kolumner som synkroniseras i Datan Warehouse. Det går inte bara att avsynkronisera kolumner så att ditt konto rensas, det kan också minska uppdateringstiden.
 
-Om du vill fortsätta med detta, kontakta [!DNL Commerce Intelligence] [Support](../guide-overview.md#Submitting-a-Support-Ticket). Supportteamet kan skapa en rapport som innehåller alla kolumner som inte används i någon kontrollpanel för någon användare och som inte används i e-postsammanfattningar, exklusive SQL-rapporter. Du kan sedan använda den här rapporten som vägledning när du markerar kolumner som ska avsynkroniseras via Data warehouse Manager.
+Om du vill fortsätta med detta, kontakta [!DNL Commerce Intelligence] [Support](../guide-overview.md#Submitting-a-Support-Ticket). Supportteamet kan skapa en rapport som innehåller alla kolumner som inte används i någon kontrollpanel för någon användare och som inte används i e-postsammanfattningar, exklusive SQL-rapporter. Du kan sedan använda den här rapporten som vägledning när du markerar kolumner som ska avsynkroniseras via Data Warehouse Manager.
 
 >[!NOTE]
 >
->Du kan alltid börja synkronisera de här kolumnerna igen i framtiden. Om du avsynkroniserar en kolumn tas alla data bort från Data warehouse; det innebär bara att den här kolumnen inte kontrolleras om det finns nya eller uppdaterade värden under uppdateringscykeln.
+>Du kan alltid börja synkronisera de här kolumnerna igen i framtiden. Om du avsynkroniserar en kolumn tas alla data bort från Datan Warehouse. Det innebär bara att den här kolumnen inte har genomsökts efter nya eller uppdaterade värden under uppdateringscykeln.
 
 **Så här avsynkroniserar du en kolumn (eller kolumner)**
 

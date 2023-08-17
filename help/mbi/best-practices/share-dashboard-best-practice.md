@@ -40,7 +40,7 @@ Nya användare kan också ha tillgång till vissa instrumentpaneler som inte är
 
 ## Var selektiv med redigeringsbehörigheter
 
-`Edit` behörigheter ger användarna mycket kraft. Men med stor kraft följer stort ansvar. För att förhindra oavsiktliga ändringar av diagram och instrumentpaneler rekommenderar Adobe att du väljer vem du vill ge `Edit` behörigheter till.
+`Edit` behörigheter ger användarna mycket kraft. Men med stor kraft följer ett stort ansvar. För att förhindra oavsiktliga ändringar av diagram och instrumentpaneler rekommenderar Adobe att du väljer vem du vill ge `Edit` behörigheter till.
 
 ## Anteckna dina diagram
 

@@ -7,7 +7,7 @@ feature: Commerce Tables, Data Warehouse Manager, Dashboards
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '254'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -29,7 +29,7 @@ Men tänk på det här, trots allt.. *Måste dessa förändringar vara permanent
 
 ## Använda [!DNL Find/Replace] {#findreplace}
 
-1. Klicka på kugghjulet (![](../../assets/gear-icon.png)) bredvid instrumentpanelens namn och sedan [!UICONTROL Bulk Edit Reports] -fönstret.
+1. Klicka på växeln (![](../../assets/gear-icon.png)) bredvid instrumentpanelens namn och sedan [!UICONTROL Bulk Edit Reports] -fönstret.
 
 1. Klicka **[!UICONTROL Chart Title Find and Replace]** på popup-menyn.
 
@@ -37,7 +37,7 @@ Men tänk på det här, trots allt.. *Måste dessa förändringar vara permanent
 
 1. I `Replace With` skriver du in de ord eller tecken som ska ersätta det som finns i `Find` fält.
 
-1. Klicka **[!UICONTROL Update Reports]**.
+1. Klicka på **[!UICONTROL Update Reports]**.
 
 Exempel:
 
@@ -45,13 +45,13 @@ Exempel:
 
 ## Förväntande `Chart Names` {#prepend}
 
-1. Klicka på kugghjulet (![](../../assets/gear-icon.png)) bredvid instrumentpanelens namn och sedan [!UICONTROL Bulk Edit Reports] -fönstret.
+1. Klicka på växeln (![](../../assets/gear-icon.png)) bredvid instrumentpanelens namn och sedan [!UICONTROL Bulk Edit Reports] -fönstret.
 
 1. Klicka **[!UICONTROL Prepend Report Names]** på popup-menyn.
 
 1. Skriv de ord eller tecken som du vill lägga till i diagrammen.
 
-1. Klicka **[!UICONTROL Update Reports]**.
+1. Klicka på **[!UICONTROL Update Reports]**.
 
 Exempel:
 
@@ -59,13 +59,13 @@ Exempel:
 
 ## Ändrar `Dates` {#dates}
 
-1. Klicka på kugghjulet (![](../../assets/gear-icon.png)) bredvid instrumentpanelens namn och välj sedan [!UICONTROL Bulk Edit Reports] -fönstret.
+1. Klicka på växeln (![](../../assets/gear-icon.png)) bredvid instrumentpanelens namn och välj sedan [!UICONTROL Bulk Edit Reports] -fönstret.
 
 1. Klicka **[!UICONTROL Change Dates]** i popup-fönstret.
 
 1. Ange den nya `Start/End Date` och `Time Interval`. Du kan också lämna dessa fält oförändrade.
 
-1. Klicka **[!UICONTROL Update Reports]**.
+1. Klicka på **[!UICONTROL Update Reports]**.
 
 Exempel:
 

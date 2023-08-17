@@ -1,6 +1,6 @@
 ---
 title: Anslut MySQL via cPanel
-description: Lär dig hur du ansluter MySQL via cPanel.
+description: Lär dig ansluta MySQL via cPanel.
 exl-id: 90b0a0b0-8c6b-4144-95b4-f588f18616c7
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
@@ -40,20 +40,20 @@ Kom igång.
 
    ![](../../../assets/create-mbi-mysql-user-cpanel.png)
 
-1. Klicka **[!UICONTROL Create User]**.
+1. Klicka på **[!UICONTROL Create User]**.
 1. Nu när du har skapat användaren måste du koppla den till en databas. Gå tillbaka till `Add New User` -avsnittet - se inställningarna för `Add User to Database?` Det är vad du behöver.
-1. I `User` väljer användaren som du skapade.
+1. I `User` i den här delen väljer du den användare du skapade.
 1. I `Database` i den här delen väljer du den databas som du vill ansluta till [!DNL Commerce Intelligence].
-1. Klicka **[!UICONTROL Add]**.
-1. Markera kryssrutan invid `SELECT` - det här är allt [!DNL Commerce Intelligence] måste ansluta till databasen.
+1. Klicka på **[!UICONTROL Add]**.
+1. Markera kryssrutan invid `SELECT` - allt detta [!DNL Commerce Intelligence] måste ansluta till databasen.
 
 ## Ange anslutningen och användarinformationen i [!DNL Commerce Intelligence] {#finish}
 
-Om du vill slå ihop allt måste du ange anslutningen och användarinformationen i [!DNL Commerce Intelligence]. Gav du [!DNL MySQL] öppnas inloggningssidan? Om inte, gå till **[!UICONTROL Manage Data** > **Connections]** och klicka **[!UICONTROL Add New Data Source]** och sedan [!DNL MySQL] ikon.
+Om du vill slå ihop allt måste du ange anslutningen och användarinformationen i [!DNL Commerce Intelligence]. Gav du [!DNL MySQL] öppnas inloggningssidan? Om inte, gå till **[!UICONTROL Manage Data** > **Connections]** och klicka **[!UICONTROL Add New Data Source]** och sedan [!DNL MySQL] -ikon.
 
 Ange följande information på den här sidan i `Database Connection` avsnitt:
 
-* `Username`: Användarnamnet för [!DNL Commerce Intelligence] [!DNL MySQL] användare
+* `Username`: Användarnamn för [!DNL Commerce Intelligence] [!DNL MySQL] användare
 * `Password`: Lösenordet för [!DNL Commerce Intelligence] [!DNL MySQL] användare
 * `Port`: MySQL-port på servern (`3306` som standard)
 * `Host`: Den offentliga adressen till `MySQL` server [!DNL Commerce Intelligence] ansluter till. Det här är vanligtvis den URL som du använder för att logga in `[!DNL cPanel]`.
@@ -61,11 +61,11 @@ Ange följande information på den här sidan i `Database Connection` avsnitt:
 Om du använder en [`SSH tunnel`](../integrations/mysql-via-ssh-tunnel.md)måste du ange krypteringsinformationen. Ange `Encrypted` växla till `Yes` för att visa formuläret.
 
 * `Connection Type`: Ange detta till `SSH Tunnel`
-* `Remote Address`: Serverns IP-adress eller värdnamn [!DNL Commerce Intelligence] tunnlar in i
-* `Username`: Användarnamnet för [!DNL Commerce Intelligence] `SSH (Linux)` användare, se [instruktioner](../../../data-analyst/importing-data/integrations/mysql-via-ssh-tunnel.md) om hur du ska göra detta, om du inte redan gjort det)
+* `Remote Address`: Serverns IP-adress eller värdnamn [!DNL Commerce Intelligence] kommer att gå in i
+* `Username`: Användarnamn för [!DNL Commerce Intelligence] `SSH (Linux)` användare, se [instruktioner](../../../data-analyst/importing-data/integrations/mysql-via-ssh-tunnel.md) om hur du ska göra detta, om du inte redan gjort det)
 * `SSH Port`: SSH-port på servern (`22` som standard)
 
-När du är klar klickar du på **[!UICONTROL Save & Test]** för att slutföra installationen.
+När du är klar klickar du **[!UICONTROL Save & Test]** för att slutföra installationen.
 
 ## Relaterat:
 

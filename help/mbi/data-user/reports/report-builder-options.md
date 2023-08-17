@@ -24,7 +24,7 @@ Se några av de vanligaste anledningarna till att du använder [!DNL SQL Report 
 
 ### Om du vill använda [!DNL SQL]-specifika funktioner...
 
-En del av skönheten i [!DNL SQL Report Builder] är att det ger dig möjlighet att använda funktioner som för närvarande inte är tillgängliga i Data warehouse Manager. Tidigare kunde en analytiker ha varit tvungen att gå in för att hjälpa dig att förverkliga din vision.
+En del av skönheten i [!DNL SQL Report Builder] är att det ger dig möjlighet att använda funktioner som inte är tillgängliga i Data Warehouse Manager. Tidigare kunde en analytiker ha varit tvungen att gå in för att hjälpa dig att förverkliga din vision.
 
 The [!DNL SQL Report Builder] stöder funktioner som [`LISTAGG`](https://docs.aws.amazon.com/redshift/latest/dg/r_LISTAGG.html) och [`GETDATE`](https://docs.aws.amazon.com/redshift/latest/dg/r_GETDATE.html)som du inte tidigare kunde använda. Du kommer åt [`full list`](https://docs.aws.amazon.com/redshift/latest/dg/c_SQL_functions.html), men några andra SQL-specifika funktioner är:
 
@@ -39,17 +39,17 @@ The [!DNL SQL Report Builder] stöder funktioner som [`LISTAGG`](https://docs.aw
 
 ### Om du vill göra lite testning..
 
-Om du vill testa olika tekniker och strategier för att ta reda på vad som fungerar bäst för din analys kan du använda [!DNL SQL Report Builder]. Det tar tid att skapa kolumner i Data warehouse Manager och kolumner som du skapar med DWM är beroende av uppdateringscykler.
+Om du vill testa olika tekniker och strategier för att ta reda på vad som fungerar bäst för din analys kan du använda [!DNL SQL Report Builder]. Det tar tid att skapa kolumner i Data Warehouse Manager och kolumner som du skapar med DWM är beroende av uppdateringscykler.
 
-I bästa fall måste du vänta i en uppdateringscykel innan du kan använda kolumnen. Om du upptäcker att du gjorde fel när du byggde kolumnen måste du vänta igenom *två* cykler: en för att fylla i kolumnen och en annan för att ändringarna ska spridas.
+I bästa fall måste du vänta i en uppdateringscykel innan du kan använda kolumnen. Om du upptäcker att du gjorde fel när du byggde kolumnen måste du vänta igenom *två* cykler: en för att fylla kolumnen initialt och en annan cykel för att ändringarna ska spridas.
 
 ### Om du bara använder en ny kolumn en gång..
 
-Som vi nämnt ovan tar det tid att skapa en kolumn i Data warehouse Manager. Om du bara planerar att använda en kolumn som du skapar i en rapport föreslår Adobe att du använder [!DNL SQL Report Builder]. Det eliminerar behovet av att vänta på att en uppdateringscykel ska slutföras så att du kommer tillbaka till arbetet snabbare.
+Som vi nämnt ovan tar det tid att skapa en Data Warehouse i kolumnhanteraren. Om du bara planerar att använda en kolumn som du skapar i en rapport föreslår Adobe att du använder [!DNL SQL Report Builder]. Det eliminerar behovet av att vänta på att en uppdateringscykel ska slutföras så att du kommer tillbaka till arbetet snabbare.
 
 ### Om du arbetar med data som har en 1:N-relation...
 
-Ibland kan datastrukturen göra [!DNL SQL Report Builder] ett effektivare och mer logiskt val för att bygga en analys. Det är enkelt att skapa kolumner för en-till-en-relationer i Data warehouse Manager, men det kan bli lite förvirrande när du hanterar en-till-många-relationer.
+Ibland kan datastrukturen göra [!DNL SQL Report Builder] ett effektivare och mer logiskt val för att bygga en analys. Det är enkelt att skapa kolumner för en-till-en-relationer i Data Warehouse Manager, men det kan bli lite förvirrande när du hanterar en-till-många-relationer.
 
 Säg att en produkt betraktas som en del av flera produktkategorier, och du vill se de intäkter som är kopplade till varje produktkategori. Att försöka skapa den här relationen med DWM kan vara jobbigt och svårt, men att skriva en [!DNL SQL] frågan kan vara lite mer okomplicerad:
 
@@ -61,7 +61,7 @@ Med [!DNL SQL Report Builder] ger dig mer kontroll och åtkomst till funktioner 
 
 ### Om du skapar en enkel rapport..
 
-Om det du vill skapa är okomplicerat kan det gå mycket snabbare att använda det traditionella Report Builder än att skriva en fullständig [!DNL SQL] fråga. Det hjälper om det redan finns kolumner som du behöver för att skapa analysen i Data warehouse Manager.
+Om det du vill skapa är okomplicerat kan det gå mycket snabbare att använda det traditionella Report Builder än att skriva en [!DNL SQL] fråga. Det hjälper om det redan finns kolumner som du behöver för att skapa analysen i Data Warehouse Manager.
 
 ### Om du delar ditt arbete med andra användare..
 

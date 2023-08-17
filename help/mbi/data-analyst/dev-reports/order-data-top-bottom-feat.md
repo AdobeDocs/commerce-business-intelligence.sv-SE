@@ -43,7 +43,7 @@ Det blir komplicerat att använda den här funktionen när det finns mer än ett
 
 Säg att du har skapat en rapport med båda `Revenue` och `Number of orders` mätvärden, grupperade efter hänvisningskälla. `Revenue` kan bara sorteras efter `Revenue` eller hänvisningskälla och `Number of orders` kan bara sorteras efter `Number of orders` eller hänvisningskälla.
 
-Det innebär att du kan visa `Revenue` endast uppifrån `5` inkomstgenererande hänvisningskällor, du kan inte visa antalet order också efter den översta `5` inkomstgenererande hänvisningskällor. Enkelt uttryckt: när det finns flera mätvärden är det bästa valet att sortera varje mätvärde efter grupperingen.
+Det innebär att du kan visa `Revenue` endast uppifrån `5` inkomstgenererande hänvisningskällor, du kan inte visa antalet order också efter den översta `5` inkomstgenererande hänvisningskällor. Kort sagt: när det finns flera mätvärden är det bästa valet att sortera varje mätvärde efter grupperingen.
 
 Nedan visas ett exempel på ett diagram som sorterade `Revenue` själva måttet i stället för av grupperingen. Som du ser har ingen sortering av måtten efter grupperingen skapat en märklig (och i slutändan oanvändbar) rapport:
 

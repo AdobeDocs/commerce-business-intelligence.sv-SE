@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # Beräknad kolumn för händelsenummer
 
-I det här avsnittet beskrivs syftet med och användningsområdena för `Event Number` beräknad kolumn tillgänglig i **[!DNL Manage Data > Data Warehouse]** sida. Nedan visas en förklaring av vad det gör, följt av ett exempel, och hur det går till att skapa det.
+I det här avsnittet beskrivs syftet med och användningsområdena för `Event Number` beräknad kolumn tillgänglig i **[!DNL Manage Data > Data Warehouse]** sida. Nedan visas en förklaring av vad det gör, följt av ett exempel, och hur det fungerar.
 
 **Förklaring**
 
@@ -51,7 +51,7 @@ Här följer några instruktioner om hur du skapar en `Event Number` kolumn:
 
 1. Den andra listrutan `Event Rank` Anger den kolumn som tvingar den sekvens som bestämmer radens rangordning. Om `Customer's order number`, `created_at` tidsstämpeln är `Event Rank`.
 
-1. Under `Options` kan du lägga till filter för att utesluta rader från övervägandet. De uteslutna raderna har en `NULL` värdet för den här kolumnen.
+1. Under `Options` kan du lägga till filter för att utesluta rader från övervägandet. Undantagna rader har en `NULL` värdet för den här kolumnen.
 
 1. Ange ett namn för kolumnen och klicka på **[!UICONTROL Save]**.
 

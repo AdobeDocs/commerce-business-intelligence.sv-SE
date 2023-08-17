@@ -1,5 +1,5 @@
 ---
-title: Skapa och använda Data warehouse-vyer
+title: Skapa och använda Data Warehouse
 description: Lär dig mer om hur du skapar nya lagrade tabeller genom att ändra en befintlig tabell eller genom att sammanfoga eller konsolidera flera tabeller med hjälp av SQL.
 exl-id: 5aa571c9-7f38-462c-8f1b-76a826c9dc55
 role: Admin, Data Architect, Data Engineer, User
@@ -11,13 +11,13 @@ ht-degree: 9%
 
 ---
 
-# Arbeta med Data warehouse-vyer
+# Arbeta med Data Warehouse
 
 I det här dokumentet beskrivs syftet med och användningsområdena för `Data Warehouse Views` tillgängliga genom att navigera till **[!UICONTROL Manage Data]** > **[!UICONTROL Data Warehouse Views]**. Nedan finns en förklaring av vad det gör och hur du skapar vyer, samt ett exempel på hur du använder `Data Warehouse Views` konsolidera [!DNL Facebook] och [!DNL AdWords] spendera data.
 
 ## Allmänt syfte
 
-The `Data Warehouse Views` är en metod för att skapa nya lagrade tabeller genom att ändra en befintlig tabell eller genom att sammanfoga eller konsolidera flera tabeller med hjälp av SQL. En gång en `Data Warehouse View` har skapats och bearbetats av en uppdateringscykel, fylls i i Data warehouse som en ny tabell under `Data Warehouse Views` rullgardinsmeny enligt nedan:
+The `Data Warehouse Views` är en metod för att skapa nya lagrade tabeller genom att ändra en befintlig tabell eller genom att sammanfoga eller konsolidera flera tabeller med hjälp av SQL. En gång en `Data Warehouse View` har skapats och bearbetats av en uppdateringscykel, fylls den i i Datan Warehouse som en ny tabell under `Data Warehouse Views` rullgardinsmeny enligt nedan:
 
 ![](../../assets/Data_Warehouse.png)
 
@@ -27,7 +27,7 @@ Från och med nu fungerar din nya vy som vilken annan tabell som helst, vilket g
 
 Om du känner till SQL använder båda dessa konsolideringsexempel `UNION` men du kan använda valfri PostgreSQL-syntax och funktioner när du skapar en ny vy.
 
-## Skapa och hantera Data warehouse-vyer
+## Skapa och hantera Data Warehouse
 
 Nytt `Data Warehouse Views` kan skapas och befintliga vyer kan tas bort genom att navigera till **[!UICONTROL Manage Data]** > **[!UICONTROL Data Warehouse Views]**, enligt nedan:
 
@@ -36,7 +36,7 @@ Nytt `Data Warehouse Views` kan skapas och befintliga vyer kan tas bort genom at
 Här kan du skapa en vy genom att följa exempelinstruktionerna nedan:
 
 1. Om du observerar en befintlig vy klickar du **[!UICONTROL New Data Warehouse View]** om du vill öppna ett tomt frågefönster. Om ett tomt frågefönster redan är öppet fortsätter du till nästa steg.
-1. Ge vyn ett namn genom att skriva i `View Name` fält. Det namn som anges här anger visningsnamnet för vyn i Data warehouse. `View names` begränsas till gemena bokstäver, siffror och understreck (_). Alla andra tecken tillåts inte.
+1. Ge vyn ett namn genom att skriva i `View Name` fält. Det namn som anges här avgör visningsnamnet för vyn i Datan Warehouse. `View names` begränsas till gemena bokstäver, siffror och understreck (_). Alla andra tecken tillåts inte.
 1. Ange frågan i fönstret `Select Query`, med vanlig PostgreSQL-syntax.
 
    >[!NOTE]
@@ -45,7 +45,7 @@ Här kan du skapa en vy genom att följa exempelinstruktionerna nedan:
 
 1. När du är klar klickar du på **[!UICONTROL Save]** för att spara din vy. Din vy har en `Pending` status tills den bearbetas av nästa fullständiga uppdateringscykel, då statusen ändras till `Active`. När vyn har bearbetats av en uppdatering är den klar att användas i rapporter.
 
-Det är viktigt att notera att den underliggande frågan som användes när den sparades genererade en `Data Warehouse View` kan inte redigeras. Om du behöver justera strukturen för ett `Data Warehouse View`måste du skapa en vy och manuellt migrera beräknade kolumner, mätvärden eller rapporter från den ursprungliga vyn till den nya. När migreringen är klar kan du ta bort den ursprungliga vyn. För `Data Warehouse Views` går inte att redigera, Adobe rekommenderar att du testar frågans utdata med `SQL Report Builder` innan du sparar frågan som en Data warehouse-vy.
+Det är viktigt att notera att den underliggande frågan som användes när den sparades genererade en `Data Warehouse View` kan inte redigeras. Om du behöver justera strukturen för ett `Data Warehouse View`måste du skapa en vy och manuellt migrera beräknade kolumner, mätvärden eller rapporter från den ursprungliga vyn till den nya. När migreringen är klar kan du ta bort den ursprungliga vyn. För `Data Warehouse Views` går inte att redigera, Adobe rekommenderar att du testar frågans utdata med `SQL Report Builder` innan du sparar frågan som en Data Warehouse-vy.
 
 ## Exempel: [!DNL Facebook] och [!DNL Google AdWords] data
 
@@ -86,7 +86,7 @@ Det finns några krav på `UNION` programsats som är värd att omnämnas enligt
 * Alla frågor måste returnera samma antal kolumner
 * Motsvarande kolumner måste ha identiska datatyper
 
-När en `UNION` eller `UNION ALL` -programsats, så återspeglar namnen på kolumnerna i det slutliga resultatet namngivningen av kolumnerna i den första frågan.
+När en `UNION` eller `UNION ALL` -programsats, kommer namnen på kolumnerna i det slutliga resultatet att återspegla namngivningen av kolumnerna i den första frågan.
 
 Oftast konsolideras dina [!DNL Facebook] och [!DNL Google AdWords] lägga in data i `Data Warehouse View` kräver att en tabell med sju kolumner skapas, med en fråga som liknar den nedan:
 
@@ -136,11 +136,11 @@ I stället för att skapa en separat uppsättning marknadsföringsstatistik för
 
 **Behöver du mer hjälp?**
 
-Skriver SQL och skapar `Data Warehouse Views` ingår inte i teknisk support. Men [Tjänstteam](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) ger hjälp med att skapa vyer. Allt från att migrera en äldre databas med en ny databas till att skapa en enda Data warehouse-vy för en specifik analys kan supportteamet hjälpa till.
+Skriver SQL och skapar `Data Warehouse Views` ingår inte i teknisk support. Men [Tjänstteam](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) ger hjälp med att skapa vyer. Allt från att migrera en äldre databas med en ny databas till att skapa en enda Data Warehouse View för en viss analys kan supportteamet hjälpa till.
 
 Oftast skapas en ny `Data Warehouse View` för konsolidering av 2-3 likartat strukturerade tabeller krävs fem timmars tjänstetid, vilket innebär ungefär 1 250 dollar i arbete. Nedan anges dock några vanliga faktorer som kan öka den förväntade investeringen:
 
 * Konsolidering av mer än tre tabeller i en enda vy
-* Skapa mer än en vy i Data warehouse
+* Skapa mer än en Data Warehouse
 * Komplexa föreningslogik eller filtervillkor
 * Konsolidering av två eller flera tabeller med olika datastrukturer

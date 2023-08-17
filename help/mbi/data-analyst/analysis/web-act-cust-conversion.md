@@ -49,7 +49,7 @@ Den här rapportsamlingen skapas med följande:
 1. Ändra din tidsperiod till ett rörligt intervall, från 13 månader sedan till 1 månad sedan, och justera tidsintervallet till `by month`.
 1. Ge rapporten ett namn, som `Page views by month,` och klicka **[!UICONTROL Save]**.
 
-**Det tredje diagrammet visar studsfrekvensen det senaste året:**
+**Det tredje diagrammet visar studsfrekvensen under det senaste året:**
 
 1. Skapa en rapport.
 1. Klicka **[!UICONTROL Add Metric]**, muspekaren över [!DNL Google Analytics] längst ned i listrutan och välj _Studsfrekvens_.
@@ -61,7 +61,7 @@ Den här rapportsamlingen skapas med följande:
 1. Skapa en rapport.
 1. Klicka **UICONTROL Add Metric**, muspekaren över [!DNL Google Analytics] längst ned i listrutan och välj `Average Session Length`.
 1. Ändra din tidsperiod till ett rörligt intervall, från 13 månader sedan till 1 månad sedan, och justera tidsintervallet till `by month`?
-1. Lägg till en `Group by` och markera `New or returning visitor`.  Kontrollera `Show All` box; sedan klicka **[!UICONTROL Apply]**.
+1. Lägg till en `Group by` och markera `New or returning visitor`.  Kontrollera `Show All` ruta och klicka sedan på **[!UICONTROL Apply]**.
 1. Ge rapporten ett namn, som `Average session length`och klicka **[!UICONTROL Save]**.
 
 **Titta sedan på dina viktigaste referensdomäner de senaste 30 dagarna:**
@@ -69,8 +69,8 @@ Den här rapportsamlingen skapas med följande:
 1. Skapa en rapport.
 1. Klicka **[!UICONTROL Add Metric]**, muspekaren över [!DNL Google Analytics] längst ned i listrutan och välj `Sessions`.
 1. Ändra din tidsperiod till ett rörligt intervall, från 31 dagar sedan till 1 dag sedan, och justera tidsintervallet till `none`.
-1. Lägg till en `Group by` och markera `ga:source`.  Kontrollera _Visa alla_ box; sedan klicka **[!UICONTROL Apply]**.
-1. Lägg till ytterligare `group by` och markera `ga:medium`. Kontrollera igen `Show All` box; sedan klicka **[!UICONTROL Apply]**.
+1. Lägg till en `Group by` och markera `ga:source`.  Kontrollera _Visa alla_ ruta och klicka sedan på **[!UICONTROL Apply]**.
+1. Lägg till ytterligare `group by` och markera `ga:medium`. Återigen, kontrollera `Show All` ruta och klicka sedan på **[!UICONTROL Apply]**.
 1. Ge rapporten ett namn, som `Top 20 Referring Domains, 30 Days`och klicka **[!UICONTROL Save]**.
 
 **Slutligen: se på konverteringen:**
@@ -92,9 +92,9 @@ Den här rapportsamlingen skapas med följande:
    * **[!UICONTROL Hide]** måttet
    * Ändra tidsperioden till `24 months ago to now`och justera tidsintervallet till `by month`.
    * Lägg till följande formler genom att klicka **[!UICONTROL Formula]**.
-   * A/D-klicka sedan **[!UICONTROL Apply]**
+   * A/D och klicka sedan på **[!UICONTROL Apply]**
    * Byt namn på formeln `Registration conversion`
-   * B/D och klicka sedan **[!UICONTROL Apply]**
+   * B/D och klicka sedan på **[!UICONTROL Apply]**
    * Byt namn på formeln `First order conversion`
    * C/D och klicka sedan på **[!UICONTROL Apply]**
    * Byt namn på formeln `Any order conversion`

@@ -85,7 +85,7 @@ Mätvärden som ska skapas
    * Om du aktiverar gästorder använder du `customer_email`
 
 * I **`orders`** table
-* Detta mått utför en **Antal distinkta värden**
+* Det här måttet utför en **Antal distinkta värden**
 * På **`customer_id`** kolumn
 * Beställd av **`Customer's first order date`** tidsstämpel
 
@@ -97,7 +97,7 @@ Mätvärden som ska skapas
 
 ### Rapportinstruktioner
 
-**Förväntade intäkter per kund per månad**
+**Förväntad intäkt per kund per månad**
 
 * Mått `A`: `Revenue (hide)`
    * `Calendar months between first order and this order` `<= X` (Välj ett rimligt tal för X, till exempel 24 månader)

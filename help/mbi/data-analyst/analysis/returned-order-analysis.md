@@ -17,7 +17,7 @@ I det här avsnittet visas hur du konfigurerar en kontrollpanel som innehåller 
 
 ![](../../assets/detailed-returns-dboard.png)
 
-Innan du börjar måste du vara en [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) kund och bör se till att företaget använder `enterprise\_rma` register för returer.
+Innan du kommer igång måste du vara en [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) kund och bör se till att företaget använder `enterprise\_rma` register för returer.
 
 Denna analys innehåller [avancerade beräknade kolumner](../data-warehouse-mgr/adv-calc-columns.md).
 
@@ -110,21 +110,21 @@ Kolumner att skapa
 
 * **Returnerar**
 * I **`enterprise_rma`** table
-* Detta mått utför en **Antal**
+* Det här måttet utför en **Antal**
 * På **`entity_id`** kolumn
 * Beställd av **`date_requested`**
 * [!UICONTROL Filter]: `Returns we count`
 
 * **Returnerade artiklar**
 * I **`enterprise_rma_item_entity`** table
-* Detta mått utför en **Summa**
+* Det här måttet utför en **Summa**
 * På **`qty_approved`** kolumn
 * Beställd av **`return date_requested`**
 * [!UICONTROL Filter]: `Returns we count`
 
 * **Returnerat artikeltotalvärde**
 * I **`enterprise_rma_item_entity`** table
-* Detta mått utför en **Summa**
+* Det här måttet utför en **Summa**
 * På **`Returned item total value (qty_returned * price)`** kolumn
 * Beställd av **`return date_requested`**
 * [!UICONTROL Filter]: `Returns we count`
@@ -155,7 +155,7 @@ Kolumner att skapa
    * `Is customer's last order? (1=yes/0=no) = 0`
    * `Order contains a return? (1=yes/0=No) = 1`
 
-* Formel: Sannolikhet för upprepad order
+* Formel: Sannolikhet för upprepad ordning
 * [!UICONTROL Formula]: `B / A`
 * 
   [!UICONTROL Format]: `Percentage`
@@ -186,7 +186,7 @@ Kolumner att skapa
 * [!UICONTROL Filter]:
    * `Order contains a return? (1=yes/0=No) = 1`
 
-* Formel: % av beställningar med avkastning
+* Formel: % av order med returrätt
 * [!UICONTROL Formula]: `B / A`
 * 
   [!UICONTROL Format]: `Percentage`
@@ -205,7 +205,7 @@ Kolumner att skapa
 * 
   [!UICONTROL-diagramtyp]: `Line`
 
-* **Kunder som har gjort en retur och inte köpt igen**
+* **Kunder som har gjort returer och inte köpt på nytt**
 * Mått `A`: `Number of orders with returns`
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]:
@@ -222,7 +222,7 @@ Kolumner att skapa
 
 * **Returränta per artikel**
 * Mått `A`: `Returned items` (Dölj)
-* [!UICONTROL Metric]: Returnerade artiklar
+* [!UICONTROL Metric]: Returnerade objekt
 
 * Mått `B`: `Items sold` (Dölj)
 * [!UICONTROL Metric]: `Number of orders`

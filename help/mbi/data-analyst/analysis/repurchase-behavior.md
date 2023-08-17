@@ -24,7 +24,7 @@ Till kunder som köper en *specifikt objekt*,
 
 ## Rekommenderade mått
 
-När du bygger kundrepriser rekommenderar Adobe att du använder följande mått:
+När du bygger kundrepriser rekommenderar Adobe att du använder följande mätvärden:
 
 ### Sannolikhet för upprepad order
 
@@ -40,7 +40,7 @@ Med denna mätmetod kan ni förstå om kunder som köper specifika artiklar är 
 
 ### Tid till nästa order
 
-Detta mått visar kundens orderfrekvens eller den tid det tar för kunden att beställa igen. Om tiden till nästa beställning är kortare för ett objekt jämfört med andra objekt, kan det tyda på att personer som köper det här objektet ofta kommer tillbaka tidigare.
+Detta mått visar kundens orderfrekvens eller den tid det tar för kunden att beställa igen. Om tiden till nästa beställning är kortare för ett objekt jämfört med andra objekt, kan det tyda på att personer som köper det här objektet tenderar att komma tillbaka tidigare.
 
 ## Exempel: kaffeprodukter
 
@@ -78,8 +78,8 @@ Bland kunder som köpt kaffekapslar gör hälften en ny beställning på ungefä
 
 Med hjälp av de mätvärden som beskrivs i det här avsnittet kan du även skapa andra användbara återköpsanalyser. Du kan till exempel även se hur kunderna återköper **samma objekt** - till exempel om de köper påfyllningar regelbundet. Kapslar och kaffebönor kan återköpas regelbundet, men det skulle vara oväntat att se kunderna göra upprepade inköp av kaffebryggaren. Om ni fokuserar på återfyllnad eller återinsättning är den här analysen användbar.
 
-Förutom att analysera återköpets beteende hos era kunder kan ni också skapa analyser som tittar på kundlojaliteten. Överväg att analysera mönster i kundomsättning - var lämnar era kunder er webbplats och inte kommer tillbaka? I vilken takt inträffar detta?
+Förutom att analysera återköpets beteende hos era kunder kan ni också bygga analyser som tittar på kundlojaliteten. Överväg att analysera mönster i kundomsättning - var lämnar era kunder er webbplats och inte kommer tillbaka? I vilken takt inträffar detta?
 
 När du har identifierat varför det händer något kan du använda din analys för att skapa en `reactivation` kampanj. Med hjälp av dessa data kan du identifiera användare som har blivit inaktiva, hur länge det har varit sedan deras senaste besök, vilket deras senaste köp var och så vidare. På så sätt kan ni fatta konkreta beslut som får kunderna att komma tillbaka.
 
-Om du behöver hjälp med analys [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+Om du vill ha hjälp med analys [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

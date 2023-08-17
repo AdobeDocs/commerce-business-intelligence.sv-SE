@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ![](../../../assets/google-analytics-logo.png)
 
-[!DNL Google Analytics] är den vanligaste webbanalystjänsten på Internet. Implementering [!DNL Google Analytics] på er webbplats kan ni spåra hur besökarna använder er webbplats, vilket innehåll som är attraktivt, var besökarna lämnar webbplatsen och mycket annat. Analysera mätvärdena i [!DNL Commerce Intelligence], tillsammans med andra data, förbättrar webbplatsens övergripande hälsa och användbarhet.
+[!DNL Google Analytics] är den vanligaste webbanalystjänsten på Internet. Implementering [!DNL Google Analytics] på er webbplats kan ni spåra hur besökarna använder er webbplats, vilket innehåll som är attraktivt, var besökarna lämnar webbplatsen och mycket annat. Analysera mätvärdena i [!DNL Commerce Intelligence], tillsammans med andra datadelar, förbättrar webbplatsens övergripande hälsa och användbarhet.
 
 Kom igång genom att ange [!DNL Google Analytics] inloggningsuppgifter till [!DNL Commerce Intelligence]:
 
@@ -27,7 +27,7 @@ Kom igång genom att ange [!DNL Google Analytics] inloggningsuppgifter till [!DN
 
 1. Klicka **[!UICONTROL Add Integration]**, som finns till höger på skärmen.
 
-1. Klicka på [!DNL Google Analytics] ikon. Då öppnas [!DNL Google Analytics] inloggningssida.
+1. Klicka på [!DNL Google Analytics] -ikon. Då öppnas [!DNL Google Analytics] inloggningssida.
 
 1. Ange [!DNL Google Analytics] autentiseringsuppgifter. När auktoriseringsprocessen är slutförd omdirigeras du tillbaka till [!DNL Commerce Intelligence].
 

@@ -15,7 +15,7 @@ ht-degree: 0%
 
 För er verksamhet kan helgerna vara en av årets livligaste tider. För detaljhandlare med en stor amerikansk kundbas spänner semestersäsongen vanligen mellan Thanksgiving och New Year.
 
-Penslar kan användas när som helst under året. Om ditt företag till exempel säljer kortbyxor eller poolleveranser kan du få en rusning under sommaren. I det här avsnittet beskrivs analyser som hjälper dig att jämföra dina högsäsonger över olika år.
+Penslar kan upplevas när som helst under året. Om ditt företag till exempel säljer brist eller poolförråd kan du uppleva en rusning under sommaren. I det här avsnittet beskrivs analyser som hjälper dig att jämföra dina högsäsonger över olika år.
 
 ## Rekommenderade mått
 
@@ -29,13 +29,13 @@ För att ni ska förstå hur mönstret för årets tillväxt ser ut jämfört me
 
 Den här åtgärden visar det totala genomsnittliga ordervärdet under semestersäsongerna.
 
-## Exempel: Dagens semestersäsongsintäkter
+## Exempel: Daglig semestersäsongsintäkt
 
 Nu när du vet vilka mätvärden du ska analysera kan du titta på några exempelintäkter under semestersäsongen i november och december för både 2014 och 2015.
 
 ![Dagliga intäkter från semestersäsongen för 2014 och 2015](../../assets/Analyzing_holiday_season.png)
 
-I det här exemplet har det skett två stora intäktsökningar för 2014 och 2015: dessa ökningar sammanfaller med Black Friday och Cyber Monday. Lägg märke till att topparna inte är samma dag för 2014 och 2015. Det beror på att Black Friday föll den 27 november 2014 och den 28 november 2015. På samma sätt var Cyber Monday 30 november 2014 och 1 december 2015.
+I det här exemplet har det skett två stora intäktsökningar för 2014 och 2015: de här ökningarna sammanfaller med Black Friday och Cyber Monday. Lägg märke till att topparna inte är samma dag för 2014 och 2015. Det beror på att Black Friday föll den 27 november 2014 och den 28 november 2015. På samma sätt var Cyber Monday 30 november 2014 och 1 december 2015.
 
 Dessutom har det skett en ökning av intäkterna för 2015 den 19 december som inte uppträder 2014. Det är möjligt att en försäljning erbjöds just den här lördagen som inte var tillgänglig det föregående året.
 

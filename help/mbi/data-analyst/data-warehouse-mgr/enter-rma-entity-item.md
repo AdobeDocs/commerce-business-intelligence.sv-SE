@@ -24,12 +24,12 @@ Varje rad i `enterprise_rma_item_entity` tabell (anropas ofta `magento_rma_item_
 | **Kolumnnamn** | **Beskrivning** |
 |---|---|
 | `entity\_id` | Unik identifierare för registret. Varje `entity\_id` representerar ett objekt som har begärts för retur. |
-| `rma\_entity\_id` | Sekundärnyckel som är associerad med `enterprise\_rma` tabell. |
+| `rma\_entity\_id` | Sekundärnyckel associerad med `enterprise\_rma` tabell. |
 | `status` | Status för artikelns retur. Värdena är bland annat&quot;mottagen&quot;,&quot;väntande&quot; och&quot;auktoriserad&quot;. Värdena i den här statusen kanske inte matchar värdet för den totala returens status. |
 | `qty\_requested` | Kvantiteten som kunden begär för retur. |
 | `qty\_approved` | Den kvantitet som godkänts för retur. |
 | `qty\_returned` | Returnerad kvantitet. |
-| `order\_item\_id` | Sekundärnyckel som är associerad med `sales\_flat\_order\_item` tabell. |
+| `order\_item\_id` | Sekundärnyckel associerad med `sales\_flat\_order\_item` tabell. |
 | `product\_sku` | Den sku som returneras. |
 
 {style="table-layout:auto"}
@@ -49,7 +49,7 @@ Varje rad i `enterprise_rma_item_entity` tabell (anropas ofta `magento_rma_item_
 | **Måttnamn** | **Beskrivning** | **Konstruktion** |
 |---|---|---|
 | `Number of items returned` | Antalet artiklar som returneras. | Åtgärdskolumn: returnerad kvantitet<br>Åtgärd: Summa<br>Tidsstämpelkolumn: Begärt returdatum |
-| `Returned items' total value` | Det returnerade penningbeloppet. | Åtgärdskolumn: Returartikelns totala värde (returnerad kvantitet * pris)<br>Åtgärd: Summa<br>Tidsstämpelkolumn: Begärt returdatum |
+| `Returned items' total value` | Det returnerade penningbeloppet. | Åtgärdskolumn: Returartikelns totala värde (returnerat antal * pris)<br>Åtgärd: Summa<br>Tidsstämpelkolumn: Begärt returdatum |
 
 {style="table-layout:auto"}
 

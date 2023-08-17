@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Instrumentpanelsgrupper ger bättre ordning på kontrollpanelerna. Det vanligaste användningsområdet är att gruppera liknande kontrollpaneler under samma&quot;grupp&quot;. Till exempel kan alla kontrollpaneler som är relaterade till marknadsföring grupperas under en kontrollpanelsgrupp&quot;Marknadsföring&quot;.
 
-I listrutan för val av kontrollpanel visas kontrollpanelsgrupper i alfabetisk ordning, med alla kontrollpaneler under Ingen grupp senast visade. Kontrollpaneler under samma grupp visas tillsammans och i alfabetisk ordning inom varje grupp.
+I listrutan för val av kontrollpanel visas kontrollpanelsgrupper i alfabetisk ordning med alla kontrollpaneler under Ingen grupp senast. Kontrollpaneler under samma grupp visas tillsammans och i alfabetisk ordning inom varje grupp.
 
 ## Gruppdelning på instrumentpanel
 
@@ -23,7 +23,7 @@ Instrumentpanelsgrupper kan inte delas direkt mellan användare. När en kontrol
 
 När en kontrollpanels grupp ändras av dess ägare återspeglas ändringen automatiskt för alla användare som kontrollpanelen har delats med. Användare kan inte ändra kontrollpanelsgruppen för kontrollpaneler som de inte äger.
 
-## Skapa instrumentpanelsgrupper
+## Skapa panelgrupper
 
 Kontrollpanelsgrupper kan skapas på ett av två sätt:
 
@@ -45,7 +45,7 @@ Kontrollpanelsgrupper kan skapas på ett av två sätt:
 
 1. På `Manage Data > Dashboards` väljer du den kontrollpanel som gruppen ska ändras för.
 
-1. Texten under `Dashboard Group (optional)` visar instrumentpanelsgruppen.
+1. Texten under `Dashboard Group (optional)` visar den aktuella instrumentpanelsgruppen för instrumentpanelen.
 
 1. Om du vill ändra gruppen på kontrollpanelen väljer du en annan grupp i listan - i det här fallet `PS`, `Campaigns`.
 

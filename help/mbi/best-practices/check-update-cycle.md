@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Uppdatera förlopp för cykel
 
-När du loggar in på [!DNL Adobe Commerce Intelligence] på kontrollpanelen finns det flera sätt att kontrollera status för den senaste uppdateringscykeln. Det beror helt på vilken typ av [användarbehörigheter](../administrator/user-management/user-management.md) som du har.
+När du loggar in på [!DNL Adobe Commerce Intelligence] på kontrollpanelen finns det flera sätt att kontrollera status för den senaste uppdateringscykeln. Allt beror på typen av [användarbehörigheter](../administrator/user-management/user-management.md) som du har.
 
 ## Varför ska jag kontrollera statusen för uppdateringscykeln?
 
-Att kontrollera statusuppdateringscykeln är användbart när du granskar data i [!DNL Commerce Intelligence] konto. Om du ser [resultat som inte uppfyller dina förväntningar](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md)t.ex. daglig försäljning [!DNL Commerce Intelligence] matchar inte det du ser i din e-handelsplattform eller i din [[!DNL Google] e-handelsintäkter](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html) Du kan kontrollera den sista datapunkten för att se om problemet är löst när en uppdatering har slutförts.
+Att kontrollera statusuppdateringscykeln är användbart när du granskar data i [!DNL Commerce Intelligence] konto. Om du ser [resultat som inte uppfyller dina förväntningar](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md)till exempel daglig försäljning i [!DNL Commerce Intelligence] matchar inte det du ser i e-handelsplattformen eller i [[!DNL Google] e-handelsintäkter](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html) Du kan kontrollera den sista datapunkten för att se om problemet är löst när en uppdatering har slutförts.
 
 ## [!UICONTROL Read-Only] och [!UICONTROL Standard] Användare
 
@@ -41,4 +41,4 @@ Om en uppdatering inte pågår visas en länk som tvingar en uppdatering att sta
 
 >[!NOTE]
 >
->Om du har öppethållande timmar (tid när du inte vill ha det) [!DNL Commerce Intelligence] för att uppdatera dina data) startas en uppdateringscykel som inte respekterar begränsningarna för dessa öppningstider.
+>Om du har öppethållande timmar (tid när du inte vill ha det [!DNL Commerce Intelligence] för att uppdatera dina data) startas en uppdateringscykel som inte respekterar begränsningarna för dessa öppningstider.

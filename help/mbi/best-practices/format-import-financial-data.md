@@ -31,7 +31,7 @@ Förenkla en tvådimensionell tabell med en [!DNL Excel] pivottabell:
 1. Öppna Pivottabellguiden. I [!DNL Windows], kortkommandot är `Alt-D`. I [!DNL Mac OS], ange `Command-Option-P`.
 1. Välj **[!UICONTROL Multiple consolidated ranges]** och klicka **[!UICONTROL Next]**.
 1. Välj **[!UICONTROL I will create the page fields]** och klicka **[!UICONTROL Next]**.
-1. Markera hela datauppsättningen i den tvådimensionella tabellen, inklusive etiketterna. Se till att `0` väljs för antalet önskade sidfält och klickar **[!UICONTROL Next]**.
+1. Markera hela datauppsättningen i den tvådimensionella tabellen, inklusive etiketterna. Se till att `0` väljs för antalet önskade sidfält och klickar på **[!UICONTROL Next]**.
 1. Skapa pivottabellen i ett nytt blad och klicka på **[!UICONTROL Finish]**.
 1. Avmarkera kolumn- och radfälten i fältlistan.
 1. Dubbelklicka på det resulterande numeriska värdet för att visa de separerade källdata i ett nytt blad.
@@ -40,4 +40,4 @@ Förenkla en tvådimensionell tabell med en [!DNL Excel] pivottabell:
 
 ## Radbrytning
 
-Datatabellen har konverterats till ett listformat och bevarar all ursprunglig information. Den kan nu konverteras [importerat till [!DNL Commerce Intelligence]](../data-analyst/importing-data/connecting-data/using-file-uploader.md) för analys.
+Datatabellen har konverterats till ett listformat och bevarar all ursprunglig information, och kan nu [importerat till [!DNL Commerce Intelligence]](../data-analyst/importing-data/connecting-data/using-file-uploader.md) för analys.

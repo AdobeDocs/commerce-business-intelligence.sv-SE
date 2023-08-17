@@ -19,9 +19,9 @@ ht-degree: 0%
 * [Referenskarta](#map)
 * [Avancerade beräknade kolumner](#advanced)
 
-I [data warehouse Manager](../data-warehouse-mgr/tour-dwm.md)kan du skapa kolumner för att förbättra och optimera data för analys. [Den här funktionen](../data-warehouse-mgr/creating-calculated-columns.md) kan du komma åt genom att markera en tabell i Data warehouse Manager och klicka på **[!UICONTROL Create New Column]**.
+I [Data Warehouse Manager](../data-warehouse-mgr/tour-dwm.md)kan du skapa kolumner för att förbättra och optimera data för analys. [Den här funktionen](../data-warehouse-mgr/creating-calculated-columns.md) kan du komma åt genom att markera en tabell i Data Warehouse Manager och klicka på **[!UICONTROL Create New Column]**.
 
-I det här avsnittet beskrivs de typer av kolumner som du kan skapa med Data warehouse Manager. Den innehåller även en beskrivning, en visuell genomgång av den kolumnen och en [referenskarta](#map) av alla indata som krävs för att skapa en kolumn. Det finns tre sätt att skapa beräknade kolumner:
+I det här avsnittet beskrivs de kolumntyper som du kan skapa med Data Warehouse Manager. Den innehåller även en beskrivning, en visuell genomgång av den kolumnen och en [referenskarta](#map) av alla indata som krävs för att skapa en kolumn. Det finns tre sätt att skapa beräknade kolumner:
 
 1. [Samma tabellberäknade kolumner](#sametable)
 1. [En-till-många beräknade kolumner](#onetomany)
@@ -87,7 +87,7 @@ Detta kan användas för att skapa kundnivådimensioner som `Customer's first or
 
 ### Finns {#exists}
 
-En beräknad kolumn är ett binärt test som fastställer förekomsten av en post på många sidor. Med andra ord returnerar den nya kolumnen ett `1` om banan förbinder minst en rad i varje tabell, och `0` om ingen anslutning kan göras.
+En beräknad kolumn är ett binärt test som fastställer förekomsten av en post på många sidor. Med andra ord returnerar den nya kolumnen ett `1` om banan förbinder minst en rad i varje tabell, och `0` om det inte går att ansluta.
 
 Den här typen av dimension kan till exempel avgöra om en kund någonsin köpt en viss produkt. Använda ett hörn mellan en `customers` tabell och `orders` register, ett filter för en viss produkt, en dimension `Customer has purchased Product X?` kan byggas.
 

@@ -47,7 +47,7 @@ Det finns tre åtkomstnivåer i [!DNL Commerce Intelligence] för kontrollpanele
 
 Användarbehörigheter kan ändras på ett av två sätt - för alla användare eller för en enskild användare.
 
-1. *Om du vill ändra alla användarbehörigheter* använd listrutan bredvid `Set all users' permissions to…` label.
+1. *Om du vill ändra alla användarbehörigheter* använd listrutemenyn bredvid `Set all users' permissions to…` etikett.
 
 1. *Om du vill ändra en enskild användares behörigheter* Använd listrutan bredvid användarens namn för att ange önskad åtkomstnivå.
 
@@ -57,7 +57,7 @@ Så här ändrar du standardinstrumentpanelen för kontot:
 
 1. Klicka på namnet på den kontrollpanel som du vill använda som standard.
 
-1. Klicka **[!UICONTROL Make Default]**.
+1. Klicka på **[!UICONTROL Make Default]**.
 
 ## Ta bort instrumentpaneler {#delete}
 
@@ -65,4 +65,4 @@ Så här tar du bort en kontrollpanel:
 
 1. Klicka på namnet på den kontrollpanel som du vill ta bort.
 
-1. Klicka **[!UICONTROL Delete Dashboard]**.
+1. Klicka på **[!UICONTROL Delete Dashboard]**.

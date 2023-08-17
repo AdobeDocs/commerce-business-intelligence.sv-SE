@@ -43,7 +43,7 @@ Förutom optimering för analys **uppdaterad\_at** kan du även använda kolumne
 
 ## Källa för användarförvärv
 
-En av de vanligaste felen är [inhämtningskälla](../data-analyst/analysis/google-track-user-acq.md) (UAS) lagras inte i den operativa databasen. I de flesta fall när detta är ett problem spåras bara UAS [!DNL Google Analytics] eller något annat webbanalysverktyg. Dessa verktyg kan vara värdefulla, men det finns vissa nackdelar med att enbart lagra UAS i dem. du kan t.ex. inte extrahera data på användarnivå från dessa verktyg. När det är möjligt är det oftast en svår process. Det bör vara enkelt att få fram den här informationen och kombinera den med data från andra källor, t.ex. beteendeinformation och transaktionsinformation som också lagras i databasen.
+En av de vanligaste felen är [inhämtningskälla](../data-analyst/analysis/google-track-user-acq.md) (UAS) lagras inte i den operativa databasen. I de flesta fall när detta är ett problem spåras bara UAS [!DNL Google Analytics] eller något annat webbanalysverktyg. Dessa verktyg kan vara värdefulla, men det finns vissa nackdelar med att enbart lagra UAS i dem. Du kan t.ex. inte extrahera data på användarnivå från dessa verktyg. När det är möjligt är det oftast en svår process. Det bör vara enkelt att få fram den här informationen och kombinera den med data från andra källor, t.ex. beteendeinformation och transaktionsinformation som också lagras i databasen.
 
 Att lagra UAS i din egen databas är ofta den största förbättring som onlineföretag kan göra av sina analysfunktioner. Detta gör det möjligt för UAS att analysera försäljning, användarinteraktion, betalningsperioder, kundens livstidsvärde, bortfall och andra kritiska mätvärden. [Dessa data är avgörande när man ska besluta var marknadsföringsresurser ska investeras](../data-analyst/analysis/most-value-source-channel.md).
 
@@ -61,7 +61,7 @@ Om tabellen är en SQL-vy lägger du till en kolumn som kan fungera som primärn
 
 ### Tilldela en datatyp till din datakolumn
 
-Om en datakolumn inte har tilldelats [datatyp](https://en.wikipedia.org/wiki/Data_type), [!DNL Commerce Intelligence] definierar vilken datatyp som ska användas. Om systemet gissar fel kanske du inte kan utföra de relevanta analyserna förrän supportteamet på Adobe justerar kolumnen till rätt datatyp. Om till exempel en datumkolumn tolkas som en numerisk datatyp kan du använda den datumdimensionen för att skapa en trend över tiden.
+Om en datakolumn inte har tilldelats någon [datatyp](https://en.wikipedia.org/wiki/Data_type), [!DNL Commerce Intelligence] definierar vilken datatyp som ska användas. Om systemet gissar fel kanske du inte kan utföra de relevanta analyserna förrän supportteamet på Adobe justerar kolumnen till rätt datatyp. Om till exempel en datumkolumn tolkas som en numerisk datatyp kan du använda den datumdimensionen för att skapa en trend över tiden.
 
 ### Lägg till prefix i datatabellerna om du har flera databaser
 

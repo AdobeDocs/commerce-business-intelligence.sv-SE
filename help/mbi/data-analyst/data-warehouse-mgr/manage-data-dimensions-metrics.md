@@ -25,7 +25,7 @@ Så här lägger du till en eller flera dimensioner till flera mått samtidigt:
 
 1. Gå till **[!UICONTROL Manage Data > Metrics]**.
 
-1. Klicka **[!UICONTROL Add Dimensions To Metric(s)]**.
+1. Klicka på **[!UICONTROL Add Dimensions To Metric(s)]**.
 
 1. Välj den tabell som innehåller dimensionerna.
 
@@ -35,21 +35,21 @@ Så här lägger du till en eller flera dimensioner till flera mått samtidigt:
 
 1. Om du vill segmentera eller gruppera efter någon av rapportens datamått måste du ange att de är _Grupperbar_.
 
-1. Klicka **[!UICONTROL Add]**.
+1. Klicka på **[!UICONTROL Add]**.
 
-## Ta bort dimensioner från flera mått
+## Ta bort dimensioner från flera mätvärden
 
 Så här tar du bort en eller flera dimensioner från flera mått:
 
 1. Gå till **[!UICONTROL Data > Metrics]**.
 
-1. Klicka **[!UICONTROL Remove Dimensions From Metric(s)]**.
+1. Klicka på **[!UICONTROL Remove Dimensions From Metric(s)]**.
 
 1. Välj den tabell som innehåller dimensionerna.
 
 1. Välj de mått som du vill ta bort från vänster och de dimensioner som du vill ta bort till höger.
 
-1. Klicka **[!UICONTROL Remove]**.
+1. Klicka på **[!UICONTROL Remove]**.
 
 1. Om dimensionerna används för rapporter visas en varning med listan över diagram som använder dimensionerna. Klicka **[!UICONTROL Delete]** om du vill ta bort de markerade dimensionerna och alla deras underordnade, inklusive rapporter.
 
@@ -65,7 +65,7 @@ Så här tar du bort en eller flera dimensioner från flera mått:
 
 >[!NOTE]
 >
->Alla dimensioner som du vill filtrera eller gruppera efter måste redan spåras i [!DNL Commerce Intelligence]. Om du inte hittar den önskade dimensionen kan du behöva börja spåra en ny datakolumn i databasen via [data warehouse](../data-warehouse-mgr/tour-dwm.md) sida.
+>Alla dimensioner som du vill filtrera eller gruppera efter måste redan spåras i [!DNL Commerce Intelligence]. Om du inte hittar den önskade dimensionen kan du behöva börja spåra en ny datakolumn i databasen via [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) sida.
 
 
 **Så här tar du bort dimensioner från ett mått:**
@@ -78,8 +78,8 @@ Så här tar du bort en eller flera dimensioner från flera mått:
 
 >[!NOTE]
 >
->Även efter att du har tagit bort en dimension finns den fortfarande som en kolumn i tabellen i Data warehouse. Du kan lägga tillbaka det i alla mätvärden och skapa nya mätvärden med dessa mått. Ta bort den datakolumn som en dimension motsvarar från [!DNL Commerce Intelligence]tar du bara bort spåret från datakolumnen via [data warehouse](../data-warehouse-mgr/tour-dwm.md) sida.
+>Även efter att du har tagit bort en dimension finns den fortfarande som en kolumn i tabellen i Datan Warehouse. Du kan lägga tillbaka det i alla mätvärden och skapa nya mätvärden med dessa mått. Ta bort den datakolumn som en dimension motsvarar från [!DNL Commerce Intelligence]tar du bara bort spåret från datakolumnen via [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) sida.
 
 ## Relaterad dokumentation
 
-* [Metodtips för segmentering och filtrering](../../best-practices/segment-filter.md)
+* [Bästa tillvägagångssätt för segmentering och filtrering](../../best-practices/segment-filter.md)

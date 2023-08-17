@@ -2,7 +2,7 @@
 source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
 source-wordcount: '429'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 # Contribute-artikel
@@ -11,7 +11,7 @@ Vi välkomnar bidrag från både vår community och från Adobe anställda utanf
 
 ## Adobe uppförandekod med öppen källkod
 
-Detta projekt har antagit [Adobe uppförandekod med öppen källkod](../code-of-conduct.md) eller [.NET Foundation - uppförandekod](https://dotnetfoundation.org/code-of-conduct). Mer information finns i [Bidrar](../contributing.md) ämne.
+Detta projekt har antagit [Adobe Open Source Code of Conduct](../code-of-conduct.md) eller [.NET Foundation Code of Conduct](https://dotnetfoundation.org/code-of-conduct). Mer information finns i [Bidrar](../contributing.md) ämne.
 
 ## Om dina bidrag till Adobe innehåll
 
@@ -45,16 +45,16 @@ Deltagare i communityn kan använda GitHub-gränssnittet för grundläggande red
 
 Se [Adobe Docs Contributor Guide](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) för mer information.
 
-## Så här använder du kod för att formatera ditt ämne
+## Så här använder du kod för att formatera ämnet
 
 Alla artiklar i den här databasen använder smaksatt GitHub-kod. Om du inte är van vid att markera något läser du:
 
 * [Grunderna i markeringar](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
-* [Utskrivbart markeringsdatablad](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+* [Utskrivbart markeringsblad](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 
 ## Etiketter
 
 I den offentliga databasen tilldelas automatiska etiketter för att hämta begäranden som hjälper oss att hantera pull-arbetsflödet och som hjälper dig att få reda på vad som pågår med din pull-begäran:
 
 * **Ändringen har skickats till författaren**: Författaren har underrättats om den väntande pull-begäran.
-* **redo att sammanfogas**: Redo för granskning av vårt team för granskning av pull-förfrågningar.
+* **redo att sammanfogas**: Klar för granskning av vårt team.

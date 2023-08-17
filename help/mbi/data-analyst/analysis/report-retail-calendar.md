@@ -17,13 +17,13 @@ I det här avsnittet visas hur du konfigurerar strukturen för att använda en [
 
 Eftersom många kunder ändrar sin kalender så att den använder återförsäljnings- eller redovisningsdatum visar stegen nedan hur de arbetar med data och skapar rapporter med hjälp av återförsäljningsdatum. Instruktionerna nedan hänvisar till butikskalendern för 4-5-4, men du kan ändra dem för alla specifika kalendrar som teamet använder, oavsett om det är ekonomiska eller bara en anpassad tidsram.
 
-Innan du börjar bör du granska [filöverföringen](../../data-analyst/importing-data/connecting-data/using-file-uploader.md) och se till att du har förlängt `.csv` -fil. Detta garanterar att datumen täcker alla dina historiska data och för in datumen i framtiden.
+Innan du börjar bör du granska [filöverföringsprogrammet](../../data-analyst/importing-data/connecting-data/using-file-uploader.md) och se till att du har förlängt `.csv` -fil. Detta garanterar att datumen täcker alla dina historiska data och för in datumen i framtiden.
 
 Denna analys innehåller [avancerade beräknade kolumner](../data-warehouse-mgr/adv-calc-columns.md).
 
 ## Komma igång
 
-Du kan [ladda ned](../../assets/454-calendar.csv) a `.csv` version av 4-5-4-kalendern för detaljhandelsår 2014 till 2017. Du kan behöva justera den här filen i enlighet med din interna butikskalender och utöka datumintervallet för att stödja din historiska och aktuella tidsram. När du har hämtat filen använder du filöverföringsprogrammet för att skapa en tabell för butikskalender i [!DNL Commerce Intelligence] data warehouse. Om du använder en oförändrad version av 4-5-4-kalendern för återförsäljning måste du se till att strukturen och datatyperna för fälten i den här tabellen matchar följande:
+Du kan [ladda ned](../../assets/454-calendar.csv) a `.csv` version av 4-5-4-kalendern för detaljhandelsår 2014 till 2017. Du kan behöva justera den här filen i enlighet med din interna butikskalender och utöka datumintervallet för att stödja din historiska och aktuella tidsram. När du har hämtat filen använder du filöverföringsprogrammet för att skapa en tabell för butikskalender i [!DNL Commerce Intelligence] Data Warehouse. Om du använder en oförändrad version av 4-5-4-kalendern för återförsäljning måste du se till att strukturen och datatyperna för fälten i den här tabellen matchar följande:
 
 | Kolumnnamn | Kolumndatatyp | Primär nyckel |
 | --- | --- | --- |
@@ -40,7 +40,7 @@ Du kan [ladda ned](../../assets/454-calendar.csv) a `.csv` version av 4-5-4-kale
 ## Kolumner att skapa
 
 * **sales\_order** table
-   * `INPUT` `created\_at` (åååå-mm-dd 00:00:00)
+   * `INPUT` `created\_at` (åååå-mm-dd 00:00:0)
       * [!UICONTROL Column type]: – `Same table > Calculation`
       * [!UICONTROL Inputs]: – `created\_at`
       * [!UICONTROL Datatype]: – `Datetime`
@@ -56,7 +56,7 @@ Du kan [ladda ned](../../assets/454-calendar.csv) a `.csv` version av 4-5-4-kale
 
         >[!NOTE]
         >
-        >The `now()` funktionen ovan är specifik för PostgreSQL. Fast de [!DNL Commerce Intelligence] data warehouse ligger på PostgreSQL, vissa kan ligga på Redshift. Om beräkningen ovan returnerar ett fel kan du behöva använda funktionen för omflyttning `getdate()` i stället för `now()`.
+        >The `now()` funktionen ovan är specifik för PostgreSQL. Fast de [!DNL Commerce Intelligence] datalager ligger på PostgreSQL, vissa kan ligga på Redshift. Om beräkningen ovan returnerar ett fel kan du behöva använda funktionen för omflyttning `getdate()` i stället för `now()`.
 
    * **Aktuellt år** (Måste skapas av supportanalytiker)
       * [!UICONTROL Column type]: E`vent Counter`
@@ -94,7 +94,7 @@ Du kan [ladda ned](../../assets/454-calendar.csv) a `.csv` version av 4-5-4-kale
       * [!UICONTROL Column type]: `One to Many > JOINED\_COLUMN`
       * Sökväg -
          * [!UICONTROL Many]: sales\_order.\[INPUT\] skapad (åååå-mm-dd 00):00:00
-         * [!UICONTROL One]: Butikskalender.Datum Detaljhandel
+         * [!UICONTROL One]: Detaljhandelskalender.Datum för detaljhandel
       * Välj en [!UICONTROL table]: `Retail Calendar`
       * Välj en [!UICONTROL column]: `Week Retail`
    * **Skapad\_at (återförsäljningsmånad)**

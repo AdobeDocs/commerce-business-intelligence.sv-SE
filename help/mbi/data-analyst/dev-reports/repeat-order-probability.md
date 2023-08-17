@@ -1,5 +1,5 @@
 ---
-title: Sannolikhetsrapport för upprepade order
+title: Sannolikhetsrapport för upprepad order
 description: Lär dig mer och förstå rapporten om sannolikhet för upprepad order.
 exl-id: 2c88b85a-7320-44ca-87a5-5b91250348ea
 role: Admin, Data Architect, Data Engineer, User
@@ -11,11 +11,11 @@ ht-degree: 0%
 
 ---
 
-# Sannolikhetsrapport för upprepade order
+# Sannolikhetsrapport för upprepad order
 
 ## När är `Incremental Event Probability` tillgängliga perspektiv?
 
-The `incremental event probability` perspektiv är bara tillgängligt när filter använder dimensioner som är lika för alla order (till exempel användarens `gender`, användarens `age` eller användarens `source`).
+The `incremental event probability` perspektivet är bara tillgängligt när filter använder dimensioner som är lika för alla order (till exempel användarens `gender`, användarens `age` eller användarens `source`).
 
 Detta beror på att perspektivet bygger på en dimension som kallas `User's order number` för segmentering, som numrerar en användares inköp (t.ex. Johns första, andra och tredje order).
 
@@ -29,9 +29,9 @@ Om du vill skapa en sådan ny dimension [kontakta support](https://experiencelea
 
 ## Jämföra upprepningssannolikhet för order med olika attribut
 
-Om du vill jämföra antalet upprepade köp för olika orderattribut (till exempel orderns `region`) rekommenderar Adobe att du skapar ett diagram som liknar `Users by lifetime number of orders`. Här visas hur många användare som har skapat 1, 2, 3,.. antal order under hela löptiden och lägg till ordernivåfiltret. (med andra ord, detta kan visa dig om användarna gör fler eller mindre upprepade inköp i en region eller en annan.)
+Om du vill jämföra antalet upprepade köp för olika orderattribut (till exempel orderns `region`), Adobe rekommenderar att du skapar ett diagram som liknar `Users by lifetime number of orders`. Här visas antalet användare som har gjort 1, 2, 3,.. antal order under livstid och lagt till ordernivåfiltret. (med andra ord, detta kan visa dig om användarna gör fler eller mindre upprepade inköp i en region eller en annan.)
 
-Siffrorna som utgör ett sådant diagram kan sedan exporteras till excel för att beräkna sannolikhetsförhållandet för upprepade order. Att se sannolikheten för kunder som `(x)` order att skapa `(x+1)` order, enkelt` divide the number of people who've made at least (x+1) purchases by the number of people who have made at least (x)` inköp.
+Siffrorna som utgör ett sådant diagram kan sedan exporteras till excel för att beräkna sannolikhetsförhållandet för upprepade order. Att se sannolikheten för kunder som gjorde `(x)` order att skapa `(x+1)` order, enkelt` divide the number of people who've made at least (x+1) purchases by the number of people who have made at least (x)` inköp.
 
 ### Exempel:
 

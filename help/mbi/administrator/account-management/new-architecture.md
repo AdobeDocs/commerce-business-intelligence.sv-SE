@@ -17,17 +17,17 @@ ht-degree: 0%
 
 ## Fördelar med den nya arkitekturen
 
-* Skapa typer av kolumner i Data warehouse, inklusive beräknade kolumner med SQL.
+* Skapa typer av kolumner i Datan Warehouse, inklusive beräknade kolumner med SQL.
 * Nya kolumner är omedelbart tillgängliga.
 * Datalatens har förbättrats dramatiskt.
 
 ## Tekniska fördelar
 
-De viktigaste skillnaderna listas ovan, men den största förändringen är hur beräkningar utförs under uppdateringscykeln. Beräkningar körs inte längre på varje kolumn under varje uppdatering. körs i stället on demand från Visual Report Builder.
+De viktigaste skillnaderna listas ovan, men den största förändringen är hur beräkningar utförs under uppdateringscykeln. Beräkningar körs inte längre på alla kolumner under varje uppdatering, utan körs på begäran från Visual Report Builder.
 
 ### Byt till ny arkitektur
 
-Eftersom kontona är uppbyggda på olika sätt finns det ingen automatisk process för att migrera Data warehouse eller rapporter till ett nytt arkitekturkonto. Att gå över till den nya arkitekturen kräver en omimplementering av ditt befintliga konto.
+Eftersom kontona är uppbyggda på olika sätt finns det ingen automatisk process för att migrera Datan Warehouse eller rapporterna till ett nytt arkitekturkonto. Att gå över till den nya arkitekturen kräver en omimplementering av ditt befintliga konto.
 
 ### Kostnad för att uppgradera till den nya arkitekturen
 
@@ -41,7 +41,7 @@ Tidpunkterna för omimplementering varierar beroende på vad du vill återskapa.
 * Identifiera mätvärden och dimensioner som krävs för att skapa rapporterna.
 * Identifiera de kolumner som krävs för att återskapa dessa mått och mått.
 
-När detta är klart vet ni vilka data ni behöver synkronisera till den nya arkitekturen Data warehouse för att kunna återskapa dessa kärnrapporter.
+När detta är klart vet du vilka data du behöver synkronisera med den nya Datan Warehouse för arkitektur för att kunna återskapa dessa kärnrapporter.
 
 ### Få hjälp
 

@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Det här avsnittet innehåller instruktioner för klienter som använder den ursprungliga arkitekturen och den nya arkitekturen. Du är på [ny arkitektur](../../administrator/account-management/new-architecture.md) om du har delen &quot;Vyer i Data warehouse&quot; tillgänglig efter att du har valt &quot;Hantera data&quot; i huvudverktygsfältet.
+>Det här avsnittet innehåller instruktioner för klienter som använder den ursprungliga arkitekturen och den nya arkitekturen. Du är på [ny arkitektur](../../administrator/account-management/new-architecture.md) om du har Datan Warehouse Vyer tillgänglig efter att du har valt Hantera data i huvudverktygsfältet.
 
 Om ni spenderar pengar på onlinereklam vill ni följa upp er avkastning på dessa utgifter och fatta datadrivna beslut om ytterligare investeringar. I det här avsnittet visas hur du konfigurerar en kontrollpanel som spårar din kanalanalys, inklusive avkastning på investering i aggregat och per kampanj.
 
@@ -27,7 +27,7 @@ Innan du börjar vill du ansluta [!DNL [Facebook Ads]](../importing-data/integra
 
 **Ursprunglig arkitektur:** för att samla era utgifter från olika källor, som [!DNL Facebook Ads] eller [!DNL Google Adwords], Adobe rekommenderar att du skapar en **konsoliderad tabell** av alla era annonskostnader. Du behöver en analytiker som slutför det här steget åt dig. Om du inte har gjort det, [arkivera en supportförfrågan](../../guide-overview.md#Submitting-a-Support-Ticket) med motivet `[MARKETING ROI ANALYSIS]`och en analytiker skapar tabellen.
 
-**Ny arkitektur:** Du kan följa exemplet i [det här analysbiblioteket](../../data-analyst/data-warehouse-mgr/create-dw-views.md) ämne. Konsoliderade tabeller kallas nu Data warehouse-vyer för den nya arkitekturen.
+**Ny arkitektur:** Du kan följa exemplet i [det här analysbiblioteket](../../data-analyst/data-warehouse-mgr/create-dw-views.md) ämne. Konsoliderade tabeller kallas nu Data Warehouse Views för den nya arkitekturen.
 
 ## Beräknade kolumner
 
@@ -61,7 +61,7 @@ Kolumner att skapa
       * Välj en definition: Ansluten kolumn
       * Välj en [!UICONTROL table]: `ecommerce####`
       * Välj en [!UICONTROL column]: `source`
-      * [!UICONTROL Path]: sales_flat_order.increment_id = ecommerance###.transactionId ^
+      * [!UICONTROL Path]: sales_flat_order.increment_id = ecommerce###.transactionId ^
 
 * **`customer_entity`** table
 * **`Customer's first order GA campaign`**
@@ -114,19 +114,19 @@ Kolumner att skapa
 
 * **Annonsutgift**
 * I **`Consolidated Digital Ad Spend`** table
-* Detta mått utför en **Summa**
+* Det här måttet utför en **Summa**
 * På **`adCost`** kolumn
 * Beställd av **`date`** tidsstämpel
 
 * **Annonsvisningar**
 * I **`Consolidated Digital Ad Spend`** table
-* Detta mått utför en **Summa**
+* Det här måttet utför en **Summa**
 * På **`Impressions`** kolumn
 * Beställd av **`Month`** tidsstämpel
 
 * **Lägg till klick**
 * I **`Consolidated Digital Ad Spend`** table
-* Detta mått utför en **Summa**
+* Det här måttet utför en **Summa**
 * På **`adClicks`** kolumn
 * Beställd av **`Month`** tidsstämpel
 
@@ -137,9 +137,9 @@ Kolumner att skapa
 ## Rapporter
 
 * **Annonsutgift (hela tiden)**
-   * [!UICONTROL Metric]: Annonskostnader
+   * [!UICONTROL Metric]: Annonskostnad
 
-* Mått `A`: Annonskostnader
+* Mått `A`: Annonskostnad
 * [!UICONTROL Time period]: `All time`
 * 
   [!UICONTROL-intervall]: `None`
@@ -163,7 +163,7 @@ Kolumner att skapa
   [!UICONTROL Chart Type]: `Scalar`
 
 * **Annonsavkastning**
-   * [!UICONTROL Metric]: Annonskostnader
+   * [!UICONTROL Metric]: Annonskostnad
 
    * [!UICONTROL Metric]: `New customers`
    * [!UICONTROL Filters]:
@@ -173,7 +173,7 @@ Kolumner att skapa
       * `User's first order's medium IN cpc, ppc`
       * Filterlogik: ([`A`] ELLER [`B`] ELLER [`C`]) OCH [`D`]
 
-   * [!UICONTROL Metric]: Genomsnittlig intäkt för livstid
+   * [!UICONTROL Metric]: Inkomster för genomsnittlig livstid
    * [!UICONTROL Filters]:
       * `User's first order's source LIKE %google%`
       * `User's first order's source LIKE %facebook%`
@@ -217,7 +217,7 @@ Kolumner att skapa
       * `User's first order's medium IN cpc, ppc`
       * Filterlogik: ([`A`] ELLER [`B`] ELLER [`C`]) OCH [`D`]
 
-   * [!UICONTROL Metric]: Genomsnittlig intäkt för livstid
+   * [!UICONTROL Metric]: Inkomster för genomsnittlig livstid
    * [!UICONTROL Filters]:
       * `User's first order's source LIKE %google%`
       * `User's first order's source LIKE %facebook%`
@@ -225,7 +225,7 @@ Kolumner att skapa
       * `User's first order's medium IN cpc, ppc`
       * Filterlogik: ([`A`] ELLER [`B`] ELLER [`C`]) OCH [`D`]
 
-   * [!UICONTROL Metric]: Genomsnittligt antal order för livslängd
+   * [!UICONTROL Metric]: Genomsnittligt antal order under hela livstiden
    * [!UICONTROL Filters]:
       * `User's first order's source LIKE %google%`
       * `User's first order's source LIKE %facebook%`
@@ -275,7 +275,7 @@ Kolumner att skapa
 * 
   [!UICONTROL-intervall]: `None`
 * 
-  [!UICONTROL Group by]: `campaign` (Använd kundens första beställningskampanj för statistik över icke-annonsutgifter)
+  [!UICONTROL Group by]: `campaign` (Använd kundens första beställningskampanj för statistik över icke-annonsutgift)
 * 
   [!UICONTROL Chart Type]: `Table`
 

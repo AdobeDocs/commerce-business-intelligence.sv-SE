@@ -1,5 +1,5 @@
 ---
-title: Google Analytics och UTM-attribuering
+title: Google Analytics och UTM-attribut
 description: Läs mer om Google Analytics källattribueringsprocessen.
 exl-id: 48b8a3d3-f1ac-4d3f-8f65-db1245c9ae0a
 role: Admin, Data Architect, Data Engineer, User
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # [!DNL Google Analytics] och UTM-attribut
 
-Det är viktigt att [spåra källa för användarförvärv](../../data-analyst/analysis/google-track-user-acq.md) till [identifiera de annonskampanjer som fungerar bäst](../../data-analyst/analysis/most-value-source-channel.md). Det här avsnittet förklarar [!DNL Google Analytics] källattribueringsprocess. Med andra ord, vilken information som registreras när.
+Det är viktigt att [spåra källa för användarförvärv](../../data-analyst/analysis/google-track-user-acq.md) till [identifiera de annonskampanjer som ger bäst resultat](../../data-analyst/analysis/most-value-source-channel.md). Det här avsnittet förklarar [!DNL Google Analytics] källattribueringsprocess. Med andra ord, vilken del av informationen som registreras när.
 
 ## Vad är attribuering?
 
@@ -27,7 +27,7 @@ I verkligheten kommer användarna ofta från många olika källor innan de slår
 
 När UTM-parametrarna anges på URL:en tolkas de ut och placeras i en [!DNL Google Analytics] [cookie](https://en.wikipedia.org/wiki/HTTP_cookie). Om en webbplats inte har [!DNL Google Analytics]är det ingen mening med att ha UTM. [!DNL Google Analytics] har regler för hur den hanterar en användare som träffar flera URL:er med UTM:er under sin livstid (mer därtill senare). Om webbplatsen är konfigurerad att hämta UTM-parametrar till en extern databas när en mikro- eller makrokonvertering inträffar, oavsett vad som finns i [!DNL Google Analytics] cookie vid konverteringen replikeras till databasen.
 
-## Första klickningen kontra sista klickningen
+## Första klicket kontra sista klicket
 
 ### Senaste klickattribuering
 
@@ -48,8 +48,8 @@ Med vissa betalda attribueringsverktyg kan du fånga &quot;pankakestacken&quot; 
 [!DNL Google Analytics] har en viss robust funktionalitet i webbgränssnittet som gör att du kan utföra fyra olika attribueringsmodeller:
 
 1. klicka först
-1. klicka senast
-1. linjärt (dividera intäkterna jämnt över alla källor i banan)
+1. senaste klickningen
+1. linjärt (dividera intäkten jämnt över alla källor i banan)
 1. viktad (anpassad attribuering)
 
 Nu när du förstår vad attribueringsmodellen för varje mikro- eller makrokonvertering är blir frågan&quot;Vad gör du med en användares totala konverteringar?&quot;.  Titta till exempel på de UTM-minnen som spelats in baserat på GA:s logik för senaste klickning:

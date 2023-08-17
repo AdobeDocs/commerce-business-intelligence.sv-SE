@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Om du vill visa data bakom ett diagram klickar du på kugghjulsikonen i det övre högra hörnet av ett diagram.
 
-Välj något av följande:
+Välj antingen:
 
 - `Report Export`
 - `Full .csv Export`

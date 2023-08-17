@@ -1,6 +1,6 @@
 ---
 title: Anslut [!DNL MongoDB] via SSH-tunnel
-description: Lär dig ansluta [!DNL MongoDB] via SSH-tunneln.
+description: Lär dig hur du ansluter [!DNL MongoDB] via SSH-tunneln.
 exl-id: 3557a8c7-c4c5-4742-ae30-125c719aca39
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -30,7 +30,7 @@ Koppla samman [!DNL MongoDB] databas till [!DNL Commerce Intelligence] via en SS
 The `public key` används för att auktorisera [!DNL Commerce Intelligence] `Linux` användare. I nästa avsnitt får du hjälp med att skapa användaren och importera nycklarna.
 
 1. Gå till **[!UICONTROL Data** > **Connections]** och klicka **[!UICONTROL Add New Data Source]**.
-1. Klicka på [!DNL MONGODB] ikon.
+1. Klicka på [!DNL MONGODB] -ikon.
 1. Efter [!DNL MongoDB] inloggningssidan öppnas, ändra `Encrypted` växla till `Yes`. Då visas SSH-konfigurationsformuläret.
 1. The `public key` finns under det här formuläret.
 
@@ -54,7 +54,7 @@ För att anslutningen ska lyckas måste du konfigurera brandväggen så att den 
 
 Detta kan vara en produktionsmaskin eller en sekundär maskin, förutsatt att den innehåller realtidsdata (eller ofta uppdaterade). Du kan begränsa den här användaren hur du vill så länge den behåller rätten att ansluta till [!DNL MongoDB] server.
 
-Om du vill lägga till den nya användaren kör du följande kommandon som rot på din `Linux` server:
+Om du vill lägga till den nya användaren kör du följande kommandon som rot på `Linux` server:
 
 ```bash
     adduser rjmetric -p
@@ -115,34 +115,34 @@ Detta skriver ut ett svar som ser ut så här:
 
 ### Om servern använder standardalternativet {#default}
 
-Om servern inte används `auth` läge, ditt [!DNL MongoDB] -servern är tillgänglig även utan användarnamn och lösenord. Du bör dock se till att `mongodb.conf` fil `(/etc/mongodb.conf)` har följande rader - om inte, starta om servern när du har lagt till dem.
+Om servern inte används `auth` läge, ditt [!DNL MongoDB] kan nås även utan användarnamn och lösenord. Du bör dock se till att `mongodb.conf` fil `(/etc/mongodb.conf)` har följande rader - om inte, starta om servern när du har lagt till dem.
 
 ```bash
     bind_ip = 127.0.0.1
     noauth = true
 ```
 
-Så här binder du [!DNL MongoDB] till en annan adress justerar du databasens värdnamn i nästa steg.
+Binda dina [!DNL MongoDB] till en annan adress justerar du databasens värdnamn i nästa steg.
 
 ## Ange anslutningen och användarinformationen i [!DNL Commerce Intelligence] {#finish}
 
-Om du vill slå ihop allt måste du ange anslutningen och användarinformationen i [!DNL Commerce Intelligence]. Gav du [!DNL MongoDB] öppnas inloggningssidan? Om inte, gå till **[!UICONTROL Data > Connections]** och klicka **[!UICONTROL Add New Data Source]** och sedan [!DNL MongoDB] ikon. Glöm inte att ändra `Encrypted` växla till `Yes`.
+Om du vill slå ihop allt måste du ange anslutningen och användarinformationen i [!DNL Commerce Intelligence]. Gav du [!DNL MongoDB] öppnas inloggningssidan? Om inte, gå till **[!UICONTROL Data > Connections]** och klicka **[!UICONTROL Add New Data Source]** och sedan [!DNL MongoDB] -ikon. Glöm inte att ändra `Encrypted` växla till `Yes`.
 
 Ange följande information på den här sidan, med början på `Database Connection` avsnitt:
 
 * `Host`: `127.0.0.1`
-* `Username`: The [!DNL Commerce Intelligence] [!DNL MongoDB] användarnamn (bör `rjmetric`)
-* `Password`: The [!DNL Commerce Intelligence] [!DNL MongoDB] lösenord
+* `Username`: [!DNL Commerce Intelligence] [!DNL MongoDB] användarnamn (bör `rjmetric`)
+* `Password`: [!DNL Commerce Intelligence] [!DNL MongoDB] lösenord
 * `Port`: MongoDB-port på servern (`27017` som standard)
 * `Database Name` (Valfritt): Om du bara tillåter åtkomst till en databas anger du namnet på den databasen här.
 
 Under `SSH Connection` avsnitt:
 
-* `Remote Address`: IP-adressen eller värdnamnet för den server som du ska ansluta till
-* `Username`: The [!DNL Commerce Intelligence] Linux (SSH), användarnamn (ska vara jmetriskt)
+* `Remote Address`: IP-adressen eller värdnamnet för den server som du ska SSH till
+* `Username`: [!DNL Commerce Intelligence] Linux (SSH), användarnamn (ska vara jmetriskt)
 * `SSH Port`: SSH-porten på servern (22 som standard)
 
-När du är klar klickar du på **[!UICONTROL Save Test]** för att slutföra installationen.
+När du är klar klickar du **[!UICONTROL Save Test]** för att slutföra installationen.
 
 ### Relaterad
 

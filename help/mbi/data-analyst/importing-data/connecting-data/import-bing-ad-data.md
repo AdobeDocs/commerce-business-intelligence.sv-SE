@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Importera [!DNL Bing] Data
 
-Importera [!DNL Bing] annonser som spenderar data på [!DNL Adobe Commerce Intelligence] för analys, exportera bara data från [!DNL Bing Ads Editor] i en `.csv` formatera och överföra den till [!DNL Commerce Intelligence] enligt stegen nedan.
+Importera [!DNL Bing] annonser som spenderar data på [!DNL Adobe Commerce Intelligence] för analys, exportera bara data från [!DNL Bing Ads Editor] i en `.csv` formatera och ladda upp den till [!DNL Commerce Intelligence] enligt stegen nedan.
 
 ## [!DNL Bing Ads Editor]
 
-Exportera [!DNL Bing Ads] data måste du ha [!DNL Bing Ads Editor] installerade. Du kan ladda ned [[!DNL Bing Ads Editor]](https://about.ads.microsoft.com/en-us/solutions/tools/editor).
+Exportera [!DNL Bing Ads] data måste du ha [!DNL Bing Ads Editor] installerade. Du kan hämta en kostnadsfri [[!DNL Bing Ads Editor]](https://about.ads.microsoft.com/en-us/solutions/tools/editor).
 
 ## [!DNL Bing Ads] Dataexport
 
@@ -25,5 +25,5 @@ Exportera [!DNL Bing Ads] data måste du ha [!DNL Bing Ads Editor] installerade.
 1. I `Export` klickar du på **[!UICONTROL Export]**.
 1. I `Save As` klickar du på den mapp där du vill spara exportfilen.
 1. I `File name` väljer du ett namn för filexporten.
-1. Klicka **[!UICONTROL Save]**.
+1. Klicka på **[!UICONTROL Save]**.
 1. När filen har laddats ned  [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) för att göra en första överföring åt dig och ställa in de nödvändiga backend-dimensionerna.

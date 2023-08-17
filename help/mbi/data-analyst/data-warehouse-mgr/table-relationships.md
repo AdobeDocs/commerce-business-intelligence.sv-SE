@@ -13,15 +13,15 @@ ht-degree: 0%
 
 # Förstå och utvärdera tabellrelationer
 
-När du utvärderar relationen mellan två angivna tabeller måste du förstå hur många möjliga förekomster i en tabell som kan tillhöra en enhet i en annan, och vice versa. Använd till exempel en `users` tabell och en `orders` tabell. I det här fallet vill du veta hur många **order** en given **användare** har placerats ut och hur många som är möjliga **användare** en **order** kan tillhöra.
+När du utvärderar relationen mellan två angivna tabeller måste du förstå hur många möjliga förekomster i en tabell som kan tillhöra en enhet i en annan, och vice versa. Använd till exempel en `users` tabell och en `orders` tabell. I det här fallet vill du veta hur många **order** en given **användare** har placerats ut och hur många som är möjliga **användare** en **beställa** kan tillhöra.
 
-Förståelse av relationer är avgörande för att upprätthålla dataintegriteten, eftersom det påverkar precisionen i dina [beräknade kolumner](../data-warehouse-mgr/creating-calculated-columns.md) och [dimensioner](../data-warehouse-mgr/manage-data-dimensions-metrics.md). Mer information finns på [relationstyper](#types) och [hur du utvärderar tabellerna i Data warehouse.](#eval)
+Förståelse av relationer är avgörande för att upprätthålla dataintegriteten, eftersom det påverkar precisionen i dina [beräknade kolumner](../data-warehouse-mgr/creating-calculated-columns.md) och [dimensioner](../data-warehouse-mgr/manage-data-dimensions-metrics.md). Mer information finns på [relationstyper](#types) och [hur du utvärderar tabellerna i Datan Warehouse.](#eval)
 
 ## Relationstyper {#types}
 
 Det finns tre typer av relationer mellan två tabeller:
 
-1. [&quot;1:1&quot;](#onetoone)
+1. [&quot;en-till-en&quot;](#onetoone)
 1. [&quot;en-till-många&quot;](#onetomany)
 1. [&quot;många-till-många&quot;](#manytomany)
 
@@ -49,9 +49,9 @@ Fundera på relationen mellan **produkter** och **kategorier**: en produkt kan t
 
 ## Utvärdera dina tabeller {#eval}
 
-Med tanke på vilka typer av relationer som finns mellan tabeller kan du lära dig hur du utvärderar tabellerna i Data warehouse. När de här relationerna utformar hur flertabellskalkylerade kolumner definieras är det viktigt att du förstår hur du identifierar tabellrelationer och vilken sida - `one` eller `many` - tabellen tillhör.
+Med tanke på vilka typer av relationer som finns mellan tabeller kan du lära dig hur du utvärderar tabellerna i Datan Warehouse. När de här relationerna utformar hur flertabellskalkylerade kolumner definieras är det viktigt att du förstår hur du identifierar tabellrelationer och vilken sida - `one` eller `many` - tabellen tillhör.
 
-Det finns två metoder som du kan använda för att utvärdera relationerna mellan ett givet tabellpar i Data warehouse. Den första metoden använder en [konceptuellt ramverk](#concept) som beaktar hur tabellens enheter interagerar med varandra. Den andra metoden använder [tabellschema](#schema).
+Det finns två metoder som du kan använda för att utvärdera relationen mellan ett givet tabellpar i Datan Warehouse. Den första metoden använder en [konceptuellt ramverk](#concept) som tar hänsyn till hur tabellens enheter interagerar med varandra. Den andra metoden använder [tabellens schema](#schema).
 
 ### Använda konceptuella ramverk {#concept}
 
@@ -61,11 +61,11 @@ När du till exempel tänker på användare och beställningar bör du tänka p�
 
 Så här använder du den här metoden:
 
-1. Identifiera den enhet som beskrivs i varje tabell. **Tips: det är vanligtvis ett substantiv**. Till exempel `user` och `orders` tabeller beskriver uttryckligen användare och order.
+1. Identifiera den enhet som beskrivs i varje tabell. **Tips: det brukar vara ett substantiv**. Till exempel `user` och `orders` tabeller beskriver uttryckligen användare och order.
 
-1. Identifiera ett eller flera verb som beskriver hur dessa enheter interagerar. När man jämför användare med beställningar lägger man order. I den andra riktningen&quot;tillhör&quot; order användare.
+1. Identifiera ett eller flera verb som beskriver hur dessa enheter interagerar. När man jämför användare med order lägger man order. I den andra riktningen&quot;tillhör&quot; beställningarna användare.
 
-Den här typen av ramverk kan användas på alla tabellpar i Data warehouse. På så sätt kan du enkelt identifiera relationstypen och vilken tabell som är en sida och vilken tabell som är en många.
+Den här typen av ramverk kan användas för alla tabellpar i Datan Warehouse. På så sätt kan du enkelt identifiera relationstypen och vilken tabell som är en sida och vilken tabell som är en många.
 
 När du har identifierat terminologin som beskriver hur de två tabellerna interagerar bildruta interaktionen i båda riktningarna genom att överväga hur en viss instans av den första entiteten relaterar till den andra. Här är några exempel på varje relation:
 
@@ -111,7 +111,7 @@ Till exempel en `users` tabellen kan fånga upp de flesta användarattribut (til
 
 >[!NOTE]
 >
->Accepterar du gästbeställningar? Se [Gästorder](../data-warehouse-mgr/guest-orders.md) om du vill veta hur gästbeställningar kan påverka registerrelationerna.
+>Tar ni emot gästorder? Se [Gästorder](../data-warehouse-mgr/guest-orders.md) om du vill veta hur gästbeställningar kan påverka registerrelationerna.
 
 När tabeller länkas med en `Foreign key` peka på en `primary key`beskriver denna konfiguration `one-to-many` relation. Den ena sidan är tabellen som innehåller `primary key` och många sidor är tabellen som innehåller `foreign key`.
 
@@ -129,4 +129,4 @@ Om något av följande är sant är relationen `many-to-many`:
 
 ## Nästa steg
 
-En korrekt bedömning av tabellrelationerna är avgörande för att data ska kunna modelleras korrekt. Nu när du förstår hur tabeller är relaterade till varandra kan du se [vad du kan göra med Data warehouse Manager](../data-warehouse-mgr/tour-dwm.md).
+En korrekt bedömning av tabellrelationerna är avgörande för att data ska kunna modelleras korrekt. Nu när du förstår hur tabeller är relaterade till varandra kan du se [vad du kan göra med Data Warehouse Manager](../data-warehouse-mgr/tour-dwm.md).

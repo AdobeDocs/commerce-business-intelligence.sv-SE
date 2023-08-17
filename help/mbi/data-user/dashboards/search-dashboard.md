@@ -29,6 +29,6 @@ Exempel:
 
 ## Sök efter instrumentpaneler som ägs av andra användare {#other}
 
-Söker du en instrumentpanel som ägs av en annan användare? Om andra kan visa kontrollpanelen kan du söka efter den genom att klicka på **[!UICONTROL Find]** i `Dashboard Options` listruta.
+Söker du en instrumentpanel som ägs av en annan användare? Om andra kan visa kontrollpanelen kan du söka efter den genom att klicka på **[!UICONTROL Find]** i `Dashboard Options` nedrullningsbar meny.
 
 ![hitta instrumentpaneler](../../assets/find-dboards-other-owners.png)

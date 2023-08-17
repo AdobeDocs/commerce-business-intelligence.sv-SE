@@ -61,7 +61,7 @@ Här är vad du behöver skapa rapporter för din instrumentpanel för investera
 
 Med [!DNL Google Analytics] kan du lägga in rapporter om:
 
-* Besök
+* Besök webbplatsen
 * Konverteringsgrad
 
 Med [Commerce Data Enrichment Services](https://business.adobe.com/products/magento/magento-commerce.html)kan du ta med rapporter om:

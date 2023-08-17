@@ -25,31 +25,31 @@ Instrumentpaneler är delbara, tematiska samlingar för de analyser du skapar i 
 
 *Om du är administratör eller standardanvändare* kan du skapa en kontrollpanel genom att klicka på `Dashboard Options` listruta och välja `Create New dashboard`.
 
-Hur de instrumentpaneler du skapar ser ut beror helt på dig. Du kan ordna och ändra storlek på elementen på kontrollpanelen på det sätt som passar dina behov och ditt arbetsflöde.
+Hur de instrumentpaneler du skapar ser ut är helt upp till dig. Du kan ordna och ändra storlek på elementen på kontrollpanelen på det sätt som passar dina behov och ditt arbetsflöde.
 
 ![ordna element för att ändra storlek på instrumentpanel](../../assets/arrange_resize_dashboard_element.gif)
 
 ### Skapa en instrumentpanel
 
-1. På menyn klickar du på **[!UICONTROL Dashboards]**.
+1. Klicka på **[!UICONTROL Dashboards]**.
 
-1. Namnet på standardkontrollpanelen visas i det övre vänstra hörnet av kontrollpanelens sidhuvud. Klicka på nedpilen (![](../../assets/magento-bi-btn-down.png)) för att visa tillgängliga alternativ.
+1. Namnet på standardkontrollpanelen visas i det övre vänstra hörnet av kontrollpanelens sidhuvud. Klicka på nedåtpilen (![](../../assets/magento-bi-btn-down.png)) för att visa tillgängliga alternativ.
 
    ![Skapa instrumentpanel](../../assets/magento-bi-dashboard-create.png)
 
-1. Klicka **[!UICONTROL Create Dashboard]**. Gör sedan följande:
+1. Klicka på **[!UICONTROL Create Dashboard]**. Gör sedan följande:
 
-   * Ange `Name` för din instrumentpanel.
+   * Ange en `Name` för din instrumentpanel.
 
    * Skapa en `Group` Ange namnet på gruppen för instrumentpanelen.
 
      Om din Commerce-installation till exempel har flera butiksvyer kan du skapa en grupp för varje butiksvy.
 
-   * Klicka **[!UICONTROL Create]**.
+   * Klicka på **[!UICONTROL Create]**.
 
    ![instrumentpanelsnamn](../../assets/magento-bi-dashboard-create-name.png)
 
-   * Namnet på den nya instrumentpanelen visas i det övre vänstra hörnet. Klicka på nedpilen (![](../../assets/magento-bi-btn-down.png)) för att visa alternativen. Om du har skapat en grupp visas den nya kontrollpanelen under gruppen i listan.
+   * Namnet på den nya instrumentpanelen visas i det övre vänstra hörnet. Klicka på nedåtpilen (![](../../assets/magento-bi-btn-down.png)) för att visa alternativen. Om du har skapat en grupp visas den nya kontrollpanelen under gruppen i listan.
 
 ### Lägg till en rapport
 
@@ -93,7 +93,7 @@ När du delar en kontrollpanel kan du tilldela behörigheter i hela organisation
 
 ### Hantera panelinställningar
 
-1. På menyn klickar du på **[!DNL Manage Data** > **Dashboards]**.
+1. Klicka på **[!DNL Manage Data** > **Dashboards]**.
 
 1. Ange en ny `Dashboard Name`.
 

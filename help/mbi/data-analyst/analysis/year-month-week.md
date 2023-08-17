@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Det här avsnittet innehåller instruktioner för klienter som använder den ursprungliga arkitekturen och den nya arkitekturen. Du är på [ny arkitektur](../../administrator/account-management/new-architecture.md) om du har [!DNL _Vyer i data warehouse_] avsnitt som är tillgängliga efter markering [!DNL Manage Data] i huvudverktygsfältet.
+>Det här avsnittet innehåller instruktioner för klienter som använder den ursprungliga arkitekturen och den nya arkitekturen. Du är på [ny arkitektur](../../administrator/account-management/new-architecture.md) om du har [!DNL _Data Warehouse_] tillgängliga avsnitt efter markering [!DNL Manage Data] i huvudverktygsfältet.
 
 Med rapportverktyget kan du enkelt se trender över tid och ändra perspektivet för tidsperioder som du kanske vill jämföra. I det här avsnittet visas hur du konfigurerar en kontrollpanel så att du kan skapa rapporter för en vecka, en månad i taget och en år i taget.
 
@@ -59,7 +59,7 @@ Ingen.
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Time options]: `Time range (Custom)`: `2 years ago to 1 year ago`
 
-   * [!UICONTROL Show top/bottom]: Top 100% sorted by **`created_at (month-day)`***
+   * [!UICONTROL Show top/bottom]: Högsta 100 % sorterat efter **`created_at (month-day)`***
 
 * Mått `A`: `This year`
 * Mått `B`: `Last year`
@@ -76,7 +76,7 @@ Ingen.
    * [!UICONTROL Metric]: `Number of orders`
    * Tidsalternativ: `Time range (Custom)`: `2 months ago to 1 month ago`
 
-   * Visa över/under: Top 100% sorted by **`created_at (day of month)`***
+   * Visa överkant/underkant: 100 % överkant sorterat efter **`created_at (day of month)`***
 
 * Mått `A`: Den här månaden*
 * Mått `B`: Förra månaden*
@@ -93,7 +93,7 @@ Ingen.
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Time options]: `Time range (Custom)`: `2 weeks ago to 1 week ago`
 
-   * [!UICONTROL Show top/bottom]: Top 100% sorted by `created_at (day of week)`
+   * [!UICONTROL Show top/bottom]: Högsta 100 % sorterat efter `created_at (day of week)`
 
 * Mått `A`: `This week`
 * Mått `B`: `Last week`
@@ -110,7 +110,7 @@ Ingen.
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Time options]: `Time range (Custom)`: `2 days ago to 1 day ago`
 
-   * [!UICONTROL Show top/bottom]: Top 100% sorted by `created_at (hour of day)`
+   * [!UICONTROL Show top/bottom]: Högsta 100 % sorterat efter `created_at (hour of day)`
 
 * Mått `A`: `Today`
 * Mått B: `Yesterday`

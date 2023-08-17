@@ -31,8 +31,8 @@ Koppla samman [!DNL Facebook Ad] data till [!DNL Commerce Intelligence] är en e
 
 1. Lägg till [!DNL Facebook] integrering med [!DNL Commerce Intelligence]konto, navigera till `Connections` sida under **[!UICONTROL Manage Data** > **Integrations]**.
 1. Klicka **[!UICONTROL Add Integration]**, till höger.
-1. Klicka på [!DNL Facebook] ikon. Här visas [!DNL Facebook] auktoriseringssida.
-1. Klicka **[!UICONTROL Authorize]**.
+1. Klicka på [!DNL Facebook] -ikon. Här visas [!DNL Facebook] auktoriseringssida.
+1. Klicka på **[!UICONTROL Authorize]**.
 
 ## Tillåt [!DNL Commerce Intelligence] åtkomst till [!DNL Facebook Ads] data {#steptwo}
 
@@ -40,7 +40,7 @@ Efter klickning **[!DNL Facebook Authorize]** visas ett litet popup-fönster:
 
 ![](../../../assets/Facebook_Access_Popup.png)
 
-Följ en serie steg för att tillåta [!DNL Commerce Intelligence] för att få tillgång till data från din offentliga profil, [!DNL Facebook Ads] och relaterade statistik. Klicka **[!UICONTROL OK]** för att fortsätta.
+Följ en serie steg för att tillåta [!DNL Commerce Intelligence] för att få tillgång till data från din offentliga profil, [!DNL Facebook Ads] och, relaterade statistik. Klicka **[!UICONTROL OK]** för att fortsätta.
 
 ## Välj [!DNL Facebook Ads] Konton för att hämta data {#stepthree}
 
@@ -48,7 +48,7 @@ Följ en serie steg för att tillåta [!DNL Commerce Intelligence] för att få 
 
    ![](../../../assets/Facebook_Ad_Accounts.png)
 
-1. Klicka **[!UICONTROL Save Connections]**.
+1. Klicka på **[!UICONTROL Save Connections]**.
 
    Om anslutningen lyckas kan du *Anslutningen lyckades!* visas högst upp på sidan.
 

@@ -27,7 +27,7 @@ ht-degree: 0%
 >
 >För att undvika oväntade eller okänsliga resultat bör du kontrollera att de dimensioner du använder är [kompatibel med ett eller flera mätvärden](https://ga-dev-tools.google/dimensions-metrics-explorer/) du använder i `Report Builder`.
 
-En enda tabell - anropad `report` - skapas i Data warehouse.
+En enda tabell - anropad `report` - har skapats i din Data Warehouse.
 
 Schemat för den här tabellen består av de mått och Dimensioner som du valde under konfigurationsprocessen och två andra kolumner: `start-date` och `end-date`.
 
@@ -52,13 +52,13 @@ Tabellen skulle se ut som exemplet nedan.
 
 ## Vad är skillnaden mellan [!DNL Google Analytics Warehoused] och [!DNL Live Integration]
 
-Den viktigaste skillnaden är att en integrering sparas ([!DNL Google Analytics Warehoused]) och den andra inte ([!DNL Google Analytics Live]). I fall med [!DNL Google Analytics Warehoused]kan du manipulera [!DNL Google Analytics] data och ger er möjlighet att kombinera [!DNL Google Analytics] och andra datakällor för att skapa insiktsfull rapportering.
+Den viktigaste skillnaden är att en integrering sparas ([!DNL Google Analytics Warehoused]) och den andra inte är ([!DNL Google Analytics Live]). I fall med [!DNL Google Analytics Warehoused]kan du manipulera dina [!DNL Google Analytics] data och ger er möjlighet att kombinera [!DNL Google Analytics] och andra datakällor för att skapa insiktsfull rapportering.
 
 Titta på [!DNL Google Analytics] annonskampanjer för ett exempel på vad som kan göras från en manipulation. Anta att ni har haft flera annonskampanjer för Q4 med olika namn. Kampanjerna var ett resultat av ett specifikt marknadsföringsinitiativ. Med lagrade data kan du skapa en kolumn som hittar kampanjnamnen i fråga och returnerar Q4-initialnamnet för `Operation Dumbo`.
 
 Kombinationsaspekten tillåter [!DNL Google Analytics] Uppgifter som ska sammanfogas med andra uppgifter för att utföra analyser. Ta till exempel `Total Time On Site By Ad Campaign` data från [!DNL Google Analytics] och förena dem mot `Total Spent Per Campaign` data från [!DNL Facebook Ads] för att få en fullständig bild av hur mycket engagemang kostar er.
 
-Med [!DNL Google Analytics Live] integrering, å andra sidan, [!DNL Google Analytics] diagram är som en liten silo som inte lagras i [!DNL Commerce Intelligence] data warehouse.
+Med [!DNL Google Analytics Live] integrering, å andra sidan, [!DNL Google Analytics] diagram är som en liten silo som inte lagras i [!DNL Commerce Intelligence] Data Warehouse.
 
 ## Relaterat:
 

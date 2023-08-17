@@ -33,7 +33,7 @@ Som nämnts ovan `cohort` Med hjälp av analys kan du identifiera beteendetrende
 
 Det här är instruktionerna för att använda `Cohort Report Builder` på [Ny arkitektur](../../administrator/account-management/new-architecture.md).
 
-1. Klicka **[!UICONTROL Report Builder]** på den vänstra fliken eller **[!UICONTROL Add Report** > **Create Report]** i en kontrollpanel.
+1. Klicka **[!UICONTROL Report Builder]** till vänster eller **[!UICONTROL Add Report** > **Create Report]** i en kontrollpanel.
 
 1. I `Report Builder` markeringsskärm, klicka **[!UICONTROL Create Report]** bredvid `Visual Report Builder` alternativ.
 
@@ -56,7 +56,7 @@ Då öppnas ett nytt fönster där informationen i `Cohort` Rapport.
 1. Gruppera `cohorts`
 1. The `cohort` tidsperiod
 1. Antalet `cohorts` visa
-1. Den minsta mängden data per `cohort` måste innehålla
+1. Den minsta mängden data för varje `cohort` måste innehålla
 1. Tidsintervall efter `cohort` förekomst
 
 #### 1. Gruppering `cohorts`
@@ -69,25 +69,25 @@ Då öppnas ett nytt fönster där informationen i `Cohort` Rapport.
 
 #### 2. `Cohort` tidsperiod
 
-Välj den tidsperiod som ska grupperas `cohorts` av. med andra ord, vilken del av tidsstämpeln som du valde ovan är viktigast; den `week`, `month`, `quarter`, eller `year`? Din rapport visar data i valfritt intervall som du väljer här
+Välj den tidsperiod som ska grupperas `cohorts` av. Med andra ord, vilken del av tidsstämpeln som du valde ovan är viktigast: `week`, `month`, `quarter`, eller `year`? Din rapport visar data i valfritt intervall som du väljer här
 
 #### 3. och 4. Ange antalet `cohorts` för att visa och hur mycket data varje `cohort` måste ha
 
 Med de här parametrarna kan du endast visa `cohorts` som du är intresserad av, och är till nytta `Preview` rutan längst ned i fönstret visar exakt vilka kohorter som visas i rapporten.
 
-Som standard är den aktuella `cohort` inkluderas inte om du inte ändrar den minsta mängden data som krävs för varje `cohort` till `0`. I det här fallet `cohort` för den aktuella tidsperioden innehåller endast partiella data.
+Som standard är `cohort` inkluderas inte om du inte ändrar den minsta mängden data som krävs för varje `cohort` till `0`. I det här fallet `cohort` för den aktuella tidsperioden innehåller endast partiella data.
 
 #### 5. Tidsintervall efter `Cohort` Förekomst
 
-Med den här funktionen kan du ange det tidsintervall med data som du vill visa för den markerade `cohorts`. Om du till exempel vill visa 24 bilder varje månad `cohorts` baserat på `customer's first order date`men du är bara intresserad av de första tre månadernas data för varje `cohort`kan du ange `number of cohorts to view` till `24` och `time range after cohort occurrence` till `3`.
+Med den här funktionen kan du ange det tidsintervall med data som du vill visa för den markerade `cohorts`. Om du till exempel vill visa 24 bilder varje månad `cohorts` baserat på `customer's first order date`men du är bara intresserad av de första tre månadernas data för varje `cohort`kan du ställa in `number of cohorts to view` till `24` och `time range after cohort occurrence` till `3`.
 
-Intervallet för det här värdet ändras med det du har valt i `cohort time period` och värdet är inställt på `12` som standard, värdet ändras inte om du inte klickar på kalenderikonen för att redigera den.
+Intervallet för det här värdet ändras med det du har valt i `cohort time period` och värdet är inställt på `12` som standard ändras inte värdet om du inte klickar på kalenderikonen för att redigera den.
 
 ![](../../assets/cohort-time-range.png)
 
 #### Övriga anmärkningar
 
-* [!UICONTROL Filters]: som tillämpas på mätvärdena förblir intakta när du växlar mellan `Standard` och `Cohort` vyer.
+* [!UICONTROL Filters]: som används i mätvärdena förblir intakta när du växlar mellan `Standard` och `Cohort` vyer.
 
 * Se [`Perspectives`](#perspectives).
 
@@ -111,7 +111,7 @@ Nedan finns instruktioner som är specifika för den äldre versionen av `Cohort
 
 I det här avsnittet får du hjälp med att skapa egna `cohort` analys. Exempel (och animerad GIF som demonstrerar processen) finns i [Exempel](#examples) i detta ämne.
 
-1. Klicka **[!UICONTROL Report Builder]** på den vänstra fliken eller **[!UICONTROL Add Report** > **Create Report]** i en kontrollpanel.
+1. Klicka **[!UICONTROL Report Builder]** till vänster eller **[!UICONTROL Add Report** > **Create Report]** i en kontrollpanel.
 
 1. I `Report Builder Selection` skärm, klicka **[!UICONTROL Create Report]** bredvid `Cohort Analysis` alternativ.
 
@@ -141,7 +141,7 @@ The `Interval` kan du ange `length` på `cohorts`. Om detta till exempel är ins
 Du kan ändra hur de här intervallen visas på x-axeln med **Varaktighet** -menyn.
 
 `Time Period`
-Använd `Time Period` för att välja den specifika användaren `cohorts` att analysera. Du kan visa var `cohort`, välja från en lista, ange ett tidsintervall eller definiera ett rullande tidsintervall för `cohorts` att inkludera. Om du till exempel använde `Specific Cohorts` kan du välja specifika månader att inkludera i analysen:
+Använd `Time Period` för att välja den specifika användaren `cohorts` att analysera. Du kan visa var `cohort`, välja från en lista, ange ett tidsintervall eller definiera ett rullande tidsintervall för `cohorts` att inkludera. Om du t.ex. använde `Specific Cohorts` kan du välja specifika månader att inkludera i analysen:
 
 ![Använda `Time Period` meny för att lägga till specifik `Cohorts`](../../assets/Cohort_Time_Period.gif)
 
@@ -173,13 +173,13 @@ Se [Perspektiv](#perspectives).
 
 ## Exempel på kohortanalys {#examples}
 
-Nu när du har gått igenom hur man skapar en `cohort` analys, titta på några exempel.
+Nu när du har gått igenom hur man skapar en `cohort` -analys, titta på några exempel.
 
 ### Jag vill veta hur min användare `cohorts` växer med tiden.
 
 ![Användare `cohorts` växa över tid](../../assets/cohort1.gif)
 
-I det här exemplet analyserade du `Revenue` mätvärden, grupperade dina kohorter efter `customer's first order date`och de 8 senaste `cohorts` (definieras i `Time Period` -menyn) som ska ingå i analysen. För att se hur kohorterna växte över tiden använde du `Cumulative Average Value per Cohort Member` `perspective`.
+I det här exemplet har du analyserat `Revenue` mätvärden, grupperade dina kohorter efter `customer's first order date`och valde de 8 senaste `cohorts` (definieras i `Time Period` -meny) som ska ingå i analysen. För att se hur kohorterna växte över tiden använde du `Cumulative Average Value per Cohort Member` `perspective`.
 
 ### Jag vill i genomsnitt veta hur många order en användare gör vid olika tidpunkter under sin livstid.
 
@@ -194,7 +194,7 @@ I det här exemplet har du analyserat `Number of orders` mätvärden, grupperade
 ## `Perspectives` {#perspectives}
 
 `Standard`
-Detta visar det inkrementella bidraget från en viss kohortgrupp vid en given tidpunkt i livscykeln. (exempel: Poängen &quot;Vecka 6&quot; visar alla datapunkter som skapats av användare under den sjätte veckan.)
+Detta visar det inkrementella bidraget från en viss kohortgrupp vid en given tidpunkt i livscykeln. (Exempel: Poängen &quot;Vecka 6&quot; visar alla datapunkter som skapats av användare under den sjätte veckan.)
 
 `Average Value per Cohort Member`
 Detta delar upp `Standard cohort` analys i (1) av antalet användare i varje `cohort` grupp. Detta kan vara användbart för att jämföra kohortresultat för äpplen till äpplen, eftersom inte alla kohortgrupper kan innehålla samma antal användare. Exempelvis den genomsnittliga intäkten för vecka 6 per användare från en viss `cohort`.
@@ -206,7 +206,7 @@ Detta `perspective` visar det traditionella `cohort` analys av en `cumulative` b
 Detta delar upp `Cumulative` analys i (3) av antalet användare i varje `cohort` grupp. Här visas den genomsnittliga livstidsavgiften (ofta genomsnittliga livstidsintäkter) per `cohort` medlem vid varje period i `cohort's` liv. Exempel: den genomsnittliga livstidsintäkten efter sex månader för användare som gick med i juni.
 
 `Percent of First Value (show first value)`
-Detta analyserar sammanställningen `cohort` bidrag vid en viss tidpunkt i `cohort's` livscykeln som en procentandel av deras bidrag under den första perioden. Till exempel intäkterna för månad 6 delat med intäkterna för månad 1 för användare som gick med i juni.
+Detta analyserar sammanställningen `cohort` bidrag vid en viss tidpunkt i `cohort's` livscykeln som en procentandel av deras bidrag under den första perioden. Till exempel intäkterna för månad 6 dividerat med intäkterna för månad 1 för användare som gick med i juni.
 
 `Percent of First Value (hide first value)`
 Detta är samma sak som `perspective` ovan, förutom att värdet 100 % för den första tidsperioden är dolt.

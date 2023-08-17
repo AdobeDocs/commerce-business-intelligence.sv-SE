@@ -35,15 +35,15 @@ ht-degree: 0%
       - [Begränsa måttåtkomst](../mbi/administrator/user-management/restrict-metric-access.md)
 - Analysera data {#analyze}
    - [Dataanalytiker](data-analyst.md)
-   - data warehouse Manager {#warehouse-manager}
+   - Data Warehouse Manager {#warehouse-manager}
       - [Introduktion](data-analyst/data-warehouse-mgr/tour-dwm.md)
       - [Avancerade beräknade kolumntyper](data-analyst/data-warehouse-mgr/adv-calc-columns.md)
       - [Byggnad [!DNL Google Ecommerce] dimensioner](data-analyst/data-warehouse-mgr/bldg-google-ecomm-dim.md)
       - [Beräknade kolumntyper](data-analyst/data-warehouse-mgr/calc-column-types.md)
       - [Konfigurerar replikeringsmetoder](data-analyst/data-warehouse-mgr/cfg-replication-methods.md)
       - [Konfigurera datainställningar](data-analyst/data-warehouse-mgr/cfg-data-rechecks.md)
-      - [Ändra ett måtts driftstabell](data-analyst/data-warehouse-mgr/change-metric-op-table.md)
-      - [Skapa och använda Data warehouse-vyer](data-analyst/data-warehouse-mgr/create-dw-views.md)
+      - [Ändra ett måtts användningstabell](data-analyst/data-warehouse-mgr/change-metric-op-table.md)
+      - [Skapa och använda Data Warehouse](data-analyst/data-warehouse-mgr/create-dw-views.md)
       - [Skapa/ta bort sökvägar för beräknade kolumner](data-analyst/data-warehouse-mgr/create-paths-calc-columns.md)
       - [Skapa/använda en SQL-beräknad kolumn](data-analyst/data-warehouse-mgr/create-sql-calc-column.md)
       - [Skapa beräknade kolumner](data-analyst/data-warehouse-mgr/creating-calculated-columns.md)
@@ -70,7 +70,7 @@ ht-degree: 0%
       - [[!DNL sales_order_item]](data-analyst/data-warehouse-mgr/sales-flat-order-item-table.md)
       - [[!DNL quote]](data-analyst/data-warehouse-mgr/sales-flat-quote-table.md)
       - [[!DNL quote_item]](data-analyst/data-warehouse-mgr/sales-flat-quote-item-table.md)
-   - SQL Report Builder {#sql}
+   - SQL REPORT BUILDER {#sql}
       - [Använda [!DNL Cohort Report Builder]](data-analyst/dev-reports/cohort-rpt-bldr.md)
       - [Använda [!DNL Cohort Report Builder] för ej datumbaserade kohorter](data-analyst/dev-reports/cohort-rpt-non-date-based.md)
       - [Skapa en kvalitativ kohortanalys](data-analyst/dev-reports/create-qual-cohort-analysis.md)
@@ -131,7 +131,7 @@ ht-degree: 0%
    - Databasintegreringar {#integration}
       - [Ansluter [!DNL Amazon RDS]](data-analyst/importing-data/integrations/amazon-rds.md)
       - [Ansluta databaser via VPN](data-analyst/importing-data/integrations/databases-via-a-vpn.md)
-      - [Anslut dina [!DNL MySQL Database] till [!DNL Commerce Intelligence]](data-analyst/importing-data/integrations/db-to-mbi.md)
+      - [Koppla samman [!DNL MySQL Database] till [!DNL Commerce Intelligence]](data-analyst/importing-data/integrations/db-to-mbi.md)
       - [Ansluta Adobe Commerce](data-analyst/importing-data/integrations/magento.md)
       - [Förväntade handelsdata](data-analyst/importing-data/integrations/magento-data.md)
       - [Ansluter [!DNL Microsoft SQL Server]](data-analyst/importing-data/integrations/microsoft-sql-server.md)
@@ -167,7 +167,7 @@ ht-degree: 0%
       - [Analyserar upprepad sannolikhetsminskning och -förändring](data-analyst/analysis/repeat-decay-churn.md)
       - [Förstå och bygga upp en grundläggande analys](data-analyst/analysis/basic-analytics.md)
       - [Identifiera era mest värdefulla marknadsföringskällor och kanaler](data-analyst/analysis/most-value-source-channel.md)
-      - [Förstå [!DNL Google Analytics] UTM-attribuering](data-analyst/analysis/utm-attributes.md)
+      - [Förstå [!DNL Google Analytics] UTM-attribut](data-analyst/analysis/utm-attributes.md)
       - [Analysera lagernivåer](data-analyst/analysis/analyze-inventory-level.md)
       - [Rapportera en butikskalender](data-analyst/analysis/report-retail-calendar.md)
    - Prognos {#forecasting}
@@ -196,7 +196,7 @@ ht-degree: 0%
       - [Hantera instrumentpaneler](data-user/dashboards/managing-dashboard.md)
       - [Ta bort instrumentpaneler](data-user/dashboards/deleting-dashboard.md)
       - [Byter namn på instrumentpaneler](data-user/dashboards/renaming-dashboard.md)
-      - [Ange en standardinstrumentpanel](data-user/dashboards/set-default-dashboard.md)
+      - [Ställa in en standardinstrumentpanel](data-user/dashboards/set-default-dashboard.md)
       - [Lägga till diagram på kontrollpaneler](data-user/dashboards/add-charts-dashboard.md)
       - [Ta bort diagram från kontrollpaneler](data-user/dashboards/remove-charts-dashboard.md)
       - [Ändra storlek på och ordna diagram på en kontrollpanel](data-user/dashboards/resize-charts-dashboard.md)
@@ -226,12 +226,12 @@ ht-degree: 0%
       - [Förstå [!DNL Commerce Intelligence] Miljö](best-practices/understanding-magento.md)
    - Projektorganisation {#project}
       - [Namnge rapporter och element i [!DNL Commerce Intelligence]](best-practices/naming-elements.md)
-      - [Konsoliderar tabeller](best-practices/consolidating-your-tables.md)
+      - [Konsoliderar dina tabeller](best-practices/consolidating-your-tables.md)
       - [Deklarera [!DNL Commerce Intelligence] konto](best-practices/declutter-account.md)
    - Arbeta med kontrollpaneler {#working-dashboards}
       - [Dela instrumentpaneler](best-practices/share-dashboard-best-practice.md)
       - [Bygga en Investor Dashboard](best-practices/build-investor-dashboard.md)
-- Tutorials {#tutorials}
+- Självstudiekurser {#tutorials}
    - [Använda [!DNL Visual Report Builder]](tutorials/using-visual-report-builder.md)
    - [Använda tidsalternativ i dialogrutan [!DNL Visual Report Builder]](tutorials/time-options-visual-rpt-bldr.md)
    - [Skapa visualiseringar för en [!DNL SQL] Fråga](tutorials/create-visuals-from-sql.md)

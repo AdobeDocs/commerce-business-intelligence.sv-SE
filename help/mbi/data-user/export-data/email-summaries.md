@@ -1,6 +1,6 @@
 ---
 title: Skapa automatiska e-postsammanfattningar
-description: Lär dig hur du skapar automatiska e-postsammanfattningar.
+description: Lär dig skapa automatiska e-postsammanfattningar.
 exl-id: a9aea4fc-9193-467f-8554-3ad77ac3fa73
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -24,17 +24,17 @@ E-postsammanfattningar är ett kraftfullt kommunikationsverktyg som du kan anvä
 
 1. Klicka **[!DNL Manage Data]** sedan **[!UICONTROL Email Summary]** i sidlisten.
 
-   Om det är första gången du skapar en e-postsammanfattning visas inga sparade sammanfattningar på den här sidan.
+   Om det här är första gången du skapar en e-postsammanfattning visas inga sparade sammanfattningar på den här sidan.
 
-1. Klicka **[!UICONTROL Create New Email Summary]** i det övre högra hörnet.
+1. Klicka **[!UICONTROL Create New Email Summary]** längst upp till höger.
 
 1. Ange ett namn för sammanfattningen.
 
-   Välj ett namn som visar vad som ingår i sammanfattningen. Till exempel: `AOV Comparison`.
+   Välj ett namn som visar vad som ingår i sammanfattningen. Exempel, `AOV Comparison`.
 
 1. I `Choose Content` markerar du de rapporter som du vill ta med i sammanfattningen.
 
-   Du kan välja upp till tio rapporter som du äger. När du har valt en rapport använder du de ikoner som visas för att välja om du vill att rapporten ska skickas som en tabell eller ett diagram. Om du sparade rapporten som ett nummer kan du bara skicka den som ett nummer. Information om hur du skickar en e-postsammanfattning som innehåller en rapport med inaktuella data finns i [Hantera dina kontoinställningar](../../administrator/account-management/managing-account-settings.md).
+   Du kan välja upp till tio rapporter som du äger. När du har valt en rapport använder du de ikoner som visas för att välja om du vill att rapporten ska skickas som en tabell eller ett diagram. Om du sparade rapporten som ett nummer kan du bara skicka den som ett nummer. Mer information om hur du skickar en e-postsammanfattning som innehåller en rapport med inaktuella data finns i [Hantera dina kontoinställningar](../../administrator/account-management/managing-account-settings.md).
 
    >[!NOTE]
    >
@@ -46,7 +46,7 @@ E-postsammanfattningar är ett kraftfullt kommunikationsverktyg som du kan anvä
 
 ## Schemalägg e-postsammanfattning
 
-I `Set when to send the Email Summary` kan du ange när e-postsammanfattningarna ska skickas. Alternativen är:
+I `Set when to send the Email Summary` kan du ange när e-postsammanfattningarna ska skickas. Alternativ:
 
 * `Manual`
 * `Once`
@@ -56,11 +56,11 @@ I `Set when to send the Email Summary` kan du ange när e-postsammanfattningarna
 
 1. Välj `Manual` från `Set when to send the Email Summary` fält.
 
-1. Klicka **[!UICONTROL Save]**.
+1. Klicka på **[!UICONTROL Save]**.
 
    Sammanfattningen sparas då i listan med e-postsammanfattningar.
 
-1. När du är klar att skicka sammanfattningen klickar du på kugghjulsikonen och väljer `Send Now`.
+1. Klicka på kugghjulsikonen och välj sedan `Send Now`.
 
 ### Skicka e-postsammanfattning en gång
 
@@ -68,7 +68,7 @@ I `Set when to send the Email Summary` kan du ange när e-postsammanfattningarna
 
 1. Ange startdatum i dialogrutan `Select Start Date` kalender.
 
-1. Ange när e-postmeddelandet ska skickas i dialogrutan `Select time to send` fält.
+1. Ange när du vill skicka e-postmeddelandet i dialogrutan `Select time to send` fält.
 
 ### Skapa upprepande schema
 
@@ -78,7 +78,7 @@ I `Set when to send the Email Summary` kan du ange när e-postsammanfattningarna
 
 1. Ange startdatum i dialogrutan `Select Start Date` kalender.
 
-1. Ange när e-postmeddelandet ska skickas i dialogrutan `Select time to send` fält.
+1. Ange när du vill skicka e-postmeddelandet i dialogrutan `Select time to send` fält.
 
 1. (Valfritt) Om du vill ange ett slutdatum väljer du `End Date` och välj slutdatumet i kalendern.
 
@@ -87,7 +87,7 @@ I `Set when to send the Email Summary` kan du ange när e-postsammanfattningarna
 När du har skapat och sparat en e-postsammanfattning kan du `Email Summaries` visas en lista med alla sparade sammanfattningar. Du kan expandera (`+`) varje rad för mer information. Kolumnerna i den här vyn är:
 
 * `Email Name` - Namn på e-postsammanfattning
-* `Content` - Typ av innehåll i sammanfattningen, t.ex. namn på rapporter. Information om hur du skickar en e-postsammanfattning som innehåller en rapport med inaktuella data finns i [Hantera dina kontoinställningar](../../administrator/account-management/managing-account-settings.md).
+* `Content` - Typ av innehåll i sammanfattningen, t.ex. namn på rapporter. Mer information om hur du skickar en e-postsammanfattning som innehåller en rapport med inaktuella data finns i [Hantera dina kontoinställningar](../../administrator/account-management/managing-account-settings.md).
 * `Scheduled` - Frekvens, datum och tid när e-postsammanfattningen skickas
 * `Recipients` - Mottagare av e-postsammanfattning
 * `Created Date` - Det datum då e-postsammanfattningen skapades
@@ -97,5 +97,5 @@ Klicka på kugghjulsikonen till höger om varje rad för att:
 
 * `Send Now` - Skickar e-postsammanfattningen omedelbart till alla angivna mottagare
 * `Edit` - Gör att du kan ändra informationen i e-postsammanfattningen
-* `Pause/Active` - Gör att du kan pausa att e-postsammanfattningen levereras eller aktivera sammanfattningen baserat på hur den har konfigurerats
-* `Delete` - Tar bort e-postsammanfattningen
+* `Pause/Active` - Gör att du kan pausa att e-postsammanfattningen levereras eller aktivera sammanfattningen baserat på hur den är konfigurerad
+* `Delete` - Tar bort e-postsammanfattning

@@ -24,13 +24,13 @@ The [!DNL SQL Report Builder] används främst för att skapa nya rapporter och 
 - Alla **filter (och filteruppsättningar)** som har lagts till i måttet, vilket anges av `WHERE` i exemplet nedan.
 - Komponenten i **tidsstämpel** (år, månad) på vilket uppgifterna ska beställas, vilket anges av `ORDER BY` i exemplet nedan.
 
-Om du vill få en tydligare bild av frågan kan du ändra hur den visas i frågefältet. Välj `Run Query`. Resultatet fylls i som en tabell i rapportpanelen nedanför frågan.
+Om du vill få en tydligare bild av frågan kan du formatera om hur den visas i frågefältet. När du är klar väljer du `Run Query`. Resultatet fylls i som en tabell i rapportpanelen nedanför frågan.
 
 ![](../../assets/run-query-results.gif)
 
 ## Begränsa frågan
 
-Om du försöker hitta en viss diskrepans eller datauppsättning bör du begränsa frågan till ett visst prov för att kontrollera mot den lokala databasen. Du kan göra detta genom att redigera frågan så att den matchar dina önskade begränsningar. I följande exempel begränsar du frågan till att endast inkludera intäkter från 1 januari 2013 eller senare. När du har uppdaterat frågan väljer du **[!UICONTROL Run Query]** igen för att uppdatera resultaten.
+Om du försöker hitta en viss diskrepans eller datauppsättning bör du begränsa frågan till ett visst prov för att kontrollera mot den lokala databasen. Du kan göra detta genom att redigera frågan så att den matchar dina önskade begränsningar. I följande exempel begränsar du frågan till att endast inkludera intäkter från 1 januari 2013 eller senare. När du uppdaterat frågan väljer du **[!UICONTROL Run Query]** igen för att uppdatera resultaten.
 
 ![](../../assets/restricting-query.gif)
 
@@ -48,4 +48,4 @@ Du kan också skriva egna frågor och exportera resultaten som ska jämföras me
 
 >[!NOTE]
 >
->Om du hittar en diskrepans efter att ha granskat dina data kan du titta på [Kontakta support: Dataavvikelser](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies.html) om du vill ha mer information om vad du ska göra härnäst.
+>Om du hittar en diskrepans efter att ha granskat dina data kan du titta på [Kontakta support: dataavvikelser](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies.html) om du vill ha mer information om vad du ska göra härnäst.

@@ -22,7 +22,7 @@ ht-degree: 0%
    >
    >Om du vill visa, lägga till eller ändra faktureringsinformationen för ditt konto måste du ha `Billing` behörigheter. [Behörigheter anges per användare](../../administrator/user-management/user-management.md) när användarkonton skapas. Om du behöver `Billing` behörigheter, kontakta kontoadministratören.
 
-1. Klicka **[!UICONTROL Save]**.
+1. Klicka på **[!UICONTROL Save]**.
 
 Den nya användaren får ett e-postmeddelande med inloggnings- och lösenordsinformation.
 
@@ -30,7 +30,7 @@ Den nya användaren får ett e-postmeddelande med inloggnings- och lösenordsinf
 >
 >Den nya användaren har inga instrumentpaneler som standard. Adobe rekommenderar att du [dela](../../data-user/dashboards/share-dashboard-with-users.md) de nödvändiga instrumentpanelerna med den nya användaren direkt.
 
-## Uppdatera din e-postadress eller ditt lösenord
+## Uppdatera e-postadress eller lösenord
 
 Du kan uppdatera din e-postadress och/eller ditt lösenord genom att klicka på företagsnamnet i det övre högra hörnet och sedan klicka på **[!UICONTROL Edit Profile]**.
 

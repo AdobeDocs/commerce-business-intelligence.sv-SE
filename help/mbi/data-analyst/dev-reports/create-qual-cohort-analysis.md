@@ -31,7 +31,7 @@ Mest `cohort` analyserar i [!DNL Commerce Intelligence] gruppera användare efte
 
 ## Hur skiljer det sig från det normala? `cohort` builder? {#different}
 
-The [`Cohort Analysis Builder`](../dev-reports/cohort-rpt-bldr.md) är optimerad för gruppering av kohorter med hjälp av en tidsbaserad egenskap. Detta är bra för analyser som fokuserar på ett visst användarsegment (till exempel alla användare som har skaffats via en betalsökningskampanj). I `Cohort Analysis Builder`kan du (1) fokusera på den specifika användargruppen och (2) `cohort` på ett datum (som deras första orderdatum).
+The [`Cohort Analysis Builder`](../dev-reports/cohort-rpt-bldr.md) är optimerad för gruppering av kohorter med hjälp av en tidsbaserad egenskap. Detta är bra för analyser som fokuserar på ett visst användarsegment (till exempel alla användare som har skaffats via en betalsökkampanj). I `Cohort Analysis Builder`kan du (1) fokusera på den specifika användargruppen och (2) `cohort` på ett datum (som deras första orderdatum).
 
 Om du vill analysera kohortbeteendet för flera användarsegment i samma kohortrapport (`paid` sökkontra `organic` sökning kontra direkt trafik, kanske?) kan den här mer avancerade analysen skapas i `Report Builder`.
 
@@ -39,13 +39,13 @@ Om du vill analysera kohortbeteendet för flera användarsegment i samma kohortr
 
 Skapa en `qualitative cohort` i `Report Builder` ingår i Adobe analysteam som skapar [avancerade beräknade kolumner](../data-warehouse-mgr/creating-calculated-columns.md) på de tabeller som behövs.
 
-Om du vill skapa dessa skickar du en [supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) (och hänvisa till den här artikeln!). Det här behöver du veta:
+Om du vill skapa dessa skickar du en [supportbiljett](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) (och hänvisa till den här artikeln!). Det här behöver du veta:
 
 * The `metric` du vill utföra din kohortanalys med och vilken tabell den använder (exempel: `Revenue`, som bygger på `orders` tabell).
 
 * The `user segments` du vill definiera och ange var informationen finns i din databas (exempel: olika värden för `User's referral source`, inbyggt i `users` tabellen och flytta ned till `orders`).
 
-* The `cohort date` vill du att analysen ska använda (exempel: den `User's first order date` tidsstämpel). Det här exemplet gör att vi kan titta på varje segment och fråga `How does a user's revenue grow in the months following their first order date?`.
+* The `cohort date` vill du att analysen ska använda (exempel: `User's first order date` tidsstämpel). Det här exemplet gör att vi kan titta på varje segment och fråga `How does a user's revenue grow in the months following their first order date?`.
 
 * The `time interval` som du vill se analysen över (exempel: `weeks`, `months`, eller `quarters` efter `User's first order date`).
 
@@ -73,10 +73,10 @@ För det tredje justerar du inställningarna för `cohorts`. Baserat på `cohort
 
 * Markera alla värden i `dimension` där du är intresserad
 
-* Med `Show top/bottom option`, välj de X månader du är intresserad av och sortera efter `Months between this order and customer's first order date` dimension
+* Med `Show top/bottom option`, välj de X bästa månaderna och sortera efter `Months between this order and customer's first order date` dimension
 
 Nu kan du se en rad för varje `cohort` som du angav. Kolla in exemplet nu - du ser `Revenue` från användare av varje hänvisningskälla, `grouped by` antalet månader mellan den första ordern och efterföljande order. Exemplet lade också till en `Cumulative perspective` för att se `cohorts'` aggregerad tillväxt - se resultattabellen för mer granularitet.
 
 Vad säger det här till oss? Här är den specifika hänvisningskällan `Paid search` är värdefullt den första månaden under en kunds livslängd, men inte behåller sin kundbas med upprepade intäkter. while `Direct Traffic` från början till ett lägre belopp, ackumuleras intäkterna under de följande månaderna i ungefär samma takt.
 
-Oberoende av hur du diskar det, `cohort` analys är ett kraftfullt verktyg i analysverktygslådan. Den här typen av analys kan ge er intressanta insikter om ert företag som traditionella `time-based cohorts` kanske inte gör det möjligt för er att fatta bättre datadrivna beslut.
+Oberoende av hur du diskar det, `cohort` analys är ett kraftfullt verktyg i analysverktygslådan. Den här typen av analys kan ge er intressanta insikter om ert företag som traditionella `time-based cohorts` kanske inte gör det möjligt för er att fatta bättre databaserade beslut.

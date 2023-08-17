@@ -96,7 +96,7 @@ Kolumner att skapa
   [!UICONTROL-kolumntyp]: – "Samma tabell > Beräkning"
 * [!UICONTROL Inputs]: - **(input) Rankning per kundens livstid antal order**, **Antal kunder**
 * [!UICONTROL Calculation]: - **case when A is null then null else (B-(A-1)) end**
-* [!UICONTROL Datatype]: - heltal
+* [!UICONTROL Datatype]: - Heltal
 
 * Kundens frekvenspoäng (per percentiler)
 * [!UICONTROL Column type]: `Same table > Calculation`

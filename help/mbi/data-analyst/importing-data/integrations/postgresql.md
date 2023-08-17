@@ -26,8 +26,8 @@ Koppla samman [!DNL PostgreSQL] databas till [!DNL Commerce Intelligence] via `S
 The `public key` används för att auktorisera [!DNL Commerce Intelligence] [!DNL Linux] användare. Nu ska du skapa användaren och importera nyckeln.
 
 1. Gå till **[!UICONTROL Manage Data** > **Connections]** och klicka **[!UICONTROL Add a Data Source]**.
-1. Klicka på [!DNL PostgreSQL] ikon.
-1. Efter `PostgreSQL credentials` öppnas, ange `Encrypted` växla till `Yes`. Här visas `SSH` installationsformulär.
+1. Klicka på [!DNL PostgreSQL] -ikon.
+1. Efter `PostgreSQL credentials` sidan öppnas, ange `Encrypted` växla till `Yes`. Här visas `SSH` installationsformulär.
 1. The `public key` finns under det här formuläret.
 
 Lämna den här sidan öppen genom hela självstudiekursen - du behöver den i nästa avsnitt och i slutet.
@@ -44,7 +44,7 @@ För att anslutningen ska lyckas måste du konfigurera brandväggen så att den 
 
 Detta kan vara en produktionsmaskin eller en sekundär maskin, förutsatt att den innehåller realtidsdata (eller ofta uppdaterade). Du kan [begränsa den här användaren](../../../administrator/account-management/restrict-db-access.md) på vilket sätt du vill, förutsatt att du behåller rätten att ansluta till [!DNL PostgreSQL] server.
 
-1. Om du vill lägga till den nya användaren kör du följande kommandon som rot på din [!DNL Linux] server:
+1. Om du vill lägga till den nya användaren kör du följande kommandon som rot på [!DNL Linux] server:
 
 ```bash
         adduser rjmetric -p<password>
@@ -80,13 +80,13 @@ Din organisation kan behöva utföra en annan process, men det enklaste sättet 
     GRANT CONNECT ON DATABASE <database name> TO rjmetric WITH PASSWORD <secure password>;GRANT USAGE ON SCHEMA <schema name> TO rjmetric;GRANT SELECT ON ALL TABLES IN SCHEMA <schema name> TO rjmetric;ALTER DEFAULT PRIVILEGES IN SCHEMA <schema name> GRANT SELECT ON TABLES TO rjmetric;
 ```
 
-Ersätt `secure password` med ditt eget säkra lösenord, som kan skilja sig från SSH-lösenordet. Se även till att ersätta `database name` och `schema name` med rätt namn i databasen.
+Ersätt `secure password` med ditt eget säkra lösenord, som kan skilja sig från SSH-lösenordet. Se även till att du ersätter `database name` och `schema name` med rätt namn i databasen.
 
 Om du vill ansluta flera databaser eller scheman upprepar du den här processen efter behov.
 
 ## Ange anslutningen och användarinformationen i [!DNL Commerce Intelligence] {#finish}
 
-Om du vill slå ihop allt måste du ange anslutningen och användarinformationen i [!DNL Commerce Intelligence]. Gav du [!DNL PostgreSQL] öppnas inloggningssidan? Om inte, gå till **[!UICONTROL Manage Data > Connections]** och klicka **[!UICONTROL Add a Data Source]** och sedan [!DNL PostgreSQL] ikon. Glöm inte att ställa in `Encrypted` växla till `Yes`.
+Om du vill slå ihop allt måste du ange anslutningen och användarinformationen i [!DNL Commerce Intelligence]. Gav du [!DNL PostgreSQL] öppnas inloggningssidan? Om inte, gå till **[!UICONTROL Manage Data > Connections]** och klicka **[!UICONTROL Add a Data Source]** och sedan [!DNL PostgreSQL] -ikon. Glöm inte att ställa in `Encrypted` växla till `Yes`.
 
 Ange följande information på den här sidan, med början på `Database Connection` avsnitt:
 
@@ -97,11 +97,11 @@ Ange följande information på den här sidan, med början på `Database Connect
 
 Under `SSH Connection`:
 
-* `Remote Address`: IP-adressen eller värdnamnet för den server som du ska ansluta till
+* `Remote Address`: IP-adressen eller värdnamnet för den server som du ska SSH till
 * `Username`: Ditt SSH-inloggningsnamn (bör vara jmetriskt)
 * `SSH Port`: SSH-port på servern (22 som standard)
 
-När du är klar klickar du på **Spara och testa** för att slutföra installationen.
+När du är klar klickar du **Spara och testa** för att slutföra installationen.
 
 ### Relaterad
 

@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # Kurvfrekvens
 
-I det här avsnittet visas hur du beräknar en **bortfallstakt** för **e-handelskunder**. Till skillnad från SaaS och traditionella prenumerationsföretag har e-handelskunder vanligtvis ingen konkreta **&quot;churn event&quot;** som visar att de inte längre ska räknas med i era aktiva kunder. Av den anledningen kan du med instruktionerna nedan definiera en kund som&quot;efterfrågad&quot; baserat på den tid som gått sedan den senaste ordern.
+I det här avsnittet visas hur du beräknar en **bortfallstakt** för **e-handelskunder**. Till skillnad från SaaS och traditionella prenumerationsföretag har e-handelskunder vanligtvis ingen konkreta **&quot;churn event&quot;** för att visa att de inte längre ska räknas med i era aktiva kunder. Av den anledningen kan du med instruktionerna nedan definiera en kund som&quot;efterfrågad&quot; baserat på den tid som gått sedan den senaste ordern.
 
 ![](../../assets/Churn_rate_image.png)
 
@@ -46,10 +46,10 @@ Kolumner att skapa
 
 >[!NOTE]
 >
->Det här måttet kan finnas på ditt konto.
+>Detta mått kan finnas på ditt konto.
 
 * I **`customer_entity`** table
-* Detta mått utför en **Antal**
+* Det här måttet utför en **Antal**
 * På **`entity_id`** kolumn
 * Beställd av **`Customer's first order date`** tidsstämpel
 * [!UICONTROL Filter]:
@@ -59,10 +59,10 @@ Kolumner att skapa
 
   >[!NOTE]
   >
-  >Det här måttet kan finnas på ditt konto.
+  >Detta mått kan finnas på ditt konto.
 
 * I **`customer_entity`** table
-* Detta mått utför en **Antal**
+* Det här måttet utför en **Antal**
 * På **`entity_id`** kolumn
 * Beställd av **`Customer's last order date`** tidsstämpel
 * [!UICONTROL Filter]:

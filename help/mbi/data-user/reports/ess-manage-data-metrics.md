@@ -25,17 +25,17 @@ När de används i rapporter kan mätvärden analyseras över en angiven tidsper
 
 ## Definiera måttet {#define}
 
-1. Om du vill skapa ett mätresultat klickar du på **[!UICONTROL Data** > **Metrics]**.
+1. Om du vill skapa ett mått klickar du på **[!UICONTROL Data** > **Metrics]**.
 
-1. Klicka **[!UICONTROL Create New Metric]**.
+1. Klicka på **[!UICONTROL Create New Metric]**.
 
 1. I listrutan klickar du på den tabell som innehåller den ursprungliga eller beräknade kolumnen som du vill använda för måttet.
 
 1. Namnge mätvärdena.
 
-   Adobe rekommenderar ett namn som i korthet talar om för dig vad måttet är. Till exempel: `Average Order Revenue`.
+   Adobe rekommenderar ett namn som i korthet talar om för dig vad måttet är. Exempel: `Average Order Revenue`.
 
-1. Nästa steg är att definiera vad mätvärdena gör. Definiera måttets åtgärd med hjälp av listrutemenyerna, `operation` kolumn och en `date` dimension:
+1. Nästa steg är att definiera vad mätvärdena gör. Definiera måttets åtgärd med hjälp av listrutemenyerna, `operation` kolumn, och en `date` dimension:
 
    * Välj en åtgärd:
       * `Count` - Den här åtgärden räknar antalet rader i en datatabell
@@ -52,7 +52,7 @@ När de används i rapporter kan mätvärden analyseras över en angiven tidsper
 
      Om du redigerar ett befintligt mått kan du även [ändra måttets driftstabell](../../data-analyst/data-warehouse-mgr/change-metric-op-table.md) i det här avsnittet.
 
-   * Välj en datumdimension som kan användas för att trenda måttet. Till exempel: `order date`.
+   * Välj en datumdimension som kan användas för att trenda måttet. Exempel, `order date`.
 
 ## Lägga till filter {#filters}
 
@@ -68,7 +68,7 @@ The `Filter Logic` är där du kan definiera hur ett mätresultat ska fungera.
 
 ## Lägga till Dimensioner {#dimensions}
 
-The [`Dimensions`](../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) I avsnittet visas alla tillgängliga datadimensioner för filtrering eller gruppering. Som standard listas alla tillgängliga datakolumner som dimensioner. Om du vill segmentera dina intäkter utifrån hänvisningskälla kan du göra det här.
+The [`Dimensions`](../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) I visas alla tillgängliga datamått för filtrering eller gruppering. Som standard anges alla tillgängliga datakolumner som dimensioner. Om du vill segmentera dina intäkter utifrån hänvisningskälla kan du göra det här.
 
 Förutom att ange alla tillgängliga datakolumner som dimensioner, [!DNL Commerce Intelligence] gissar på vilka kolumner som kan grupperas. *Segmentera eller gruppera data i rapporter*, kolumner måste markeras som grupperbara.
 

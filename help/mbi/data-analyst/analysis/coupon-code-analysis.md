@@ -21,7 +21,7 @@ Denna analys innehåller [avancerade beräknade kolumner](../data-warehouse-mgr/
 
 ## Komma igång
 
-Som ett första steg måste du se till att följande kolumner synkroniseras med Data warehouse. Om de inte är det, gå vidare och spåra dem genom att navigera till `Manage Data` > `Data Warehouse`och synkronisera följande:
+Som ett första steg måste du se till att följande kolumner synkroniseras med Datan Warehouse. Om de inte är det, gå vidare och spåra dem genom att navigera till `Manage Data` > `Data Warehouse`och synkronisera följande:
 
 * **sales\_flat\_order** table
 * **kupong\_kod**
@@ -50,7 +50,7 @@ Kolumner som ska skapas oavsett gästorderprincip:
    * [!UICONTROL Datatype] Sträng
    * [!UICONTROL Calculation]: `concat(A,' - ',B)`
 
-* **Antal order med denna kupong**
+* **Antal order med den här kupongen**
    * [!UICONTROL Column type]: `Same Table => EVENT\_NUMBER`
    * Ägare till händelse:`INPUT customer_id - coupon code`
    * Händelsenivå: `created\_at`
@@ -164,7 +164,7 @@ Ytterligare kolumner som ska skapas om gästorder INTE stöds:
    * `Order has coupon applied? (Coupon/No coupon)= Coupon`
 
 * I `sales\_flat\_order` table
-* Detta mått utför en **Summa**
+* Det här måttet utför en **Summa**
 * På `discount\_amount` kolumn
 * Beställd av `created\_at` tidsstämpel
 * [!UICONTROL Filter]:
@@ -174,7 +174,7 @@ Ytterligare kolumner som ska skapas om gästorder INTE stöds:
    * `Order has coupon applied? (Coupon/No coupon)= Coupon`
 
 * I `sales\_flat\_order` table
-* Detta mått utför en **Antal**
+* Det här måttet utför en **Antal**
 * På `entity\_id` kolumn
 * Beställd av `created\_at` tidsstämpel
 * [!UICONTROL Filter]:
@@ -205,7 +205,7 @@ Ytterligare kolumner som ska skapas om gästorder INTE stöds:
 * [!UICONTROL Group by]: `Coupon acquisitions customer` eller `Non coupon acquisition customer`
 * [!UICONTROL Chart type]: `Stacked column`
 
-* **Inkomster för genomsnittlig livstid: Kuponger (90+ dagar)**
+* **Genomsnittlig intäkt för livstid: Kupong Acq. (90+ dagar)**
    * [!UICONTROL Metric]: `Average lifetime revenue`
    * [!UICONTROL Filter]:
       * Kundens första order innehöll en kupong (kupong/ingen kupong) = kupong
@@ -217,8 +217,8 @@ Ytterligare kolumner som ska skapas om gästorder INTE stöds:
 * 
   [!UICONTROL-diagramtyp]: `Scalar`
 
-* **Inkomster för genomsnittlig livstid: Acq utan kupong (90+ dagar)**
-   * [!UICONTROL Metric]: Genomsnittlig intäkt för livstid
+* **Genomsnittlig livstidsintäkt: ej kupongad Acq. (90+ dagar)**
+   * [!UICONTROL Metric]: Inkomster för genomsnittlig livstid
    * [!UICONTROL Filter]:
       * Kundens första order innehöll en kupong (kupong/ingen kupong) = ingen kupong
 
@@ -244,7 +244,7 @@ Ytterligare kolumner som ska skapas om gästorder INTE stöds:
 >
 >Om du har många kupongkoder, precis som många kunder, vill du använda en övre/nedre del, t.ex. de tio viktigaste, sorterade efter Avg livstid.
 
-* **Sannolikhet för upprepad order: Kupongförvärv**
+* **Sannolikhet för upprepade order: kupongförvärv**
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Filter]:
       * Kundens första order innehöll en kupong (kupong/ingen kupong) = kupong
@@ -268,7 +268,7 @@ Ytterligare kolumner som ska skapas om gästorder INTE stöds:
 * [!UICONTROL Group by]: `Customer's order number`
 * [!UICONTROL Chart type]: `Bar chart`
 
-* **Sannolikhet för upprepad ordning: Icke-kupongförvärv**
+* **Sannolikhet för upprepade order: Icke-kupongförvärv**
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Filter]:
       * Kundens första order innehöll en kupong (kupong/ingen kupong) = ingen kupong
@@ -321,7 +321,7 @@ Ytterligare kolumner som ska skapas om gästorder INTE stöds:
 * 
   [!UICONTROL-intervall]: `None`
 * 
-  [!UICONTROL-diagramtyp]: `Table` (kan införliva den här tabellen för bättre visualisering)
+  [!UICONTROL-diagramtyp]: `Table` (kan införliva tabellen för bättre visualisering)
 
 * **Icke-kupongförvärvad kunds kuponganvändning (upprepade order)**
    * [!UICONTROL Metric]: `New customers`
@@ -351,7 +351,7 @@ Ytterligare kolumner som ska skapas om gästorder INTE stöds:
 * 
   [!UICONTROL-intervall]: `None`
 * 
-  [!UICONTROL-diagramtyp]: `Table` (kan införliva den här tabellen för bättre visualisering)
+  [!UICONTROL-diagramtyp]: `Table` (kan införliva tabellen för bättre visualisering)
 
 * **Kuponganvändningsinformation (första beställningen)**
    * [!UICONTROL Metric]: `Number of orders`
@@ -370,7 +370,7 @@ Ytterligare kolumner som ska skapas om gästorder INTE stöds:
       * Kundens ordernummer = 1
       * Antal order med denna kupong > 10
 
-   * [!UICONTROL Formula]: `B-C` (om C är negativt) B+C (om C är positivt)
+   * [!UICONTROL Formula]: `B-C` (om C är negativt), B+C (om C är positivt)
    * 
      [!UICONTROL-format]: `Currency`
 
@@ -392,7 +392,7 @@ Ytterligare kolumner som ska skapas om gästorder INTE stöds:
   [!UICONTROL-diagramtyp]: `Table`
 >[!NOTE]
 >
->Mängden 10 för &quot;Antal order med denna kupong&quot; är godtycklig. Du kan använda den lämpligaste kvantiteten för det här filtret.
+>Kvantiteten 10 för &quot;Antal order med denna kupong&quot; är godtycklig. Du kan använda den lämpligaste kvantiteten för det här filtret.
 
 * **Antal order med kupong (all tid)**
    * [!UICONTROL Metric]: `Number of coupons used`
@@ -440,7 +440,7 @@ Ytterligare kolumner som ska skapas om gästorder INTE stöds:
 * **Kuponganvändning bland återkommande användare**
    * [!UICONTROL Metric]: `New customers`
    * [!UICONTROL Filter]:
-      * Kundens antal beställningar > 1
+      * Kundens antal beställningar under hela dess livslängd > 1
 
 * Mått `A`: `New customers`
 * [!UICONTROL Time period]: `All time`
@@ -502,7 +502,7 @@ Ytterligare kolumner som ska skapas om gästorder INTE stöds:
 
 >[!NOTE]
 >
->Mängden 10 för &quot;Antal order med denna kupong&quot; är godtycklig. Du kan använda den lämpligaste kvantiteten för det här filtret.
+>Kvantiteten 10 för &quot;Antal order med denna kupong&quot; är godtycklig. Du kan använda den lämpligaste kvantiteten för det här filtret.
 
 När du har kompilerat alla rapporter kan du ordna dem på kontrollpanelen som du vill. Resultatet kan se ut som bilden överst på sidan.
 

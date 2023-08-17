@@ -23,7 +23,7 @@ I följande exempel visas hur du skapar en enkel rapport, grupperar data efter y
 
 1. Under [!UICONTROL Visual Report Builder], klicka **[!UICONTROL Create Report]** och gör följande:
 
-   * Klicka **[!UICONTROL Add Metric]**.
+   * Klicka på **[!UICONTROL Add Metric]**.
 
      De tillgängliga måtten kan listas i bokstavsordning eller efter tabell.
 
@@ -101,7 +101,7 @@ I följande exempel visas hur du skapar en enkel rapport, grupperar data efter y
      | ![](../../assets/magento-bi-btn-chart-vert-bar.png) | Lodrätt streck |
      | ![](../../assets/magento-bi-btn-chart-vert-stacked-bar.png) | Lodrät staplad liggande stapel |
      | ![](../../assets/magento-bi-btn-chart-pie.png) | Cirkel |
-     | ![](../../assets/magento-bi-btn-chart-area.png) | Yta |
+     | ![](../../assets/magento-bi-btn-chart-area.png) | Område |
      | ![](../../assets/magento-bi-btn-chart-funnel.png) | Tratt |
 
      {style="table-layout:auto"}
@@ -114,7 +114,7 @@ I följande exempel visas hur du skapar en enkel rapport, grupperar data efter y
 
    * Välj `Dashboard` om rapporten ska vara tillgänglig.
 
-   * Klicka **[!UICONTROL Save to Dashboard]**.
+   * Klicka på **[!UICONTROL Save to Dashboard]**.
 
      ![Spara på instrumentpanelen](../../assets/magento-bi-report-builder-save-to-dashboard.png)
 

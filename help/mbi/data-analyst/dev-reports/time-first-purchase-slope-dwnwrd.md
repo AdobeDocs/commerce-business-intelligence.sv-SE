@@ -19,7 +19,7 @@ Många Adobe-kunder har ett mätvärde och diagram `Average time to first purcha
 
 Detta beror på att dessa nyare kunder ännu inte har haft möjlighet att generera några inköp som gjorts mer än en månad efter deras anslutningsdatum. Eftersom användare som aldrig har gjort ett köp inte alls ingår (förrän de har gjort ett köp), innebär detta en minskning av den genomsnittliga prisnivån för nyare kundgrupper.
 
-Det finns några andra möjliga sätt att se på detta mätresultat som ger mindre förtjänster. Utforska ett exempel.
+Det finns några andra möjliga sätt att se på detta mätresultat som ger mindre förtjänster. Se ett exempel.
 
 ## Exempel: Utför en `cohort` analys av första order
 

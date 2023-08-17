@@ -7,7 +7,7 @@ feature: Commerce Tables, Data Warehouse Manager, Dashboards
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '114'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -21,11 +21,11 @@ Om du inte vill att kontrollpanelslistan ska bli för rörig kan du ta bort en k
 
 ## Ta bort instrumentpanelen via `Account Settings` page {#account}
 
-1. Klicka **[!UICONTROL Account Settings** > **Dashboards]**.
+1. Klicka på **[!UICONTROL Account Settings** > **Dashboards]**.
 
 1. Klicka på den instrumentpanel som du vill ta bort i listan med instrumentpaneler.
 
-1. Klicka **[!UICONTROL Delete Dashboard]**.
+1. Klicka på **[!UICONTROL Delete Dashboard]**.
 
 Exempel:
 

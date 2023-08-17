@@ -1,6 +1,6 @@
 ---
 title: Filter
-description: Lär dig hur du använder filter.
+description: Lär dig använda filter.
 exl-id: eb683dfe-9a90-400a-a0c0-3dc00d1f28b5
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
@@ -31,9 +31,9 @@ Ett eller flera filter kan läggas till för att begränsa vilka data som använ
 
    ![Lägg till filter](../../assets/magento-bi-report-builder-filter-add.png)
 
-1. Klicka **[!UICONTROL Add Filter]**.
+1. Klicka på **[!UICONTROL Add Filter]**.
 
-   Filtren numreras i bokstavsordning och det första är `[A]`. De första två delarna av filtret är listrutealternativ, och den tredje delen är ett värde.
+   Filter numreras i bokstavsordning och det första är `[A]`. De första två delarna av filtret är listrutealternativ, och den tredje delen är ett värde.
 
    ![](../../assets/magento-bi-report-builder-filter-add-a.png)
 
@@ -49,7 +49,7 @@ Ett eller flera filter kan läggas till för att begränsa vilka data som använ
 
      ![Ange värdet](../../assets/magento-bi-report-builder-filter-part3.png)
 
-   * När filtret är klart klickar du på **[!UICONTROL Apply]**.
+   * När filtret är klart klickar du **[!UICONTROL Apply]**.
 
      Rapporten innehåller nu bara återkommande kunder, och antalet kundposter som hämtats för rapporten har reducerats från 33 000 till 12 600.
 
@@ -65,6 +65,6 @@ Ett eller flera filter kan läggas till för att begränsa vilka data som använ
 
    The `Cumulative` I perspektivet fördelas förändringen över tid i stället för att visa de ojämna upp- och nedgraderingarna för varje månad.
 
-1. Ange `Title` för rapporten och klicka på **[!UICONTROL Save]** det som `Chart` till din instrumentpanel.
+1. Ange en `Title` för rapporten och klicka på **[!UICONTROL Save]** det som `Chart` till din instrumentpanel.
 
    ![Spara på instrumentpanelen](../../assets/magento-bi-report-builder-filter-perspective-cumulative-save.png)

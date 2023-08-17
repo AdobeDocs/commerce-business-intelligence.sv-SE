@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # Förväntat [!DNL Mixpanel] data
 
-Efter [du har anslutit din [!DNL Mixpanel] konto](../integrations/mixpanel.md)kan du använda [data warehouse Manager](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) för att enkelt spåra relevanta datafält för analys.
+Efter [du har anslutit din [!DNL Mixpanel] konto](../integrations/mixpanel.md)kan du använda [Data Warehouse Manager](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) för att enkelt spåra relevanta datafält för analys.
 
-I det här avsnittet beskrivs de huvuddatatabeller som du kan importera från [!DNL Mixpanel] i [!DNL Commerce Intelligence] konto. Följande tabeller skapas i Data warehouse efter att du har anslutit [!DNL Mixpanel]. Om du vill visa alla fält som är tillgängliga för spårning klickar du på länkarna i tabellnamnskolumnen.
+I det här avsnittet beskrivs de huvuddatatabeller som du kan importera från [!DNL Mixpanel] i [!DNL Commerce Intelligence] konto. Följande tabeller kommer att skapas i Datan Warehouse efter anslutningen [!DNL Mixpanel]. Om du vill visa alla fält som är tillgängliga för spårning klickar du på länkarna i tabellnamnskolumnen.
 
 >[!NOTE]
 >

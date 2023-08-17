@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # Datumdifferens beräknad kolumn
 
-I det här avsnittet beskrivs syftet med och användningsområdena för `Date Difference` beräknad kolumn tillgänglig i **[!DNL Manage Data > Data Warehouse]** sida. Nedan visas en förklaring av vad det gör, följt av ett exempel, och hur det går till att skapa det.
+I det här avsnittet beskrivs syftet med och användningsområdena för `Date Difference` beräknad kolumn tillgänglig i **[!DNL Manage Data > Data Warehouse]** sida. Nedan visas en förklaring av vad det gör, följt av ett exempel, och hur det fungerar.
 
 **Förklaring**
 

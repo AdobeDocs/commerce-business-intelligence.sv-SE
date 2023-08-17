@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >Tillgängligheten för vissa instrumentpaneler beror på din datamängd.
 
-Om du har frågor eller är intresserad av att lägga till ett paket i ditt konto, skicka ett [supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) om du behöver hjälp.
+Om du har frågor eller är intresserad av att lägga till ett paket i ditt konto, skicka ett [supportbiljett](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) om du behöver hjälp.
 
 ## Översikt
 
@@ -49,7 +49,7 @@ The `Time between orders` diagram visar den genomsnittliga och/eller genomsnittl
 
 The `Users by lifetime number of orders` diagram visar det totala antalet användare för varje antal order under en livstid för att ge en allmän översikt över upprepade inköpsbeteenden.  
 
-The `Repeat order probability` diagram visar sannolikheten för att en användare med ett visst ordernummer gör ett återkommande köp. Att se sannolikheten för kunder som `x` order att skapa `(x+1)` order, dividera bara antalet personer som har gjort minst `(x+1)` köp av det antal personer som har gjort minst `x` inköp.
+The `Repeat order probability` diagram visar sannolikheten för att en användare med ett visst ordernummer gör ett återkommande köp. Att se sannolikheten för kunder som gjorde `x` order att skapa `(x+1)` order, dividera bara antalet personer som har gjort minst `(x+1)` köp av det antal personer som har gjort minst `x` inköp.
 
 ### Exempel
 
@@ -81,7 +81,7 @@ The `Transaction Health` kontrollpanelen innehåller översiktsdiagram över int
 
 ## Användare att rikta
 
-The `Users to target` Kontrollpanelen innehåller tabellliknande diagram som listar användare med specifika inköpsbeteenden gemensamt. Några exempel:
+The `Users to target` Kontrollpanelen innehåller tabellformatsdiagram som listar användare med specifika inköpsbeteenden gemensamt. Några exempel:
 
 * Lista över engångsköpare som köper `X` för flera månader sedan (som du kanske vill återaktivera)
 
@@ -89,12 +89,12 @@ The `Users to target` Kontrollpanelen innehåller tabellliknande diagram som lis
 
 * Lista över de största utgivarna som varit aktiva tidigare `X` dagar (som du kanske vill belöna)
 
-Det är enkelt att använda dataexportverktygen [skapa e-postlistor för användare med liknande inköpsbeteende för målmarknadsföring](http://blog.rjmetrics.com/creating-contact-lists-for-top-customers/).
+Det är enkelt att använda dataexportverktygen [skapa e-postlistor för användare med liknande inköpsbeteenden för målmarknadsföring](http://blog.rjmetrics.com/creating-contact-lists-for-top-customers/).
 
 ## Användaraktivitet
 
 The `User activity` Instrumentpanelen innehåller diagram som segmenterar användare efter olika data, inklusive anskaffningskälla, demografiska data och genomsnittlig första beställningsdag. Det innehåller även en analys av användarkohorten, inklusive den totala genomsnittliga intäkten för livstid per användarregistreringsmånad.
 
-The `% of cohort members who have purchased` diagram är värdefullt eftersom det visar konverteringsgraden (från 0 till 1) för användare baserat på när de registrerar sig (varje rad representerar en kohort med användare). Det visas också när de gör sitt första köp (till exempel i månad 1, 2, 3... efter registrering). Detta kan visa att 10 % av användarna aktiverade under månad 1, medan antalet växer under månad 2, 3, 4.. och kan komma att platå senare.
+The `% of cohort members who have purchased` diagram är värdefullt eftersom det visar konverteringsgraden (från 0 till 1) för användare baserat på när de registrerar sig (varje rad representerar en kohort med användare). Det visas också när de gör sitt första köp (till exempel i månad 1, 2, 3... efter registreringen). Detta kan visa att 10 % av användarna aktiverade under månad 1, medan antalet växer under månad 2, 3, 4.. och kan komma att platåa senare.
 
 Raderna i det här diagrammet blir vanligtvis vågräta efter en viss tidsperiod. Detta visar att få ytterligare kohortmedlemmar konverterar organiskt efter den punkten - de flesta användare som kommer att göra ett köp har redan gjort det. I nuläget är det högst osannolikt att dessa medlemmar kommer att konvertera till köpare utan ingripande. [Att nå ut till dem med anpassade kampanjer eller riktade e-postmeddelanden är ett lågrisksätt att snabbt komma igång med konverteringen av den här befolkningen.](http://blog.rjmetrics.com/acting-on-marketing-data-in-your-rjmetrics-online-dashboard/)

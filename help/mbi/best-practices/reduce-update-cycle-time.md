@@ -1,5 +1,5 @@
 ---
-title: Minska tiden för uppdatering
+title: Minska tiden för uppdateringscykeln
 description: Lär dig hur du minskar tiden för uppdateringscykeln.
 exl-id: 0b211e2d-770f-480d-a7fb-8d10e3e7272e
 role: Admin, User
@@ -15,11 +15,11 @@ ht-degree: 0%
 
 [!DNL Adobe Commerce Intelligence] synkroniserar med databasen hela dagen för att replikera nya data, så att du alltid ser den senaste informationen på kontrollpanelerna.
 
-Många faktorer kan öka uppdateringstiden med redan lång tid. Vissa replikeringsmetoder, högre kontrollfrekvenser och antalet kontrollpaneler och diagram är bara några få deltagare. I det här avsnittet diskuteras några bästa metoder för att minska uppdateringstiderna.
+Många faktorer kan öka uppdateringstiden med redan lång tid. Vissa replikeringsmetoder, högre kontrollfrekvenser och antalet kontrollpaneler och diagram är bara några få deltagare. I det här avsnittet beskrivs några tips om hur du kan minska uppdateringstiderna.
 
-## Minska kontrollfrekvens
+## Minska frekvensen för ny kontroll
 
-I en databastabell kan det finnas datakolumner med ändringsbara värden. I en **order** tabellen kan innehålla en kolumn som kallas **status**. När en order skrivs till databasen från början kan statuskolumnen innehålla värdet `pending`. Ordningen replikeras i [data warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md) med `pending` värde.
+I en databastabell kan det finnas datakolumner med ändringsbara värden. I en **order** tabellen kan innehålla en kolumn som kallas **status**. När en order skrivs till databasen från början kan statuskolumnen innehålla värdet `pending`. Ordningen replikeras i din [Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md) med det här `pending` värde.
 
 Ändringsbara kolumner måste vara [ommarkerad för uppdaterade värden](../data-analyst/data-warehouse-mgr/cfg-data-rechecks.md) över tid. Som standard [!DNL Commerce Intelligence] kontrollerar om de här kolumnerna under varje uppdatering, men om det finns en stor mängd data som ska kontrolleras och replikeras kan det påverka uppdateringstiden negativt. I stället för att köra omkontroller under varje uppdatering rekommenderar Adobe att du ställer in frekvensen för omkontroll till varje dag, vecka eller månad.
 
@@ -39,8 +39,8 @@ Sedan [!DNL Commerce Intelligence] utför bara cacheåtgärder för diagram som 
 
 ## Optimera databasen för analys
 
-Förutom att omvärdera kontrollfrekvenser, replikeringsmetoder och diagramanvändning kan du även [optimera databasen för analys](../best-practices/opt-db-analysis.md).
+Förutom att omvärdera omkontrollfrekvenser, replikeringsmetoder och diagramanvändning kan du även [optimera databasen för analys](../best-practices/opt-db-analysis.md).
 
 ## Radbrytning
 
-Om uppdateringstiden fortfarande verkar långsam även efter att du har implementerat dessa rekommendationer, [kontakta supportteamet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+Om uppdateringstiden fortfarande verkar långsam även efter att du har implementerat dessa rekommendationer, [kontakta supportteam](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

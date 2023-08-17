@@ -1,13 +1,13 @@
 ---
 title: Förväntad analys av livstidsvärde (LTV) (grundläggande)
-description: Lär dig hur ni skapar analyser för att förstå era nuvarande kunders livstidsvärde och förutse hur livstidsvärdet ökar med fler order.
+description: Lär dig hur ni skapar analyser för att förstå era nuvarande kunders livstidsvärde och prognostiserar hur livstidsvärdet ökar med fler order.
 exl-id: e6f02cf6-f542-4768-969c-3ec998a7caa9
 role: Admin, User
 feature: Data Warehouse Manager, Reports
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '331'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -17,7 +17,7 @@ Att förutse kundernas livstidsvärde när de gör fler beställningar är en av
 
 Nedan följer stegen för att skapa analyser för att förstå era nuvarande kunders livstidsvärde och förutse hur livstidsvärdet ökar med fler order.
 
-![förväntat livstid](../../assets/expected_ltv_720.png)
+![förväntat värde för livstid](../../assets/expected_ltv_720.png)
 
 ## Bygga ett mått
 
@@ -30,7 +30,7 @@ Det första steget är att skapa ett nytt mått med följande steg:
   >Tabellen som måttet är uppbyggt på (troligen `customer_entity` eller `sales_order` beroende på butikens förmåga att acceptera utcheckning av gäster.)
 
    * Klicka **[!UICONTROL Create New Metric]** och markera tabellen ovan.
-   * Detta mått utför en **Median** på `Customer's lifetime revenue` kolumn, sorterad efter `created_at`.
+   * Det här måttet utför en **Median** på `Customer's lifetime revenue` kolumn, sorterad efter `created_at`.
       * [!UICONTROL Filters]:
          * Lägg till `Customers we count (Saved Filter Set)` (eller `Registered accounts we count`)
 

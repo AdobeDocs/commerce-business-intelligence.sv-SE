@@ -24,7 +24,7 @@ Efter [!DNL Google ECommerce] kontot har anslutits till [!DNL Commerce Intellige
 | `socialNetwork` | Den här kolumnen innehåller namnet på det sociala nätverket (till exempel [!DNL Facebook], eller [!DNL YouTube]) |
 | `campaign` | Den här kolumnen innehåller kampanjnamnet (till exempel [`utm\_campaign`](https://support.google.com/analytics/answer/1033867?hl=en)). |
 | `medium` | Den här kolumnen innehåller medienamnet (till exempel [`utm\_medium`](https://support.google.com/analytics/answer/1033867?hl=en)) |
-| `source` | Den här kolumnen innehåller källnamnet. (t.ex. [`utm\_source`](https://support.google.com/analytics/answer/1033867?hl=en)) |
+| `source` | Den här kolumnen innehåller källnamnet. (till exempel [`utm\_source`](https://support.google.com/analytics/answer/1033867?hl=en)) |
 | `keyword` | Den här kolumnen innehåller nyckelordsbeskrivningen (till exempel [`utm\_term`](https://support.google.com/analytics/answer/1033867?hl=en)) |
 | `transactionId` | Den här kolumnen innehåller order-ID:t. Detta används för att koppla hänvisningsdata till orderdata. |
 | `updated\_at` | Den här kolumnen innehåller den senaste gången dataraden uppdaterades. |

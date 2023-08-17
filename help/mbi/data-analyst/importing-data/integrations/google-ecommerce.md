@@ -27,7 +27,7 @@ Kom igång genom att ange [!DNL Google ECommerce] inloggningsuppgifter till [!DN
 
 1. Klicka **[!UICONTROL Add a New Source]**, som finns till höger på skärmen ovanför `Data Sources` tabell.
 
-1. Klicka på [!DNL Google ECommerce] ikon. Då öppnas [!DNL Google ECommerce] inloggningssida.
+1. Klicka på [!DNL Google ECommerce] -ikon. Då öppnas [!DNL Google ECommerce] inloggningssida.
 
 1. Ange [!DNL Google Analytics] autentiseringsuppgifter. När auktoriseringsprocessen är slutförd omdirigeras du tillbaka till [!DNL Commerce Intelligence].
 

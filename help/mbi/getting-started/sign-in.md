@@ -21,7 +21,7 @@ Du kan logga in med [!DNL Adobe ID] eller använda [!DNL Commerce Intelligence] 
 
 ## Logga in med [!DNL Adobe ID]
 
-1. Klicka **[!UICONTROL Sign in with Adobe ID]**.
+1. Klicka på **[!UICONTROL Sign in with Adobe ID]**.
 
    ![sign-in-adobe](../assets/sign-in-adobe.png)
 

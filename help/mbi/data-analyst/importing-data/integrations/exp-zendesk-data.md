@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Förväntat [!DNL Zendesk] data
 
-Efter [du har anslutit din [!DNL Zendesk] konto](../integrations/zendesk.md)kan du använda [data warehouse Manager](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) för att enkelt spåra relevanta datafält för analys.
+Efter [du har anslutit din [!DNL Zendesk] konto](../integrations/zendesk.md)kan du använda [Data Warehouse Manager](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) för att enkelt spåra relevanta datafält för analys.
 
 I det här avsnittet beskrivs de huvuddatatabeller som du kan importera från [!DNL Zendesk] till [!DNL Adobe Commerce Intelligence], inklusive länkar till ytterligare dokumentation om [!DNL Zendesk] data.
 
@@ -25,7 +25,7 @@ I det här avsnittet beskrivs de huvuddatatabeller som du kan importera från [!
 | [`Tickets`](https://developer.zendesk.com/rest_api/docs/core/tickets) | The `Tickets` register registrerar all biljettinformation, inklusive `created_at` tidsstämpel och `requester\_id` och `assignee\_id`som gör att du kan länka en biljett till en slutanvändare och agent i `Users` tabell. |
 | [`Ticket_~\_Fields`](https://developer.zendesk.com/rest_api/docs/core/ticket_fields) | The `ticket fields` tabellen innehåller information om grundläggande textfält och anpassade biljettfält i ditt konto. Attribut för den här tabellen inkluderar fältet `ID`, `URL`, `type`, `title`, `description`, `position`, `requirement setting`, agent- och slutanvändarspecifik information samt information om att skapa och uppdatera. |
 | [`Users`](https://developer.zendesk.com/rest_api/docs/core/users) | The `Users` tabellen innehåller all information om slutanvändare och agenter, inklusive personens namn och e-postadress. På så sätt kan ni analysera både slutanvändarnas engagemang och hur agenterna fungerar. |
-| [`Zendesk\_Groups`](https://developer.zendesk.com/rest_api/docs/core/groups) | Grupper är hur agenter är organiserade i ditt Zendesk-konto. The `Groups` registerposter, t.ex. `group ID`, `URL`, `name`samt skapa och uppdatera information. |
+| [`Zendesk\_Groups`](https://developer.zendesk.com/rest_api/docs/core/groups) | Grupper är hur agenter är organiserade i ditt Zendesk-konto. The `Groups` registerposter information som `group ID`, `URL`, `name`samt skapa och uppdatera information. |
 | [`Zendesk\_Macro`](https://developer.zendesk.com/rest_api/docs/core/macros) | Makron är åtgärder som definieras av dig och som ändrar värdena i en biljettens fält. Den här tabellen innehåller attribut som makrots titel, ID, åtgärder, begränsningar samt information om skapande och uppdatering. |
 | [`Zendesk\_Tags`](https://developer.zendesk.com/rest_api/docs/core/tags) | The `Tags` tabellen innehåller en lista med alla taggar i ditt konto. |
 | [`Zendesk\_Ticket\_Metrics`](https://developer.zendesk.com/rest_api/docs/core/ticket_metrics#ticket-metrics) | Det här registret innehåller data om biljettmått. Fälten innehåller `ticket ID`, `URL`och antalet grupper, tilldelningar, återöppningar, svar, svarstid (i minuter), full lösningstid och senaste uppdateringsinformation (till exempel status, tilldelad eller begärande). |

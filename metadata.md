@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Metadata för intern användning
 
-The `metadata.md` -filen innehåller metadata på postnivå som skickas till användarhandboken `TOC.md` i svaret. Om du vill ändra metadata.md-innehåll för en användarhandbok gör du det i alla `TOC.md` -fil.
+The `metadata.md` -filen innehåller metadata på postnivå som skickas till användarhandboken `TOC.md` filer i svaret. Om du vill ändra metadata.md-innehåll för en användarhandbok gör du det i alla `TOC.md` -fil.
 
 | metadata | vad den gör |
 |--- |--- |
@@ -30,7 +30,7 @@ The `metadata.md` -filen innehåller metadata på postnivå som skickas till anv
 | getting-started-url | Länk till hjälpsidan Komma igång |
 | tutorials-url | Länka till videosjälvstudiekurser - antingen hjälpstudiekurser eller självstudiekurser på engelska |
 | mini-toc-nivåer | Anger antalet rubriknivåer som visas i den högra listen. standard är 2 |
-| git-repo | Anger platsen för den överordnad rapporten för intern användning |
+| git-repo | Anger platsen för huvudrapporten för intern användning |
 
 {style="table-layout:auto"}
 

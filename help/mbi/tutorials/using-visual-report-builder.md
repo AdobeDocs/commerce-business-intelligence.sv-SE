@@ -21,7 +21,7 @@ The [[!DNL Visual Report Builder]](../data-user/reports/ess-rpt-build-visual.md)
 
 ## Steg 1: Skapa en rapport
 
-Klicka på **[!UICONTROL Report Builder]** på sidlisten eller **[!UICONTROL Add Report]** överst på en kontrollpanel. När `Report Builder` visas klickar du på **[!UICONTROL Visual Report Builder]** alternativ.
+Om du vill börja skapa en rapport klickar du på **[!UICONTROL Report Builder]** på sidlisten eller **[!UICONTROL Add Report]** överst på en kontrollpanel. När `Report Builder` visas klickar du på **[!UICONTROL Visual Report Builder]** alternativ.
 
 Redigera en rapport som skapats i [!DNL Visual Report Builder], klicka på kugghjulsikonen (Alternativ) i det övre högra hörnet av ett diagram och klicka sedan på **[!UICONTROL Edit]**.
 
@@ -31,7 +31,7 @@ Det första steget för att skapa en analys är att välja [måttet](../data-use
 
 Du kan lägga till ytterligare mått när det inledande måttet har valts och täcka över alla mätvärden i en enskild rapport eller utföra multimetriska beräkningar genom att lägga till formler.
 
-## Steg 3: Lägger till `Formulas`
+## Steg 3: Lägga till `Formulas`
 
 `Formulas` läggs till i rapporter genom att klicka **[!UICONTROL Add Formula]**, placerad alldeles ovanför listan med mätvärden i rapporten. I [formelredigerare](../data-analyst/dev-reports/formulas-in-rpt-bldr.md), kan alla mätvärden som ingår i rapporten användas som indata. Grundläggande matematiska operatorer används för att ändra de olika mätvärdena.
 
@@ -53,7 +53,7 @@ Du kan till exempel ange en tidsperiod från `January 1st` till `March 1st` och 
 
 [Segmentera mätvärden efter datamängd](../best-practices/segment-filter.md)klickar du på **[!UICONTROL Group by]** längst upp till vänster i diagrammet. Då visas en listruta med alla tillgängliga mått för det första mätvärdet som finns i listan.
 
-Du kan välja `None` för att förhindra att ett mätvärde segmenteras. Du kanske vill ha ett mått som returnerar totala intäkter utan att segmenteras, samtidigt som ett annat intäktsmått segmenteras efter region.
+Du kan `None` för att förhindra att ett mätvärde segmenteras. Du kanske vill ha ett mått som returnerar totala intäkter utan att segmenteras, samtidigt som ett annat intäktsmått segmenteras efter region.
 
 Gå tillbaka till exempel med genomsnittliga intäkter per order och ställ in Group by för att få kampanjkoden. Här visas den genomsnittliga intäkten per order både med och utan kampanjkod.
 
@@ -75,7 +75,7 @@ För varje mätvärde som läggs till i analysen kan du lägga till filter, väl
 
 Förutom listrutorna och textrutan kan du även använda speciella filteroperatorer som `LIKE` eller `IN` för att skapa filter.
 
-Användning av jokertecken (`%` eller `_`) med `LIKE` -programsatser stöds. The `%` jokertecknet matchar flera tecken, medan `_` matchar endast ett tecken. Till exempel:
+Användning av jokertecken (`%` eller `_`) med `LIKE` -programsatser stöds. The `%` jokertecknet matchar flera tecken, medan `_` matchar endast ett tecken. Exempel:
 
 - `affiliate's name Like B%` endast tillåter data från kunder vars namn börjar med `B`.
 
@@ -89,19 +89,19 @@ Genom att lägga till flera filter får du noggrann kontroll över diagrammets d
 
 `Perspectives` Gör att du enkelt kan växla mellan olika vyer av dina data. Se vad som finns:
 
-- `Standard perspective`: I standardperspektivet visas resultatet för matchningsdatumet på x-axeln (till exempel intäkten i januari). Det här perspektivet använder du i exemplet med genomsnittlig intäkt per order.
+- `Standard perspective`: I standardperspektivet visas resultatet för matchningsdatumet på x-axeln (till exempel intäkter i januari). Det här perspektivet använder du i exemplet med genomsnittlig intäkt per order.
 
 ![](../assets/Standard.png)
 
-- `Amount` ELLER `Percent Change` kontra `Previous Period` perspektiv: Det här perspektivet visar mängden eller procentförändringen från ett intervall till nästa och är användbart för att mäta förändringshastigheten i snabbföränderliga mätvärden. Det finns också ett perspektiv för att jämföra intervallet med samma tidsperiod förra året för att visa tillväxten år över år.
+- `Amount` ELLER `Percent Change` kontra `Previous Period` perspektiv: Det här perspektivet visar hur mycket eller hur många procent som ändras från ett intervall till nästa och är användbart för att mäta förändringshastigheten i snabbföränderliga mätvärden. Det finns också ett perspektiv för att jämföra intervallet med samma tidsperiod förra året för att visa tillväxten år över år.
 
 ![](../assets/Amt_or_Percent_Change.png)
 
-- `Cumulative perspective`: The `cumulative perspective` visar det pågående eller ackumulerade summeringsbeloppet för mätningen under tidsperioden. Detta används ofta för att analysera totala kunder och planera för framtida kapacitet.
+- `Cumulative perspective`: `cumulative perspective` visar det pågående eller ackumulerade summeringsbeloppet för mätningen under tidsperioden. Detta används ofta för att analysera totala kunder och planera för framtida kapacitet.
 
 ![](../assets/Cumulative_Perspective.png)
 
-- `Percent of First Value perspective`: Detta perspektiv visar data som en procentandel av det första intervallet som ingår i analysen. Detta är användbart vid mätning av effekten av specifika åtgärder i förhållande till den första periodens resultat.
+- `Percent of First Value perspective`: Detta perspektiv visar data i procent av det första intervallet som ingår i analysen. Detta är användbart vid mätning av effekten av specifika åtgärder i förhållande till den första periodens resultat.
 
 ![](../assets/Percent_of_First_Value.png)
 
@@ -111,9 +111,9 @@ Genom att lägga till flera filter får du noggrann kontroll över diagrammets d
 
 ### Mätningsspecifika tidsalternativ
 
-Det finns två alternativ för mätvärden som används i rapporter: de kan trenda över tiden enligt de globala tidsalternativen, eller inte, vilket visar dem som ett skalärvärde.
+Det finns två alternativ för mätvärden som används i rapporter: de kan trender över tiden enligt globala tidsalternativ, eller inte, vilket visar dem som ett skalärtal.
 
-Ändra ett tidsintervall för mätning till `None` returnerar `scalar` tal, vilket är användbart när du skapar formler som innebär att ett tidstrendningsmått delas med ett `scalar` tal. Du kan också ändra tidsintervallet för `scalar` mätvärden till ett tidsintervall som är oberoende av rapportens.
+Ändra ett tidsintervall för mätning till `None` returnerar `scalar` tal, vilket är användbart när du skapar formler som innebär att ett tidstrendningsmått delas med ett `scalar` tal. Du kan också ändra tidsintervallet för `scalar` mätvärden till ett tidsintervall som är oberoende av rapportens tidsintervall.
 
 Exempel: 2019 års månadsinkomst uttryckt i procent av de totala intäkterna 2019. Du kan lägga till två `Revenue` mätvärden till en rapport med ett globalt tidsintervall från 1 januari 2019 till 31 december 2019, segmenterade efter månadsintervall.
 
@@ -123,11 +123,11 @@ Exempel: 2019 års månadsinkomst uttryckt i procent av de totala intäkterna 20
 
 Om du vill veta mer om hur du använder tidsalternativ i dina rapporter kan du läsa detta [självstudiekurs](../tutorials/time-options-visual-rpt-bldr.md).
 
-## Steg 7: Sparar rapporten
+## Steg 7: Spara rapporten
 
-När du skapar ett diagram kan du spara det genom att klicka på **[!UICONTROL Save]** längst upp till höger i `Visual Report Builder`.
+När du skapar ett diagram kan du spara det genom att klicka på **[!UICONTROL Save]** i det övre högra hörnet av `Visual Report Builder`.
 
-Du kan välja att spara ett diagram, en tabell eller en siffra (`scalar`) med `Type` listrutan och kontrollpanelen som rapporten ska sparas på med `Location` listruta.
+Du kan välja att spara ett diagram, en tabell eller en siffra (`scalar`) med `Type` listrutan och kontrollpanelen som rapporten ska sparas på med `Location` nedrullningsbar meny.
 
 Du kan sedan spara rapporten genom att klicka på **[!UICONTROL Save to Dashboard]**.
 

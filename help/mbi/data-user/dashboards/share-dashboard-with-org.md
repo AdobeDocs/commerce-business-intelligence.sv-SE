@@ -21,7 +21,7 @@ Det är enkelt att se till att alla användare har tillgång till viktiga konsol
 
 1. Ange nivån för `Permissions` du vill att andra användare ska ha - `View`, `Edit`, eller `None`.
 
-1. Klicka **[!UICONTROL Save Changes]**.
+1. Klicka på **[!UICONTROL Save Changes]**.
 
    If `Permissions` var inställda på `View` eller `Edit` och användare söker efter din kontrollpanel visas din kontrollpanel i sökresultaten.
 

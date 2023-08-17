@@ -67,7 +67,7 @@ En formel kombinerar flera mätvärden och matematisk logik för att besvara en 
 
 ## Steg 3: Lägg till ett datumintervall
 
-1. Klicka **[!UICONTROL Date Range]** i det övre högra hörnet.
+1. Klicka **[!UICONTROL Date Range]** längst upp till höger.
 
 1. På `Fixed Date Range` gör du så här:
 
@@ -95,11 +95,11 @@ I det här steget sparar du rapporten som ett diagram och som en tabell.
 
    * Klicka på i det övre högra hörnet **[!UICONTROL Save]**.
 
-   * För `Type`, acceptera standard `Chart` inställning.
+   * För `Type`, acceptera standardinställningen `Chart` inställning.
 
    * Välj `Dashboard` om rapporten ska vara tillgänglig.
 
-   * Klicka **[!UICONTROL Save to Dashboard]**.
+   * Klicka på **[!UICONTROL Save to Dashboard]**.
 
 1. Klicka på rapporttiteln och ändra namnet. I det här exemplet ändras rapporttiteln till `2017 Holiday Sales Data`.
 
@@ -111,7 +111,7 @@ I det här steget sparar du rapporten som ett diagram och som en tabell.
 
    * Välj `Dashboard` om rapporten ska vara tillgänglig.
 
-   * Klicka **[!UICONTROL Save a Copy to Dashboard]**.
+   * Klicka på **[!UICONTROL Save a Copy to Dashboard]**.
 
 1. Gör något av följande om du vill visa rapporterna på kontrollpanelen:
 

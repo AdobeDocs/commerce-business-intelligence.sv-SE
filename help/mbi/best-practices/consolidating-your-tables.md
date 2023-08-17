@@ -21,7 +21,7 @@ Indatatabeller måste vara **liknande strukturerad**. Alla indatatabeller måste
 
 I det här avsnittet beskrivs några av de vanligaste användningsområdena för konsoliderade tabeller och nästa steg som krävs för att skapa egna.
 
-## Recommendations for When to Use Consolidated Tables
+## Recommendations för när konsoliderade tabeller ska användas
 
 Nedan beskrivs när det kan vara lämpligt att använda konsoliderade tabeller i systemet.
 
@@ -33,19 +33,19 @@ Du kan till exempel ha en `orders` tabell för webbplats `A` och en separat, men
 
 ### Integrera äldre data
 
-Många företag har omarbetat sina databaser vid ett eller annat tillfälle och data från den gamla databasen konverteras inte alltid till det nya systemet. Du kan använda konsoliderade tabeller för att koppla nyckelkolumnerna från äldre tabeller till de som finns i det aktiva systemet. På så sätt kan ni utföra en enhetlig analys av era data genom hela historiken.
+Många företag har omarbetat sina databaser vid ett eller annat tillfälle, och data från den gamla databasen konverteras inte alltid till det nya systemet. Du kan använda konsoliderade tabeller för att koppla nyckelkolumnerna från äldre tabeller till de som finns i det aktiva systemet. På så sätt kan ni utföra en enhetlig analys av era data genom hela historiken.
 
 ### Kombinera händelser för aktiv användaranalys
 
-Tänk dig en webbplats där användarna kan göra flera saker: ta en undersökning, spela ett spel, göra ett köp, hänvisa till en vän och så vidare. Vanligtvis lagras var och en av dessa händelser i en egen tabell. Detta gör det svårt att göra en analys av hur många distinkta användare som har vidtagit minst en åtgärd av något slag under en given tidsperiod.
+Föreställ dig en webbplats där användarna kan göra flera saker: ta en undersökning, spela ett spel, göra ett köp, hänvisa till en vän och så vidare. Vanligtvis lagras var och en av dessa händelser i en egen tabell. Detta gör det svårt att göra en analys av hur många distinkta användare som har vidtagit minst en åtgärd av något slag under en given tidsperiod.
 
 Du kan använda konsoliderade tabeller för att skapa en enhetlig lista över alla användare och när någon av dessa händelser ägde rum. Du kan sedan köra frågor i den konsoliderade tabellen för att enkelt utföra en sådan analys.
 
-Precis som med alla andra tabeller i Data warehouse kan du lägga till ytterligare kolumner för att driva olika typer av diagram och analyser.
+Precis som med alla andra tabeller i Datan Warehouse kan du lägga till ytterligare kolumner för att driva olika typer av diagram och analyser.
 
 ## Skapa, visa eller uppdatera en konsoliderad tabell
 
-Om du vill lägga till en konsoliderad tabell i Data warehouse kontaktar du [!DNL Commerce Intelligence] [support](../guide-overview.md#Submitting-a-Support-Ticket).
+Om du vill lägga till en konsoliderad tabell i Datan Warehouse kontaktar du [!DNL Commerce Intelligence] [support](../guide-overview.md#Submitting-a-Support-Ticket).
 
 >[!NOTE]
 >

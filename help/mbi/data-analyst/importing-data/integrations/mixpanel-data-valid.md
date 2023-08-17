@@ -17,7 +17,7 @@ När [!DNL Adobe Commerce Intelligence] först ansluter till [!DNL Mixpanel] dat
 
 ## Dataexportprocess: `Events`
 
-1. Besök `Segmentation` -avsnitt och -vy `Your Top Events`.
+1. Besök `Segmentation` avsnitt och vy `Your Top Events`.
 
    ![](../../../assets/your-top-events.png)
 

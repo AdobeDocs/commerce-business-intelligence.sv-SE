@@ -25,7 +25,7 @@ När en konfigurerbar produkt ingår i en beställning genereras två rader i `s
 
 * (enkelt) `sales_order_item.parent_item_id` => (konfigurerbar) `sales_order_item.item_id`
 
-Det är därför möjligt att rapportera om försäljning av produkter antingen på enkel nivå eller på konfigureringsbar nivå. Som standard är alla `order-item-level` mätvärden i [!DNL Commerce Intelligence] är konfigurerade att exkludera de enkla produkterna, och *endast* rapportera om de konfigurerbara versionerna. Detta uppnås genom `Ordered products we count` filteruppsättning, som filtrerar på villkor där `parent_item_id` är `NULL`.
+Det är därför möjligt att rapportera om försäljning av produkter antingen på enkel nivå eller på konfigureringsbar nivå. Som standard är alla `order-item-level` mätvärden i [!DNL Commerce Intelligence] är konfigurerade att exkludera de enkla produkterna, och *endast* rapportera om konfigurerbara versioner. Detta uppnås genom `Ordered products we count` filteruppsättning, som filtrerar på villkor där `parent_item_id` är `NULL`.
 
 ## Vanliga kolumner
 
@@ -38,7 +38,7 @@ Det är därför möjligt att rapportera om försäljning av produkter antingen 
 | `order_id` | `Foreign key` som är kopplade till `sales_order` tabell. Gå med i `sales_order.entity_id` för att fastställa orderattribut som är kopplade till orderartikeln. |
 | `parent_item_id` | `Foreign key` som relaterar en enkel produkt till dess överordnade paket eller konfigurerbara produkt. Gå med i `sales_order_item.item_id` för att fastställa överordnade produktattribut som är kopplade till en enkel produkt. För överordnade orderartiklar (dvs. paket eller konfigurerbara produkttyper), `parent_item_id` är `NULL`. |
 | `product_id` | `Foreign key` som är kopplade till `catalog_product_entity` tabell. Gå med i `catalog_product_entity.entity_id` för att fastställa produktattribut som är kopplade till orderartikeln. |
-| `product_type` | Typ av produkt som sålts. Potentiell [produkttyper](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/product-create.html#product-types) inkludera: enkel, konfigurerbar, grupperad, virtuell, paketerad och nedladdningsbar. |
+| `product_type` | Typ av produkt som sålts. Potentiell [produkttyper](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/product-create.html#product-types) inkluderar: enkel, konfigurerbar, grupperad, virtuell, paketerad och hämtningsbar. |
 | `qty_ordered` | Antal enheter som ingår i vagnen för den specifika orderartikeln vid tidpunkten för försäljningen. |
 | `sku` | Unik identifierare för orderartikeln som köptes. |
 | `store_id` | `Foreign key` som är kopplade till `store` tabell. Gå med i `store.store_id` för att avgöra vilken Commerce Store-vy som är kopplad till orderartikeln. |
@@ -49,15 +49,15 @@ Det är därför möjligt att rapportera om försäljning av produkter antingen 
 
 | **Kolumnnamn** | **Beskrivning** |
 |---|---|
-| `Customer's email` | E-postadress till den kund som beställer. Beräknas av koppling `sales_order_item.order_id` till `sales_order.entity_id` och returnera `customer_email` fält. |
-| `Customer's lifetime number of orders` | Totalt antal order som lagts av den här kunden. Beräknas av koppling `sales_order_item.order_id` till `sales_order.entity_id` och returnera `Customer's lifetime number of orders` fält. |
-| `Customer's lifetime revenue` | Summan av intäkten för alla order som läggs av den här kunden. Beräknas av koppling `sales_order_item.order_id` till `sales_order.entity_id` och returnera `Customer's lifetime revenue` fält. |
-| `Customer's order number` | Sekventiell orderrankning för den här kundens order. Beräknas av koppling `sales_order_item.order_id` till `sales_order.entity_id` och returnera `Customer's order number` fält. |
+| `Customer's email` | E-postadress till den kund som beställer. Beräknat av koppling `sales_order_item.order_id` till `sales_order.entity_id` och returnera `customer_email` fält. |
+| `Customer's lifetime number of orders` | Totalt antal order som lagts av den här kunden. Beräknat av koppling `sales_order_item.order_id` till `sales_order.entity_id` och returnera `Customer's lifetime number of orders` fält. |
+| `Customer's lifetime revenue` | Summan av intäkten för alla order som läggs av den här kunden. Beräknat av koppling `sales_order_item.order_id` till `sales_order.entity_id` och returnera `Customer's lifetime revenue` fält. |
+| `Customer's order number` | Sekventiell orderrankning för den här kundens order. Beräknat av koppling `sales_order_item.order_id` till `sales_order.entity_id` och returnera `Customer's order number` fält. |
 | `Order item total value (quantity * price)` | Totalt värde för en orderartikel vid tidpunkten för försäljningen efter [katalogprisregler, nivårabatter och specialpriser](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) och innan moms, frakt eller kundvagnsrabatt ges. Beräknas genom att multiplicera `qty_ordered` av `base_price`. |
-| `Order's coupon_code` | Kupongen tillämpas på ordern. Beräknas av koppling `sales_order_item.order_id` till `sales_order.entity_id` och returnera `coupon_code` fält. |
-| `Order's increment_id` | Unik identifierare för ordern. Beräknas av koppling `sales_order_item.order_id` till `sales_order.entity_id` och returnera `increment_id` fält. |
-| `Order's status` | Orderns status. Beräknas av koppling `sales_order_item.order_id` till `sales_order.entity_id` och returnera `status` fält. |
-| `Store name` | Namn på Commerce Store som är associerad med orderartikeln. Beräknas av koppling `sales_order_item.store_id` till `store.store_id` och returnera `name` fält. |
+| `Order's coupon_code` | Kupongen tillämpas på ordern. Beräknat av koppling `sales_order_item.order_id` till `sales_order.entity_id` och returnera `coupon_code` fält. |
+| `Order's increment_id` | Unik identifierare för ordern. Beräknat av koppling `sales_order_item.order_id` till `sales_order.entity_id` och returnera `increment_id` fält. |
+| `Order's status` | Orderns status. Beräknat av koppling `sales_order_item.order_id` till `sales_order.entity_id` och returnera `status` fält. |
+| `Store name` | Namn på Commerce Store som är associerad med orderartikeln. Beräknat av koppling `sales_order_item.store_id` till `store.store_id` och returnera `name` fält. |
 
 {style="table-layout:auto"}
 
@@ -84,7 +84,7 @@ Det är därför möjligt att rapportera om försäljning av produkter antingen 
 
 `sales_order_item`
 
-* Gå med i `sales_order_item` om du vill skapa kolumner som associerar information om den överordnade konfigurerbara eller paketerade SKU:n med den enkla produkten. [Kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) om du behöver hjälp med att konfigurera dessa beräkningar, om du bygger i Data warehouse.
+* Gå med i `sales_order_item` om du vill skapa kolumner som associerar information om den överordnade konfigurerbara eller paketerade SKU:n med den enkla produkten. [Kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) om du behöver hjälp med att konfigurera dessa beräkningar, om du bygger i Data Warehouse Manager.
    * Sökväg: `sales_order_item.parent_item_id` (många) => `sales_order_item.item_id` (ett)
 
 `store`

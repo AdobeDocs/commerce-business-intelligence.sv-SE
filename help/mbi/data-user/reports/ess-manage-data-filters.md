@@ -37,13 +37,13 @@ Se [utbildningsvideo](https://experienceleague.adobe.com/docs/commerce-knowledge
 
    Om du t.ex. bara vill inkludera beställningar med statusen Fullständig i `Total number of orders` metrisk skulle du använda ett filter som utesluter alla order som inte har status = `complete`.
 
-1. Kontrollera filterlogiken och att parenteser och operatorer är korrekt placerade: till exempel `\[A\] AND \[B\]; (\[A\] OR \[B\]) AND \[C\]`.
+1. Kontrollera filterlogiken och att parenteser och operatorer är rätt placerade: till exempel `\[A\] AND \[B\]; (\[A\] OR \[B\]) AND \[C\]`.
 
    Ett felaktigt filter orsakar ofta avvikelser i data mellan [!DNL Commerce Intelligence] rapporter och förväntade resultat.
 
 1. Spara `Filter Set`.
 
-När en filteruppsättning har sparats kan du använda den på alla mätvärden som använder samma tabell. Om du till exempel har skapat en `Filter Set` på `orders` tabell kan du använda den på *alla mått* som bygger på denna tabell, som `Revenue`.
+När en filteruppsättning har sparats kan du använda den på alla mätvärden som använder samma tabell. Om du till exempel har skapat en `Filter Set` på `orders` tabell kan du använda den på *alla mätvärden* som bygger på denna tabell, som `Revenue`.
 
 >[!NOTE]
 >
@@ -51,4 +51,4 @@ När en filteruppsättning har sparats kan du använda den på alla mätvärden 
 
 ## Relaterad
 
-* [Metodtips för segmentering och filtrering](../../best-practices/segment-filter.md)
+* [Bästa tillvägagångssätt för segmentering och filtrering](../../best-practices/segment-filter.md)

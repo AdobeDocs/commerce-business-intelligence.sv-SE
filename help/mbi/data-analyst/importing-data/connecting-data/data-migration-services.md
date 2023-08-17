@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Att migrera till ett nytt databasschema, en ny server eller en rapportdatabas behöver inte vara stressigt. The [[!DNL Adobe] Tjänstteam](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) erbjuder migreringshjälp.
 
-För att övergången ska bli så smidig som möjligt bör du vara så detaljerad som möjligt när du skickar in din migreringsbegäran. Det här avsnittet innehåller allt du behöver för att skicka en begäran och komma igång med migreringen. Om du ger oss en heltäckande bild av dina behov kan du garantera att projektet har rätt omfattning och att uppskattningen är korrekt.
+För att övergången ska bli så smidig som möjligt bör du vara så detaljerad som möjligt när du skickar in din migreringsbegäran. Det här avsnittet innehåller allt du behöver för att skicka en begäran och komma igång med migreringen. Om du ger oss en heltäckande bild av dina behov kan du garantera att projektet har rätt omfång och att uppskattningen är korrekt.
 
 ## Komma igång {#started}
 
@@ -25,11 +25,11 @@ Innan du börjar måste du känna till svaren på följande frågor:
 
 * **Finns alla historiska data i den nya databasen eller behöver de migreras?** Du kan konsolidera historiska och nya data under migreringsprocessen. Meddela oss i din begäran även om du inte behöver någon konsolidering.
 
-När du har svaren på ovanstående behöver du veta vilken typ av migrering du har. Har den nya databasen [`same`](#sameschema) schema, eller kommer det att ha [`different`](#newschema) schema? I diskussionerna nedan hittar du detaljerade anvisningar för varje migreringstyp.
+När du har svaren på ovanstående behöver du veta vilken typ av migrering du har. Har den nya databasen [`same`](#sameschema) schema, eller har den [`different`](#newschema) schema? I diskussionerna nedan hittar du detaljerade anvisningar för varje migreringstyp.
 
 ## Migrera till en ny databas med samma schema {#sameschema}
 
-När du skickar begäran, meddela oss att databasschemat inte ändras och att anslutningen redan har konfigurerats i [!DNL Adobe Commerce Intelligence].
+När du skickar begäran ska du informera oss om att databasschemat inte ändras och att anslutningen redan har konfigurerats i [!DNL Adobe Commerce Intelligence].
 
 Om databasen har ett nytt namn inkluderar du det i begäran så att dina instrumentpaneler kan migreras på rätt sätt.
 
@@ -45,7 +45,7 @@ För att den här typen av migrering ska kunna slutföras måste befintliga data
 
 Om du känner dig bekväm med att utföra matchningen själv följer du dessa instruktioner och bifogar det färdiga kalkylbladet till din begäran:
 
-1. Granska alla tabeller och kolumner som synkroniseras med Data warehouse (**[!UICONTROL Manage Data** > **Data Warehouse]**).
+1. Granska alla tabeller och kolumner som synkroniseras med Datan Warehouse (**[!UICONTROL Manage Data** > **Data Warehouse]**).
 
 1. I ett kalkylblad skapar du en flik för varje tabell som ska migreras till den nya databasen.
 
@@ -67,7 +67,7 @@ Här följer ett exempel:
 
 ## Hur skickar jag en förfrågan? {#submitreq}
 
-Du kan kontakta oss via [skicka en supportförfrågan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+Du kan nå ut till oss via [skicka en supportförfrågan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 Om du följde stegen i föregående avsnitt för att skapa ett kalkylblad som matchar kolumner, glöm inte att bifoga det.
 

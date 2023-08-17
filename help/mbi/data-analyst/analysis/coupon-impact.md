@@ -20,7 +20,7 @@ Analysera hur kunderna använder era kuponger för att få goda insikter om ert 
 * Hur skiljer sig de genomsnittliga intäkterna för livstid mellan kupongförvärvade kunder och kunder som inte förvärvats via kuponger?
 * Gör kunder som förvärvats från kuponger återkommande inköp med kuponger?
 
-Svara på dessa frågor genom att fokusera på [jämföra kupongförvärvade kunder med icke-kupongförvärvade kunder](#compare), [analysera information om första order från kupongförvärv](#firstorder)och [tittar på attributen hos kunder som använder kuponger i sin första order.](#attributes)
+Svara på dessa frågor genom att fokusera på [jämföra kupongförvärvade kunder med icke-kupongförvärvade kunder](#compare), [analysera information om första order från kupongförvärv](#firstorder)och [tittar på attributen hos de kunder som använder kuponger i sin första order.](#attributes)
 
 Kom igång!
 
@@ -46,7 +46,7 @@ Här visas antalet upprepade order som gjorts med en kupong och procentandelen u
 
 Titta på några exempeldata för inlösen av kuponger jämfört med icke-kuponganskaffningsvärden:
 
-| **Kundvärvning** | **Antal nya kunder** | **Genomsnittlig intäkt för livstid** | **Antal upprepade order** | **Antal upprepade order med kupong** | **% av upprepade order med kupong** |
+| **Kundförvärv** | **Antal nya kunder** | **Genomsnittlig intäkt för livstid** | **Antal upprepade order** | **Antal upprepade order med kupong** | **% av upprepade order med kupong** |
 |-----|-----|-----|-----|-----|-----|
 | Kupong | 1,206 | $356.91 | 2,570 | 1,248 | 48.56% |
 | Icke-kupong | 11,561 | $498.30 | 20,145 | 3,251 | 16.14% |
@@ -119,12 +119,12 @@ Titta nu på ett exempel med tre olika kuponger som används för kundens först
 
 Vad kan man ta av detta? För det första fick kupongen&quot;20 % rabatt&quot; flest beställningar första gången. Antalet beställningar som är kopplade till varje kupong kan dock variera beroende på flera faktorer, bland annat:
 
-* mängden reklam för varje kupong.
+* mängden annonsering för varje kupong.
 * hur länge kupongen erbjuds.
 * den tidpunkt på dag/vecka/månad/år då kupongen erbjöds.
 * den säsong då kupongen erbjöds, beroende på verksamheten.
 
-  **Exempel:** kupongen&quot;20 % rabatt&quot; erbjöds under sommarmånaderna, men företaget säljer kläder för vintertid.
+  **Exempel:** &quot;20 % rabatt&quot; erbjuds under sommarmånaderna, men företaget säljer kläder för vintertid.
 * begränsningar för kupongerna.
 
   **Exempel:** kupongen&quot;10 % rabatt&quot; erbjuds endast kunder som köper en vinterjacka i samma ordning.
@@ -147,7 +147,7 @@ Nu när ni har tittat på själva beställningarna, titta på de kunder som anv�
 
 Ni märker att antalet förstagångsbeställningar är samma som antalet kunder för varje kupong. Detta är rimligt eftersom varje kund bara kan ha en första order.
 
-Det största antalet kunder förvärvades genom kupongen&quot;20 % rabatt&quot;. Men de här kunderna har de lägsta **genomsnittligt antal order för livslängd** och **genomsnittlig intäkt för livstid**; I allmänhet gör de flesta kupongköpta kunder inga upprepade order. Dessutom köpte kunderna mer genom kupongen&quot;25 % rabatt på 100 USD eller mer&quot; på en högre nivå **genomsnittligt antal order för livslängd** och i sin tur högre **genomsnittlig intäkt för livstid**. I allmänhet kommer användare som köptes via den här kupongen oftast tillbaka och gör fler återkommande inköp.
+Det största antalet kunder förvärvades genom kupongen&quot;20 % rabatt&quot;. Men de här kunderna har de lägsta **genomsnittligt antal order för livslängd** och **genomsnittlig intäkt** De flesta kupongköpta kunder gör inga upprepade beställningar. Dessutom köpte kunderna mer genom kupongen&quot;25 % rabatt på 100 USD eller mer&quot; på en högre nivå **genomsnittligt antal order för livslängd** och i sin tur högre **genomsnittlig intäkt**. I allmänhet kommer användare som köptes via den här kupongen oftast tillbaka och gör fler återkommande inköp.
 
 ## Radbrytning {#wrapup}
 

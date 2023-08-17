@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Koppla externa data med hjälp av en integrering
 
-En integrering är en datakälla. Integrationer är program och databaser som du kan ansluta till Data warehouse.
+En integrering är en datakälla. Integrationer är program och databaser som du kan ansluta till Datan Warehouse.
 
 I det här avsnittet beskrivs de tillgängliga integreringar som du kan använda för att ansluta olika externa datakällor till [!DNL Commerce Intelligence].
 

@@ -21,7 +21,7 @@ Befintliga diagram kan läggas till på kontrollpaneler med [!UICONTROL Add Repo
 
 ## Lägga till ett diagram
 
-1. Klicka **[!UICONTROL Add Report]**. En lista över befintliga diagram visas.
+1. Klicka på **[!UICONTROL Add Report]**. En lista över befintliga diagram visas.
 
 1. Sök efter eller klicka på namnet på diagrammet som du vill lägga till.
 

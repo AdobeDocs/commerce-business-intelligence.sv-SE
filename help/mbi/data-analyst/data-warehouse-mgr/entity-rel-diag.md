@@ -25,7 +25,7 @@ Vad är en **[!UICONTROL entity relationship (ER) diagram]**? An [!UICONTROL ER]
 
 Detta `ER` diagram representerar relationerna mellan huvudtabellerna i en Commerce-databas. Genom att visa flera relationer samtidigt kan du se hur data skulle kunna relateras i flera tabeller.
 
-Avsnitten nedan innehåller `ER` diagram som är specifika för två tabeller i taget. Om du vill visa ett diagram och tillhörande beskrivning klickar du på rubriken för det avsnittet.
+Följande avsnitt innehåller `ER` diagram som är specifika för två tabeller i taget. Om du vill visa ett diagram och tillhörande beskrivning klickar du på rubriken för det avsnittet.
 
 ## `customer\_entity & sales\_flat\_order`
 
@@ -35,9 +35,9 @@ En kund kan göra många beställningar. Relationen mellan de här två tabeller
 
 >[!IMPORTANT]
 >
->`customer\_entity.entity\_id` är inte lika med `sales\_flat\_order.entity\_id`. Den första kan man tänka sig som en `customer\_id` och den andra kan man tänka sig som `order\_id.`
+>`customer\_entity.entity\_id` är inte lika med `sales\_flat\_order.entity\_id`. Den första kan man tänka sig som en `customer\_id` och den andra kan man tänka sig som en `order\_id.`
 
-Inom [!DNL Commerce Intelligence]om sökvägen mellan de två tabellerna inte finns kan du [skapa banan](../data-warehouse-mgr/create-paths-calc-columns.md) på fliken Data warehouse. När du är redo att skapa banan definieras den så här:
+Inom [!DNL Commerce Intelligence]om sökvägen mellan de två tabellerna inte finns kan du [skapa banan](../data-warehouse-mgr/create-paths-calc-columns.md) på fliken Data Warehouse. När du är redo att skapa banan definieras den så här:
 
 ![](../../assets/SFO___CE_path.png)
 
@@ -47,7 +47,7 @@ Inom [!DNL Commerce Intelligence]om sökvägen mellan de två tabellerna inte fi
 
 En order kan innehålla många artiklar. Relationen mellan de här två tabellerna är `sales\_flat\_order.entity\_id = sales\_flat\_order\_item.order\_id`.
 
-Inom [!DNL Commerce Intelligence]om sökvägen mellan de två tabellerna inte finns kan du [skapa banan](../data-warehouse-mgr/create-paths-calc-columns.md) på fliken Data warehouse. När du är redo att skapa banan definierar du den enligt nedan.
+Inom [!DNL Commerce Intelligence]om sökvägen mellan de två tabellerna inte finns kan du [skapa banan](../data-warehouse-mgr/create-paths-calc-columns.md) på fliken Data Warehouse. När du är redo att skapa banan definierar du den enligt nedan.
 
 ![](../../assets/SFOI___SFO_path.png)
 
@@ -57,6 +57,6 @@ Inom [!DNL Commerce Intelligence]om sökvägen mellan de två tabellerna inte fi
 
 En produkt kan köpas för många artiklar. Relationen mellan de här två tabellerna är `catalog\_product\_entity.entity\_id = sales\_flat\_order\_item.product`.
 
-Inom [!DNL Commerce Intelligence]om sökvägen mellan de två tabellerna inte finns kan du [skapa banan](../data-warehouse-mgr/create-paths-calc-columns.md) på fliken Data warehouse. När du är redo att skapa banan definierar du den enligt nedan.
+Inom [!DNL Commerce Intelligence]om sökvägen mellan de två tabellerna inte finns kan du [skapa banan](../data-warehouse-mgr/create-paths-calc-columns.md) på fliken Data Warehouse. När du är redo att skapa banan definierar du den enligt nedan.
 
 ![](../../assets/SFOI___CPE_path.png)

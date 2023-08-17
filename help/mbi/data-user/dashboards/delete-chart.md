@@ -7,7 +7,7 @@ feature: Commerce Tables, Data Warehouse Manager, Dashboards
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '103'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -19,13 +19,13 @@ Så här tar du bort ett diagram permanent:
 
 1. Klicka **[!UICONTROL Account Setting]** i sidlisten.
 
-1. Klicka **[!UICONTROL Charts]**.
+1. Klicka på **[!UICONTROL Charts]**.
 
 1. Diagrammen som du kan ta bort (baserat på användarbehörigheter och diagramägarskap) visas till höger på skärmen.
 
 1. Klicka i kryssrutan bredvid den diagramrad som du vill ta bort.
 
-1. Klicka **[!UICONTROL Delete Selected]**.
+1. Klicka på **[!UICONTROL Delete Selected]**.
 
    >[!NOTE]
    >

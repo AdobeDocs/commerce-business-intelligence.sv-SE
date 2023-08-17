@@ -49,13 +49,13 @@ Det här är en fråga om att föredra, men det som är viktigt att komma ihåg 
 
 ### Enhetskonsekvens {#entity}
 
-Du har antagligen redan en nomenklatur på ditt företag. Se till att de mätvärden och dimensioner ni inför överensstämmer med vad som används i andra databaser och verktyg. Till exempel:
+Du har antagligen redan en nomenklatur på ditt företag. Se till att de mätvärden och dimensioner ni inför överensstämmer med vad som används i andra databaser och verktyg. Exempel:
 
 * Användare kontra kund kontra medlem konto
 * Företag kontra organisation
 * Registrering kontra skapande
 
-### Stavning och grammatik {#spelling}
+### Språkkontroll {#spelling}
 
 Kontrollera stavningen två gånger och glöm inte de där pesky-tillgångarna!
 
@@ -71,7 +71,7 @@ Det här berättar ingenting om rapporten, som är dålig.
 **Exempel:**
 Ackumulerade intäkter de senaste 30 dagarna per månad
 
-Det säger oss **exakt** vad som står i rapporten, som är fantastisk.
+Det här säger oss **exakt** vad som står i rapporten, som är fantastisk.
 
 ## Kontrollpaneler {#dashboards}
 
@@ -81,19 +81,19 @@ Om kontrollpanelen är en plats där du experimenterar med olika rapporter bör 
 
 ## Dimensioner (beräknade kolumner) {#dimensions}
 
-När ny namnges [dimensioner](../data-analyst/data-warehouse-mgr/creating-calculated-columns.md)är det mest användbart att följa den här formeln: **(Enhet) + (Nth) + (tidsram) + (beräkning) + (kommentarer)**. Till exempel:
+När ny namnges [dimensioner](../data-analyst/data-warehouse-mgr/creating-calculated-columns.md)är det mest användbart att följa den här formeln: **(Enhet) + (Nth) + (tidsram) + (beräkning) + (kommentarer)**. Exempel:
 
 Användarens första 30-dagars intäkt
 * Användarens ordernummer
 * Användarens ordernummer (väntar på granskning)
 
-## Filteruppsättningar {#filterset}
+## Filteruppsättning {#filterset}
 
-[Filteruppsättningar](../data-user/reports/ess-manage-data-filters.md) är vanligtvis namngivna på ett sätt som förklarar den information de innehåller eller utesluter. Namnge t.ex. en filteruppsättning **Beställa artiklar vi räknar** gör att alla användare kan gå in, se logiken i filteruppsättningen och förstå vilken orderinformation som avgör vad som räknas i verksamheten. Kom ihåg att filteruppsättningar kan användas på både beräknade kolumner och mätvärden och bör vara enkla att förstå.
+[Filteruppsättningar](../data-user/reports/ess-manage-data-filters.md) är vanligtvis namngivna på ett sätt som förklarar den information de innehåller eller utesluter. Namnge till exempel en filteruppsättning **Beställa artiklar som vi räknar** gör att alla användare kan gå in, se logiken i filteruppsättningen och förstå vilken orderinformation som avgör vad som räknas i verksamheten. Kom ihåg att filteruppsättningar kan användas på både beräknade kolumner och mätvärden och bör vara enkla att förstå.
 
 ## Mått {#metrics}
 
-[Mått](../data-user/reports/ess-manage-data-metrics.md) är i huvudsak frågor som du vill ha svar på regelbundet. Hur många beställningar har gjorts under den senaste månaden? Vilket är det genomsnittliga livstidsvärdet för era kunder? Det är bäst att namnge mätvärden så att de avspeglar svaret de ger användarna. Om du har samma mätvärden filtrerade för en viss butik eller avdelning bör de märkas som sådana. Till exempel:
+[Mått](../data-user/reports/ess-manage-data-metrics.md) är i huvudsak frågor som du vill ha svar på regelbundet. Hur många beställningar har gjorts under den senaste månaden? Vilket är det genomsnittliga livstidsvärdet för era kunder? Det är bäst att namnge mätvärden så att de avspeglar svaret de ger användarna. Om du har samma mätvärden filtrerade för en viss butik eller avdelning bör de märkas som sådana. Exempel:
 
 Genomsnittlig kundservice (de första 30 dagarna) Butiksnamn - intäkt
 
@@ -103,4 +103,4 @@ Intäkter (levererad\_at) Inkomster (skapad)
 
 ## Radbrytning {#wrapup}
 
-Genom att etablera formaterings- och namnkonventioner tidigt får du hjälp med att skapa [!DNL Commerce Intelligence] konto. Kom ihåg de tre CS: tydlighet, konsekvens och trovärdighet.
+Genom att etablera formaterings- och namnkonventioner tidigt får du hjälp med att skapa [!DNL Commerce Intelligence] konto. Kom ihåg de tre CS: klarhet, konsekvens och trovärdighet.

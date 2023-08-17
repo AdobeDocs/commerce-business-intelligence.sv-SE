@@ -26,8 +26,8 @@ Varje rad i `enterprise_rma` tabell (anropas ofta `magento_rma` i Adobe Commerce
 | `entity\_id` | Unik identifierare för registret. Varje `entity\_id` representerar en returbegäran. |
 | `date\_requested` | Datumet då returen begärdes. |
 | `status` | Status för returen. Värdena är bland annat&quot;mottagen&quot;,&quot;väntande&quot; och&quot;auktoriserad&quot;. |
-| `order\_id` | Sekundärnyckel som är associerad med `sales\_flat\_order` tabell. |
-| `customer\_id` | Sekundärnyckel som är associerad med `customer\_entity` tabell. |
+| `order\_id` | Sekundärnyckel associerad med `sales\_flat\_order` tabell. |
+| `customer\_id` | Sekundärnyckel associerad med `customer\_entity` tabell. |
 
 {style="table-layout:auto"}
 
@@ -49,7 +49,7 @@ Varje rad i `enterprise_rma` tabell (anropas ofta `magento_rma` i Adobe Commerce
 | `Number of returns` | Antalet begärda returer. | `Operation` kolumn: `entity id`<br>`Operation`: `Count`<br>`Timestamp` Kolumn: `date requested` |
 | `Total returned amount` | Det totala penningbelopp som returneras. | `Operation `Kolumn: `Return's total value`<br>`Operation`: Summa<br>`Timestamp` Kolumn: begärt datum |
 | `Average returned amount` | Det genomsnittliga penningbelopp som returneras. | `Operation`` Column: Return's total value`<br>`Operation`: `Average`<br>`Timestamp` Kolumn: `date requested` |
-| `Average time to return` | Genomsnittlig tid från order till retur. | `Operation` Kolumn: Sekunder mellan order som skapats vid och begärt returdatum<br>`Operation`: `Average`<br>`Timestamp` Kolumn: `date requested` |
+| `Average time to return` | Genomsnittlig tid från order till retur. | `Operation` Kolumn: Sekunder mellan order som skapas vid och returdatum som begärts<br>`Operation`: `Average`<br>`Timestamp` Kolumn: `date requested` |
 
 {style="table-layout:auto"}
 

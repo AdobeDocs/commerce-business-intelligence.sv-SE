@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Det här avsnittet innehåller instruktioner för klienter som använder den ursprungliga arkitekturen och den nya arkitekturen. Du har den nya arkitekturen om du har `Data Warehouse Views` avsnitt som är tillgängliga efter markering `Manage Data` i huvudverktygsfältet.
+>Det här avsnittet innehåller instruktioner för klienter som använder den ursprungliga arkitekturen och den nya arkitekturen. Du har den nya arkitekturen om du har `Data Warehouse Views` tillgängliga avsnitt efter markering `Manage Data` i huvudverktygsfältet.
 
 I det här avsnittet visas hur du konfigurerar en kontrollpanel som spårar prestanda för ditt tröskelvärde för fri frakt. Den här instrumentpanelen, som visas nedan, är ett bra sätt att testa två kostnadsfria leveranströsklar. Företaget kan till exempel vara osäkert om du ska erbjuda fri frakt på 50 eller 100 dollar. Du bör göra ett A/B-test av två slumpmässiga deluppsättningar av dina kunder och utföra analysen i [!DNL Commerce Intelligence].
 
@@ -32,7 +32,7 @@ Om du använder den ursprungliga arkitekturen (till exempel om du inte har `Data
 * **`sales_flat_order`** table
    * Den här beräkningen skapar buketter i steg i förhållande till dina vanliga kundvagnsstorlekar. Detta kan variera från steg som 5, 10, 50, 100
 
-* **`Order subtotal (buckets)`** Ursprunglig arkitektur: som skapats av en analytiker som en del av `[FREE SHIPPING ANALYSIS]` biljett
+* **`Order subtotal (buckets)`** Ursprunglig arkitektur: skapad av en analytiker som en del av din `[FREE SHIPPING ANALYSIS]` biljett
 * **`Order subtotal (buckets)`** Ny arkitektur:
    * Som nämnts ovan skapar den här beräkningen bucklor i steg i förhållande till de typiska kundvagnarna. Om du har en intern delsummeringskolumn som `base_subtotal`, som kan användas som bas för den här nya kolumnen. Annars kan det vara en beräknad kolumn som utesluter frakt och rabatter från intäkter.
 

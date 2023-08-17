@@ -41,7 +41,7 @@ Att förstå vad vi ska mäta är bara en del av vägen dit. Om du vill utvärde
 
 Dela upp måttet i dess kärnkomponenter. Du måste känna till antalet, eller antalet, personer som har registrerat sig, antalet personer som har gjort ett köp och den tid som förflutit mellan dessa två händelser.
 
-På en högre nivå behöver du veta var dessa data finns i databasen, och särskilt:
+På en högre nivå behöver du veta var du kan hitta dessa data i databasen, speciellt:
 
 * Tabellen som registrerar en rad med data varje gång någon registrerar
 * Tabellen som registrerar en datarad som varje gång någon gör ett köp
@@ -49,7 +49,7 @@ På en högre nivå behöver du veta var dessa data finns i databasen, och särs
 
 På en mer detaljerad nivå måste du identifiera de exakta datafält som används för den här analysen:
 
-* Datatabellen och kolumnen som innehåller en kunds registreringsdatum: till exempel `user.created\_at`
+* Datatabellen och kolumnen som innehåller en kunds registreringsdatum, till exempel `user.created\_at`
 * Datatabellen och kolumnen som innehåller ett inköpsdatum: till exempel `order.created\_at`
 
 ## Skapa datakolumner för analys
@@ -64,7 +64,7 @@ Det används sedan för att skapa:
 
 Båda dessa fält måste skapas på användarnivå (till exempel på `user` tabell). Detta gör att genomsnittsanalysen kan normaliseras av användarna (dvs. nämnaren i denna beräkning är antalet användare).
 
-Det är här [!DNL Commerce Intelligence] steg in! Du kan använda dina [!DNL Commerce Intelligence] data warehouse för att skapa kolumnerna ovan. Kontakta Adobe analysteam och ge oss en specifik definition av de nya kolumnerna som du ska skapa. Du kan också använda [Kolumnredigeraren](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md).
+Det är här [!DNL Commerce Intelligence] steg in! Du kan använda dina [!DNL Commerce Intelligence] Data Warehouse för att skapa kolumnerna ovan. Kontakta Adobe analysteam och ge oss en specifik definition av de nya kolumnerna som du ska skapa. Du kan också använda [Kolumnredigeraren](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md).
 
 Det är en god vana att undvika att skapa dessa beräknade datafält direkt i databasen eftersom det medför en onödig börda för produktionsservrarna.
 
@@ -111,7 +111,7 @@ När du skapar rapporter som delas med andra medlemmar i ditt team rekommenderar
 
 1. Klicka **[!UICONTROL i]** överst i alla rapporter.
 1. Ange en beskrivning i ordrutan.
-1. Klicka **[!UICONTROL Save Description]**.
+1. Klicka på **[!UICONTROL Save Description]**.
 
 Se nedan:
 
@@ -123,7 +123,7 @@ Behöver du ta med en rapport i en presentation eller ett dokument? Alla rapport
 
 1. Klicka på kugghjulsikonen i det övre högra hörnet i en rapport.
 1. Välj `Enlarge`.
-1. När rapporten förstoras klickar du på **[!UICONTROL Download]** i rapportens övre högra hörn.
+1. När rapporten förstoras klickar du **[!UICONTROL Download]** i rapportens övre högra hörn.
 1. Välj önskat bildformat i listrutan. Nedladdningen startar omedelbart.
 
 Se nedan:

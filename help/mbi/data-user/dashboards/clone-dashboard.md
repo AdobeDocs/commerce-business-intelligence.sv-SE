@@ -1,5 +1,5 @@
 ---
-title: Klona instrumentpaneler
+title: Klonpaneler
 description: Lär dig hur du klonar kontrollpaneler.
 exl-id: f0bfa786-ab01-4c55-9d8a-ed002c2321b6
 role: Admin, Data Architect, Data Engineer, User
@@ -25,7 +25,7 @@ Detta är användbart om du vill återskapa en befintlig uppsättning diagram me
 
    Du klonar till exempel en kontrollpanel med namnet `Customer Activity`. Den här instrumentpanelen innehöll information om kundaktivitet för din Philadelphia-plats, men nu vill du skapa en instrumentpanel för din nya New York-ort. Den här instrumentpanelen kan heta `New York City - Customer Activity`.
 
-1. Använd `Chart Title Find` och `Chart Title Replace` fält för att hitta alla diagram med `Philadelphia` i titeln och ersätt den med `New York City`.
+1. Använd `Chart Title Find` och `Chart Title Replace` fält där alla diagram med `Philadelphia` i titeln och ersätt den med `New York City`.
 
    Om du inte anger några värden i dessa fält kan du `(2)` läggs automatiskt till i slutet av alla diagramtitlar på den nya kontrollpanelen.
 

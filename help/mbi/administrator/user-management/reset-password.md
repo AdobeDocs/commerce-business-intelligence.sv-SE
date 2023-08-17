@@ -17,4 +17,4 @@ Om du vill återställa lösenordet klickar du på **[!UICONTROL Reset Password]
 
 Du kan också ändra ditt lösenord i [!DNL Commerce Intelligence] genom att använda **[!UICONTROL Personal Settings]** sida.
 
-Följ [dessa tips](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-mbi-account-lockout.html) för att hjälpa till att identifiera problemet.
+Om du återställer ditt lösenord och förblir låst för ditt konto följer du [dessa tips](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-mbi-account-lockout.html) för att hjälpa till att identifiera problemet.

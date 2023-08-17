@@ -23,15 +23,15 @@ Att dela instrumentpaneler är ett bra sätt att se till att teamet är med och 
 
 1. Klicka **[!UICONTROL Share Dashboard]** längst upp på skärmen.
 
-   En lista över alla användare i din [!DNL Commerce Intelligence] kontot visas.
+   En lista över alla användare i din [!DNL Commerce Intelligence] kommer att visas.
 
 1. Om du vill välja en användare att dela kontrollpanelen med markerar du kryssrutan till vänster om namnet.
 
-   Om du vill markera/avmarkera alla användare klickar du på **[!UICONTROL Select]** och markera `Everyone` eller `None`, respektive.
+   Om du vill markera/avmarkera alla användare klickar du på **[!UICONTROL Select]** och markera `Everyone` eller `None`, respektive
 
 1. Behörigheter kan anges per användare eller en kombination.
 
-   *Ange individuella behörigheter*, klicka **[!UICONTROL None]** till höger om användarens namn. I den här listrutan väljer du vilken typ av behörigheter användaren ska ha.
+   *Så här anger du individuella behörigheter*, klicka **[!UICONTROL None]** till höger om användarens namn. I den här listrutan väljer du vilken typ av behörigheter användaren ska ha.
 
    *Så här anger du behörigheter vid masser*, klicka **[!UICONTROL Set Permissions]**. I den här listrutan väljer du vilken typ av behörigheter de markerade användarna ska ha.
 

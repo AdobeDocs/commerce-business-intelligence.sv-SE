@@ -22,18 +22,18 @@ I det här avsnittet beskrivs några rapporter som du kan använda för att iden
 * [Nya användare efter källor](#newusersbysource)
 * [Genomsnittlig intäkt för livstid per användarkälla](#avglifetimerev)
 * [Genomsnittligt ordervärde per användarkälla](#avgorderval)
-* [Intäkter per datum och källa för användarregistrering](#revbyregdateandsource)
+* [Intäkter per registreringsdatum och källa](#revbyregdateandsource)
 * [Upprepa order efter användarkälla](#repeatordersbysource)
 
 ## Förutsättningar {#prereqs}
 
-För att kunna bygga upp analyserna i det här avsnittet måste du ha tillgång till källdata för marknadsföring/referens. Om du inte redan spårar den måste du ta med [referera till källdata för order från [!DNL Google ECommerce]](../importing-data/integrations/google-ecommerce.md) till [!DNL Adobe Commerce Intelligence] innan du kan fortsätta. Genom att lägga till information om användarenheter i analyserna kan du också se vilken teknik som används i dina hänvisningar.
+För att kunna bygga upp analyserna i det här avsnittet måste du ha tillgång till källdata för marknadsföring/referens. Om du inte redan spårar den måste du ta med [referera till källdata från [!DNL Google ECommerce]](../importing-data/integrations/google-ecommerce.md) till [!DNL Adobe Commerce Intelligence] innan du kan fortsätta. Genom att lägga till information om användarenheter i analyserna kan du också se vilken teknik som används i dina hänvisningar.
 
 ## Nya användare efter källa {#newusersbysource}
 
-Att utvärdera hur hänvisningskällorna fungerar är avgörande för att avgöra vilka kanaler som är mest värdefulla. Den här rapporten visar antalet nyregistrerade användare, per anskaffningskälla, över tiden, vilket gör att du kan spåra hur hänvisningskällor fungerar när du skaffar nya registrerade användare.
+Att utvärdera hur hänvisningskällorna fungerar är avgörande för att avgöra vilka kanaler som är mest värdefulla. I den här rapporten visas antalet nyregistrerade användare, per anskaffningskälla, över tiden, vilket gör att du kan spåra hur hänvisningskällor fungerar när du skaffar nya registrerade användare.
 
-Skapa den här rapporten i [Report Builder](../../tutorials/using-visual-report-builder.md), lägg till **Nya användare** mått (eller ett motsvarande mått som räknar antalet nya användare över tiden) för rapporten. Gör sedan följande:
+Skapa den här rapporten i [Report Builder](../../tutorials/using-visual-report-builder.md), lägg till **Nya användare** mätvärden (eller ett motsvarande mätvärde som räknar antalet nya användare över tiden) för rapporten. Gör sedan följande:
 
 1. Ange [!UICONTROL Time Period] till registreringsperioden som du vill analysera.
 1. Ange [!UICONTROL Interval] till månadsvis.
@@ -48,7 +48,7 @@ Här är en genomgång:
 
 Det är viktigt att hitta de kanaler som ger nya användare, men hur värdefulla är hänvisningarna generellt sett? Den här rapporten visar de genomsnittliga intäkterna för användarens livstid från specifika förvärvskällor över tiden. Det innebär att du kan se om användare som har förvärvats från en viss källa spenderar mer med dig under sin livstid än en grupp användare som har förvärvats från en annan källa.
 
-Om du vill skapa den här rapporten i Report Builder lägger du till **Genomsnittlig intäkt för livstid** mätvärden till rapporten. Gör sedan följande:
+Om du vill skapa rapporten i Report Builder lägger du till **Genomsnittlig intäkt för livstid** mätvärden till rapporten. Gör sedan följande:
 
 1. Ange [!UICONTROL Time Period] till den tidsperiod som du vill analysera.
 1. Ange [!UICONTROL Interval] till månadsvis.
@@ -65,7 +65,7 @@ I det här exemplet behandlas endast livstidsintäkter, men du kan också upprep
 
 Om du vill få en bättre uppfattning om hur mycket pengar användare får från en viss anskaffningskälla kan du skapa en rapport som tittar på deras genomsnittliga ordervärde. På så sätt kan du spåra om användare som förvärvats från en viss källa spenderar mer per order än användare från en annan källa.
 
-Om du vill skapa den här rapporten i Report Builder lägger du till **Genomsnittligt ordervärde** och gör sedan följande:
+Om du vill skapa rapporten i Report Builder lägger du till **Genomsnittligt ordervärde** och gör sedan följande:
 
 1. Ange [!UICONTROL Time Period] till registreringsperioden som du vill analysera.
 1. Ange [!UICONTROL Time Interval] till månadsvis.
@@ -76,11 +76,11 @@ Här är en genomgång:
 
 ![Skapar en rapport för genomsnittlig ordervärde per användarens källa.](../../assets/Average_order_value_by_source.gif)
 
-## Totala intäkter per datum och källa för användarregistrering {#revbyregdateandsource}
+## Totala intäkter per registreringsdatum och källa {#revbyregdateandsource}
 
 Med den analys av livstidsintäkten som gjordes tidigare kan du se de genomsnittliga livstidsintäkterna för användare som förvärvats från olika källor, men hur blir det med de totala livstidsintäkterna? Med den här rapporten kan du identifiera hur mycket av de totala intäkterna som användare registrerade under en viss tid och från en viss källa genererar.
 
-Om du vill skapa den här rapporten i Report Builder lägger du till `Revenue by user registration date` mätvärden. Om du inte har [skapade det här måttet](../../data-user/reports/ess-manage-data-metrics.md) kan du göra det genom att replikera `Revenue` mätvärden och ändra `time stamp` till användarens `creation date`. När du har lagt till måttet gör du följande:
+Om du vill skapa rapporten i Report Builder lägger du till `Revenue by user registration date` mätvärden. Om du inte har [skapade det här måttet](../../data-user/reports/ess-manage-data-metrics.md) kan du göra det genom att replikera `Revenue` mätvärden och ändra `time stamp` till användarens `creation date`. När du har lagt till måttet gör du följande:
 
 1. Ange [!UICONTROL Time Period] till registreringsperioden som du vill analysera.
 1. Ange [!UICONTROL Time Interval] till månadsvis.

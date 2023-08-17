@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Översätta SQL-frågor i Commerce Intelligence
 
-Har någonsin undrat hur SQL-frågor översätts till [beräknade kolumner](../data-warehouse-mgr/creating-calculated-columns.md), [mått](../../data-user/reports/ess-manage-data-metrics.md)och [rapporter](../../tutorials/using-visual-report-builder.md) du använder i [!DNL Commerce Intelligence]? Om du är en tung SQL-användare kan du förstå hur SQL översätts i [!DNL Commerce Intelligence] kan du arbeta smartare i [data warehouse Manager](../data-warehouse-mgr/tour-dwm.md) och få ut så mycket som möjligt av [!DNL Commerce Intelligence] plattform.
+Har någonsin undrat hur SQL-frågor översätts till [beräknade kolumner](../data-warehouse-mgr/creating-calculated-columns.md), [mått](../../data-user/reports/ess-manage-data-metrics.md)och [rapporter](../../tutorials/using-visual-report-builder.md) du använder i [!DNL Commerce Intelligence]? Om du är en tung SQL-användare kan du förstå hur SQL översätts i [!DNL Commerce Intelligence] gör att du kan arbeta smartare i [Data Warehouse Manager](../data-warehouse-mgr/tour-dwm.md) och få ut så mycket som möjligt av [!DNL Commerce Intelligence] plattform.
 
 I slutet av det här avsnittet finns en **översättningsmatris** för SQL-frågesatser och [!DNL Commerce Intelligence] -element.
 
-Börja med att titta på en allmän fråga:
+Börja med en allmän fråga:
 
 | | |
 |--- |--- |
@@ -40,7 +40,7 @@ Titta på ett exempel för vart och ett av de ovanstående.
 
 ## Måttaggregat {#aggregate}
 
-Ett mått krävs vid aggregering `within a single table`. Till exempel `SUM(b)` sammanställningsfunktionen från frågan ovan skulle troligtvis representeras av ett mått som summerar kolumnen `B`. 
+Ett mått krävs vid aggregering `within a single table`. Till exempel `SUM(b)` sammanställningsfunktionen från frågan ovan representeras troligen av ett mått som summerar kolumnen `B`. 
 
 Titta på ett specifikt exempel på hur en `Total Revenue` kan definieras i [!DNL Commerce Intelligence]. Titta på frågan nedan som du försöker översätta:
 
@@ -59,7 +59,7 @@ Navigera till måttverktyget genom att klicka **[!UICONTROL Manage Data** > ** 
 
 ## Kolumnaggregeringar
 
-En beräknad kolumn krävs vid sammanställning av en kolumn som är kopplad från en annan tabell. Du kan till exempel ha en kolumn inbyggd i `customer` tabell anropad `Customer LTV`som summerar det totala värdet av alla order som är kopplade till den kunden i `orders` tabell.
+En beräknad kolumn krävs vid sammanställning av en kolumn som är kopplad från en annan tabell. Du kan till exempel ha en kolumn inbyggd i `customer` tabell anropad `Customer LTV`, som summerar det totala värdet av alla order som är kopplade till den kunden i `orders` tabell.
 
 Frågan för den här aggregeringen kan se ut ungefär som nedan:
 
@@ -73,15 +73,15 @@ Frågan för den här aggregeringen kan se ut ungefär som nedan:
 | `ON c.customer_id = o.customer_id` | Bana |
 | `WHERE o.status = 'success'` | Aggregera, filter |
 
-Konfigurera detta i [!DNL Commerce Intelligence] kräver att du använder din Data warehouse-hanterare, där du bygger en väg mellan `orders` och `customers` skapa sedan en kolumn som kallas `Customer LTV` i kundens register.
+Konfigurera detta i [!DNL Commerce Intelligence] kräver att du använder din Data Warehouse Manager, där du bygger en väg mellan `orders` och `customers` skapa sedan en kolumn som kallas `Customer LTV` i kundens register.
 
-Se hur man skapar en ny bana mellan `customers` och `orders`. Slutmålet är att skapa en ny aggregerad kolumn i `customers` tabell, så navigera först till `customers` bord i Data warehouse och klicka sedan på **[!UICONTROL Create a Column** > ** Välj en definition **> **SUM]**.
+Se hur man skapar en ny bana mellan `customers` och `orders`. Slutmålet är att skapa en ny aggregerad kolumn i `customers` tabell, så navigera först till `customers` tabellen i Datan Warehouse och klicka sedan på **[!UICONTROL Create a Column** > ** Välj en definition **> **SUM]**.
 
-Sedan måste du välja källtabellen. Om det finns en sökväg till `orders` markerar du den i listrutan. Om du skapar en ny bana klickar du **[!UICONTROL Create new path]** och skärmen nedan visas:
+Sedan måste du välja källtabellen. Om det finns en sökväg till `orders` markerar du den i listrutan. Om du skapar en ny bana klickar du **[!UICONTROL Create new path]** och du visas med skärmen nedan:
 
 ![Skapa ny bana](../../assets/Create_new_path.png)
 
-Här bör du noga tänka på relationen mellan de två tabeller som du försöker ansluta till. I det här fallet finns det `Many` order som är kopplade till `One` kunden `orders` tabellen visas på `Many` sidan, `customers` tabellen markerad på `One` sida.
+Här bör du noga tänka på relationen mellan de två tabeller som du försöker ansluta till. I det här fallet finns det `Many` order som är kopplade till `One` kunden, alltså `orders` tabellen visas på `Many` sidan, `customers` tabellen markerad på `One` sida.
 
 >[!NOTE]
 >
@@ -95,9 +95,9 @@ Nu när du har byggt nya `Customer LTV` i din `customers` kan du skapa en [metri
 
 >[!NOTE]
 >
->När du skapar en ny beräknad kolumn måste du [lägga till dimensionen i befintliga mätvärden](../data-warehouse-mgr/manage-data-dimensions-metrics.md) innan det blir tillgängligt som `filter` eller `group by`.
+>För den senare måste du alltid skapa en ny beräknad kolumn [lägga till dimensionen i befintliga mätvärden](../data-warehouse-mgr/manage-data-dimensions-metrics.md) innan det blir tillgängligt som `filter` eller `group by`.
 
-Se [skapa beräknade kolumner](../data-warehouse-mgr/creating-calculated-columns.md) med Data warehouse Manager.
+Se [skapa beräknade kolumner](../data-warehouse-mgr/creating-calculated-columns.md) med Data Warehouse Manager.
 
 ## `Group By` klausuler
 
@@ -143,7 +143,7 @@ Ta ett steg tillbaka och se den övergripande frågan för `Average order value`
 | `FROM orders` | Mått `source` table |
 | `WHERE` |  |
 | `email NOT LIKE '%@magento.com'` | Mått `filter` |
-| `AND created_at < '2016-12-01'`<br><br>`AND created_at >= '2016-09-01'` | Mättidsstämpel (och tidsintervall för rapportering) |
+| `AND created_at < '2016-12-01'`<br><br>`AND created_at >= '2016-09-01'` | Måttets tidsstämpel (och tidsintervall för rapportering) |
 
 Anta nu att du redan har ställt in mätvärden för att beräkna `Total Revenue` och `Number of orders`. Eftersom dessa mätvärden finns kan du bara öppna `Report Builder` och skapa en behovsstyrd beräkning med `Formula` funktion:
 

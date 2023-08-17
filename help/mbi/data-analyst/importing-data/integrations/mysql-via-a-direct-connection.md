@@ -1,6 +1,6 @@
 ---
 title: Ansluta MySQL via en direktanslutning
-description: Lär dig ansluta [!DNL MongoDB] via direktanslutning.
+description: Lär dig hur du ansluter [!DNL MongoDB] via direktanslutning.
 exl-id: 53765844-c9bb-4a16-b00c-ce9672f87415
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -50,19 +50,19 @@ Om du vill hindra den här användaren från att komma åt data i specifika data
 
 ## Ange anslutningsinformation i Commerce Intelligence
 
-Om du vill slå ihop allt måste du ange anslutningen och användarinformationen i [!DNL Commerce Intelligence]. Gav du [!DNL MySQL] öppnas inloggningssidan? Om inte, gå till **[!UICONTROL Data** > **Connections]** och klicka **[!UICONTROL Add New Data Source]** klickar du på [!DNL MySQL] ikon. Glöm inte att ändra `Encrypted` växla till `Yes`.
+Om du vill slå ihop allt måste du ange anslutningen och användarinformationen i [!DNL Commerce Intelligence]. Gav du [!DNL MySQL] öppnas inloggningssidan? Om inte, gå till **[!UICONTROL Data** > **Connections]** och klicka **[!UICONTROL Add New Data Source]** och klickar sedan på [!DNL MySQL] -ikon. Glöm inte att ändra `Encrypted` växla till `Yes`.
 
 Ange följande information på den här sidan, med början på `Database Connection` avsnitt:
 
 * `Connection Nickname`: Ange ett namn för integreringen (till exempel Ecommerce Store)
-* `Username`: Användarnamnet för [!DNL Commerce Intelligence] [!DNL MySQL] användare
+* `Username`: Användarnamn för [!DNL Commerce Intelligence] [!DNL MySQL] användare
 * `Password`: Lösenordet för [!DNL Commerce Intelligence] [!DNL MySQL] användare
 * `Port`: MySQL-port på servern (`3306` som standard)
-* `Host`: Som standard är detta localhost. I allmänhet är det bind-adresvärdet för [!DNL MySQL] server, som är standard `127.0.0.1 (localhost)`, men kan också vara en lokal nätverksadress (till exempel `192.168.0.1`) eller serverns offentliga IP-adress.
+* `Host`: Detta är som standard localhost. I allmänhet är det bind-adresvärdet för [!DNL MySQL] server, som är standard `127.0.0.1 (localhost)`, men kan också vara en lokal nätverksadress (till exempel `192.168.0.1`) eller serverns offentliga IP-adress.
 
   Värdet finns i `my.cnf` fil (finns på `/etc/my.cnf`) under raden som läser `\[mysqld\]`. Om bind-adresslinjen kommenteras ut i den filen skyddas servern från externa anslutningsförsök.
 
-När du är klar klickar du på **[!UICONTROL Save & Test]** för att slutföra installationen.
+När du är klar klickar du **[!UICONTROL Save & Test]** för att slutföra installationen.
 
 ## Relaterad dokumentation
 

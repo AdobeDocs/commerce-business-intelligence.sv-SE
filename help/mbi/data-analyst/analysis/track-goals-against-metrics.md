@@ -21,7 +21,7 @@ Innan du börjar bör du granska [filöverföring](../importing-data/connecting-
 
 ## Komma igång
 
-Du måste först överföra en fil som innehåller specifika mål per dag, månad och kvartal för ditt företag.
+Du måste först ladda upp en fil som innehåller specifika mål per dag, månad och kvartal för ditt företag.
 
 Du kan använda [filöverföring](../importing-data/connecting-data/using-file-uploader.md) och bilden nedan för att formatera filen. De vanligaste målen som kunderna spårar in [!DNL Commerce Intelligence] innehåller beställningar, intäkter och nya registrerade konton.
 
@@ -31,21 +31,21 @@ Du kan använda [filöverföring](../importing-data/connecting-data/using-file-u
 
 Skapa ett nytt mått för varje mål. Om du till exempel överför månatliga intäkter och ordermål måste du skapa två nya mätvärden:
 
-* **Månadsintäktsmål**
+* **Mål för månadsinkomster**
 * I **`Monthly goals`** table
-* Detta mått utför en **Summa**
+* Det här måttet utför en **Summa**
 * På **`Revenue target`** kolumn
 * Beställd av **`Month`** tidsstämpel
 
 * **Mål för månadsorder**
 * I **`Monthly goals`** table
-* Detta mått utför en **Summa**
+* Det här måttet utför en **Summa**
 * På **`Orders target`** kolumn
 * Beställd av **`Month`** tidsstämpel
 
 * **Mål för nya registrerade konton varje månad**
 * I **`Monthly goals`** table
-* Detta mått utför en **Summa**
+* Det här måttet utför en **Summa**
 * På **`New registered accounts target`** kolumn
 * Beställd av **`Month`** tidsstämpel
 

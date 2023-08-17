@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Förväntat [!DNL QuickBooks] data
 
-Efter [du har anslutit din [!DNL QuickBooks] konto](../../../data-analyst/importing-data/integrations/quickbooks.md)kan du använda [data warehouse Manager](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) för att enkelt spåra relevanta datafält för analys. Följande tabeller skapas i Data warehouse:
+Efter [du har anslutit din [!DNL QuickBooks] konto](../../../data-analyst/importing-data/integrations/quickbooks.md)kan du använda [Data Warehouse Manager](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) för att enkelt spåra relevanta datafält för analys. Följande tabeller skapas i Datan Warehouse:
 
 Om du vill visa alla fält som är tillgängliga för spårning klickar du på länkarna i tabellnamnskolumnen.
 

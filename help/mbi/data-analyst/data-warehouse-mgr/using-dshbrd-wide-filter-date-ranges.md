@@ -43,7 +43,7 @@ När du anger ett datumfilter för en kontrollpanel tillämpas det filtret endas
 
 ## Butiksfilter
 
-Om du vill analysera hur en viss butik fungerar klickar du på butiksikonen i det övre högra hörnet (![Butiksfilter](../../assets/store-filter.png)). Som standard `Store Filter` är inställd på `All Stores`, som visar data från alla [butiksvyer](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-views.html) som finns på din Commerce-webbplats.
+Klicka på butiksikonen i det övre högra hörnet (![Butiksfilter](../../assets/store-filter.png)). Som standard `Store Filter` är inställd på `All Stores`, som visar data från alla [butiksvyer](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-views.html) som finns på din Commerce-webbplats.
 
 >[!NOTE]
 >
@@ -53,4 +53,4 @@ När du väljer en butik på `Store Filter`behåller filtret markeringen när du
 
 ## Filter för delade instrumentpaneler
 
-Om en användare konfigurerar datumfiltret för delade instrumentpaneler ser andra användare med åtkomst till kontrollpanelen att samma filter tillämpas. Butiksfiltret gäller dock inte i det här fallet. Om instrumentpanelens ägare konfigurerar arkivfiltret och delar instrumentpanelen, kvarstår det konfigurerade arkivfiltret inte för en annan användare. En användare måste ha [redigera åtkomst](../../data-user/dashboards/share-dashboard-with-users.md) till en kontrollpanel för att justera kontrollpanelsfiltren.
+Om en användare konfigurerar datumfiltret för delade instrumentpaneler ser andra användare med åtkomst till kontrollpanelen att samma filter tillämpas. Butiksfiltret gäller dock inte i det här fallet. Om instrumentpanelens ägare konfigurerar arkivfiltret och delar instrumentpanelen, kommer det konfigurerade arkivfiltret inte att finnas kvar för en annan användare. En användare måste ha [redigera åtkomst](../../data-user/dashboards/share-dashboard-with-users.md) till en kontrollpanel för att justera kontrollpanelsfiltren.

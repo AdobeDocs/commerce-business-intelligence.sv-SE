@@ -16,7 +16,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[!DNL Adobe Commerce Intelligence] tidigare känt som [!DNL Magento Business Intelligence]. Ett antal uppdateringar pågår för att den här guiden ska kunna fånga upp ändringarna.
+>[!DNL Adobe Commerce Intelligence] var tidigare känt som [!DNL Magento Business Intelligence]. En serie uppdateringar pågår för närvarande för att den här guiden ska kunna fånga upp ändringarna.
 
 [!DNL Adobe Commerce Intelligence] (tidigare känt som [!DNL Magento Business Intelligence]) är en molnbaserad plattform för datahantering och analys. [!DNL Commerce Intelligence] ger dig möjlighet att enkelt konsolidera och hantera dina datakällor, modellera data, skapa diagram och rapporter och upprätthålla en enda sanningskälla.
 

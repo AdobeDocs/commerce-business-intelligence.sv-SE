@@ -1,6 +1,6 @@
 ---
 title: Ansluter [!DNL MySQL] via SSH-tunnel
-description: Lär dig ansluta [!DNL MySQL] via SSH-tunneln.
+description: Lär dig hur du ansluter [!DNL MySQL] via SSH-tunneln.
 exl-id: 6b691a6a-9542-4e47-9b1d-d6d3c3dac357
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
@@ -38,8 +38,8 @@ Koppla samman [!DNL MySQL] databas till [!DNL Commerce Intelligence] via `SSH tu
 The `public key` används för att auktorisera [!DNL Commerce Intelligence] `Linux` användare. I nästa avsnitt skapar du användaren och importerar nyckeln.
 
 1. Gå till **[!UICONTROL Manage Data** > **Connections]** och klicka **[!UICONTROL Add New Data Source]**.
-1. Klicka på `MySQL` ikon.
-1. Efter `MySQL credentials` öppnas, ange `Encrypted` växla till `Yes`. Då visas SSH-konfigurationsformuläret.
+1. Klicka på `MySQL` -ikon.
+1. Efter `MySQL credentials` sidan öppnas, ange `Encrypted` växla till `Yes`. Då visas SSH-konfigurationsformuläret.
 1. The `public key` finns under det här formuläret.
 
 Lämna den här sidan öppen genom hela självstudiekursen - du behöver den i nästa avsnitt och i slutet.
@@ -56,7 +56,7 @@ För att anslutningen ska lyckas måste du konfigurera brandväggen så att den 
 
 Detta kan vara en produktionsmaskin eller en sekundär maskin, förutsatt att den innehåller realtidsdata (eller ofta uppdaterade). Du kan [begränsa den här användaren](../../../administrator/account-management/restrict-db-access.md) på vilket sätt du vill, förutsatt att du behåller rätten att ansluta till `MySQL` server.
 
-1. Om du vill lägga till den nya användaren kör du följande kommandon som rot på din [!DNL Linux] server:
+1. Om du vill lägga till den nya användaren kör du följande kommandon som rot på [!DNL Linux] server:
 
 ```bash
         adduser rjmetric -p<password>
@@ -99,11 +99,11 @@ Om du vill hindra den här användaren från att komma åt data i specifika data
 
 ## Ange anslutningen och användarinformationen i [!DNL Commerce Intelligence] {#finish}
 
-Om du vill slå ihop allt måste du ange anslutningen och användarinformationen i [!DNL Commerce Intelligence]. Gav du `MySQL credentials` öppnas sidan? Om inte, gå till **[!UICONTROL Data** > **Connections]** och klicka **[!UICONTROL Add New Data Source]** och sedan [!DNL MySQL] ikon. Glöm inte att ställa in `Encrypted` växla till `Yes`.
+Om du vill slå ihop allt måste du ange anslutningen och användarinformationen i [!DNL Commerce Intelligence]. Gav du `MySQL credentials` öppnas sidan? Om inte, gå till **[!UICONTROL Data** > **Connections]** och klicka **[!UICONTROL Add New Data Source]** och sedan [!DNL MySQL] -ikon. Glöm inte att ställa in `Encrypted` växla till `Yes`.
 
 Ange följande information på den här sidan, med början på `Database Connection` avsnitt:
 
-* `Username`: Användarnamnet för [!DNL Commerce Intelligence] [!DNL MySQL] användare
+* `Username`: Användarnamn för [!DNL Commerce Intelligence] [!DNL MySQL] användare
 * `Password`: Lösenordet för [!DNL Commerce Intelligence] [!DNL MySQL] användare
 * `Port`: [!DNL MySQL] port på servern (3306 som standard)
 * `Host` Som standard är detta localhost. I allmänhet är det bind-adresvärdet för [!DNL MySQL] server, som är standard `127.0.0.1 (localhost)`, men kan också vara en lokal nätverksadress (till exempel `192.168.0.1`) eller serverns offentliga IP-adress.
@@ -112,11 +112,11 @@ Ange följande information på den här sidan, med början på `Database Connect
 
 I `SSH Connection` avsnitt:
 
-* `Remote Address`: Serverns IP-adress eller värdnamn [!DNL Commerce Intelligence] tunnlar in i
-* `Username`: Användarnamnet för [!DNL Commerce Intelligence] SSH ([!DNL Linux]) användare
+* `Remote Address`: Serverns IP-adress eller värdnamn [!DNL Commerce Intelligence] kommer att gå in i
+* `Username`: Användarnamn för [!DNL Commerce Intelligence] SSH ([!DNL Linux]) användare
 * `SSH Port`: SSH-port på servern (22 som standard)
 
-När du är klar klickar du på **[!UICONTROL Save & Test]** för att slutföra installationen.
+När du är klar klickar du **[!UICONTROL Save & Test]** för att slutföra installationen.
 
 ## Relaterat:
 

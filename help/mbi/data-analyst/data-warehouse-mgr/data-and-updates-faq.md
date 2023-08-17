@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## Varför ändrades mina data? {#datachange}
 
-Diagramvärdena kan ändras under dagen på grund av att nya data synkroniseras med Data warehouse. Dessutom kan värden för befintliga datakolumner ändras på grund av [omkontroller](../data-warehouse-mgr/cfg-data-rechecks.md). En omkontroll är en process som söker efter ändrade värden i datakolumner, till exempel en orderstatus som flyttas från `open` till `shipped`.
+Diagramvärdena kan ändras under dagen på grund av att nya data synkroniseras med Datan Warehouse. Dessutom kan värden för befintliga datakolumner ändras på grund av [omkontroller](../data-warehouse-mgr/cfg-data-rechecks.md). En omkontroll är en process som söker efter ändrade värden i datakolumner, till exempel en orderstatus som flyttas från `open` till `shipped`.
 
 Det finns några olika sätt [för att kontrollera uppdateringscykelns status](../../best-practices/check-update-cycle.md), beroende på användarens behörighetsinställningar.
 
@@ -40,7 +40,7 @@ Om en uppdatering pågår finns det en länk på `Connections` sida som du kan a
 
 ## Varför[!DNL Google ECommerce]data som skiljer sig från min databas? {#ecommdatabase}
 
-Skillnader mellan [!DNL Google Analytics] och databasen kan uppstå av olika anledningar. Spårning är inte korrekt aktiverat, användare som besöker incognito och klickningshändelser fungerar inte korrekt är bara några exempel. Om era intäkter och beställningar inte ser bra ut, [se det här avsnittet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html) för att diagnostisera ett problem.
+Avvikelser mellan [!DNL Google Analytics] och databasen kan uppstå av olika anledningar. Spårning är inte korrekt aktiverat, användare som besöker incognito och klickningshändelser fungerar inte korrekt är bara några exempel. Om era intäkter och beställningar inte ser bra ut, [se det här avsnittet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html) för att diagnostisera ett problem.
 
 ## Hur felsöker jag en diskrepans? {#datadiscrepancy}
 

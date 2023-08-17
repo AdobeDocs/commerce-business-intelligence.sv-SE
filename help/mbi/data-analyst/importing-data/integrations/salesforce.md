@@ -26,14 +26,14 @@ Koppla samman [!DNL Salesforce] data möjliggör en rad analyser, från poängs�
 >The [!DNL Salesforce] kräver att du har [[!DNL Salesforce] API-åtkomst](../integrations/salesforce.md) som en del av [!DNL Salesforce] prenumeration. Kontrollera att detta är aktiverat innan du börjar.
 
 1. Lägg till [!DNL Salesforce] integration till ditt konto, navigera till `Connections` sida under **[!UICONTROL Manage Data** > **Connections]**.
-1. Klicka **[!UICONTROL Add a Data Source]**, som finns till höger på skärmen ovanför tabellen Datakällor.
-1. Klicka på [!DNL Salesforce] ikon.
-1. Klicka **[!UICONTROL Connect to Salesforce]**.
-1. Ange [!DNL Salesforce] inloggningsuppgifter och klicka på **[!UICONTROL Login to Salesforce]**.
+1. Klicka **[!UICONTROL Add a Data Source]**, till höger på skärmen ovanför tabellen Datakällor.
+1. Klicka på [!DNL Salesforce] -ikon.
+1. Klicka på **[!UICONTROL Connect to Salesforce]**.
+1. Ange [!DNL Salesforce] och klicka på **[!UICONTROL Login to Salesforce]**.
 
 ## Relaterat:
 
-Om du är lite mer teknikkunnig, [[!DNL Salesforce] API-dokumentation](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm) kan vara en användbar resurs för att lära dig mer om hur Salesforce integreras med [!DNL Commerce Intelligence].
+Om du är lite mer teknikkunnig, [[!DNL Salesforce] API-dokumentation](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm) kan vara en användbar resurs för att lära dig mer om hur Salesforce är integrerat med [!DNL Commerce Intelligence].
 
 * [Förväntat [!DNL Salesforce] data](../integrations/salesforce-data.md)
 * [Återautentisera integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

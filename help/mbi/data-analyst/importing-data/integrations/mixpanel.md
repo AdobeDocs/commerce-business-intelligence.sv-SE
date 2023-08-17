@@ -24,7 +24,7 @@ Med [!DNL Mixpanel]kan du analysera hur användare navigerar och använder dina 
 Koppla samman [!DNL Mixpanel] data till [!DNL Commerce Intelligence] en enkel trestegsprocess:
 
 1. [Öppna [!DNL Mixpanel] inloggningssida i [!DNL Commerce Intelligence]](#stepone)
-1. [Hämta din [!DNL Mixpanel] API-autentiseringsuppgifter](#steptwo)
+1. [Hämta din [!DNL Mixpanel] API-referenser](#steptwo)
 1. [Ange [!DNL Mixpanel] API-autentiseringsuppgifter i [!DNL Commerce Intelligence]](#stepthree)
 
 För att slutföra den här processen måste du öppna två webbläsarfönster eller -flikar, ett för [!DNL Commerce Intelligence] och den andra för [!DNL Mixpanel] konto.
@@ -41,11 +41,11 @@ Kom igång:
 
 Lämna den här sidan öppen och växla till webbläsarfönstret med [!DNL Mixpanel] konto.
 
-## Hämtar [!DNL Mixpanel] API-autentiseringsuppgifter {#steptwo}
+## Hämtar [!DNL Mixpanel] API-referenser {#steptwo}
 
 Om du inte har loggat in på [!DNL Mixpanel] gör du det och gör sedan följande:
 
-1. Klicka **[!UICONTROL Account]** i det övre högra hörnet.
+1. Klicka **[!UICONTROL Account]** längst upp till höger.
 
 1. Klicka på **[!UICONTROL Projects]**.
 

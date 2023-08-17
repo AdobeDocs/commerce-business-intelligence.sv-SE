@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Onboarding [!DNL Adobe Commerce Intelligence]
 
-Startfrågor som rör `store` och `database` inställningarna ser till att du ställer in rapporteringen korrekt. Med dessa svar levererar Adobe rapporter som är skräddarsydda efter hur er butik ser ut.
+Frågor om introduktion relaterade till `store` och `database` inställningarna ser till att du ställer in rapporteringen på rätt sätt. Med dessa svar levererar Adobe rapporter som är skräddarsydda efter hur er butik ser ut.
 
 ## Lagringsinställningar
 
@@ -27,7 +27,7 @@ Startfrågor som rör `store` och `database` inställningarna ser till att du st
 
 - *Vilken version av Commerce använder du?* - Välj `currency` som din butik är verksam i.
 
-- *Är din butik bosatt i EU?* - Om du svarar `Yes` På denna fråga är Adobe värd för Data warehouse och alla era uppgifter i EU, i enlighet med GDPR.
+- *Är din butik bosatt i EU?* - Om du svarar `Yes` På denna fråga är Adobe värd för er Data Warehouse och alla era uppgifter i EU, i enlighet med GDPR.
 
 ## Databasinställningar
 

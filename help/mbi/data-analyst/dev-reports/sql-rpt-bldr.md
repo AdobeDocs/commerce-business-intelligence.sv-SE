@@ -15,19 +15,19 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Kräver [Administratörsbehörigheter](../../administrator/user-management/user-management.md) för att skapa och redigera SQL-diagram. `Standard` kan användarna ordna om dessa diagram på kontrollpaneler, och `Read-only` användarna har samma upplevelse som de har av traditionella diagram. Dessutom `Read-only` -användare har inte åtkomst till frågetexten.
+>Kräver [Administratörsbehörigheter](../../administrator/user-management/user-management.md) för att skapa och redigera SQL-diagram. `Standard` kan användarna ordna om dessa diagram på kontrollpaneler, och `Read-only` -användare har samma upplevelse som de har med traditionella diagram. Dessutom `Read-only` -användare har inte åtkomst till frågetexten.
 
 Se [utbildningsvideo](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html) om du vill veta mer.
 
-[!DNL SQL], eller Structured Query Language, är ett programmeringsspråk som används för att kommunicera med databaser. I [!DNL Commerce Intelligence], [!DNL SQL] används för att fråga efter eller hämta data från Data warehouse. Titta på rapporterna på din instrumentpanel - bakom kulisserna drivs var och en av dem av en [!DNL SQL] fråga.
+[!DNL SQL], eller Structured Query Language, är ett programmeringsspråk som används för att kommunicera med databaser. I [!DNL Commerce Intelligence], [!DNL SQL] används för att fråga efter eller hämta data från Datan Warehouse. Titta på rapporterna på din instrumentpanel - bakom kulisserna drivs var och en av dem av en [!DNL SQL] fråga.
 
-Du kan använda [[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md) om du vill fråga Data warehouse direkt, visa resultaten och omvandla dem till ett diagram. Du kan börja skapa en rapport med [!DNL SQL Report Builder] genom att klicka **[!UICONTROL Report Builder** > **[!DNL SQL Report Builder]]**.
+Du kan använda [[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md) om du vill fråga Datan Warehouse direkt, visa resultaten och omvandla dem till ett diagram. Du kan börja skapa en rapport med [!DNL SQL Report Builder] genom att klicka **[!UICONTROL Report Builder** > **[!DNL SQL Report Builder]]**.
 
 Se [utbildningsvideo](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html) om du vill veta mer.
 
-The [!DNL SQL Report Builder] Med kan du ställa frågor direkt i Data warehouse, visa resultaten och snabbt omvandla dem till ett diagram. Det bästa med att använda [!DNL SQL] att skapa rapporter är att du inte behöver vänta på uppdateringscykler för att iterera på kolumner som du skapar. Om resultatet inte ser bra ut kan du snabbt redigera och köra frågan igen tills det matchar dina förväntningar.
+The [!DNL SQL Report Builder] gör att du kan ställa frågor direkt i Datan Warehouse, visa resultaten och snabbt omvandla dem till ett diagram. Det bästa med att använda [!DNL SQL] att skapa rapporter är att du inte behöver vänta på uppdateringscykler för att iterera på kolumner som du skapar. Om resultatet inte ser bra ut kan du snabbt redigera och köra frågan igen tills det matchar dina förväntningar.
 
-I det här avsnittet får du hjälp med att använda [!DNL SQL Report Builder]. När du vet hur du ska gå, se [!DNL SQL] för visualiseringar, självstudiekurs eller prova att optimera några av de frågor du har skrivit.
+I det här avsnittet får du hjälp med [!DNL SQL Report Builder]. När du vet hur du ska gå, se [!DNL SQL] för visualiseringar, självstudiekurs eller prova att optimera några av de frågor du har skrivit.
 
 I den här artikeln:
 
@@ -47,7 +47,7 @@ Så här kommer du igång med att skapa en [!DNL SQL] rapport, klicka på **[!UI
 
 ## Kom igång
 
-Om du vill redigera en rapport klickar du på kugghjulet (![](../../assets/gear-icon.png)) i det övre högra hörnet av ett [!DNL SQL]-baserat diagram och klicka **[!UICONTROL Edit]**.
+Klicka på kugghjulet (![](../../assets/gear-icon.png)) i det övre högra hörnet av ett [!DNL SQL]-baserat diagram och klicka **[!UICONTROL Edit]**.
 
 ## Skriva en fråga {#writing}
 
@@ -65,7 +65,7 @@ Om mätvärdena uppdateras i framtiden kommer SQL-rapporten *inte* återspeglar 
 
 Med knapparna överst i sidlisten kan du växla mellan listor med tabeller och mätvärden som är tillgängliga för användning i [!DNL SQL Report Builder]. Om du inte ser vad du söker i listan kan du söka efter den med hjälp av sökfältet högst upp i sidlisten.
 
-Du kan också använda sidlisten i dialogrutan [!DNL SQL] redigerare som infogar mått, tabeller och kolumner direkt i frågorna genom att hålla markören över dem och klicka **[!UICONTROL Insert]**:
+Du kan också använda sidlisten i dialogrutan [!DNL SQL] som infogar mått, tabeller och kolumner direkt i frågorna genom att hålla markören över dem och klicka **[!UICONTROL Insert]**:
 
 ![Infoga en tabell i [!DNL SQL] redigerare.](../../assets/SQL_RB_Insert_Table.png)
 
@@ -77,7 +77,7 @@ Dessutom kan `JOIN` type stöds, men Adobe rekommenderar endast att INER JOIN an
 
 ## Köra frågan och visa resultat {#runquery}
 
-När du är klar med din fråga klickar du på **[!UICONTROL Run Query]**. Resultatet visas i en tabell under SQL-redigeraren:
+När du är klar med att skriva frågan klickar du på **[!UICONTROL Run Query]**. Resultatet visas i en tabell under SQL-redigeraren:
 
 ![Kör frågan och visa resultat.](../../assets/SQL_Run_Query.gif)
 
@@ -89,7 +89,7 @@ När du är klar med redigeringen av frågan kan du gå vidare till att antingen
 
 ## Skapa en visualisering {#createviz}
 
-Om du vill skapa en visualisering med dina frågeresultat klickar du på **[!UICONTROL Chart]** i `Results` fönster. På den här fliken väljer du:
+Om du vill skapa en visualisering med frågeresultaten klickar du på **[!UICONTROL Chart]** i `Results` fönster. På den här fliken väljer du:
 
 * The `Series`eller den kolumn som du vill mäta, till exempel **Sålda artiklar**.
 * The `Category`eller den kolumn som du vill använda för att segmentera data, till exempel **förvärvskälla**.
@@ -113,7 +113,7 @@ Klicka **[!UICONTROL Save]** längst upp till höger i [!DNL SQL] och väljer ra
 
 #### [!DNL SQL Report Builder]
 
-[[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md) ger er möjlighet att ställa frågor direkt till Data warehouse, se resultaten och snabbt omvandla dem till en rapport. Använda [!DNL SQL] ger dig även möjlighet att [att använda [!DNL SQL] funktioner som inte är tillgängliga](https://docs.aws.amazon.com/redshift/latest/dg/c_SQL_functions.html) i `Visual` eller `Cohort` Report Builder, vilket ger er större kontroll över era data.
+[[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md) ger dig möjlighet att ställa frågor direkt till Datan Warehouse, se resultaten och snabbt omvandla dem till en rapport. Använda [!DNL SQL] kan du även [att använda [!DNL SQL] funktioner som inte är tillgängliga](https://docs.aws.amazon.com/redshift/latest/dg/c_SQL_functions.html) i `Visual` eller `Cohort` Report Builder, vilket ger er större kontroll över era data.
 
 Beräknade kolumner som skapats med [!DNL SQL] är inte beroende av uppdateringscykler, vilket innebär att du kan upprepa dem som du vill och omedelbart se resultaten.
 
@@ -131,24 +131,24 @@ Beräknade kolumner som skapats med [!DNL SQL] är inte beroende av uppdaterings
 
 #### Resultat för databas jämfört med SQL Editor
 
-Olika resultat beror oftast på uppdateringscykler. If [!DNL Commerce Intelligence] är på väg att replikera data från databasen till Data warehouse, kan du se olika resultat även om du använder samma fråga.
+Olika resultat beror oftast på uppdateringscykler. If [!DNL Commerce Intelligence] är på väg att replikera data från databasen till Datan Warehouse. Du kan se olika resultat även om du använder samma fråga.
 
 Anslutningsproblem kan också leda till avvikelser. Navigera till `Connections` sida genom att klicka **[!DNL Manage Data** > **Connections]** för att ta reda på det - finns det ett fel för databasintegreringen i fråga? I så fall kan du behöva [autentisera integreringen igen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html) för att få igång saker och ting igen.
 
 Om alla integreringar har anslutits och du inte befinner dig mitt i en uppdateringscykel kan något annat vara fel.
 
-#### Tar bort en [!DNL SQL] Vill du även ta bort de underliggande kolumnerna från Data warehouse?
+#### Tar bort en [!DNL SQL] Vill du även ta bort de underliggande kolumnerna från Datan Warehouse?
 
-Nej, du förlorar inga spalter från Data warehouse, oavsett hur du har skapat dem.
+Nej, du förlorar inga kolumner från Datan Warehouse, oavsett hur du har skapat dem.
 
 Kolumner som skapats med `Data Warehouse Manager` påverkas inte om du tar bort en rapport eller fråga som använder dem.
 
-Kolumner som skapats med [!DNL SQL Report Builder] sparas inte i Data warehouse.
+Kolumner som skapats med [!DNL SQL Report Builder] sparas inte i Datan Warehouse.
 
 
 #### `Report Builder` kontra `SQL Report Builder`
 
-The [!DNL SQL Report Builder] ger dig större flexibilitet när du skapar och strukturerar diagram - du kan till exempel välja vilka värden som ska visas på `X` och `Y` axlar. Mer information om hur du skapar diagram finns i [!DNL SQL Report Builder], kolla in [Skapa visualiseringar från [!DNL SQL] frågor](../../tutorials/create-visuals-from-sql.md) självstudiekurs.
+The [!DNL SQL Report Builder] ger dig större flexibilitet när du skapar och strukturerar diagram - du kan till exempel välja vilka värden som ska visas på `X` och `Y` axlar. Mer information om hur du skapar diagram finns i [!DNL SQL Report Builder], kolla in [Skapa visualiseringar från [!DNL SQL] frågor](../../tutorials/create-visuals-from-sql.md) självstudie.
 
 #### `Cohort Report Builder` {#cohortrb}
 
@@ -165,11 +165,11 @@ Du behöver inte återskapa dina frågor. Rapporter skapade med [[!DNL SQL Repor
 
 >[!NOTE]
 >
->När en [!DNL SQL] rapport/fråga, den tar inte bort de underliggande kolumnerna från Data warehouse. Du förlorar inga kolumner, oavsett hur du har skapat dem.
+>När en [!DNL SQL] rapport/fråga, den tar inte bort de underliggande kolumnerna från Datan Warehouse. Du förlorar inga kolumner, oavsett hur du har skapat dem.
 
-* Kolumner som skapats med Data warehouse Manager påverkas inte om du tar bort en rapport eller fråga som använder dem.
+* Kolumner som skapas med hjälp av Data Warehouse Manager påverkas inte om du tar bort en rapport eller fråga som använder dem.
 
-* Kolumner som skapas med SQL Report Builder sparas inte i Data warehouse.
+* Kolumner som skapas med SQL Report Builder sparas inte i Datan Warehouse.
 
 ## Radbrytning {#wrapup}
 

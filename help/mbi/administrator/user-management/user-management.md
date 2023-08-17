@@ -15,7 +15,7 @@ ht-degree: 0%
 
 [!DNL Adobe Commerce Intelligence] ska vara en enda källa till sanning i hela organisationen. Varje användare har en egen uppsättning kontrollpaneler som de kan [dela med andra användare](../../data-user/dashboards/share-dashboard-with-users.md).
 
-## Behörighetsnivåer för användare
+## Behörighetsnivåer
 
 I [!DNL Commerce Intelligence], finns det tre allmänna behörighetsnivåer som gäller för användare, som väljs när ett konto skapas:
 
@@ -33,9 +33,9 @@ Dessa behörigheter gör att användare kan utföra vissa åtgärder eller komma
 | **Visa instrumentpaneler** | ✔ | ✔ | ✔ |
 | **Skapa/redigera/ta bort visuella rapporter** | ✔ | ✔* |   |
 | **Skapa/redigera/ta bort SQL-rapporter** | ✔ |  |   |
-| **Klona instrumentpaneler** | ✔ |   |   |
+| **Klonpaneler** | ✔ |   |   |
 | **Lägg till/hantera integreringar** | ✔ |   |   |
-| **Öppna Data warehouse Manager** | ✔ |   |   |
+| **Öppna Data Warehouse Manager** | ✔ |   |   |
 | **Synkronisera/avsynkronisera tabeller och kolumner** | ✔ |   |   |
 | **Skapa/redigera mätvärden** | ✔ |   |   |
 | **Skapa/redigera filteruppsättningar** | ✔ |   |   |
@@ -54,9 +54,9 @@ Dessa behörigheter gör att användare kan utföra vissa åtgärder eller komma
 >
 >**[!UICONTROL Standard] _-användare har åtkomst till Fakturering med en extra behörighetsinställning._
 >
->**[!UICONTROL Read-Only]** kan bara _visa_ Instrumentpaneler som har delats med dem. de inte kan skapa eller redigera något i [!DNL Commerce Intelligence]och de kan inte heller söka efter och lägga till nya instrumentpaneler på sitt konto. Adobe rekommenderar att du delar en specifik uppsättning kontrollpaneler med **[!UICONTROL Read-Only]** användare som du eller någon annan medlem i ditt team underhåller. Klona inte en uppsättning instrumentpaneler åt dem.
+>**[!UICONTROL Read-Only]** kan bara _visa_ instrumentpaneler som har delats med dem; de kan inte skapa eller redigera någonting i [!DNL Commerce Intelligence]och de kan inte heller söka efter och lägga till nya instrumentpaneler på sitt konto. Adobe rekommenderar att du delar en specifik uppsättning kontrollpaneler med **[!UICONTROL Read-Only]** användare som du eller någon annan medlem i ditt team underhåller. Klona inte en uppsättning instrumentpaneler åt dem.
 
-## Ytterligare behörigheter: Fakturering och teknisk rådgivning {#billingtech}
+## Ytterligare behörigheter: Fakturering och teknik {#billingtech}
 
 Förutom de allmänna behörighetsnivåerna finns det två andra användarbeteckningar - `Billing` och `Technical`. Dessa beteckningar bör användas tillsammans med de allmänna behörighetsnivåerna.
 
@@ -68,9 +68,9 @@ Förutom de allmänna behörighetsnivåerna finns det två andra användarbeteck
 
 ![fakturering](../../assets/billing.png)<!--{: width="550" height="363"}-->
 
-### Teknik
+### Teknisk
 
-`Technical` -användare har inte någon behörighet som är specifik för dem - den här inställningen markerar bara en teknisk kontakt inom organisationen. Dessa användare kan kontaktas av Adobe för tekniska frågor.
+`Technical` -användare har inte någon behörighet som är specifik för dem - den här inställningen markerar bara en teknisk kontakt inom organisationen. Adobe kan kontakta dessa användare för tekniska frågor.
 
 `Admin` användare kan lägga till nya användare i sina konton genom att klicka på **[!UICONTROL Account Settings]** > **[!UICONTROL Create Users]** och följer anvisningarna. När användaren har skapats i [!DNL Commerce Intelligence], får den person du bjuder in e-postinstruktioner om hur du slutför kontokonfigurationsprocessen.
 

@@ -37,7 +37,7 @@ The [!DNL Commerce Intelligence] [!DNL Visual Report Builder] har 12 olika visua
 
 ![](../../assets/blobid0.png)
 
-Om du vill spara en rapport som en skalär konfigurerar du dina filter och tidsinställningar och klickar sedan på **[!UICONTROL Save]** eller **[!UICONTROL Update]** i rapportens övre högra del. Under `Type` väljer du Nummer: Måttnamn för att spara rapporten som det värde som visas på vänster sida.
+Om du vill spara en rapport som en skalär konfigurerar du dina filter och tidsinställningar och klickar sedan på **[!UICONTROL Save]** eller **[!UICONTROL Update]** i rapportens övre högra del. Under `Type` väljer du Nummer: Måttnamn för att spara rapporten som det värde som visas i det vänstra fältet.
 
 ![](../../assets/blobid1.png)
 
@@ -53,13 +53,13 @@ Som namnet antyder, `table` -rapporter passar bra för att visa tabelldetaljer. 
 
 ![](../../assets/blobid2.png)
 
-Precis som för skalära rapporter kan du spara en rapport som en tabell genom att klicka på **[!UICONTROL Save]** eller **[!UICONTROL Update]** i Report Builder och sedan väljer du alternativet Table under `Type` listruta.
+Precis som för skalära rapporter kan du spara en rapport som en tabell genom att klicka på **[!UICONTROL Save]** eller **[!UICONTROL Update]** i Report Builder och sedan väljer du alternativet Table under `Type` nedrullningsbar meny.
 
 ![](../../assets/blobid3.png)
 
 **Krav:**
 
-* Även om det inte finns några krav på rapportkonfiguration är det viktigt att tänka på att tabeller är begränsade till 3 500 rader. Om datauppsättningen innehåller fler än 3 500 rader måste du antingen filtrera resultaten för att begränsa omfånget eller exportera resultaten till `.csv` eller `Excel` för att se hela datauppsättningen.
+* Även om det inte finns några krav på rapportkonfiguration är det viktigt att tänka på att tabeller är begränsade till 3 500 rader. Om din datauppsättning innehåller mer än 3 500 rader måste du antingen filtrera resultaten för att begränsa omfattningen eller exportera resultaten till `.csv` eller `Excel` för att se hela datauppsättningen.
 
 ## `Line`
 
@@ -101,7 +101,7 @@ Rapporten nedan innehåller till exempel två identiska intäktsmått med en fil
 
 ![](../../assets/blobid4.png)
 
-Se till att `Multiple Y-Axes` är avmarkerad när du skapar en rapport som den ovan.
+Se till att `Multiple Y-Axes` är avmarkerad när du ställer in en rapport som den ovan.
 
 Om du vill spara en rapport som ett staplat stapeldiagram justerar du rapporten `Type` till `Chart` och välj alternativet för staplade fält i Report Builder:
 
@@ -170,7 +170,7 @@ Ta samma exempel från `stacked column` i rapporten nedan visas första gången 
 
 ![](../../assets/blobid12.png)
 
-Om du vill spara en rapport som ett ytdiagram justerar du `Type` till `Chart` och välj områdesalternativ:
+Justera `Type` till `Chart` och välj områdesalternativ:
 
 ![](../../assets/blobid13.png)
 

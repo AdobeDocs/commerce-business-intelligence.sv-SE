@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Kupongkodsanalys
 
-Att förstå hur ert företag presterar i form av kuponger är ett intressant sätt att segmentera era order och bättre förstå kundernas vanor.
+Att förstå kupongresultaten i ert företag är ett intressant sätt att segmentera era order och bättre förstå kundvanor.
 
 I det här avsnittet beskrivs stegen som krävs för att skapa den här analysen för att förstå hur kupongköpta kunder fungerar, se trender och spåra användningen av enskilda kupongkoder.
 
@@ -34,7 +34,7 @@ Det första steget är att skapa ett nytt mått med följande steg:
 * Navigera till **[!UICONTROL Manage Data > Metrics > Create New Metric]**.
 
 * Välj `sales_order`.
-* Detta mått utför en **Summa** på **base_rabatt_amount** kolumn, sorterad efter **created_at**.
+* Det här måttet utför en **Summa** på **base_rabatt_amount** kolumn, sorterad efter **created_at**.
    * [!UICONTROL Filters]:
       * Lägg till `Orders we count` (Sparad filteruppsättning)
       * Lägg till följande:
@@ -97,7 +97,7 @@ Det första steget är att skapa ett nytt mått med följande steg:
      [!UICONTROL-intervall]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
 
-* **Inkomster för genomsnittlig livstid: Kupongförvärvade kunder**
+* **Inkomster under hela löptiden: Kupongförvärvade kunder**
    * [!UICONTROL Metric]: `Avg lifetime revenue`
       * Lägg till filter:
          * [`A`] `Customer's first order's coupon_code` **ÄR INTE** `[NULL]`
@@ -107,7 +107,7 @@ Det första steget är att skapa ett nytt mått med följande steg:
      [!UICONTROL-intervall]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
 
-* **Inkomster för genomsnittlig livstid: Icke-kupongförvärvade kunder**
+* **Genomsnittlig livslängdsintäkt: Icke-kupongförvärvade kunder**
    * [!UICONTROL Metric]: `Avg lifetime revenue`
       * Lägg till filter:
          * [A] `Customer's first order's coupon_code` **ÄR**`[NULL]`

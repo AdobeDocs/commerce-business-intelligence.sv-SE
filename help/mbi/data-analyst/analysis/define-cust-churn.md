@@ -1,6 +1,6 @@
 ---
 title: Definiera kundomsättning
-description: Lär dig hur du skapar en kontrollpanel som hjälper dig att definiera kundomsättning för dina transaktionskunder.
+description: Lär dig hur du konfigurerar en kontrollpanel som hjälper dig att definiera kundomsättning för dina transaktionskunder.
 exl-id: fea8f7e9-c84c-4d49-a657-8b75140c113a
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Warehouse Manager, Reports, Dashboards
@@ -34,7 +34,7 @@ Kolumner att skapa
 
 * `sales_flat_order` table
 * `Customer's lifetime number of orders`
-* Välj en definition: Kopplad kolumn
+* Välj en definition: Förenad kolumn
 * Välj en [!UICONTROL table]: `customer_entity`
 * Välj en [!UICONTROL column]: `Customer's lifetime number of orders`
 * [!UICONTROL Path]: `sales_flat_order.customer_id = customer_entity.entity_id`
@@ -61,7 +61,7 @@ Inga nya mätvärden!
 ## Rapporter
 
 * **Sannolikhet för inledande upprepad order**
-* Mått A: Upprepa order hela tiden
+* Mått A: Upprepade order vid heltids användning
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]: `Customer's order number greater than 1`
 
@@ -80,27 +80,27 @@ Inga nya mätvärden!
 * 
   [!UICONTROL Chart type]: `Scalar`
 
-* **Sannolikhet för upprepade order som har angetts månader sedan ordern**
+* **Sannolikhet för upprepad order som har angetts månader sedan ordern**
 * Mått A: Upprepa order efter månader sedan föregående order (dölj)
 * [!UICONTROL Metric]: `Number of orders`
 * 
   [!UICONTROL Perspective]: `Cumulative`
 * [!UICONTROL Filter]: `Customer's order number greater than 1`
 
-* Mått B: Senaste order per månad sedan ordern (dölj)
+* Mått B: Sista beställningen per månad sedan beställningen (dölj)
 * [!UICONTROL Metric]: `Number of orders`
 * 
   [!UICONTROL Perspective]: `Cumulative`
 * [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
 
-* Mått C: Upprepade order hela tiden (dölj)
+* Mått C: Upprepade order (dölj)
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]: `Customer's order number greater than 1`
 
 * 
   [!UICONTROL Group by]: `Independent`
 
-* Mått D: Senaste order hela tiden (dölj)
+* Mått D: Sista ordern för heltidsredigering (dölj)
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
 
@@ -117,16 +117,16 @@ Inga nya mätvärden!
 * 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Months since previous order`
-* Visa top.bottom: De 24 viktigaste kategorierna, sorterade efter kategorinamn
+* Visa överkant.nederkant: De 24 översta kategorierna, sorterade efter kategorinamn
 
 * 
   [!UICONTROL Chart type]: `Line`
 
-Den inledande sannolikhetsrapporten för upprepad order representerar totalt antal upprepade order/totalt antal order. Varje beställning ger möjlighet att göra en upprepad beställning. antalet upprepade order är delmängden av de som faktiskt gör det.
+Den inledande sannolikhetsrapporten för upprepad order representerar totalt antal upprepade order/totalt antal order. Varje order är en möjlighet att göra en upprepad order. Antalet upprepade order är delmängden av de order som faktiskt gör det.
 
 Formeln som du använder förenklar till (Totalt antal upprepade order som har inträffat efter X månader)/ (Totalt antal order som är minst X månader gamla). Det visar att det historiskt sett har gått X månader sedan en beställning och att det finns en Y-procentig chans att användaren lägger en annan order.
 
-När du väl har skapat din kontrollpanel är den vanligaste frågan: Hur använder jag detta för att fastställa ett tröskelvärde för bortfall?
+När du har skapat din kontrollpanel är den vanligaste frågan: Hur använder jag den för att fastställa ett tröskelvärde för bortfall?
 
 **Det finns inget&quot;rätt svar&quot; på detta.** Adobe rekommenderar dock att du hittar den punkt där raden korsar värdet som är hälften av den inledande upprepningssannolikheten. Här kan du säga: &quot;Om en användare tänker göra en ny beställning, skulle han eller hon antagligen ha gjort det vid det här laget.&quot; I slutändan är målet att välja tröskeln där det är rimligt att gå över från&quot;kvarhållande&quot; till&quot;reaktivering&quot;.
 

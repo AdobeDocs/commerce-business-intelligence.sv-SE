@@ -36,7 +36,7 @@ Instrumentpanelen Kunder (tillåten gästutcheckning) ger information om din kun
 | `Total Unique Customers (Past 30 Days)` | Antal unika kunder som lagt order de senaste 30 dagarna. |
 | `Orders by New vs Existing Customers` | Antal beställningar som gjorts av kunder utan tidigare beställningar jämfört med kunder med minst en tidigare beställning. |
 | `Subsequent Order Probability (All Time)` | Sannolikheten för att kunder som har lagt en order lägger en annan. |
-| `% of Customers with Multiple Orders (All Time)` | Procent av alla kunder som har gjort mer än en beställning. |
+| `% of Customers with Multiple Orders (All Time)` | Procent av alla kunder som har beställt mer än en order. |
 | `Median Time Between Orders (All Time)` | Genomsnittlig tid varje kund tar mellan att göra en beställning och nästa. |
 | `Subsequent Order Probability` | Sannolikheten för att kunder som har lagt en order lägger en annan order, uppdelad efter ordernummer. Det vill säga procentandelen kunder med en order som lägger en andra, en procent med två som placerar en tredjedel osv. |
 | `Time Between Orders` | Genomsnittlig och mediantid som kunderna tar mellan beställningarna, uppdelat efter ordernummer (dvs. tiden mellan beställningarna ett och två, två och tre osv.). |
@@ -59,7 +59,7 @@ Instrumentpanelen Kunder (ingen gästutcheckning tillåts) ger information om di
 | `% Conversion from Registration to First Order` | Procent av registrerade konton som har gjort en beställning, per registreringsmånad. |
 | `Orders by New vs Existing Customers` | Antal beställningar som gjorts av kunder utan tidigare beställningar jämfört med kunder med minst en tidigare beställning. |
 | `Subsequent Order Probability (All Time)` | Sannolikheten för att kunder som har lagt en order lägger en annan. |
-| `% of Customers with Multiple Orders (All Time)` | Procent av alla kunder som har gjort mer än en beställning. |
+| `% of Customers with Multiple Orders (All Time)` | Procent av alla kunder som har beställt mer än en order. |
 | `Median Time Between Orders (All Time)` | Genomsnittlig tid varje kund tar mellan att göra en beställning och nästa. |
 | `Subsequent Order Probability` | Sannolikheten för att kunder som har lagt en order lägger en annan, uppdelad efter ordernummer. Det vill säga, procent av kunderna med en order som lägger en andra, en procent med två som placerar en tredjedel och så vidare. |
 | `Time Between Orders` | Genomsnittlig och mediantid som kunderna tar mellan beställningarna, uppdelat efter ordernummer (dvs. tiden mellan beställningarna ett och två, två och tre osv.). |
@@ -119,7 +119,7 @@ Instrumentpanelen för beställningar ger insikter om transaktionsvolym för bes
 | Namn | Beskrivning |
 |---|---|
 | `Orders (Past 30 Days)` | Antalet beställningar som gjorts i din butik under de senaste 30 dagarna. |
-| `Revenue (Past 30 Days)` | De intäkter som har genererats av din butik under de senaste 30 dagarna. Intäkter definieras som det slutpris som en kund betalar på en order. |
+| `Revenue (Past 30 Days)` | De intäkter som har genererats av butiken de senaste 30 dagarna. Intäkter definieras som det slutpris som en kund betalar på en order. |
 | `Average Order Value (Past 30 Days)` | Genomsnittligt ordervärde under de senaste 30 dagarna. Ordervärdet definieras som det slutpris som en kund betalar på en order. |
 | `Orders` | Antalet beställningar som görs i din butik varje månad. |
 | `Revenue by Payment Method` | Intäkterna som har genererats av din butik, uppdelade efter betalningsmetod. Intäkter definieras som det slutpris som en kund betalar på en order. |
@@ -152,5 +152,5 @@ På kontrollpanelen för produkter visas den allmänna produktprestandan i terme
 | `Product Performance Details (Past 30 Days)` | Detaljerad information om försäljning och efterföljande återbetalningar under de senaste 30 dagarna, per produktsku och produktnamn. |
 | `Top Purchased Products by GMV (Past 30 Days)` | Produkter som sålts under de senaste 30 dagarna och som genererade störst intäkter (de tio främsta). |
 | `Top Refunded Products by GMV (Past 30 Days)` | Produkter som köpts under de senaste 30 dagarna och som resulterat i den största förlusten av GMV på grund av återbetalningar (de 10 högsta). |
-| `Top Purchased Products by Quantity (Past 30 Days)` | Produkter som sålts de senaste 30 dagarna i det största antalet (de tio bästa). |
+| `Top Purchased Products by Quantity (Past 30 Days)` | Produkter som sålts de senaste 30 dagarna i det största antalet (10:e). |
 | `Top Refunded Products by Quantity (Past 30 Days)` | Produkter som köpts under de senaste 30 dagarna och som resulterat i den största återbetalningsmängden (de 10 högsta). |

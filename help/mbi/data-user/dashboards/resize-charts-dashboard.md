@@ -19,6 +19,6 @@ Skalärnummer. Stolpdiagram. Diagram som sträcker sig över långa perioder. Al
 
 ![ändra storlek på diagram](../../assets/Resize_Chart_in_Dashboard.gif)
 
-*Flytta ett diagram* hovra över diagrammets övre del tills `Move` markören visas. Klicka och håll ned och dra sedan diagrammet till önskad plats. Placera diagrammet genom att klicka.
+*Flytta ett diagram* placerar du markören över diagrammets övre del tills `Move` markören visas. Klicka och håll ned och dra sedan diagrammet till önskad plats. Placera diagrammet genom att klicka.
 
 ![flytta diagram](../../assets/Move_Chart_in_Dashboard.gif)

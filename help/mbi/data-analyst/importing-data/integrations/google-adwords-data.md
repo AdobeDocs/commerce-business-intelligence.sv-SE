@@ -1,6 +1,6 @@
 ---
 title: Förväntade Google Adwords-data
-description: Lär dig hur du kan använda Data warehouse Manager för att enkelt spåra relevanta datafält för analys.
+description: Lär dig hur du kan använda Data Warehouse Manager för att enkelt spåra relevanta datafält för analys.
 exl-id: b0085683-7bb1-4da2-b343-4309e4796f0c
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # Förväntat [!DNL Google Adwords] data
 
-Efter [du har anslutit din [!DNL Google Adwords] konto](../integrations/google-adwords.md)kan du använda [data warehouse Manager](../../data-warehouse-mgr/tour-dwm.md) för att enkelt spåra relevanta datafält för analys.
+Efter [du har anslutit din [!DNL Google Adwords] konto](../integrations/google-adwords.md)kan du använda [Data Warehouse Manager](../../data-warehouse-mgr/tour-dwm.md) för att enkelt spåra relevanta datafält för analys.
 
-Det finns två tabeller som kan replikeras till Data warehouse:
+Det finns två tabeller som kan replikeras till Datan Warehouse:
 
 * `campaigns[account-id]`
 * `adwords[account-id]`
@@ -53,7 +53,7 @@ The `campaigns` tabellen innehåller följande kolumner:
 | [`impressions`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_impressions) | Antal visningar för dagen |
 | `profileId` | Profil-ID |
 | `profileName` | Profilnamnet |
-| `\_updated\_at` | Datum och tid för den senaste uppdateringen för den här raden |
+| `\_updated\_at` | Datum och tid för den senaste uppdateringen för raden |
 
 {style="table-layout:auto"}
 
@@ -73,7 +73,7 @@ The `adwords` tabellen innehåller följande kolumner:
 | [`impressions`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_impressions) | Antal visningar för dagen |
 | `profileId` | Profil-ID |
 | `profileName` | Profilnamnet |
-| `\_updated\_at` | Datum och tid för den senaste uppdateringen för den här raden |
+| `\_updated\_at` | Datum och tid för den senaste uppdateringen för raden |
 | `keyword` | Nyckelordet för kampanjen |
 | `adContent` | Den första textraden för onlinekampanjen |
 | `adDestinationUrl` | Den URL som [!DNL Adwords] refererad trafik |
@@ -85,8 +85,8 @@ Med dessa data kan du börja skapa [mått](../../../data-user/reports/ess-manage
 
 ## Konsoliderade tabeller
 
-[!DNL Adobe] rekommenderar att du skapar `consolidated ad spend` tabell för att kombinera data från alla era olika annonskällor till en enda tabell. På så sätt kan ni använda en enda uppsättning mätvärden för annonsanalys.
+[!DNL Adobe] rekommenderar att en `consolidated ad spend` tabell för att kombinera data från alla era olika annonskällor till en enda tabell. På så sätt kan ni använda en enda uppsättning mätvärden för annonsanalys.
 
 Om du inte har någon konsoliderad tabell och du skapar en vacker kontrollpanel på `adwords` måste du replikera rapporten eller skapa dubblettvärden för att jämföra data med [!DNL Facebook Ads] data. Genom att använda en konsoliderad tabell kan du smidigt införliva [!DNL Facebook Ads] data med befintliga [!DNL Adwords] rapporter. Ni kan även segmentera per annonsplattform.
 
-Om du redan har synkroniserat fälten ovan, [kontakta oss](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) för att konsolidera era annonskostnader.
+Om du redan har synkroniserat fälten ovan [kontakta oss](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) för att konsolidera era annonskostnader.

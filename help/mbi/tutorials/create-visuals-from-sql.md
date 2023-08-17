@@ -23,13 +23,13 @@ Innan du börjar den här självstudiekursen ska du läsa om följande terminolo
 
 - `Series`: Kolumnen som du vill mäta kallas en serie i SQL Report Builder. Vanliga exempel är `revenue`, `items sold`och `marketing spend`. Minst en kolumn måste anges som en `Series` för att skapa en visualisering.
 
-- `Category`: Kolumnen som du vill använda för att segmentera data kallas `Category` Det här är precis som `Group By` i [`Visual Report Builder`](../data-user/reports/ess-rpt-build-visual.md). Om du till exempel vill segmentera kundernas livstidsintäkter med hjälp av deras anskaffningskälla anges kolumnen som innehåller anskaffningskällan som `Category`. Mer än en kolumn kan anges som en `Category`.
+- `Category`: Den kolumn som du vill använda för att segmentera data kallas för `Category` Det här är precis som `Group By` i [`Visual Report Builder`](../data-user/reports/ess-rpt-build-visual.md). Om du till exempel vill segmentera kundernas livstidsintäkter med hjälp av deras anskaffningskälla anges kolumnen som innehåller anskaffningskällan som `Category`. Mer än en kolumn kan anges som en `Category`.
 
 >[!NOTE]
 >
 >Datum och tidsstämplar kan också användas som `Categories`. De är bara en annan datakolumn i frågan och måste formateras och ordnas som du vill i själva frågan.
 
-- `Labels`: De används som x-axeletiketter. När du analyserar datatrender över tid anges år- och månadskolumnerna som etiketter. Mer än en kolumn kan anges till Label.
+- `Labels`: Dessa används som x-axeletiketter. När du analyserar datatrender över tid anges år- och månadskolumnerna som etiketter. Mer än en kolumn kan anges till Label.
 
 ## Steg 1: Skriv frågan
 
@@ -92,9 +92,9 @@ I det här exemplet används `Line` diagramtyp. Så här använder du en annan `
 
 ## Steg 4: Spara visualiseringen
 
-Om du vill använda rapporten igen ger du rapporten ett namn och klickar på **[!UICONTROL Save]** i det övre högra hörnet.
+Om du vill använda rapporten igen ger du rapporten ett namn och klickar på **[!UICONTROL Save]** längst upp till höger.
 
-I listrutan väljer du `Chart` som `Type` och sedan en kontrollpanel där du vill spara rapporten.
+Välj `Chart` som `Type` och sedan en kontrollpanel där du vill spara rapporten.
 
 ## Radbrytning
 

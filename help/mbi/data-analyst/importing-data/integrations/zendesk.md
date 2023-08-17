@@ -7,7 +7,7 @@ feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '265'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -33,23 +33,23 @@ För att slutföra den här processen måste du öppna två webbläsarfönster e
 
 1. Gå till `Integrations` sida under **[!UICONTROL Manage Data** > ** Datakällor **> **Integrationer]**.
 1. Klicka **[!UICONTROL Add Integration]**, som finns till höger på skärmen.
-1. Klicka på [!DNL Zendesk] ikon. Då öppnas [!DNL Zendesk] inloggningssida.
+1. Klicka på [!DNL Zendesk] -ikon. Då öppnas [!DNL Zendesk] inloggningssida.
 
 ## Hämta din [!DNL Zendesk] API-token {#steptwo}
 
 1. I fönstret/fliken där du är inloggad på [!DNL Zendesk] klickar du på inställningsikonen (kugghjulsikonen) längst ned till vänster på skärmen.
 1. När `Settings` visas, leta upp `Channels` -avsnitt. Klicka **[!UICONTROL API]** i det här avsnittet.
-1. I `Token Access` på den här sidan klickar du i kryssrutan bredvid `Enabled`. En lista över visning av Active API-token.
-1. Klicka **[!UICONTROL Add New Token]**.
+1. I `Token Access` på den här sidan klickar du i kryssrutan intill `Enabled`. En lista över visning av Active API-token.
+1. Klicka på **[!UICONTROL Add New Token]**.
 1. Ange en etikett för token när du uppmanas till detta. Adobe rekommenderar att du använder `Commerce Intelligence`så att du snabbt vet vilket program som använder token.
-1. Klicka **[!UICONTROL Create]**.
-1. En API-token skapas. Kopiera denna token; den kommer att användas i nästa steg.
+1. Klicka på **[!UICONTROL Create]**.
+1. En API-token skapas. Kopiera denna token. Den kommer att användas i nästa steg.
 
 ## Retur [!DNL Zendesk] inloggningsinformation och API-token i [!DNL Commerce Intelligence] {#stepthree}
 
 1. Ange [!DNL Zendesk] webbplatsprefix och e-postinloggning i [!DNL Zendesk] inloggningssida i [!DNL Commerce Intelligence].
 1. Ange din API-token.
-1. Klicka **[!UICONTROL Save & Connect]**. Om anslutningen lyckas kan du *Anslutningen lyckades!* visas högst upp på skärmen.
+1. Klicka på **[!UICONTROL Save & Connect]**. Om anslutningen lyckas kan du *Anslutningen lyckades!* visas högst upp på skärmen.
 
 ## Relaterat:
 

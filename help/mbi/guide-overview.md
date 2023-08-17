@@ -1,7 +1,7 @@
 ---
 title: Användarhandbok för Commerce Intelligence
 description: Omfattande information för dataadministratörer i Commerce Intelligence.
-breadcrumb-title: Stödlinjeöversikt
+breadcrumb-title: Översikt över användarhandbok
 seo-title: Commerce Intelligence User Guide
 seo-description: Describes how to use Adobe Commerce Intelligence features used to gain insights from Adobe Commerce or Magento Open Source data, along with other third-party data sources.
 exl-id: f62c7a98-1b4c-4abb-9692-50ce0f3ee1fb
@@ -17,14 +17,14 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[!DNL Adobe Commerce Intelligence] tidigare känt som [!DNL Magento Business Intelligence]. Ett antal uppdateringar pågår för att den här guiden ska kunna fånga upp ändringarna.
+>[!DNL Adobe Commerce Intelligence] var tidigare känt som [!DNL Magento Business Intelligence]. En serie uppdateringar pågår för närvarande för att den här guiden ska kunna fånga upp ändringarna.
 
 Det finns två områden för dataadministratörer:
 
-- Administratören: Använd det här området för att komma åt konfigurationsgränssnittet och rapporter.
+- Admin: Använd det här området för att komma åt konfigurationsgränssnittet och rapporter.
 - Kommandoradsgränssnittet (CLI): Använd det här verktyget för att utföra installations- och backend-konfigurationsuppgifter.
 
-## Så här använder du den här handboken
+## Så här använder du den här guiden
 
 Den här guiden innehåller följande avsnitt som är ordnade baserat på vilken roll du kan ha i organisationen.
 
@@ -35,13 +35,13 @@ Den här guiden innehåller följande avsnitt som är ordnade baserat på vilken
 Förutom de rollbaserade arbetsflödena ovan innehåller den här guiden även:
 
 - God praxis: [!UICONTROL Commerce Intelligence] är en robust och flexibel plattform, vilket betyder att det finns många olika sätt att utföra liknande uppgifter. Detta avsnitt sammanfogar [!DNL Commerce Intelligence] rekommenderade metoder för att hämta, analysera och visa data.
-- Tutorials: Följ dessa självstudiekurser för att lära dig hur [!DNL Commerce Intelligence].
+- Tutorials: Följ de här självstudiekurserna för att lära dig hur [!DNL Commerce Intelligence].
 
 ## Få hjälp
 
 Kontakta [supportteam](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) om du har frågor och vill utnyttja vissa av dina Professional Services eller om du har problem med ditt konto.
 
-### Serviceprinciper
+### Tjänstprofiler
 
 Se en [lista över vilka tjänster som kundsupportteamet tillhandahåller](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 

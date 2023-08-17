@@ -19,13 +19,13 @@ När du har anslutit [[!DNL Google Analytics] konto](../../data-analyst/importin
 
 ## Skapa [!DNL Google Analytics] Diagram
 
-1. Klicka **[!UICONTROL Add Chart** > **Create New Chart]**.
+1. Klicka på **[!UICONTROL Add Chart** > **Create New Chart]**.
 
-1. När du väljer ett mått i `Chart Builder`, bläddra till listans nedre del för att hitta ett avsnitt som innehåller [!DNL Google Analytics] Profiler. En andra metrisk listruta visas. Här kan du välja vilket mätvärde du vill analysera.
+1. När du väljer ett mått i `Chart Builder`, bläddra till listans nedre del för att hitta ett avsnitt som innehåller [!DNL Google Analytics] Profiler. En andra metrisk listruta visas. Här kan du välja det mätvärde som du vill analysera.
 
 1. När du har valt måttet kan du fortsätta med det här diagrammet som vilket annat diagram som helst genom att välja `time period`, `interval`och data `perspectives` som du vill se.
 
-1. Den största skillnaden här är att `√` använder reguljära uttryck för filter. Ett reguljärt uttryck (regex för short) är en specialtextsträng som beskriver ett sökmönster. Se exempel på regex-syntax i [[!DNL Google] guide om reguljära analysuttryck](https://support.google.com/analytics/answer/1034324?hl=en).
+1. Den största skillnaden här är att `√` använder reguljära uttryck för filter. Ett reguljärt uttryck (regex för short) är en specialtextsträng som beskriver ett sökmönster. Se exempel på regex-syntax i [[!DNL Google] guide om reguljära uttryck för analyser](https://support.google.com/analytics/answer/1034324?hl=en).
 
 >[!NOTE]
 >

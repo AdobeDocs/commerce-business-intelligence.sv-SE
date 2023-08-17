@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Förväntat [!DNL Salesforce] data
 
-Efter [[!DNL Salesforce] konfiguration](../integrations/salesforce.md) är klar, en tabell för varje frågerbar [object](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_concepts.htm) - namngivna `sf_/\{sobject-name}` - skapas i Data warehouse.
+Efter [[!DNL Salesforce] konfiguration](../integrations/salesforce.md) är klar, en tabell för varje frågerbar [object](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_concepts.htm) - namngivna `sf_/\{sobject-name}` - har skapats i din Data Warehouse.
 
 >[!NOTE]
 >

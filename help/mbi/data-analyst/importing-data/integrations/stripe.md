@@ -7,7 +7,7 @@ feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '158'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ![](../../../assets/stripe-logo.png)
 
-[!DNL Stripe] gör att du kan hantera och spåra företagets betalningar och fakturadata. Koppla samman [!DNL Stripe] konto till [!DNL Commerce Intelligence] är en enkel tvåstegsprocess:
+[!DNL Stripe] gör att du kan hantera och spåra ditt företags betalningar och fakturadata. Koppla samman [!DNL Stripe] konto till [!DNL Commerce Intelligence] är en enkel tvåstegsprocess:
 
 1. [Lägg till [!DNL Stripe] som en datakälla i [!DNL Commerce Intelligence]](#stepone)
 1. [Tillåt [!DNL Commerce Intelligence] åtkomst till [!DNL Stripe] Data](#steptwo)
@@ -28,14 +28,14 @@ ht-degree: 0%
 
 1. Gå till `Connections` sida under **[!UICONTROL Admin** > **Connections]**.
 1. Klicka **[!UICONTROL Add a Data Source]**, som finns till höger på skärmen ovanför `Data Sources` tabell.
-1. Klicka på [!DNL Stripe] ikon. Här visas `[!DNL Stripe] authorization` sida.
-1. Klicka **[!UICONTROL Connect with Stripe]**.
+1. Klicka på [!DNL Stripe] -ikon. Här visas `[!DNL Stripe] authorization` sida.
+1. Klicka på **[!UICONTROL Connect with Stripe]**.
 
 ## Tillåt [!DNL Commerce Intelligence] åtkomst till [!DNL Stripe] data {#steptwo}
 
 Efter klickning **[!UICONTROL Connect with Stripe]** visas en sida för åtkomstbegäran.
 
-1. Klicka **[!UICONTROL Sign in with Stripe to Continue]**.
+1. Klicka på **[!UICONTROL Sign in with Stripe to Continue]**.
 
 1. Ange dina uppgifter och klicka på **[!UICONTROL Sign in to your account]**.
 

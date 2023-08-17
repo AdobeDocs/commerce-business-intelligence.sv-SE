@@ -20,12 +20,12 @@ The [`Cohort Report Builder`](../dev-reports/cohort-rpt-bldr.md) är bra att hj�
 Det här är ingen omfattande lista, men här finns några möjliga analyser som kan utföras med den här funktionen.
 
 * Granska intäkterna från kunder som förvärvats från [!DNL Google] kontra [!DNL Facebook]
-* Analysera kunder vars första köp gjordes i USA och Kanada
+* Analysera kunder vars första köp gjordes i USA jämfört med Kanada
 * Se hur kunder som förvärvats från olika annonskampanjer beter sig
 
 ## Så här skapar du en analys
 
-1. Klicka **[!UICONTROL Report Builder]** på den vänstra fliken eller **[!UICONTROL Add Report** > **Create Report]** i en kontrollpanel.
+1. Klicka **[!UICONTROL Report Builder]** till vänster eller **[!UICONTROL Add Report** > **Create Report]** i en kontrollpanel.
 
 1. I `Report Builder Selection` skärm, klicka **[!UICONTROL Create Report]** bredvid `Visual Report Builder` alternativ.
 
@@ -35,7 +35,7 @@ Nu när du är i `Report Builder`lägger du till de mätvärden som du vill utf�
 
 >[!NOTE]
 >
->Inbyggt [!DNL Google Analytics] mätvärden är inte kompatibla med `Cohort Report Builder`. Målet med det här exemplet är att se på intäkterna över tiden för förstahandskunder som förvärvats via olika [!DNL Google Analytics] källor.
+>Inbyggt [!DNL Google Analytics] mätvärden är inte kompatibla med `Cohort Report Builder`. Målet med det här exemplet är att se på intäkterna över tiden för förstahandskunder som förvärvats via olika [!DNL Google Analytics] Källor.
 
 ### Växla `Metric View` till `Cohort`
 
@@ -75,7 +75,7 @@ Här väljer du datumintervallet som innehåller `cohorts action timestamp` (så
 
 #### 5. `Time range after cohort occurrence`
 
-Vill du se `cohorts` över tid per månad, vecka eller år? Här gör du dessa val. Under det avsnittet väljer du `time range` efter `cohort action timestamp` inträffade. Detta visar t.ex. 12 månaders data för de kunder som gjorde den första beställningen under tidsperioden.
+Vill du se `cohorts` över tid per månad, vecka eller år? Här gör du dessa val. Under det avsnittet väljer du `time range` efter `cohort action timestamp` har inträffat. Detta visar t.ex. 12 månaders data för de kunder som gjorde den första beställningen under tidsperioden.
 
 ![cohort-first-action-time-range](../../assets/5-cohort-first-action-time-range.png)<!--{: width="400" height="557"}-->
 

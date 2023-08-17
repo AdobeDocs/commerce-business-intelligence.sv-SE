@@ -15,7 +15,7 @@ ht-degree: 0%
 
 The [!DNL SQL Report Builder] låter dig fråga och iterera i dessa frågor när som helst. Detta är användbart när du behöver ändra en fråga utan att behöva vänta på att en uppdateringscykel ska slutföras innan en kolumn eller rapport som du har skapat realiseras och behöver uppdateras.
 
-Innan en fråga körs [[!DNL Commerce Intelligence] beräknar kostnaden](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html). Kostnad anger hur lång tid och hur många resurser som krävs för att köra en fråga. Om kostnaden anses vara för hög eller om antalet returnerade rader överstiger [!DNL Commerce Intelligence] begränsningar, frågan misslyckas. För att fråga [data warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md), som ser till att du skriver så smidiga frågor som möjligt, rekommenderar Adobe följande.
+Innan en fråga körs [[!DNL Commerce Intelligence] beräknar kostnaden](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html). Kostnad anger hur lång tid och hur många resurser som krävs för att köra en fråga. Om kostnaden anses vara för hög eller om antalet returnerade rader överstiger [!DNL Commerce Intelligence] begränsningar, frågan misslyckas. För att fråga [Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md), som ser till att du skriver så smidiga frågor som möjligt, rekommenderar Adobe följande.
 
 ## Använda SELECT eller Markera alla kolumner
 
@@ -67,15 +67,15 @@ Om du använder ett filter när du gör en koppling måste du använda det på b
 
 När du skriver frågor bör du överväga att använda operatorer som är så dyra som möjligt. Varje fråga har en beräkningskostnad som bestäms av de funktioner, operatorer och filter som frågan består av. Vissa operatorer kräver mindre datorarbete, vilket gör dem billigare än andra operatorer.
 
-Jämförelseoperatorer (>, &lt;, = o.s.v.) är de mest kostsamma, följt av [SOM. LIKNANDE operatorer till och POSIX-operatorer](https://www.postgresql.org/docs/9.5/functions-matching.html) som är de dyraste operatörerna.
+Jämförelseoperatorer (>, &lt;, = o.s.v.) är de mest kostsamma, följt av [SOM. LIKNANDE operatorer till och POSIX](https://www.postgresql.org/docs/9.5/functions-matching.html) som är de dyraste operatörerna.
 
 ## Använda EXIST jämfört med IN
 
-Använda `EXISTS` kontra `IN` beror på vilken typ av resultat du försöker returnera. Om du bara är intresserad av ett enda värde använder du `EXISTS` -sats i stället för `IN`. `IN` används med listor med kommaavgränsade värden, vilket ökar frågans beräkningskostnad.
+Använda `EXISTS` kontra `IN` beror på vilken typ av resultat du försöker returnera. Om du bara är intresserad av ett enda värde använder du `EXISTS` i stället för `IN`. `IN` används med listor med kommaavgränsade värden, vilket ökar frågans beräkningskostnad.
 
 När `IN` frågor körs, systemet måste först bearbeta underfrågan (den `IN` -programsats), sedan hela frågan baserat på relationen som anges i `IN` -programsats. `EXISTS` är mycket effektivare eftersom frågan inte behöver köras flera gånger - ett sant/falskt värde returneras när relationen som anges i frågan kontrolleras.
 
-Kort sagt: systemet inte behöver bearbeta så mycket när det använder `EXISTS`.
+Kort sagt: systemet behöver inte bearbeta så mycket när det använder `EXISTS`.
 
 | **Istället för det här..** | **Prova det här!** |
 |-----|-----|
@@ -91,7 +91,7 @@ Det här är inte att säga att `ORDER BY` kan inte användas - bara att den bar
 
 ## Använda GROUP BY och BESTÄLL AV
 
-Det kan finnas situationer där detta tillvägagångssätt inte överensstämmer med vad du försöker göra. Den allmänna regeln är att om du använder en `GROUP BY` och `ORDER BY`ska du placera kolumnerna i båda satserna i samma ordning. Till exempel:
+Det kan finnas situationer där detta tillvägagångssätt inte överensstämmer med vad du försöker göra. Den allmänna regeln är att om du använder en `GROUP BY` och `ORDER BY`ska du placera kolumnerna i båda satserna i samma ordning. Exempel:
 
 | **Istället för det här..** | **Prova det här!** |
 |-----|-----|

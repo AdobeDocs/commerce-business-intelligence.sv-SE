@@ -7,7 +7,7 @@ feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '94'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
@@ -30,14 +30,14 @@ För att ta med [!DNL Linkshare] data till [!DNL Adobe Commerce Intelligence]må
 
 1. Rensa `Compare Year-Over-Year Data` kryssrutan.
 
-1. Under `Data Type`, markera `Transaction Date`.
+1. Under `Data Type` väljer du `Transaction Date`.
 
    ![importera\_linkshare\_data.png](../../../assets/importing_linkshare_data.png)
 
-1. Klicka **[!UICONTROL View Report]**.
+1. Klicka på **[!UICONTROL View Report]**.
 
-1. Klicka **[!UICONTROL Download]**.
+1. Klicka på **[!UICONTROL Download]**.
 
-   I det här skedet `.csv` och laddas ned.
+   I det här skedet har `.csv` och laddas ned.
 
 När filen har laddats ned kan du överföra den till [!DNL Commerce Intelligence] med [`File Upload` funktion](../connecting-data/using-file-uploader.md).

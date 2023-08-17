@@ -11,7 +11,7 @@ ht-degree: 0%
 
 ---
 
-# Sannolikhet för upprepad minskning och belastning
+# Sannolikhet för upprepning Minskning och kurva
 
 Om en del av era intäkter kommer från återkommande inköp är ni antagligen medvetna om det enorma värdet av en lojal kundbas. Därför är det viktigt att förstå hur tidsrymden mellan order och när kunderna förväntas försvinna.
 
@@ -23,13 +23,13 @@ I det här avsnittet beskrivs de analyser som kan hjälpa dig att besvara följa
 
 ## Rekommenderade mått
 
-När du analyserar upprepad sannolikhetsminskning och -minskning bör du överväga att använda ([eller bygga](../../data-user/reports/ess-manage-data-metrics.md)) dessa mått:
+När du analyserar upprepad sannolikhetsminskning och -minskning bör du använda ([eller bygga](../../data-user/reports/ess-manage-data-metrics.md)) dessa mått:
 
 ### Sannolikhet för inledande upprepad order
 
 Detta mått definieras som det totala antalet upprepade order, i procent av den totala ordern. Om man fasar ut en annan metod är det sannolikt att en order kommer att följas upp av en annan order. När denna sannolikhet är över 50 procent innebär det att mer än hälften av alla order följs av en efterföljande order.
 
-### Sannolikhet för upprepade order som har angetts månader sedan ordern
+### Sannolikhet för upprepad order som har angetts månader sedan ordern
 
 Denna åtgärd visar sannolikheten för att en användare beställer igen med tanke på antalet månader som har gått sedan den senaste beställningen. Formeln som används för att generera det här måttet förenklar:
 
@@ -49,7 +49,7 @@ Titta på den återkommande sannolikhetsminskningen för ett typiskt e-handelsf�
 
 I det här exemplet är sannolikheten för att en kund gör ett återkommande köp 60 procent. Det innebär att 60 procent av alla order som läggs i den här verksamheten följs av en efterföljande order.
 
-### Sannolikhet för upprepade order som har angetts månader sedan ordern
+### Sannolikhet för upprepad order som har angetts månader sedan ordern
 
 Den här rapporten visar sannolikheten för en kundbeställning igen med tanke på att några månader har gått sedan den senaste beställningen. Även om det inte finns någon enda definition för tröskelvärdet för bortfall med tanke på den här rapporten rekommenderar Adobe att man definierar bortfall som den punkt där sannolikhetsminskningen korsar värdet som är hälften av den inledande upprepningssannolikheten.
 
@@ -78,7 +78,7 @@ När du har skapat analysen ovan och fastställt ett tröskelvärde för bortfal
 
 Om ni erbjuder mer än en produkt undrar ni antagligen hur kunder som köper en viss produkt beter sig annorlunda över tiden jämfört med andra kunder. Vill du veta mer? Titta på den här självstudiekursen för att utforska hur kundkohorter fungerar hela livet baserat på specifika produkter som de har köpt.
 
-Denna bästa praxis tillhandahålls av [!DNL Adobe Commerce Intelligence] Data Analysis Services (DAS). [Kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) för mer information.
+Denna bästa praxis tillhandahålls av [!DNL Adobe Commerce Intelligence] Data Analysis Services (DAS) [Kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) för mer information.
 
 ### Relaterad
 

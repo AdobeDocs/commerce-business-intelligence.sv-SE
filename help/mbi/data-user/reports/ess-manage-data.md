@@ -1,6 +1,6 @@
 ---
 title: Hantera data
-description: Lär dig hur du använder Hantera data.
+description: Lär dig använda Hantera data.
 exl-id: 6274eda4-d3ff-47b6-81d9-06ad4f150ef7
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports

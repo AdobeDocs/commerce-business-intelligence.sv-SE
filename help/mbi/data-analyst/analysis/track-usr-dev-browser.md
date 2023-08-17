@@ -1,6 +1,6 @@
 ---
 title: Google Analytics - Spåra användarenhets- och webbläsardata i databasen
-description: Lär dig hur många användare som faktiskt loggar in via mobila enheter och hur det påverkar livslängdsvärdet för dessa användare.
+description: Lär dig hur många användare som faktiskt loggar in via mobila enheter och hur det påverkar livslängden för dessa användare.
 exl-id: 57b1bc45-b139-4370-86ea-2fbd021aa14d
 role: Admin, User
 feature: Reports, Dashboards
@@ -27,7 +27,7 @@ Varje gång en begäran görs till din webbplats skickar användarens webbläsar
 
 Om du tittar närmare på strängen ser du att den innehåller information om användarens operativsystem, webbläsare och namnet på den enhet som användaren använder (om den har ett namn). Även om strängarna för användaragenten varierar mycket mellan olika plattformar och till och med versioner av samma plattform, är det i allmänhet sant att plattformsnamnet kommer att finnas någonstans i. Exempel: #1 ovan är en Mac med webbläsaren Chrome, #2 ovan är en Windows-dator med webbläsaren Firefox, #3 är en iPhone, #4 är en iPad och #5 är en Android-enhet.
 
-Den här informationen kan nås av servern varje gång en begäran görs. I PHP lagras strängen User-Agent i `$_SERVER['HTTP_USER_AGENT']`. I Ruby på Rails lagras den i `request.env['HTTP_USER_AGENT']`. På andra språk och i andra miljöer kan du komma åt den på liknande sätt.
+Servern kan komma åt den här informationen varje gång en begäran görs. I PHP lagras strängen User-Agent i `$_SERVER['HTTP_USER_AGENT']`. I Ruby på Rails lagras den i `request.env['HTTP_USER_AGENT']`. På andra språk och i andra miljöer kan du komma åt den på liknande sätt.
 
 ### När ska du registrera dessa data?
 

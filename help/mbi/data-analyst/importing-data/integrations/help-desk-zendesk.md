@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Detta är bara tillgängligt för klienter som finns på `Pro` planera och använda den nya arkitekturen. Du har den nya arkitekturen om du har `Data Warehouse Views` avsnitt som är tillgängliga efter markering `Manage Data` i huvudverktygsfältet.
+>Detta är bara tillgängligt för klienter som finns på `Pro` planera och använda den nya arkitekturen. Du har den nya arkitekturen om du har `Data Warehouse Views` tillgängliga avsnitt efter markering `Manage Data` i huvudverktygsfältet.
 
 Konsoliderar [!DNL Zendesk] data med transaktionsdatabasen är ett utmärkt sätt att bättre förstå hur kunderna interagerar med era sälj- eller kundframgångsgrupper. Det hjälper er också att veta vilken typ av kunder som använder er supportplattform. I det här avsnittet visas hur du konfigurerar en kontrollpanel för att få detaljerade rapporter om din [!DNL Zendesk] prestanda och band till era transaktionskunder.
 
@@ -237,7 +237,7 @@ Innan du börjar vill du ansluta [[!DNL Zendesk]](../integrations/zendesk.md). D
    * `Tickets we count`
 
 * I **`[!DNL Zendesk] tickets`** table
-* Detta mått utför en **Antal**
+* Det här måttet utför en **Antal**
 * På **`id`** kolumn
 * Beställd av **`created_at`** tidsstämpel
 * [!UICONTROL Filter]:
@@ -247,7 +247,7 @@ Innan du börjar vill du ansluta [[!DNL Zendesk]](../integrations/zendesk.md). D
    * status IN `closed, solved`
 
 * I **`[!DNL Zendesk] tickets`** table
-* Detta mått utför en **Antal**
+* Det här måttet utför en **Antal**
 * På **`id`** kolumn
 * Beställd av **`created_at`** tidsstämpel
 * [!UICONTROL Filter]:
@@ -256,7 +256,7 @@ Innan du börjar vill du ansluta [[!DNL Zendesk]](../integrations/zendesk.md). D
    * `Tickets we count`
 
 * I **`[!DNL Zendesk] tickets`** table
-* Detta mått utför en **Distinkt antal**
+* Det här måttet utför en **Distinkt antal**
 * På **`requester_id`** kolumn
 * Beställd av **`created_at`** tidsstämpel
 * [!UICONTROL Filter]:

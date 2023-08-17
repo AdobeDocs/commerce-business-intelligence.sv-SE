@@ -39,7 +39,7 @@ Det här måttet kan visa det totala rabattbeloppet som tillämpas från kuponge
 
 ### Nettointäkter
 
-Det här måttet visar de nettointäkter som du tjänar på order som innehåller en viss kupong. Nettointäkten är en beräkning av priset på de artiklar som säljs efter att alla rabatter har tillämpats. Detta kan hjälpa till att avgöra vilka kuponger som är kopplade till de högsta och lägsta nettointäkterna.
+Det här måttet visar den nettointäkt som du tjänar på order som innehåller en viss kupong. Nettointäkten är en beräkning av priset på de artiklar som säljs efter att alla rabatter har tillämpats. Detta kan hjälpa till att avgöra vilka kuponger som är kopplade till de högsta och lägsta nettointäkterna.
 
 ### Rabatterad procent
 
@@ -88,10 +88,10 @@ Cirka 80 beställningar gjordes med kupongen &quot;10 % rabatt&quot;, 100 bestä
 
 * hur länge kupongen erbjuds.
 * den tidpunkt på dag/vecka/månad/år då kupongen erbjöds.
-* den säsong då kupongen erbjöds, beroende på verksamheten. Till exempel:
+* den säsong då kupongen erbjöds, beroende på verksamheten. Exempel:
 * Kupongen&quot;10 % rabatt&quot; erbjöds under sommarmånaderna, men företaget säljer kläder för vintertid.
 
-* begränsningar för kupongerna. Till exempel:
+* begränsningar för kupongerna. Exempel:
 * Kupongen &quot;$10 rabatt&quot; erbjuds endast nya kunder.
 * Kupongen&quot;10 % rabatt&quot; erbjuds endast kunder som köper en vinterjacka i samma ordning.
 
@@ -103,7 +103,7 @@ Med **bruttorabatter** för alla tre kuponger är lika (ca 2 000 dollar), antale
 
 Å andra sidan har kupongen&quot;10 % rabatt&quot; ett högt genomsnittligt rabattvärde ($25,01), men det lägsta **procent rabatt**. Detta är praktiskt när du tar hänsyn till det genomsnittliga nettoordervärdet 225,08 USD. Rabatten på&quot;10 % rabatt&quot; har en liten procentuell rabatt på ett stort genomsnittligt nettoordervärde, vilket innebär att den genomsnittliga orderrabatten är ett stort belopp.
 
-Titta på **distinkta köpare** och **genomsnittlig intäkt för livstid** för varje kupong. &quot;10 % rabatt&quot; har samma antal order som distinkta köpare. Detta kan bero på att varje kund har en rabattkupong. Å andra sidan har rabattkupongen &quot;$20 på $100 eller mer&quot; och &quot;$10 av&quot; färre distinkta köpare än antalet order, vilket innebär att vissa kunder använde dessa kuponger flera gånger.
+Titta på **distinkta köpare** och **genomsnittlig intäkt** för varje kupong. &quot;10 % rabatt&quot; har samma antal order som distinkta köpare. Detta kan bero på att varje kund har en rabattkupong. Å andra sidan har rabattkupongen &quot;$20 på $100 eller mer&quot; och &quot;$10 av&quot; färre distinkta köpare än antalet order, vilket innebär att vissa kunder använde dessa kuponger flera gånger.
 
 För genomsnittliga intäkter för livstid ser du att de genomsnittliga intäkterna för livstid för varje kupong är större än respektive **genomsnittlig nettoorder** värde. Detta innebär att kunderna antingen gjorde upprepade inköp och/eller att deras ordervärde var mycket högre än det genomsnittliga nettoordervärdet.
 
@@ -115,7 +115,7 @@ Analyserna som nämns i det här avsnittet kan ge er värdefulla insikter om hur
 
 Vilka kuponger uppmuntrar kunderna att lägga order? attraherar de här kupongen engångsköpare eller uppmuntrar de kundlojalitet (med andra ord kunder som gör upprepade köp)?
 
-**Ni kan analysera hur lång tid det tar för kunderna att använda era kuponger.**
+**Ni kan analysera hur lång tid det tar för era kunder att använda era kuponger.**
 
 Används era kuponger samma dag som de släpps eller går det en vecka eller två innan de flesta av era kunder använder dem?
 

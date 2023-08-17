@@ -1,6 +1,6 @@
 ---
 title: Förväntade Facebook Ads-data
-description: Lär dig en kort översikt över de tabeller som rekommenderas att du synkroniserar med Data warehouse
+description: Lär dig en kort översikt över de tabeller som rekommenderas när du synkroniserar med Datan Warehouse
 exl-id: 0c8b907b-1a98-470b-bb2c-55327e88e502
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # Förväntat [!DNL Facebook Ads] data
 
-Efter att du har [ansluten till din [!DNL Facebook Ads] konto](../integrations/facebook-ads.md)kan du använda [data warehouse Manager](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) för att enkelt spåra relevanta datafält för analys.
+Efter att du har [ansluten till din [!DNL Facebook Ads] konto](../integrations/facebook-ads.md)kan du använda [Data Warehouse Manager](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) för att enkelt spåra relevanta datafält för analys.
 
-I det här avsnittet finns en kort översikt över de tabeller som Adobe rekommenderar att du synkroniserar med Data warehouse. Det här visar bara huvudtabellerna, eftersom det finns några deltabeller.
+I det här avsnittet finns en kort översikt över de tabeller som Adobe rekommenderar att du synkroniserar med Datan Warehouse. Det här visar bara huvudtabellerna, eftersom det finns några deltabeller.
 
 ## Huvudtabeller för annonskampanjer
 

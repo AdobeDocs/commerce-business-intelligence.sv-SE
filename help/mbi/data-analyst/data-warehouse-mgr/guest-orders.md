@@ -1,6 +1,6 @@
 ---
 title: Gästorder
-description: Lär dig mer om hur gästbeställningarna påverkar dina data och vilka alternativ du måste ha för att hantera gästbeställningar på rätt sätt i dina [!DNL Commerce Intelligence] data warehouse.
+description: Lär dig mer om hur gästbeställningarna påverkar dina data och vilka alternativ du måste ha för att hantera gästbeställningar på rätt sätt i dina [!DNL Commerce Intelligence] Data Warehouse.
 exl-id: cd5120ca-454c-4cf4-acb4-3aebe06cdc9a
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 När du granskar dina beställningar, om du märker att så många `customer\_id` är null eller har inget värde att koppla tillbaka till `customers` tabellen, vilket tyder på att din butik tillåter gästbeställningar. Det innebär att `customers` tabellen är antagligen inte omfattande för alla era kunder.
 
-I det här avsnittet beskrivs hur gästbeställningarna påverkar dina data och vilka alternativ du har för att kunna ta med gästbeställningar i dina [!DNL Commerce Intelligence] data warehouse.
+I det här avsnittet beskrivs hur gästbeställningarna påverkar dina data och vilka alternativ du har för att kunna ta med gästbeställningar i dina [!DNL Commerce Intelligence] Data Warehouse.
 
 ## Påverkan av gästorder på data
 
@@ -29,15 +29,15 @@ I den typiska e-handelsdatabasen finns en `orders` tabell som sammanfogas med en
 
   >[!NOTE]
   >
-  >För att identifiera den unika personen som gjorde ordern måste det finnas ett annat unikt användarattribut bredvid `customer\_id` kopplade till en order. Normalt används kundens e-postadress.
+  >För att identifiera den unika personen som gjorde ordern måste det finnas ett annat unikt användarattribut bredvid `customer\_id` som är kopplade till en order. Normalt används kundens e-postadress.
 
-## Så här tar du med gästbeställningar i Data warehouse
+## Så här tar du med gästorder i Datan Warehouse
 
-Vanligtvis tar den säljtekniker som implementerar ditt konto hänsyn till gästbeställningar när du bygger grunden för din Data warehouse.
+Vanligtvis tar den säljtekniker som implementerar ditt konto hänsyn till gästbeställningar när du skapar grunden för din Data Warehouse.
 
-Det bästa sättet att ta hänsyn till gästbeställningar är att basera alla kundnivåvärden på `orders` tabell. Den här konfigurationen använder ett unikt kund-ID som alla kunder har, inklusive gäster (vanligtvis används kundens e-post). Detta ignorerar registreringsdata från `customers` tabell. Med det här alternativet inkluderas endast kunder som har gjort minst ett köp i kundnivårapporter. Registrerade användare som ännu inte har gjort ett inköp inkluderas inte. Med det här alternativet kan du `New customer` mätvärdet baseras på kundens första orderdatum i `orders` tabell.
+Det bästa sättet att ta hänsyn till gästbeställningar är att basera alla kundnivåvärden på `orders` tabell. Den här konfigurationen använder ett unikt kund-ID som alla kunder har, inklusive gäster (vanligtvis används kundens e-post). Detta ignorerar registreringsdata från `customers` tabell. Med det här alternativet inkluderas endast kunder som har gjort minst ett köp i kundnivårapporter. Registrerade användare som ännu inte har gjort ett inköp inkluderas inte. Med det här alternativet kan `New customer` mätvärdet baseras på kundens första orderdatum i `orders` tabell.
 
-Du kan lägga märke till att `Customers we count` filteruppsättningar i den här typen av inställningar har ett filter för `Customer's order number = 1`.
+Du kan märka att `Customers we count` filteruppsättningar i den här typen av inställningar har ett filter för `Customer's order number = 1`.
 
 ![](../../assets/guest-orders-filter-set.png)
 

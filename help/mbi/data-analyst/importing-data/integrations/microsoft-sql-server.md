@@ -25,7 +25,7 @@ I det här avsnittet beskrivs hur du ansluter [!DNL Microsoft SQL] databas till 
 
 Systemet måste köra SELECT-frågor i din databas. Detta görs först för att få en ögonblicksbild av databasstrukturen och sedan regelbundet övertid för att hålla dina data uppdaterade. Dina uppdateringar är stegvisa och Adobe begränsar uppdateringsfrekvens och -tid för att förhindra oönskad belastning på servern.
 
-Det bästa sättet är att ansluta till databasservern via TCP/IP. Skapa en användare för oss som bara kan köra SELECT-frågor (och, om du vill, bara kan välja data från de tabeller du anger). Detta måste göras för varje server som du ansluter till [!DNL Commerce Intelligence].
+Det bästa sättet är att ansluta till databasservern via TCP/IP. Skapa en användare för oss som bara kan köra SELECT-frågor (och, om du vill, bara kan välja data från de tabeller du anger). Detta måste göras för var och en av de servrar du ansluter till [!DNL Commerce Intelligence].
 
 ## Ansluter `Microsoft SQL` till [!DNL Commerce Intelligence]:
 
@@ -43,8 +43,8 @@ Det bästa sättet är att ansluta till databasservern via TCP/IP. Skapa en anv�
 
    ![](../../../assets/manage-data-connections.png)
 
-1. Klicka **[!UICONTROL Add a Data Source]**.
+1. Klicka på **[!UICONTROL Add a Data Source]**.
 
-1. Välj om du vill ansluta en `Microsoft SQL` och ange dina uppgifter i fälten på den nya `Connections` sida.
+1. Välj om du vill ansluta en `Microsoft SQL` databasen och ange dina inloggningsuppgifter i fälten på den nya `Connections` sida.
 
    Om du använder `Windows Azure`måste du även ange ett databasnamn.

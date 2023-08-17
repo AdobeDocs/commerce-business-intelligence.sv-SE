@@ -21,7 +21,7 @@ I `Report Builder`, a `formula` är bara en kombination av en eller flera mätv�
 
 ![](../../assets/formula-example.png)
 
-I det här exemplet använder du en `Number of orders metric (A)` och `Distinct buyers metric (B)`och målet är att svara på frågan: Hur många order gör mina köpare i genomsnitt varje månad? Formelns parametrar är:
+I det här exemplet använder du `Number of orders metric (A)` och `Distinct buyers metric (B)`och målet är att svara på frågan: vilket är det genomsnittliga antalet order som mina köpare gör varje månad? Formelns parametrar är:
 
 * `Definition`: Här använder du matematik på indatavärden. I det här exemplet, där antalet order divideras med antalet distinkta köpare, anger vi det genomsnittliga antalet order. Definitionen är därför (A/B).
 
@@ -33,13 +33,13 @@ I det här exemplet använder du en `Number of orders metric (A)` och `Distinct 
 
 Nu när du har gått igenom grunderna kan du titta på några exempel.
 
-### Exempel: Jag vill veta hur stor procentandel av min intäkt som kan tillskrivas förstagångsbeställningar.
+### Exempel: Jag vill ta reda på vilken procentandel av min intäkt som kan tillskrivas förstagångsbeställningar.
 
 ![Använda formler för att hitta procentandelen av intäkt som härrör från förstagångsorder](../../assets/first_time_orders.gif)
 
 I det här exemplet använde du `Revenue` och `Revenue (first time orders)` mätvärden. Genom att dela upp `Revenue (first time orders)(B)` mått efter `Revenue metric (A)` och ange returformatet till `Percent`hittar du den procentandel av intäkterna som kan hänföras till förstagångsbeställningar.
 
-### Exempel: Jag vill veta vad de genomsnittliga intäkterna per order är när jag gör det och inte erbjuder en `promo code`.
+### Exempel: Jag vill veta vad den genomsnittliga intäkten per order är när jag gör det och inte erbjuder en `promo code`.
 
 ![Använda formler för att hitta den genomsnittliga intäkten per order med och utan kampanjkoder](../../assets/promo_code.gif)
 

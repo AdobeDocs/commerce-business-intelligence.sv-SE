@@ -67,7 +67,7 @@ Kolumner att skapa
 * Sökväg - `sales_flat_order.(input) reference > Customer Concentration.Primary Key`
 * Markerad kolumn - `Number of customers`
 
-* (input) Rankning per kundens livstidsintäkt
+* (input) Rankning per kundens livstid
 * [!UICONTROL Column type]: – `Same table > Event Number`
 * Ägare till händelse - `Number of customers`
 * Händelserangordning - `Customer's lifetime revenue`
@@ -87,7 +87,7 @@ Kolumner att skapa
 
 * **Totalt kundlivstidsvärde**
 * I `customer_entity` table
-* Detta mått utför en **Summa**
+* Det här måttet utför en **Summa**
 * På `Customer's lifetime revenue` kolumn
 * Beställd av `Customer's first order date` tidsstämpel
 
@@ -108,7 +108,7 @@ Kolumner att skapa
 * 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Customer's revenue percentile`
-* Visa över/under: `100% of Customer's revenue percentile Name`
+* Visa överkant/underkant: `100% of Customer's revenue percentile Name`
 * 
   [!UICONTROL Chart type]: `Line`
 

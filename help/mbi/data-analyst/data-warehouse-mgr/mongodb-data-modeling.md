@@ -7,7 +7,7 @@ feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce 
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '129'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -15,9 +15,9 @@ ht-degree: 0%
 
 När [!DNL Adobe Commerce Intelligence] pullin [!DNL MongoDB] data, översätts dessa data till en relationsmodell.
 
-De dåliga nyheterna: De flesta datamönster utgör inte något problem, men det finns några som inte stöds av [!DNL Commerce Intelligence], på grund av översättningen till en relationsmodell.
+Den dåliga nyheten: Även om de flesta datamönster inte utgör något problem finns det några som inte stöds av [!DNL Commerce Intelligence], på grund av översättningen till en relationsmodell.
 
-Goda nyheter: Alla dessa mönster kan undvikas.
+De goda nyheterna: Alla dessa mönster kan undvikas.
 
 ## Underkapslade arrayer {#subnested}
 
@@ -43,7 +43,7 @@ Om din samling ser ut som exemplet nedan [!DNL Commerce Intelligence] replikerar
 
 ## Variabla objektnycklar {#varobjectkeys}
 
-Samlingar som innehåller objekt med variabla objektnycklar replikeras inte i [!DNL Commerce Intelligence]. Till exempel:
+Samlingar som innehåller objekt med variabla objektnycklar replikeras inte i [!DNL Commerce Intelligence]. Exempel:
 
 ```bash
     {
@@ -56,7 +56,7 @@ Samlingar som innehåller objekt med variabla objektnycklar replikeras inte i [!
     }
 ```
 
-Det här inträffar vanligtvis när ett objekt används och en array är lämpligare. Nu kan du omarbeta ovanstående exempel:
+Det här inträffar vanligtvis när ett objekt används och en array är lämpligare. Nu kan du omarbeta exemplet ovan:
 
 ```bash
     {
