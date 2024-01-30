@@ -4,9 +4,9 @@ description: Läs om hur du loggar in på ditt Commerce Intelligence-konto.
 exl-id: 3ee36e0e-f447-4be3-afc8-ccc6d3aa4f20
 role: Admin, Data Architect, Data Engineer, Leader, User
 feature: Accounts
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 988a7bee27a0c381d1c84db960e978ca73eb3615
 workflow-type: tm+mt
-source-wordcount: '158'
+source-wordcount: '144'
 ht-degree: 0%
 
 ---
@@ -14,10 +14,6 @@ ht-degree: 0%
 # Få åtkomst till dina aktiverade [!DNL Adobe Commerce Intelligence] konto
 
 När du har aktiverat [!DNL Commerce Intelligence] konto antingen [lokalt eller molnet](../getting-started/onpremise-activation.md) och har arbetat med ditt Adobe-kontoteam för att slutföra konfigurationsstegen kan du nu logga in på ditt konto.
-
-Du kan logga in med [!DNL Adobe ID] eller använda [!DNL Commerce Intelligence] e-postadress och lösenord.
-
-![inloggning](../assets/sign-in.png)
 
 ## Logga in med [!DNL Adobe ID]
 
