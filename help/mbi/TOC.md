@@ -4,7 +4,7 @@ description: Lär dig använda [!DNL Commerce Intelligence] funktioner för Adob
 breadcrumb-title: Användarhandbok för Commerce Intelligence
 role: Admin, Data Architect, Data Engineer, Leader, User
 feature: Business Performance
-source-git-commit: 903e839e8bd8a4e7b6d21b6a7ebcae49f2dfe6e4
+source-git-commit: 2433a614e9858684842804a0ae29fb67f0d41ead
 workflow-type: tm+mt
 source-wordcount: '680'
 ht-degree: 0%
@@ -57,10 +57,10 @@ ht-degree: 0%
       - [Standardisera data med mappningstabeller](data-analyst/data-warehouse-mgr/stndrd-data-map-tables.md)
       - [Översätta SQL-frågor till [!DNL Commerce Intelligence] rapporter](data-analyst/dev-reports/sql-queries-reports.md)
       - [Förstå och utvärdera tabellrelationer](data-analyst/data-warehouse-mgr/table-relationships.md)
-      - [Använda beräkningsdatumdifferensen](data-analyst/data-warehouse-mgr/using-date-diff-calc-column-.md)
+      - [Använda beräkningsdatumdifferensen](data-analyst/data-warehouse-mgr/using-date-diff-calc-column.md)
       - [Använda omfattande filtrering på instrumentpanelen](data-analyst/data-warehouse-mgr/using-dshbrd-wide-filter-date-ranges.md)
       - [Använda kolumnen Beräknat händelsenummer](data-analyst/data-warehouse-mgr/using-event-num-calc-column.md)
-      - [Använda den beräknade kolumnen för sekventiell jämförelse](data-analyst/data-warehouse-mgr/using-seq-comp-calc-column-.md)
+      - [Använda den beräknade kolumnen för sekventiell jämförelse](data-analyst/data-warehouse-mgr/using-seq-comp-calc-column.md)
    - Vanliga handelstabeller {#tables}
       - [Introduktion](data-analyst/data-warehouse-mgr/common-mage-tables.md)
       - [[!DNL customer_entity]](data-analyst/data-warehouse-mgr/cust-ent-table.md)
@@ -231,7 +231,7 @@ ht-degree: 0%
    - Arbeta med kontrollpaneler {#working-dashboards}
       - [Dela instrumentpaneler](best-practices/share-dashboard-best-practice.md)
       - [Bygga en Investor Dashboard](best-practices/build-investor-dashboard.md)
-- Självstudiekurser {#tutorials}
+- Tutorials {#tutorials}
    - [Använda [!DNL Visual Report Builder]](tutorials/using-visual-report-builder.md)
    - [Använda tidsalternativ i dialogrutan [!DNL Visual Report Builder]](tutorials/time-options-visual-rpt-bldr.md)
    - [Skapa visualiseringar för en [!DNL SQL] Fråga](tutorials/create-visuals-from-sql.md)
