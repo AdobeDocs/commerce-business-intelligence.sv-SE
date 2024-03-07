@@ -4,9 +4,9 @@ description: Lär dig hur avancerade kolumner kan skapas i form av SQL Calculati
 exl-id: f16e4ee4-ed73-4ddb-b701-1fe3db14346a
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, SQL Report Builder, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 8090c2e0f17f0e8d3bdec668ce546206bf024691
 workflow-type: tm+mt
-source-wordcount: '816'
+source-wordcount: '815'
 ht-degree: 0%
 
 ---
@@ -72,7 +72,7 @@ Här kan du skapa en `Calculation` kolumn genom att följa stegen nedan:
    * `Integer` - Hela numret
    * `Decimal(10,2)` - ett decimaltal med 10 siffror totalt, varav 2 är till höger om decimalkommat
    * `String` - Alla typer av text eller teckenserier som använder icke-siffror
-   * `Datetime` - yyyy-MM-dd hh:mm:ss-format
+   * `Datetime` - `yyyy-MM-dd hh:mm:ss` format
 
 1. Klicka på **[!UICONTROL test column]**. Detta genererar en lista med fem testvärden för var och en av dina indata och visar resultatet av logiken från steg 6 för varje uppsättning med testvärden. Om någon del av SQL genererar ett fel returneras felmeddelandet. Exempelresultat kan bara genereras om alla indatakolumner är inbyggda fält. Om någon av indatakolumnerna är beräknade kolumner måste du validera resultatet genom att lägga till kolumnen i ett mätresultat och visa den i Report Builder
 
