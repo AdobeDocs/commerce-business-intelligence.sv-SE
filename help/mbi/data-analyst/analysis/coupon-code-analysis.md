@@ -4,9 +4,9 @@ description: Lär dig hur du analyserar din kupongprestanda.
 exl-id: f6565e33-18ee-4f85-ade0-fd361854475b
 role: Admin, User
 feature: Data Warehouse Manager, Reports
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: d8fc96a58b72c601a5700f35ea1f3dc982d76571
 workflow-type: tm+mt
-source-wordcount: '1167'
+source-wordcount: '1228'
 ht-degree: 0%
 
 ---
@@ -507,3 +507,9 @@ Ytterligare kolumner som ska skapas om gästorder INTE stöds:
 När du har kompilerat alla rapporter kan du ordna dem på kontrollpanelen som du vill. Resultatet kan se ut som bilden överst på sidan.
 
 Om du stöter på några frågor när du skapar den här analysen eller bara vill engagera Professional Services-teamet, [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+
+>[!NOTE]
+>
+>Från och med Adobe Commerce 2.4.7 kan man använda **quote_coupons** och **sales_order_coupons** tabeller för att få insikter om hur kunderna använder flera kuponger.
+
+![](../../assets/multicoupon_relationship_tables.png)

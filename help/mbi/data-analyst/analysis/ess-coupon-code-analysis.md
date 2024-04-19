@@ -4,9 +4,9 @@ description: Läs mer om hur ert företag presterar i form av kuponger är ett i
 exl-id: 0d486259-b210-42ae-8f79-cd91cc15c2c2
 role: Admin, User
 feature: Data Warehouse Manager, Reports
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: d8fc96a58b72c601a5700f35ea1f3dc982d76571
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '517'
 ht-degree: 0%
 
 ---
@@ -23,9 +23,13 @@ I det här avsnittet beskrivs stegen som krävs för att skapa den här analysen
 
 Först en anteckning om hur kupongkoder spåras. Om en kund har tillämpat en kupong på en order händer tre saker:
 
-* Rabatten framgår av `base_grand_total` mängd (din `Revenue` mått i Commerce Intelligence)
+* Rabatten framgår av `base_grand_total` mängd (din `Revenue` mätvärden i Commerce Intelligence)
 * Kupongkoden lagras i `coupon_code` fält. Om det här fältet är NULL (tomt) är ordern inte kopplad till någon kupong.
 * Det diskonterade beloppet lagras i `base_discount_amount`. Beroende på din konfiguration kan det här värdet vara negativt eller positivt.
+
+Från och med Commerce 2.4.7 kan kunden lägga till mer än en kupongkod i en order. I detta fall:
+
+* Alla kupongkoder som används lagras i `coupon_code` fält för `sales_order_coupons`. Den första kupongkoden som används lagras också i `coupon_code` fält för `sales_order`. Om det här fältet är NULL (tomt) är ordern inte kopplad till någon kupong.
 
 ## Bygga ett mått
 
@@ -196,3 +200,9 @@ Det första steget är att skapa ett nytt mått med följande steg:
    * [!UICONTROL Chart type]: `Stacked Column`
 
 När du har skapat rapporterna kan du se bilden högst upp i det här avsnittet för att se hur du kan ordna rapporterna på din kontrollpanel.
+
+>[!NOTE]
+>
+>Från och med Adobe Commerce 2.4.7 kan man använda **quote_coupons** och **sales_order_coupons** tabeller för att få insikter om hur kunderna använder flera kuponger.
+
+![](../../assets/multicoupon_relationship_tables.png)
