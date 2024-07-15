@@ -6,24 +6,24 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '162'
+source-wordcount: '117'
 ht-degree: 0%
 
 ---
 
-# Förväntat [!DNL Salesforce] data
+# [!DNL Salesforce] data förväntades
 
-Efter [[!DNL Salesforce] konfiguration](../integrations/salesforce.md) är klar, en tabell för varje frågerbar [object](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_concepts.htm) - namngivna `sf_/\{sobject-name}` - har skapats i din Data Warehouse.
+När [[!DNL Salesforce] setup](../integrations/salesforce.md) har slutförts skapas en tabell för varje frågningsbart [objekt](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_concepts.htm) - med namnet `sf_/\{sobject-name}` - i Datan Warehouse.
 
 >[!NOTE]
 >
 >Strukturen (kolumnerna) för varje tabell beror på fälten i objektet.
 
-En lista över objekt som är tillgängliga för din organisation finns i [!DNL Salesforce] [Hämta en lista med objektdokumentation](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/dome_describeGlobal.htm). När du har en lista över objekt kan du titta på [Avsnittet Enhetsrelationsdiagram (ERD)](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_erd_knowledge.htm) av [!DNL Salesforce] dokumentation som visar hur enheter relaterar till varandra.
+En lista över objekt som är tillgängliga för din organisation finns i [!DNL Salesforce] [Hämta en lista med objekt-dokumentation](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/dome_describeGlobal.htm). När du har en lista över objekt kan du läsa igenom [enhetsrelationsdiagrammet (ERD)](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_erd_knowledge.htm) i [!DNL Salesforce] -dokumentationen för att se hur entiteter relaterar till varandra.
 
 ## Objekt som inte stöds
 
-För närvarande [!DNL Salesforce] visar för närvarande inte följande objekt i deras API:
+[!DNL Salesforce] visar för närvarande inte följande objekt i sin API:
 
 * `Announcement`
 * `Attachment`
@@ -49,5 +49,5 @@ För närvarande [!DNL Salesforce] visar för närvarande inte följande objekt 
 
 ## Relaterat:
 
-* [Ansluter [!DNL Salesforce]](../integrations/salesforce.md)
-* [Återautentisera integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Ansluter  [!DNL Salesforce]](../integrations/salesforce.md)
+* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

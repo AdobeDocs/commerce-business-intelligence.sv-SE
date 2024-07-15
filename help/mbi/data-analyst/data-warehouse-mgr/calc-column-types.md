@@ -6,7 +6,7 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '710'
+source-wordcount: '712'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,9 @@ ht-degree: 0%
 * [Referenskarta](#map)
 * [Avancerade beräknade kolumner](#advanced)
 
-I [Data Warehouse Manager](../data-warehouse-mgr/tour-dwm.md)kan du skapa kolumner för att förbättra och optimera data för analys. [Den här funktionen](../data-warehouse-mgr/creating-calculated-columns.md) kan du komma åt genom att markera en tabell i Data Warehouse Manager och klicka på **[!UICONTROL Create New Column]**.
+I [Data Warehouse Manager](../data-warehouse-mgr/tour-dwm.md) kan du skapa kolumner för att utöka och optimera data för analys. [Du kommer åt den här funktionen](../data-warehouse-mgr/creating-calculated-columns.md) genom att markera en Data Warehouse i tabellhanteraren och klicka på **[!UICONTROL Create New Column]**.
 
-I det här avsnittet beskrivs de kolumntyper som du kan skapa med Data Warehouse Manager. Den innehåller även en beskrivning, en visuell genomgång av den kolumnen och en [referenskarta](#map) av alla indata som krävs för att skapa en kolumn. Det finns tre sätt att skapa beräknade kolumner:
+I det här avsnittet beskrivs de kolumntyper som du kan skapa med Data Warehouse Manager. Den innehåller även beskrivningen, en visuell genomgång av den kolumnen och en [referenskarta](#map) av alla indata som krävs för att skapa en kolumn. Det finns tre sätt att skapa beräknade kolumner:
 
 1. [Samma tabellberäknade kolumner](#sametable)
 1. [En-till-många beräknade kolumner](#onetomany)
@@ -35,7 +35,7 @@ Dessa kolumner skapas med indatakolumner från samma tabell.
 
 En kolumn för beräkning av ålder returnerar antalet sekunder mellan den aktuella tiden och en viss indatatid.
 
-Exemplet nedan skapar `Seconds since customer's most recent order` i `customers` tabell. Detta kan användas för att skapa användarlistor för kunder som inte har gjort inköp (kallas ibland för att churning) inom `X days`.
+I exemplet nedan skapas `Seconds since customer's most recent order` i tabellen `customers`. Detta kan användas för att skapa användarlistor för kunder som inte har gjort inköp (kallas ibland för att vinna) inom `X days`.
 
 ![](../../assets/age.gif)
 
@@ -43,21 +43,21 @@ Exemplet nedan skapar `Seconds since customer's most recent order` i `customers`
 
 En kolumn för valutakonvertering som beräknas konverterar den ursprungliga valutan i en kolumn till önskad ny valuta.
 
-Exemplet nedan skapar `base\_grand\_total In AED`, konvertera `base\_grand\_total` från sin ursprungliga valuta till AED i `sales\_flat\_order` tabell. Den här kolumnen fungerar bra för butiker med flera valutor som vill rapportera i sin lokala valuta.
+I exemplet nedan skapas `base\_grand\_total In AED` och `base\_grand\_total` konverteras från sin ursprungliga valuta till AED i tabellen `sales\_flat\_order`. Den här kolumnen fungerar bra för butiker med flera valutor som vill rapportera i sin lokala valuta.
 
-För Commerce-klienter `base\_currency\_code` fältet lagrar vanligtvis inhemska valutor. The `Spot Time` fältet ska matcha det datum som används i mätvärdena.
+För Commerce-klienter lagrar fältet `base\_currency\_code` vanligtvis inbyggda valutor. Fältet `Spot Time` ska matcha datumet som används i måtten.
 
 ![](../../assets/currency_converter.png)
 
 ## En-till-många beräknade kolumner {#onetomany}
 
-`One-to-Many` kolumner [använda en bana mellan två tabeller](../../data-analyst/data-warehouse-mgr/create-paths-calc-columns.md). Den här sökvägen innebär alltid en tabell, där ett attribut finns, och en många tabeller, där attributet flyttas ned till. Sökvägen kan beskrivas som en `foreign key--primary key` relation.
+`One-to-Many` kolumner [använder en sökväg mellan två tabeller](../../data-analyst/data-warehouse-mgr/create-paths-calc-columns.md). Den här sökvägen innebär alltid en tabell, där ett attribut finns, och en många tabeller, där attributet flyttas ned till. Sökvägen kan beskrivas som en `foreign key--primary key`-relation.
 
 ### Kopplad kolumn {#joined}
 
-En kopplad kolumn omlokaliserar ett attribut i en tabell *till* många tabeller. Det klassiska exemplet på en/flera är kunder (en) och beställningar (många).
+En sammanfogad kolumn omlokaliserar ett attribut i den enda tabellen *till* i den många tabellen. Det klassiska exemplet på en/flera är kunder (en) och beställningar (många).
 
-I exemplet nedan är `Customer's group\_id` dimensionen förenas med `orders` tabell.
+I exemplet nedan förenas dimensionen `Customer's group\_id` nedåt i tabellen `orders`.
 
 ![](../../assets/joined_column.gif)
 
@@ -67,15 +67,15 @@ Dessa kolumner använder samma sökvägar som en-till-många-kolumner gör, men 
 
 ### Antal {#count}
 
-Den här typen av beräknad kolumn returnerar antalet värden i många tabeller *på* en tabell.
+Den här typen av beräknad kolumn returnerar antalet värden i många tabeller *till* i en tabell.
 
-I exemplet nedan är dimensionen `Customer's lifetime number of canceled orders` skapas på `customers` tabell (med ett filter för `orders.status`).
+I exemplet nedan skapas dimensionen `Customer's lifetime number of canceled orders` i tabellen `customers` (med ett filter för `orders.status`).
 
 ![](../../assets/many_to_one.gif){: width=&quot;699&quot; height=&quot;351&quot;}
 
 ### Summa {#sum}
 
-En summerad beräknad kolumn är summan av värdena på `many` på bordet.
+En summerad beräknad kolumn är summan av värdena i tabellen `many` i tabellen.
 
 Detta kan användas för att skapa kundnivådimensioner som `Customer's lifetime revenue`.
 
@@ -87,9 +87,9 @@ Detta kan användas för att skapa kundnivådimensioner som `Customer's first or
 
 ### Finns {#exists}
 
-En beräknad kolumn är ett binärt test som fastställer förekomsten av en post på många sidor. Med andra ord returnerar den nya kolumnen ett `1` om banan förbinder minst en rad i varje tabell, och `0` om det inte går att ansluta.
+En beräknad kolumn är ett binärt test som fastställer förekomsten av en post på många sidor. Den nya kolumnen returnerar med andra ord `1` om sökvägen ansluter minst en rad i varje tabell och `0` om ingen anslutning kan göras.
 
-Den här typen av dimension kan till exempel avgöra om en kund någonsin köpt en viss produkt. Använda ett hörn mellan en `customers` tabell och `orders` register, ett filter för en viss produkt, en dimension `Customer has purchased Product X?` kan byggas.
+Den här typen av dimension kan till exempel avgöra om en kund någonsin köpt en viss produkt. Med hjälp av en koppling mellan en `customers`-tabell och en `orders`-tabell, ett filter för en viss produkt, kan en dimension `Customer has purchased Product X?` skapas.
 
 ## Referenskarta {#map}
 
@@ -101,7 +101,7 @@ Om du har problem med att komma ihåg vad alla indata är när du skapar en ber�
 
 I din förfrågan om att analysera och besvara frågor om ditt företag kan du stöta på en situation där du inte kan skapa exakt den kolumn du vill ha.
 
-Adobe rekommenderar att du tar en titt på [Avancerade beräknade kolumntyper](../../data-analyst/data-warehouse-mgr/adv-calc-columns.md) för att se vilka kolumner som supportteamet på Adobe kan bygga. Det avsnittet innehåller även information som du behöver för att skapa kolumnen. Ta med den tillsammans med din begäran.
+För att få en snabb vändning rekommenderar Adobe att du tittar i guiden [Avancerade beräknade kolumntyper](../../data-analyst/data-warehouse-mgr/adv-calc-columns.md) för att se vilken typ av kolumner som supportteamet i Adobe kan skapa. Det avsnittet innehåller även information som du behöver för att skapa kolumnen. Ta med den tillsammans med din begäran.
 
 ## Relaterad dokumentation
 

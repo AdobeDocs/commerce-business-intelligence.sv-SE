@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Formatera och importera data
 
-Om du använder en integrering som för närvarande inte stöds av [!DNL Adobe Commerce Intelligence]kan du fortfarande använda [Funktionen Filöverföring](using-file-uploader.md) för att få in data i Datan Warehouse. I det här avsnittet beskrivs de idealiska dataformat som ska användas för att överföra e-handelsdata.
+Om du använder en integrering som för närvarande inte stöds av [!DNL Adobe Commerce Intelligence] kan du fortfarande använda [filöverföringsfunktionen](using-file-uploader.md) för att hämta data till Datan Warehouse. I det här avsnittet beskrivs de idealiska dataformat som ska användas för att överföra e-handelsdata.
 
-## `Orders` table
+## `Orders`-tabell
 
-The `orders` tabellen ska innehålla en rad för varje transaktion som företaget har utfört. Potentiella kolumner är:
+Tabellen `orders` ska innehålla en rad för varje transaktion som företaget har utfört. Potentiella kolumner är:
 
 | Kolumnnamn | Beskrivning |
 |----|----|
@@ -25,16 +25,16 @@ The `orders` tabellen ska innehålla en rad för varje transaktion som företage
 | `Customer` | Kunden som gjorde beställningen. |
 | `Order total` | Summan av ordern. Detta kan vara en beräkningsbaserad kolumn där värden i andra kolumner - t.ex. delsumma och frakt - utgör summan för den här kolumnen. |
 | `Currency` | Valutan som ordern har betalats i. Inkludera om relevant. |
-| ` Order status` | Orderns status, till exempel `In Progress`, `Refunded`, eller `Complete`. Värdet för den här kolumnen ändras (om den inte är fullständig). Nya och uppdaterade data kan importeras med [Funktionen Lägg till data](../../../data-analyst/importing-data/connecting-data/using-file-uploader.md) på `File Uploads` sida. |
+| ` Order status` | Orderns status, till exempel `In Progress`, `Refunded` eller `Complete`. Värdet för den här kolumnen ändras (om den inte är fullständig). Nya och uppdaterade data kan importeras med funktionen [Lägg till data](../../../data-analyst/importing-data/connecting-data/using-file-uploader.md) på sidan `File Uploads`. |
 | `Acquisition/marketing channel` | Förvärvs- eller marknadsföringskanalen som kunden som beställde refererades till. |
 | `Order datetime` | Datum och tid då ordern skapades. |
 | `Order updated at` | Datum och tid då den senaste ändringen av orderposten gjordes. |
 
 {style="table-layout:auto"}
 
-## `Order detail/items` table {#itemstable}
+## `Order detail/items`-tabell {#itemstable}
 
-The `order_detail / items` tabellen ska innehålla en rad för varje distinkt objekt i varje ordning. Potentiella kolumner är:
+Tabellen `order_detail / items` ska innehålla en rad för varje distinkt objekt i varje ordning. Potentiella kolumner är:
 
 | Kolumnnamn | Beskrivning |
 |----|----|
@@ -45,9 +45,9 @@ The `order_detail / items` tabellen ska innehålla en rad för varje distinkt ob
 | `Product's unit price` | Priset för en enda enhet av produkten. |
 | `Quantity` | Kvantiteten av produkten i ordern. |
 
-## `Customers` table {#customerstable}
+## `Customers`-tabell {#customerstable}
 
-The `customers` tabellen ska innehålla en rad för varje kundkonto. Potentiella kolumner är:
+Tabellen `customers` ska innehålla en rad för varje kundkonto. Potentiella kolumner är:
 
 | Kolumnnamn | Beskrivning |
 |----|----|
@@ -58,9 +58,9 @@ The `customers` tabellen ska innehålla en rad för varje kundkonto. Potentiella
 | `Demographic info` | Demografisk information som åldersintervall och kön kan användas för att segmentera dina rapporter. |
 | `Acquisition/marketing channel` | Förvärvs- eller marknadsföringskanalen som kunden som beställde refererades till. |
 
-## `Subscription payments` table
+## `Subscription payments`-tabell
 
-The `subscriptions` tabellen ska innehålla en rad för varje prenumerationsbetalning. Potentiella kolumner är:
+Tabellen `subscriptions` ska innehålla en rad för varje prenumerationsbetalning. Potentiella kolumner är:
 
 | Kolumnnamn | Beskrivning |
 |----|----|

@@ -22,6 +22,6 @@ Välj antingen:
 - `Full Excel Export`
 - `Raw Export`
 
-Du kan också definiera [tabell och kolumner som du vill inkludera i exporten](../../tutorials/export-raw-data.md).
+Du kan också definiera tabellen [och kolumnerna som du vill ta med i exporten](../../tutorials/export-raw-data.md).
 
-Om du behöver inkludera ett diagram i en presentation eller ett dokument kan du exportera diagrammet som en bild i PNG-, PDF- eller SVG-format. Klicka på kugghjulsikonen i det övre högra hörnet av ett diagram. Välj `Enlarge` i listrutan och klicka sedan på **[!UICONTROL Download]** för att slutföra exporten.
+Om du behöver inkludera ett diagram i en presentation eller ett dokument kan du exportera diagrammet som en bild i PNG-, PDF- eller SVG-format. Klicka på kugghjulsikonen i det övre högra hörnet av ett diagram. Välj alternativet `Enlarge` i listrutan och klicka sedan på **[!UICONTROL Download]** för att slutföra exporten.

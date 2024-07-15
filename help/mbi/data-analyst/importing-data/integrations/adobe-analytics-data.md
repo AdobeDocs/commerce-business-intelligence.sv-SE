@@ -1,25 +1,25 @@
 ---
-title: Förväntat [!DNL Adobe Analytics] Data
+title: ' [!DNL Adobe Analytics] data förväntades'
 description: Lär dig hur du ansluter RDS-instansen.
 exl-id: 4df66ec1-c7f3-4b02-8f0f-49cada99c14c
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '400'
 ht-degree: 0%
 
 ---
 
-# Förväntat [!DNL Adobe Analytics] Data
+# [!DNL Adobe Analytics] data förväntades
 
-The [!DNL Adobe Analytics] integration för [!DNL Adobe Commerce Intelligence] använder [Rapporterings-API för Analytics 2.0](https://developer.adobe.com/analytics-apis/docs/2.0/#!AdobeDocs/analytics-2.0-apis/master/README.md).
+Integrationen [!DNL Adobe Analytics] för [!DNL Adobe Commerce Intelligence] använder API:t [Analytics 2.0 ](https://developer.adobe.com/analytics-apis/docs/2.0/#!AdobeDocs/analytics-2.0-apis/master/README.md).
 
 >[!INFO]
 >
->För att säkerställa att du får de data du förväntar dig kan du först skapa en rapport i [!DNL Adobe Analytics] Arbetsyta med önskat mått och mått. På så sätt kan du kontrollera om data är kompatibla och tillgängliga.
+>För att vara säker på att du får de data du förväntar dig kan du först skapa en rapport i [!DNL Adobe Analytics] Workspace med önskade mått och mått. På så sätt kan du kontrollera om data är kompatibla och tillgängliga.
 
-Ett register per ansluten rapportsvit anropades `report-suite-<ID>` (där `<ID>` är ett unikt ID som genereras av [!DNL Commerce Intelligence]) skapas i Datan Warehouse.
+En tabell per ansluten rapportserie med namnet `report-suite-<ID>` (där `<ID>` är ett unikt ID som genererats av [!DNL Commerce Intelligence]) skapas i Datan Warehouse.
 
 Schemat för den här tabellen består av de mått och mått som du valde i konfigurationsprocessen för integrering. Flera ytterligare kolumner genereras också av [!DNL Commerce Intelligence], för identifieringsändamål.
 
@@ -39,15 +39,15 @@ Tabellen innehåller följande kolumner:
 | `page_views` | Markerat mätvärde: Det totala antalet sidvisningar för den identifierade tidsperioden. |
 | `page` | Markerad dimension: Individuella sidnamn med spårade vyer. |
 
-Styr vilka av de valda mätvärdena och dimensionerna som har data tillgängliga i [!DNL Commerce Intelligence] tabell med *synka* eller *osynkad* i `Data Warehouse` sida. Kolumner som inte synkroniseras visas i grått. Om du slutar synkronisera en kolumn kan du börja synkronisera den igen senare.
+Kontrollera vilka av de valda måtten och måtten som har data tillgängliga i tabellen [!DNL Commerce Intelligence] med alternativen *sync* eller *unsync* på sidan `Data Warehouse`. Kolumner som inte synkroniseras visas i grått. Om du slutar synkronisera en kolumn kan du börja synkronisera den igen senare.
 
 ## Aktuella begränsningar
 
-I det här avsnittet beskrivs begränsningar för [!DNL Adobe Analytics] integration för [!DNL Commerce Intelligence].
+I det här avsnittet beskrivs begränsningar för [!DNL Adobe Analytics]-integreringen för [!DNL Commerce Intelligence].
 
 | Begränsning | Beskrivning |
 | --- | --- |
-| `Historical data period` | Precis som med andra tredjepartsintegreringar [!DNL Adobe Analytics] integreringen hämtar en begränsad mängd historiska data och fortsätter sedan att hålla data uppdaterade. Den historiska perioden är konfigurerad till 2 veckor. |
-| `Empty component combinations` | Vissa kombinationer av mätvärden och dimensioner innehåller inga data. Om en sådan kombination väljs för replikering, [!DNL Commerce Intelligence] utelämnar kolumnen från den replikerade tabellen. Du kan undvika att välja en sådan kombination genom att först skapa en rapport i dialogrutan [[!DNL Adobe Analytics] Arbetsyta](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) för att verifiera att ni får de data ni förväntar er. |
-| `Re-authorization cadence` | Återauktorisering av [!DNL Adobe Analytics] integrering krävs varannan vecka. Gå till sidan Redigera för integreringen och klicka på **[!UICONTROL Re-Authorize with [!DNL Adobe Analytics]]**. |
-| `One dimension per row` | [!DNL Adobe Analytics] innehåller mätdata för en dimension i taget. Om du väljer flera dimensioner under installationen, kan du ange varje rad i [!DNL Commerce Intelligence] tabellen innehåller ett enda dimensionsvärde och null-värden för varje annan dimension. |
+| `Historical data period` | Precis som med andra tredjepartsintegreringar hämtar [!DNL Adobe Analytics]-integreringen en begränsad mängd historiska data och fortsätter sedan att hålla data uppdaterade. Den historiska perioden är konfigurerad till 2 veckor. |
+| `Empty component combinations` | Vissa kombinationer av mätvärden och dimensioner innehåller inga data. Om en sådan kombination har valts för replikering utesluter [!DNL Commerce Intelligence] kolumnen från den replikerade tabellen. Om du inte vill välja en sådan kombination kan du först skapa en rapport i [[!DNL Adobe Analytics] Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) för att bekräfta att du har fått de data du förväntar dig. |
+| `Re-authorization cadence` | Omauktorisering av integreringen av [!DNL Adobe Analytics] krävs varannan vecka. Gå till sidan Redigera för integreringen och klicka på **[!UICONTROL Re-Authorize with [!DNL Adobe Analytics]]** om du vill återauktorisera. |
+| `One dimension per row` | [!DNL Adobe Analytics] tillhandahåller måttdata för en dimension i taget. Om du väljer flera dimensioner under konfigurationen innehåller varje rad i tabellen [!DNL Commerce Intelligence] ett enda dimensionsvärde och null-värden för varje annan dimension. |

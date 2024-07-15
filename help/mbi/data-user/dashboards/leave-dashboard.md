@@ -13,8 +13,8 @@ ht-degree: 0%
 
 # Lämna (dela inte) en kontrollpanel
 
-Byter team? I mitten av vårrengöringen [!DNL Commerce Intelligence] konto? Om du vill lämna eller ta bort din delning från en kontrollpanel klickar du på **[!UICONTROL Shared]** längst upp på skärmen när du är i kontrollpanelen och vill lämna. Klicka **[!UICONTROL Leave this Dashboard]** för att ta bort dig själv.
+Byter team? Mitt i våren när du rensar ditt [!DNL Commerce Intelligence]-konto? Om du vill lämna eller ta bort din delning från en instrumentpanel klickar du på **[!UICONTROL Shared]** längst upp på skärmen när du är på den instrumentpanel du vill lämna. Klicka på **[!UICONTROL Leave this Dashboard]** om du vill ta bort dig själv.
 
 Exempel:
 
-![lämna instrumentpanel](../../assets/Leave_Dashboard.gif)
+![lämna instrumentpanelen](../../assets/Leave_Dashboard.gif)

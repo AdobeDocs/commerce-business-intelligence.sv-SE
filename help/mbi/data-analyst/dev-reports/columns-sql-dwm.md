@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Skillnader mellan [!DNL SQL] och [!DNL Data Warehouse Manager]
 
-Det finns två viktiga skillnader mellan kolumner som skapas i [[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md) och de som skapats med [[!DNL Data Warehouse Manager]](../data-warehouse-mgr/creating-calculated-columns.md). Det ena är beroendet av uppdateringscykler och det andra är hur kolumner sparas i ditt konto.
+Det finns två huvudskillnader mellan kolumner som skapats i [[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md) och kolumner som skapats med [[!DNL Data Warehouse Manager]](../data-warehouse-mgr/creating-calculated-columns.md). Det ena är beroendet av uppdateringscykler och det andra är hur kolumner sparas i ditt konto.
 
 ## Kolumner i [!DNL SQL Report Builder]
 
@@ -21,8 +21,8 @@ Kolumnerna är inte beroende av uppdateringscykler, så du behöver inte längre
 
 >[!IMPORTANT]
 >
->Kolumnerna som du skapar med [!DNL SQL] redigeraren sparas inte i Datan Warehouse. Du har alltid tillgång till frågan som innehåller kolumnen, men om du vill använda kolumnen i mer än en rapport måste du återskapa den i frågan för varje rapport. Detta innebär att kolumner som skapats med [!DNL SQL] redigeraren kan inte användas i [!DNL Report Builder].
+>Kolumnerna som du skapar med [!DNL SQL]-redigeraren sparas inte i Datan Warehouse. Du har alltid tillgång till frågan som innehåller kolumnen, men om du vill använda kolumnen i mer än en rapport måste du återskapa den i frågan för varje rapport. Det innebär att kolumner som skapats med [!DNL SQL]-redigeraren inte kan användas i den traditionella [!DNL Report Builder]-modulen.
 
 ## Kolumner i Data Warehouse Manager
 
-Kolumner är beroende av uppdateringscykler, så en fullständig cykel måste slutföras innan de kan redigeras. De här kolumnerna sparas i Data Warehouse Manager och kan användas i den traditionella [!DNL Report Builder] eller [!DNL SQL Report Builder].
+Kolumner är beroende av uppdateringscykler, så en fullständig cykel måste slutföras innan de kan redigeras. De här kolumnerna sparas i Data Warehouse Manager och kan användas i traditionell [!DNL Report Builder] eller [!DNL SQL Report Builder].

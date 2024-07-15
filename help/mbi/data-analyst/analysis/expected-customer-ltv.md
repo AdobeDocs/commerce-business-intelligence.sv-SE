@@ -6,7 +6,7 @@ role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '309'
 ht-degree: 0%
 
 ---
@@ -17,13 +17,13 @@ Det här avsnittet visar hur du skapar en instrumentpanel som hjälper dig att f
 
 ![](../../assets/exp-lifetim-value-anyalysis.png)
 
-Den här analysen är endast tillgänglig för Pro-kontokunder med den nya arkitekturen. Om ditt konto har åtkomst till `Persistent Views` funktionen under `Manage Data` på den nya arkitekturen och följer instruktionerna här för att själv bygga denna analys.
+Den här analysen är endast tillgänglig för Pro-kontokunder med den nya arkitekturen. Om ditt konto har åtkomst till funktionen `Persistent Views` under sidofältet `Manage Data`, finns du i den nya arkitekturen och kan följa instruktionerna här för att själv bygga den här analysen.
 
-Innan du börjar, vill du bekanta dig med [cohort report builder.](../dev-reports/cohort-rpt-bldr.md)
+Innan du börjar vill du bekanta dig med [kohortrapportverktyget.](../dev-reports/cohort-rpt-bldr.md)
 
 ## Beräknade kolumner
 
-Kolumner att skapa på **order** register om använder **30-dagars månader**:
+Kolumner att skapa i tabellen **order** om **30-dagars månader** används:
 
 * [!UICONTROL Column name]: `Months between first order and this order`
 * [!UICONTROL Column type]: `Same Table`
@@ -43,7 +43,7 @@ Kolumner att skapa på **order** register om använder **30-dagars månader**:
   [!UICONTROL Datatype]: `Integer`
 * Definition: `case when created_at is null then null else (ceil((extract(epoch from current_timestamp) - extract(epoch from created_at))/2629800))::int end`
 
-Kolumner att skapa på **`orders`** register om använder **kalender** månader:
+Kolumner som ska skapas i tabellen **`orders`** om **kalendern** månader används:
 
 * [!UICONTROL Column name]: `Calendar months between first order and this order`
 * [!UICONTROL Column type]: `Same Table`
@@ -84,14 +84,14 @@ Mätvärden som ska skapas
 * **Distinkta kunder efter första orderdatum**
    * Om du aktiverar gästorder använder du `customer_email`
 
-* I **`orders`** table
-* Det här måttet utför en **Antal distinkta värden**
-* På **`customer_id`** kolumn
-* Beställd av **`Customer's first order date`** tidsstämpel
+* I tabellen **`orders`**
+* Detta mått utför ett **antal distinkta värden**
+* I kolumnen **`customer_id`**
+* Ordnad efter tidsstämpeln **`Customer's first order date`**
 
 >[!NOTE]
 >
->Se till att [lägga till alla nya kolumner som dimensioner till mått](../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) innan du skapar nya rapporter.
+>Se till att [lägga till alla nya kolumner som mått i mätvärden](../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) innan du skapar nya rapporter.
 
 ## Rapporter
 
@@ -100,7 +100,7 @@ Mätvärden som ska skapas
 **Förväntad intäkt per kund per månad**
 
 * Mått `A`: `Revenue (hide)`
-   * `Calendar months between first order and this order` `<= X` (Välj ett rimligt tal för X, till exempel 24 månader)
+   * `Calendar months between first order and this order` `<= X` (Välj ett rimligt nummer för X, till exempel 24 månader)
    * `Is in current month?` = `No`
 
 * 
@@ -130,8 +130,8 @@ Annan diagraminformation
 * [!UICONTROL Time period]: `All time`
 * Tidsintervall: `None`
 * [!UICONTROL Group by]: `Calendar months between first order and this order` - visa alla
-* Ändra `group by` för `All time customers` metrisk till oberoende med pennikonen bredvid `group by`
-* Redigera `Show top/bottom` fält enligt följande:
+* Ändra `group by` för måttet `All time customers` till Oberoende med pennikonen bredvid `group by`
+* Redigera `Show top/bottom`-fälten enligt följande:
    * [!UICONTROL Revenue]: `Top 24 sorted by Calendar months between first order and this order`
    * [!UICONTROL All time customers]: `Top 24 sorted by All time customers`
    * [!UICONTROL All time customers by month since first order]: `Top 24 sorted by All time customers by month since first order`
@@ -144,7 +144,7 @@ Annan diagraminformation
 * [!UICONTROL Cohort date]: `Customer's first order date`
 * [!UICONTROL Perspective]: `Average value per cohort member`
 
-**Ackumulerade genomsnittliga intäkter per månad per kohort**
+**Kumulativ genomsnittlig intäkt per månad per kohort**
 
 * Mått `A`: `Revenue`
 * 
@@ -154,4 +154,4 @@ Annan diagraminformation
 
 När du har kompilerat alla rapporter kan du ordna dem på kontrollpanelen som du vill. Resultatet kan se ut som bilden överst på sidan.
 
-Om du stöter på några frågor när du skapar den här analysen eller bara vill engagera Professional Services-teamet, [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+[Kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) om du får frågor under arbetet med att skapa den här analysen, eller om du bara vill engagera Professional Services-teamet.

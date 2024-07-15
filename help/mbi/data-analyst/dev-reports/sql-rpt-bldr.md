@@ -6,28 +6,28 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, SQL Report Builder, Reports
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '1413'
+source-wordcount: '1384'
 ht-degree: 0%
 
 ---
 
-# Använda [!DNL SQL Report Builder]
+# Använder [!DNL SQL Report Builder]
 
 >[!NOTE]
 >
->Kräver [Administratörsbehörigheter](../../administrator/user-management/user-management.md) för att skapa och redigera SQL-diagram. `Standard` kan användarna ordna om dessa diagram på kontrollpaneler, och `Read-only` -användare har samma upplevelse som de har med traditionella diagram. Dessutom `Read-only` -användare har inte åtkomst till frågetexten.
+>Kräver [administratörsbehörighet](../../administrator/user-management/user-management.md) för att skapa och redigera SQL-diagram. `Standard` användare kan ordna om dessa diagram på kontrollpaneler, och `Read-only` användare har samma upplevelse som de har av traditionella diagram. Dessutom har `Read-only` användare inte åtkomst till frågetexten.
 
-Se [utbildningsvideo](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html) om du vill veta mer.
+Mer information finns i [utbildningsvideon](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html).
 
-[!DNL SQL], eller Structured Query Language, är ett programmeringsspråk som används för att kommunicera med databaser. I [!DNL Commerce Intelligence], [!DNL SQL] används för att fråga efter eller hämta data från Datan Warehouse. Titta på rapporterna på din instrumentpanel - bakom kulisserna drivs var och en av dem av en [!DNL SQL] fråga.
+[!DNL SQL], eller Structured Query Language, är ett programmeringsspråk som används för att kommunicera med databaser. I [!DNL Commerce Intelligence] används [!DNL SQL] för att fråga efter eller hämta data från Datan Warehouse. Titta på rapporterna på din instrumentpanel - bakom kulisserna drivs var och en av dem av en [!DNL SQL]-fråga.
 
-Du kan använda [[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md) om du vill fråga Datan Warehouse direkt, visa resultaten och omvandla dem till ett diagram. Du kan börja skapa en rapport med [!DNL SQL Report Builder] genom att klicka **[!UICONTROL Report Builder** > **[!DNL SQL Report Builder]]**.
+Du kan använda [[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md) för att direkt fråga Datan Warehouse, visa resultaten och omvandla dem till ett diagram. Du kan börja skapa en rapport med [!DNL SQL Report Builder] genom att klicka på **[!UICONTROL Report Builder** > **[!DNL SQL Report Builder]]**.
 
-Se [utbildningsvideo](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html) om du vill veta mer.
+Mer information finns i [utbildningsvideon](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html).
 
-The [!DNL SQL Report Builder] gör att du kan ställa frågor direkt i Datan Warehouse, visa resultaten och snabbt omvandla dem till ett diagram. Det bästa med att använda [!DNL SQL] att skapa rapporter är att du inte behöver vänta på uppdateringscykler för att iterera på kolumner som du skapar. Om resultatet inte ser bra ut kan du snabbt redigera och köra frågan igen tills det matchar dina förväntningar.
+Med [!DNL SQL Report Builder] kan du ställa frågor direkt till Datan Warehouse, visa resultaten och snabbt omvandla dem till ett diagram. Det bästa med att använda [!DNL SQL] för att skapa rapporter är att du inte behöver vänta på uppdateringscykler för att iterera i kolumner som du skapar. Om resultatet inte ser bra ut kan du snabbt redigera och köra frågan igen tills det matchar dina förväntningar.
 
-I det här avsnittet får du hjälp med [!DNL SQL Report Builder]. När du vet hur du ska gå, se [!DNL SQL] för visualiseringar, självstudiekurs eller prova att optimera några av de frågor du har skrivit.
+I det här avsnittet får du hjälp med att använda [!DNL SQL Report Builder]. När du känner till din väg kan du kolla in självstudiekursen [!DNL SQL] för visualiseringar eller försöka optimera några av frågorna som du har skrivit.
 
 I den här artikeln:
 
@@ -39,15 +39,15 @@ I den här artikeln:
 
 1. [Sparar rapporten](#save)
 
-## [!DNL SQL Report Builder] Integreringar
+## [!DNL SQL Report Builder] integreringar
 
-[[!DNL Google Analytics]](../importing-data/integrations/google-analytics.md) är den enda integreringen som inte går att använda med [[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md). Den här funktionen är under utveckling.
+[[!DNL Google Analytics]](../importing-data/integrations/google-analytics.md) är den enda integreringen som inte är tillgänglig för användning med [[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md). Den här funktionen är under utveckling.
 
-Så här kommer du igång med att skapa en [!DNL SQL] rapport, klicka på **[!UICONTROL Report Builder]** eller **[!UICONTROL Add Report]** överst på en kontrollpanel. I [!DNL Report Picker] skärm, klicka **[!UICONTROL SQL Report Builder]** för att öppna [!DNL SQL] redigerare.
+Om du vill komma igång med att skapa en [!DNL SQL]-rapport klickar du på **[!UICONTROL Report Builder]** eller **[!UICONTROL Add Report]** överst på en kontrollpanel. Öppna [!DNL SQL]-redigeraren genom att klicka på **[!UICONTROL SQL Report Builder]** på skärmen [!DNL Report Picker].
 
 ## Kom igång
 
-Klicka på kugghjulet (![](../../assets/gear-icon.png)) i det övre högra hörnet av ett [!DNL SQL]-baserat diagram och klicka **[!UICONTROL Edit]**.
+Om du vill redigera en rapport klickar du på kugghjulsikonen (![](../../assets/gear-icon.png)) i det övre högra hörnet av ett [!DNL SQL]-baserat diagram och klickar på **[!UICONTROL Edit]**.
 
 ## Skriva en fråga {#writing}
 
@@ -55,57 +55,57 @@ Klicka på kugghjulet (![](../../assets/gear-icon.png)) i det övre högra hörn
 >
 >[!DNL SQL Report Builder] frågor är skiftlägeskänsliga. Kontrollera att du använder rätt skiftläge när du skriver frågor, annars kan oväntade resultat eller fel uppstå.
 
-Efter [riktlinjer för frågeoptimering](../../best-practices/optimizing-your-sql-queries.md), skriver du en fråga i [!DNL SQL] redigerare.
+Följ [riktlinjerna för frågeoptimering](../../best-practices/optimizing-your-sql-queries.md) och skriv en fråga i [!DNL SQL]-redigeraren.
 
 >[!IMPORTANT]
 >
->**Mätvärden i [!DNL SQL] rapporter** - När du infogar ett mätvärde i en SQL-rapport `current definition` av måttet används.
+>**Mätvärden i [!DNL SQL] rapporter** - När du infogar ett mätvärde i en SQL-rapport används måttets `current definition`.
 
-Om mätvärdena uppdateras i framtiden kommer SQL-rapporten *inte* återspeglar ändringarna. Du måste redigera rapporten manuellt för att ändringarna ska börja gälla.
+Om måttet uppdateras i framtiden återspeglar SQL-rapporten *inte* ändringarna. Du måste redigera rapporten manuellt för att ändringarna ska börja gälla.
 
-Med knapparna överst i sidlisten kan du växla mellan listor med tabeller och mätvärden som är tillgängliga för användning i [!DNL SQL Report Builder]. Om du inte ser vad du söker i listan kan du söka efter den med hjälp av sökfältet högst upp i sidlisten.
+Med knapparna högst upp i sidofältet kan du växla mellan listor med tabeller och mätvärden som är tillgängliga för användning i [!DNL SQL Report Builder]. Om du inte ser vad du söker i listan kan du söka efter den med hjälp av sökfältet högst upp i sidlisten.
 
-Du kan också använda sidlisten i dialogrutan [!DNL SQL] som infogar mått, tabeller och kolumner direkt i frågorna genom att hålla markören över dem och klicka **[!UICONTROL Insert]**:
+Du kan också använda sidofältet i [!DNL SQL]-redigeraren för att infoga mått, tabeller och kolumner direkt i dina frågor genom att hålla markören över dem och klicka på **[!UICONTROL Insert]**:
 
-![Infoga en tabell i [!DNL SQL] redigerare.](../../assets/SQL_RB_Insert_Table.png)
+![Infoga en tabell i [!DNL SQL]-redigeraren.](../../assets/SQL_RB_Insert_Table.png)
 
 >[!NOTE]
 >
->Alla [Funktionen SELECT](https://www.postgresql.org/docs/9.5/sql-select.html#SQL-SELECT-LIST), eller en funktion som inte muterar data, som stöds av PostgreSQL, stöds i SQL Report Builder. Detta omfattar, men är inte begränsat till, AVG, COUNT, COUNT DISTINCT, MIN/MAX och SUM.
+>Alla [SELECT-funktioner](https://www.postgresql.org/docs/9.5/sql-select.html#SQL-SELECT-LIST), eller funktioner som inte muterar data, som stöds av PostgreSQL, stöds i SQL Report Builder. Detta omfattar, men är inte begränsat till, AVG, COUNT, COUNT DISTINCT, MIN/MAX och SUM.
 
-Dessutom kan `JOIN` type stöds, men Adobe rekommenderar endast att INER JOIN används eftersom det är det billigaste av `JOIN` typer.
+Dessutom stöds alla `JOIN`-typer, men Adobe rekommenderar endast att du använder INNER JOIN eftersom det är det billigaste av `JOIN`-typerna.
 
 ## Köra frågan och visa resultat {#runquery}
 
-När du är klar med att skriva frågan klickar du på **[!UICONTROL Run Query]**. Resultatet visas i en tabell under SQL-redigeraren:
+När du är klar med att skriva din fråga klickar du på **[!UICONTROL Run Query]**. Resultatet visas i en tabell under SQL-redigeraren:
 
 ![Kör frågan och visa resultat.](../../assets/SQL_Run_Query.gif)
 
 Om något verkar vara fel i resultatet kan du redigera frågan och köra den igen tills du är nöjd.
 
-Ibland ser du [meddelanden under redigeraren med EXPLAIN i dem](../../best-practices/optimizing-your-sql-queries.md). Om du ser något av detta innebär det att frågan inte har körts och att du behöver finjustera något.
+Du kan ibland se [meddelanden under redigeraren med EXPLAIN i dem](../../best-practices/optimizing-your-sql-queries.md). Om du ser något av detta innebär det att frågan inte har körts och att du behöver finjustera något.
 
 När du är klar med redigeringen av frågan kan du gå vidare till att antingen skapa en visualisering eller spara ditt arbete på en kontrollpanel.
 
 ## Skapa en visualisering {#createviz}
 
-Om du vill skapa en visualisering med frågeresultaten klickar du på **[!UICONTROL Chart]** i `Results` fönster. På den här fliken väljer du:
+Om du vill skapa en visualisering med dina frågeresultat klickar du på fliken **[!UICONTROL Chart]** i rutan `Results`. På den här fliken väljer du:
 
-* The `Series`eller den kolumn som du vill mäta, till exempel **Sålda artiklar**.
-* The `Category`eller den kolumn som du vill använda för att segmentera data, till exempel **förvärvskälla**.
-* The `Labels`eller X-axelvärden.
+* `Series`, eller den kolumn som du vill mäta, till exempel **Artiklar som sålts**.
+* `Category`, eller den kolumn som du vill använda för att segmentera dina data, till exempel **hämtningskälla**.
+* Värdena `Labels` eller X-axel.
 
 Här är en snabb titt på hur visualiseringsprocessen ser ut:
 
 ![](../../assets/SQL_RB_viz_overview.gif)
 
-En detaljerad genomgång av hur du skapar en visualisering finns i [Skapa visualiseringar från SQL-frågor, genomgång](../../tutorials/create-visuals-from-sql.md){: target=&quot;_blank&quot;}.
+En detaljerad genomgång av hur du skapar en visualisering finns i självstudiekursen [Skapa visualiseringar från SQL-frågor](../../tutorials/create-visuals-from-sql.md){: target=&quot;_blank&quot;}.
 
 ## Sparar rapporten {#save}
 
-Innan du kan spara ditt arbete måste du ge rapporten ett namn. Kom ihåg att följa [riktlinjer för att namnge](../../best-practices/naming-elements.md){: target=&quot;_blank&quot;} och välj något som tydligt anger vad rapporten är!
+Innan du kan spara ditt arbete måste du ge rapporten ett namn. Kom ihåg att följa riktlinjerna för [bästa praxis för att namnge](../../best-practices/naming-elements.md){: target=&quot;_blank&quot;} och välja något som tydligt anger vad rapporten är!
 
-Klicka **[!UICONTROL Save]** längst upp till höger i [!DNL SQL] och väljer rapport `Type` (`Chart` eller `Table`). Om du vill slå ihop allt markerar du kontrollpanelen för att spara rapporten och klickar på **[!UICONTROL Save to Dashboard]**.
+Klicka på **[!UICONTROL Save]** i det övre högra hörnet av [!DNL SQL]-redigeraren och markera rapporten `Type` (`Chart` eller `Table`). Om du vill slå ihop allt markerar du instrumentpanelen för att spara rapporten och klickar på **[!UICONTROL Save to Dashboard]**.
 
 ![](../../assets/SQL_Save_Report.gif)
 
@@ -113,9 +113,9 @@ Klicka **[!UICONTROL Save]** längst upp till höger i [!DNL SQL] och väljer ra
 
 #### [!DNL SQL Report Builder]
 
-[[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md) ger dig möjlighet att ställa frågor direkt till Datan Warehouse, se resultaten och snabbt omvandla dem till en rapport. Använda [!DNL SQL] kan du även [att använda [!DNL SQL] funktioner som inte är tillgängliga](https://docs.aws.amazon.com/redshift/latest/dg/c_SQL_functions.html) i `Visual` eller `Cohort` Report Builder, vilket ger er större kontroll över era data.
+[[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md) ger dig möjlighet att direkt fråga Datan Warehouse, visa resultaten och snabbt omvandla dem till en rapport. Om du använder [!DNL SQL] kan du även använda [funktioner som inte är tillgängliga](https://docs.aws.amazon.com/redshift/latest/dg/c_SQL_functions.html) i Report Builder `Visual` eller `Cohort`, vilket ger dig större kontroll över dina data. [!DNL SQL] 
 
-Beräknade kolumner som skapats med [!DNL SQL] är inte beroende av uppdateringscykler, vilket innebär att du kan upprepa dem som du vill och omedelbart se resultaten.
+Beräknade kolumner som skapats med [!DNL SQL] är inte beroende av uppdateringscykler, vilket innebär att du kan iterera på dem som du vill och omedelbart se resultaten.
 
 >[!NOTE]
 >
@@ -123,21 +123,21 @@ Beräknade kolumner som skapats med [!DNL SQL] är inte beroende av uppdaterings
 
 | **Det här är perfekt för..** | **Det här är inte så bra för..** |
 |---|---|
-| Intermediala/avancerade analytiker | Nybörjare - du måste veta [!DNL SQL]. |
-| The [!DNL SQL] ohyfsad | Enkla analyser - att skriva en fråga kan vara mer praktiskt än att bara använda [!UICONTROL Visual Report Builder]. |
-| Skapa engångskalkylerade kolumner | Dela med andra - tänk på er målgrupp: förstår de [!DNL SQL]? Om de inte gör det kan de bli förvirrade av hur rapporten byggs. |
-| Data med `one-to-many` relationer |  |
+| Intermediala/avancerade analytiker | Nybörjare - du måste känna till [!DNL SQL]. |
+| [!DNL SQL]-kunnig | Enkla analyser - att skriva en fråga kan vara mer användbart än att bara använda [!UICONTROL Visual Report Builder]. |
+| Skapa engångskalkylerade kolumner | Dela med andra - tänk på din målgrupp: Förstår de [!DNL SQL]? Om de inte gör det kan de bli förvirrade av hur rapporten byggs. |
+| Data med `one-to-many`-relationer |  |
 | Testa en ny kolumn eller analys |  |
 
 #### Resultat för databas jämfört med SQL Editor
 
-Olika resultat beror oftast på uppdateringscykler. If [!DNL Commerce Intelligence] är på väg att replikera data från databasen till Datan Warehouse. Du kan se olika resultat även om du använder samma fråga.
+Olika resultat beror oftast på uppdateringscykler. Om [!DNL Commerce Intelligence] håller på att replikera data från din databas till din Data Warehouse, kan du se olika resultat även om du använder samma fråga.
 
-Anslutningsproblem kan också leda till avvikelser. Navigera till `Connections` sida genom att klicka **[!DNL Manage Data** > **Connections]** för att ta reda på det - finns det ett fel för databasintegreringen i fråga? I så fall kan du behöva [autentisera integreringen igen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html) för att få igång saker och ting igen.
+Anslutningsproblem kan också leda till avvikelser. Navigera till sidan `Connections` genom att klicka på **[!DNL Manage Data** > **Connections]** för att checka ut den - finns det ett fel för databasintegrationen i fråga? I så fall kan du behöva [autentisera integreringen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html) igen för att få igång saker igen.
 
 Om alla integreringar har anslutits och du inte befinner dig mitt i en uppdateringscykel kan något annat vara fel.
 
-#### Tar bort en [!DNL SQL] Vill du även ta bort de underliggande kolumnerna från Datan Warehouse?
+#### Om du tar bort en [!DNL SQL]-rapport tas även de underliggande kolumnerna bort från Datan Warehouse?
 
 Nej, du förlorar inga kolumner från Datan Warehouse, oavsett hur du har skapat dem.
 
@@ -146,26 +146,26 @@ Kolumner som skapats med `Data Warehouse Manager` påverkas inte om du tar bort 
 Kolumner som skapats med [!DNL SQL Report Builder] sparas inte i Datan Warehouse.
 
 
-#### `Report Builder` kontra `SQL Report Builder`
+#### `Report Builder` jämfört med `SQL Report Builder`
 
-The [!DNL SQL Report Builder] ger dig större flexibilitet när du skapar och strukturerar diagram - du kan till exempel välja vilka värden som ska visas på `X` och `Y` axlar. Mer information om hur du skapar diagram finns i [!DNL SQL Report Builder], kolla in [Skapa visualiseringar från [!DNL SQL] frågor](../../tutorials/create-visuals-from-sql.md) självstudie.
+[!DNL SQL Report Builder] ger dig större flexibilitet när du skapar och strukturerar diagram - du kan till exempel välja vilka värden som ska visas på axlarna `X` och `Y`. Mer information om hur du skapar diagram i [!DNL SQL Report Builder] finns i självstudiekursen [Skapa visualiseringar från  [!DNL SQL] frågor](../../tutorials/create-visuals-from-sql.md).
 
 #### `Cohort Report Builder` {#cohortrb}
 
-Till skillnad från [!DNL Visual Report Builder], [[!DNL Cohort Report Builder]](../dev-reports/cohort-rpt-bldr.md) är avsett för ett enda ändamål - att analysera och identifiera beteendetrender för liknande användargrupper över tiden. Använda [!DNL Cohort Report Builder] kräver inga [!DNL SQL] så att du kan dyka rakt in utan tvekan om du just börjar.
+Till skillnad från [!DNL Visual Report Builder] är [[!DNL Cohort Report Builder]](../dev-reports/cohort-rpt-bldr.md) avsedd för ett enda syfte - att analysera och identifiera beteendetrender för liknande användargrupper över tiden. Om du använder [!DNL Cohort Report Builder] krävs ingen [!DNL SQL]-kunnighet, så du kan dyka rakt in utan tveksamhet om du just har börjat.
 
 | **Det här är perfekt för..** | **Det här är inte så bra för..** |
 |---|---|
 | Intermediala/avancerade analytiker | Nybörjare - du behöver praktiska kohorter. |
-| Identifiera beteendetrender över tid | Kvalitativ analys - den kan [klart](../dev-reports/create-qual-cohort-analysis.md), men behöver hjälp av Adobe. |
+| Identifiera beteendetrender över tid | Kvalitativ analys - den kan vara [klar](../dev-reports/create-qual-cohort-analysis.md), men kräver hjälp från Adobe. |
 
 ## Återskapa frågor efter uppdateringscykeln
 
-Du behöver inte återskapa dina frågor. Rapporter skapade med [[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md) sparas på samma sätt som i traditionell `Report Builder`. Uppdateringsprocessen för [!DNL SQL] är desamma - när data har uppdaterats beräknas och visas värdena i diagrammen på nytt.
+Du behöver inte återskapa dina frågor. Rapporter som skapats med [[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md) sparas på samma sätt som de som skapats i det traditionella `Report Builder`. Uppdateringsprocessen för [!DNL SQL] diagram är densamma. När data har uppdaterats beräknas och visas värdena i diagrammen på nytt.
 
 >[!NOTE]
 >
->När en [!DNL SQL] rapport/fråga, den tar inte bort de underliggande kolumnerna från Datan Warehouse. Du förlorar inga kolumner, oavsett hur du har skapat dem.
+>När du tar bort en [!DNL SQL]-rapport/fråga tas de underliggande kolumnerna inte bort från Datan Warehouse. Du förlorar inga kolumner, oavsett hur du har skapat dem.
 
 * Kolumner som skapas med hjälp av Data Warehouse Manager påverkas inte om du tar bort en rapport eller fråga som använder dem.
 
@@ -173,4 +173,4 @@ Du behöver inte återskapa dina frågor. Rapporter skapade med [[!DNL SQL Repor
 
 ## Radbrytning {#wrapup}
 
-Om du vill prova något mer utmanande, varför inte skriva en fråga som är optimerad för visualisering? Kolla in [Skapa visualiseringar från [!DNL SQL] frågor, genomgång](../../tutorials/create-visuals-from-sql.md){: target=&quot;_blank&quot;} för att komma igång.
+Om du vill prova något mer utmanande, varför inte skriva en fråga som är optimerad för visualisering? Kolla in [Skapa visualiseringar från [!DNL SQL] frågesjälvstudiekursen](../../tutorials/create-visuals-from-sql.md){: target=&quot;_blank&quot;} för att komma igång.

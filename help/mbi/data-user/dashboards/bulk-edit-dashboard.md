@@ -1,6 +1,6 @@
 ---
 title: Massredigeringsdiagram i kontrollpaneler
-description: Läs om hur du använder gruppredigeringsfunktionen i [!DNL Commerce Intelligence].
+description: Lär dig hur du använder gruppredigeringsfunktionen i  [!DNL Commerce Intelligence].
 exl-id: 576ffabb-5e5d-4251-9662-951e2cd30f31
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
@@ -13,29 +13,29 @@ ht-degree: 1%
 
 # Massredigera diagram i kontrollpaneler
 
-Gruppredigeringsfunktionen gör det enkelt att ändra diagramnamn och datum på kontrollpanelerna. Du vill till exempel att alla diagram på en specifik kontrollpanel ska hänvisa till en enskild butik och rapportera månadsvis i stället för kvartalsvis. I stället för att ändra allt manuellt kan du `bulk-editing` funktionen gör jobbet. I det här avsnittet får du lära dig hur du använder:
+Gruppredigeringsfunktionen gör det enkelt att ändra diagramnamn och datum på kontrollpanelerna. Du vill till exempel att alla diagram på en specifik kontrollpanel ska hänvisa till en enskild butik och rapportera månadsvis i stället för kvartalsvis. Låt funktionen `bulk-editing` utföra arbetet i stället för att ändra allt manuellt. I det här avsnittet får du lära dig hur du använder:
 
-* [The [!DNL Find/Replace] Funktion](#findreplace)
+* [Funktionen  [!DNL Find/Replace] ](#findreplace)
 
-* [The [!DNL Prepend Name] Funktion](#prepend)
+* [Funktionen  [!DNL Prepend Name] ](#prepend)
 
-* [The [!DNL Change Dates] Funktion](#dates)
+* [Funktionen  [!DNL Change Dates] ](#dates)
 
-Men tänk på det här, trots allt.. *Måste dessa förändringar vara permanenta?* Om inte, överväg att klona kontrollpanelen och sedan ändra datumen i den nya kontrollpanelen. På så sätt kan du behålla den ursprungliga kontrollpanelen samtidigt som du gör de ändringar du behöver.
+Tänk på det här med tanke på det: *Måste de här ändringarna vara permanenta?* Om inte, överväg att klona instrumentpanelen och sedan ändra datumen på den nya instrumentpanelen. På så sätt kan du behålla den ursprungliga kontrollpanelen samtidigt som du gör de ändringar du behöver.
 
 >[!NOTE]
 >
 >Om du ändrar många rapporter kan uppdateringsprocessen ta en liten stund.
 
-## Använda [!DNL Find/Replace] {#findreplace}
+## Använder [!DNL Find/Replace] {#findreplace}
 
-1. Klicka på växeln (![](../../assets/gear-icon.png)) bredvid instrumentpanelens namn och sedan [!UICONTROL Bulk Edit Reports] -fönstret.
+1. Klicka på kugghjulsikonen (![](../../assets/gear-icon.png)) bredvid instrumentpanelens namn och sedan på [!UICONTROL Bulk Edit Reports]-fönstret.
 
-1. Klicka **[!UICONTROL Chart Title Find and Replace]** på popup-menyn.
+1. Klicka på **[!UICONTROL Chart Title Find and Replace]** i popup-fönstret.
 
-1. I `Chart Title Find` skriver du de ord eller tecken du vill söka efter.
+1. Skriv de ord eller tecken som du vill hitta i fältet `Chart Title Find`.
 
-1. I `Replace With` skriver du in de ord eller tecken som ska ersätta det som finns i `Find` fält.
+1. I fältet `Replace With` skriver du de ord eller tecken som ska ersätta det som finns i fältet `Find`.
 
 1. Klicka på **[!UICONTROL Update Reports]**.
 
@@ -43,11 +43,11 @@ Exempel:
 
 ![massredigering](../../assets/bulk_edit.gif)
 
-## Förväntande `Chart Names` {#prepend}
+## Förväntar `Chart Names` {#prepend}
 
-1. Klicka på växeln (![](../../assets/gear-icon.png)) bredvid instrumentpanelens namn och sedan [!UICONTROL Bulk Edit Reports] -fönstret.
+1. Klicka på kugghjulsikonen (![](../../assets/gear-icon.png)) bredvid instrumentpanelens namn och sedan på [!UICONTROL Bulk Edit Reports]-fönstret.
 
-1. Klicka **[!UICONTROL Prepend Report Names]** på popup-menyn.
+1. Klicka på **[!UICONTROL Prepend Report Names]** i popup-fönstret.
 
 1. Skriv de ord eller tecken som du vill lägga till i diagrammen.
 
@@ -59,14 +59,14 @@ Exempel:
 
 ## Ändrar `Dates` {#dates}
 
-1. Klicka på växeln (![](../../assets/gear-icon.png)) bredvid instrumentpanelens namn och välj sedan [!UICONTROL Bulk Edit Reports] -fönstret.
+1. Klicka på kugghjulsikonen (![](../../assets/gear-icon.png)) bredvid instrumentpanelens namn och välj sedan fönstret [!UICONTROL Bulk Edit Reports].
 
-1. Klicka **[!UICONTROL Change Dates]** i popup-fönstret.
+1. Klicka på **[!UICONTROL Change Dates]** i popup-fönstret.
 
-1. Ange den nya `Start/End Date` och `Time Interval`. Du kan också lämna dessa fält oförändrade.
+1. Ange nya `Start/End Date` och `Time Interval`. Du kan också lämna dessa fält oförändrade.
 
 1. Klicka på **[!UICONTROL Update Reports]**.
 
 Exempel:
 
-![ändringsdatum](../../assets/dates.gif)
+![ändrar datum](../../assets/dates.gif)

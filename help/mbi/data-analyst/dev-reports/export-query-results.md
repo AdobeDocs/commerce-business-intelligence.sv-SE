@@ -13,4 +13,4 @@ ht-degree: 0%
 
 # Exportera mina frågeresultat
 
-Klicka **[!UICONTROL Export Data]** i `Results` exportera resultaten till en `.csv` -fil.
+Klicka på **[!UICONTROL Export Data]** i rutan `Results` om du vill exportera resultatet till en `.csv`-fil.

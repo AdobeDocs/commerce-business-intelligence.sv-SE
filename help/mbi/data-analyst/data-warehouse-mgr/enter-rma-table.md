@@ -6,28 +6,28 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '267'
 ht-degree: 0%
 
 ---
 
 # enterprise_rma-tabell
 
-Varje rad i `enterprise_rma` tabell (anropas ofta `magento_rma` i Adobe Commerce 2.x, men namnet kan anpassas) innehåller information om en viss returbegäran.
+Varje rad i tabellen `enterprise_rma` (kallas ofta `magento_rma` i Adobe Commerce 2.x, men namnet kan anpassas) innehåller information om en specifik returbegäran.
 
 >[!NOTE]
 >
->Tabellen levereras som standard med ditt Adobe Commerce-konto om du är en `Enterprise Edition` eller `Enterprise Cloud Edition` kund.
+>Den här tabellen levereras endast som standard med ditt Adobe Commerce-konto om du är `Enterprise Edition`- eller `Enterprise Cloud Edition`-kund.
 
 ## Vanliga inbyggda kolumner
 
 | **Kolumnnamn** | **Beskrivning** |
 |---|---|
-| `entity\_id` | Unik identifierare för registret. Varje `entity\_id` representerar en returbegäran. |
+| `entity\_id` | Unik identifierare för registret. Varje `entity\_id` representerar en returbegäran. |
 | `date\_requested` | Datumet då returen begärdes. |
 | `status` | Status för returen. Värdena är bland annat&quot;mottagen&quot;,&quot;väntande&quot; och&quot;auktoriserad&quot;. |
-| `order\_id` | Sekundärnyckel associerad med `sales\_flat\_order` tabell. |
-| `customer\_id` | Sekundärnyckel associerad med `customer\_entity` tabell. |
+| `order\_id` | Sekundärnyckel associerad med tabellen `sales\_flat\_order`. |
+| `customer\_id` | Sekundärnyckel associerad med tabellen `customer\_entity`. |
 
 {style="table-layout:auto"}
 
@@ -49,7 +49,7 @@ Varje rad i `enterprise_rma` tabell (anropas ofta `magento_rma` i Adobe Commerce
 | `Number of returns` | Antalet begärda returer. | `Operation` kolumn: `entity id`<br>`Operation`: `Count`<br>`Timestamp` Kolumn: `date requested` |
 | `Total returned amount` | Det totala penningbelopp som returneras. | `Operation `Kolumn: `Return's total value`<br>`Operation`: Summa<br>`Timestamp` Kolumn: begärt datum |
 | `Average returned amount` | Det genomsnittliga penningbelopp som returneras. | `Operation`` Column: Return's total value`<br>`Operation`: `Average`<br>`Timestamp` Kolumn: `date requested` |
-| `Average time to return` | Genomsnittlig tid från order till retur. | `Operation` Kolumn: Sekunder mellan order som skapas vid och returdatum som begärts<br>`Operation`: `Average`<br>`Timestamp` Kolumn: `date requested` |
+| `Average time to return` | Genomsnittlig tid från order till retur. | `Operation` Kolumn: Sekunder mellan order som skapas vid och det begärda returdatumet <br>`Operation`: `Average`<br>`Timestamp` Kolumn: `date requested` |
 
 {style="table-layout:auto"}
 
@@ -57,12 +57,12 @@ Varje rad i `enterprise_rma` tabell (anropas ofta `magento_rma` i Adobe Commerce
 
 `sale_flat_order`
 
-* Skapa kopplade kolumner för att segmentera och filtrera efter attribut på ordningsnivå på `enterprise_rma` tabellen via följande join:
-   * Commerce 1.x: `enterprise_rma.order_id` (många) => `sales_flat_order.entity_id` (ett)
-   * Commerce 2.x: `magento_rma.order_id` (många) => `sales_order.entity_id` (ett)
+* Skapa kopplade kolumner för att segmentera och filtrera efter attribut på ordningsnivå i tabellen `enterprise_rma` via följande koppling:
+   * Commerce 1.x: `enterprise_rma.order_id` (många) => `sales_flat_order.entity_id` (en)
+   * Commerce 2.x: `magento_rma.order_id` (många) => `sales_order.entity_id` (en)
 
 `enterprise_rma_item_entity`
 
-* Skapa flera-till-en-kolumner som `Return's total value` på `enterprise_rma` tabellen via följande join:
-   * Commerce 1.x: `enterprise_rma_item_entity.rma_entity_id` (många) => `enterprise_rma.entity_id` (ett)
-   * Commerce 2.x: `magento_rma_item_entity.rma_entity_id ` (många) => `magento_rma.entity_id` (ett)
+* Skapa flera-till-en-kolumner som `Return's total value` i tabellen `enterprise_rma` via följande join:
+   * Commerce 1.x: `enterprise_rma_item_entity.rma_entity_id` (många) => `enterprise_rma.entity_id` (en)
+   * Commerce 2.x: `magento_rma_item_entity.rma_entity_id ` (många) => `magento_rma.entity_id` (en)

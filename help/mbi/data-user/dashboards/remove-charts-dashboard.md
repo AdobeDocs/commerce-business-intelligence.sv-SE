@@ -13,10 +13,10 @@ ht-degree: 0%
 
 # Ta bort ett diagram från en kontrollpanel
 
-Om du vill ta bort ett diagram från en kontrollpanel klickar du på kugghjulet (![](../../assets/gear-icon.png)) i diagrammets övre högra hörn och klicka på **[!UICONTROL Remove from Dashboard]**.
+Om du vill ta bort ett diagram från en instrumentpanel klickar du på kugghjulsikonen (![](../../assets/gear-icon.png)) i diagrammets övre högra hörn och klickar på **[!UICONTROL Remove from Dashboard]**.
 
 >[!NOTE]
 >
->Att ta bort ett diagram är inte detsamma som [ta bort den](../../data-user/dashboards/delete-chart.md). Dessutom [ett diagram kan läsas till en kontrollpanel](../../data-user/dashboards/add-charts-dashboard.md) när som helst.
+>Att ta bort ett diagram är inte detsamma som att [ta bort det](../../data-user/dashboards/delete-chart.md). Dessutom kan [ett diagram läsas till en instrumentpanel](../../data-user/dashboards/add-charts-dashboard.md) när som helst.
 
 ![ta bort diagram](../../assets/Removing_Charts_from_Dashboards.gif)

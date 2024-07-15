@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # Faktureringsinformation
 
-Om du vill visa, lägga till eller ändra faktureringsinformationen för ditt konto måste du ha `Billing` behörigheter. [Behörigheter anges per användare](../../administrator/user-management/user-management.md) när användarkonton skapas. Om du behöver `Billing` behörigheter, kontakta kontoadministratören.
+Om du vill visa, lägga till eller ändra ditt kontos faktureringsinformation måste du ha `Billing` behörigheter. [Behörigheter anges per användare](../../administrator/user-management/user-management.md) när användarkonton skapas. Om du behöver `Billing` behörigheter kontaktar du kontoadministratören.

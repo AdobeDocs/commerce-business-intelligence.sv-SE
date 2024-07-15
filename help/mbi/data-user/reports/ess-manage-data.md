@@ -15,9 +15,9 @@ ht-degree: 0%
 
 Med Hantera data får du tillgång till olika verktyg för att hantera integreringar, rapporter och diagramdata, instrumentpaneler och exporter.
 
-## För åtkomst [!DNL Manage Data]:
+## Så här kommer du åt [!DNL Manage Data]:
 
-1. Klicka på **[!DNL Manage Data]**.
+1. Klicka på **[!DNL Manage Data]** på menyn.
 
 1. I sidlisten väljer du det ämne som du vill använda under följande rubriker:
 

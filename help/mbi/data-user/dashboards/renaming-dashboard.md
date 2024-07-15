@@ -15,13 +15,13 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Kräver [Administratör](../../administrator/user-management/user-management.md) eller `Standard` behörighet att utföra dessa funktioner. Om du är en `Standard` -användare, du behöver `Edit` behörighet till kontrollpanelen.
+>Kräver [administratörsbehörighet](../../administrator/user-management/user-management.md) eller `Standard` för att utföra dessa funktioner. Om du är `Standard`-användare behöver du även `Edit`-behörigheter till instrumentpanelen.
 
 Ibland passar inte namn längre. Det går snabbt och enkelt att byta namn på en kontrollpanel.
 
-1. Klicka på **[!UICONTROL Dashboard Options]** menyn längst upp på skärmen, som finns bredvid `Global Search` -menyn.
+1. Klicka på menyn **[!UICONTROL Dashboard Options]** högst upp på skärmen bredvid menyn `Global Search` när du är i kontrollpanelen.
 
-1. Klicka **[!UICONTROL Rename]** i listrutan.
+1. Klicka på **[!UICONTROL Rename]** i listrutan.
 
 1. Ange det nya namnet på instrumentpanelen när du uppmanas till detta.
 
@@ -29,4 +29,4 @@ Ibland passar inte namn längre. Det går snabbt och enkelt att byta namn på en
 
 Exempel:
 
-![byta namn på instrumentpanel](../../assets/renaming-dboard.gif)
+![Byt namn på instrumentpanel](../../assets/renaming-dboard.gif)

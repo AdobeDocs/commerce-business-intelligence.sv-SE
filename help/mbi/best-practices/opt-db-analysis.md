@@ -6,14 +6,14 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Business Performance, Data Integration, Data Import/Export, Data Warehouse Manager
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '872'
+source-wordcount: '864'
 ht-degree: 0%
 
 ---
 
 # Optimera databasen
 
-Den största fördelen med att använda en databas för [!DNL Adobe Commerce Intelligence] Inget behöver byggas eller ändras för att samla in data. Värdefull information finns redan - du behöver bara låsa upp den.
+Den främsta fördelen med att använda en operativ databas för [!DNL Adobe Commerce Intelligence] är att inget behöver skapas eller ändras för att samla in data. Värdefull information finns redan - du behöver bara låsa upp den.
 
 Det här avsnittet innehåller några rekommendationer som hjälper dig att optimera databasen för analys och hämta åtgärdbara insikter från rådata.
 
@@ -35,17 +35,17 @@ Många företag använder till exempel inloggningsdatum för att lagra det senas
 
 Om du uppdaterar en post på grund av någon typ av användaråtgärd bör du vanligtvis inte skriva över information om en tidigare eller separat användaråtgärd.
 
-## Inkludera `Updated_at` Kolumner för data som uppdaterats över tid
+## Inkludera `Updated_at` kolumner för data som uppdaterats över tid
 
-Om en tabells rader har ändrade värden över tiden, till exempel **order\_status** ändringar från`processing` till `complete`, innehåller **uppdaterad\_at** kolumn som ska registreras när den senaste ändringen inträffar. Se till att **uppdaterad\_at** värdet är tillgängligt när den nya dataraden infogas första gången, när **uppdaterad\_at** datum motsvarar **skapat\_at** datum.
+Om en tabells rader kommer att ha ändrade värden över tiden, till exempel **order\_status** ändringar från `processing` till `complete`, inkluderar du en **uppdaterad\_at** -kolumn som registreras när den senaste ändringen inträffar. Kontrollera att ett **uppdaterat\_at**-värde är tillgängligt när den nya dataraden infogas första gången, när datumet **uppdaterad\_at** motsvarar datumet **skapad\_at**.
 
-Förutom optimering för analys **uppdaterad\_at** kan du även använda kolumner [Stegvisa replikeringsmetoder](../data-analyst/data-warehouse-mgr/cfg-replication-methods.md), vilket kan korta uppdateringscyklernas längd.
+Förutom optimering för analys kan du även använda [metoder för inkrementell replikering](../data-analyst/data-warehouse-mgr/cfg-replication-methods.md) i **uppdaterade\_at** -kolumner, vilket kan korta uppdateringscyklernas längd.
 
-## Källa för användarförvärv
+## Store User Acquisition Source
 
-En av de vanligaste felen är [inhämtningskälla](../data-analyst/analysis/google-track-user-acq.md) (UAS) lagras inte i den operativa databasen. I de flesta fall när detta är ett problem spåras bara UAS [!DNL Google Analytics] eller något annat webbanalysverktyg. Dessa verktyg kan vara värdefulla, men det finns vissa nackdelar med att enbart lagra UAS i dem. Du kan t.ex. inte extrahera data på användarnivå från dessa verktyg. När det är möjligt är det oftast en svår process. Det bör vara enkelt att få fram den här informationen och kombinera den med data från andra källor, t.ex. beteendeinformation och transaktionsinformation som också lagras i databasen.
+En av de vanligaste felen är att [användarens inhämtningskälla](../data-analyst/analysis/google-track-user-acq.md) (UAS) inte lagras i den operativa databasen. I de flesta fall när detta är ett problem spåras bara UAS via [!DNL Google Analytics] eller något annat webbanalysverktyg. Dessa verktyg kan vara värdefulla, men det finns vissa nackdelar med att enbart lagra UAS i dem. Du kan t.ex. inte extrahera data på användarnivå från dessa verktyg. När det är möjligt är det oftast en svår process. Det bör vara enkelt att få fram den här informationen och kombinera den med data från andra källor, t.ex. beteendeinformation och transaktionsinformation som också lagras i databasen.
 
-Att lagra UAS i din egen databas är ofta den största förbättring som onlineföretag kan göra av sina analysfunktioner. Detta gör det möjligt för UAS att analysera försäljning, användarinteraktion, betalningsperioder, kundens livstidsvärde, bortfall och andra kritiska mätvärden. [Dessa data är avgörande när man ska besluta var marknadsföringsresurser ska investeras](../data-analyst/analysis/most-value-source-channel.md).
+Att lagra UAS i din egen databas är ofta den största förbättring som onlineföretag kan göra av sina analysfunktioner. Detta gör det möjligt för UAS att analysera försäljning, användarinteraktion, betalningsperioder, kundens livstidsvärde, bortfall och andra kritiska mätvärden. [Den här informationen är viktig när du ska bestämma var marknadsföringsresurser ska investeras ](../data-analyst/analysis/most-value-source-channel.md).
 
 Alltför många företag fokuserar enbart på att hitta kanaler som ger nya användare till lägsta möjliga kostnad. Om ni inte håller på att hålla reda på kvaliteten hos de användare ni skaffat från varje kanal riskerar ni att locka till er användare som inte genererar något affärsvärde.
 
@@ -53,7 +53,7 @@ Alltför många företag fokuserar enbart på att hitta kanaler som ger nya anv�
 
 ### Ange en primärnyckel
 
-A [primärnyckel](https://en.wikipedia.org/wiki/Unique_key) är en oföränderlig kolumn (eller en uppsättning kolumner) som skapar unika värden i en tabell. Primära nycklar är oerhört viktiga eftersom de ser till att dina tabeller är korrekt replikerade i [!DNL Commerce Intelligence].
+En [primärnyckel](https://en.wikipedia.org/wiki/Unique_key) är en oföränderlig kolumn (eller en uppsättning kolumner) som skapar unika värden i en tabell. Primära nycklar är oerhört viktiga eftersom de ser till att dina tabeller replikeras korrekt i [!DNL Commerce Intelligence].
 
 När du skapar primärnycklar ska du använda en heltalsdatatyp för kolumnen som ökar automatiskt. Adobe rekommenderar att du undviker att använda flera kolumnprimärnycklar där det är möjligt.
 
@@ -61,8 +61,8 @@ Om tabellen är en SQL-vy lägger du till en kolumn som kan fungera som primärn
 
 ### Tilldela en datatyp till din datakolumn
 
-Om en datakolumn inte har tilldelats någon [datatyp](https://en.wikipedia.org/wiki/Data_type), [!DNL Commerce Intelligence] definierar vilken datatyp som ska användas. Om systemet gissar fel kanske du inte kan utföra de relevanta analyserna förrän supportteamet på Adobe justerar kolumnen till rätt datatyp. Om till exempel en datumkolumn tolkas som en numerisk datatyp kan du använda den datumdimensionen för att skapa en trend över tiden.
+Om en datakolumn inte har en tilldelad [datatyp](https://en.wikipedia.org/wiki/Data_type), [!DNL Commerce Intelligence] gissar vilken datatyp som ska användas. Om systemet gissar fel kanske du inte kan utföra de relevanta analyserna förrän supportteamet på Adobe justerar kolumnen till rätt datatyp. Om till exempel en datumkolumn tolkas som en numerisk datatyp kan du använda den datumdimensionen för att skapa en trend över tiden.
 
 ### Lägg till prefix i datatabellerna om du har flera databaser
 
-Om du har fler än en databas ansluten till [!DNL Commerce Intelligence]rekommenderar Adobe att du lägger till prefix i tabellerna för att undvika förvirring. Prefix hjälper dig att komma ihåg varifrån mätvärden eller datamängder kommer.
+Om du har fler än en databas ansluten till [!DNL Commerce Intelligence] rekommenderar Adobe att du lägger till prefix i tabellerna för att undvika förvirring. Prefix hjälper dig att komma ihåg varifrån mätvärden eller datamängder kommer.

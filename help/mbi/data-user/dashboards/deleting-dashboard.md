@@ -15,11 +15,11 @@ ht-degree: 1%
 
 Om du inte vill att kontrollpanelslistan ska bli för rörig kan du ta bort en kontrollpanel om det inte längre behövs. Detta kan göras på ett av två sätt:
 
-1. [Via `Account Settings` page](#account) - den här metoden kräver [Administratörsbehörigheter](../../administrator/user-management/user-management.md).
+1. [Via `Account Settings` page](#account) - den här metoden kräver [administratörsbehörighet](../../administrator/user-management/user-management.md).
 
-1. [Via `Dashboard Options` meny](#do) - den här metoden kräver att du äger kontrollpanelen eller har `Edit` behörigheter.
+1. [Via `Dashboard Options` menu](#do) - den här metoden kräver att du äger instrumentpanelen eller har `Edit` behörighet.
 
-## Ta bort instrumentpanelen via `Account Settings` page {#account}
+## Ta bort instrumentpanelen via sidan `Account Settings` {#account}
 
 1. Klicka på **[!UICONTROL Account Settings** > **Dashboards]**.
 
@@ -31,11 +31,11 @@ Exempel:
 
 ![ta bort instrumentpanel](../../assets/deleting_dash.gif)<!--{: width="703" height="346"}-->
 
-## Ta bort instrumentpanelen via `Dashboard Options` meny {#do}
+## Ta bort instrumentpanelen via menyn `Dashboard Options` {#do}
 
-1. Klicka på **[!UICONTROL Dashboard Options]** längst upp på skärmen.
+1. Klicka på menyn **[!UICONTROL Dashboard Options]** högst upp på skärmen.
 
-1. I listrutan klickar du på **[!UICONTROL Delete]**.
+1. Klicka på **[!UICONTROL Delete]** i listrutan.
 
 1. När du uppmanas att bekräfta klickar du på **[!UICONTROL Delete]**.
 

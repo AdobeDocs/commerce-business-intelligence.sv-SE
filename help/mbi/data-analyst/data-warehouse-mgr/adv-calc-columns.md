@@ -6,20 +6,20 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '898'
-ht-degree: 4%
+source-wordcount: '931'
+ht-degree: 2%
 
 ---
 
 # Avancerade beräknade kolumntyper
 
-Många analyser du kan vilja skapa innehåller en **ny kolumn** som du vill `group by` eller `filter by`. The [Skapar beräknade kolumner](../data-warehouse-mgr/creating-calculated-columns.md) I självstudiekursen beskrivs grunderna för de flesta användningsfall, men du kanske vill ha en beräknad kolumn som är lite mer komplex än vad Data Warehouse Manager kan skapa.
+Många analyser som du kanske vill skapa innehåller en **ny kolumn** som du vill `group by` eller `filter by`. Självstudiekursen [Skapa beräknade kolumner](../data-warehouse-mgr/creating-calculated-columns.md) beskriver grunderna för de flesta användningsfall, men du kanske vill ha en beräknad kolumn som är lite mer komplex än vad Data Warehouse Manager kan skapa.
 {: #top}
 
 Den här typen av Data Warehouse kan skapas av Adobe-teamet hos analytiker. Ange följande information om du vill definiera en ny beräknad kolumn:
 
-1. The **`definition`** i den här kolumnen (inklusive indata, formler eller formatering)
-1. The **`table`** som du vill skapa kolumnen på
+1. **`definition`** i den här kolumnen (inklusive indata, formler eller formatering)
+1. Den **`table`** som du vill skapa kolumnen på
 1. Alla **`example data points`** som beskriver vad kolumnen ska innehålla
 
 Här är några vanliga exempel på avancerade beräknade kolumner som användarna ofta tycker är användbara:
@@ -33,7 +33,7 @@ Här är några vanliga exempel på avancerade beräknade kolumner som användar
 
 ## Jag försöker beställa händelser sekventiellt {#compareevents}
 
-Detta kallas för en **händelsenummer** beräknad kolumn. Det innebär att du försöker hitta den sekvens i vilken händelser inträffade för en viss händelseägare, som en kund eller användare.
+Detta kallas en beräknad kolumn för **händelsenummer**. Det innebär att du försöker hitta den sekvens i vilken händelser inträffade för en viss händelseägare, som en kund eller användare.
 
 Här är ett exempel:
 
@@ -57,13 +57,13 @@ Om du vill skapa den här typen av beräknad kolumn måste du känna till:
 
 * Tabellen som du vill skapa den här kolumnen för
 * Det fält som identifierar händelsens ägare (`owner\_id` i det här exemplet)
-* Det fält som du vill ordna händelserna efter (`timestamp` i det här exemplet)
+* Det fält som du vill beställa händelserna med (`timestamp` i det här exemplet)
 
 [Tillbaka till början](#top)
 
 ## Jag försöker hitta tiden mellan två händelser. {#twoevents}
 
-Detta kallas för en `date difference` beräknad kolumn. Det innebär att du försöker hitta tiden mellan två händelser som tillhör en enda post, baserat på händelsens tidsstämplar.
+Detta kallas en `date difference` beräknad kolumn. Det innebär att du försöker hitta tiden mellan två händelser som tillhör en enda post, baserat på händelsens tidsstämplar.
 
 Här är ett exempel:
 
@@ -74,9 +74,9 @@ Här är ett exempel:
 
 {style="table-layout:auto"}
 
-En beräknad datumdifferenskolumn kan användas för att skapa ett mått som beräknar medeltiden eller mediantiden mellan två händelser. Klicka på bilden nedan för att se hur `Average time to first order` mätvärden används i en rapport.
+En beräknad datumdifferenskolumn kan användas för att skapa ett mått som beräknar medeltiden eller mediantiden mellan två händelser. Klicka på bilden nedan för att se hur måttet `Average time to first order` används i en rapport.
 
-![Använda en datumdifferensberäknad kolumn för att beräkna Genomsnittlig tid till första ordern.](../../assets/DateDifference.gif)<!--{: style="max-width: 500px;"}-->
+![Använder en beräknad datumdifferenskolumn för att beräkna genomsnittlig tid till första ordern.](../../assets/DateDifference.gif)<!--{: style="max-width: 500px;"}-->
 
 Om du vill skapa den här typen av beräknad kolumn måste du känna till:
 
@@ -87,7 +87,7 @@ Om du vill skapa den här typen av beräknad kolumn måste du känna till:
 
 ## Jag försöker jämföra värden för sekventiella händelser. {#sequence}
 
-Detta kallas för en **sekventiell händelsejämförelse**. Det innebär att du försöker hitta delta mellan ett värde (valuta, nummer, tidsstämpel) och motsvarande värde för ägarens föregående händelse.
+Detta kallas en **sekventiell händelsejämförelse**. Det innebär att du försöker hitta delta mellan ett värde (valuta, nummer, tidsstämpel) och motsvarande värde för ägarens föregående händelse.
 
 Här är ett exempel:
 
@@ -101,28 +101,28 @@ Här är ett exempel:
 
 {style="table-layout:auto"}
 
-En sekventiell händelsejämförelse kan användas för att hitta den genomsnittliga tiden eller mediantiden mellan varje sekventiell händelse. Klicka på bilden nedan för att se **Genomsnittlig och mediantid mellan order** mätvärden in action.
+En sekventiell händelsejämförelse kan användas för att hitta den genomsnittliga tiden eller mediantiden mellan varje sekventiell händelse. Klicka på bilden nedan för att se hur **medel- och mediantiden mellan order**-mätvärdena fungerar.
 
-=![Använda en beräknad kolumn för sekventiell händelsejämförelse för att beräkna Genomsnittlig och Mediantid mellan order.](../../assets/SeqEventComp.gif)<!--{: style="max-width: 500px;"}-->
+=![Använder en beräknad kolumn för sekventiell händelsejämförelse för att beräkna genomsnittlig och mediantid mellan order.](../../assets/SeqEventComp.gif)<!--{: style="max-width: 500px;"}-->
 
 Om du vill skapa den här typen av beräknad kolumn måste du känna till:
 
 * Tabellen som du vill skapa den här kolumnen för
-* Det fält som identifierar händelsens ägare (`owner\_id` i exemplet)
+* Det fält som identifierar ägaren till händelserna (`owner\_id` i exemplet)
 * Det värdefält som du vill se skillnaden mellan för varje sekventiell händelse (`timestamp` i det här exemplet)
 
 [Tillbaka till början](#top)
 
 ## Jag försöker konvertera valuta. {#currency}
 
-A **valutakonvertering** beräknad kolumn konverterar transaktionsbelopp från en registrerad valuta till en rapporteringsvaluta, baserat på valutakursen vid händelsetiden.
+En beräknad kolumn för **valutakonvertering** konverterar transaktionsbelopp från en registrerad valuta till en rapporteringsvaluta, baserat på valutakursen vid händelseläget.
 
 Här är ett exempel:
 
 | **`id`** | **`timestamp`** | **`transaction\_value\_EUR`** | **`transaction\_value\_USD`** |
 |-----|-----|-----|-----|
-| `1` | 2015-01-01 00:00:00 | 30 | 33.57 |
-| `2` | 2015-01-02 00:00:00 | 50 | 55.93 |
+| `1` | 2015-01-01 00:00:00 | 30 | 33,57 |
+| `2` | 2015-01-02 00:00:00 | 50 | 55,93 |
 
 {style="table-layout:auto"}
 
@@ -137,7 +137,7 @@ Om du vill skapa den här typen av beräknad kolumn måste du känna till:
 
 ## Jag försöker konvertera tidszoner. {#timezone}
 
-A **tidszonskonvertering** beräknad kolumn konverterar tidsstämplarna för en viss datakälla från den registrerade tidszonen till en rapporttidszon.
+En beräknad kolumn för **tidszonskonvertering** konverterar tidsstämplarna för en viss datakälla från den inspelade tidszonen till en rapporttidszon.
 
 Här är ett exempel:
 
@@ -161,10 +161,10 @@ Om du vill skapa den här typen av beräknad kolumn måste du känna till:
 
 Oroa dig inte. Bara för att det inte finns med här betyder det inte att det inte är möjligt. Adobe-teamet hos Data Warehouse Analysts kan hjälpa till.
 
-Om du vill definiera en ny beräknad kolumn [skicka en supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) med information om exakt vad du vill bygga.
+Om du vill definiera en ny beräknad kolumn, [skickar du en supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) med information om exakt vad du vill skapa.
 
 ## Relaterad dokumentation
 
 * [Skapa beräknade kolumner](../data-warehouse-mgr/creating-calculated-columns.md)
 * [Beräknade kolumntyper](../data-warehouse-mgr/calc-column-types.md)
-* [Byggnad [!DNL Google ECommerce] dimensioner med beställnings- och kunddata](../data-warehouse-mgr/bldg-google-ecomm-dim.md)
+* [Bygger [!DNL Google ECommerce] dimensioner med order- och kunddata](../data-warehouse-mgr/bldg-google-ecomm-dim.md)

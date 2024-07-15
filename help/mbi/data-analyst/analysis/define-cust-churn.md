@@ -6,7 +6,7 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Data Warehouse Manager, Reports, Dashboards
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '484'
+source-wordcount: '473'
 ht-degree: 0%
 
 ---
@@ -17,13 +17,13 @@ I det här avsnittet visas hur du konfigurerar en kontrollpanel som hjälper dig
 
 ![](../../assets/churn-deashboard.png)
 
-Denna analys innehåller [avancerade beräknade kolumner](../data-warehouse-mgr/adv-calc-columns.md).
+Den här analysen innehåller [avancerade beräknade kolumner](../data-warehouse-mgr/adv-calc-columns.md).
 
 ## Beräknade kolumner
 
 Kolumner att skapa
 
-* `customer_entity` table
+* `customer_entity`-tabell
 * `Customer's lifetime number of orders`
 * Välj en definition: `Count`
 * Välj en [!UICONTROL table]: `sales_flat_order`
@@ -32,7 +32,7 @@ Kolumner att skapa
 * [!UICONTROL Filter]:
 * Beställningar som räknas
 
-* `sales_flat_order` table
+* `sales_flat_order`-tabell
 * `Customer's lifetime number of orders`
 * Välj en definition: Förenad kolumn
 * Välj en [!UICONTROL table]: `customer_entity`
@@ -44,11 +44,11 @@ Kolumner att skapa
 * Välj en definition: `Age`
 * Välj en [!UICONTROL column]: `created_at`
 
-* **`Customer's order number`** skapas av en analytiker som en del av **[DEFINIERA KURN]** biljett
-* **`Is customer's last order`** skapas av en analytiker som en del av **[DEFINIERA KURN]** biljett
-* **`Seconds since previous order`** skapas av en analytiker som en del av **[DEFINIERA KURN]** biljett
-* **`Months since order`** skapas av en analytiker som en del av **[DEFINIERA KURN]** biljett
-* **`Months since previous order`** skapas av en analytiker som en del av **[DEFINIERA KURN]** biljett
+* **`Customer's order number`** har skapats av en analytiker som en del av din **[DEFINING CHURN]**-biljett
+* **`Is customer's last order`** har skapats av en analytiker som en del av din **[DEFINING CHURN]**-biljett
+* **`Seconds since previous order`** har skapats av en analytiker som en del av din **[DEFINING CHURN]**-biljett
+* **`Months since order`** har skapats av en analytiker som en del av din **[DEFINING CHURN]**-biljett
+* **`Months since previous order`** har skapats av en analytiker som en del av din **[DEFINING CHURN]**-biljett
 
 ## Mått
 
@@ -56,11 +56,11 @@ Inga nya mätvärden!
 
 >[!NOTE]
 >
->Se till att [lägga till alla nya kolumner som dimensioner till mått](../data-warehouse-mgr/manage-data-dimensions-metrics.md) innan du skapar nya rapporter.
+>Se till att [lägga till alla nya kolumner som mått i mätvärden](../data-warehouse-mgr/manage-data-dimensions-metrics.md) innan du skapar nya rapporter.
 
 ## Rapporter
 
-* **Sannolikhet för inledande upprepad order**
+* **Sannolikhet för inledande upprepningsorder**
 * Mått A: Upprepade order vid heltids användning
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]: `Customer's order number greater than 1`
@@ -68,7 +68,7 @@ Inga nya mätvärden!
 * Mått B: Heltidsbeställningar
 * [!UICONTROL Metric]: Antal order
 
-* [!UICONTROL Formula]: Sannolikhet för inledande upprepad order
+* [!UICONTROL Formula]: Sannolikhet för inledande upprepningsorder
 * 
   [!UICONTROL-formel]: `A/B`
 * 
@@ -80,7 +80,7 @@ Inga nya mätvärden!
 * 
   [!UICONTROL Chart type]: `Scalar`
 
-* **Sannolikhet för upprepad order som har angetts månader sedan ordern**
+* **Sannolikhet för upprepade order som har angetts i månader sedan ordern**
 * Mått A: Upprepa order efter månader sedan föregående order (dölj)
 * [!UICONTROL Metric]: `Number of orders`
 * 
@@ -107,7 +107,7 @@ Inga nya mätvärden!
 * 
   [!UICONTROL Group by]: `Independent`
 
-* [!UICONTROL Formula]: Sannolikhet för inledande upprepad order
+* [!UICONTROL Formula]: Sannolikhet för inledande upprepningsorder
 * 
   [!UICONTROL-formel]: `(C-A)/(C+D-A-B)`
 * 
@@ -128,8 +128,8 @@ Formeln som du använder förenklar till (Totalt antal upprepade order som har i
 
 När du har skapat din kontrollpanel är den vanligaste frågan: Hur använder jag den för att fastställa ett tröskelvärde för bortfall?
 
-**Det finns inget&quot;rätt svar&quot; på detta.** Adobe rekommenderar dock att du hittar den punkt där raden korsar värdet som är hälften av den inledande upprepningssannolikheten. Här kan du säga: &quot;Om en användare tänker göra en ny beställning, skulle han eller hon antagligen ha gjort det vid det här laget.&quot; I slutändan är målet att välja tröskeln där det är rimligt att gå över från&quot;kvarhållande&quot; till&quot;reaktivering&quot;.
+**Det finns inget &quot;rätt svar&quot; på detta.** Adobe rekommenderar dock att du söker efter den punkt där raden korsar värdet som är hälften av den inledande upprepningssannolikheten. Här kan du säga: &quot;Om en användare tänker göra en ny beställning, skulle han eller hon antagligen ha gjort det vid det här laget.&quot; I slutändan är målet att välja tröskeln där det är rimligt att gå över från&quot;kvarhållande&quot; till&quot;reaktivering&quot;.
 
 När du har kompilerat alla rapporter kan du ordna dem på kontrollpanelen som du vill. Resultatet kan se ut som bilden högst upp på sidan
 
-Om du stöter på några frågor när du skapar den här analysen eller bara vill engagera Professional Services-teamet, [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+[Kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) om du får frågor under arbetet med att skapa den här analysen, eller om du bara vill engagera Professional Services-teamet.

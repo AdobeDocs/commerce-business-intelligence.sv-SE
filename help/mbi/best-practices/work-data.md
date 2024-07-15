@@ -13,6 +13,6 @@ ht-degree: 0%
 
 # Arbeta med data
 
-[!DNL Adobe Commerce Intelligence] gör att du kan importera data från flera källor. I det här avsnittet får du lära dig de bästa sätten att ordna och arbeta med data.
+Med [!DNL Adobe Commerce Intelligence] kan du importera data från flera källor. I det här avsnittet får du lära dig de bästa sätten att ordna och arbeta med data.
 
 Du får lära dig hur du optimerar databasen och dina SQL-frågor, hur du kontrollerar statusen för uppdateringscykeln och hur du minskar tiden för uppdateringscykeln.

@@ -17,20 +17,20 @@ Om du klonar en kontrollpanel kan du kopiera alla rapporter i en kontrollpanel t
 
 Detta är användbart om du vill återskapa en befintlig uppsättning diagram men ändra perspektivet (till exempel en annan datavy, en annan marknad, en annan webbplats eller en annan butik). När du har duplicerat kontrollpanelen kan du redigera alla nya diagram för att ändra måtten, datavyn, filtret eller gruppvis.
 
-1. Om du vill klona en kontrollpanel klickar du på **[!UICONTROL Options]** längst upp på skärmen.
+1. Om du vill klona en instrumentpanel klickar du på **[!UICONTROL Options]** högst upp på skärmen.
 
-1. I listrutan klickar du på **[!UICONTROL Save As]**.
+1. Klicka på **[!UICONTROL Save As]** i listrutan.
 
-1. Ange `New Dashboard Name`. Adobe rekommenderar att du ger dig en överblick över vilken information som finns på kontrollpanelen.
+1. Ange `New Dashboard Name` när du uppmanas till detta. Adobe rekommenderar att du ger dig en överblick över vilken information som finns på kontrollpanelen.
 
-   Du klonar till exempel en kontrollpanel med namnet `Customer Activity`. Den här instrumentpanelen innehöll information om kundaktivitet för din Philadelphia-plats, men nu vill du skapa en instrumentpanel för din nya New York-ort. Den här instrumentpanelen kan heta `New York City - Customer Activity`.
+   Du klonar till exempel en instrumentpanel med namnet `Customer Activity`. Den här instrumentpanelen innehöll information om kundaktivitet för din Philadelphia-plats, men nu vill du skapa en instrumentpanel för din nya New York-ort. Den här instrumentpanelen kan heta `New York City - Customer Activity`.
 
-1. Använd `Chart Title Find` och `Chart Title Replace` fält där alla diagram med `Philadelphia` i titeln och ersätt den med `New York City`.
+1. Använd fälten `Chart Title Find` och `Chart Title Replace` för att hitta alla diagram med `Philadelphia` i titeln och ersätt den med `New York City`.
 
-   Om du inte anger några värden i dessa fält kan du `(2)` läggs automatiskt till i slutet av alla diagramtitlar på den nya kontrollpanelen.
+   Om du inte anger några värden i de här fälten läggs `(2)` automatiskt till i slutet av alla diagramrubriker på den nya instrumentpanelen.
 
-1. Klicka **[!UICONTROL Save]** för att klona kontrollpanelen.
+1. Klicka på **[!UICONTROL Save]** för att klona instrumentpanelen.
 
 Exempel:
 
-![kloningspanel](../../assets/datgif.gif)
+![kloninstrumentpanel](../../assets/datgif.gif)

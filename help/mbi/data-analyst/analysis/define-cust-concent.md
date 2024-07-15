@@ -6,7 +6,7 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Data Warehouse Manager, Reports, Dashboards
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '472'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 I det här avsnittet beskrivs hur du skapar en kontrollpanel som hjälper dig att mäta hur de totala intäkterna fördelas bland kunderna. Förstå vilken procentandel av kunderna som bidrar med vilken procentandel av intäkterna och skapar segmenterade listor på bästa möjliga marknad för och behåller era högkvalitativa kunder.
 
-Denna analys innehåller [avancerade beräknade kolumner](../data-warehouse-mgr/adv-calc-columns.md).
+Den här analysen innehåller [avancerade beräknade kolumner](../data-warehouse-mgr/adv-calc-columns.md).
 
 ## Komma igång
 
@@ -25,71 +25,71 @@ Du kan använda [filöverföringen](../importing-data/connecting-data/using-file
 
 ## Beräknade kolumner
 
-Om du använder den ursprungliga arkitekturen (till exempel om du inte har `Data Warehouse Views` alternativ under `Manage Data` ska du kontakta supportteamet för att bygga ut kolumnerna nedan. På den nya arkitekturen kan dessa kolumner skapas från `Manage Data > Data Warehouse` sida. Detaljerade instruktioner finns nedan.
+Om du använder den ursprungliga arkitekturen (om du t.ex. inte har alternativet `Data Warehouse Views` på menyn `Manage Data`) vill du kontakta supportteamet för att bygga ut kolumnerna nedan. På den nya arkitekturen kan dessa kolumner skapas från sidan `Manage Data > Data Warehouse`. Detaljerade instruktioner finns nedan.
 
-Ytterligare en skillnad görs om ditt företag tillåter gästbeställningar. I så fall kan du ignorera alla steg för `customer_entity` tabell. Om gästorder inte tillåts, ignorera alla steg för `sales_flat_order` tabell.
+Ytterligare en skillnad görs om ditt företag tillåter gästbeställningar. I så fall kan du ignorera alla steg för tabellen `customer_entity`. Om gästorder inte tillåts, ignorera alla steg för tabellen `sales_flat_order`.
 
 Kolumner att skapa
 
-* `Sales_flat_order/customer_entity` table
+* `Sales_flat_order/customer_entity`-tabell
 * (indata) `reference`
-* [!UICONTROL Column type]: – `Same table > Calculation`
-* [!UICONTROL Inputs]: – `entity_id`
+* [!UICONTROL Column type]: - `Same table > Calculation`
+* [!UICONTROL Inputs]: - `entity_id`
 * [!UICONTROL Calculation]: - **case when A is null then null else 1 end**
-* [!UICONTROL Datatype]: – `Integer`
+* [!UICONTROL Datatype]: - `Integer`
 
-* `Customer concentration` tabell (det här är filen som du överförde med numret) `1`)
+* tabellen `Customer concentration` (det här är filen som du överförde med numret `1`)
 * Antal kunder
-* [!UICONTROL Column type]: – `Many to One > Count Distinct`
+* [!UICONTROL Column type]: - `Many to One > Count Distinct`
 * Sökväg - `sales_flat_order.(input) reference > Customer Concentration.Primary Key` ELLER `customer_entity.(input)reference > Customer Concentration.Primary Key`
 * Markerad kolumn - `sales_flat_order.customer_email` ELLER `customer_entity.entity_id`
 
-* `customer_entity` table
+* `customer_entity`-tabell
 * Antal kunder
-* [!UICONTROL Column type]: – `One to Many > JOINED_COLUMN`
+* [!UICONTROL Column type]: - `One to Many > JOINED_COLUMN`
 * Sökväg - `customer_entity.(input) reference > Customer Concentration. Primary Key`
 * Markerad kolumn - `Number of customers`
 
 * (indata) `Ranking by customer lifetime revenue`
-* [!UICONTROL Column type]: – `Same table > Event Number`
-* Ägare till händelse - `Number of customers`
+* [!UICONTROL Column type]: - `Same table > Event Number`
+* Händelseägare - `Number of customers`
 * Händelserangordning - `Customer's lifetime revenue`
 
 * Kundens intäktspunkt
-* [!UICONTROL Column type]: – `Same table > Calculation`
-* [!UICONTROL Inputs]: – `(input) Ranking by customer lifetime revenue`, `Number of customers`
-* [!UICONTROL Calculation]: - **om A är null är null else (A/B)* 100 slut **
-* [!UICONTROL Datatype]: – `Decimal`
+* [!UICONTROL Column type]: - `Same table > Calculation`
+* [!UICONTROL Inputs]: - `(input) Ranking by customer lifetime revenue`, `Number of customers`
+* [!UICONTROL Calculation]: - **case when A is null then null else (A/B)* 100 end **
+* [!UICONTROL Datatype]: - `Decimal`
 
-* `Sales_flat_order` table
+* `Sales_flat_order`-tabell
 * Antal kunder
-* [!UICONTROL Column type]: – `One to Many > JOINED_COLUMN`
+* [!UICONTROL Column type]: - `One to Many > JOINED_COLUMN`
 * Sökväg - `sales_flat_order.(input) reference > Customer Concentration.Primary Key`
 * Markerad kolumn - `Number of customers`
 
 * (input) Rankning per kundens livstid
-* [!UICONTROL Column type]: – `Same table > Event Number`
-* Ägare till händelse - `Number of customers`
+* [!UICONTROL Column type]: - `Same table > Event Number`
+* Händelseägare - `Number of customers`
 * Händelserangordning - `Customer's lifetime revenue`
 * Filter - `Customer's order number = 1`
 
 * Kundens intäktspunkt
-* [!UICONTROL Column type]: – `Same table > Calculation`
-* [!UICONTROL Inputs]: – `(input) Ranking by customer lifetime revenue`, `Number of customers`
-* [!UICONTROL Calculation]: - **om A är null är null else (A/B)* 100 slut **
+* [!UICONTROL Column type]: - `Same table > Calculation`
+* [!UICONTROL Inputs]: - `(input) Ranking by customer lifetime revenue`, `Number of customers`
+* [!UICONTROL Calculation]: - **case when A is null then null else (A/B)* 100 end **
 * [!UICONTROL Datatype]: - `Decimal`
 
 >[!NOTE]
 >
->De percentiler som används är till och med delar av kunder, vilket representerar den sjätte percentilen av er kundbas. Varje kund är associerad med ett heltal mellan 1 och 100, som kan ses som en livstidsinkomst *rankning*. Om kundens intäktspolicy för en viss kund till exempel är **5**, den här kunden finns i ***femte percentilen*** av alla kunder i termer av livstidsintäkter.
+>De percentiler som används är till och med delar av kunder, vilket representerar den sjätte percentilen av er kundbas. Varje kund är associerad med ett heltal mellan 1 och 100, som kan ses som en livstidsintäkt på *rankning*. Om kundens intäktspolicy för en viss kund till exempel är **5** är den här kunden i den ***femte percentilen*** av alla kunder i termer av livstidsintäkter.
 
 ## Mått
 
 * **Totalt kundlivstidsvärde**
-* I `customer_entity` table
-* Det här måttet utför en **Summa**
-* På `Customer's lifetime revenue` kolumn
-* Beställd av `Customer's first order date` tidsstämpel
+* I tabellen `customer_entity`
+* Detta mått utför en **summa**
+* I kolumnen `Customer's lifetime revenue`
+* Ordnad efter tidsstämpeln `Customer's first order date`
 
 ## Rapporter
 
@@ -108,11 +108,11 @@ Kolumner att skapa
 * 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Customer's revenue percentile`
-* Visa överkant/underkant: `100% of Customer's revenue percentile Name`
+* Visa över/under: `100% of Customer's revenue percentile Name`
 * 
   [!UICONTROL Chart type]: `Line`
 
-* **Högsta koncentration på 10 %**
+* **Högsta koncentrationen 10 %**
 * [!UICONTROL Filter]: `Customer's revenue percentile <= 10`
 
 * Mått `A`: `Total customer lifetime revenue`
@@ -125,7 +125,7 @@ Kolumner att skapa
 * 
   [!UICONTROL Chart type]: `Table`
 
-* **Lägsta 50 % koncentration med endast ett köp**
+* **50 % nedersta koncentration med endast ett inköp**
 
 * Mått `A`: `Total customer lifetime revenue`
 * `Customer's revenue percentile <= 50`
@@ -141,7 +141,7 @@ Kolumner att skapa
 * 
   [!UICONTROL Chart type]: `Table`
 
-* **Lägsta koncentration 10 %**
+* **10 % nedersta koncentration**
 * [!UICONTROL Filter]: `Customer's revenue percentile > 90`
 
 * Mått `A`: `Total customer lifetime revenue`
@@ -156,4 +156,4 @@ Kolumner att skapa
 
 När du har kompilerat alla rapporter kan du ordna dem på kontrollpanelen som du vill. Resultatet kan se ut som kontrollpanelen ovan.
 
-Om du stöter på några frågor när du skapar den här analysen eller bara vill engagera Professional Services-teamet, [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+[Kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) om du får frågor under arbetet med att skapa den här analysen, eller om du bara vill engagera Professional Services-teamet.

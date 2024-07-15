@@ -13,34 +13,34 @@ ht-degree: 0%
 
 # Dela instrumentpaneler med andra användare
 
-Att dela instrumentpaneler är ett bra sätt att se till att teamet är med och uppmuntra till samarbete. Genom att skapa och dela en central kontrollpanel kan du ge teamet den information de behöver samtidigt som ni behåller kontrollen. [[!DNL Adobe] rekommenderas](../../best-practices/share-dashboard-best-practice.md){: target=&quot;_blank&quot;} som du beviljar `Edit` behörighet till ett fåtal för att minimera oavsiktliga ändringar.
+Att dela instrumentpaneler är ett bra sätt att se till att teamet är med och uppmuntra till samarbete. Genom att skapa och dela en central kontrollpanel kan du ge teamet den information de behöver samtidigt som ni behåller kontrollen. [[!DNL Adobe] rekommenderar](../../best-practices/share-dashboard-best-practice.md){: target=&quot;_blank&quot;} att du ger `Edit` behörighet till ett urval för att minimera oavsiktliga ändringar.
 
 >[!NOTE]
 >
->Om instrumentpanelen som du delar innehåller rapporter som skapats med mått som en viss användare inte har tillgång till, visas ett `Error Loading Data` meddelande. Om du vill att data ska visas för den specifika användaren, [admin-användare](../../administrator/user-management/user-management.md) måste ge tillgång till alla mätvärden som används i dessa rapporter.
+>Om den instrumentpanel som du delar innehåller rapporter som skapats med mätvärden som en viss användare inte har åtkomst till, visas ett `Error Loading Data`-meddelande i rapporterna. Om du vill att data ska visas för den specifika användaren måste en [admin-användare](../../administrator/user-management/user-management.md) ge åtkomst till alla mätvärden som används i rapporterna.
 
 ## Dela en kontrollpanel
 
-1. Klicka **[!UICONTROL Share Dashboard]** längst upp på skärmen.
+1. Klicka på **[!UICONTROL Share Dashboard]** högst upp på skärmen.
 
-   En lista över alla användare i din [!DNL Commerce Intelligence] kommer att visas.
+   En lista över alla användare i ditt [!DNL Commerce Intelligence]-konto visas.
 
 1. Om du vill välja en användare att dela kontrollpanelen med markerar du kryssrutan till vänster om namnet.
 
-   Om du vill markera/avmarkera alla användare klickar du på **[!UICONTROL Select]** och markera `Everyone` eller `None`, respektive
+   Om du vill markera/avmarkera alla användare klickar du på **[!UICONTROL Select]** och väljer `Everyone` respektive `None`.
 
 1. Behörigheter kan anges per användare eller en kombination.
 
-   *Så här anger du individuella behörigheter*, klicka **[!UICONTROL None]** till höger om användarens namn. I den här listrutan väljer du vilken typ av behörigheter användaren ska ha.
+   *Om du vill ange enskilda behörigheter* klickar du på **[!UICONTROL None]** till höger om användarens namn. I den här listrutan väljer du vilken typ av behörigheter användaren ska ha.
 
-   *Så här anger du behörigheter vid masser*, klicka **[!UICONTROL Set Permissions]**. I den här listrutan väljer du vilken typ av behörigheter de markerade användarna ska ha.
+   *Klicka på&#x200B;**[!UICONTROL Set Permissions]**om du vill ange behörigheter för masse*. I den här listrutan väljer du vilken typ av behörigheter de markerade användarna ska ha.
 
    >[!NOTE]
    >
-   >Du kan också använda den här funktionen för att uppdatera tidigare angivna behörigheter. Om du till exempel inte längre vill dela instrumentpanelen med någon anger du deras behörigheter till `None`.
+   >Du kan också använda den här funktionen för att uppdatera tidigare angivna behörigheter. Om du till exempel vill sluta dela instrumentpanelen med någon anger du deras behörigheter till `None`.
 
-1. Om du vill dela kontrollpanelen klickar du på **[!UICONTROL Save Changes]**. De valda användarna får ett e-postmeddelande med en inbjudan om att visa kontrollpanelen.
+1. Klicka på **[!UICONTROL Save Changes]** om du vill dela instrumentpanelen. De valda användarna får ett e-postmeddelande med en inbjudan om att visa kontrollpanelen.
 
 Exempel:
 
-![kontrollpanel för resurs](../../assets/Share_Dashboards.gif)
+![dela instrumentpanel](../../assets/Share_Dashboards.gif)

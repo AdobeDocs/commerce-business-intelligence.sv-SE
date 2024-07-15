@@ -13,11 +13,11 @@ ht-degree: 1%
 
 # Ta bort ett diagram permanent
 
-Även om du [ta bort ett diagram från kontrollpanelen](../../data-user/dashboards/remove-charts-dashboard.md)finns den fortfarande i [!DNL Commerce Intelligence] konto.
+Även om du [tar bort ett diagram från instrumentpanelen](../../data-user/dashboards/remove-charts-dashboard.md) finns det fortfarande i ditt [!DNL Commerce Intelligence]-konto.
 
 Så här tar du bort ett diagram permanent:
 
-1. Klicka **[!UICONTROL Account Setting]** i sidlisten.
+1. Klicka på **[!UICONTROL Account Setting]** i sidlisten.
 
 1. Klicka på **[!UICONTROL Charts]**.
 

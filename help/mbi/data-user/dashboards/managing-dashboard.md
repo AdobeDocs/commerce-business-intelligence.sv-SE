@@ -15,9 +15,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Kräver [Administratörsbehörigheter](../../administrator/user-management/user-management.md).
+>Kräver [administratörsbehörighet](../../administrator/user-management/user-management.md).
 
-I **[!DNL Manage Data** > **Dashboards]** kan du hantera användarbehörigheter för kontrollpaneler som du äger, ta bort kontrollpaneler som du inte längre behöver och ange en standardkontrollpanel. Det här ämnet handlar om:
+I **[!DNL Manage Data** > **Dashboards]** kan du hantera användarbehörigheter för instrumentpaneler som du äger, ta bort instrumentpaneler som du inte längre behöver och ange en standardinstrumentpanel. Det här ämnet handlar om:
 
 1. [Byta namn på instrumentpaneler](#rename)
 
@@ -33,23 +33,23 @@ Så här byter du namn på en kontrollpanel:
 
 1. Klicka på namnet på kontrollpanelen som du vill ändra.
 
-2. Ange det nya namnet i dialogrutan `Dashboard Name` fält.
+2. Ange det nya namnet i fältet `Dashboard Name`.
 
 ## Hantera användarbehörigheter {#userperm}
 
-Det finns tre åtkomstnivåer i [!DNL Commerce Intelligence] för kontrollpaneler - `View`, `Edit`och `None`.
+Det finns tre åtkomstnivåer i [!DNL Commerce Intelligence] för instrumentpaneler - `View`, `Edit` och `None`.
 
-* `View` låter utvalda användare visa kontrollpanelen men inte redigera den. Användarna kan också ändra storlek på diagram, exportera data och kopiera diagram till sina egna kontrollpaneler med funktionen Spara som om de har behörighet som Standard eller Admin.
+* `View` tillåter valda användare att visa instrumentpanelen men inte redigera den. Användarna kan också ändra storlek på diagram, exportera data och kopiera diagram till sina egna kontrollpaneler med funktionen Spara som om de har behörighet som Standard eller Admin.
 
-* `Edit` låter markerade användare redigera och spara diagram på den här instrumentpanelen om de har standard- eller administratörsbehörighet. Dessutom kan användare med redigeringsbehörighet även dela kontrollpaneler med andra användare.
+* `Edit` tillåter att valda användare kan redigera och spara diagram på den här instrumentpanelen om de har standard- eller administratörsbehörighet. Dessutom kan användare med redigeringsbehörighet även dela kontrollpaneler med andra användare.
 
 * `None` betyder att de valda användarna inte kan visa eller redigera den här instrumentpanelen.
 
 Användarbehörigheter kan ändras på ett av två sätt - för alla användare eller för en enskild användare.
 
-1. *Om du vill ändra alla användarbehörigheter* använd listrutemenyn bredvid `Set all users' permissions to…` etikett.
+1. *Om du vill ändra alla användares behörigheter* använder du listrutan bredvid etiketten `Set all users' permissions to…`.
 
-1. *Om du vill ändra en enskild användares behörigheter* Använd listrutan bredvid användarens namn för att ange önskad åtkomstnivå.
+1. *Om du vill ändra en enskild användares behörigheter* använder du listrutan bredvid användarens namn för att ange önskad åtkomstnivå.
 
 ## Ändra standardinstrumentpanelen {#default}
 

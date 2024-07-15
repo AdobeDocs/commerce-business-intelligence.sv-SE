@@ -16,7 +16,7 @@ ht-degree: 0%
 Ni använder data för att fatta affärsbeslut. Du kan få rapporter och kontrollpaneler från en dataanalytiker i ditt team, men du vill också lära dig hur du skapar rapporterna och kontrollpanelerna.
 
 I det här avsnittet visas hur du:
-* hämta in och visa data i [!DNL Commerce Intelligence] använda rapporter och kontrollpaneler
+* hämta och visa data i [!DNL Commerce Intelligence] med rapporter och instrumentpaneler
 * dela data med intressenter via e-post och `.csv` filer
 
 ## Relaterad

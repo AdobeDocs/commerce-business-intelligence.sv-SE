@@ -12,4 +12,4 @@ ht-degree: 25%
 
 # Självstudiekurser
 
-Följ dessa självstudiekurser för att lära dig hur [!DNL Adobe Commerce Intelligence].
+Följ de här självstudiekurserna för att lära dig hur kraftfull [!DNL Adobe Commerce Intelligence] är.

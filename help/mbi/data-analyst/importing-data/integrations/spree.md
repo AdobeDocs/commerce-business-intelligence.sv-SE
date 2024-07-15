@@ -15,9 +15,9 @@ ht-degree: 0%
 
 ![](../../../assets/spree-commerce-logo.png)
 
-Vill du se hur ert företag presterar eller hitta era mest värdefulla förvärvskällor och kanaler? Koppla samman [!DNL Spree] data till [!DNL Commerce Intelligence] låter dig svara på dessa frågor och mycket mer.
+Vill du se hur ert företag presterar eller hitta era mest värdefulla förvärvskällor och kanaler? Om du ansluter dina [!DNL Spree]-data till [!DNL Commerce Intelligence] kan du svara på dessa frågor och mycket mer.
 
-The [!DNL Spree] databasen baseras på [!DNL PostgreSQL]kan du ansluta den till [!DNL Commerce Intelligence] med [samma steg som du skulle göra för en normal [!DNL Postgres] anslutning](../integrations/postgresql.md).
+Databasen [!DNL Spree] baseras på [!DNL PostgreSQL] och du kan ansluta den till [!DNL Commerce Intelligence] med [samma steg som för en normal [!DNL Postgres] anslutning](../integrations/postgresql.md).
 
 ## Relaterad dokumentation
 

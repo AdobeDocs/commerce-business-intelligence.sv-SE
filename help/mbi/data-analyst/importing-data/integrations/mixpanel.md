@@ -6,7 +6,7 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '250'
+source-wordcount: '244'
 ht-degree: 0%
 
 ---
@@ -15,39 +15,39 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Kräver [Administratörsbehörigheter](../../../administrator/user-management/user-management.md).
+>Kräver [administratörsbehörighet](../../../administrator/user-management/user-management.md).
 
 ![](../../../assets/Mixpanel_logo.png)
 
-Med [!DNL Mixpanel]kan du analysera hur användare navigerar och använder dina webbplatser och appar. Om man tittar närmare på användarbeteendedata leder det till smartare design- och utvecklingsbeslut, vilket innebär en bättre produkt totalt sett. Ansluter [!DNL Mixpanel] till [!DNL Commerce Intelligence] gör att du kan analysera hur användarna beter sig och hur det beteendet innebär intäkter.
+Med [!DNL Mixpanel] kan du analysera hur användare navigerar och använder dina webbplatser och appar. Om man tittar närmare på användarbeteendedata leder det till smartare design- och utvecklingsbeslut, vilket innebär en bättre produkt totalt sett. Om du ansluter [!DNL Mixpanel] till [!DNL Commerce Intelligence] kan du analysera hur dina användare beter sig och hur det beteendet innebär intäkter.
 
-Koppla samman [!DNL Mixpanel] data till [!DNL Commerce Intelligence] en enkel trestegsprocess:
+Ansluta dina [!DNL Mixpanel]-data till [!DNL Commerce Intelligence] i en enkel trestegsprocess:
 
-1. [Öppna [!DNL Mixpanel] inloggningssida i [!DNL Commerce Intelligence]](#stepone)
-1. [Hämta din [!DNL Mixpanel] API-referenser](#steptwo)
-1. [Ange [!DNL Mixpanel] API-autentiseringsuppgifter i [!DNL Commerce Intelligence]](#stepthree)
+1. [Öppna sidan för  [!DNL Mixpanel] autentiseringsuppgifter i [!DNL Commerce Intelligence]](#stepone)
+1. [Hämta dina  [!DNL Mixpanel] API-autentiseringsuppgifter](#steptwo)
+1. [Ange dina [!DNL Mixpanel] API-autentiseringsuppgifter i [!DNL Commerce Intelligence]](#stepthree)
 
-För att slutföra den här processen måste du öppna två webbläsarfönster eller -flikar, ett för [!DNL Commerce Intelligence] och den andra för [!DNL Mixpanel] konto.
+Du måste öppna två webbläsarfönster eller flikar, ett för [!DNL Commerce Intelligence] och ett för ditt [!DNL Mixpanel]-konto, för att kunna slutföra den här processen.
 
-## Öppna [!DNL Mixpanel] inloggningssida {#stepone}
+## Öppnar sidan med [!DNL Mixpanel] inloggningsuppgifter {#stepone}
 
 Kom igång:
 
-1. Gå till `Connections` sida under **[!DNL Manage Data** > **Connections]**.
+1. Gå till sidan `Connections` under **[!DNL Manage Data** > **Connections]**.
 
-1. Klicka **[!UICONTROL Add a New Source]**, som finns till höger på skärmen ovanför `Data Sources` tabell.
+1. Klicka på **[!UICONTROL Add a New Source]**, som finns till höger på skärmen ovanför tabellen `Data Sources`.
 
-1. Klicka på [!DNL Mixpanel] och inloggningssidan öppnas.
+1. Klicka på ikonen [!DNL Mixpanel] så öppnas inloggningssidan.
 
-Lämna den här sidan öppen och växla till webbläsarfönstret med [!DNL Mixpanel] konto.
+Lämna den här sidan öppen och växla till webbläsarfönstret med ditt [!DNL Mixpanel]-konto.
 
-## Hämtar [!DNL Mixpanel] API-referenser {#steptwo}
+## Hämtar dina [!DNL Mixpanel] API-autentiseringsuppgifter {#steptwo}
 
-Om du inte har loggat in på [!DNL Mixpanel] gör du det och gör sedan följande:
+Om du inte har loggat in på ditt [!DNL Mixpanel]-konto än gör du det och gör sedan följande:
 
-1. Klicka **[!UICONTROL Account]** längst upp till höger.
+1. Klicka på **[!UICONTROL Account]** i det övre högra hörnet.
 
-1. Klicka på **[!UICONTROL Projects]**.
+1. Klicka på **[!UICONTROL Projects]** i den dialogruta som visas.
 
 1. Din API-inloggningsinformation visas:
 
@@ -55,14 +55,14 @@ Om du inte har loggat in på [!DNL Mixpanel] gör du det och gör sedan följand
 
 Håll den här öppen, du behöver den för att slå ihop det här.
 
-## Ange [!DNL Mixpanel] API-autentiseringsuppgifter i [!DNL Commerce Intelligence] {#stepthree}
+## Ange dina [!DNL Mixpanel] API-autentiseringsuppgifter i [!DNL Commerce Intelligence] {#stepthree}
 
-1. Kopiera `API Key` och `Secret` till [!DNL Mixpanel] inloggningssida i [!DNL Commerce Intelligence].
-1. Klicka **[!UICONTROL Connect to Mixpanel]** för att slutföra installationen.
+1. Kopiera `API Key` och `Secret` till inloggningssidan för [!DNL Mixpanel] i [!DNL Commerce Intelligence].
+1. Klicka på **[!UICONTROL Connect to Mixpanel]** för att slutföra konfigurationen.
 
-Om anslutningen lyckas kan du _Klart!_ visas högst upp på sidan.
+Om anslutningen lyckas, _lyckades!_-meddelandet visas högst upp på sidan.
 
 ### Relaterad
 
-* [Förväntat [!DNL Mixpanel] data](../integrations/mixpanel-data.md)
-* [Återautentisera integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [ [!DNL Mixpanel] data förväntades](../integrations/mixpanel-data.md)
+* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

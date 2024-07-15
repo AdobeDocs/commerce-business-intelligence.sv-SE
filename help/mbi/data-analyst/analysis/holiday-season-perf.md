@@ -6,7 +6,7 @@ role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '569'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Penslar kan upplevas när som helst under året. Om ditt företag till exempel s
 
 ## Rekommenderade mått
 
-När du analyserar högsäsong bör du överväga att analysera ([eller bygga](../../data-user/reports/ess-manage-data-metrics.md)) dessa mått:
+När du analyserar prestanda för semestersäsongen bör du överväga att analysera ([eller bygga](../../data-user/reports/ess-manage-data-metrics.md)) dessa mått:
 
 ### Antal nya kunder, Antal beställningar, Intäkter
 
@@ -58,7 +58,7 @@ Ett alternativ är att analysera kundernas köpbeteende under semestersäsongen.
 
 Ett annat alternativ är att analysera avkastningen från en kampanj under semestersäsongerna. Är avkastningen högre för särskilda kampanjer som körs under semestersäsongen? Ska ni öka utgifterna för kampanjer med hög avkastning under dessa säsonger?
 
-Dessutom kan ni analysera antalet rabatterade order jämfört med fullständiga prisbeställningar. [Väntar de flesta kunder på en försäljning för att beställa](../analysis/coupon-usage.md) under semestersäsongen eller köper de fullprisartiklar?
+Dessutom kan ni analysera antalet rabatterade order jämfört med fullständiga prisbeställningar. [Väntar de flesta kunder på en försäljning för att köpa beställningar](../analysis/coupon-usage.md) under din semestersäsong eller köper de fullprisartiklar?
 
 ### Relaterad
 

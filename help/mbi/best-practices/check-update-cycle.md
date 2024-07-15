@@ -6,30 +6,30 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Dashboards
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '275'
 ht-degree: 0%
 
 ---
 
 # Uppdatera förlopp för cykel
 
-När du loggar in på [!DNL Adobe Commerce Intelligence] på kontrollpanelen finns det flera sätt att kontrollera status för den senaste uppdateringscykeln. Allt beror på typen av [användarbehörigheter](../administrator/user-management/user-management.md) som du har.
+När du loggar in på din [!DNL Adobe Commerce Intelligence]-instrumentpanel finns det flera sätt att kontrollera status för din senaste uppdateringscykel. Allt beror på vilken typ av [användarbehörigheter](../administrator/user-management/user-management.md) du har.
 
 ## Varför ska jag kontrollera statusen för uppdateringscykeln?
 
-Att kontrollera statusuppdateringscykeln är användbart när du granskar data i [!DNL Commerce Intelligence] konto. Om du ser [resultat som inte uppfyller dina förväntningar](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md)till exempel daglig försäljning i [!DNL Commerce Intelligence] matchar inte det du ser i e-handelsplattformen eller i [[!DNL Google] e-handelsintäkter](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html) Du kan kontrollera den sista datapunkten för att se om problemet är löst när en uppdatering har slutförts.
+Att kontrollera statusuppdateringscykeln är användbart när du granskar data i ditt [!DNL Commerce Intelligence]-konto. Om du ser [resultat som inte uppfyller dina förväntningar](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md), till exempel, matchar inte daglig försäljning i [!DNL Commerce Intelligence] det du ser i din e-handelsplattform eller i dina [[!DNL Google] e-handelsintäkter](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html), kan du kontrollera den sista datapunkten för att se om problemet har lösts när en uppdatering är klar.
 
-## [!UICONTROL Read-Only] och [!UICONTROL Standard] Användare
+## [!UICONTROL Read-Only] och [!UICONTROL Standard] användare
 
-`Read-only` användare kan logga in på sin kontrollpanel och se hur nyligen data har uppdaterats genom att hålla markören över ikonen längst upp till höger på sidan. Detta visar när den sista datapunkten hämtades.
+`Read-only` användare kan logga in på sin instrumentpanel och se hur nyligen data har uppdaterats genom att hålla markören över ikonen längst upp till höger på sidan. Detta visar när den sista datapunkten hämtades.
 
 ![](../../mbi/assets/last-success-data.png)
 
-## [!UICONTROL Admin] Användare
+## [!UICONTROL Admin] användare
 
-`Admin` -användare kan logga in på kontrollpanelen och se den sista datapunkten ovan, tillsammans med en kort statusikon för sina kontointegreringar.
+`Admin` användare kan logga in på instrumentpanelen och se den sista datapunkten ovan, tillsammans med en kort statusikon för sina kontointegreringar.
 
-Mer information får du av administratörer som kan klicka **[!UICONTROL Manage Data]** > **[!UICONTROL Integrations]**.
+Administratörsanvändare kan klicka **[!UICONTROL Manage Data]** > **[!UICONTROL Integrations]** för mer information.
 
 ![](../../mbi/assets/detail-manage-data-integrations.png)
 
@@ -41,4 +41,4 @@ Om en uppdatering inte pågår visas en länk som tvingar en uppdatering att sta
 
 >[!NOTE]
 >
->Om du har öppethållande timmar (tid när du inte vill ha det [!DNL Commerce Intelligence] för att uppdatera dina data) startas en uppdateringscykel som inte respekterar begränsningarna för dessa öppningstider.
+>Om du har öppethållande timmar (tid när du inte vill att [!DNL Commerce Intelligence] ska uppdatera dina data) anges, startar en uppdateringscykel som inte uppfyller begränsningarna för dessa öppningstider.

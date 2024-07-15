@@ -19,7 +19,7 @@ I det här avsnittet visas hur du:
 * ansluta och importera data till [!DNL Commerce Intelligence]
 * visa hur data lagras och struktureras i Datan Warehouse
 * analysera era data
-* använder [!DNL SQL Report Builder]
+* använd [!DNL SQL Report Builder]
 
 ## Relaterad
 

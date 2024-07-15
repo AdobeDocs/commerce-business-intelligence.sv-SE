@@ -13,4 +13,4 @@ ht-degree: 0%
 
 # Ändra åtkomst till delade instrumentpaneler
 
-Åtkomsten till kontrollpanelerna kan ändras när som helst med samma steg för att [dela instrumentpanelen från början](../../data-user/dashboards/share-dashboard-with-users.md){: target=&quot;_blank&quot;}. I listan över användare som visas i `Share Dashboard` uppdaterar du användar-/organisationsbehörigheter efter behov och klickar på **[!UICONTROL Save Changes]** att uppdatera.
+Åtkomsten till instrumentpaneler kan ändras när som helst med samma steg för att [först dela instrumentpanelen](../../data-user/dashboards/share-dashboard-with-users.md){: target=&quot;_blank&quot;}. Uppdatera användar-/organisationsbehörigheter efter behov i listan över användare som visas på menyn `Share Dashboard` och klicka på **[!UICONTROL Save Changes]** för att uppdatera.

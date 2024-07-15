@@ -13,18 +13,18 @@ ht-degree: 0%
 
 # Filteralternativ
 
-Det här avsnittet utforskar några speciella `operators` används i `filters` när [skapa en rapport](../../tutorials/using-visual-report-builder.md){: target=&quot;_blank&quot;} eller [skapa ett mått](../../data-user/reports/ess-manage-data-metrics.md){: target=&quot;_blank&quot;}.
+I det här avsnittet utforskas några speciella `operators` som används i `filters` när [en rapport](../../tutorials/using-visual-report-builder.md){: target=&quot;_blank&quot;} eller [som skapar ett mätvärde](../../data-user/reports/ess-manage-data-metrics.md){: target=&quot;_blank&quot;} skapas.
 
 ## `Filter Operators`
 
-* `LIKE` för mönstermatchning. Detta måste användas med jokertecknen % (för jokertecken med varierande antal bokstäver) eller _ (för jokertecken med en bokstav).  Begränsningen `LIKE \_ake%` skulle returnera true för `Jake Stein`, `Jake Smith`, eller `Fake Smith`.  Det returnerar false för `Drake Smith`.
+* `LIKE` för mönstermatchning. Detta måste användas med jokertecknen % (för jokertecken med varierande antal bokstäver) eller _ (för jokertecken med en bokstav).  Begränsningen `LIKE \_ake%` returnerar till exempel true för `Jake Stein`, `Jake Smith` eller `Fake Smith`.  Det returnerar false för `Drake Smith`.
 
-* `NOT LIKE` liknar mönstermatchning ovan, men kontrollerar för vilka mönster inte matchar.
+* `NOT LIKE` liknar mönstermatchning ovan, men kontrollerar vilka mönster som inte matchar.
 
-* `IS` kontrollerar om kolumnen är `NULL`, eller tom.
+* `IS` kontrollerar om kolumnen är `NULL` eller tom.
 
-* `IS NOT` liknar `IS` -operatorn ovan, men söker efter icke-NULL-kolumner.
+* `IS NOT` liknar operatorn `IS` ovan, men söker efter icke-NULL-kolumner.
 
-* `IN` kontrollerar om ett värde finns i en kommaavgränsad lista. (t.ex. &quot;Färg `IN` red,orange&quot; motsvarar färg `equal to` röd eller färg `equal to` orange).
+* `IN` söker efter ett värdes närvaro i en kommaavgränsad lista. (t.ex. &quot;Färg `IN` röd, orange&quot; motsvarar färgen `equal to` röd ELLER färg `equal to` orange).
 
 * `NOT IN` liknar `IN` ovan, men söker efter ett värdes frånvaro.

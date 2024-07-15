@@ -6,25 +6,25 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Dashboards, Reports
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '274'
 ht-degree: 0%
 
 ---
 
 # Analysera lagernivåer
 
-I det här avsnittet visas hur du konfigurerar en instrumentpanel som ger insikter om ditt nuvarande lager och innehåller instruktioner för kunder om både den äldre arkitekturen eller den nya arkitekturen. Om du inte har **[!UICONTROL Data Warehouse Views]** alternativ under **[!UICONTROL Manage Data]** -menyn. Om du har en äldre arkitektur skickar du en [ny supportförfrågan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) med motivet **[!UICONTROL INVENTORY ANALYSIS]** när du har nått det avsedda avsnittet i _Beräknade kolumner_ instruktionerna nedan.
+I det här avsnittet visas hur du konfigurerar en instrumentpanel som ger insikter om ditt nuvarande lager och innehåller instruktioner för kunder om både den äldre arkitekturen eller den nya arkitekturen. Du använder den äldre arkitekturen om du inte har alternativet **[!UICONTROL Data Warehouse Views]** på menyn **[!UICONTROL Manage Data]**. Om du har en äldre arkitektur skickar du en [ny supportförfrågan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) med ämnet **[!UICONTROL INVENTORY ANALYSIS]** när du har nått det avsedda avsnittet i instruktionerna för _Beräknade kolumner_ nedan.
 
 ## Kolumner att spåra:
 
 ### Kolumner som spårar instruktioner
 
-* **[!UICONTROL cataloginventory_stock_item]** tabell:
+* **[!UICONTROL cataloginventory_stock_item]**-tabell:
    * **`item_id`**
    * **`product_id`**
    * **`qty`**
 
-* **[!UICONTROL catalog_product_entity]** tabell:
+* **[!UICONTROL catalog_product_entity]**-tabell:
    * **`entity_id`**
    * **`sku`**
    * **`created_at`**
@@ -33,7 +33,7 @@ I det här avsnittet visas hur du konfigurerar en instrumentpanel som ger insikt
 
 +++ Ny arkitektur
 
-* **[!UICONTROL catalog_product_entity]** tabell:
+* **[!UICONTROL catalog_product_entity]**-tabell:
    * **`Product's most recent order date`**
       * [!UICONTROL Column type]: `Many to One`
       * 
@@ -72,14 +72,14 @@ I det här avsnittet visas hur du konfigurerar en instrumentpanel som ger insikt
       * 
         [!UICONTROL Column equation]: `CALCULATION`
       * [!UICONTROL Column] indata:
-         * S: `Product's lifetime number of items sold`
+         * A: `Product's lifetime number of items sold`
          * B: `Product's first order date`
       * 
         [!UICONTROL Datatype]: `Decimal`
       * Definition:
          * case when A is null or B is null else round(A::decimal/(extract(epoch from (current_timestamp - B))::decimal/604800.0),2) end
 
-* **[!UICONTROL cataloginventory_stock_item]** tabell:
+* **[!UICONTROL cataloginventory_stock_item]**-tabell:
    * **`Sku`**
       * [!UICONTROL Column type]: `One to Many`
       * 
@@ -113,7 +113,7 @@ I det här avsnittet visas hur du konfigurerar en instrumentpanel som ger insikt
       * 
         [!UICONTROL Column equation]: `CALCULATION`
       * [!UICONTROL Column] indata:
-         * S: `qty`
+         * A: `qty`
          * B: `Avg products sold per week (all time)`
       * 
         [!UICONTROL Datatype]: `Decimal`
@@ -123,7 +123,7 @@ I det här avsnittet visas hur du konfigurerar en instrumentpanel som ger insikt
 +++
 +++ Äldre arkitektur
 
-* **[!UICONTROL catalog_product_entity]** tabell:
+* **[!UICONTROL catalog_product_entity]**-tabell:
    * **`Product's most recent order date`**
       * [!UICONTROL Column type]: `Many to One`
       * 
@@ -158,9 +158,9 @@ I det här avsnittet visas hur du konfigurerar en instrumentpanel som ger insikt
          * [A] `Ordered products we count`
 
    * **`Avg products sold per week (all time)`**
-      * Skapas av en analytiker när du skickar in **[LAGERANALYS]** supportförfrågan
+      * Skapas av en analytiker när du skickar din **[INVENTORY ANALYSIS]** -supportförfrågan
 
-* **[!UICONTROL cataloginventory_stock_item]** tabell:
+* **[!UICONTROL cataloginventory_stock_item]**-tabell:
    * **`Sku`**
       * [!UICONTROL Column type]: `One to Many`
       * 
@@ -190,7 +190,7 @@ I det här avsnittet visas hur du konfigurerar en instrumentpanel som ger insikt
       * Välj en [!UICONTROL column]: `Avg products sold per week (all time)`
 
    * **`Weeks on hand`**
-      * Skapas av en analytiker när du skickar in **[!UICONTROL INVENTORY ANALYSIS]** supportförfrågan
+      * Skapas av en analytiker när du skickar din **[!UICONTROL INVENTORY ANALYSIS]**-supportförfrågan
 
 +++
 
@@ -198,11 +198,11 @@ I det här avsnittet visas hur du konfigurerar en instrumentpanel som ger insikt
 
 ### Mätinstruktioner
 
-* **[!UICONTROL cataloginventory_stock_item]** tabell:
+* **[!UICONTROL cataloginventory_stock_item]**-tabell:
    * **`Inventory on hand`**: det här måttet utför en
       * **Summa** på
       * **`qty`** kolumn sorterad efter
-      * [Ingen] kolumn
+      * [Ingen]-kolumn
 
 ## Rapporter
 
@@ -242,4 +242,4 @@ I det här avsnittet visas hur du konfigurerar en instrumentpanel som ger insikt
    * 
      [!UICONTROL Chart type]: `Table`
 
-Om du stöter på några frågor när du skapar den här analysen eller bara vill engagera Professional Services-teamet, [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+[Kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) om du får frågor under arbetet med att skapa den här analysen, eller om du bara vill engagera Professional Services-teamet.

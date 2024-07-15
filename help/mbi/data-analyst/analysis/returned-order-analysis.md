@@ -6,7 +6,7 @@ role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '426'
 ht-degree: 0%
 
 ---
@@ -17,22 +17,22 @@ I det här avsnittet visas hur du konfigurerar en kontrollpanel som innehåller 
 
 ![](../../assets/detailed-returns-dboard.png)
 
-Innan du kommer igång måste du vara en [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) kund och bör se till att företaget använder `enterprise\_rma` register för returer.
+Innan du börjar måste du vara [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html)-kund och se till att ditt företag använder tabellen `enterprise\_rma` för returer.
 
-Denna analys innehåller [avancerade beräknade kolumner](../data-warehouse-mgr/adv-calc-columns.md).
+Den här analysen innehåller [avancerade beräknade kolumner](../data-warehouse-mgr/adv-calc-columns.md).
 
 ## Komma igång
 
 Kolumner att spåra
 
-* **`enterprise_rma`** eller **`rma`** table
+* **`enterprise_rma`** eller **`rma`**-tabell
 * **`entity_id`**
 * **`status`**
 * **`order_id`**
 * **`customer_id`**
 * **`date_requested`**
 
-* **`enterprise_rma_item_entity`** eller **`rma_item_entity`** table
+* **`enterprise_rma_item_entity`** eller **`rma_item_entity`**-tabell
 * **`entity_id`**
 * **`rma_entity_id`**
 * **`qty_returned`**
@@ -43,12 +43,12 @@ Kolumner att spåra
 
 Filteruppsättningar att skapa
 
-* **`enterprise_rma`** table
+* **`enterprise_rma`**-tabell
 * Filteruppsättningsnamn: `Returns we count`
 * Filteruppsättningslogik:
    * Platshållare - ange din egna logik här
 
-* **`enterprise_rma_item_entity`** table
+* **`enterprise_rma_item_entity`**-tabell
 * Filteruppsättningsnamn: `Returns items we count`
 * Filteruppsättningslogik:
    * Platshållare - ange din egna logik här
@@ -57,7 +57,7 @@ Filteruppsättningar att skapa
 
 Kolumner att skapa
 
-* **`enterprise_rma`** table
+* **`enterprise_rma`**-tabell
 * **`Order's created at`**
 * Välj en definition: `Joined Column`
 * [!UICONTROL Create Path]:
@@ -76,9 +76,9 @@ Kolumner att skapa
 * Välj en [!UICONTROL column]: `Customer's order number`
    * `enterprise_rma.order_id = sales_flat_order.entity_id`
 
-* **`Time between order's created_at and date_requested`** skapas av en analytiker som en del av `[RETURNS ANALYSIS]` biljett
+* **`Time between order's created_at and date_requested`** skapas av en analytiker som en del av din `[RETURNS ANALYSIS]`-biljett
 
-* **`enterprise_rma_item_entity`** table
+* **`enterprise_rma_item_entity`**-tabell
 * **`return_date_requested`**
 * Välj en definition: `Joined Column`
 * [!UICONTROL Create Path]:
@@ -91,16 +91,16 @@ Kolumner att skapa
 * Välj en [!UICONTROL column]: `date_requested`
    * `enterprise_rma_item_entity.rma_entity_id = enterprise_rma.entity_id`
 
-* **`Return item total value (qty_returned * price)`** skapas av en analytiker som en del av `[RETURNS ANALYSIS]` biljett
+* **`Return item total value (qty_returned * price)`** skapas av en analytiker som en del av din `[RETURNS ANALYSIS]`-biljett
 
-* **`sales_flat_order`** table
+* **`sales_flat_order`**-tabell
 * **`Order contains a return? (1=yes/0=No)`**
 * Välj en definition: `Exists`
 * Välj en [!UICONTROL table]: `enterprise_rma`
    * `enterprise_rma.order_id = sales_flat_order.entity_id`
 
-* **`Customer's previous order number`** skapas av en analytiker som en del av `[RETURNS ANALYSIS]` biljett
-* **`Customer's previous order contains return? (1=yes/0=no)`** skapas av en analytiker som en del av `[RETURNS ANALYSIS]` biljett
+* **`Customer's previous order number`** skapas av en analytiker som en del av din `[RETURNS ANALYSIS]`-biljett
+* **`Customer's previous order contains return? (1=yes/0=no)`** skapas av en analytiker som en del av din `[RETURNS ANALYSIS]`-biljett
 
 >[!NOTE]
 >
@@ -109,40 +109,40 @@ Kolumner att skapa
 ### Mått
 
 * **Returnerar**
-* I **`enterprise_rma`** table
-* Det här måttet utför en **Antal**
-* På **`entity_id`** kolumn
+* I tabellen **`enterprise_rma`**
+* Detta mått utför ett **antal**
+* I kolumnen **`entity_id`**
 * Beställd av **`date_requested`**
 * [!UICONTROL Filter]: `Returns we count`
 
-* **Returnerade artiklar**
-* I **`enterprise_rma_item_entity`** table
-* Det här måttet utför en **Summa**
-* På **`qty_approved`** kolumn
+* **Returnerade objekt**
+* I tabellen **`enterprise_rma_item_entity`**
+* Detta mått utför en **summa**
+* I kolumnen **`qty_approved`**
 * Beställd av **`return date_requested`**
 * [!UICONTROL Filter]: `Returns we count`
 
 * **Returnerat artikeltotalvärde**
-* I **`enterprise_rma_item_entity`** table
-* Det här måttet utför en **Summa**
-* På **`Returned item total value (qty_returned * price)`** kolumn
+* I tabellen **`enterprise_rma_item_entity`**
+* Detta mått utför en **summa**
+* I kolumnen **`Returned item total value (qty_returned * price)`**
 * Beställd av **`return date_requested`**
 * [!UICONTROL Filter]: `Returns we count`
 
-* **Genomsnittlig tid mellan order och retur**
-* I **`enterprise_rma`** table
-* Det här måttet utför en **Genomsnittlig**
-* På **`Time between order's created_at and date_requested`** kolumn
+* **Genomsnittlig tid mellan beställning och retur**
+* I tabellen **`enterprise_rma`**
+* Det här måttet utför ett **genomsnitt**
+* I kolumnen **`Time between order's created_at and date_requested`**
 * Beställd av **`date_requested`**
 * [!UICONTROL Filter]: `Returns we count`
 
 >[!NOTE]
 >
->Se till att [lägga till alla nya kolumner som dimensioner till mått](../data-warehouse-mgr/manage-data-dimensions-metrics.md) innan du skapar nya rapporter.
+>Se till att [lägga till alla nya kolumner som mått i mätvärden](../data-warehouse-mgr/manage-data-dimensions-metrics.md) innan du skapar nya rapporter.
 
 ### Rapporter
 
-* **Sannolikhet för upprepad order efter att ha gjort en retur**
+* **Sannolikhet för upprepade order efter att en retur har gjorts**
 * Mått `A`: `Number of orders with returns`
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]:
@@ -167,7 +167,7 @@ Kolumner att skapa
 * 
   [!UICONTROL-diagramtyp]: `Bar`
 
-* **Genomsnittlig tid för retur (hela tiden)**
+* **Genomsnittlig tid för att returnera (hela tiden)**
 * Mått `A`: `Avg time between order and return`
 * [!UICONTROL Metric]: `Avg time between order and return`
 
@@ -196,7 +196,7 @@ Kolumner att skapa
   [!UICONTROL-intervall]: `None`
 * [!UICONTROL Chart Type]: `Number - % of orders with return`
 
-* **Intäkter per månad**
+* **Intäkter som returneras per månad**
 * Mått `A`: `Returned item total value`
 * [!UICONTROL Metric]: `Returned item total value`
 
@@ -205,7 +205,7 @@ Kolumner att skapa
 * 
   [!UICONTROL-diagramtyp]: `Line`
 
-* **Kunder som har gjort returer och inte köpt på nytt**
+* **Kunder som har gjort returer och inte köpt igen**
 * Mått `A`: `Number of orders with returns`
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]:
@@ -220,9 +220,9 @@ Kolumner att skapa
 * 
   [!UICONTROL-diagramtyp]: `Table`
 
-* **Returränta per artikel**
+* **Returhastighet per objekt**
 * Mått `A`: `Returned items` (Dölj)
-* [!UICONTROL Metric]: Returnerade objekt
+* [!UICONTROL Metric]: Returnerade artiklar
 
 * Mått `B`: `Items sold` (Dölj)
 * [!UICONTROL Metric]: `Number of orders`
@@ -242,4 +242,4 @@ Kolumner att skapa
 
 När du har kompilerat alla rapporter kan du ordna dem på kontrollpanelen som du vill. Resultatet kan se ut som kontrollpanelen ovan.
 
-Om du stöter på några frågor när du skapar den här analysen eller vill engagera Professional Services-teamet, [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+[Kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) om du får frågor när du skapar den här analysen eller vill engagera Professional Services-teamet.

@@ -1,6 +1,6 @@
 ---
-title: Koppla samman [!DNL MySQL] Databas
-description: Se hur du kan koppla samman [!DNL MySQL] databaser med [!DNL Commerce Intelligence].
+title: Anslut din [!DNL MySQL] databas
+description: Se hur du ansluter dina [!DNL MySQL] databaser med [!DNL Commerce Intelligence].
 exl-id: 22632cab-3c44-4a1b-8809-ac6cba5f655a
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -11,6 +11,6 @@ ht-degree: 0%
 
 ---
 
-# Koppla samman `MySQL` Databas
+# Anslut din `MySQL`-databas
 
 Info kommer.

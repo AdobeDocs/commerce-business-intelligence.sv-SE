@@ -13,4 +13,4 @@ ht-degree: 0%
 
 # Dela data
 
-Det är viktigt att kunna förmedla status och trender inom företaget. I det här avsnittet får du lära dig att exportera och dela data från ett diagram till en `.csv` eller `Excel` -fil. Lär dig även hur du konfigurerar och automatiskt skickar e-postsammanfattningar av dina data till viktiga intressenter.
+Det är viktigt att kunna förmedla status och trender inom företaget. I det här avsnittet får du lära dig att exportera och dela data från ett diagram till en `.csv`- eller `Excel`-fil. Lär dig även hur du konfigurerar och automatiskt skickar e-postsammanfattningar av dina data till viktiga intressenter.

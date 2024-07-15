@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Diagramdatainformation
 
-Välj själv - normal engelska eller måttdefinition. Användarna kan kommentera diagram och visa mätvärden och formler i ett diagram genom att klicka på _Information_ i det övre högra hörnet av ett diagram.
+Välj själv - normal engelska eller måttdefinition. Användarna kan kommentera diagram och visa mätvärden och formler i ett diagram genom att klicka på ikonen _Information_ i det övre högra hörnet av ett diagram.
 
 ## Relaterat:
 

@@ -17,15 +17,15 @@ Om dina tabeller för närvarande inte tillåter inkrementell replikering, se f�
 
 ## Modifieringar för Modified At
 
-The `Modified At` som är den mest idealiska replikeringsmetoden använder en `datetime` för att identifiera nya och/eller uppdaterade data. Kom ihåg att `datetime` -kolumnen i tabeller som använder den här metoden måste indexeras och får inte innehålla null-värden när som helst.
+Metoden `Modified At`, som är den mest idealiska replikeringsmetoden, använder en `datetime`-kolumn för att identifiera nya och/eller uppdaterade data. Kom ihåg att kolumnen `datetime` i tabeller som använder den här metoden måste indexeras och att den inte kan innehålla null-värden när som helst.
 
-Om tabellen inte har en `datetime` kolumn kan du lägga till ett index `modified at` kolumn. Null-värden tillåts inte i en `modified at` kolumn. Kontrollera att kolumnen är ifylld för varje rad.
+Om tabellen inte har någon `datetime`-kolumn kan du lägga till en `modified at`-indexkolumn. Null-värden tillåts inte i en `modified at`-kolumn. Kontrollera att kolumnen är ifylld för varje rad.
 
-För att säkerställa `Modified At` -metoden fungerar som den ska, du kan inte ta bort rader från tabellen. Du bör i stället markera raden som ogiltig genom att lägga till en `deleted` kolumn till tabellen. Den här kolumnen returnerar en `1` om raden är ogiltig och `0` annars. Du kan sedan använda den här kolumnen för att filtrera bort ogiltiga rader när du skapar mätvärden och rapporter.
+Du kan inte ta bort rader från tabellen om du vill vara säker på att metoden `Modified At` fungerar som den ska. Du bör i stället markera raden som ogiltig genom att lägga till en `deleted`-kolumn i tabellen. Den här kolumnen returnerar `1` om raden är ogiltig, i annat fall `0`. Du kan sedan använda den här kolumnen för att filtrera bort ogiltiga rader när du skapar mätvärden och rapporter.
 
 ## Modifieringar för enskild autoökning av primärnyckel
 
-Om `Modified At` kan inte aktiveras, då är primärnyckeln för enkel autoökning nästa bästa alternativ. Nya data identifieras i tabeller med den här metoden genom att söka efter primärnyckelvärden som är högre än det högsta värdet i Datan Warehouse.
+Om metoden `Modified At` inte kan aktiveras är primärnyckeln för enkel autoökning det näst bästa alternativet. Nya data identifieras i tabeller med den här metoden genom att söka efter primärnyckelvärden som är högre än det högsta värdet i Datan Warehouse.
 
 Kom ihåg att tabeller som använder den här metoden är en kolumn med heltalsökning som automatiskt ökar primärnycklarna. Om du vill använda den här metoden i databasen gör du följande ändringar:
 
@@ -34,4 +34,4 @@ Kom ihåg att tabeller som använder den här metoden är en kolumn med heltals�
 
 ## Radbrytning
 
-Genom att göra mindre ändringar i tabellerna kan du dra nytta av de snabbare och effektivare inkrementella replikeringsmetoderna. Om detta inte är möjligt kan du dock utföra andra åtgärder för att [minska uppdateringstiden](../best-practices/reduce-update-cycle-time.md) och [optimera databasen](../best-practices/opt-db-analysis.md).
+Genom att göra mindre ändringar i tabellerna kan du dra nytta av de snabbare och effektivare inkrementella replikeringsmetoderna. Om detta inte är möjligt kan du ändå utföra andra åtgärder för att [minska uppdateringstiden](../best-practices/reduce-update-cycle-time.md) och [optimera databasen](../best-practices/opt-db-analysis.md).

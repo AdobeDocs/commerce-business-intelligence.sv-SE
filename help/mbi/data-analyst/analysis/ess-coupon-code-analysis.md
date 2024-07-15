@@ -23,13 +23,13 @@ I det här avsnittet beskrivs stegen som krävs för att skapa den här analysen
 
 Först en anteckning om hur kupongkoder spåras. Om en kund har tillämpat en kupong på en order händer tre saker:
 
-* Rabatten framgår av `base_grand_total` mängd (din `Revenue` mätvärden i Commerce Intelligence)
-* Kupongkoden lagras i `coupon_code` fält. Om det här fältet är NULL (tomt) är ordern inte kopplad till någon kupong.
-* Det diskonterade beloppet lagras i `base_discount_amount`. Beroende på din konfiguration kan det här värdet vara negativt eller positivt.
+* En rabatt visas i beloppet `base_grand_total` (ditt `Revenue`-mått i Commerce Intelligence)
+* Kupongkoden lagras i fältet `coupon_code`. Om det här fältet är NULL (tomt) är ordern inte kopplad till någon kupong.
+* Det rabatterade beloppet lagras i `base_discount_amount`. Beroende på din konfiguration kan det här värdet vara negativt eller positivt.
 
 Från och med Commerce 2.4.7 kan kunden lägga till mer än en kupongkod i en order. I detta fall:
 
-* Alla kupongkoder som används lagras i `coupon_code` fält för `sales_order_coupons`. Den första kupongkoden som används lagras också i `coupon_code` fält för `sales_order`. Om det här fältet är NULL (tomt) är ordern inte kopplad till någon kupong.
+* Alla kupongkoder som används lagras i fältet `coupon_code` i `sales_order_coupons`. Den första kupongkoden som används lagras också i fältet `coupon_code` i `sales_order`. Om det här fältet är NULL (tomt) är ordern inte kopplad till någon kupong.
 
 ## Bygga ett mått
 
@@ -38,9 +38,9 @@ Det första steget är att skapa ett nytt mått med följande steg:
 * Navigera till **[!UICONTROL Manage Data > Metrics > Create New Metric]**.
 
 * Välj `sales_order`.
-* Det här måttet utför en **Summa** på **base_rabatt_amount** kolumn, sorterad efter **created_at**.
+* Det här måttet utför en **summa** i kolumnen **base_rabatt_amount** som sorteras av **created_at**.
    * [!UICONTROL Filters]:
-      * Lägg till `Orders we count` (Sparad filteruppsättning)
+      * Lägg till `Orders we count` (sparad filteruppsättning)
       * Lägg till följande:
          * `coupon_code`**ÄR INTE**`[NULL]`
       * Ge måttet ett namn, till exempel `Coupon discount amount`.
@@ -59,7 +59,7 @@ Det första steget är att skapa ett nytt mått med följande steg:
 
 >[!NOTE]
 >
->The [!UICONTROL Time Period]** för varje rapport anges som `All-time`. Du kan ändra detta efter dina analysbehov. Adobe rekommenderar att alla rapporter på kontrollpanelen täcker samma tidsperiod, till exempel `All time`, `Year-to-date`, eller `Last 365 days`.
+>[!UICONTROL Time Period]** för varje rapport visas som `All-time`. Du kan ändra detta efter dina analysbehov. Adobe rekommenderar att alla rapporter på den här instrumentpanelen täcker samma tidsperiod, till exempel `All time`, `Year-to-date` eller `Last 365 days`.
 
 * **Beställningar med kuponger**
    * 
@@ -76,7 +76,7 @@ Det första steget är att skapa ett nytt mått med följande steg:
    * 
      [!UICONTROL-mått]: `Orders`
       * Lägg till filter:
-         * [`A`] `coupon_code` **ÄR** `[NULL]`
+         * [`A`] `coupon_code` **IS** `[NULL]`
 
    * [!UICONTROL Time period]: `All time`
    * 
@@ -101,7 +101,7 @@ Det första steget är att skapa ett nytt mått med följande steg:
      [!UICONTROL-intervall]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
 
-* **Inkomster under hela löptiden: Kupongförvärvade kunder**
+* **Inkomster för genomsnittlig livstid: Kuponghanterade kunder**
    * [!UICONTROL Metric]: `Avg lifetime revenue`
       * Lägg till filter:
          * [`A`] `Customer's first order's coupon_code` **ÄR INTE** `[NULL]`
@@ -111,17 +111,17 @@ Det första steget är att skapa ett nytt mått med följande steg:
      [!UICONTROL-intervall]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
 
-* **Genomsnittlig livslängdsintäkt: Icke-kupongförvärvade kunder**
+* **Inkomster för livslängd i genomsnitt: Kunder som inte har kuponganskaffats**
    * [!UICONTROL Metric]: `Avg lifetime revenue`
       * Lägg till filter:
-         * [A] `Customer's first order's coupon_code` **ÄR**`[NULL]`
+         * [A] `Customer's first order's coupon_code` **IS**`[NULL]`
 
    * [!UICONTROL Time period]: `All time`
    * 
      [!UICONTROL-intervall]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
 
-* **Kuponganvändningsinformation (första beställningen)**
+* **Kuponganvändningsinformation (första gången beställningen)**
    * Mått `1`: `Orders`
       * Lägg till filter:
          * [`A`] `coupon_code` **ÄR INTE**`[NULL]`
@@ -132,7 +132,7 @@ Det första steget är att skapa ett nytt mått med följande steg:
          * [`A`] `coupon_code` **ÄR INTE**`[NULL]`
          * [`B`] `Customer's order number` **Lika med** `1`
 
-      * Byt namn:  `Net revenue`
+      * Byt namn: `Net revenue`
 
    * Mått `3`: `Coupon discount amount`
       * Lägg till filter:
@@ -160,17 +160,17 @@ Det första steget är att skapa ett nytt mått med följande steg:
    * 
      [!UICONTROL-diagramtyp]: `Table`
 
-* **Genomsnittlig livslängdsintäkt per kupong för första ordern**
-   * [!UICONTROL Metric]:**Genomsnittlig intäkt för livstid**
+* **Genomsnittlig livstidsintäkt per kupong för första ordern**
+   * [!UICONTROL Metric]:**Genomsnittlig livstidsintäkt**
       * Lägg till filter:
-         * [`A`] `coupon_code` **ÄR**`[NULL]`
+         * [`A`] `coupon_code` **IS**`[NULL]`
 
    * [!UICONTROL Time period]: `All time`
    * 
      [!UICONTROL-intervall]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
 
-* **Kuponganvändningsinformation (första beställningen)**
+* **Kuponganvändningsinformation (första gången beställningen)**
    * [!UICONTROL Metric]: `Avg lifetime revenue`
       * Lägg till filter:
          * [`A`] `Customer's first order's coupon_code` **ÄR INTE** `[NULL]`
@@ -191,7 +191,7 @@ Det första steget är att skapa ett nytt mått med följande steg:
 
    * Mått `2`: `New customers`
       * Lägg till filter:
-         * [`A`] `coupon_code` **ÄR**`[NULL]`
+         * [`A`] `coupon_code` **IS**`[NULL]`
 
       * [!UICONTROL Rename]: `Non-coupon acquisition customer`
 
@@ -203,6 +203,6 @@ När du har skapat rapporterna kan du se bilden högst upp i det här avsnittet 
 
 >[!NOTE]
 >
->Från och med Adobe Commerce 2.4.7 kan man använda **quote_coupons** och **sales_order_coupons** tabeller för att få insikter om hur kunderna använder flera kuponger.
+>Från och med Adobe Commerce 2.4.7 kan kunderna använda tabellerna **quote_coupons** och **sales_order_coupons** för att få insikter om hur kunderna använder flera kuponger.
 
 ![](../../assets/multicoupon_relationship_tables.png)

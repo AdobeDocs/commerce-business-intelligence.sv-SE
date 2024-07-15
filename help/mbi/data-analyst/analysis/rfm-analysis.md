@@ -6,7 +6,7 @@ role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '527'
+source-wordcount: '532'
 ht-degree: 0%
 
 ---
@@ -21,21 +21,21 @@ I det här avsnittet beskrivs hur du skapar en instrumentpanel där du kan segme
 
 ![](../../assets/blobid0.png)
 
-RFM-analysen kan bara konfigureras om du har [!DNL Adobe Commerce Intelligence] Pro-plan för den nya arkitekturen (om du till exempel har `Data Warehouse Views` alternativ under `Manage Data` meny). Dessa kolumner kan skapas från **[!DNL Manage Data > Data Warehouse]** sida. Detaljerade instruktioner finns nedan.
+RFM-analysen kan bara konfigureras om du har [!DNL Adobe Commerce Intelligence] Pro-planen på den nya arkitekturen (till exempel om du har alternativet `Data Warehouse Views` på menyn `Manage Data`). Dessa kolumner kan skapas från sidan **[!DNL Manage Data > Data Warehouse]**. Detaljerade instruktioner finns nedan.
 
 ## Komma igång
 
 Du måste först överföra en fil som bara innehåller en primärnyckel med värdet 1. Detta gör att du kan skapa vissa nödvändiga beräknade kolumner för analysen.
 
-Du kan använda den här [artikel](../importing-data/connecting-data/using-file-uploader.md) och bilden nedan för att formatera filen.
+Du kan använda den här [artikeln](../importing-data/connecting-data/using-file-uploader.md) och bilden nedan för att formatera filen.
 
 ## Beräknade kolumner
 
-Ytterligare en skillnad görs om ditt företag tillåter gästbeställningar. I så fall kan du ignorera alla steg för `customer_entity` tabell. Om gästorder inte tillåts, ignorera alla steg för `sales_flat_order` tabell.
+Ytterligare en skillnad görs om ditt företag tillåter gästbeställningar. I så fall kan du ignorera alla steg för tabellen `customer_entity`. Om gästorder inte tillåts, ignorera alla steg för tabellen `sales_flat_order`.
 
 Kolumner att skapa
 
-* **`Sales_flat_order/customer_entity`** table
+* **`Sales_flat_order/customer_entity`**-tabell
 * `Customer's last order date`
 * [!UICONTROL Column type]: `Many to one > Max`
 * [!UICONTROL Pat]: `sales_flat_order.customer_id > customer_entity.entity_id`
@@ -44,7 +44,7 @@ Kolumner att skapa
 
 * 
       Sekunder sedan kundens senaste orderdatum
-  * [!UICONTROL Column type]: - &quot;Samma tabell > Ålder
+  * [!UICONTROL Column type]: -     &quot;Samma tabell > Ålder
 * Markerad [!UICONTROL column]: `Customer's last order date`
 
 * (input) Count reference reference
@@ -55,13 +55,13 @@ Kolumner att skapa
 * 
   [!UICONTROL-datatyp]: `Integer`
 
-* **Räkningsreferens** table (this is the file you uploaded with the number &quot;1&quot;)
+* Tabellen **Antal referenser** (det här är filen som du överförde med talet &quot;1&quot;)
 * Antal kunder
 * [!UICONTROL Column type]: `Many to One > Count Distinct`
 * [!UICONTROL Path]: `ales_flat_order.(input) reference > Count reference.Primary Key` ELLER `customer_entity.(input)reference > Count Reference`. `Primary Key`
 * Markerad [!UICONTROL column]: `sales_flat_order.customer_email` ELLER `customer_entity.entity_id`
 
-* **Customer_entity** table
+* tabellen **Customer_entity**
 * Antal kunder
 * [!UICONTROL Column type]: `One to Many > JOINED_COLUMN`
 * [!UICONTROL Path]: `customer_entity`.(input) reference > Customer Concentration. `Primary Key`
@@ -94,7 +94,7 @@ Kolumner att skapa
 * Rankning efter kundens livstidsantal order
 * 
   [!UICONTROL-kolumntyp]: – "Samma tabell > Beräkning"
-* [!UICONTROL Inputs]: - **(input) Rankning per kundens livstid antal order**, **Antal kunder**
+* [!UICONTROL Inputs]: - **(indata) Rankning efter kundens livstidsantal order**, **Antal kunder**
 * [!UICONTROL Calculation]: - **case when A is null then null else (B-(A-1)) end**
 * [!UICONTROL Datatype]: - Heltal
 
@@ -124,14 +124,14 @@ Kolumner att skapa
 * 
   [!UICONTROL-datatyp]: String
 
-* **Räkningsreferens** table
+* Tabellen **Räkningsreferens**
 * [!UICONTROL Number of customers]: `(RFM > 0)`
 * [!UICONTROL Column type]: `Many to One > Count Distinct`
 * [!UICONTROL Path]: `sales_flat_order.(input) reference > Customer Concentration. Primary Key` ELLER `customer_entity.(input)reference > Customer Concentration.Primary Key`
 * Markerad [!UICONTROL column]: `sales_flat_order.customer_email` ELLER `customer_entity.entity_id`
-* [!UICONTROL Filter]: `Customer's RFM score (by percentile)` Inte lika med 000
+* [!UICONTROL Filter]: `Customer's RFM score (by percentile)` är inte lika med 000
 
-* **Customer_entity** table
+* tabellen **Customer_entity**
 * [!UICONTROL Number of customers]: `(RFM > 0)`
 * [!UICONTROL Column type]: `One to Many > JOINED_COLUMN`
 * [!UICONTROL Path]: `customer_entity.(input) reference > Customer Concentration.Primary Key`
@@ -139,7 +139,7 @@ Kolumner att skapa
 
 * Kundens senaste poäng `(R+F+M)`
 * [!UICONTROL Column type]: `Same table > Calculation`
-* [!UICONTROL Inputs]: – `Customer's recency score (by percentiles)`, `Customer's frequency score (by percentiles)`, `Customer's monetary score (by percentiles)`
+* [!UICONTROL Inputs]: - `Customer's recency score (by percentiles)`, `Customer's frequency score (by percentiles)`, `Customer's monetary score (by percentiles)`
 * [!UICONTROL Calculation]: `case when (A IS NULL or B IS NULL or C IS NULL) then null else A+B+C end`
 * 
   [!UICONTROL-datatyp]: `Integer`
@@ -148,7 +148,7 @@ Kolumner att skapa
 * [!UICONTROL Column type]: `Same table > Event Number`
 * [!UICONTROL Event owner]: `(input) reference for count`
 * [!UICONTROL Event rank]: `Customer's recency score (R+F+M)`
-* [!UICONTROL Filter]: `Customer's RFM score (by percentile)` Inte lika med 000
+* [!UICONTROL Filter]: `Customer's RFM score (by percentile)` är inte lika med 000
 
 * Rankning efter kundens totala RFM-poäng
 * [!UICONTROL Column type]: `Same table > Calculation`
@@ -174,11 +174,11 @@ Inga nya mätvärden!
 
 >[!NOTE]
 >
->Se till att [lägga till alla nya kolumner som dimensioner till mått](../data-warehouse-mgr/manage-data-dimensions-metrics.md) innan du skapar nya rapporter.
+>Se till att [lägga till alla nya kolumner som mått i mätvärden](../data-warehouse-mgr/manage-data-dimensions-metrics.md) innan du skapar nya rapporter.
 
 ## Rapporter
 
-* **Kunder efter RFM-gruppering**
+* **Kunder per RFM-gruppering**
 * Mått `A`: `New customers`
 * [!UICONTROL Metric]: `New customers`
 * [!UICONTROL Filter]: `Customer's RFM score (by percentiles) Not Equal to 000`

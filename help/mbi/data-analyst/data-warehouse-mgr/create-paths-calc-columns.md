@@ -6,7 +6,7 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '1019'
+source-wordcount: '1007'
 ht-degree: 0%
 
 ---
@@ -15,18 +15,18 @@ ht-degree: 0%
 
 ## Uppdatera beräknade kolumner
 
-När [skapa beräknade kolumner](../data-warehouse-mgr/creating-calculated-columns.md) i Datan Warehouse uppmanas du att definiera en sökväg som beskriver hur tabellen du skapar en kolumn i är relaterad till tabellen som du hämtar information från. För att kunna skapa en bana måste du känna till två saker:
+När du [skapar beräknade kolumner](../data-warehouse-mgr/creating-calculated-columns.md) i Datan Warehouse uppmanas du att definiera en sökväg som beskriver hur tabellen du skapar en kolumn i är relaterad till tabellen som du hämtar information från. För att kunna skapa en bana måste du känna till två saker:
 
 1. Hur tabellerna i databaserna relaterar till varandra
 1. Primära och utländska nycklar som definierar relationen
 
-Om du känner till den här informationen kan du enkelt skapa en sökväg enligt instruktionerna i det här avsnittet. Du kan fråga en teknisk expert i din organisation eller kontakta [Professional Services Team](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+Om du känner till den här informationen kan du enkelt skapa en sökväg enligt instruktionerna i det här avsnittet. Du kan fråga en teknisk expert i din organisation eller kontakta [Professional Services-teamet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ## Uppdateringar om tabellrelationer och nyckeltyper {#refresher}
 
 ### Tabellrelationer {#relationships}
 
-Detta begrepp beskrivs i [Artikel om att förstå och utvärdera tabellrelationer](../../data-analyst/data-warehouse-mgr/table-relationships.md)Men en snabb sammanfattning skadar ingen, eller hur?
+Det här konceptet beskrivs i artikeln [Förstå och utvärdera tabellrelationer](../../data-analyst/data-warehouse-mgr/table-relationships.md), men en snabb sammanfattning skadar aldrig någon, eller hur?
 
 Tabeller kan relateras till varandra på ett av tre sätt:
 
@@ -42,58 +42,58 @@ När en relation mellan två tabeller tolkas kan den användas för att bestämm
 
 ### Primära och utländska nycklar {#keys}
 
-A `Primary Key` är en oföränderlig kolumn eller en uppsättning kolumner som skapar unika värden i en tabell. När en kund t.ex. gör en beställning på en webbplats läggs en ny rad till i `orders` tabellen i kundvagnen, med en ny `order_id`. Detta `order_id` låter både kunden och företaget följa utvecklingen av den specifika beställningen. Eftersom order-ID är unikt är det vanligtvis `Primary Key` av `orders` tabell.
+En `Primary Key` är en oföränderlig kolumn eller en uppsättning kolumner som skapar unika värden i en tabell. När en kund t.ex. gör en beställning på en webbplats läggs en ny rad till i tabellen `orders` i kundvagnen, med en ny `order_id`. Med denna/detta `order_id` kan både kunden och företaget spåra förloppet för den specifika beställningen. Eftersom order-ID är unikt är det vanligtvis `Primary Key` i en `orders`-tabell.
 
-A `Foreign Key` är en kolumn som skapats inuti en tabell som länkar till `Primary Key` kolumn i en annan tabell. Sekundära nycklar skapar referenser mellan tabeller så att analytikerna enkelt kan söka efter och länka ihop poster. Säg att ni ville veta vilka order som tillhör var och en av era kunder. The `customer id` kolumn (`Primary Key` i `customers` tabellen) och `order_id` kolumn (`Foreign Key` i `customers` tabell, referera till `Primary Key` i `orders` table) kan vi länka och analysera den här informationen. När du skapar en bana ombeds du definiera båda `Primary Key` och `Foreign Key`.
+En `Foreign Key` är en kolumn som skapats inuti en tabell som länkar till kolumnen `Primary Key` i en annan tabell. Sekundära nycklar skapar referenser mellan tabeller så att analytikerna enkelt kan söka efter och länka ihop poster. Säg att ni ville veta vilka order som tillhör var och en av era kunder. `customer id`-kolumnen (`Primary Key` i tabellen `customers`) och `order_id`-kolumnen (`Foreign Key` i tabellen `customers`, som refererar till `Primary Key` i tabellen `orders`) gör att vi kan länka och analysera den här informationen. När du skapar en sökväg ombeds du definiera både `Primary Key` och `Foreign Key`.
 
 ## Skapa en bana {#createpath}
 
 När du skapar en kolumn i Datan Warehouse måste du definiera sökvägen som hämtar information från en tabell till en annan. Ibland fylls banor i i förväg eftersom det finns en sökväg mellan tabeller, men om detta inte inträffar måste du skapa en.
 
-Använd relationen mellan **kunder** och **order** för att visa hur man gör. Nedbruten:
+Använd relationen mellan **kunder** och **order** för att visa hur det går till. Nedbruten:
 
-* Relationen är `one-to-many` - en kund kan ha många order, men en order kan bara ha en kund. Detta anger relationens riktning eller var den beräknade kolumnen ska skapas. I det här fallet betyder det information från `orders` tabellen kan läggas in i `customers` tabell.
-* The `primary key` du vill använda är `customers.customerid`eller `customer ID` kolumn i `customers` tabell.
-* The `foreign key` du vill använda är `orders.customerid`eller `customer ID` kolumn i `orders` tabell.
+* Relationen är `one-to-many` - en kund kan ha många order, men en order kan bara ha en kund. Detta anger relationens riktning eller var den beräknade kolumnen ska skapas. I det här fallet betyder det att information från tabellen `orders` kan hämtas till tabellen `customers`.
+* `primary key` som du vill använda är `customers.customerid` eller kolumnen `customer ID` i tabellen `customers`.
+* `foreign key` som du vill använda är `orders.customerid` eller kolumnen `customer ID` i tabellen `orders`.
 
 Nu kan du skapa banan.
 
 1. Klicka på **[!UICONTROL Data > Data Warehouse]**.
-1. Klicka på den tabell i vilken du vill skapa kolumnen i tabelllistan. I detta exempel är det `customers` tabell.
+1. Klicka på den tabell i vilken du vill skapa kolumnen i tabelllistan. I det här exemplet är det tabellen `customers`.
 1. Tabellschemat visas. Klicka på **[!UICONTROL Create New Column]**.
-1. Ge kolumnen ett namn, till exempel `Customer's orders`.
-1. Markera definitionen för kolumnen. Kolla in [Beräknad kolumnstödlinje](../data-warehouse-mgr/creating-calculated-columns.md) för ett praktiskt kalkylblad.
-1. I [!UICONTROL Select table and column] listrutan, klicka på **[!UICONTROL Create new path]** alternativ.
+1. Ge din kolumn ett namn, till exempel `Customer's orders`.
+1. Markera definitionen för kolumnen. Ta en titt på [den beräknade kolumnguiden](../data-warehouse-mgr/creating-calculated-columns.md) om du vill ha ett praktiskt kalkylblad.
+1. Klicka på alternativet **[!UICONTROL Create new path]** i listrutan [!UICONTROL Select table and column].
 
-   ![Skapa banor för beräknade kolumner modal](../../assets/Creating_Paths_modal.png)
+   ![Skapar sökvägar för beräknade kolumner modal](../../assets/Creating_Paths_modal.png)
 
 1. Använd listrutorna för att välja primär- och sekundärnycklar för varje tabell.
 
-   På `Many` sida, du väljer `orders.customerid` - Kom ihåg att kunderna kan ha många order.
+   På `Many`-sidan väljer du `orders.customerid` - kom ihåg att kunderna kan ha många order.
 
-   På `One` sida, du väljer `customers.customerid` - en order kan bara ha en kund.
+   På `One`-sidan väljer du `customers.customerid` - en order kan bara ha en kund.
 
-1. Klicka **[!UICONTROL Save]** för att spara banan och slutföra kolumnskapandet.
+1. Klicka på **[!UICONTROL Save]** om du vill spara sökvägen och slutföra skapandet av kolumnen.
 
 ### Begränsningar för att skapa banor {#limits}
 
-* **[!DNL Commerce Intelligence]kan inte gissa relationer för primär-/sekundärnyckel**. Du vill inte infoga felaktiga data i ditt konto, så du måste skapa sökvägar manuellt.
+* **[!DNL Commerce Intelligence]kan inte gissa primära/externa nyckelrelationer**. Du vill inte infoga felaktiga data i ditt konto, så du måste skapa sökvägar manuellt.
 
-* **För närvarande kan sökvägar bara anges mellan två olika tabeller**. Innebär logiken som du försöker återskapa fler än två tabeller? Det kan sedan vara bra att (1) koppla kolumnerna till en mellanliggande tabell först, sedan till tabellen&quot;Slutdestination&quot; eller (2) läsa med [Professional Services Team](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) för att hitta det bästa sättet att se på era mål.
+* **För närvarande kan sökvägar bara anges mellan två olika tabeller**. Innebär logiken som du försöker återskapa fler än två tabeller? Det kan sedan vara bra att (1) koppla kolumnerna till en mellanliggande tabell först, sedan till den&quot;slutliga destinationstabellen&quot; eller (2) rådfråga [Professional Services-teamet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) för att hitta det bästa sättet att uppnå dina mål.
 
-* **En kolumn kan bara vara sekundärnyckelreferens för en bana åt gången**. Om `order_items.order_id` pekar på `orders.id`sedan `order_items.order_id` kan inte peka på något annat.
+* **En kolumn kan bara vara sekundärnyckelreferens för EN sökväg åt gången**. Om `order_items.order_id` till exempel pekar på `orders.id` kan `order_items.order_id` inte peka på något annat.
 
-* **`Many-to-many`banor kan tekniskt sett skapas, men ofta skapas felaktiga data eftersom ingen sida är sann `one-to-many` sekundärnyckel**. Det bästa sättet att närma sig dessa banor beror alltid på den önskade analysen. Kontakta RJ:s analysteam för att hitta den bästa lösningen.
+* **`Many-to-many`sökvägar kan skapas tekniskt, men ofta skapas felaktiga data eftersom ingen sida är en `one-to-many` sekundärnyckel** . Det bästa sättet att närma sig dessa banor beror alltid på den önskade analysen. Kontakta RJ:s analysteam för att hitta den bästa lösningen.
 
 Om du inte kan skapa en beräknad kolumn på grund av en eller flera av begränsningarna ovan kontaktar du supporten med en beskrivning av kolumnen som du är
 
 ## Ta bort en beräknad kolumnsökväg {#delete}
 
-Har du skapat en felaktig sökväg i Datan Warehouse? Eller kanske du ska göra lite vårrengöring och vill städa upp? Om du behöver ta bort en sökväg från ditt konto kan du [skicka över en biljett till Adobe supportanalytiker](../../guide-overview.md#Submitting-a-Support-Ticket). **Var noga med att ta med namnet på sökvägen!**
+Har du skapat en felaktig sökväg i Datan Warehouse? Eller kanske du ska göra lite vårrengöring och vill städa upp? Om du behöver ta bort en sökväg från ditt konto kan du [skicka en biljett till Adobe supportanalytiker](../../guide-overview.md#Submitting-a-Support-Ticket). **Ange namnet på sökvägen!**
 
 ## Radbrytning {#wrapup}
 
-Nu kan du skapa banor för beräknade kolumner i Datan Warehouse. Om du fortfarande är osäker på en viss bana kan du alltid klicka **[!UICONTROL Support]** i [!DNL Commerce Intelligence] för att få hjälp.
+Nu kan du skapa banor för beräknade kolumner i Datan Warehouse. Om du fortfarande är osäker på en viss sökväg kan du alltid klicka på **[!UICONTROL Support]** i ditt [!DNL Commerce Intelligence]-konto för att få hjälp.
 
 ## Relaterad
 

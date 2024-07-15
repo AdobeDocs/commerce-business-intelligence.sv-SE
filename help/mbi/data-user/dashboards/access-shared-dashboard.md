@@ -21,4 +21,4 @@ När en ny användare har skapat sitt lösenord visas en lista med vanliga delad
 
 ## Befintliga användare
 
-Om du vill visa listan över delade instrumentpaneler igen kan användarna klicka på **[!UICONTROL Find]** i `Global Search` -menyn.
+Om du vill visa listan över delade instrumentpaneler igen kan användarna klicka på **[!UICONTROL Find]** på menyn `Global Search`.

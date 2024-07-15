@@ -15,11 +15,11 @@ ht-degree: 0%
 
 Standardinstrumentpanelen är den första instrumentpanelen som visas när du öppnar [!DNL Commerce Intelligence].
 
-1. Klicka på **[!UICONTROL Dashboard Options]** längst upp på skärmen.
+1. Klicka på **[!UICONTROL Dashboard Options]** högst upp på skärmen när du är i instrumentpanelen.
 
-1. Klicka **[!UICONTROL Make Default]** i listrutan.
+1. Klicka på **[!UICONTROL Make Default]** i listrutan.
 
-1. När bekräftelseprompten visas klickar du på **[!UICONTROL Yes]** om du vill ändra standardinstrumentpanelen.
+1. När bekräftelsemeddelandet visas klickar du på **[!UICONTROL Yes]** för att ändra standardinstrumentpanelen.
 
 Det här är nu din nya standardinstrumentpanel.
 

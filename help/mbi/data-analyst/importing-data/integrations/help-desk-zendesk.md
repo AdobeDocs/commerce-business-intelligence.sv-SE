@@ -15,11 +15,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Detta är bara tillgängligt för klienter som finns på `Pro` planera och använda den nya arkitekturen. Du har den nya arkitekturen om du har `Data Warehouse Views` tillgängliga avsnitt efter markering `Manage Data` i huvudverktygsfältet.
+>Detta är endast tillgängligt för klienter som har planen `Pro` och använder den nya arkitekturen. Du använder den nya arkitekturen om du har avsnittet `Data Warehouse Views` tillgängligt efter att du har valt `Manage Data` i huvudverktygsfältet.
 
-Konsoliderar [!DNL Zendesk] data med transaktionsdatabasen är ett utmärkt sätt att bättre förstå hur kunderna interagerar med era sälj- eller kundframgångsgrupper. Det hjälper er också att veta vilken typ av kunder som använder er supportplattform. I det här avsnittet visas hur du konfigurerar en kontrollpanel för att få detaljerade rapporter om din [!DNL Zendesk] prestanda och band till era transaktionskunder.
+Att konsolidera dina [!DNL Zendesk]-data med transaktionsdatabasen är ett utmärkt sätt att bättre förstå hur kunderna interagerar med era sälj- eller kundframgångsgrupper. Det hjälper er också att veta vilken typ av kunder som använder er supportplattform. I det här avsnittet visas hur du konfigurerar en instrumentpanel för att få detaljerade rapporter om hur [!DNL Zendesk] fungerar och hur den är knuten till dina transaktionskunder.
 
-Innan du börjar vill du ansluta [[!DNL Zendesk]](../integrations/zendesk.md). Denna analys innehåller [avancerade beräknade kolumner](../../data-warehouse-mgr/adv-calc-columns.md).
+Innan du börjar vill du ansluta [[!DNL Zendesk]](../integrations/zendesk.md). Den här analysen innehåller [avancerade beräknade kolumner](../../data-warehouse-mgr/adv-calc-columns.md).
 
 <!-- Getting Started -->
 
@@ -27,14 +27,14 @@ Innan du börjar vill du ansluta [[!DNL Zendesk]](../integrations/zendesk.md). D
 
 ### Kolumner att spåra
 
-* `audits` table
+* `audits`-tabell
 * `_id`
 * `created_at`
 * `id`
 * `ticket_id`
 * `_updated_at`
 
-* `audits_~_events` table
+* `audits_~_events`-tabell
 * `_sub_id`
 * `_id_of_parent`
 * `author_id`
@@ -43,7 +43,7 @@ Innan du börjar vill du ansluta [[!DNL Zendesk]](../integrations/zendesk.md). D
 * `type`
 * `value`
 
-* `tickets` table
+* `tickets`-tabell
 * `_id`
 * `assignee_id`
 * `created_at`
@@ -54,7 +54,7 @@ Innan du börjar vill du ansluta [[!DNL Zendesk]](../integrations/zendesk.md). D
 * `via_~_source_~_from_~_address`
 * `_updated_at`
 
-* `users` table
+* `users`-tabell
 * `_id`
 * `created_at`
 * `emails`
@@ -65,7 +65,7 @@ Innan du börjar vill du ansluta [[!DNL Zendesk]](../integrations/zendesk.md). D
 
 ### Filteruppsättningar att skapa
 
-* `[!DNL Zendesk] Tickets` table
+* `[!DNL Zendesk] Tickets`-tabell
    * `status != deleted`
 
 * `Filter set name`: `Tickets we count`
@@ -75,20 +75,20 @@ Innan du börjar vill du ansluta [[!DNL Zendesk]](../integrations/zendesk.md). D
 
 ### Kolumner att skapa
 
-* **`[!DNL Zendesk] user's`** table
+* **`[!DNL Zendesk] user's`**-tabell
    * `User is agent? (Yes/No) `
    * 
       * `Column type` - `Same Table > Calculation`
 
       * `Input columns` - `role`, `email`
 
-      * `SQL Calculation` `- case when `A` is not `null` and `A!=`end-user` sedan `Yes` när `B` är inte `null` och `B` gilla `%@magento.com` sedan `Yes` else `No` end
+      * `SQL Calculation` `- case when `A` is not `null` and `A!=`end-user`, `Yes` när `B` inte är `null` och `B` som `%@magento.com`, `Yes` else `No` slut
 
       * Ersätt `@magento.com` med din domän
 
       * `Datatype` - `String`
 
-* **`[!DNL Zendesk] audits_~_events`** table
+* **`[!DNL Zendesk] audits_~_events`**-tabell
    * Välj en definition: `Joined Column`
    * [!UICONTROL Create Path]:
    * [!UICONTROL Many]: `[!DNL Zendesk] audits_~_events.author_id8`
@@ -100,7 +100,7 @@ Innan du börjar vill du ansluta [[!DNL Zendesk]](../integrations/zendesk.md). D
 
 * **`Author is agent? (Yes/No)`**
 
-* **`[!DNL Zendesk] audits`** table
+* **`[!DNL Zendesk] audits`**-tabell
    * Välj en definition: `Exists`
    * [!UICONTROL Create Path]:
    * [!UICONTROL Many]: `[!DNL Zendesk] audits_~_events._id_of_parent`
@@ -123,7 +123,7 @@ Innan du börjar vill du ansluta [[!DNL Zendesk]](../integrations/zendesk.md). D
 * **`Status changes to solved? (1/0)`**
 * **`Is agent comment? (1/0)`**
 
-* **`[!DNL Zendesk] Tickets`** table
+* **`[!DNL Zendesk] Tickets`**-tabell
    * Välj en definition: `Joined Column`
    * [!UICONTROL Create Path]:
    * [!UICONTROL Many]: `[!DNL Zendesk] tickets.requester_id`
@@ -147,7 +147,7 @@ Innan du börjar vill du ansluta [[!DNL Zendesk]](../integrations/zendesk.md). D
    * Välj en [!UICONTROL column]: `created_at`
    * [!UICONTROL Path]: `[!DNL Zendesk] audits.ticket_id = [!DNL Zendesk] tickets.id`
    * [!UICONTROL Filter]:
-   * `status` ändrat till `solved = 1`
+   * `status` har ändrats till `solved = 1`
 
    * Välj en definition: `Min`
    * Välj en [!UICONTROL table]: `[!DNL Zendesk] audits`
@@ -198,9 +198,9 @@ Innan du börjar vill du ansluta [[!DNL Zendesk]](../integrations/zendesk.md). D
 
       * `Calculation` - `to_char(A,'D')||'. '||to_char(A,'Day')`
 
-     *`Datatype` – `String`
+     *`Datatype` - `String`
 
-* **`customer_entity`** table
+* **`customer_entity`**-tabell
    * Välj en definition: `Count`
    * [!UICONTROL Create Path]:
    * [!UICONTROL Many]: `[!DNL Zendesk] tickets.email`
@@ -221,9 +221,9 @@ Innan du börjar vill du ansluta [[!DNL Zendesk]](../integrations/zendesk.md). D
 
       * `Calculation` - `case when A>0 then 'Yes' else 'No' end`
 
-      * `Datatype` – `String`
+      * `Datatype` - `String`
 
-* **`[!DNL Zendesk] Tickets`** table
+* **`[!DNL Zendesk] Tickets`**-tabell
    * Välj en definition: `Joined Column`
    * Välj en [!UICONTROL table]: `customer_entity`
    * Välj en [!UICONTROL column]: `User's lifetime number of support tickets requested`
@@ -233,57 +233,57 @@ Innan du börjar vill du ansluta [[!DNL Zendesk]](../integrations/zendesk.md). D
 
 ## Mått
 
-* **[!DNL Zendesk]Nya biljetter**
+* **[!DNL Zendesk]nya biljetter**
    * `Tickets we count`
 
-* I **`[!DNL Zendesk] tickets`** table
-* Det här måttet utför en **Antal**
-* På **`id`** kolumn
-* Beställd av **`created_at`** tidsstämpel
+* I tabellen **`[!DNL Zendesk] tickets`**
+* Detta mått utför ett **antal**
+* I kolumnen **`id`**
+* Ordnad efter tidsstämpeln **`created_at`**
 * [!UICONTROL Filter]:
 
 * **[!DNL Zendesk]Lösta biljetter**
    * `Tickets we count`
    * status IN `closed, solved`
 
-* I **`[!DNL Zendesk] tickets`** table
-* Det här måttet utför en **Antal**
-* På **`id`** kolumn
-* Beställd av **`created_at`** tidsstämpel
+* I tabellen **`[!DNL Zendesk] tickets`**
+* Detta mått utför ett **antal**
+* I kolumnen **`id`**
+* Ordnad efter tidsstämpeln **`created_at`**
 * [!UICONTROL Filter]:
 
-* **[!DNL Zendesk]Distinkta användare som arkiverar biljetter**
+* **[!DNL Zendesk]Distinkta användare som fyller i biljetter**
    * `Tickets we count`
 
-* I **`[!DNL Zendesk] tickets`** table
-* Det här måttet utför en **Distinkt antal**
-* På **`requester_id`** kolumn
-* Beställd av **`created_at`** tidsstämpel
+* I tabellen **`[!DNL Zendesk] tickets`**
+* Det här måttet utför ett **räkningsdistinkt**
+* I kolumnen **`requester_id`**
+* Ordnad efter tidsstämpeln **`created_at`**
 * [!UICONTROL Filter]:
 
-* **[!DNL Zendesk]Genomsnittlig matchningstid för biljetter**
+* **[!DNL Zendesk]Genomsnittlig/genomsnittlig matchningstid för biljett**
    * `Tickets we count`
    * status IN `closed, solved`
 
-* I **`[!DNL Zendesk] tickets`** table
-* Det här måttet utför en **Medel (eller Median)**
-* På **`Seconds to resolution`** kolumn
-* Beställd av **`created_at`** tidsstämpel
+* I tabellen **`[!DNL Zendesk] tickets`**
+* Det här måttet utför ett **genomsnitt (eller median)**
+* I kolumnen **`Seconds to resolution`**
+* Ordnad efter tidsstämpeln **`created_at`**
 * [!UICONTROL Filter]:
 
-* **[!DNL Zendesk]Genomsnittlig/mediantid till första svar**
+* **[!DNL Zendesk]Genomsnittlig/mediantid till första svaret**
    * Biljetter som räknas
    * status IN closed, resolved
 
-* I **`[!DNL Zendesk] tickets`** table
-* Det här måttet utför en **Medel (eller Median)**
-* På **`Seconds to first response`** kolumn
-* Beställd av **`created_at`** tidsstämpel
+* I tabellen **`[!DNL Zendesk] tickets`**
+* Det här måttet utför ett **genomsnitt (eller median)**
+* I kolumnen **`Seconds to first response`**
+* Ordnad efter tidsstämpeln **`created_at`**
 * [!UICONTROL Filter]:
 
 >[!NOTE]
 >
->Se till att [lägga till alla nya kolumner som dimensioner till mått](../../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) innan du skapar nya rapporter.
+>Se till att [lägga till alla nya kolumner som mått i mätvärden](../../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) innan du skapar nya rapporter.
 
 ### Rapporter
 

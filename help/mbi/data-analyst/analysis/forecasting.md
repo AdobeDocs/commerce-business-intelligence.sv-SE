@@ -17,4 +17,4 @@ Att kunna förutsäga kundernas livstidsvärde när de gör fler beställningar 
 
 I det här avsnittet får du lära dig mer om era kunders livstidsvärde och förutse hur livstidsvärdet ökar med fler order.
 
-Se även: [Förväntad analys av livstidsvärde (LTV) (grundläggande)](../../data-analyst/analysis/ess-expected-ltv.md)
+Se även: [Förväntad analys av livstid (LTV) (grundläggande)](../../data-analyst/analysis/ess-expected-ltv.md)

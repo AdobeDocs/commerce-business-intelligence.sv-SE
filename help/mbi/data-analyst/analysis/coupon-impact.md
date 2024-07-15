@@ -6,8 +6,8 @@ role: Admin, User
 feature: Data Warehouse Manager, Reports
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '1359'
-ht-degree: 2%
+source-wordcount: '1382'
+ht-degree: 1%
 
 ---
 
@@ -20,7 +20,7 @@ Analysera hur kunderna använder era kuponger för att få goda insikter om ert 
 * Hur skiljer sig de genomsnittliga intäkterna för livstid mellan kupongförvärvade kunder och kunder som inte förvärvats via kuponger?
 * Gör kunder som förvärvats från kuponger återkommande inköp med kuponger?
 
-Svara på dessa frågor genom att fokusera på [jämföra kupongförvärvade kunder med icke-kupongförvärvade kunder](#compare), [analysera information om första order från kupongförvärv](#firstorder)och [tittar på attributen hos de kunder som använder kuponger i sin första order.](#attributes)
+Svara på dessa frågor genom att fokusera på att [jämföra kupongförvärvade kunder med icke-kupongförvärvade kunder](#compare), [analysera information om första order från kupongförvärv](#firstorder) och [titta på attributen hos kunder som använder kuponger i sin första order.](#attributes)
 
 Kom igång!
 
@@ -46,10 +46,10 @@ Här visas antalet upprepade order som gjorts med en kupong och procentandelen u
 
 Titta på några exempeldata för inlösen av kuponger jämfört med icke-kuponganskaffningsvärden:
 
-| **Kundförvärv** | **Antal nya kunder** | **Genomsnittlig intäkt för livstid** | **Antal upprepade order** | **Antal upprepade order med kupong** | **% av upprepade order med kupong** |
+| **Kundvärvning** | **Antal nya kunder** | **Inkomster för genomsnittlig livstid** | **Antal upprepade order** | **Antal upprepade order med kupong** | **% av upprepade order med kupong** |
 |-----|-----|-----|-----|-----|-----|
-| Kupong | 1,206 | $356.91 | 2,570 | 1,248 | 48.56% |
-| Icke-kupong | 11,561 | $498.30 | 20,145 | 3,251 | 16.14% |
+| Kupong | 1 206 | 356,91 USD | 2 570 | 1 248 | 48,56 % |
+| Icke-kupong | 11 561 | 498,30 USD | 20 145 | 3 251 | 16,14 % |
 
 {style="table-layout:auto"}
 
@@ -77,7 +77,7 @@ Icke-kupongförvärvade kunder har en mycket lägre andel upprepade order med en
 
 ## Analyserar information om första order från kupongförvärv {#firstorder}
 
-Det här avsnittet fokuserar bara på **första ordern från kupongförvärv, uppdelat efter kupong.** Använd dessa mätvärden i analysen:
+Det här avsnittet fokuserar bara på **första order från kupongförvärv, segmenterade efter kupong.** Använd dessa mått i din analys:
 
 ### Antal order/kunder
 
@@ -109,11 +109,11 @@ Denna mätning hjälper till att utvärdera lojalitet och genomsnittliga intäkt
 
 Titta nu på ett exempel med tre olika kuponger som används för kundens första beställning:
 
-| **Kupong** | **Första gången du beställer (FTO)** | **Bruttointäkter från FTO** | **Rabatterna tillämpas på FTO** | **Nettointäkter från FTO** | **Genomsnittligt ordervärde för FTO** |
+| **Kupong** | **Första gången beställningar (FTO)** | **Bruttointäkter från FTO** | **Rabatterna tillämpas på FTO** | **Nettointäkter från FTO** | **Genomsnittligt ordervärde för FTO** |
 |-----|-----|-----|-----|-----|-----|
-| **25 % rabatt på 100 USD eller mer** | 56 | $8,531.04 | $2,132.76 | $6,398.28 | $152.34 |
-| **10 dollar rabatt** | 87 | $3,707.07 | $426.10 | $3,280.97 | $42.61 |
-| **20 % rabatt** | 145 | $10,975.05 | $2,195.01 | $8,780.04 | $75.69 |
+| **25 % rabatt på $100 eller mer** | 56 | $8 531.04 | $2 132.76 | 6 398,28 USD | 152,34 USD |
+| **$10 rabatt** | 87 | 3 707 USD | 426,10 USD | 3 280,97 USD | 42,61 USD |
+| **20 % rabatt** | 145 | 10 975 USD | $2 195.01 | $8 780.04 | 75,69 USD |
 
 {style="table-layout:auto"}
 
@@ -124,31 +124,31 @@ Vad kan man ta av detta? För det första fick kupongen&quot;20 % rabatt&quot; f
 * den tidpunkt på dag/vecka/månad/år då kupongen erbjöds.
 * den säsong då kupongen erbjöds, beroende på verksamheten.
 
-  **Exempel:** &quot;20 % rabatt&quot; erbjuds under sommarmånaderna, men företaget säljer kläder för vintertid.
+  **Exempel:**&quot;20 % rabatt&quot;-kupongen erbjöds under sommarmånaderna, men företaget säljer vinterkläder.
 * begränsningar för kupongerna.
 
   **Exempel:** kupongen&quot;10 % rabatt&quot; erbjuds endast kunder som köper en vinterjacka i samma ordning.
 
-The **bruttointäkter** för kupongen &quot;25 % rabatt på 100 USD eller mer&quot; är mycket högre än bruttointäkterna för kupongen &quot;$10 off&quot;. Kupongen &quot;$10&quot; har dock en mycket större **antal order**. Analyserar **genomsnittligt ordervärde** ger insikt i dessa skillnader. Även om kupongen&quot;25 % rabatt på 100 USD eller mer&quot; hade färre order är det genomsnittliga ordervärdet mer än tre gånger så mycket som kupongen&quot;10 USD&quot;. Därför tillskrivs en större bruttointäkt&quot;25 % rabatt på 100 USD eller mer&quot;.
+**Bruttointäkten** för kupongen&quot;25 % rabatt på 100 USD eller mer&quot; är mycket högre än bruttointäkten för kupongen&quot;$10&quot;. Kupongen&quot;$10&quot; har emellertid ett mycket större **antal order**. Analyser av det **genomsnittliga ordervärdet** ger insikter om de här skillnaderna. Även om kupongen&quot;25 % rabatt på 100 USD eller mer&quot; hade färre order är det genomsnittliga ordervärdet mer än tre gånger så mycket som kupongen&quot;10 USD&quot;. Därför tillskrivs en större bruttointäkt&quot;25 % rabatt på 100 USD eller mer&quot;.
 
-The **rabatter** och **nettointäkter** för kupongen&quot;25 % rabatt på 100 USD eller mer&quot; och&quot;20 % rabatt&quot; ligger nära värdet. Även om det genomsnittliga ordervärdet för&quot;25 % rabatt på 100 USD eller mer&quot; är nästan dubbelt så stort som det genomsnittliga ordervärdet för&quot;20 % rabatt&quot; har den senare kupongen lite mindre än tre gånger så många order.
+**Rabatterna** och **nettointäkterna** för kupongen&quot;25 % rabatt på 100 eller mer&quot; och&quot;20 % rabatt&quot; ligger nära värdet. Även om det genomsnittliga ordervärdet för&quot;25 % rabatt på 100 USD eller mer&quot; är nästan dubbelt så stort som det genomsnittliga ordervärdet för&quot;20 % rabatt&quot; har den senare kupongen lite mindre än tre gånger så många order.
 
 ## Attribut för kunder som använder kuponger i sin första order {#attributes}
 
 Nu när ni har tittat på själva beställningarna, titta på de kunder som använder kuponger i sina första order:
 
-| **Kundens första orderkupong** | **Antal kunder** | **Genomsnittligt antal order för livslängd** | **Genomsnittlig intäkt för livstid** |
+| **Kundens första orderkupong** | **Antal kunder** | **Genomsnittligt antal order under hela löptiden** | **Inkomster för genomsnittlig livstid** |
 |-----|-----|-----|-----|
-| **25 % rabatt på 100 USD eller mer** | 56 | 2.8 | $554.54 |
-| **10 dollar rabatt** | 87 | 1.9 | $115.50 |
-| **20 % rabatt** | 145 | 1.3 | $103.75 |
+| **25 % rabatt på $100 eller mer** | 56 | 2,8 | 554,54 USD |
+| **$10 rabatt** | 87 | 1,9 | 115,50 USD |
+| **20 % rabatt** | 145 | 1,3 | $103.75 |
 
 {style="table-layout:auto"}
 
 Ni märker att antalet förstagångsbeställningar är samma som antalet kunder för varje kupong. Detta är rimligt eftersom varje kund bara kan ha en första order.
 
-Det största antalet kunder förvärvades genom kupongen&quot;20 % rabatt&quot;. Men de här kunderna har de lägsta **genomsnittligt antal order för livslängd** och **genomsnittlig intäkt** De flesta kupongköpta kunder gör inga upprepade beställningar. Dessutom köpte kunderna mer genom kupongen&quot;25 % rabatt på 100 USD eller mer&quot; på en högre nivå **genomsnittligt antal order för livslängd** och i sin tur högre **genomsnittlig intäkt**. I allmänhet kommer användare som köptes via den här kupongen oftast tillbaka och gör fler återkommande inköp.
+Det största antalet kunder förvärvades genom kupongen&quot;20 % rabatt&quot;. Dessa kunder har dock det lägsta **genomsnittliga antalet order** och **genomsnittliga intäkter för livstid** som varar i genomsnitt, och de flesta kupongförvärvade kunder gör inga upprepade order. Dessutom genererar kunder som har förvärvats via kupongen&quot;25 % rabatt på 100 USD eller mer&quot; ett högre **genomsnittligt antal order under hela löptiden** och i sin tur högre **genomsnittlig intäkt under hela livstiden**. I allmänhet kommer användare som köptes via den här kupongen oftast tillbaka och gör fler återkommande inköp.
 
 ## Radbrytning {#wrapup}
 
-Det finns en mängd analyser som ni kan skapa för att bättre förstå hur kunderna använder kuponger. Har du någonsin funderat på att analysera hur era kunder använder era kuponger eller hur lång tid det tar för kuponger att användas? Vad sägs om att hitta det optimala rabattbeloppet - vilket belopp uppmuntrar fler köpare att köpa, högre genomsnittligt ordervärde och högre intäkter under hela löptiden? Om du behöver hjälp med den här typen av frågor kan du [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+Det finns en mängd analyser som ni kan skapa för att bättre förstå hur kunderna använder kuponger. Har du någonsin funderat på att analysera hur era kunder använder era kuponger eller hur lång tid det tar för kuponger att användas? Vad sägs om att hitta det optimala rabattbeloppet - vilket belopp uppmuntrar fler köpare att köpa, högre genomsnittligt ordervärde och högre intäkter under hela löptiden? [Kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) om du behöver hjälp med de här typerna av frågor.

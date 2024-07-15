@@ -6,8 +6,8 @@ role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '851'
-ht-degree: 1%
+source-wordcount: '849'
+ht-degree: 0%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 Om ni erbjuder mer än en produkt undrar ni antagligen hur kunder som köper en viss produkt beter sig annorlunda över tiden jämfört med andra kunder. I det här avsnittet behandlas analyser som kan hjälpa dig att svara på följande frågor.
 
-Till kunder som köper en *specifikt objekt*,
+Bland kunder som köper ett *specifikt objekt*,
 
 * Hur sannolikt är det att de gör ett nytt inköp?
 * Hur lång tid tar det för dem att göra ett nytt inköp?
@@ -46,11 +46,11 @@ Detta mått visar kundens orderfrekvens eller den tid det tar för kunden att be
 
 Se ett exempel på hur man använder kaffeprodukter.
 
-| **Produktnamn** | **Sannolikhet för upprepad order** | **Genomsnittligt antal order under hela livstiden** | **Genomsnittlig intäkt för livstid** | **Mediantid till nästa order** |
+| **Produktnamn** | **Sannolikhet för upprepade order** | **Genomsnittligt antal order under hela livstiden** | **Genomsnittlig livstidsintäkt** | **Mediantid till nästa order** |
 |-----|-----|-----|-----|-----|
-| Kaffekbryggare i en kopp | 94.98% | 7.92 | $549.82 | 57.01 dagar |
-| Kaffekapslar | 93.82% | 8.68 | $479.98 | 63.48 dagar |
-| Kaffebönor | 41.92% | 6.07 | $99.82 | 27.31 dagar |
+| Kaffekbryggare i en kopp | 94,98 % | 7,92 | 549,82 USD | 57.01 dagar |
+| Kaffekapslar | 93,82 % | 8,68 | 479,98 USD | 63.48 dagar |
+| Kaffebönor | 41,92 % | 6,07 | 99,82 USD | 27.31 dagar |
 
 {style="table-layout:auto"}
 
@@ -76,10 +76,10 @@ Bland kunder som köpt kaffekapslar gör hälften en ny beställning på ungefä
 
 ## Vilka andra analyser kan jag bygga?
 
-Med hjälp av de mätvärden som beskrivs i det här avsnittet kan du även skapa andra användbara återköpsanalyser. Du kan till exempel även se hur kunderna återköper **samma objekt** - till exempel om de köper påfyllningar regelbundet. Kapslar och kaffebönor kan återköpas regelbundet, men det skulle vara oväntat att se kunderna göra upprepade inköp av kaffebryggaren. Om ni fokuserar på återfyllnad eller återinsättning är den här analysen användbar.
+Med hjälp av de mätvärden som beskrivs i det här avsnittet kan du även skapa andra användbara återköpsanalyser. Du kan till exempel även se hur kunder köper **samma objekt** igen, till exempel om de köper återfyllningar regelbundet. Kapslar och kaffebönor kan återköpas regelbundet, men det skulle vara oväntat att se kunderna göra upprepade inköp av kaffebryggaren. Om ni fokuserar på återfyllnad eller återinsättning är den här analysen användbar.
 
 Förutom att analysera återköpets beteende hos era kunder kan ni också bygga analyser som tittar på kundlojaliteten. Överväg att analysera mönster i kundomsättning - var lämnar era kunder er webbplats och inte kommer tillbaka? I vilken takt inträffar detta?
 
-När du har identifierat varför det händer något kan du använda din analys för att skapa en `reactivation` kampanj. Med hjälp av dessa data kan du identifiera användare som har blivit inaktiva, hur länge det har varit sedan deras senaste besök, vilket deras senaste köp var och så vidare. På så sätt kan ni fatta konkreta beslut som får kunderna att komma tillbaka.
+När du har identifierat varför det händer något kan du använda din analys för att skapa en `reactivation`-kampanj. Med hjälp av dessa data kan du identifiera användare som har blivit inaktiva, hur länge det har varit sedan deras senaste besök, vilket deras senaste köp var och så vidare. På så sätt kan ni fatta konkreta beslut som får kunderna att komma tillbaka.
 
-Om du vill ha hjälp med analys [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+[Kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) om du behöver hjälp med analys.

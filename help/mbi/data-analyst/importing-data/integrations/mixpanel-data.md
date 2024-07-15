@@ -1,25 +1,25 @@
 ---
 title: Förväntade data från blandpanelen
-description: Utforska huvuddatatabellerna som du kan importera från Mixpanel till [!DNL Commerce Intelligence] konto.
+description: Utforska de huvuddatatabeller som du kan importera från Mixpanel till ditt [!DNL Commerce Intelligence] konto.
 exl-id: 87bd337a-63fa-44cf-b1fe-c2f34ca86029
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '204'
+source-wordcount: '187'
 ht-degree: 0%
 
 ---
 
-# Förväntat [!DNL Mixpanel] data
+# [!DNL Mixpanel] data förväntades
 
-Efter [du har anslutit din [!DNL Mixpanel] konto](../integrations/mixpanel.md)kan du använda [Data Warehouse Manager](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) för att enkelt spåra relevanta datafält för analys.
+När [du har anslutit ditt [!DNL Mixpanel] konto](../integrations/mixpanel.md) kan du använda [Data Warehouse Manager](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) för att enkelt spåra relevanta datafält för analys.
 
-I det här avsnittet beskrivs de huvuddatatabeller som du kan importera från [!DNL Mixpanel] i [!DNL Commerce Intelligence] konto. Följande tabeller kommer att skapas i Datan Warehouse efter anslutningen [!DNL Mixpanel]. Om du vill visa alla fält som är tillgängliga för spårning klickar du på länkarna i tabellnamnskolumnen.
+I det här avsnittet utforskas de huvuddatatabeller som du kan importera från [!DNL Mixpanel] till ditt [!DNL Commerce Intelligence]-konto. Följande tabeller kommer att skapas i Datan Warehouse när du har anslutit [!DNL Mixpanel]. Om du vill visa alla fält som är tillgängliga för spårning klickar du på länkarna i tabellnamnskolumnen.
 
 >[!NOTE]
 >
->På grund av begränsningarna i [!DNL Mixpanel] API, historiska data - data som är äldre än sju (7) dagar från datumet för anslutningen till [!DNL Commerce Intelligence] - replikeras inte.
+>På grund av begränsningarna i API:t [!DNL Mixpanel] replikeras inte historiska data - data som är äldre än sju (7) dagar från anslutningsdatumet till [!DNL Commerce Intelligence].
 
 | **Tabellnamn** | **Beskrivning** |
 |-----|-----|
@@ -31,5 +31,5 @@ I det här avsnittet beskrivs de huvuddatatabeller som du kan importera från [!
 
 ## Relaterad dokumentation
 
-* [Ansluter [!DNL Mixpanel]](../integrations/mixpanel.md)
-* [Återautentisera integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Ansluter  [!DNL Mixpanel]](../integrations/mixpanel.md)
+* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

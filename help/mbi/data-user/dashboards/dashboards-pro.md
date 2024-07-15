@@ -6,14 +6,14 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '1932'
+source-wordcount: '1950'
 ht-degree: 0%
 
 ---
 
 # Inkörbara kontrollpaneler
 
-[!DNL Adobe Commerce Intelligence] innehåller färdiga kontrollpaneler som ger inblick i verksamheten. På kontrollpaneler kan du kontrollera hälsan hos viktiga mätvärden som användarlivstidsintäkter, antal upprepade köp, toppprodukter som köpts under en viss tidsperiod och mycket annat. Dessa förkonfigurerade instrumentpaneler har skapats för att hjälpa dig att fatta välgrundade affärsbeslut.
+[!DNL Adobe Commerce Intelligence] innehåller användningsklara instrumentpaneler som ger dig insikt i ditt företag. På kontrollpaneler kan du kontrollera hälsan hos viktiga mätvärden som användarlivstidsintäkter, antal upprepade köp, toppprodukter som köpts under en viss tidsperiod och mycket annat. Dessa förkonfigurerade instrumentpaneler har skapats för att hjälpa dig att fatta välgrundade affärsbeslut.
 
 >[!NOTE]
 >
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## Rapporttillgänglighet
 
-För `Customers` och `Executive Summary` på kontrollpaneler är vissa rapporter bara tillgängliga beroende på butikens utcheckningskonfiguration. Om din butik tillåter gästutcheckning eller inte tillåter gästutcheckning.
+För kontrollpanelerna `Customers` och `Executive Summary` är vissa rapporter bara tillgängliga beroende på butikens utcheckningskonfiguration. Om din butik tillåter gästutcheckning eller inte tillåter gästutcheckning.
 
 ## Kunder (gästutcheckning tillåts)
 
@@ -42,7 +42,7 @@ Instrumentpanelen Kunder (tillåten gästutcheckning) ger information om din kun
 | `Time Between Orders` | Genomsnittlig och mediantid som kunderna tar mellan beställningarna, uppdelat efter ordernummer (dvs. tiden mellan beställningarna ett och två, två och tre osv.). |
 | `Number of Customers - Lifetime Orders` | För ett givet antal order som läggs under en kunds livstid, antalet kunder som har lagt så många order och den procentandel av hela kundbasen som talet representerar. |
 | `One-Time Customers who Bought 3-6 Months Ago` | Kunder som gjorde sina första inköp för endast tre till sex månader sedan. |
-| `Avg LTV by First Order` | Jämför de kumulativa genomsnittliga intäkterna för kundlivstid mellan kohorter. Kohorter definieras av den månad då kunden först gjorde ett köp. Till exempel en `Jan 2020` kohort visar ackumulerat genomsnittligt LTV för kunder vars första inköp gjordes i januari 2020. |
+| `Avg LTV by First Order` | Jämför de kumulativa genomsnittliga intäkterna för kundlivstid mellan kohorter. Kohorter definieras av den månad då kunden först gjorde ett köp. En `Jan 2020`-kohort visar t.ex. kumulativ genomsnittlig LTV för kunder vars första köp gjordes i januari 2020. |
 | `Customer's First 30 Day vs Lifetime Revenue` | Jämförelse av genomsnittliga intäkter från kunder under de 30 dagarna efter deras första inköp jämfört med under hela deras livstid. Varje bubbla motsvarar en fraktregion, och storleken på varje bubbla representerar antalet kunder som förvärvats från den regionen. |
 
 ## Kunder (ingen gästutcheckning tillåts)
@@ -133,7 +133,7 @@ Instrumentpanelen för beställningar ger insikter om transaktionsvolym för bes
 
 ## Produkter
 
-På kontrollpanelen för produkter visas den allmänna produktprestandan i termer av beställda produkter, deras bruttovärde för försäljning (GMV) samt de viktigaste produkter som köpts och återbetalats. Det kan hjälpa er att balansera inköp och returer och avgöra om produkterna blir framgångsrika och populära. Din butik måste vara [konfigurerad för att spåra återbetalningar](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html) för att dessa diagram ska fyllas i.
+På kontrollpanelen för produkter visas den allmänna produktprestandan i termer av beställda produkter, deras bruttovärde för försäljning (GMV) samt de viktigaste produkter som köpts och återbetalats. Det kan hjälpa er att balansera inköp och returer och avgöra om produkterna blir framgångsrika och populära. Butiken måste vara [konfigurerad för att spåra återbetalningar](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html) för att diagrammen ska fyllas i.
 
 >[!NOTE]
 >

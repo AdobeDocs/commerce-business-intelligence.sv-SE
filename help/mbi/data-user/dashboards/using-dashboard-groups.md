@@ -31,11 +31,11 @@ Kontrollpanelsgrupper kan skapas på ett av två sätt:
 
    ![skapa instrumentpanelsgrupp](../../assets/create-dashboard-groups-new-dashboard.png)
 
-1. När du ändrar gruppen för en befintlig kontrollpanel går du till `Manage Data > Dashboards` sida:
+1. När du ändrar gruppen för en befintlig instrumentpanel från sidan `Manage Data > Dashboards`:
 
    1. Klicka på den kontrollpanel som du vill skapa gruppen för.
 
-   1. Under `Dashboard Group (optional)`visas den aktuella instrumentpanelsgruppen.
+   1. Under `Dashboard Group (optional)` visas den aktuella instrumentpanelsgruppen.
 
    1. Om du vill skapa en grupp skriver du namnet på den nya gruppen och klickar sedan utanför rutan.
 
@@ -43,13 +43,13 @@ Kontrollpanelsgrupper kan skapas på ett av två sätt:
 
 ## Lägg till befintliga instrumentpaneler i befintliga grupper
 
-1. På `Manage Data > Dashboards` väljer du den kontrollpanel som gruppen ska ändras för.
+1. På sidan `Manage Data > Dashboards` väljer du den instrumentpanel som gruppen ska ändras för.
 
 1. Texten under `Dashboard Group (optional)` visar den aktuella instrumentpanelsgruppen för instrumentpanelen.
 
-1. Om du vill ändra gruppen på kontrollpanelen väljer du en annan grupp i listan - i det här fallet `PS`, `Campaigns`.
+1. Om du vill ändra gruppen på instrumentpanelen väljer du en annan grupp i listan - i det här fallet `PS`, `Campaigns`.
 
-   ![instrumentpanel för ändringsgrupp](../../assets/add-existing-dashboard-existing-group.png)
+   ![ändra gruppkontrollpanel](../../assets/add-existing-dashboard-existing-group.png)
 
 ## Ta bort panelgrupper
 

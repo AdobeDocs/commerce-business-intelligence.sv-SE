@@ -6,7 +6,7 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Dashboards, Data Integration
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '286'
 ht-degree: 0%
 
 ---
@@ -59,12 +59,12 @@ Här är vad du behöver skapa rapporter för din instrumentpanel för investera
 * **[!UICONTROL Site visits - New vs. repeat by month]**
 * Sessioner
 
-Med [!DNL Google Analytics] kan du lägga in rapporter om:
+Med en [!DNL Google Analytics]-integrering kan du inkludera rapporter om:
 
 * Besök webbplatsen
 * Konverteringsgrad
 
-Med [Commerce Data Enrichment Services](https://business.adobe.com/products/magento/magento-commerce.html)kan du ta med rapporter om:
+Med [Commerce Data Enrichment Services](https://business.adobe.com/products/magento/magento-commerce.html) kan du inkludera rapporter om:
 
 * Unika kunder per stat/region, ålder, kön.
 

@@ -17,12 +17,12 @@ Du kanske vill redigera ett diagram som en annan användare äger eller skapa n�
 
 ## Hitta diagrammet
 
-Leta först reda på diagrammet som du vill kopiera från den andra användaren. Alla instrumentpaneler som delas med dig finns i `Dashboard` sidofält där de är markerade med en delad ikon. Klicka på den kontrollpanel du vill använda.
+Leta först reda på diagrammet som du vill kopiera från den andra användaren. Alla instrumentpaneler som delas med dig finns i sidofältet `Dashboard` där de är markerade med en delad ikon. Klicka på den kontrollpanel du vill använda.
 
 ## Klona diagrammet
 
-På den delade kontrollpanelen väljer du det diagram som du vill kopiera till ditt eget konto. Klicka på växeln (![](../../assets/gear-icon.png)) och sedan klicka på **[!UICONTROL Save As]**.
+På den delade kontrollpanelen väljer du det diagram som du vill kopiera till ditt eget konto. Klicka på kugghjulsikonen (![](../../assets/gear-icon.png)) och sedan på **[!UICONTROL Save As]**.
 
-Du uppmanas att namnge din kopia av diagrammet och lägga till den på någon av dina befintliga instrumentpaneler. Om du inte väljer någon kontrollpanel läggs den till i listan över befintliga diagram och du kan [lägg till senare](../../data-user/dashboards/add-charts-dashboard.md).
+Du uppmanas att namnge din kopia av diagrammet och lägga till den på någon av dina befintliga instrumentpaneler. Om du inte väljer en instrumentpanel läggs den till i listan med befintliga diagram och du kan [lägga till den senare](../../data-user/dashboards/add-charts-dashboard.md).
 
 ![totalt antal kunder](../../assets/total-customers.png)

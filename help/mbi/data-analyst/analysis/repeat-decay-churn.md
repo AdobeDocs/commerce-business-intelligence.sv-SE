@@ -6,7 +6,7 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Data Warehouse Manager, Reports, Dashboards
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '952'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ I det här avsnittet beskrivs de analyser som kan hjälpa dig att besvara följa
 
 ## Rekommenderade mått
 
-När du analyserar upprepad sannolikhetsminskning och -minskning bör du använda ([eller bygga](../../data-user/reports/ess-manage-data-metrics.md)) dessa mått:
+När du analyserar upprepad sannolikhetsminskning och bortfall bör du använda ([eller skapa](../../data-user/reports/ess-manage-data-metrics.md)) dessa mått:
 
 ### Sannolikhet för inledande upprepad order
 
@@ -43,7 +43,7 @@ Genom att förstå hur många procent av kunderna som förväntas göra upprepad
 
 Titta på den återkommande sannolikhetsminskningen för ett typiskt e-handelsföretag.
 
-![Initial sannolikhet för upprepad order - sannolikhet för upprepad order angiven i månader sedan ordern.](../../assets/Order_probability_reports.png)
+![Sannolikhet för inledande upprepad order - sannolikhet för upprepad order angiven i månader sedan ordern.](../../assets/Order_probability_reports.png)
 
 ### Sannolikhet för inledande upprepad order
 
@@ -78,7 +78,7 @@ När du har skapat analysen ovan och fastställt ett tröskelvärde för bortfal
 
 Om ni erbjuder mer än en produkt undrar ni antagligen hur kunder som köper en viss produkt beter sig annorlunda över tiden jämfört med andra kunder. Vill du veta mer? Titta på den här självstudiekursen för att utforska hur kundkohorter fungerar hela livet baserat på specifika produkter som de har köpt.
 
-Denna bästa praxis tillhandahålls av [!DNL Adobe Commerce Intelligence] Data Analysis Services (DAS) [Kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) för mer information.
+Den här bästa metoden tillhandahålls av [!DNL Adobe Commerce Intelligence] Data Analysis Services (DAS). [Kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) om du vill ha mer information.
 
 ### Relaterad
 

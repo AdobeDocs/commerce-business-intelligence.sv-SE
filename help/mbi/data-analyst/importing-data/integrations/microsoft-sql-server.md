@@ -1,27 +1,27 @@
 ---
 title: Anslut Microsoft SQL Server
-description: Lär dig hur du ansluter din Microsoft SQL-databas till [!DNL Commerce Intelligence] i en fyrstegsprocess.
+description: Lär dig hur du ansluter din Microsoft SQL-databas till  [!DNL Commerce Intelligence]  i en fyrstegsprocess.
 exl-id: 7f49d1dc-8fbb-4a8c-9d07-9a8195c266f5
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '311'
+source-wordcount: '301'
 ht-degree: 0%
 
 ---
 
-# Anslut [!DNL Microsoft SQL] Server
+# Anslut servern [!DNL Microsoft SQL]
 
 >[!NOTE]
 >
->Kräver [Administratörsbehörigheter](../../../administrator/user-management/user-management.md).
+>Kräver [administratörsbehörighet](../../../administrator/user-management/user-management.md).
 
 ![](../../../assets/MicrosoftSQLServer-logo.png)
 
-I det här avsnittet beskrivs hur du ansluter [!DNL Microsoft SQL] databas till [!DNL Commerce Intelligence] i en fyrstegsprocess. Den här processen kräver viss teknisk expertis relaterad till serveranslutningar och SQL, och kan kräva stöd från utvecklare i ditt team.
+I det här avsnittet förklaras hur du ansluter din [!DNL Microsoft SQL]-databas till [!DNL Commerce Intelligence] i en fyrstegsprocess. Den här processen kräver viss teknisk expertis relaterad till serveranslutningar och SQL, och kan kräva stöd från utvecklare i ditt team.
 
-[!DNL Commerce Intelligence] supports [!DNL Amazon RDS], [!DNL EC2], [!DNL Microsoft SQL Azure]och de flesta andra molnserverleverantörer. Om du har en fråga om din värddator [skicka en supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) be oss att lämna dessa uppgifter.
+[!DNL Commerce Intelligence] har stöd för [!DNL Amazon RDS], [!DNL EC2], [!DNL Microsoft SQL Azure] och de flesta andra molnserverleverantörer. Om du har en fråga till din värddator [skickar du en supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) och ber oss att ange den här informationen.
 
 Systemet måste köra SELECT-frågor i din databas. Detta görs först för att få en ögonblicksbild av databasstrukturen och sedan regelbundet övertid för att hålla dina data uppdaterade. Dina uppdateringar är stegvisa och Adobe begränsar uppdateringsfrekvens och -tid för att förhindra oönskad belastning på servern.
 
@@ -33,11 +33,11 @@ Det bästa sättet är att ansluta till databasservern via TCP/IP. Skapa en anv�
 
 1. Kontrollera att brandväggen tillåter att serverns dedikerade IP-adress kan anslutas.
 
-   Du kan hitta den IP-adress som används för att ansluta till servern under Anslutningar i ditt `Settings` sida.
+   Du kan hitta den IP-adress som används för att ansluta till servern i anslutningsavsnittet på `Settings`-sidan.
 
-1. Skapa en användare som du kan använda för att logga in på databasservern. Du har två alternativ: antingen via `UI` eller via `query`:
+1. Skapa en användare som du kan använda för att logga in på databasservern. Du har två alternativ, antingen via `UI` eller via en `query`:
    * `UI`
-   * [`Query`](http://sqlserverplanet.com/security/add-user) (andra exemplet)
+   * [`Query`](http://sqlserverplanet.com/security/add-user) (andra exempel)
 
 1. Ange serverns IP-adress, användarnamn och lösenord i [!DNL Commerce Intelligence] under **[!UICONTROL Manage Data** > **Connections]**.
 
@@ -45,6 +45,6 @@ Det bästa sättet är att ansluta till databasservern via TCP/IP. Skapa en anv�
 
 1. Klicka på **[!UICONTROL Add a Data Source]**.
 
-1. Välj om du vill ansluta en `Microsoft SQL` databasen och ange dina inloggningsuppgifter i fälten på den nya `Connections` sida.
+1. Välj att ansluta en `Microsoft SQL`-databas och ange dina autentiseringsuppgifter i fälten på den nya `Connections`-sidan.
 
-   Om du använder `Windows Azure`måste du även ange ett databasnamn.
+   Om du använder `Windows Azure` måste du även ange ett databasnamn.

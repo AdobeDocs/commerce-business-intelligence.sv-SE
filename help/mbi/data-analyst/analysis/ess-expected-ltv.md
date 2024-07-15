@@ -6,8 +6,8 @@ role: Admin, User
 feature: Data Warehouse Manager, Reports
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '331'
-ht-degree: 1%
+source-wordcount: '338'
+ht-degree: 0%
 
 ---
 
@@ -17,20 +17,20 @@ Att förutse kundernas livstidsvärde när de gör fler beställningar är en av
 
 Nedan följer stegen för att skapa analyser för att förstå era nuvarande kunders livstidsvärde och förutse hur livstidsvärdet ökar med fler order.
 
-![förväntat värde för livstid](../../assets/expected_ltv_720.png)
+![förväntat livstidsvärde](../../assets/expected_ltv_720.png)
 
 ## Bygga ett mått
 
 Det första steget är att skapa ett nytt mått med följande steg:
 * Navigera till **[!UICONTROL Manage Data > Metrics]**
-   * Visa befintlig **[!UICONTROL Avg lifetime revenue]**.
+   * Visa befintliga **[!UICONTROL Avg lifetime revenue]**.
 
   >[!NOTE]
   >
-  >Tabellen som måttet är uppbyggt på (troligen `customer_entity` eller `sales_order` beroende på butikens förmåga att acceptera utcheckning av gäster.)
+  >Tabellen som det här måttet är konstruerat för (troligtvis `customer_entity` eller `sales_order` beroende på din butiks förmåga att acceptera gästutcheckning).
 
-   * Klicka **[!UICONTROL Create New Metric]** och markera tabellen ovan.
-   * Det här måttet utför en **Median** på `Customer's lifetime revenue` kolumn, sorterad efter `created_at`.
+   * Klicka på **[!UICONTROL Create New Metric]** och markera tabellen ovan.
+   * Det här måttet utför en **median** i kolumnen `Customer's lifetime revenue`, sorterad av `created_at`.
       * [!UICONTROL Filters]:
          * Lägg till `Customers we count (Saved Filter Set)` (eller `Registered accounts we count`)
 
@@ -38,7 +38,7 @@ Det första steget är att skapa ett nytt mått med följande steg:
 
 ## Skapa en instrumentpanel
 
-När mätvärdena har skapats kan du **skapa en kontrollpanel** genom att göra detta:
+När måttet har skapats kan du **skapa en kontrollpanel** genom att göra följande:
 * Navigera till **[!UICONTROL Dashboards > Dashboard Options > Create New Dashboard]**.
 * Ge instrumentpanelen ett namn som `Expected LTV`.
 
@@ -48,7 +48,7 @@ När mätvärdena har skapats kan du **skapa en kontrollpanel** genom att göra 
 
 >[!NOTE]
 >
->På **[!UICONTROL Time Period:]**, anges tidsperioden för varje rapport som `All-time`. Du kan ändra detta efter dina analysbehov. Adobe rekommenderar att alla rapporter på kontrollpanelen täcker samma tidsperiod, till exempel `All time`, `Year-to-date`, eller `Last 365 days`.
+>På **[!UICONTROL Time Period:]** anges tidsperioden för varje rapport som `All-time`. Du kan ändra detta efter dina analysbehov. Adobe rekommenderar att alla rapporter på den här instrumentpanelen täcker samma tidsperiod, till exempel `All time`, `Year-to-date` eller `Last 365 days`.
 
 * **[!UICONTROL Average LTV (all)]**
    * [!UICONTROL Metric]: `Avg lifetime revenue`
@@ -77,7 +77,7 @@ När mätvärdena har skapats kan du **skapa en kontrollpanel** genom att göra 
      [!UICONTROL-diagramtyp]: `Line`
    * Avmarkera `Multiple Y-Axes`
 
-* **LTV efter antal beställningar under hela livstiden**
+* **LTV efter antal order under livstid**
    * Mått `1`: `Avg lifetime revenue`
    * Mått `2`: `New customers`
    * [!UICONTROL Time period]: `All time`
@@ -91,6 +91,6 @@ När mätvärdena har skapats kan du **skapa en kontrollpanel** genom att göra 
   >
   >Lägg inte till alla värden för `Customer's lifetime number of orders`. Titta istället på en punkt där antalet nya kunder når ett litet antal och manuellt lägga till varje kunds antal beställningsvärden för hela livstiden till den punkten. Om det till exempel finns 200 kunder på en order, 75 på två, 15 på tre och 3 på fyra lägger du till *1, 2 och 3*.
 
-* Lägg till befintlig [!UICONTROL Avg customer lifetime revenue by cohort] rapport.
+* Lägg till den befintliga [!UICONTROL Avg customer lifetime revenue by cohort]-rapporten.
 
 När du har skapat rapporterna kan du se bilden högst upp i det här avsnittet för att se hur du kan ordna rapporterna på din kontrollpanel.

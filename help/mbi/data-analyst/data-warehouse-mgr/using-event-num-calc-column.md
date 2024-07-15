@@ -6,20 +6,20 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '382'
-ht-degree: 3%
+source-wordcount: '399'
+ht-degree: 1%
 
 ---
 
 # Beräknad kolumn för händelsenummer
 
-I det här avsnittet beskrivs syftet med och användningsområdena för `Event Number` beräknad kolumn tillgänglig i **[!DNL Manage Data > Data Warehouse]** sida. Nedan visas en förklaring av vad det gör, följt av ett exempel, och hur det fungerar.
+I det här avsnittet beskrivs syftet med och användningsområdena för den beräknade kolumnen `Event Number` som är tillgänglig på sidan **[!DNL Manage Data > Data Warehouse]**. Nedan visas en förklaring av vad det gör, följt av ett exempel, och hur det fungerar.
 
 **Förklaring**
 
-The `Event Number` kolumntyp identifierar den sekvens i vilken händelser inträffade för en viss **händelseägare**, som `customer` eller `user`. Om du känner till SQL är den här kolumntypen identisk med `RANK` funktion. Den kan användas för att observera skillnader i beteende mellan förstagångshändelser, upprepningar eller nth-händelser i dina data.
+Kolumntypen `Event Number` identifierar den sekvens i vilken händelser inträffade för en viss **händelseägare**, till exempel `customer` eller `user`. Om du känner till SQL är den här kolumntypen identisk med funktionen `RANK`. Den kan användas för att observera skillnader i beteende mellan förstagångshändelser, upprepningar eller nth-händelser i dina data.
 
-Vid en slips innehåller den här kolumnen samma **rankning** för de kopplade händelserna och hoppar över efterföljande nummer. Om den till exempel rankade siffrorna 5,8,10,10,12, skulle rankningarna vara 1,2,3,3,5.
+Om det finns en slips innehåller den här kolumnen samma **rankning** för de kopplade händelserna och de efterföljande siffrorna hoppas över. Om den till exempel rankade siffrorna 5,8,10,10,12, skulle rankningarna vara 1,2,3,3,5.
 
 Det vanligaste användningsexemplet i den här kolumnen är att analysera förstagångsköpare och upprepa köpare. Första gången köpare identifieras genom att ett filter (till ett mätvärde eller en rapport) läggs till på `Customer's order number` = 1. `Customer's order number` är en kolumn av typen `Event Number`.
 
@@ -33,26 +33,26 @@ Det vanligaste användningsexemplet i den här kolumnen är att analysera först
 | **4 | A | 2015-01-02 13:00:00 | 3 |
 | **5 | B | 2015-01-03 13:00:00 | 2 |
 
-I ovanstående exempel är kolumnen `Owner's event number` är en `Event Number` kolumn. Den rangordnar ägarens händelser i den ordning de inträffade (baserat på `timestamp` kolumn).
+I ovanstående exempel är kolumnen `Owner's event number` en `Event Number`-kolumn. Ägarens händelser rangordnas i den ordning som de inträffade (baserat på kolumnen `timestamp`).
 
-Ta till exempel alla rader där `owner_id = A`. Den första raden i tabellen är den tidigaste tidsstämpeln för den här ägaren, följt av den tredje raden i tabellen, följt av den fjärde raden i tabellen.
+Ta till exempel alla rader där `owner_id = A` finns. Den första raden i tabellen är den tidigaste tidsstämpeln för den här ägaren, följt av den tredje raden i tabellen, följt av den fjärde raden i tabellen.
 
 **Mekanik**
 
-Här följer några instruktioner om hur du skapar en `Event Number` kolumn:
+Här följer några instruktioner om hur du skapar en `Event Number`-kolumn:
 
-1. Navigera till **[!UICONTROL Manage Data > Data Warehouse]** sida.
+1. Navigera till sidan **[!UICONTROL Manage Data > Data Warehouse]**.
 
 1. Navigera till tabellen som du vill skapa den här kolumnen för.
 
-1. Klicka **[!UICONTROL Create a Column]** och väljer `EVENT_NUMBER (…)` kolumntyp: under `Same Table` -avsnitt.
+1. Klicka på **[!UICONTROL Create a Column]** och välj kolumntypen `EVENT_NUMBER (…)` under avsnittet `Same Table`.
 
-1. Den första listrutan `Event Owner` anger den enhet för vilken rangordningen ska fastställas. Om `Customer's order number`, en kundidentifierare som `customer_id` eller `customer_email` skulle vara `Event Owner`.
+1. Den första listrutan `Event Owner` anger entiteten som rangordningen ska bestämmas för. Om en `Customer's order number` används är en kundidentifierare som `customer_id` eller `customer_email` `Event Owner`.
 
-1. Den andra listrutan `Event Rank` Anger den kolumn som tvingar den sekvens som bestämmer radens rangordning. Om `Customer's order number`, `created_at` tidsstämpeln är `Event Rank`.
+1. Den andra listrutan `Event Rank` anger kolumnen som tvingar sekvensen som bestämmer radens rangordning. Om `Customer's order number` används är tidsstämpeln `created_at` `Event Rank`.
 
-1. Under `Options` kan du lägga till filter för att utesluta rader från övervägandet. Undantagna rader har en `NULL` värdet för den här kolumnen.
+1. I listrutan `Options` kan du lägga till filter för att utesluta rader från övervägandet. De uteslutna raderna har ett `NULL`-värde för den här kolumnen.
 
 1. Ange ett namn för kolumnen och klicka på **[!UICONTROL Save]**.
 
-1. Kolumnen är tillgänglig att använda _omedelbart._
+1. Kolumnen kan användas _omedelbart._

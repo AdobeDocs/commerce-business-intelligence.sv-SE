@@ -13,15 +13,15 @@ ht-degree: 0%
 
 # Söka efter en kontrollpanel
 
-Det här avsnittet visar hur du använder [[!DNL Global Search] funktion](#global) att söka efter kontrollpaneler och hur du söker efter [instrumentpaneler som ägs av andra användare](#other).
+I det här avsnittet visas hur du använder [[!DNL Global Search] funktionen](#global) för att söka efter instrumentpaneler och hur du söker efter [instrumentpaneler som ägs av andra användare](#other).
 
 ## Global sökning {#global}
 
-The [!DNL Global Search] kan du söka efter och välja kontrollpaneler att visa.
+På menyn [!DNL Global Search] kan du söka efter och välja kontrollpaneler att visa.
 
-* *Så här visar du en lista över dina befintliga instrumentpaneler* klickar du på kontrollpanelen.
+* *Om du vill visa en lista över dina befintliga instrumentpaneler* klickar du på instrumentpanelen.
 
-* *Så här söker du efter en kontrollpanel* skriver du in vissa sökvillkor i sökfältet när du har klickat på kontrollpanelens listruta. Om kontrollpanelerna matchar villkoren visas de först i listan.
+* *Om du vill söka efter en instrumentpanel* skriver du in vissa sökvillkor i sökfältet efter att du klickat på instrumentpanelens listruta. Om kontrollpanelerna matchar villkoren visas de först i listan.
 
 Exempel:
 
@@ -29,6 +29,6 @@ Exempel:
 
 ## Sök efter instrumentpaneler som ägs av andra användare {#other}
 
-Söker du en instrumentpanel som ägs av en annan användare? Om andra kan visa kontrollpanelen kan du söka efter den genom att klicka på **[!UICONTROL Find]** i `Dashboard Options` nedrullningsbar meny.
+Söker du en instrumentpanel som ägs av en annan användare? Om andra kan visa instrumentpanelen kan du söka efter den genom att klicka på **[!UICONTROL Find]** i listrutan `Dashboard Options`.
 
-![hitta instrumentpaneler](../../assets/find-dboards-other-owners.png)
+![sök efter instrumentpaneler](../../assets/find-dboards-other-owners.png)

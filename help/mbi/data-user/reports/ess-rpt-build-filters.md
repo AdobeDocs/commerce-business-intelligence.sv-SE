@@ -6,14 +6,14 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '354'
 ht-degree: 0%
 
 ---
 
 # Filter
 
-Ett eller flera filter kan läggas till för att begränsa vilka data som används för att skapa en rapport. Varje filter är ett uttryck som innehåller en kolumn från den associerade tabellen, en operator och ett värde. Om du t.ex. bara vill inkludera återkommande kunder kan du skapa ett filter som endast innehåller kunder som har gjort mer än en beställning. Flera filter kan användas med logiska `AND/OR` för att lägga till logik i rapporten.
+Ett eller flera filter kan läggas till för att begränsa vilka data som används för att skapa en rapport. Varje filter är ett uttryck som innehåller en kolumn från den associerade tabellen, en operator och ett värde. Om du t.ex. bara vill inkludera återkommande kunder kan du skapa ett filter som endast innehåller kunder som har gjort mer än en beställning. Flera filter kan användas med logiska `AND/OR`-operatorer för att lägga till logik i rapporten.
 
 >[!TIP]
 >
@@ -27,7 +27,7 @@ Ett eller flera filter kan läggas till för att begränsa vilka data som använ
 
    I den här rapporten visar varje datapunkt det totala antalet kunder för månaden.
 
-1. Klicka på Filter (![](../../assets/magento-bi-btn-filter.png)).
+1. Klicka på ikonen Filter (![](../../assets/magento-bi-btn-filter.png)) i den vänstra panelen.
 
    ![Lägg till filter](../../assets/magento-bi-report-builder-filter-add.png)
 
@@ -49,22 +49,22 @@ Ett eller flera filter kan läggas till för att begränsa vilka data som använ
 
      ![Ange värdet](../../assets/magento-bi-report-builder-filter-part3.png)
 
-   * När filtret är klart klickar du **[!UICONTROL Apply]**.
+   * När filtret är klart klickar du på **[!UICONTROL Apply]**.
 
      Rapporten innehåller nu bara återkommande kunder, och antalet kundposter som hämtats för rapporten har reducerats från 33 000 till 12 600.
 
      ![Filtrerad rapport](../../assets/magento-bi-report-builder-filter-report.png)<!--{: .zoom}-->
 
-1. Klicka på perspektivet ( ![](../../assets/magento-bi-btn-perspective.png)).
+1. Klicka på perspektivikonen ( ![](../../assets/magento-bi-btn-perspective.png)) i sidofältet.
 
    ![Perspektiv](../../assets/magento-bi-report-builder-filter-perspective.png)<!--{: .zoom}-->
 
-1. Välj `Cumulative`. Klicka sedan på **[!UICONTROL Apply]**.
+1. Välj `Cumulative` i listan med inställningar. Klicka sedan på **[!UICONTROL Apply]**.
 
    ![Kumulativt perspektiv](../../assets/magento-bi-report-builder-filter-perspective-cumulative.png)
 
-   The `Cumulative` I perspektivet fördelas förändringen över tid i stället för att visa de ojämna upp- och nedgraderingarna för varje månad.
+   Perspektivet `Cumulative` fördelar ändringen över tid i stället för att visa de ojämna upp- och nedgraderingarna för varje månad.
 
-1. Ange en `Title` för rapporten och klicka på **[!UICONTROL Save]** det som `Chart` till din instrumentpanel.
+1. Ange en `Title` för rapporten och klicka på **[!UICONTROL Save]** som `Chart` på instrumentpanelen.
 
    ![Spara på instrumentpanelen](../../assets/magento-bi-report-builder-filter-perspective-cumulative-save.png)

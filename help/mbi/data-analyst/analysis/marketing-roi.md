@@ -6,7 +6,7 @@ role: Admin,  User
 feature: Reports, Dashboards
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '540'
+source-wordcount: '521'
 ht-degree: 0%
 
 ---
@@ -15,30 +15,30 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Det här avsnittet innehåller instruktioner för klienter som använder den ursprungliga arkitekturen och den nya arkitekturen. Du är på [ny arkitektur](../../administrator/account-management/new-architecture.md) om du har Datan Warehouse Vyer tillgänglig efter att du har valt Hantera data i huvudverktygsfältet.
+>Det här avsnittet innehåller instruktioner för klienter som använder den ursprungliga arkitekturen och den nya arkitekturen. Du finns på den [nya arkitekturen](../../administrator/account-management/new-architecture.md) om du har sektionen &quot;Vyer över Data Warehouse&quot; tillgänglig efter att du har valt &quot;Hantera data&quot; i huvudverktygsfältet.
 
 Om ni spenderar pengar på onlinereklam vill ni följa upp er avkastning på dessa utgifter och fatta datadrivna beslut om ytterligare investeringar. I det här avsnittet visas hur du konfigurerar en kontrollpanel som spårar din kanalanalys, inklusive avkastning på investering i aggregat och per kampanj.
 
 ![](../../assets/Marketing_dashboard_example.png)
 
-Innan du börjar vill du ansluta [!DNL [Facebook Ads]](../importing-data/integrations/facebook-ads.md), [!DNL [Adwords]](../importing-data/integrations/google-adwords.md)och [!DNL [Google Ecommerce]](../importing-data/integrations/google-ecommerce.md) konton och ta in ytterligare annonsinformation online. Denna analys innehåller [avancerade beräknade kolumner](../data-warehouse-mgr/adv-calc-columns.md).
+Innan du börjar vill du ansluta dina [!DNL [Facebook Ads]](../importing-data/integrations/facebook-ads.md)-, [!DNL [Adwords]](../importing-data/integrations/google-adwords.md)- och [!DNL [Google Ecommerce]](../importing-data/integrations/google-ecommerce.md)-konton och hämta ytterligare annonsutgiftsdata online. Den här analysen innehåller [avancerade beräknade kolumner](../data-warehouse-mgr/adv-calc-columns.md).
 
 ## Konsoliderade tabeller
 
-**Ursprunglig arkitektur:** för att samla era utgifter från olika källor, som [!DNL Facebook Ads] eller [!DNL Google Adwords], Adobe rekommenderar att du skapar en **konsoliderad tabell** av alla era annonskostnader. Du behöver en analytiker som slutför det här steget åt dig. Om du inte har gjort det, [arkivera en supportförfrågan](../../guide-overview.md#Submitting-a-Support-Ticket) med motivet `[MARKETING ROI ANALYSIS]`och en analytiker skapar tabellen.
+**Ursprunglig arkitektur:** Om du vill samla dina utgifter från olika källor, som [!DNL Facebook Ads] eller [!DNL Google Adwords], rekommenderar Adobe att du skapar en **konsoliderad tabell** med alla dina annonskostnader. Du behöver en analytiker som slutför det här steget åt dig. Om du inte har gjort det [skickar du en supportförfrågan](../../guide-overview.md#Submitting-a-Support-Ticket) med ämnet `[MARKETING ROI ANALYSIS]` och en analytiker skapar tabellen.
 
-**Ny arkitektur:** Du kan följa exemplet i [det här analysbiblioteket](../../data-analyst/data-warehouse-mgr/create-dw-views.md) ämne. Konsoliderade tabeller kallas nu Data Warehouse Views för den nya arkitekturen.
+**Ny arkitektur:** Du kan följa exemplet i [det här analysbibliotekets](../../data-analyst/data-warehouse-mgr/create-dw-views.md) avsnitt. Konsoliderade tabeller kallas nu Data Warehouse Views för den nya arkitekturen.
 
 ## Beräknade kolumner
 
 Kolumner att skapa
 
-* **`Consolidated Digital Ad Spend`** table
-* **`Campaign name`** har skapats av en Adobe-analytiker som en del av **[AVKASTNING PÅ MARKNADSFÖRING]** biljett
+* **`Consolidated Digital Ad Spend`**-tabell
+* **`Campaign name`** har skapats av en Adobe-analytiker som en del av din **[MARKNADSFÖRING av ROI-ANALYS]**-biljett
 
 **Ursprungliga och nya arkitekturer:**
 
-* **`sales_flat_order`** table
+* **`sales_flat_order`**-tabell
    * **`Order's GA campaign`**
       * Välj en definition: `Joined Column`
       * [!UICONTROL Create Path]:
@@ -61,9 +61,10 @@ Kolumner att skapa
       * Välj en definition: Ansluten kolumn
       * Välj en [!UICONTROL table]: `ecommerce####`
       * Välj en [!UICONTROL column]: `source`
-      * [!UICONTROL Path]: sales_flat_order.increment_id = ecommerce###.transactionId ^
+      * [!UICONTROL Path]: sales_flat_order.increment_id = ecommerce###.transactionId
+^
 
-* **`customer_entity`** table
+* **`customer_entity`**-tabell
 * **`Customer's first order GA campaign`**
    * Välj en definition: `Max`
    * Välj en [!UICONTROL table]: `sales_flat_order`
@@ -91,7 +92,7 @@ Kolumner att skapa
       * `Orders we count`
       * `Customer's order number = 1`
 
-* **`sales_flat_order`** table
+* **`sales_flat_order`**-tabell
 * **`Customer's first order GA campaign`**
    * Välj en definition: `Joined Column`
    * Välj en [!UICONTROL table]: `customer_entity`
@@ -113,40 +114,40 @@ Kolumner att skapa
 ## Mått
 
 * **Annonsutgift**
-* I **`Consolidated Digital Ad Spend`** table
-* Det här måttet utför en **Summa**
-* På **`adCost`** kolumn
-* Beställd av **`date`** tidsstämpel
+* I tabellen **`Consolidated Digital Ad Spend`**
+* Detta mått utför en **summa**
+* I kolumnen **`adCost`**
+* Ordnad efter tidsstämpeln **`date`**
 
-* **Annonsvisningar**
-* I **`Consolidated Digital Ad Spend`** table
-* Det här måttet utför en **Summa**
-* På **`Impressions`** kolumn
-* Beställd av **`Month`** tidsstämpel
+* **Lägg till avtryck**
+* I tabellen **`Consolidated Digital Ad Spend`**
+* Detta mått utför en **summa**
+* I kolumnen **`Impressions`**
+* Ordnad efter tidsstämpeln **`Month`**
 
 * **Lägg till klick**
-* I **`Consolidated Digital Ad Spend`** table
-* Det här måttet utför en **Summa**
-* På **`adClicks`** kolumn
-* Beställd av **`Month`** tidsstämpel
+* I tabellen **`Consolidated Digital Ad Spend`**
+* Detta mått utför en **summa**
+* I kolumnen **`adClicks`**
+* Ordnad efter tidsstämpeln **`Month`**
 
 >[!NOTE]
 >
->Se till att [lägga till alla nya kolumner som dimensioner till mått](../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) innan du skapar nya rapporter.
+>Se till att [lägga till alla nya kolumner som mått i mätvärden](../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) innan du skapar nya rapporter.
 
 ## Rapporter
 
-* **Annonsutgift (hela tiden)**
-   * [!UICONTROL Metric]: Annonskostnad
+* **Annonsering (hela tiden)**
+   * [!UICONTROL Metric]: Annonsutgift
 
-* Mått `A`: Annonskostnad
+* Mått `A`: Annonsutgift
 * [!UICONTROL Time period]: `All time`
 * 
   [!UICONTROL-intervall]: `None`
 * 
   [!UICONTROL Chart Type]: `Scalar`
 
-* **Annonsköp av kunder (hela tiden)**
+* **Lägg till kundförvärv (hela tiden)**
    * [!UICONTROL Metric]: `New customers`
    * [!UICONTROL Filters]:
       * `User's first order's source LIKE %google%`
@@ -162,8 +163,8 @@ Kolumner att skapa
 * 
   [!UICONTROL Chart Type]: `Scalar`
 
-* **Annonsavkastning**
-   * [!UICONTROL Metric]: Annonskostnad
+* **Annonsera ROI**
+   * [!UICONTROL Metric]: Annonsutgift
 
    * [!UICONTROL Metric]: `New customers`
    * [!UICONTROL Filters]:
@@ -195,7 +196,7 @@ Kolumner att skapa
 * 
   [!UICONTROL Chart Type]: `Scalar`
 
-* **Beställningar per gastorlek**
+* **Beställningar efter gasturka**
    * 
      [!UICONTROL-mått]: `Orders`
 
@@ -206,7 +207,7 @@ Kolumner att skapa
 * 
   [!UICONTROL Chart Type]: `Area`
 
-* **Annonsavkastning per kampanj**
+* **Annonsera avkastningen från kampanj**
    * [!UICONTROL Metric]: `Ad Spend`
 
    * [!UICONTROL Metric]:`New customers`
@@ -225,7 +226,7 @@ Kolumner att skapa
       * `User's first order's medium IN cpc, ppc`
       * Filterlogik: ([`A`] ELLER [`B`] ELLER [`C`]) OCH [`D`]
 
-   * [!UICONTROL Metric]: Genomsnittligt antal order under hela livstiden
+   * [!UICONTROL Metric]: Genomsnittligt antal order för livslängd
    * [!UICONTROL Filters]:
       * `User's first order's source LIKE %google%`
       * `User's first order's source LIKE %facebook%`
@@ -279,9 +280,9 @@ Kolumner att skapa
 * 
   [!UICONTROL Chart Type]: `Table`
 
-Om du stöter på några frågor när du skapar den här analysen eller bara vill engagera Professional Services-teamet, [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+[Kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) om du får frågor under arbetet med att skapa den här analysen, eller om du bara vill engagera Professional Services-teamet.
 
 ### Relaterad
 
-* [De bästa metoderna för UTM-taggning i [!DNL Google Analytics]](../../best-practices/utm-tagging-google.md)
-* [Hur [!DNL Google Analytics] UTM-attribueringsarbete?](../analysis/utm-attributes.md)
+* [Metodtips för UTM-taggning i  [!DNL Google Analytics]](../../best-practices/utm-tagging-google.md)
+* [Hur fungerar  [!DNL Google Analytics] UTM-attribuering?](../analysis/utm-attributes.md)

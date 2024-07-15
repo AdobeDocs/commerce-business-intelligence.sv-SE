@@ -6,14 +6,14 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Import/Export
 source-git-commit: ddda796c9f32d22b1d679fc245eb11b92cd491cf
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '390'
 ht-degree: 0%
 
 ---
 
 # Ny arkitektur
 
-[!DNL Adobe Commerce Intelligence] Produkt- och ingenjörsteamen har fokuserat på att göra de mest svepande, efterlängtade förbättringarna möjliga under det senaste året. Adobe har nöjet att meddela att det finns en ny [!DNL Commerce Intelligence] produktarkitektur som gör dessa förbättringar till verklighet.
+[!DNL Adobe Commerce Intelligence] Produktteam och ingenjörsteam har fokuserat på att göra de mest svepande och efterfrågade förbättringarna möjliga under det senaste året. Adobe har stor glädje av att kunna meddela att det finns en ny [!DNL Commerce Intelligence]-produktarkitektur som gör dessa förbättringar till verklighet.
 
 ## Fördelar med den nya arkitekturen
 
@@ -45,7 +45,7 @@ När detta är klart vet du vilka data du behöver synkronisera med den nya Data
 
 ### Få hjälp
 
-The [!DNL Adobe Commerce Intelligence] [Tjänstteam](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) kan genomföra omimplementeringen till en extra kostnad. Kontakta [Adobe Account Team](../../guide-overview.md#Submitting-a-Support-Ticket) och vara redo att tillhandahålla en lista med instrumentpaneler/rapporter som du vill prioritera när du skapar i det nya kontot
+[!DNL Adobe Commerce Intelligence] [Services-teamet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) kan utföra din omimplementering till en extra kostnad. Kontakta ditt [Adobe-kontoteam](../../guide-overview.md#Submitting-a-Support-Ticket) och förbered dig för att tillhandahålla en lista med instrumentpaneler/rapporter som du vill prioritera när du skapar i det nya kontot
 
 ### Statistik med befintlig arkitektur
 

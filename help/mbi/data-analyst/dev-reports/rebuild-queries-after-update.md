@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # Återskapa frågor efter uppdateringscykeln
 
-Du behöver inte återskapa dina frågor. Rapporter skapade med [`SQL Report Builder`](../dev-reports/sql-rpt-bldr.md) sparas på samma sätt som i traditionell `Report Builder`. Uppdateringsprocessen för SQL-diagram är densamma - när data har uppdaterats beräknas och visas värdena i diagrammen på nytt.
+Du behöver inte återskapa dina frågor. Rapporter som skapats med [`SQL Report Builder`](../dev-reports/sql-rpt-bldr.md) sparas på samma sätt som de som skapats i det traditionella `Report Builder`. Uppdateringsprocessen för SQL-diagram är densamma - när data har uppdaterats beräknas och visas värdena i diagrammen på nytt.

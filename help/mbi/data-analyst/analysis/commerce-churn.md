@@ -1,6 +1,6 @@
 ---
 title: Commerce Churn
-description: Lär dig hur du genererar och analyserar din Commerce Churn-kurs.
+description: Lär dig hur du genererar och analyserar din andel av bortfall i Commerce.
 exl-id: 8775cf0a-114d-4b48-8bd2-fc1700c59a12
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Warehouse Manager, Reports
@@ -13,17 +13,17 @@ ht-degree: 2%
 
 # Kurvfrekvens
 
-I det här avsnittet visas hur du beräknar en **bortfallstakt** för **e-handelskunder**. Till skillnad från SaaS och traditionella prenumerationsföretag har e-handelskunder vanligtvis ingen konkreta **&quot;churn event&quot;** för att visa att de inte längre ska räknas med i era aktiva kunder. Av den anledningen kan du med instruktionerna nedan definiera en kund som&quot;efterfrågad&quot; baserat på den tid som gått sedan den senaste ordern.
+I det här avsnittet visas hur du beräknar en **bortfallstakt** för dina **e-handelskunder**. Till skillnad från SaaS eller traditionella prenumerationsföretag har e-handelskunder vanligtvis inte någon konkret **&quot;churn-händelse&quot;** som visar att de inte längre ska räknas med i dina aktiva kunder. Av den anledningen kan du med instruktionerna nedan definiera en kund som&quot;efterfrågad&quot; baserat på den tid som gått sedan den senaste ordern.
 
 ![](../../assets/Churn_rate_image.png)
 
-Många kunder vill ha hjälp med att börja förstå vad **tidsram** de bör använda baserat på sina uppgifter. Om du vill använda historiska kundbeteenden för att definiera detta **tidsram för bortfall** kan du bekanta dig med [definiera kurva](../analysis/define-cust-churn.md) ämne. Sedan kan du använda resultatet i formeln för bortfallsfrekvens i instruktionerna nedan.
+Många kunder vill ha hjälp med att börja förstå vilken **tidsram** de ska använda baserat på sina data. Om du vill använda tidigare kundbeteende för att definiera den här **tidsramen för bortfall** kanske du vill bekanta dig med ämnet [definiera urn](../analysis/define-cust-churn.md). Sedan kan du använda resultatet i formeln för bortfallsfrekvens i instruktionerna nedan.
 
 ## Beräknade kolumner
 
 Kolumner att skapa
 
-* **`customer_entity`** table
+* **`customer_entity`**-tabell
 * **`Customer's last order date`**
    * Välj en [!UICONTROL definition]: `Max`
    * Välj [!UICONTROL table]: `sales_flat_order`
@@ -37,7 +37,7 @@ Kolumner att skapa
 
 >[!NOTE]
 >
->Se till att [lägga till alla nya kolumner som dimensioner till mått](../data-warehouse-mgr/manage-data-dimensions-metrics.md) innan du skapar nya rapporter.
+>Se till att [lägga till alla nya kolumner som mått i mätvärden](../data-warehouse-mgr/manage-data-dimensions-metrics.md) innan du skapar nya rapporter.
 
 ## Mått
 
@@ -48,28 +48,28 @@ Kolumner att skapa
 >
 >Detta mått kan finnas på ditt konto.
 
-* I **`customer_entity`** table
-* Det här måttet utför en **Antal**
-* På **`entity_id`** kolumn
-* Beställd av **`Customer's first order date`** tidsstämpel
+* I tabellen **`customer_entity`**
+* Detta mått utför ett **antal**
+* I kolumnen **`entity_id`**
+* Ordnad efter tidsstämpeln **`Customer's first order date`**
 * [!UICONTROL Filter]:
 
-* **Nya kunder (efter sista orderdatum)**
+* **Nya kunder (efter senaste orderdatum)**
    * Räknade kunder
 
   >[!NOTE]
   >
   >Detta mått kan finnas på ditt konto.
 
-* I **`customer_entity`** table
-* Det här måttet utför en **Antal**
-* På **`entity_id`** kolumn
-* Beställd av **`Customer's last order date`** tidsstämpel
+* I tabellen **`customer_entity`**
+* Detta mått utför ett **antal**
+* I kolumnen **`entity_id`**
+* Ordnad efter tidsstämpeln **`Customer's last order date`**
 * [!UICONTROL Filter]:
 
 >[!NOTE]
 >
->Se till att [lägga till alla nya kolumner som dimensioner till mått](../data-warehouse-mgr/manage-data-dimensions-metrics.md) innan du skapar nya rapporter.
+>Se till att [lägga till alla nya kolumner som mått i mätvärden](../data-warehouse-mgr/manage-data-dimensions-metrics.md) innan du skapar nya rapporter.
 
 ## Rapporter
 
@@ -80,7 +80,7 @@ Kolumner att skapa
      [!UICONTROL Perspective]: `Cumulative`
    * [!UICONTROL Metric]: `New customers (by last order date)`
    * [!UICONTROL Filter]:
-   * Sekunder sedan kundens senaste orderdatum >= [En självdefinierad klippgräns för kunder som blivit bortskurna ]**`^`**
+   * Sekunder sedan kundens senaste orderdatum >= [Din självdefinierade brytfrekvens för kunder som blivit beställda ]**`^`**
    * `Lifetime number of orders Greater Than 0`
 
    * [!UICONTROL Metric]: `New customers (by last order date)`
@@ -103,9 +103,9 @@ Nedan finns några vanliga konverteringar för månad > sekund, men Google inneh
 
 | **Månader** | **Sekunder** |
 |---|---|
-| 3 | 7,776,000 |
-| 6 | 15,552,000 |
-| 9 | 23,328,000 |
-| 12 | 31,104,000 |
+| 3 | 7 776 000 |
+| 6 | 15 552 000 |
+| 9 | 23 328 000 |
+| 12 | 31 104 000 |
 
 När du har kompilerat alla rapporter kan du ordna dem på kontrollpanelen som du vill. Resultatet kan se ut som kontrollpanelen ovan.

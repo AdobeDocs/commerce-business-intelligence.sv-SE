@@ -13,15 +13,15 @@ ht-degree: 1%
 
 # [!DNL MongoDB] Datamodellering
 
-När [!DNL Adobe Commerce Intelligence] pullin [!DNL MongoDB] data, översätts dessa data till en relationsmodell.
+När [!DNL Adobe Commerce Intelligence] hämtar in [!DNL MongoDB]-data översätts dessa data till en relationsmodell.
 
-Den dåliga nyheten: Även om de flesta datamönster inte utgör något problem finns det några som inte stöds av [!DNL Commerce Intelligence], på grund av översättningen till en relationsmodell.
+Den dåliga nyheten: De flesta datamönster utgör inte något problem, men det finns några som inte stöds av [!DNL Commerce Intelligence] på grund av översättningen till en relationsmodell.
 
 De goda nyheterna: Alla dessa mönster kan undvikas.
 
 ## Underkapslade arrayer {#subnested}
 
-Om din samling ser ut som exemplet nedan [!DNL Commerce Intelligence] replikerar bara data i arrayen items. Data från underobjektarrayen hämtas inte.
+Om din samling ser ut som exemplet nedan replikerar [!DNL Commerce Intelligence] bara data i arrayen items. Data från underobjektarrayen hämtas inte.
 
 ```bash
     {

@@ -6,8 +6,8 @@ role: Admin, User
 feature: Data Warehouse Manager, Reports
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '1141'
-ht-degree: 2%
+source-wordcount: '1177'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +23,7 @@ Undrar du någonsin hur erbjudandet påverkar ditt företag? Vill du veta vilka 
 
 ## Rekommenderade mått {#metrics}
 
-När du analyserar kuponganvändning bör du överväga att använda ([eller bygga](../../data-user/reports/ess-manage-data-metrics.md)) dessa mått:
+När du analyserar kuponganvändning bör du överväga att använda ([eller bygga](../../data-user/reports/ess-manage-data-metrics.md)) följande mått:
 
 ### Antal order
 
@@ -65,26 +65,26 @@ Denna mätning hjälper till att utvärdera lojalitet och genomsnittliga intäkt
 
 Nu när du vet vilka mätvärden du ska titta på kan du titta på ett exempel med tre olika kuponger - 10 % rabatt, 20 dollar på 100 eller mer och 10 dollar på.
 
-| **Kupong** | **Antal order** | **Bruttointäkter** | **Bruttorabatter från kuponger** | **Nettointäkter** | **Rabatterad procent** |
+| **Kupong** | **# order** | **Bruttointäkter** | **Bruttorabatter från kuponger** | **Nettointäkter** | **Procent rabatt** |
 |-----|-----|-----|-----|-----|-----|
-| **10 % rabatt** | 79 | $19,757.02 | $1,975.70 | $17,781.32 | 10.00% |
-| **$20 rabatt $100+** | 101 | $13,928.91 | $2,020.00 | $11,908.91 | 14.50% |
-| **10 dollar rabatt** | 201 | $14,542.35 | $2,010.00 | $12,532.35 | 13.82% |
+| **10 % rabatt** | 79 | 19 757 USD | 1 975,70 USD | 17 781,32 USD | 10,00 % |
+| **$20 rabatt på $100+** | 101 | 13 928,91 USD | $2 020.00 | 11 908,91 USD | 14,50 % |
+| **$10 rabatt** | 201 | 14 542,35 USD | $2 010.00 | 12 532,35 USD | 13,82 % |
 
 {style="table-layout:auto"}
 
 
-| **Kupong** | **Medel. nettoordervärde** | **Medel. orderrabatt** | **Distinkta köpare** | **Medel. omsättning** |
+| **Kupong** | **Medel. nettoordervärde** | **Medel. orderrabatt** | **Distinkta köpare** | **Medel. livstidsintäkt** |
 |-----|-----|-----|-----|-----|
-| **10 % rabatt** | $225.08 | $25.01 | 79 | $361.50 |
-| **$20 rabatt $100+** | $117.91 | $20.00 | 95 | $218.76 |
-| **10 dollar rabatt** | $62.35 | $10.00 | 199 | $84.27 |
+| **10 % rabatt** | 225,08 USD | $25.01 | 79 | 361,50 USD |
+| **$20 rabatt på $100+** | 117,91 USD | $20.00 | 95 | $218.76 |
+| **$10 rabatt** | 62,35 USD | 10.00 USD | 199 | $84.27 |
 
 {style="table-layout:auto"}
 
 ## Vad kan du ta ifrån det här?
 
-Cirka 80 beställningar gjordes med kupongen &quot;10 % rabatt&quot;, 100 beställningar med kupongen &quot;$20&quot; på minst 100 dollar och 200 beställningar med kupongen &quot;$10&quot;. The **antal order** som är kopplade till varje kupong kan variera beroende på flera faktorer, bland annat:
+Cirka 80 beställningar gjordes med kupongen &quot;10 % rabatt&quot;, 100 beställningar med kupongen &quot;$20&quot; på minst 100 dollar och 200 beställningar med kupongen &quot;$10&quot;. Antalet **order** som är associerade med varje kupong kan variera beroende på flera faktorer, bland annat:
 
 * hur länge kupongen erbjuds.
 * den tidpunkt på dag/vecka/månad/år då kupongen erbjöds.
@@ -97,29 +97,29 @@ Cirka 80 beställningar gjordes med kupongen &quot;10 % rabatt&quot;, 100 bestä
 
 * den typiska kundens köpbeteende.
 
-Med **bruttorabatter** för alla tre kuponger är lika (ca 2 000 dollar), antalet beställningar för varje kupong är olika. Genom att analysera rabatterna per order kan du förklara orsaken till kontrastsiffrorna. Kupongen&quot;10 % rabatt&quot; har minst antal order, men en **genomsnittlig orderrabatt** cirka 25 dollar. Även om den här kupongen har ett lågt antal order ger det höga genomsnittliga rabattvärdet bruttorabatten på cirka 2 000 dollar.
+Även om de **bruttorabatterna** för alla tre kuponger är lika (ca 2 000 USD), är antalet order för varje kupong olika. Genom att analysera rabatterna per order kan du förklara orsaken till kontrastsiffrorna. Kupongen&quot;10 % rabatt&quot; har minst antal order, men en **genomsnittlig orderrabatt** på cirka 25 USD. Även om den här kupongen har ett lågt antal order ger det höga genomsnittliga rabattvärdet bruttorabatten på cirka 2 000 dollar.
 
-**Brutto- och nettointäkter** ge en övergripande uppfattning om det fulla värdet av de order som är kopplade till varje kupong. Den övergripande bilden ger dock ingen förståelse för de olika beteenden som är kopplade till varje kupong. När man ser på beställningsbasis ser man att kupongen &quot;10 % rabatt&quot; har en hög **genomsnittlig nettoorder** värde, vilket i sin tur leder till dess höga **nettointäkter**.
+**Brutto- och nettointäkt** ger en övergripande uppfattning om det fullständiga värdet av de order som är kopplade till varje kupong. Den övergripande bilden ger dock ingen förståelse för de olika beteenden som är kopplade till varje kupong. När du tittar på en orderbas ser du att kupongen&quot;10 % rabatt&quot; har ett högt **genomsnittligt nettoordervärde**, vilket i sin tur leder till en hög **nettointäkt**.
 
-Å andra sidan har kupongen&quot;10 % rabatt&quot; ett högt genomsnittligt rabattvärde ($25,01), men det lägsta **procent rabatt**. Detta är praktiskt när du tar hänsyn till det genomsnittliga nettoordervärdet 225,08 USD. Rabatten på&quot;10 % rabatt&quot; har en liten procentuell rabatt på ett stort genomsnittligt nettoordervärde, vilket innebär att den genomsnittliga orderrabatten är ett stort belopp.
+Å andra sidan har kupongen&quot;10 % rabatt&quot; ett högt genomsnittligt rabattvärde ($25,01), men det lägsta **procentvärdet**. Detta är praktiskt när du tar hänsyn till det genomsnittliga nettoordervärdet 225,08 USD. Rabatten på&quot;10 % rabatt&quot; har en liten procentuell rabatt på ett stort genomsnittligt nettoordervärde, vilket innebär att den genomsnittliga orderrabatten är ett stort belopp.
 
-Titta på **distinkta köpare** och **genomsnittlig intäkt** för varje kupong. &quot;10 % rabatt&quot; har samma antal order som distinkta köpare. Detta kan bero på att varje kund har en rabattkupong. Å andra sidan har rabattkupongen &quot;$20 på $100 eller mer&quot; och &quot;$10 av&quot; färre distinkta köpare än antalet order, vilket innebär att vissa kunder använde dessa kuponger flera gånger.
+Titta på de **distinkta köparna** och **genomsnittliga livstidsintäkterna** för varje kupong. &quot;10 % rabatt&quot; har samma antal order som distinkta köpare. Detta kan bero på att varje kund har en rabattkupong. Å andra sidan har rabattkupongen &quot;$20 på $100 eller mer&quot; och &quot;$10 av&quot; färre distinkta köpare än antalet order, vilket innebär att vissa kunder använde dessa kuponger flera gånger.
 
-För genomsnittliga intäkter för livstid ser du att de genomsnittliga intäkterna för livstid för varje kupong är större än respektive **genomsnittlig nettoorder** värde. Detta innebär att kunderna antingen gjorde upprepade inköp och/eller att deras ordervärde var mycket högre än det genomsnittliga nettoordervärdet.
+För genomsnittliga intäkter för livstid ser du att den genomsnittliga livstidsintäkten för varje kupong är större än respektive **genomsnittliga nettoordervärde**. Detta innebär att kunderna antingen gjorde upprepade inköp och/eller att deras ordervärde var mycket högre än det genomsnittliga nettoordervärdet.
 
 ## Vad mer kan jag analysera? {#otheranalyses}
 
 Analyserna som nämns i det här avsnittet kan ge er värdefulla insikter om hur era kunder använder era kuponger, men det finns en mängd andra analyser som gör att ni kan fördjupa er lite mer.
 
-**Ni kan analysera era kundförvärv utifrån kuponger.**
+**Du kan analysera dina kundförvärv från kuponger.**
 
 Vilka kuponger uppmuntrar kunderna att lägga order? attraherar de här kupongen engångsköpare eller uppmuntrar de kundlojalitet (med andra ord kunder som gör upprepade köp)?
 
-**Ni kan analysera hur lång tid det tar för era kunder att använda era kuponger.**
+**Du kan analysera hur lång tid det tar för dina kunder att använda dina kuponger.**
 
 Används era kuponger samma dag som de släpps eller går det en vecka eller två innan de flesta av era kunder använder dem?
 
-**Ni kan hitta det optimala rabattbeloppet som ökar kundlojaliteten och det totala värdet.**
+**Du kan hitta det optimala rabattbeloppet som ökar kundlojaliteten och det totala värdet.**
 
 Vilket rabattbelopp uppmuntrar återkommande köpare, högre genomsnittligt ordervärde och högre livstidsintäkter?
 

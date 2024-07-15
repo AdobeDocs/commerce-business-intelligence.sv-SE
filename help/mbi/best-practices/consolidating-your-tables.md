@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Konsolidera dina tabeller
 
-Om du har flera butiker eller flera marknader kan liknande databaser lagras separat. I [!DNL Adobe Commerce Intelligence]är det enkelt att sammanfoga liknande tabeller från olika databaser.
+Om du har flera butiker eller flera marknader kan liknande databaser lagras separat. I [!DNL Adobe Commerce Intelligence] är det enkelt att konsolidera liknande tabeller från olika databaser tillsammans.
 
-Du kan till exempel ha en `orders` tabell för `Market A`och liknande `orders` tabell för `Market B`. [!DNL Commerce Intelligence] kan konsolidera båda tabellerna och göra det möjligt för dig att titta på sammanställda orderdata från båda `Market A` och `B`, förutom att segmentera den efter en viss marknad.
+Du kan till exempel ha en `orders`-tabell för `Market A` och en liknande `orders`-tabell för `Market B`. [!DNL Commerce Intelligence] kan konsolidera båda tabellerna och göra det möjligt för dig att titta på aggregerade orderdata från både `Market A` och `B`, utöver att segmentera dem efter specifik marknad.
 
-Indatatabeller måste vara **liknande strukturerad**. Alla indatatabeller måste alltså innehålla de datakolumner som krävs i den konsoliderade tabellen.
+För att konsolidering av tabeller ska fungera måste indatatabeller vara **likartat strukturerade**. Alla indatatabeller måste alltså innehålla de datakolumner som krävs i den konsoliderade tabellen.
 
 I det här avsnittet beskrivs några av de vanligaste användningsområdena för konsoliderade tabeller och nästa steg som krävs för att skapa egna.
 
@@ -29,7 +29,7 @@ Nedan beskrivs när det kan vara lämpligt att använda konsoliderade tabeller i
 
 Om du säljer produkter under olika varumärken och webbplatser är det troligt att tabellerna för varje varumärke eller webbplats är strukturerade på liknande sätt.
 
-Du kan till exempel ha en `orders` tabell för webbplats `A` och en separat, men liknande, `orders` tabell för webbplats `B`. I den här situationen kan det vara användbart att konsolidera `orders` tabeller från webbplats `A` och `B`. På så sätt kan du se de samlade intäkterna och antalet beställningar från webbplatsen `A` och `B`, förutom att kunna segmentera mätvärden på dessa två webbplatser.
+Du kan till exempel ha en `orders`-tabell för webbplatsen `A` och en separat, men liknande, `orders`-tabell för webbplatsen `B`. I den här situationen kan det vara användbart att konsolidera tabellerna `orders` från webbplatsen `A` och `B`. Detta gör att du kan se på de konsoliderade intäkterna och antalet beställningar från webbplatsen `A` och `B`, förutom att kunna segmentera mätvärden från dessa två webbplatser.
 
 ### Integrera äldre data
 
@@ -49,4 +49,4 @@ Om du vill lägga till en konsoliderad tabell i Datan Warehouse kontaktar du [!D
 
 >[!NOTE]
 >
->Eftersom konsoliderade tabeller inte kan visas i `Data Warehouse Manager`kan du bara visa och uppdatera de här tabellerna genom att [!DNL Commerce Intelligence] support.
+>Eftersom konsoliderade tabeller inte kan visas i `Data Warehouse Manager` kan endast [!DNL Commerce Intelligence]-stöd göra det.

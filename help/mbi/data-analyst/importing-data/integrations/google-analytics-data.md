@@ -6,32 +6,32 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '269'
 ht-degree: 0%
 
 ---
 
-# Förväntat [!DNL Google Analytics] data
+# [!DNL Google Analytics] data förväntades
 
-När du har anslutit en [!DNL Google Analytics] kan du interagera med [!DNL Google Analytics] mått *direkt i`Visual Report Builder`*. När du anger `Visual Report Builder`om du klickar **[!UICONTROL Add a Metric]**, en serie mätvärden från [!DNL Google Analytics] visas i en listruta direkt under mätvärdena i Datan Warehouse.
+När du har anslutit en [!DNL Google Analytics]-integrering kan du interagera med dina [!DNL Google Analytics] mått *direkt i`Visual Report Builder`*. När du anger `Visual Report Builder` och klickar på **[!UICONTROL Add a Metric]** visas en serie mätvärden från din [!DNL Google Analytics]-profil i en listruta direkt under mätvärdena i Datan Warehouse.
 
-The [!DNL Google Analytics] integreringen är *live* - det innebär att `Report Builder` begär data från [!DNL Google Analytics] *omedelbart* när du lägger till ett mätvärde i rapporten. Det innebär också att de mätvärden du kan komma åt definieras exakt som de finns i [!DNL Google Analytics]och att dessa värden inte *lagrad* i [!DNL Commerce Intelligence] konto - visas endast visuellt i dina rapporter.
+Integreringen av [!DNL Google Analytics] är *live* - det innebär att `Report Builder` begär data från [!DNL Google Analytics] *omedelbart* när du lägger till ett mätvärde i rapporten. Det innebär också att de mått som du kan komma åt definieras exakt som de är i [!DNL Google Analytics] och att dessa värden inte *lagras* i ditt [!DNL Commerce Intelligence]-konto - visas bara visuellt i dina rapporter.
 
 +++Mätvärden och Dimensioner som stöds (Google Analytics 3 eller Universal Analytics)
 
 >[!NOTE]
 >
->1 juli 2023, standard-Universal Analytics ([!DNL Google Analytics] 3) kommer inte längre att bearbeta data. Du kan se dina Universal Analytics-rapporter under en tidsperiod efter 1 juli 2023. Nya data flödar dock bara in i [!DNL Google Analytics] 4 egenskaper.
+>Den 1 juli 2023 kommer standardegenskaperna för Universal Analytics ([!DNL Google Analytics] 3) inte längre att bearbeta data. Du kan se dina Universal Analytics-rapporter under en tidsperiod efter 1 juli 2023. Nya data kommer dock endast att flöda in i [!DNL Google Analytics] 4 egenskaper.
 
-[!DNL Google Analytics] integreringar i [!DNL Commerce Intelligence] använder [!DNL Google Analytics] [API för huvudrapportering](https://developers.google.com/analytics/devguides/reporting/core/v3/)och har stöd för följande mått och mått.
+[!DNL Google Analytics]-integreringar i [!DNL Commerce Intelligence] använder [!DNL Google Analytics] [Core Reporting API](https://developers.google.com/analytics/devguides/reporting/core/v3/) och stöder följande mått och mått.
 
 >[!NOTE]
 >
->För att undvika oväntade eller okänsliga resultat bör du kontrollera att de mått du använder är kompatibla med en eller flera mätvärden som du använder i `Report Builder`. Du kan kontrollera [här](https://ga-dev-tools.google/dimensions-metrics-explorer/).
+>För att undvika oväntade eller okänsliga resultat bör du kontrollera att alla dimensioner du använder är kompatibla med ett eller flera mätvärden som du använder i `Report Builder`. Du kan kontrollera [här](https://ga-dev-tools.google/dimensions-metrics-explorer/).
 
 ## Mätvärden som stöds
 
-| [!DNL Commerce Intelligence] Visningsnamn | [!DNL Google Analytics] Namn/formel |
+| Visningsnamn för [!DNL Commerce Intelligence] | Namn/formel för [!DNL Google Analytics] |
 | --- | --- |
 | `Page Views` | `ga:pageviews` |
 | `Total Time Spent On Page` | `ga:timeOnPage` |
@@ -85,7 +85,7 @@ The [!DNL Google Analytics] integreringen är *live* - det innebär att `Report 
 
 ## Dimensioner som stöds
 
-| [!DNL Commerce Intelligence] Visningsnamn | [!DNL Google Analytics] Namn/formel | Grupperbar? |
+| Visningsnamn för [!DNL Commerce Intelligence] | Namn/formel för [!DNL Google Analytics] | Grupperbar? |
 | --- | --- | --- |
 | `Ad Content` | `ga:adContent` | `Yes` |
 | `Ad Group` | `ga:adGroup` | `Yes` |
@@ -156,12 +156,12 @@ The [!DNL Google Analytics] integreringen är *live* - det innebär att `Report 
 
 +++Mätvärden och Dimensioner som stöds (Google Analytics 4)
 
-[!DNL Google Analytics] integreringar i [!DNL Commerce Intelligence] använder [!DNL Google Analytics] [Data API v1 (GA4)](https://developers.google.com/analytics/devguides/reporting/data/v1).
+[!DNL Google Analytics]-integreringar i [!DNL Commerce Intelligence] använder [!DNL Google Analytics] [Data API v1 (GA4)](https://developers.google.com/analytics/devguides/reporting/data/v1).
 
 >[!NOTE]
 >
-> Commerce Intelligence stöder inte följande dimensioner: `cohort`, `cohortNthDay`, `cohortNthMonth`och `cohortNthWeek`.
+> Commerce Intelligence stöder inte följande dimensioner: `cohort`, `cohortNthDay`, `cohortNthMonth` och `cohortNthWeek`.
 >
->För att undvika oväntade eller okänsliga resultat bör du kontrollera att de mått du använder är kompatibla med en eller flera mätvärden som du använder i `Visual Report Builder`. Du kan kontrollera [GA4 Dimensions &amp; Metrics Explorer](https://ga-dev-tools.google/ga4/dimensions-metrics-explorer/).
+>För att undvika oväntade eller okänsliga resultat bör du kontrollera att alla dimensioner du använder är kompatibla med ett eller flera mätvärden som du använder i `Visual Report Builder`. Du kan kontrollera [GA4 Dimensions &amp; Metrics Explorer](https://ga-dev-tools.google/ga4/dimensions-metrics-explorer/).
 
 +++

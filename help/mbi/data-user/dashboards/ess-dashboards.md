@@ -13,35 +13,35 @@ ht-degree: 0%
 
 # Kontrollpaneler
 
-[!DNL Adobe Commerce Intelligence] På kontrollpanelerna får du en snabb överblick över butikens resultat och försäljningsaktiviteter. Enskilda kontrollpaneler kan delas med andra användare och organiseras i logiska grupper. Du kan också ange olika behörighetsnivåer för andra användare.
+[!DNL Adobe Commerce Intelligence] Kontrollpaneler ger dig en snabb överblick av butikens prestanda och försäljningsaktivitet. Enskilda kontrollpaneler kan delas med andra användare och organiseras i logiska grupper. Du kan också ange olika behörighetsnivåer för andra användare.
 
 Det är enkelt att skapa en rapport, lägga till den på en kontrollpanel och exportera data till Excel. Du kan ändra storlek på diagram och rapporter och dra dem till rätt position på kontrollpanelen.
 
-![Kontrollpanel](../../assets/magento-bi-report-builder-revenue-by-products-formula-report-holiday-sales-dashboard.png)
+![Instrumentpanel](../../assets/magento-bi-report-builder-revenue-by-products-formula-report-holiday-sales-dashboard.png)
 
 ## Skapa instrumentpaneler {#createdash}
 
 Instrumentpaneler är delbara, tematiska samlingar för de analyser du skapar i Report Builder. Så här kan du uppmuntra ditt team att samarbeta och upprätthålla en enda källa till sanning i hela organisationen.
 
-*Om du är administratör eller standardanvändare* kan du skapa en kontrollpanel genom att klicka på `Dashboard Options` listruta och välja `Create New dashboard`.
+*Om du är administratör eller standardanvändare* kan du skapa en instrumentpanel genom att klicka på listrutan `Dashboard Options` och välja `Create New dashboard`.
 
 Hur de instrumentpaneler du skapar ser ut är helt upp till dig. Du kan ordna och ändra storlek på elementen på kontrollpanelen på det sätt som passar dina behov och ditt arbetsflöde.
 
-![ordna element för att ändra storlek på instrumentpanel](../../assets/arrange_resize_dashboard_element.gif)
+![ordna om att ändra storlek på instrumentpanelselement](../../assets/arrange_resize_dashboard_element.gif)
 
 ### Skapa en instrumentpanel
 
-1. Klicka på **[!UICONTROL Dashboards]**.
+1. Klicka på **[!UICONTROL Dashboards]** på menyn.
 
-1. Namnet på standardkontrollpanelen visas i det övre vänstra hörnet av kontrollpanelens sidhuvud. Klicka på nedåtpilen (![](../../assets/magento-bi-btn-down.png)) för att visa tillgängliga alternativ.
+1. Namnet på standardkontrollpanelen visas i det övre vänstra hörnet av kontrollpanelens sidhuvud. Klicka på nedpilen (![](../../assets/magento-bi-btn-down.png)) för att visa tillgängliga alternativ.
 
    ![Skapa instrumentpanel](../../assets/magento-bi-dashboard-create.png)
 
 1. Klicka på **[!UICONTROL Create Dashboard]**. Gör sedan följande:
 
-   * Ange en `Name` för din instrumentpanel.
+   * Ange `Name` som instrumentpanel.
 
-   * Skapa en `Group` Ange namnet på gruppen för instrumentpanelen.
+   * Om du vill skapa en `Group` för instrumentpanelen anger du namnet på gruppen.
 
      Om din Commerce-installation till exempel har flera butiksvyer kan du skapa en grupp för varje butiksvy.
 
@@ -49,19 +49,19 @@ Hur de instrumentpaneler du skapar ser ut är helt upp till dig. Du kan ordna oc
 
    ![instrumentpanelsnamn](../../assets/magento-bi-dashboard-create-name.png)
 
-   * Namnet på den nya instrumentpanelen visas i det övre vänstra hörnet. Klicka på nedåtpilen (![](../../assets/magento-bi-btn-down.png)) för att visa alternativen. Om du har skapat en grupp visas den nya kontrollpanelen under gruppen i listan.
+   * Namnet på den nya instrumentpanelen visas i det övre vänstra hörnet. Klicka på nedpilen (![](../../assets/magento-bi-btn-down.png)) för att visa alternativen. Om du har skapat en grupp visas den nya kontrollpanelen under gruppen i listan.
 
 ### Lägg till en rapport
 
 1. Gör något av följande om du vill lägga till en rapport:
 
-   * Klicka på **[!UICONTROL Add a report]** på sidan.
+   * Klicka på uppmaningen **[!UICONTROL Add a report]** på sidan.
 
-   * Klicka på **[!UICONTROL Add Report]**.
+   * Klicka på **[!UICONTROL Add Report]** i instrumentpanelens sidhuvud.
 
      ![Lägg till rapport](../../assets/magento-bi-dashboard-create-add-report.png)
 
-1. Klicka **[!UICONTROL Create Report]** för att visa **[!UICONTROL Report Builder Options]**.
+1. Klicka på **[!UICONTROL Create Report]** om du vill visa **[!UICONTROL Report Builder Options]**.
 
    ![Alternativ för Report Builder](../../assets/magento-bi-report-builder.png)
 
@@ -73,37 +73,37 @@ Hur de instrumentpaneler du skapar ser ut är helt upp till dig. Du kan ordna oc
 
 ## Hantera dina instrumentpaneler {#managedash}
 
-I **[!DNL Manage Data** > **Dashboards]** kan du hantera användarbehörigheter för kontrollpaneler som du äger, ta bort kontrollpaneler som du inte längre behöver och ange en standardkontrollpanel.
+I **[!DNL Manage Data** > **Dashboards]** kan du hantera användarbehörigheter för instrumentpaneler som du äger, ta bort instrumentpaneler som du inte längre behöver och ange en standardinstrumentpanel.
 
 ### Dela dina instrumentpaneler {#sharingdash}
 
-Skala [!DNL Commerce Intelligence] i hela organisationen och ger värdefulla insikter rekommenderar Adobe att du delar instrumentpaneler som du skapar med andra teammedlemmar. *Du kan dela kontrollpaneler som du äger* genom att klicka på `Share Dashboard` längst upp på sidan.
+Om du verkligen vill skala [!DNL Commerce Intelligence] i hela organisationen och få värdefulla insikter rekommenderar Adobe att du delar instrumentpaneler som du skapar med andra teammedlemmar. *Du kan dela instrumentpaneler som du äger* genom att klicka på alternativet `Share Dashboard` överst på sidan.
 
 När du delar en kontrollpanel kan du tilldela behörigheter i hela organisationen ELLER på individnivå, vilket innebär att du får bestämma vem som ska kunna visa och redigera dina rapporter.
 
 >[!NOTE]
 >
->`Read-Only` -användare har bara tillgång till kontrollpaneler som delas direkt med dem - de kan inte själva söka efter och lägga till kontrollpaneler. Glöm inte att ha dem i slingan!
+>`Read-Only`-användare har bara åtkomst till instrumentpaneler som delas direkt med dem - de kan inte söka efter och lägga till instrumentpaneler själva. Glöm inte att ha dem i slingan!
 
 ### Åtkomst till delade instrumentpaneler {#accessshared}
 
-*Om du är administratör eller standardanvändare* och om du vill lägga till en delad instrumentpanel i ditt konto kan du göra det genom att klicka på **[!UICONTROL Dashboard Options]** och sedan klicka **[!UICONTROL Find]** i listrutan.
+*Om du är administratör eller standardanvändare* och vill lägga till en delad instrumentpanel i ditt konto kan du göra det genom att klicka på **[!UICONTROL Dashboard Options]** och sedan på **[!UICONTROL Find]** i listrutan.
 
-![hitta instrumentpanel](../../assets/find_dashboard.png)<!--{: width="1000" height="535"}-->
+![sök efter instrumentpanel](../../assets/find_dashboard.png)<!--{: width="1000" height="535"}-->
 
 ### Hantera panelinställningar
 
-1. Klicka på **[!DNL Manage Data** > **Dashboards]**.
+1. Klicka på **[!DNL Manage Data** > **Dashboards]** på menyn.
 
-1. Ange en ny `Dashboard Name`.
+1. Ange en ny `Dashboard Name` om tillämpligt.
 
-1. Så här tilldelar du kontrollpanelen till en specifik `Dashboard Group`väljer du i listan med grupper.
+1. Om du vill tilldela instrumentpanelen till en specifik `Dashboard Group` väljer du i listan med grupper.
 
    **`Permissions`**
 
    Så här ger du alla användare samma åtkomstnivå till kontrollpanelen:
 
-   1. Under **`Shared with`** väljer du något av följande alternativ:
+   1. Välj något av följande alternativ under **`Shared with`**:
 
       * `View`
       * `Edit`
@@ -115,8 +115,8 @@ När du delar en kontrollpanel kan du tilldela behörigheter i hela organisation
 
    **`Default`**
 
-   1. Så här gör du den här instrumentpanelen till standard för [!DNL Commerce Intelligence] konto, klicka på **[!UICONTROL Make Default]**.
+   1. Om du vill göra den här instrumentpanelen till standard för ditt [!DNL Commerce Intelligence]-konto klickar du på **[!UICONTROL Make Default]**.
 
    **`Remove`**
 
-   1. Om du vill ta bort kontrollpanelen klickar du på **[!UICONTROL Delete Dashboard]**.
+   1. Klicka på **[!UICONTROL Delete Dashboard]** om du vill ta bort instrumentpanelen.

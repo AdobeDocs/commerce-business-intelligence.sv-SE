@@ -6,40 +6,40 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
 source-git-commit: 76c5329c3f55570fa4e46601e902dc5a09e319e7
 workflow-type: tm+mt
-source-wordcount: '457'
+source-wordcount: '462'
 ht-degree: 0%
 
 ---
 
 # [!DNL Cohort Report Builder] för ej datumbaserade kohorter
 
-The [`Cohort Report Builder`](../dev-reports/cohort-rpt-bldr.md) är bra att hjälpa handlare att studera hur olika delar av användare beter sig över tid. Tidigare var `Cohort Report Builder` optimerades för att gruppera användare efter en gemensam `cohort date` (t.ex. en uppsättning med alla kunder som gjorde sitt första köp under en viss månad). The `Non-Date Based Cohort` ger dig nu möjlighet att gruppera användare efter en liknande aktivitet eller attribut. Titta på några exempel på användning av den här funktionen.
+[`Cohort Report Builder`](../dev-reports/cohort-rpt-bldr.md) är bra på att hjälpa handlare att studera hur olika undergrupper av användare beter sig över tid. Tidigare har `Cohort Report Builder` optimerats för att gruppera användare efter en gemensam `cohort date` (t.ex. uppsättningen med alla kunder som gjorde sitt första köp under en viss månad). Funktionen `Non-Date Based Cohort` ger dig nu möjlighet att gruppera användare efter en liknande aktivitet eller attribut. Titta på några exempel på användning av den här funktionen.
 
 ## Användningsexempel
 
 Det här är ingen omfattande lista, men här finns några möjliga analyser som kan utföras med den här funktionen.
 
-* Granska intäkterna från kunder som förvärvats från [!DNL Google] kontra [!DNL Facebook]
+* Undersöker intäkterna för kunder som förvärvats från [!DNL Google] jämfört med [!DNL Facebook]
 * Analysera kunder vars första köp gjordes i USA jämfört med Kanada
 * Se hur kunder som förvärvats från olika annonskampanjer beter sig
 
 ## Så här skapar du en analys
 
-1. Klicka **[!UICONTROL Report Builder]** till vänster eller **[!UICONTROL Add Report** > **Create Report]** i en kontrollpanel.
+1. Klicka på **[!UICONTROL Report Builder]** på den vänstra fliken eller **[!UICONTROL Add Report** > **Create Report]** på en kontrollpanel.
 
-1. I `Report Builder Selection` skärm, klicka **[!UICONTROL Create Report]** bredvid `Visual Report Builder` alternativ.
+1. Klicka på **[!UICONTROL Create Report]** bredvid alternativet `Visual Report Builder` på skärmen `Report Builder Selection`.
 
 ### Lägga till ett mått
 
-Nu när du är i `Report Builder`lägger du till de mätvärden som du vill utföra analysen på (exempel: `Revenue` eller `Orders`).
+Nu när du befinner dig i `Report Builder` lägger du till det mått som du vill utföra analysen på (exempel: `Revenue` eller `Orders`).
 
 >[!NOTE]
 >
->Inbyggt [!DNL Google Analytics] mätvärden är inte kompatibla med `Cohort Report Builder`. Målet med det här exemplet är att se på intäkterna över tiden för förstahandskunder som förvärvats via olika [!DNL Google Analytics] Källor.
+>Inbyggda [!DNL Google Analytics]-mått är inte kompatibla med `Cohort Report Builder`. Målet för det här exemplet är att titta på intäkter över tid för förstahandskunder som förvärvats via olika [!DNL Google Analytics]-källor.
 
 ### Växla `Metric View` till `Cohort`
 
-![1-växlad metrisk vy för kohort](../../assets/1-toggle-metric-view-to-cohort.png)
+![1-växlingsvy för att kohort](../../assets/1-toggle-metric-view-to-cohort.png)
 
 Då öppnas ett nytt fönster där du kan konfigurera informationen i kohortrapporten.
 
@@ -51,19 +51,19 @@ Fem specifikationer krävs för att skapa en Cohortrapport:
 1. Tidsintervall för första åtgärd för kohort
 1. Tidsintervall efter kohortförekomst
 
-![cohort-groups](../../assets/2-cohort-groups.png)<!--{: width="200" height="224"}-->
+![kohort-groups](../../assets/2-cohort-groups.png)<!--{: width="200" height="224"}-->
 
 
 
-#### 1. Gruppering `cohorts`
+#### 1. Gruppera `cohorts`
 
-`Cohorts` grupperas efter en beteendeegenskap, i det här exemplet `Customer's first order GA source`. De alternativ som är tillgängliga här är kolumner som redan är angivna som `groupable` för måttet.
+`Cohorts` grupperas efter en beteendeegenskap, i det här exemplet `Customer's first order GA source`. De alternativ som är tillgängliga här är kolumner som redan har angetts som `groupable` för måttet.
 
 #### 2. Välja kohorter
 
-Du kan visa alla resultat för den angivna egenskapen. Detta kan leda till många `cohorts`kan du välja `cohorts` (som motsvarar de olika värden som är tillgängliga för `Customer's first order GA source`) som du behöver.
+Du kan visa alla resultat för den angivna egenskapen. Eftersom detta kan resultera i många `cohorts` kan du välja det specifika `cohorts` (som motsvarar de olika värden som är tillgängliga för `Customer's first order GA source`) som du behöver.
 
-![cohort-groups](../../assets/4-cohort-groups.png)<!--{: width="300" height="338"}-->
+![kohort-groups](../../assets/4-cohort-groups.png)<!--{: width="300" height="338"}-->
 
 #### 3. `Action timestamp`
 
@@ -75,13 +75,13 @@ Här väljer du datumintervallet som innehåller `cohorts action timestamp` (så
 
 #### 5. `Time range after cohort occurrence`
 
-Vill du se `cohorts` över tid per månad, vecka eller år? Här gör du dessa val. Under det avsnittet väljer du `time range` efter `cohort action timestamp` har inträffat. Detta visar t.ex. 12 månaders data för de kunder som gjorde den första beställningen under tidsperioden.
+Vill du visa `cohorts` över tiden per månad, vecka eller år? Här gör du dessa val. Under det avsnittet väljer du `time range` efter att `cohort action timestamp` har inträffat. Detta visar t.ex. 12 månaders data för de kunder som gjorde den första beställningen under tidsperioden.
 
 ![cohort-first-action-time-range](../../assets/5-cohort-first-action-time-range.png)<!--{: width="400" height="557"}-->
 
 >[!NOTE]
 >
->[!UICONTROL Filters] som tillämpas på mätvärdena förblir intakta när du växlar mellan `Standard` och `Cohort` vyer.
+>[!UICONTROL Filters] som tillämpas på dina mått förblir intakta när du växlar mellan `Standard`- och `Cohort`-vyer.
 
 ### Relaterad
 

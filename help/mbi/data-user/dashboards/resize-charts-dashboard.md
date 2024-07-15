@@ -13,12 +13,12 @@ ht-degree: 0%
 
 # Arbeta med diagram på kontrollpaneler
 
-Skalärnummer. Stolpdiagram. Diagram som sträcker sig över långa perioder. Alla diagram visar information på olika sätt, vilket innebär att diagrammets storlek och plats inte är en lösning som passar alla. I [!DNL Commerce Intelligence]kan du ändra storlek på och ordna om diagram för att skapa en perfekt arbetsyta.
+Skalärnummer. Stolpdiagram. Diagram som sträcker sig över långa perioder. Alla diagram visar information på olika sätt, vilket innebär att diagrammets storlek och plats inte är en lösning som passar alla. I [!DNL Commerce Intelligence] kan du ändra storlek på och ordna om diagram för att skapa en perfekt arbetsyta.
 
-*Ändra storlek på ett diagram* klickar du och drar i det nedre högra hörnet av ett diagram.
+*Om du vill ändra storlek på ett diagram* klickar du och drar i det nedre högra hörnet av ett diagram.
 
 ![ändra storlek på diagram](../../assets/Resize_Chart_in_Dashboard.gif)
 
-*Flytta ett diagram* placerar du markören över diagrammets övre del tills `Move` markören visas. Klicka och håll ned och dra sedan diagrammet till önskad plats. Placera diagrammet genom att klicka.
+*Om du vill flytta ett diagram* håller du pekaren över diagrammets övre del tills markören `Move` visas. Klicka och håll ned och dra sedan diagrammet till önskad plats. Placera diagrammet genom att klicka.
 
 ![flytta diagram](../../assets/Move_Chart_in_Dashboard.gif)

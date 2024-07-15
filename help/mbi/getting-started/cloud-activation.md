@@ -1,5 +1,5 @@
 ---
-title: Aktivera ditt Commerce Intelligence-konto för molnstartprenumerationer
+title: Aktivera ditt Commerce Intelligence-konto för Creative Cloud Starter-prenumerationer
 description: Lär dig hur du aktiverar Commerce Intelligence för Cloud Starter-projekt.
 exl-id: 172439ee-fa1d-4872-b6a9-c61a212a7cbe
 redirect_to: https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/start/onpremise-activation.html

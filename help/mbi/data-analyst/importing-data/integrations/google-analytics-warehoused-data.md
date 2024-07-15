@@ -6,28 +6,28 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '355'
 ht-degree: 0%
 
 ---
 
-# Förväntat [!DNL Google Analytics Warehoused] Data
+# [!DNL Google Analytics Warehoused] data förväntades
 
 >[!NOTE]
 >
->Kräver [Administratörsbehörigheter](../../../administrator/user-management/user-management.md).
+>Kräver [administratörsbehörighet](../../../administrator/user-management/user-management.md).
 
 >[!NOTE]
 >
->Viss information används med tillstånd från dina vänner på [[!DNL Stitch]](https://www.stitchdata.com/docs/integrations/saas/google-analytics).
+>Viss information användes med tillstånd från dina vänner på [[!DNL Stitch]](https://www.stitchdata.com/docs/integrations/saas/google-analytics).
 
-[!DNL Google Analytics Warehoused] integration i [!DNL Commerce Intelligence] använder [!DNL Google Analytics] [API för huvudrapportering](https://developers.google.com/analytics/devguides/reporting/core/v3/).
+Integrationen [!DNL Google Analytics Warehoused] i [!DNL Commerce Intelligence] använder [!DNL Google Analytics] [Core Reporting API](https://developers.google.com/analytics/devguides/reporting/core/v3/).
 
 >[!NOTE]
 >
->För att undvika oväntade eller okänsliga resultat bör du kontrollera att de dimensioner du använder är [kompatibel med ett eller flera mätvärden](https://ga-dev-tools.google/dimensions-metrics-explorer/) du använder i `Report Builder`.
+>För att undvika oväntade eller okänsliga resultat bör du kontrollera att de dimensioner du använder är [kompatibla med ett eller flera mått](https://ga-dev-tools.google/dimensions-metrics-explorer/) som du använder i `Report Builder`.
 
-En enda tabell - anropad `report` - har skapats i din Data Warehouse.
+En enda tabell med namnet `report` skapas i Datan Warehouse.
 
 Schemat för den här tabellen består av de mått och Dimensioner som du valde under konfigurationsprocessen och två andra kolumner: `start-date` och `end-date`.
 
@@ -50,16 +50,16 @@ Tabellen skulle se ut som exemplet nedan.
 
 {style="table-layout:auto"}
 
-## Vad är skillnaden mellan [!DNL Google Analytics Warehoused] och [!DNL Live Integration]
+## Vad är skillnaden mellan [!DNL Google Analytics Warehoused] och [!DNL Live Integration]?
 
-Den viktigaste skillnaden är att en integrering sparas ([!DNL Google Analytics Warehoused]) och den andra inte är ([!DNL Google Analytics Live]). I fall med [!DNL Google Analytics Warehoused]kan du manipulera dina [!DNL Google Analytics] data och ger er möjlighet att kombinera [!DNL Google Analytics] och andra datakällor för att skapa insiktsfull rapportering.
+Den huvudsakliga differentiatorn är att en integrering lagras ([!DNL Google Analytics Warehoused]) och den andra inte är ([!DNL Google Analytics Live]). I fall med [!DNL Google Analytics Warehoused] tillåter detta att dina [!DNL Google Analytics]-data ändras och ger dig möjlighet att kombinera [!DNL Google Analytics] och andra datakällor för att skapa insikter om rapportering.
 
-Titta på [!DNL Google Analytics] annonskampanjer för ett exempel på vad som kan göras från en manipulation. Anta att ni har haft flera annonskampanjer för Q4 med olika namn. Kampanjerna var ett resultat av ett specifikt marknadsföringsinitiativ. Med lagrade data kan du skapa en kolumn som hittar kampanjnamnen i fråga och returnerar Q4-initialnamnet för `Operation Dumbo`.
+Titta på [!DNL Google Analytics] annonskampanjer för att få ett exempel på vad som kan göras från en manipuleringssynpunkt. Anta att ni har haft flera annonskampanjer för Q4 med olika namn. Kampanjerna var ett resultat av ett specifikt marknadsföringsinitiativ. Med lagrade data kan du skapa en kolumn som hittar kampanjnamnen i fråga och returnerar Q4-initialnamnet för `Operation Dumbo`.
 
-Kombinationsaspekten tillåter [!DNL Google Analytics] Uppgifter som ska sammanfogas med andra uppgifter för att utföra analyser. Ta till exempel `Total Time On Site By Ad Campaign` data från [!DNL Google Analytics] och förena dem mot `Total Spent Per Campaign` data från [!DNL Facebook Ads] för att få en fullständig bild av hur mycket engagemang kostar er.
+Kombinationsaspekten tillåter att [!DNL Google Analytics] data kopplas till andra data för att utföra analyser. Ta t.ex. `Total Time On Site By Ad Campaign` data från [!DNL Google Analytics] och anslut dem till `Total Spent Per Campaign` data från [!DNL Facebook Ads] för att få en fullständig bild av hur mycket engagemang som kostar er.
 
-Med [!DNL Google Analytics Live] integrering, å andra sidan, [!DNL Google Analytics] diagram är som en liten silo som inte lagras i [!DNL Commerce Intelligence] Data Warehouse.
+Med integreringen av [!DNL Google Analytics Live] å andra sidan är varje [!DNL Google Analytics]-diagram som en liten silo som inte lagras i din [!DNL Commerce Intelligence]-Data Warehouse.
 
 ## Relaterat:
 
-* [Ansluter [!DNL Google Analytics Warehoused]](../integrations/google-analytics-warehoused.md)
+* [Ansluter  [!DNL Google Analytics Warehoused]](../integrations/google-analytics-warehoused.md)

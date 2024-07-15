@@ -1,6 +1,6 @@
 ---
 title: Onboarding Adobe Commerce Intelligence
-description: Läs mer om hur du kommer igång med Adobe Commerce Intelligence.
+description: Läs mer om hur du registrerar Adobe Commerce Intelligence.
 exl-id: e0cce957-af2c-4514-9afd-c9aaa651a4f0
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
@@ -13,24 +13,24 @@ ht-degree: 0%
 
 # Onboarding [!DNL Adobe Commerce Intelligence]
 
-Frågor om introduktion relaterade till `store` och `database` inställningarna ser till att du ställer in rapporteringen på rätt sätt. Med dessa svar levererar Adobe rapporter som är skräddarsydda efter hur er butik ser ut.
+Startfrågorna som rör inställningarna för `store` och `database` säkerställer att du har konfigurerat din rapportering korrekt. Med dessa svar levererar Adobe rapporter som är skräddarsydda efter hur er butik ser ut.
 
 ## Lagringsinställningar
 
-- *Tar din butik emot gästutcheckning?* - Välj **ja** om du tillåter kunderna att göra ett köp från din butik utan att registrera ett konto.
+- *Accepterar din butik gästutcheckning?* - Välj **yes** om du tillåter kunderna att göra ett köp från din butik utan att registrera ett konto.
 
-- `Timezone` - Välj `timezone` som du vill se dina rapporter i.
+- `Timezone` - Välj den `timezone` som du vill se dina rapporter i.
 
-- `Currency` - Välj `currency` som din butik är verksam i.
+- `Currency` - Välj den `currency` som din butik arbetar i.
 
-- `Your week starts on...` - Välj den veckodag som du vill ska vara veckostart i dina rapporter.
+- `Your week starts on...` - Välj den dag i veckan som du vill ska vara veckostart i dina rapporter.
 
-- *Vilken version av Commerce använder du?* - Välj `currency` som din butik är verksam i.
+- *Vilken version av Commerce använder du?* - Välj den `currency` som din butik arbetar i.
 
-- *Är din butik bosatt i EU?* - Om du svarar `Yes` På denna fråga är Adobe värd för er Data Warehouse och alla era uppgifter i EU, i enlighet med GDPR.
+- *Är din butik baserad i EU?* - Om du svarar `Yes` på den här frågan är Adobe värd för din Data Warehouse och alla dina data i EU, i enlighet med den allmänna dataskyddsförordningen.
 
 ## Databasinställningar
 
-- `Database name` - Vad är *namnet på [!DNL MySQL] databas* var finns era transaktionsdata i Commerce?
+- `Database name` - Vad är *namnet på [!DNL MySQL]-databasen* där dina transaktionsdata från Commerce finns?
 
-- `Table prefix (optional)` - Föreskrivs tabellerna i din Commerce-databas av något (till exempel `store_`)? Detta är vanligtvis inte fallet, men det är en anpassning som kan göras.
+- `Table prefix (optional)` - Är tabellerna i din Commerce-databas prepended (till exempel `store_`)? Detta är vanligtvis inte fallet, men det är en anpassning som kan göras.

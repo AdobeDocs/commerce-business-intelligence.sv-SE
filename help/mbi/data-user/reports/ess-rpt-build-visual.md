@@ -13,15 +13,15 @@ ht-degree: 0%
 
 # [!DNL Visual Report Builder]
 
-[!DNL Visual Report Builder] gör det enkelt att skapa snabba rapporter baserat på fördefinierade mätvärden. Varje mätvärde innehåller en fråga som definierar rapportens datauppsättning.
+[!DNL Visual Report Builder] gör det enkelt att skapa snabbrapporter baserat på fördefinierade mått. Varje mätvärde innehåller en fråga som definierar rapportens datauppsättning.
 
 I följande exempel visas hur du skapar en enkel rapport, grupperar data efter ytterligare en dimension, anger datum och tidsintervall, ändrar diagramtyp och sparar rapporten på en kontrollpanel.
 
 ## Så här skapar du en enkel rapport:
 
-1. I [!DNL Commerce Intelligence] meny, klicka **[!UICONTROL Report Builder]**.
+1. Klicka på **[!UICONTROL Report Builder]** på menyn [!DNL Commerce Intelligence].
 
-1. Under [!UICONTROL Visual Report Builder], klicka **[!UICONTROL Create Report]** och gör följande:
+1. Klicka på **[!UICONTROL Create Report]** under [!UICONTROL Visual Report Builder] och gör följande:
 
    * Klicka på **[!UICONTROL Add Metric]**.
 
@@ -29,9 +29,9 @@ I följande exempel visas hur du skapar en enkel rapport, grupperar data efter y
 
      ![Visual Report Builder](../../assets/magento-bi-visual-report-builder-add-metric.png)
 
-   * Välj [mått](../../data-user/reports/ess-manage-data-metrics.md) som beskriver den uppsättning data som du vill använda för rapporten.
+   * Välj [måttet](../../data-user/reports/ess-manage-data-metrics.md) som beskriver den datauppsättning som du vill använda för rapporten.
 
-     The `New Customers` Det mått som används i det här exemplet räknar alla kunder och sorterar listan efter det datum då kunden registrerade sig för ett konto. Den inledande rapporten innehåller ett enkelt linjediagram följt av datatabellen.
+     Måttet `New Customers` som används i det här exemplet räknar alla kunder och sorterar listan efter det datum då kunden registrerade sig för ett konto. Den inledande rapporten innehåller ett enkelt linjediagram följt av datatabellen.
 
      Sammanfattningen till vänster visar namnet på det aktuella måttet, följt av resultatet av eventuella beräkningar av kolumndata som har angetts i måttet. I det här exemplet visar sammanfattningen det totala antalet kunder.
 
@@ -43,17 +43,17 @@ I följande exempel visas hur du skapar en enkel rapport, grupperar data efter y
 
    **`Group By`**
 
-   The `Group By` kan du lägga till flera dimensioner per grupp eller segment. Dimensioner är kolumner i tabellen som kan användas för att gruppera data.
+   Kontrollen `Group By` ger dig möjlighet att lägga till flera dimensioner per grupp eller segment. Dimensioner är kolumner i tabellen som kan användas för att gruppera data.
 
-   * Välj en av de tillgängliga dimensionerna i listan över `Group By` alternativ.
+   * Välj en av de tillgängliga dimensionerna i listan med `Group By` alternativ.
 
      I det här exemplet hittade systemet fem kupongkoder som kunderna använde när de beställde för första gången.
 
      ![Gruppera efter](../../assets/magento-bi-report-builder-group-by-dimensions.png)
 
-     The `Group By` innehåller en detaljerad lista över varje kupong som används av kunderna. De kuponger som användes för att göra den initiala ordern är markerade med en kryssruta. Diagrammet har nu flera färgade rader som representerar varje kupong som användes för en första order. Förklaringen färgkodas för att motsvara varje datarad.
+     I `Group By`-detaljlistan visas varje kupong som används av kunder. De kuponger som användes för att göra den initiala ordern är markerade med en kryssruta. Diagrammet har nu flera färgade rader som representerar varje kupong som användes för en första order. Förklaringen färgkodas för att motsvara varje datarad.
 
-   * Klicka **[!UICONTROL Apply]** om du vill stänga Grupp efter detaljer.
+   * Klicka på **[!UICONTROL Apply]** om du vill stänga Grupp efter detaljer.
 
      ![Flera Dimensioner](../../assets/magento-bi-report-builder-group-by-dimension-detail.png)
 
@@ -63,25 +63,25 @@ I följande exempel visas hur du skapar en enkel rapport, grupperar data efter y
 
      ![Gruppera efter tabelldata](../../assets/magento-bi-report-builder-group-by-table-data.png)
 
-   * Klicka på Transponera (![](../../assets/magento-bi-btn-transpose.png)) i tabellens övre högra hörn om du vill ändra orienteringen på data.
+   * Klicka på kontrollen Transponera (![](../../assets/magento-bi-btn-transpose.png)) i tabellens övre högra hörn om du vill ändra orienteringen för data.
 
      Dataaxeln vänds och tabellen har nu en kolumn för varje kupongkod och en rad för varje månad. Den här orienteringen kan vara lättare att läsa.
 
-     ![Införda data](../../assets/magento-bi-report-builder-group-by-table-data-transposed.png)
+     ![Transponerade data](../../assets/magento-bi-report-builder-group-by-table-data-transposed.png)
 
    **`Date Range`**
 
-   The `Date Range` -kontrollen visar de aktuella inställningarna för datumintervall och tidsintervall och är placerad precis ovanför diagrammet till höger.
+   Kontrollen `Date Range` visar de aktuella inställningarna för datumintervall och tidsintervall och finns precis ovanför diagrammet till höger.
 
-   * Klicka på `Date Range` control, som i det här exemplet är inställt på `All-Time by Month`.
+   * Klicka på kontrollen `Date Range` som i det här exemplet är inställd på `All-Time by Month`.
 
      ![Datumintervall](../../assets/magento-bi-report-builder-date-range.png)
 
    * Gör följande ändringar:
 
       * Om du vill zooma in för en närmare vy ändrar du datumintervallet till `Last Full Quarter`.
-      * Under `Select Time Interval`, välja `Week`.
-      * När du är klar klickar du på **[!UICONTROL Save]**.
+      * Välj `Week` under `Select Time Interval`.
+      * Klicka på **[!UICONTROL Save]** när du är klar.
 
      Rapporten innehåller nu endast data för det sista kvartalet, per vecka.
 
@@ -106,13 +106,13 @@ I följande exempel visas hur du skapar en enkel rapport, grupperar data efter y
 
      {style="table-layout:auto"}
 
-1. Ge rapporten en `title`, ersätt `Untitled Report` text högst upp på sidan med en beskrivande rubrik.
+1. Om du vill ge rapporten en `title` ersätter du texten `Untitled Report` högst upp på sidan med en beskrivande rubrik.
 
-1. Klicka på i det övre högra hörnet **[!UICONTROL Save]** och gör följande:
+1. Klicka på **[!UICONTROL Save]** i det övre högra hörnet och gör följande:
 
-   * För `Type`, acceptera standardinställningen, `Chart`.
+   * Acceptera standardinställningen `Chart` för `Type`.
 
-   * Välj `Dashboard` om rapporten ska vara tillgänglig.
+   * Välj `Dashboard` där rapporten ska vara tillgänglig.
 
    * Klicka på **[!UICONTROL Save to Dashboard]**.
 
@@ -120,8 +120,8 @@ I följande exempel visas hur du skapar en enkel rapport, grupperar data efter y
 
 1. Gör något av följande om du vill visa diagrammet på en kontrollpanel:
 
-   * Klicka **[!UICONTROL Go to Dashboard]** i meddelandet längst upp på sidan.
+   * Klicka på **[!UICONTROL Go to Dashboard]** i meddelandet längst upp på sidan.
 
-   * Välj `Dashboards` och klicka på namnet på den aktuella instrumentpanelen för att visa listan. Klicka sedan på namnet på kontrollpanelen där rapporten sparades.
+   * Välj `Dashboards` på menyn och klicka på namnet på den aktuella instrumentpanelen för att visa listan. Klicka sedan på namnet på kontrollpanelen där rapporten sparades.
 
-     ![Rapport på kontrollpanelen](../../assets/magento-bi-report-builder-my-dashboard.png)
+     ![Rapport i kontrollpanelen](../../assets/magento-bi-report-builder-my-dashboard.png)
