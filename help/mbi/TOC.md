@@ -4,9 +4,9 @@ description: Lär dig hur du använder  [!DNL Commerce Intelligence] funktioner 
 breadcrumb-title: Commerce Intelligence Användarhandbok
 role: Admin, Data Architect, Data Engineer, Leader, User
 feature: Business Performance
-source-git-commit: 2433a614e9858684842804a0ae29fb67f0d41ead
+source-git-commit: cea314102fb3b2164c1498ce1efa60e83c41b188
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: '683'
 ht-degree: 0%
 
 ---
@@ -33,6 +33,7 @@ ht-degree: 0%
       - [Hantera användarbehörigheter](administrator/user-management/user-management.md)
       - [Återställ lösenord](../mbi/administrator/user-management/reset-password.md)
       - [Begränsa måttåtkomst](../mbi/administrator/user-management/restrict-metric-access.md)
+      - [Avancerad användarhantering](../mbi/administrator/user-management/advanced.md)
 - Analysera data {#analyze}
    - [Dataanalytiker](data-analyst.md)
    - Data Warehouse Manager {#warehouse-manager}
@@ -43,7 +44,7 @@ ht-degree: 0%
       - [Konfigurerar replikeringsmetoder](data-analyst/data-warehouse-mgr/cfg-replication-methods.md)
       - [Konfigurera datainställningar](data-analyst/data-warehouse-mgr/cfg-data-rechecks.md)
       - [Ändra ett måtts användningstabell](data-analyst/data-warehouse-mgr/change-metric-op-table.md)
-      - [Skapa och använda Data Warehouse](data-analyst/data-warehouse-mgr/create-dw-views.md)
+      - [Skapa och använda Data Warehouse-vyer](data-analyst/data-warehouse-mgr/create-dw-views.md)
       - [Skapa/ta bort sökvägar för beräknade kolumner](data-analyst/data-warehouse-mgr/create-paths-calc-columns.md)
       - [Skapa/använda en SQL-beräknad kolumn](data-analyst/data-warehouse-mgr/create-sql-calc-column.md)
       - [Skapa beräknade kolumner](data-analyst/data-warehouse-mgr/creating-calculated-columns.md)
@@ -217,7 +218,7 @@ ht-degree: 0%
       - [Arbeta med data](best-practices/work-data.md)
       - [UTM-taggning i  [!DNL Google Analytics]](best-practices/utm-tagging-google.md)
       - [Formatera och importera finansiella data](best-practices/format-import-financial-data.md)
-      - [Rekommenderade Dimensioner för segmentering och filtrering](best-practices/segment-filter.md)
+      - [Rekommenderade datadimensioner för segmentering och filtrering](best-practices/segment-filter.md)
       - [Kontrollera statusen för uppdateringscykeln](best-practices/check-update-cycle.md)
       - [Minska tiden för uppdateringscykeln](best-practices/reduce-update-cycle-time.md)
       - [Ändra databasen så att den stöder inkrementell replikering](best-practices/mod-db-inc-replication.md)
@@ -231,7 +232,7 @@ ht-degree: 0%
    - Arbeta med instrumentpaneler {#working-dashboards}
       - [Dela instrumentpaneler](best-practices/share-dashboard-best-practice.md)
       - [Bygga en Investor Dashboard](best-practices/build-investor-dashboard.md)
-- Tutorials {#tutorials}
+- Självstudiekurser {#tutorials}
    - [Använder  [!DNL Visual Report Builder]](tutorials/using-visual-report-builder.md)
    - [Använda tidsalternativ i  [!DNL Visual Report Builder]](tutorials/time-options-visual-rpt-bldr.md)
    - [Skapar visualiseringar för en [!DNL SQL] fråga](tutorials/create-visuals-from-sql.md)
