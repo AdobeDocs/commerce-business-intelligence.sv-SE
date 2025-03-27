@@ -4,7 +4,7 @@ description: Lär dig hur du arbetar med och delar dina instrumentpaneler.
 exl-id: 73df627f-bc08-45c0-aa5e-410c4fd0642d
 role: Admin, User
 feature: Dashboards
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: d40a04cedb3aee3385a8c34e0919f954431e0897
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 0%
@@ -17,11 +17,11 @@ När du delar kontrollpaneler har du och ditt team samma information när som he
 
 ## Undvik dubbletter av instrumentpaneler
 
-Ibland kan du hitta flera instrumentpaneler med samma namn - det beror vanligtvis på att andra användare har skapat och delat liknande instrumentpaneler med dig. Dessa instrumentpaneler kan vara dubbletter av en primär kopia. I det här fallet rekommenderar Adobe att du låter en användare dela den primära kopian av kontrollpanelen och sedan ta bort alla dubblettinstrumentpaneler.
+Ibland kan du hitta flera instrumentpaneler med samma namn - det beror vanligtvis på att andra användare har skapat och delat liknande instrumentpaneler med dig. Dessa instrumentpaneler kan vara dubbletter av en primär kopia. I det här fallet rekommenderar Adobe att du låter en användare dela den primära kopian av instrumentpanelen och sedan ta bort alla dubblettinstrumentpaneler.
 
 Om du vill se vem som äger en kontrollpanel klickar du på kontrollpanelens listruta i det övre vänstra hörnet. Alla instrumentpaneler som inte har något namn nedanför dem tillhör dig.
 
-![](../../mbi/assets/Dash_ownership.gif)
+![](../../mbi/assets/Dash_ownership.png)
 
 Så här tar du bort alla dubblettinstrumentpaneler:
 
@@ -36,12 +36,12 @@ När nya användare skapas äger de inga kontrollpaneler eller diagram. De komme
 
 ## Dela instrumentpaneler med nya användare
 
-Nya användare kan också ha tillgång till vissa instrumentpaneler som inte är gemensamma för hela organisationen. I dessa fall rekommenderar Adobe att kontrollpanelsägarna [delar de relevanta kontrollpanelerna](../data-user/dashboards/share-dashboard-with-users.md) med nya användare när deras konton skapas.
+Nya användare kan också ha tillgång till vissa instrumentpaneler som inte är gemensamma för hela organisationen. I dessa fall rekommenderar Adobe att kontrollpanelens ägare [delar de relevanta instrumentpanelerna](../data-user/dashboards/share-dashboard-with-users.md) med nya användare när deras konton skapas.
 
 ## Var selektiv med redigeringsbehörigheter
 
-`Edit` behörigheter ger användarna mycket kraft. Men med stor kraft följer ett stort ansvar. För att förhindra oavsiktliga ändringar av diagram och instrumentpaneler rekommenderar Adobe att du väljer vem du vill ge `Edit` behörighet till.
+`Edit` behörigheter ger användarna mycket kraft. Men med stor kraft följer ett stort ansvar. För att förhindra oavsiktliga ändringar av dina diagram och instrumentpaneler rekommenderar Adobe att du väljer vem du vill ge `Edit` behörighet till.
 
 ## Anteckna dina diagram
 
-När du delar en kontrollpanel får användarna bara tillgång till samma information. För att informationen ska bli begriplig rekommenderar Adobe att du använder funktionen för anteckningar för att dela kunskap och nyanser om en viss datapunkt eller för att förmedla syftet med en analys.
+När du delar en kontrollpanel får användarna bara tillgång till samma information. För att informationen ska bli lättförstådd rekommenderar Adobe att du använder funktionen för diagramanteckningar för att dela kunskap och nyanser om en viss datapunkt eller för att förmedla syftet med en analys.
