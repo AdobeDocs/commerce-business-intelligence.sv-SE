@@ -21,7 +21,7 @@ Hittade du något konstigt i [[!DNL Google Adwords]](../integrations/google-adwo
 
 1. Ange din kontoinformation för [!DNL Google Adwords].
 
-1. När ditt konto har lagts till i [!DNL Google Adwords] Editor väljer du **[!UICONTROL File** > ** Exportera kalkylblad (CSV)**> **Exportera hela konto]**
+1. När ditt konto har lagts till i [!DNL Google Adwords] Editor väljer du **[!UICONTROL File** > **&#x200B; Exportera kalkylblad (CSV)**> **Exportera hela konto]**
 
 Detta skapar en `.csv`-fil som innehåller all information som lagras i ditt aktuella [!DNL Google Adwords]-konto. Skicka en [supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) (bifoga den här filen!) så att ni kan ta en närmare titt på era data. Om filen är för stor kan du dela den med [!DNL Commerce Intelligence]-teamet via [!DNL Dropbox] eller [!DNL Google Drive].
 

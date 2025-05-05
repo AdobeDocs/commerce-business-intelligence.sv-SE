@@ -27,7 +27,7 @@ Om du inte redan spårar källor för användarförvärv i din databas kan [!DNL
 
 ### (Alternativ 1) Spåra källdata för orderreferenser via [!DNL Google Analytics E-Commerce]
 
-Om du använder [!DNL Google Analytics E-Commerce] för att spåra dina order- och försäljningsdata kan du använda [!DNL [Google Analytics E-Commerce Connector]](../importing-data/integrations/google-ecommerce.md) för att synkronisera varje orders hänvisningskälldata. Detta gör att du kan segmentera intäkter och order efter hänvisningskälla (till exempel `utm_source` eller `utm_medium`). Du får också en uppfattning om kundvärvningskällor via [!DNL Commerce Intelligence] anpassade dimensioner, till exempel `User's first order source`.
+Om du använder [!DNL Google Analytics E-Commerce] för att spåra dina order- och försäljningsdata kan du använda [[!DNL [Google Analytics E-Commerce Connector]]](../importing-data/integrations/google-ecommerce.md) för att synkronisera varje orders hänvisningskälldata. Detta gör att du kan segmentera intäkter och order efter hänvisningskälla (till exempel `utm_source` eller `utm_medium`). Du får också en uppfattning om kundvärvningskällor via [!DNL Commerce Intelligence] anpassade dimensioner, till exempel `User's first order source`.
 
 ### (Alternativ 2) Sparar [!DNL Google Analytics]-inhämtningskälldata i databasen
 

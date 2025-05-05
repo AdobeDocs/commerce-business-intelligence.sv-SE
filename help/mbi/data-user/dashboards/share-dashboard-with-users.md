@@ -33,7 +33,7 @@ Att dela instrumentpaneler är ett bra sätt att se till att teamet är med och 
 
    *Om du vill ange enskilda behörigheter* klickar du på **[!UICONTROL None]** till höger om användarens namn. I den här listrutan väljer du vilken typ av behörigheter användaren ska ha.
 
-   *Klicka på&#x200B;**[!UICONTROL Set Permissions]**om du vill ange behörigheter för masse*. I den här listrutan väljer du vilken typ av behörigheter de markerade användarna ska ha.
+   *Klicka på&#x200B;**[!UICONTROL Set Permissions]**&#x200B;om du vill ange behörigheter för masse*. I den här listrutan väljer du vilken typ av behörigheter de markerade användarna ska ha.
 
    >[!NOTE]
    >

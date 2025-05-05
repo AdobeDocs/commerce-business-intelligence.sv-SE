@@ -14,7 +14,7 @@ ht-degree: 0%
 # Välj en rapportbyggare
 
 >[!NOTE]
->>Kräver [administratörsbehörighet](../../administrator/user-management/user-management.md).
+>&#x200B;>Kräver [administratörsbehörighet](../../administrator/user-management/user-management.md).
 
 Nu när du har fler alternativ för att skapa analyser kan det ibland vara svårt att veta exakt vilken version av rapporten som passar dina behov. I det här avsnittet får du hjälp med att välja det bästa sättet att bygga din analys.
 

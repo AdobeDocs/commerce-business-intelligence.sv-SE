@@ -53,8 +53,9 @@ När måttet har skapats kan du **skapa en kontrollpanel** genom att göra följ
 * **[!UICONTROL Average LTV (all)]**
    * [!UICONTROL Metric]: `Avg lifetime revenue`
    * [!UICONTROL Time period]: `All time`
-   * 
-     [!UICONTROL-intervall]: `None`
+   * &#x200B;
+
+     [!UICONTROL -intervall]: `None`
    * [!UICONTROL Chart Type]: `Number (scalar)`
 
 * **[!UICONTROL Average LTV (customers / non-guest checkout)]**
@@ -64,8 +65,9 @@ När måttet har skapats kan du **skapa en kontrollpanel** genom att göra följ
          * [`B`] `Customer's lifetime number of orders` **Större än**`0`
 
    * [!UICONTROL Time period]: `All time`
-   * 
-     [!UICONTROL-intervall]: `None`
+   * &#x200B;
+
+     [!UICONTROL -intervall]: `None`
    * [!UICONTROL Chart Type]: `Number (scalar)`
 
 * **[!UICONTROL Average and Median LTV]**
@@ -73,19 +75,22 @@ När måttet har skapats kan du **skapa en kontrollpanel** genom att göra följ
    * Mått `2`: `Median lifetime revenue`
    * [!UICONTROL Time period]: `All time`
    * [!UICONTROL Interval]: `By Month`
-   * 
-     [!UICONTROL-diagramtyp]: `Line`
+   * &#x200B;
+
+     [!UICONTROL -diagramtyp]: `Line`
    * Avmarkera `Multiple Y-Axes`
 
 * **LTV efter antal order under livstid**
    * Mått `1`: `Avg lifetime revenue`
    * Mått `2`: `New customers`
    * [!UICONTROL Time period]: `All time`
-   * 
-     [!UICONTROL-intervall]: `None`
+   * &#x200B;
+
+     [!UICONTROL -intervall]: `None`
    * [!UICONTROL Group by]: `Customer's lifetime number of orders`
-   * 
-     [!UICONTROL-diagramtyp]: `Line`
+   * &#x200B;
+
+     [!UICONTROL -diagramtyp]: `Line`
 
   >[!NOTE]
   >

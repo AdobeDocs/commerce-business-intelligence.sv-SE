@@ -34,7 +34,7 @@ Det finns två sätt att exportera rådata i [!DNL Commerce Intelligence]:
 
 Om du vill exportera tabellen från fliken [!UICONTROL Manage Data] behöver du [administratörsbehörighet](../administrator/user-management/user-management.md).
 
-1. Klicka på **[!UICONTROL Manage Data** > ** Exportera data **> **Raw-dataexport]**.
+1. Klicka på **[!UICONTROL Manage Data** > **&#x200B; Exportera data &#x200B;**> **Raw-dataexport]**.
 1. Du ser `Export List` av nyligen skapade dataexporter, om det finns några. Klicka på **[!UICONTROL Add Export]** om du vill skapa en export.
 1. Dialogrutan `New Raw Data Export` visas. Här kan du anpassa exporten genom att markera eller avmarkera kolumner och filter:
 

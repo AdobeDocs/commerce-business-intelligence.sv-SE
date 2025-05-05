@@ -69,27 +69,27 @@ Inga nya mätvärden!
 * [!UICONTROL Metric]: Antal order
 
 * [!UICONTROL Formula]: Sannolikhet för inledande upprepningsorder
-* 
-  [!UICONTROL-formel]: `A/B`
-* 
+* &#x200B;
+  [!UICONTROL -formel]: `A/B`
+* &#x200B;
   [!UICONTROL Format]: `Percent`
 
 * [!UICONTROL Time period]: `All time`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
-* 
+* &#x200B;
   [!UICONTROL Chart type]: `Scalar`
 
 * **Sannolikhet för upprepade order som har angetts i månader sedan ordern**
 * Mått A: Upprepa order efter månader sedan föregående order (dölj)
 * [!UICONTROL Metric]: `Number of orders`
-* 
+* &#x200B;
   [!UICONTROL Perspective]: `Cumulative`
 * [!UICONTROL Filter]: `Customer's order number greater than 1`
 
 * Mått B: Sista beställningen per månad sedan beställningen (dölj)
 * [!UICONTROL Metric]: `Number of orders`
-* 
+* &#x200B;
   [!UICONTROL Perspective]: `Cumulative`
 * [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
 
@@ -97,29 +97,29 @@ Inga nya mätvärden!
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]: `Customer's order number greater than 1`
 
-* 
+* &#x200B;
   [!UICONTROL Group by]: `Independent`
 
 * Mått D: Sista ordern för heltidsredigering (dölj)
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
 
-* 
+* &#x200B;
   [!UICONTROL Group by]: `Independent`
 
 * [!UICONTROL Formula]: Sannolikhet för inledande upprepningsorder
-* 
-  [!UICONTROL-formel]: `(C-A)/(C+D-A-B)`
-* 
+* &#x200B;
+  [!UICONTROL -formel]: `(C-A)/(C+D-A-B)`
+* &#x200B;
   [!UICONTROL Format]: `Percent`
 
 * [!UICONTROL Time period]: `All time`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Months since previous order`
 * Visa överkant.nederkant: De 24 översta kategorierna, sorterade efter kategorinamn
 
-* 
+* &#x200B;
   [!UICONTROL Chart type]: `Line`
 
 Den inledande sannolikhetsrapporten för upprepad order representerar totalt antal upprepade order/totalt antal order. Varje order är en möjlighet att göra en upprepad order. Antalet upprepade order är delmängden av de order som faktiskt gör det.

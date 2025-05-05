@@ -40,7 +40,8 @@ Den här analysen innehåller [avancerade beräknade kolumner](../data-warehouse
    * `created_at (month)` [!UICONTROL Calculation]: **to_char(A, &#39;mm-month&#39;)**
    * `created_at (day of the month)`&lt; [!UICONTROL Calculation]: **till_char(A, dd)**
    * `created_at (day of the week)` [!UICONTROL Calculation]: **to_char(A, &#39;d-Day&#39;)**
-   * **`created_at (hour of the day)` [!UICONTROL Calculation]: **to_char(A, &#39;hh24&#39;)**
+   * **`created_at (hour of the day)` [!UICONTROL Calculation]: &#x200B;** to_char(A, &#39;hh24&#39;)**
+
      ![](../../assets/new-arch-create-calc.png)
 
 ## Mått
@@ -64,10 +65,10 @@ Ingen.
 * Mått `A`: `This year`
 * Mått `B`: `Last year`
 * [!UICONTROL Time period]: `1 year ago to 0 years ago`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `created_at (month-day)`
-* 
+* &#x200B;
   [!UICONTROL Chart Type]: `Line`
 
 * **MoM-diagram**
@@ -81,10 +82,10 @@ Ingen.
 * Mått `A`: Den här månaden*
 * Mått `B`: förra månaden*
 * [!UICONTROL Time period]: för en månad sedan till för 0 månader sedan
-* 
+* &#x200B;
   [!UICONTROL Interval]: None
 * [!UICONTROL Group by]: `created_at (day of month)`
-* 
+* &#x200B;
   [!UICONTROL Chart Type]: Line
 
 * **WoW-diagram**
@@ -98,10 +99,10 @@ Ingen.
 * Mått `A`: `This week`
 * Mått `B`: `Last week`
 * [!UICONTROL Time period]: `1 week ago to 0 weeks ago`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `created_at (day of week)`
-* 
+* &#x200B;
   [!UICONTROL Chart Type]: `Line`
 
 * **DoD-diagram**
@@ -115,10 +116,10 @@ Ingen.
 * Mått `A`: `Today`
 * Mått B: `Yesterday`
 * [!UICONTROL Time period]: `1 day ago to 0 days ago`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `created_at (hour of day)`
-* 
+* &#x200B;
   [!UICONTROL Chart Type]: `Line`
 
 När du har kompilerat alla rapporter kan du ordna dem på kontrollpanelen som du vill. Resultatet kan se ut som bilden högst upp på den här sidan.

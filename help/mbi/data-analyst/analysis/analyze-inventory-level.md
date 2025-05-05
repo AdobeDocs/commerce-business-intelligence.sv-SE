@@ -36,7 +36,8 @@ I det här avsnittet visas hur du konfigurerar en instrumentpanel som ger insikt
 * **[!UICONTROL catalog_product_entity]**-tabell:
    * **`Product's most recent order date`**
       * [!UICONTROL Column type]: `Many to One`
-      * 
+      * &#x200B;
+
         [!UICONTROL Column equation]: `MAX`
       * [!UICONTROL Path]: `sales_order_item.product_id => catalog_product_entity.entity_id`
       * Välj en [!UICONTROL column]: `created_at`
@@ -45,7 +46,8 @@ I det här avsnittet visas hur du konfigurerar en instrumentpanel som ger insikt
 
    * **`Product's first order date`**
       * [!UICONTROL Column type]: `Many to One`
-      * 
+      * &#x200B;
+
         [!UICONTROL Column equation]: `MIN`
       * [!UICONTROL Path]: `sales_order_item.product_id => catalog_product_entity.entity_id`
       * Välj en [!UICONTROL column]: `created_at`
@@ -54,13 +56,15 @@ I det här avsnittet visas hur du konfigurerar en instrumentpanel som ger insikt
 
    * **`Seconds since product's most recent order date`**
       * [!UICONTROL Column type]: `Same Table`
-      * 
+      * &#x200B;
+
         [!UICONTROL Column equation]: `AGE`
       * Välj [!UICONTROL DATETIME column]: `Product's most recent order date`
 
    * **`Product's lifetime number of items sold`**
       * [!UICONTROL Column type]: `Many to One`
-      * 
+      * &#x200B;
+
         [!UICONTROL Column equation]: `SUM`
       * [!UICONTROL Path]: `sales_order_item.product_id => catalog_product_entity.entity_id`
       * Välj en [!UICONTROL column]: `qty_ordered`
@@ -69,12 +73,14 @@ I det här avsnittet visas hur du konfigurerar en instrumentpanel som ger insikt
 
    * **`Avg products sold per week (all time)`**
       * [!UICONTROL Column type]: `Same Table`
-      * 
+      * &#x200B;
+
         [!UICONTROL Column equation]: `CALCULATION`
       * [!UICONTROL Column] indata:
          * A: `Product's lifetime number of items sold`
          * B: `Product's first order date`
-      * 
+      * &#x200B;
+
         [!UICONTROL Datatype]: `Decimal`
       * Definition:
          * case when A is null or B is null else round(A::decimal/(extract(epoch from (current_timestamp - B))::decimal/604800.0),2) end
@@ -82,40 +88,46 @@ I det här avsnittet visas hur du konfigurerar en instrumentpanel som ger insikt
 * **[!UICONTROL cataloginventory_stock_item]**-tabell:
    * **`Sku`**
       * [!UICONTROL Column type]: `One to Many`
-      * 
+      * &#x200B;
+
         [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
       * Välj en [!UICONTROL column]: `sku`
 
    * **`Product's lifetime number of items sold`**
       * [!UICONTROL Column type]: `One to Many`
-      * 
+      * &#x200B;
+
         [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
       * Välj en [!UICONTROL column]: `Product's lifetime number of items sold`
 
    * **`Seconds since product's most recent order date`**
       * [!UICONTROL Column type]: `One to Many`
-      * 
+      * &#x200B;
+
         [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
       * Välj en [!UICONTROL column]: `Seconds since product's most recent order date`
 
    * **`Avg products sold per week (all time)`**
       * [!UICONTROL Column type]: `One to Many`
-      * 
+      * &#x200B;
+
         [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
       * Välj en [!UICONTROL column]: `Avg products sold per week (all time)`
 
    * **`Weeks on hand`**
       * [!UICONTROL Column type]: `Same Table`
-      * 
+      * &#x200B;
+
         [!UICONTROL Column equation]: `CALCULATION`
       * [!UICONTROL Column] indata:
          * A: `qty`
          * B: `Avg products sold per week (all time)`
-      * 
+      * &#x200B;
+
         [!UICONTROL Datatype]: `Decimal`
       * Definition:
          * case when A is null or B is null or B = 0.0, then null else round(A::decimal/B,2) end
@@ -126,7 +138,8 @@ I det här avsnittet visas hur du konfigurerar en instrumentpanel som ger insikt
 * **[!UICONTROL catalog_product_entity]**-tabell:
    * **`Product's most recent order date`**
       * [!UICONTROL Column type]: `Many to One`
-      * 
+      * &#x200B;
+
         [!UICONTROL Column equation]: `MAX`
       * [!UICONTROL Path]: `sales_order_item.product_id => catalog_product_entity.entity_id`
       * Välj en [!UICONTROL column]: `created_at`
@@ -135,7 +148,8 @@ I det här avsnittet visas hur du konfigurerar en instrumentpanel som ger insikt
 
    * **`Product's first order date`**
       * [!UICONTROL Column type]: `Many to One`
-      * 
+      * &#x200B;
+
         [!UICONTROL Column equation]: `MIN`
       * [!UICONTROL Path]: `sales_order_item.product_id => catalog_product_entity.entity_id`
       * Välj en [!UICONTROL column]: `created_at`
@@ -144,13 +158,15 @@ I det här avsnittet visas hur du konfigurerar en instrumentpanel som ger insikt
 
    * **`Seconds since product's most recent order date`**
       * [!UICONTROL Column type]: `Same Table`
-      * 
+      * &#x200B;
+
         [!UICONTROL Column equation]: `AGE`
       * Välj DATETIME-kolumn: **`Product's most recent order date`**
 
    * **`Product's lifetime number of items sold`**
       * [!UICONTROL Column type]: `Many to One`
-      * 
+      * &#x200B;
+
         [!UICONTROL Column equation]: `SUM`
       * [!UICONTROL Path]: **`sales_order_item.product_id => catalog_product_entity.entity_id`**
       * Välj en [!UICONTROL column]: **`qty_ordered`**
@@ -163,28 +179,32 @@ I det här avsnittet visas hur du konfigurerar en instrumentpanel som ger insikt
 * **[!UICONTROL cataloginventory_stock_item]**-tabell:
    * **`Sku`**
       * [!UICONTROL Column type]: `One to Many`
-      * 
+      * &#x200B;
+
         [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
       * Välj en [!UICONTROL column]: `sku`
 
    * **`Product's lifetime number of items sold`**
       * [!UICONTROL Column type]: `One to Many`
-      * 
+      * &#x200B;
+
         [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
       * Välj en [!UICONTROL column]: `Product's lifetime number of items sold`
 
    * **`Seconds since product's most recent order date`**
       * [!UICONTROL Column type]: `One to Many`
-      * 
+      * &#x200B;
+
         [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
       * Välj en [!UICONTROL column]: `Seconds since product's most recent order date`
 
    * **`Avg products sold per week (all time)`**
       * [!UICONTROL Column type]: `One to Many`
-      * 
+      * &#x200B;
+
         [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
       * Välj en [!UICONTROL column]: `Avg products sold per week (all time)`
@@ -215,7 +235,8 @@ I det här avsnittet visas hur du konfigurerar en instrumentpanel som ger insikt
    * [!UICONTROL Group by]:
       * `Sku`
       * `Weeks on hand`
-   * 
+   * &#x200B;
+
      [!UICONTROL Chart type]: `Table`
 
 * **`Inventory with less than 2 weeks on hand (order now)`**
@@ -225,9 +246,11 @@ I det här avsnittet visas hur du konfigurerar en instrumentpanel som ger insikt
 
    * [!UICONTROL Time period]: `All time`
    * Tidsintervall: `None`
-   * 
+   * &#x200B;
+
      [!UICONTROL Group by]: `Sku`
-   * 
+   * &#x200B;
+
      [!UICONTROL Chart type]: `Table`
 
 * **`Inventory with more than 26 weeks on hand (put on sale)`**
@@ -237,9 +260,11 @@ I det här avsnittet visas hur du konfigurerar en instrumentpanel som ger insikt
 
    * [!UICONTROL Time period]: `All time`
    * Tidsintervall: `None`
-   * 
+   * &#x200B;
+
      [!UICONTROL Group by]: `Sku`
-   * 
+   * &#x200B;
+
      [!UICONTROL Chart type]: `Table`
 
 [Kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) om du får frågor under arbetet med att skapa den här analysen, eller om du bara vill engagera Professional Services-teamet.

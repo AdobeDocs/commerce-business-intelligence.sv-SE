@@ -1,6 +1,6 @@
 ---
 title: Importerar marknadsföringsdata för CJ-dotterbolag (Commission Junction)
-description: Lär dig att importera CJ Affiliate-data (Commission Junction) till  [!DNL Commerce Intelligence].L Commerce Intelligence].
+description: Lär dig att importera CJ Affiliate-data (Commission Junction) till  [!DNL Commerce Intelligence].L Commerce Intelligence&rbrack;.
 exl-id: 1db83f34-15a1-4599-ab0a-65d527ccae01
 source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
