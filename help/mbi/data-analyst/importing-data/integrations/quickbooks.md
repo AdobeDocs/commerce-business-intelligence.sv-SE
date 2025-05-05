@@ -40,4 +40,4 @@ När du har klickat på **[!UICONTROL Connect to Quickbooks]** loggar du in på 
 ## Relaterad
 
 * [ [!DNL QuickBooks] data förväntades](../integrations/quickbooks-data.md)
-* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=sv-SE)

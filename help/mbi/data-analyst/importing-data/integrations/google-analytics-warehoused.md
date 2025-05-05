@@ -35,7 +35,7 @@ Med integreringen av [!DNL Google Analytics Live] å andra sidan är varje [!DNL
 
 >[!INFO]
 >
->[!DNL Google Analytics Warehoused] är en `Premium`-integrering. [Kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) om du vill lägga till den här integreringen i din prenumeration.
+>[!DNL Google Analytics Warehoused] är en `Premium`-integrering. [Kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE) om du vill lägga till den här integreringen i din prenumeration.
 
 1. Gå till sidan `Connections` under **[!UICONTROL Admin** > **Integrations]**.
 1. Klicka på **[!UICONTROL Add an Integration]**, som finns till höger.
@@ -63,7 +63,7 @@ Så här identifierar du en viss webbplats profil-ID [!DNL Google Analytics]:
 
 ## Relaterad dokumentation
 
-* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=sv-SE)
 * [Ansluter  [!DNL Google Adwords]](../integrations/google-adwords.md)
 * [Analysera webbplatsaktivitet och kundkonverteringsgrader](../../analysis/web-act-cust-conversion.md)
 * [Spåra kundvärvningsdata med hjälp av  [!DNL Google Analytics] cookies](../../analysis/google-track-user-acq.md)

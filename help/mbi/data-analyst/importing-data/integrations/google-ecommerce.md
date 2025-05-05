@@ -60,7 +60,7 @@ Så här identifierar du en viss webbplats profil-ID [!DNL Google Analytics]:
 ## Relaterat:
 
 * [ [!DNL Google ECommerce] data förväntades](../integrations/google-ecommerce-data.md)
-* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=sv-SE)
 * [Konfigurerar [!DNL Google ECommerce] spårning](https://support.google.com/analytics/answer/1009612?hl=en)
 * [Upptäck era mest värdefulla förvärvskällor och kanaler](../../analysis/most-value-source-channel.md)
 * [Öka avkastningen på era annonskampanjer](../../analysis/roi-ad-camp.md)

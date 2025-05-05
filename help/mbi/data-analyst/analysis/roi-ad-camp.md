@@ -99,7 +99,7 @@ Kör ni produktspecifika annonser? I så fall kan ni mäta avkastningen på dess
 >
 >I det här exemplet antas att alla kampanjkostnader uteslutande användes för att generera inköp av specifika produkter. Om man utgår ifrån att alla kostnader spenderas på att generera inköp, utgör den resulterande avkastningen det värsta scenariot (den högsta kostnaden per inköp). Du kan vara säker på att den faktiska avkastningen är högre än den här beräkningen. Exempel: Om ni spenderade 20 USD på en kampanj som genererade 10 nya användare och 10 inköp blir den faktiska kostnaden per inköp 1 USD. Under antagandet att alla kostnader gick för att förvärva nya användare är kostnaden per inköp $2.
 
-Innan du startar [skickar du en supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) för att ansluta följande dimensioner till din tabell med radobjekt (`sales\_flat\_order\_item, order\_item`):
+Innan du startar [skickar du en supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE) för att ansluta följande dimensioner till din tabell med radobjekt (`sales\_flat\_order\_item, order\_item`):
 
 * Orderns källa (om du bara spårar hänvisningskälla på användarnivå ska du ansluta till användarens källa)
 * Beställningens kampanj (om du bara spårar hänvisningskälla på användarnivå ska du gå med i användarens kampanj)

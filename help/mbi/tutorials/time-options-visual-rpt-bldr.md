@@ -66,7 +66,7 @@ Nu kan du se hur effektfullt varje månad var förra året:
 
 ## Jämföra samma mått över olika tidsintervall {#difftimerange}
 
-I det här exemplet används en anpassad dimension med namnet `Day number of the month`. Om du vill skapa den här rapporten och inte redan har den här dimensionen i din Data Warehouse kan du [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) om du behöver hjälp.
+I det här exemplet används en anpassad dimension med namnet `Day number of the month`. Om du vill skapa den här rapporten och inte redan har den här dimensionen i din Data Warehouse kan du [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE) om du behöver hjälp.
 
 De två vanligaste exemplen i den här kategorin är (1) att jämföra tillväxtstatistik (intäkter år för år eller månad för månad) och (2) att bättre förstå de senaste trenderna inom lager- eller artikelförsäljning.
 

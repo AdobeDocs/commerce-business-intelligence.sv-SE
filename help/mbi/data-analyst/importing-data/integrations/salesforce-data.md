@@ -50,4 +50,4 @@ En lista över objekt som är tillgängliga för din organisation finns i [!DNL 
 ## Relaterat:
 
 * [Ansluter  [!DNL Salesforce]](../integrations/salesforce.md)
-* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=sv-SE)

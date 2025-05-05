@@ -60,4 +60,4 @@ Tabellen innehåller samma information som tabellen `facebook_ads_insights_{acco
 ## Relaterad
 
 * [Ansluter  [!DNL Facebook Ads]](../integrations/facebook-ads.md)
-* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=sv-SE)

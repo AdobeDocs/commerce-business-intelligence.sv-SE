@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Analysera lagernivåer
 
-I det här avsnittet visas hur du konfigurerar en instrumentpanel som ger insikter om ditt nuvarande lager och innehåller instruktioner för kunder om både den äldre arkitekturen eller den nya arkitekturen. Du använder den äldre arkitekturen om du inte har alternativet **[!UICONTROL Data Warehouse Views]** på menyn **[!UICONTROL Manage Data]**. Om du har en äldre arkitektur skickar du en [ny supportförfrågan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) med ämnet **[!UICONTROL INVENTORY ANALYSIS]** när du har nått det avsedda avsnittet i instruktionerna för _Beräknade kolumner_ nedan.
+I det här avsnittet visas hur du konfigurerar en instrumentpanel som ger insikter om ditt nuvarande lager och innehåller instruktioner för kunder om både den äldre arkitekturen eller den nya arkitekturen. Du använder den äldre arkitekturen om du inte har alternativet **[!UICONTROL Data Warehouse Views]** på menyn **[!UICONTROL Manage Data]**. Om du har en äldre arkitektur skickar du en [ny supportförfrågan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE) med ämnet **[!UICONTROL INVENTORY ANALYSIS]** när du har nått det avsedda avsnittet i instruktionerna för _Beräknade kolumner_ nedan.
 
 ## Kolumner att spåra:
 
@@ -267,4 +267,4 @@ I det här avsnittet visas hur du konfigurerar en instrumentpanel som ger insikt
 
      [!UICONTROL Chart type]: `Table`
 
-[Kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) om du får frågor under arbetet med att skapa den här analysen, eller om du bara vill engagera Professional Services-teamet.
+[Kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE) om du får frågor under arbetet med att skapa den här analysen, eller om du bara vill engagera Professional Services-teamet.

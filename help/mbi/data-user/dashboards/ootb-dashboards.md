@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >Tillgängligheten för vissa instrumentpaneler beror på din datamängd.
 
-Om du har frågor eller vill lägga till ett paket till ditt konto skickar du en [supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) för hjälp.
+Om du har frågor eller vill lägga till ett paket till ditt konto skickar du en [supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE) för hjälp.
 
 ## Översikt
 

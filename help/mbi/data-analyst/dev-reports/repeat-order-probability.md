@@ -25,7 +25,7 @@ Om du lade till ett filter som använder en dimension som inte är lika för all
 
 I vissa fall kan du omvandla en `order-specific`-dimension till en `user-specific`-dimension som du kan lägga till som filter i `Repeat Order Probability`-diagrammet. I dessa fall returnerar du attributet order för en användares första order eller senaste order (t.ex. användarens namn för första orderområde).
 
-[Kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) om du vill skapa en sådan ny dimension.
+[Kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE) om du vill skapa en sådan ny dimension.
 
 ## Jämföra upprepningssannolikhet för order med olika attribut
 

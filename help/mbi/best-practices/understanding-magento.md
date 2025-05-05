@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Din [!DNL Adobe Commerce Intelligence]-miljö
 
-När ni analyserar era e-handelsdata bör ni vara medvetna om dessa faktorer och vanliga missuppfattningar. Om du behöver hjälp med att se till att du använder ditt Commerce-schema korrekt går det bra att [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+När ni analyserar era e-handelsdata bör ni vara medvetna om dessa faktorer och vanliga missuppfattningar. Om du behöver hjälp med att se till att du använder ditt Commerce-schema korrekt går det bra att [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE).
 
 ## [!DNL entity\_id]
 

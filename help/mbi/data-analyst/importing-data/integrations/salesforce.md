@@ -36,4 +36,4 @@ Om du ansluter dina [!DNL Salesforce]-data kan du göra en rad analyser, från p
 Om du är lite mer teknikkunnig kan [[!DNL Salesforce] API-dokumentationen](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm) vara en användbar resurs för att lära dig mer om hur Salesforce integreras med [!DNL Commerce Intelligence].
 
 * [ [!DNL Salesforce] data förväntades](../integrations/salesforce-data.md)
-* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=sv-SE)

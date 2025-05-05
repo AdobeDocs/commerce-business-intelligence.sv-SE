@@ -46,7 +46,7 @@ Om några av dessa beräkningar inte finns i databasen kan alla administratörsa
 
 **Accepterar du gästbeställningar?**
 
-*I så fall kanske den här tabellen inte innehåller alla dina kunder. Kontakta [supportteamet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) för att se till att dina kundanalyser omfattar alla kunder.*
+*I så fall kanske den här tabellen inte innehåller alla dina kunder. Kontakta [supportteamet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE) för att se till att dina kundanalyser omfattar alla kunder.*
 
 *Är du inte säker på om du godkänner gästbeställningar? Mer information finns i [det här avsnittet](../data-warehouse-mgr/guest-orders.md)!*
 
@@ -60,7 +60,7 @@ I den här tabellen representerar varje rad en ordning. Kolumnerna i den här ta
 * **[!UICONTROL Created_at]**: Det datum då ordern skapades eller placerades.
 * **[!UICONTROL Customer_email]**: E-postadressen till kunden som beställde. Detta kan också vara den unika identifieraren för kunden.
 * **[!UICONTROL Customer's lifetime number of orders]**: En kopia av kolumnen med samma namn i tabellen `Customers`.
-* **[!UICONTROL Customer's order number]**: Kundens sekventiella ordernummer som är associerat med ordern. Om raden du tittar på till exempel är en kunds första beställning är den här kolumnen&quot;1&quot;, men om det var kundens 15:e beställning visar den här kolumnen&quot;15&quot; för den här beställningen. Om den här dimensionen inte finns i din `Customers`-tabell ber du [supportteamet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) att hjälpa dig att skapa den.
+* **[!UICONTROL Customer's order number]**: Kundens sekventiella ordernummer som är associerat med ordern. Om raden du tittar på till exempel är en kunds första beställning är den här kolumnen&quot;1&quot;, men om det var kundens 15:e beställning visar den här kolumnen&quot;15&quot; för den här beställningen. Om den här dimensionen inte finns i din `Customers`-tabell ber du [supportteamet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE) att hjälpa dig att skapa den.
 * **[!UICONTROL Customer's order number (previous-current)]**: En sammanfogning av två värden i kolumnen **[!UICONTROL Customer's order number]**. Den används i en exempelrapport nedan för att visa den förflutna tiden mellan två order. Tiden mellan en kunds första orderdatum och dess andra orderdatum är till exempel&quot;1-2&quot; med den här beräkningen.
 * **[!UICONTROL Coupon_code]**: Visar vilka kuponger som användes på varje order.
 * **[!UICONTROL Seconds since previous order]**: Tiden (i sekunder) mellan en kunds order.

@@ -136,7 +136,7 @@ I stället för att skapa en separat uppsättning marknadsföringsstatistik för
 
 **Behöver du mer hjälp?**
 
-Skrivning av SQL och skapande av `Data Warehouse Views` ingår inte i teknisk support. [Services-teamet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) kan dock hjälpa dig att skapa vyer. Allt från att migrera en äldre databas med en ny databas till att skapa en enda Data Warehouse View för en viss analys kan supportteamet hjälpa till.
+Skrivning av SQL och skapande av `Data Warehouse Views` ingår inte i teknisk support. [Services-teamet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE) kan dock hjälpa dig att skapa vyer. Allt från att migrera en äldre databas med en ny databas till att skapa en enda Data Warehouse View för en viss analys kan supportteamet hjälpa till.
 
 Vanligtvis krävs fem timmars tjänsttid för att skapa en ny `Data Warehouse View` för konsolidering av 2-3 tabeller med liknande struktur, vilket innebär ungefär 1 250 USD arbete. Nedan anges dock några vanliga faktorer som kan öka den förväntade investeringen:
 

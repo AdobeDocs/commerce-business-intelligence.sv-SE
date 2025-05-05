@@ -62,4 +62,4 @@ Om du vill visa alla fält som är tillgängliga för spårning klickar du på l
 ## Relaterat:
 
 * [Ansluter  [!DNL QuickBooks]](../integrations/quickbooks.md)
-* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=sv-SE)

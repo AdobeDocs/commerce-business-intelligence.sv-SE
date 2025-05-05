@@ -20,7 +20,7 @@ När du [skapar beräknade kolumner](../data-warehouse-mgr/creating-calculated-c
 1. Hur tabellerna i databaserna relaterar till varandra
 1. Primära och utländska nycklar som definierar relationen
 
-Om du känner till den här informationen kan du enkelt skapa en sökväg enligt instruktionerna i det här avsnittet. Du kan fråga en teknisk expert i din organisation eller kontakta [Professional Services-teamet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+Om du känner till den här informationen kan du enkelt skapa en sökväg enligt instruktionerna i det här avsnittet. Du kan fråga en teknisk expert i din organisation eller kontakta [Professional Services-teamet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE).
 
 ## Uppdateringar om tabellrelationer och nyckeltyper {#refresher}
 
@@ -79,7 +79,7 @@ Nu kan du skapa banan.
 
 * **[!DNL Commerce Intelligence]kan inte gissa primära/externa nyckelrelationer**. Du vill inte infoga felaktiga data i ditt konto, så du måste skapa sökvägar manuellt.
 
-* **För närvarande kan sökvägar bara anges mellan två olika tabeller**. Innebär logiken som du försöker återskapa fler än två tabeller? Det kan sedan vara bra att (1) koppla kolumnerna till en mellanliggande tabell först, sedan till den&quot;slutliga destinationstabellen&quot; eller (2) rådfråga [Professional Services-teamet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) för att hitta det bästa sättet att uppnå dina mål.
+* **För närvarande kan sökvägar bara anges mellan två olika tabeller**. Innebär logiken som du försöker återskapa fler än två tabeller? Det kan sedan vara bra att (1) koppla kolumnerna till en mellanliggande tabell först, sedan till den&quot;slutliga destinationstabellen&quot; eller (2) rådfråga [Professional Services-teamet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE) för att hitta det bästa sättet att uppnå dina mål.
 
 * **En kolumn kan bara vara sekundärnyckelreferens för EN sökväg åt gången**. Om `order_items.order_id` till exempel pekar på `orders.id` kan `order_items.order_id` inte peka på något annat.
 

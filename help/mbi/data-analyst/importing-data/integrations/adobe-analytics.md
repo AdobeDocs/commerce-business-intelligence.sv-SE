@@ -57,6 +57,6 @@ Följande information krävs för att ansluta:
 
 1. Den valda rapportsviten visas i en tabell. Klicka på **[!UICONTROL Save]** för att bekräfta ditt val.
 
-1. Informera [!DNL Commerce Intelligence] [supportteamet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) om att din integrering är auktoriserad och de kör den inledande anslutningsprocessen åt dig.
+1. Informera [!DNL Commerce Intelligence] [supportteamet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE) om att din integrering är auktoriserad och de kör den inledande anslutningsprocessen åt dig.
 
 När den inledande anslutningsprocessen har körts är tabellen tillgänglig på sidan Data Warehouse på fliken `All Tables`. Markera de kolumner som du vill replikera, så visas data efter nästa fullständiga uppdatering.

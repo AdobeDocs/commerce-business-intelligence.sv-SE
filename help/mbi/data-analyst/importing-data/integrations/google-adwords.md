@@ -55,7 +55,7 @@ Du kan ha flera webbplatser anslutna till ett enda [!DNL Google Analytics]-konto
 
 ## Relaterad
 
-* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=sv-SE)
 * [Spåra referenskälla för order via  [!DNL Google ECommerce]](../integrations/google-ecommerce.md)
 * [Spåra hänvisningskälla för användare i databasen](../../analysis/google-track-user-acq.md)
 * [Upptäck era mest värdefulla förvärvskällor och kanaler](../../analysis/most-value-source-channel.md)

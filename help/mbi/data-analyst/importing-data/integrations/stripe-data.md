@@ -36,4 +36,4 @@ I det här avsnittet utforskas huvuddatatabellerna som du kan importera från [!
 ## Relaterat:
 
 * [Ansluter  [!DNL Stripe]](../integrations/stripe.md)
-* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=sv-SE)
