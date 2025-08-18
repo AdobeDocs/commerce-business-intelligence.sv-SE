@@ -15,7 +15,7 @@ ht-degree: 0%
 
 När du analyserar data är det praktiskt att konsolidera data från olika källor. Vill du gruppera intäkter genom att hämta källan, länka data från din `orders`-tabell och [!DNL Google Analytics]-data? Kanske vill ni gruppera intäkterna efter kundkön eller koppla ett kundattribut till transaktionsdata för segmentering. Det här avsnittet handlar om hur man gör just det.
 
-Innan du börjar rekommenderar Adobe att du läser [handboken Beräknade kolumntyper](../../data-analyst/data-warehouse-mgr/calc-column-types.md) för att få information om vilka typer av Data Warehouse du kan skapa i kolumnhanteraren, samt definitioner och exempel för dem.
+Innan du börjar rekommenderar Adobe att du granskar [handboken för beräknade kolumntyper](../../data-analyst/data-warehouse-mgr/calc-column-types.md) för att få information om vilka typer av kolumner du kan skapa i Data Warehouse Manager, samt definitioner och exempel för dem.
 
 1. Klicka på **[!DNL Manage Data > Data Warehouse]** för att komma igång.
 

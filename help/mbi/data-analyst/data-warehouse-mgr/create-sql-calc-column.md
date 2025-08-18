@@ -13,13 +13,13 @@ ht-degree: 0%
 
 # Skapa en SQL-beräknad kolumn
 
-I det här avsnittet beskrivs syftet med och användningsområdena för kolumntypen `Calculation`, som kan läggas till i tabeller med hjälp av [Data Warehouse Manager](../data-warehouse-mgr/tour-dwm.md). Nedan förklaras vad SQL-beräkningar gör, varför de används, processen för att skapa en SQL-beräkning och innehåller två exempel.
+I det här avsnittet beskrivs syftet med och användningsområdena för kolumntypen `Calculation` som kan läggas till i tabeller med [Data Warehouse Manager](../data-warehouse-mgr/tour-dwm.md). Nedan förklaras vad SQL-beräkningar gör, varför de används, processen för att skapa en SQL-beräkning och innehåller två exempel.
 
 **Förklaring**
 
 Tidigare kunde kolumner som ansågs vara `advanced` bara utföras av en analytiker i Customer Success Team här på [!DNL Adobe Commerce Intelligence]. Nu är alla funktioner i slutanvändarens händer och avancerade kolumner kan skapas i form av `SQL Calculation` kolumner i den nya [!DNL Commerce Intelligence]-arkitekturen.
 
-Kolumntypen `Calculation`, som nu finns som ett alternativ i Data Warehouse Manager, är samma tabellåtgärd som gör att du kan omforma kolumnerna i en tabell med PostgreSQL-logik. Dokumentation om funktioner och operatorer som kan användas i kolumntypen `Calculation` finns på PostgreSQL-webbplatsen [här](https://www.postgresql.org/docs/9.6/functions.html).
+Kolumntypen `Calculation`, som nu finns som ett alternativ i Data Warehouse Manager, är samma tabellåtgärd som gör att du kan omforma kolumnerna i en tabell med hjälp av PostgreSQL-logik. Dokumentation om funktioner och operatorer som kan användas i kolumntypen `Calculation` finns på PostgreSQL-webbplatsen [här](https://www.postgresql.org/docs/9.6/functions.html).
 
 De olika kolumner som kan skapas med kolumnen `Calculation` är nästan obegränsade, men de flesta kolumner kan skapas med IF-THEN-satser och grundläggande aritmetik, som används i exemplen nedan.
 
@@ -63,7 +63,7 @@ Härifrån kan du skapa en `Calculation`-kolumn genom att följa stegen nedan:
 
 1. Markera den tabell som du vill lägga till kolumnen `Calculation` i.
 1. Klicka på **[!UICONTROL Create New Column]** längst upp till höger på skärmen när du är i rätt tabell.
-1. Välj `Same Table` i listrutan `Select a definition`.
+1. Välj `Select a definition` i listrutan `Same Table`.
 1. Välj `Calculation` som `column definition equation`.
 1. Ange kolumnnamnet.
 1. Välj de `input` kolumner från tabellen som används i logiken för den nya kolumnen. Varje kolumn som du lägger till får ett bokstavsalias, så den första kolumnen är `A`, den andra är `B` och så vidare.
@@ -74,6 +74,6 @@ Härifrån kan du skapa en `Calculation`-kolumn genom att följa stegen nedan:
    * `String` - Alla typer av text eller teckenserier som använder icke-siffror
    * `Datetime` - `yyyy-MM-dd hh:mm:ss`-format
 
-1. Klicka på **[!UICONTROL test column]**. Detta genererar en lista med fem testvärden för var och en av dina indata och visar resultatet av logiken från steg 6 för varje uppsättning med testvärden. Om någon del av SQL genererar ett fel returneras felmeddelandet. Exempelresultat kan bara genereras om alla indatakolumner är inbyggda fält. Om någon av indatakolumnerna är beräknade kolumner måste du validera resultatet genom att lägga till kolumnen i ett mätresultat och visa den i Report Builder
+1. Klicka på **[!UICONTROL test column]**. Detta genererar en lista med fem testvärden för var och en av dina indata och visar resultatet av logiken från steg 6 för varje uppsättning med testvärden. Om någon del av SQL genererar ett fel returneras felmeddelandet. Exempelresultat kan bara genereras om alla indatakolumner är inbyggda fält. Om någon av indatakolumnerna är beräknade kolumner måste du validera resultatet genom att lägga till kolumnen i ett mätresultat och visa den i Visual Report Builder
 
 1. När du är nöjd med resultatet klickar du på **[!UICONTROL Save]**. Kolumnen kan användas.

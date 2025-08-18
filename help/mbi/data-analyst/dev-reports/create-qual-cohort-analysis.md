@@ -37,9 +37,9 @@ Om du vill analysera kohortbeteendet för flera användarsegment i samma kohortr
 
 ## Vilken information ska jag skicka till support för att konfigurera min analys? {#support}
 
-Om du skapar en `qualitative cohort`-rapport i `Report Builder` måste analysteamet i Adobe skapa [avancerade beräknade kolumner](../data-warehouse-mgr/creating-calculated-columns.md) i de nödvändiga tabellerna.
+Om du skapar en `qualitative cohort`-rapport i `Report Builder` måste Adobe analysteam skapa [avancerade beräknade kolumner](../data-warehouse-mgr/creating-calculated-columns.md) i de nödvändiga tabellerna.
 
-Om du vill skapa dessa skickar du en [supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE) (och refererar till den här artikeln!). Det här behöver du veta:
+Om du vill skapa dessa skickar du en [supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) (och refererar till den här artikeln!). Det här behöver du veta:
 
 * `metric` som du vill utföra din kohortanalys med och vilken tabell den använder (exempel: `Revenue`, som bygger på tabellen `orders`).
 
@@ -49,7 +49,7 @@ Om du vill skapa dessa skickar du en [supportanmälan](https://experienceleague.
 
 * `time interval` som du vill se analysen över (exempel: `weeks`, `months` eller `quarters` efter `User's first order date`).
 
-När analytikerteamet på Adobe har svarat på ovanstående har ni några nya avancerade beräknade kolumner för att ta fram rapporten! Följ sedan instruktionerna nedan.
+När Adobe analysteam har svarat på ovanstående har ni några nya avancerade beräknade kolumner för att ta fram rapporten! Följ sedan instruktionerna nedan.
 
 ## Skapa en kvalitativ kohortanalys {#create}
 
@@ -67,7 +67,7 @@ I det här exemplet tittar du på en `all time`-vy av `Revenue`. Efter detta bö
 
 ![](../../assets/qualcohort2.gif)
 
-För det tredje justerar du inställningarna för `cohorts`. Baserat på `cohort date` och `time interval` som du har angett för analysteamet i Adobe har du en dimension i ditt konto som utför dateringen `cohort`. I det här exemplet kallas den anpassade dimensionen `Months between this order and customer's first order date`. Om du använder den här dimensionen bör du:
+För det tredje justerar du inställningarna för `cohorts`. Baserat på den `cohort date` och `time interval` du angav för Adobe analysteam har du en dimension i ditt konto som utför dateringen `cohort`. I det här exemplet kallas den anpassade dimensionen `Months between this order and customer's first order date`. Om du använder den här dimensionen bör du:
 
 * `Group by` dimensionen med alternativet `group by`
 

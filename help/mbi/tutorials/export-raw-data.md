@@ -1,6 +1,6 @@
 ---
 title: Exportera rådata
-description: Lär dig exportera poster från din [!DNL Commerce Intelligence] Data Warehouse för att få en närmare titt på vad som ligger bakom instrumentpanelen.
+description: Lär dig exportera poster från din [!DNL Commerce Intelligence] Data Warehouse för att få en närmare titt på vad som ligger bakom din instrumentpanel.
 exl-id: 26decdaf-2b2c-4ca2-b3d5-0386892662e8
 role: Admin, Data Architect, Data Engineer, Leader, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Import/Export
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Exportera rådata
 
-Med export av rådata kan du exportera poster från Datan Warehouse för att få en närmare bild av vad som ligger bakom instrumentpanelen. Dessutom kan export av rådata hjälpa dig att [identifiera datameddelanden](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html?lang=sv-SE).
+Med export av rådata kan du exportera poster från Data Warehouse för att få en närmare bild av vad som ligger bakom instrumentpanelen. Dessutom kan export av rådata hjälpa dig att [identifiera datameddelanden](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html).
 
 Export av rådata ger tillgång till ytterligare kolumner och dimensioner som genereras genom avnormalisering och föraggning av relevanta mått. `User's first order date` är till exempel en dimension som du kan exportera för varje användare i [!DNL Commerce Intelligence], men som kanske inte är tillgänglig i din databas.
 
@@ -34,7 +34,7 @@ Det finns två sätt att exportera rådata i [!DNL Commerce Intelligence]:
 
 Om du vill exportera tabellen från fliken [!UICONTROL Manage Data] behöver du [administratörsbehörighet](../administrator/user-management/user-management.md).
 
-1. Klicka på **[!UICONTROL Manage Data** > **&#x200B; Exportera data &#x200B;**> **Raw-dataexport]**.
+1. Klicka på **[!UICONTROL Manage Data** > ** Exportera data **> **Raw-dataexport]**.
 1. Du ser `Export List` av nyligen skapade dataexporter, om det finns några. Klicka på **[!UICONTROL Add Export]** om du vill skapa en export.
 1. Dialogrutan `New Raw Data Export` visas. Här kan du anpassa exporten genom att markera eller avmarkera kolumner och filter:
 

@@ -39,7 +39,7 @@ Om du har flera profiler och behöver hjälp med att identifiera vilka som är v
 
 Du kan ha flera webbplatser anslutna till ett enda [!DNL Google Analytics]-konto, som identifieras av deras egna [!DNL Google Analytics]-profil-ID. I det här fallet kan du välja att ta med alla dina profil-ID:n i [!DNL Commerce Intelligence]. Kontrollera de profil-ID som du vill inkludera under steget för profilval.
 
-**Så här identifierar du Google Analytics-profil-ID för en viss webbplats:**
+**Så här identifierar du en viss webbplats Google Analytics-profil-ID:**
 
 1. Logga in på [!DNL Google Analytics]
 1. Gå till den aktuella webbplatsens [!DNL Google Analytics]-instrumentpanel
@@ -50,12 +50,12 @@ Du kan ha flera webbplatser anslutna till ett enda [!DNL Google Analytics]-konto
 ## Kopplar från [!DNL Google Adwords]
 
 1. Gå till sidan med [!DNL Google] [kontoinställningar](https://www.google.com/account/about/?hl=en).
-1. Klicka på **[!UICONTROL edit]** bredvid `Authorizing` program och webbplatser under avsnittet `Security`.
+1. Klicka på `Security` bredvid **[!UICONTROL edit]** program och webbplatser under avsnittet `Authorizing`.
 1. Klicka på **[!UICONTROL revoke access]**.
 
 ## Relaterad
 
-* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=sv-SE)
+* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [Spåra referenskälla för order via  [!DNL Google ECommerce]](../integrations/google-ecommerce.md)
 * [Spåra hänvisningskälla för användare i databasen](../../analysis/google-track-user-acq.md)
 * [Upptäck era mest värdefulla förvärvskällor och kanaler](../../analysis/most-value-source-channel.md)

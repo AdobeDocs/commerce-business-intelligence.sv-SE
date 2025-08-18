@@ -63,7 +63,7 @@ I slutändan är målet att välja tröskeln där det är rimligt att gå över 
 
 ## Vilka frågor ska jag överväga?
 
-För att du ska få en bättre förståelse för sannolikheten för upprepade beställningar när det gäller ditt företag föreslår Adobe att du tar hänsyn till dessa frågor när du utforskar dina egna data:
+För att du ska få en bättre förståelse för sannolikheten för upprepade beställningar när den gäller ditt företag föreslår Adobe att du ska överväga dessa frågor när du utforskar dina egna data:
 
 * Förväntas den initiala sannolikheten för upprepad order? Om inte, varför tycker du att det borde vara högre eller lägre?
 * Finns det några stora minskningar av sannolikheten för upprepade order för specifika månader sedan den senaste ordern? Förväntas i så fall dessa ändringar?
@@ -78,7 +78,7 @@ När du har skapat analysen ovan och fastställt ett tröskelvärde för bortfal
 
 Om ni erbjuder mer än en produkt undrar ni antagligen hur kunder som köper en viss produkt beter sig annorlunda över tiden jämfört med andra kunder. Vill du veta mer? Titta på den här självstudiekursen för att utforska hur kundkohorter fungerar hela livet baserat på specifika produkter som de har köpt.
 
-Den här bästa metoden tillhandahålls av [!DNL Adobe Commerce Intelligence] Data Analysis Services (DAS). [Kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE) om du vill ha mer information.
+Den här bästa metoden tillhandahålls av [!DNL Adobe Commerce Intelligence] Data Analysis Services (DAS). [Kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) om du vill ha mer information.
 
 ### Relaterad
 

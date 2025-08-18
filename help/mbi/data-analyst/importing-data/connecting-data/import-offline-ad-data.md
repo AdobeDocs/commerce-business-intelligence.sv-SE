@@ -17,9 +17,9 @@ Genom att överföra dina annonsutgiftsdata kan du mäta kampanjens avkastning g
 
 ## Överför annonsens kostnadsdata
 
-Det första steget i att analysera annonsutgiftsdata är att hämta data. Eftersom de flesta annonsplattformar tillåter att du exporterar rapporter rekommenderar Adobe att du exporterar rådata från annonsplattformen och överför dem direkt till [!DNL Commerce Intelligence] utan någon manipulering. Du kan utföra åtgärder på data i Datan Warehouse, så du behöver inte fördubbla dina insatser.
+Det första steget i att analysera annonsutgiftsdata är att hämta data. Eftersom de flesta annonsplattformar tillåter att du exporterar rapporter, rekommenderar Adobe att du exporterar rådata från annonsplattformen och överför dem direkt till [!DNL Commerce Intelligence] utan någon manipulering. Du kan utföra åtgärder på data i din Data Warehouse, så du behöver inte fördubbla dina ansträngningar.
 
-När du har exporterat annonsutgiftsdata använder du funktionen [`File Upload` ](../connecting-data/using-file-uploader.md) för att hämta data till Datan Warehouse. Du kan överföra nya data till samma [!DNL Commerce Intelligence]-tabell över tiden.
+När du har exporterat annonsutgiftsdata använder du funktionen [`File Upload` ](../connecting-data/using-file-uploader.md) för att hämta data till din Data Warehouse. Du kan överföra nya data till samma [!DNL Commerce Intelligence]-tabell över tiden.
 
 ## Offlinekällor
 

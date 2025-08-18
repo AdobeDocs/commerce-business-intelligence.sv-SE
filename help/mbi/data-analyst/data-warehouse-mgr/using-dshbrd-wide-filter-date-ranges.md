@@ -43,11 +43,11 @@ När du anger ett datumfilter för en kontrollpanel tillämpas det filtret endas
 
 ## Butiksfilter
 
-Om du vill analysera hur en viss butik fungerar klickar du på butiksikonen i det övre högra hörnet (![Butiksfilter](../../assets/store-filter.png)). Som standard är `Store Filter` inställd på `All Stores`, vilket visar data från alla [butiksvyer](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-views.html?lang=sv-SE) som är tillgängliga på din Commerce-webbplats.
+Om du vill analysera hur en viss butik fungerar klickar du på butiksikonen i det övre högra hörnet (![Butiksfilter](../../assets/store-filter.png)). Som standard är `Store Filter` inställd på `All Stores`, vilket visar data från alla [butiksvyer](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-views.html) som är tillgängliga på din Commerce-webbplats.
 
 >[!NOTE]
 >
->Ett arkivfilter är aktiverat eller inaktiverat för ett helt [!DNL Commerce Intelligence]-konto. Om en instrumentpanel innehåller rapporter som inte påverkas av filtret (till exempel rapporter som inte är byggda på [!DNL Adobe Commerce]-data) uppdateras inte dessa rapporter när arkivfiltret används. Du kan [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE) om du anser att en rapport ska uppdateras baserat på arkivval eller om du tror att kontoarkivfiltret har inaktiverats av misstag.
+>Ett arkivfilter är aktiverat eller inaktiverat för ett helt [!DNL Commerce Intelligence]-konto. Om en instrumentpanel innehåller rapporter som inte påverkas av filtret (till exempel rapporter som inte är byggda på [!DNL Adobe Commerce]-data) uppdateras inte dessa rapporter när arkivfiltret används. Du kan [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) om du anser att en rapport ska uppdateras baserat på arkivval eller om du tror att kontoarkivfiltret har inaktiverats av misstag.
 
 När du väljer en butik i `Store Filter` behåller filtret markeringen när du navigerar mellan instrumentpaneler. Om du behåller din markering kan du visa data för den valda butiken överallt tills du väljer `All Stores`.
 

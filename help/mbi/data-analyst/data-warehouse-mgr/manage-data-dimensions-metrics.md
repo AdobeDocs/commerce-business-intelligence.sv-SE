@@ -65,7 +65,7 @@ Så här tar du bort en eller flera dimensioner från flera mått:
 
 >[!NOTE]
 >
->Alla dimensioner som du vill filtrera eller gruppera efter måste redan spåras i [!DNL Commerce Intelligence]. Om du inte hittar önskad dimension kan du behöva börja spåra en ny datakolumn i databasen via sidan [Data Warehouse](../data-warehouse-mgr/tour-dwm.md).
+>Alla dimensioner som du vill filtrera eller gruppera efter måste redan spåras i [!DNL Commerce Intelligence]. Om du inte hittar önskad dimension kan du behöva börja spåra en ny datakolumn i databasen via [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) -sidan.
 
 
 **Så här tar du bort dimensioner från ett mått:**
@@ -78,7 +78,7 @@ Så här tar du bort en eller flera dimensioner från flera mått:
 
 >[!NOTE]
 >
->Även efter att du har tagit bort en dimension finns den fortfarande som en kolumn i tabellen i Datan Warehouse. Du kan lägga tillbaka det i alla mätvärden och skapa nya mätvärden med dessa mått. Om du vill ta bort den datakolumn som en dimension motsvarar från [!DNL Commerce Intelligence] tar du bara bort spåret från datakolumnen via sidan [Data Warehouse](../data-warehouse-mgr/tour-dwm.md).
+>Även när du har tagit bort en dimension finns den fortfarande som en kolumn i tabellen i Data Warehouse. Du kan lägga tillbaka det i alla mätvärden och skapa nya mätvärden med dessa mått. Om du vill ta bort den datakolumn som en dimension motsvarar från [!DNL Commerce Intelligence] tar du bara bort spåret från datakolumnen via sidan [Data Warehouse](../data-warehouse-mgr/tour-dwm.md).
 
 ## Relaterad dokumentation
 

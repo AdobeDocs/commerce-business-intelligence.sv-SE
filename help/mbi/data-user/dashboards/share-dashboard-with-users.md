@@ -6,14 +6,14 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '269'
 ht-degree: 0%
 
 ---
 
 # Dela instrumentpaneler med andra användare
 
-Att dela instrumentpaneler är ett bra sätt att se till att teamet är med och uppmuntra till samarbete. Genom att skapa och dela en central kontrollpanel kan du ge teamet den information de behöver samtidigt som ni behåller kontrollen. [[!DNL Adobe] rekommenderar](../../best-practices/share-dashboard-best-practice.md){: target=&quot;_blank&quot;} att du ger `Edit` behörighet till ett urval för att minimera oavsiktliga ändringar.
+Att dela instrumentpaneler är ett bra sätt att se till att teamet är med och uppmuntra till samarbete. Genom att skapa och dela en central kontrollpanel kan du ge teamet den information de behöver samtidigt som ni behåller kontrollen. [[!DNL Adobe] rekommenderar](../../best-practices/share-dashboard-best-practice.md){: target="_blank"} att du ger `Edit` behörighet till ett urval för att minimera oavsiktliga ändringar.
 
 >[!NOTE]
 >
@@ -33,7 +33,7 @@ Att dela instrumentpaneler är ett bra sätt att se till att teamet är med och 
 
    *Om du vill ange enskilda behörigheter* klickar du på **[!UICONTROL None]** till höger om användarens namn. I den här listrutan väljer du vilken typ av behörigheter användaren ska ha.
 
-   *Klicka på&#x200B;**[!UICONTROL Set Permissions]**&#x200B;om du vill ange behörigheter för masse*. I den här listrutan väljer du vilken typ av behörigheter de markerade användarna ska ha.
+   *Klicka på* om du vill ange behörigheter för masse **[!UICONTROL Set Permissions]**. I den här listrutan väljer du vilken typ av behörigheter de markerade användarna ska ha.
 
    >[!NOTE]
    >

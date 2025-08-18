@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Åtkomsten till dessa instrumentpaneler beror på kontotypen och din åtkomstnivå. Om du inte ser de här instrumentpanelerna kontaktar du [support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE).
+>Åtkomsten till dessa instrumentpaneler beror på kontotypen och din åtkomstnivå. Om du inte ser de här instrumentpanelerna kontaktar du [support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ## Rapporttillgänglighet
 
@@ -133,7 +133,7 @@ Instrumentpanelen för beställningar ger insikter om transaktionsvolym för bes
 
 ## Produkter
 
-På kontrollpanelen för produkter visas den allmänna produktprestandan i termer av beställda produkter, deras bruttovärde för försäljning (GMV) samt de viktigaste produkter som köpts och återbetalats. Det kan hjälpa er att balansera inköp och returer och avgöra om produkterna blir framgångsrika och populära. Butiken måste vara [konfigurerad för att spåra återbetalningar](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html?lang=sv-SE) för att diagrammen ska fyllas i.
+På kontrollpanelen för produkter visas den allmänna produktprestandan i termer av beställda produkter, deras bruttovärde för försäljning (GMV) samt de viktigaste produkter som köpts och återbetalats. Det kan hjälpa er att balansera inköp och returer och avgöra om produkterna blir framgångsrika och populära. Butiken måste vara [konfigurerad för att spåra återbetalningar](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html) för att diagrammen ska fyllas i.
 
 >[!NOTE]
 >

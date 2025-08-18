@@ -79,7 +79,7 @@ När kontot har skapats är `Sammy Customer` redo att börja göra ett köp. På
 
 (om du har Commerce 2.0 eller senare)
 
-Förutom den enskilda raden i tabellen `Sales\_flat\_order` infogas en rad för varje unikt objekt i ordningen i tabellen [`sales\_flat\_order\_item` när ](../data-warehouse-mgr/sales-flat-order-item-table.md) skickar ordningen:`Sammy Customer`
+Förutom den enskilda raden i tabellen `Sales\_flat\_order` infogas en rad för varje unikt objekt i ordningen i tabellen `Sammy Customer` när [`sales\_flat\_order\_item` skickar ordningen:](../data-warehouse-mgr/sales-flat-order-item-table.md)
 
 | **`item\_id`** | **`name`** | **`product\_id`** | **`order\_id`** | **`qty\_ordered`** | **`price`** |
 |---|---|---|---|---|---|

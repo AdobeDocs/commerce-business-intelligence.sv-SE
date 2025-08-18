@@ -17,7 +17,7 @@ Hittade du något konstigt i dina [[!DNL Zendesk] data](../integrations/exp-zend
 
 ## Aktivera dataexport
 
-Dataexport är för närvarande inte aktiverad för alla [!DNL Zendesk]-konton. Om du vill aktivera den här funktionen [skickar du en supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE) och anger ditt [!DNL Zendesk]-underdomänsnamn.
+Dataexport är för närvarande inte aktiverad för alla [!DNL Zendesk]-konton. Om du vill aktivera den här funktionen [skickar du en supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) och anger ditt [!DNL Zendesk]-underdomänsnamn.
 
 >[!NOTE]
 >
@@ -38,6 +38,6 @@ När dataexporten är aktiverad kan bara administratörer i en viss e-postdomän
 
    Den här nedladdningslänken gäller i minst tre dagar.
 
-Den här processen skapar en XML-fil som innehåller all information som lagras i ditt aktuella [!DNL Zendesk]-konto, inklusive biljettdata (med kommentarer), användardata och kontodata. Nu kan du [skicka in en supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE) (bifoga den här filen!) så att ni kan ta en närmare titt på era data. Om filen är för stor kan du dela den med [!DNL Commerce Intelligence]-teamet via [!DNL Dropbox] eller [!DNL Google Drive].
+Den här processen skapar en XML-fil som innehåller all information som lagras i ditt aktuella [!DNL Zendesk]-konto, inklusive biljettdata (med kommentarer), användardata och kontodata. Nu kan du [skicka in en supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) (bifoga den här filen!) så att du kan ta en närmare titt på dina data. Om filen är för stor kan du dela den med [!DNL Commerce Intelligence]-teamet via [!DNL Dropbox] eller [!DNL Google Drive].
 
 Mer information om [!DNL Zendesk]-filexport finns i den officiella [[!DNL Zendesk] exportdokumentationen](https://support.zendesk.com/hc/en-us/articles/4408886165402-Exporting-data-to-a-JSON-CSV-or-XML-file).

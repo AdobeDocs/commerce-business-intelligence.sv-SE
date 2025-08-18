@@ -1,6 +1,6 @@
 ---
-title: Data för Google Analytics förväntas
-description: Lär dig interagera med Google Analytics-statistik.
+title: Förväntade Google Analytics-data
+description: Lär dig interagera med dina Google Analytics-siffror.
 exl-id: db9fdaaa-47a9-4095-b1f8-9b6c74c25b7c
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # [!DNL Google Analytics] data förväntades
 
-När du har anslutit en [!DNL Google Analytics]-integrering kan du interagera med dina [!DNL Google Analytics] mått *direkt i`Visual Report Builder`*. När du anger `Visual Report Builder` och klickar på **[!UICONTROL Add a Metric]** visas en serie mätvärden från din [!DNL Google Analytics]-profil i en listruta direkt under mätvärdena i Datan Warehouse.
+När du har anslutit en [!DNL Google Analytics]-integrering kan du interagera med dina [!DNL Google Analytics] mått *direkt i`Visual Report Builder`*. När du anger `Visual Report Builder` och klickar på **[!UICONTROL Add a Metric]** visas en serie mätvärden från din [!DNL Google Analytics]-profil i en listruta direkt under mätvärdena i din Data Warehouse.
 
 Integreringen av [!DNL Google Analytics] är *live* - det innebär att `Report Builder` begär data från [!DNL Google Analytics] *omedelbart* när du lägger till ett mätvärde i rapporten. Det innebär också att de mått som du kan komma åt definieras exakt som de är i [!DNL Google Analytics] och att dessa värden inte *lagras* i ditt [!DNL Commerce Intelligence]-konto - visas bara visuellt i dina rapporter.
 
-+++Mätvärden och Dimensioner som stöds (Google Analytics 3 eller Universal Analytics)
++++Mätvärden och dimensioner som stöds (Google Analytics 3 eller Universal Analytics)
 
 >[!NOTE]
 >
@@ -154,7 +154,7 @@ Integreringen av [!DNL Google Analytics] är *live* - det innebär att `Report B
 
 +++
 
-+++Mätvärden och Dimensioner som stöds (Google Analytics 4)
++++Mätvärden och dimensioner som stöds (Google Analytics 4)
 
 [!DNL Google Analytics]-integreringar i [!DNL Commerce Intelligence] använder [!DNL Google Analytics] [Data API v1 (GA4)](https://developers.google.com/analytics/devguides/reporting/data/v1).
 

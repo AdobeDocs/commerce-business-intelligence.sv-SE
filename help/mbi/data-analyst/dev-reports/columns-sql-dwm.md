@@ -21,8 +21,8 @@ Kolumnerna är inte beroende av uppdateringscykler, så du behöver inte längre
 
 >[!IMPORTANT]
 >
->Kolumnerna som du skapar med [!DNL SQL]-redigeraren sparas inte i Datan Warehouse. Du har alltid tillgång till frågan som innehåller kolumnen, men om du vill använda kolumnen i mer än en rapport måste du återskapa den i frågan för varje rapport. Det innebär att kolumner som skapats med [!DNL SQL]-redigeraren inte kan användas i den traditionella [!DNL Report Builder]-modulen.
+>Kolumnerna som du skapar med [!DNL SQL]-redigeraren sparas inte i din Data Warehouse. Du har alltid tillgång till frågan som innehåller kolumnen, men om du vill använda kolumnen i mer än en rapport måste du återskapa den i frågan för varje rapport. Det innebär att kolumner som skapats med [!DNL SQL]-redigeraren inte kan användas i den traditionella [!DNL Report Builder]-modulen.
 
 ## Kolumner i Data Warehouse Manager
 
-Kolumner är beroende av uppdateringscykler, så en fullständig cykel måste slutföras innan de kan redigeras. De här kolumnerna sparas i Data Warehouse Manager och kan användas i traditionell [!DNL Report Builder] eller [!DNL SQL Report Builder].
+Kolumner är beroende av uppdateringscykler, så en fullständig cykel måste slutföras innan de kan redigeras. Dessa kolumner sparas i Data Warehouse Manager och kan användas i traditionell [!DNL Report Builder] eller [!DNL SQL Report Builder].

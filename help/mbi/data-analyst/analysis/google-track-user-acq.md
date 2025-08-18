@@ -1,5 +1,5 @@
 ---
-title: Google Analytics - Spåra användarvärvning - Source - översikt
+title: Google Analytics - Spåra användarförvärv Source Data Overview
 description: Lär dig segmentera data utifrån källa för kundvärvning.
 exl-id: 2ce3e4f9-4741-4ada-b822-ec6a5ca94497
 role: Admin, User
@@ -27,7 +27,7 @@ Om du inte redan spårar källor för användarförvärv i din databas kan [!DNL
 
 ### (Alternativ 1) Spåra källdata för orderreferenser via [!DNL Google Analytics E-Commerce]
 
-Om du använder [!DNL Google Analytics E-Commerce] för att spåra dina order- och försäljningsdata kan du använda [[!DNL [Google Analytics E-Commerce Connector]]](../importing-data/integrations/google-ecommerce.md) för att synkronisera varje orders hänvisningskälldata. Detta gör att du kan segmentera intäkter och order efter hänvisningskälla (till exempel `utm_source` eller `utm_medium`). Du får också en uppfattning om kundvärvningskällor via [!DNL Commerce Intelligence] anpassade dimensioner, till exempel `User's first order source`.
+Om du använder [!DNL Google Analytics E-Commerce] för att spåra dina order- och försäljningsdata kan du använda [!DNL [Google Analytics E-Commerce Connector]](../importing-data/integrations/google-ecommerce.md) för att synkronisera varje orders hänvisningskälldata. Detta gör att du kan segmentera intäkter och order efter hänvisningskälla (till exempel `utm_source` eller `utm_medium`). Du får också en uppfattning om kundvärvningskällor via [!DNL Commerce Intelligence] anpassade dimensioner, till exempel `User's first order source`.
 
 ### (Alternativ 2) Sparar [!DNL Google Analytics]-inhämtningskälldata i databasen
 
@@ -35,7 +35,7 @@ I det här avsnittet beskrivs hur du sparar information om [!DNL Google Analytic
 
 #### Varför?
 
-Om du bara tittar på standardvärdena för konvertering och förvärv av [!DNL Google Analytics] får du inte hela bilden. Även om det är intressant att se antalet konverteringar från organiska sökningar till betalda sökningar, vad kan du göra med den informationen? Borde du spendera mer pengar på betald sökning? Det beror på värdet hos kunder som kommer från den kanalen, vilket inte är något Google Analytics tillhandahåller.
+Om du bara tittar på standardvärdena för konvertering och förvärv av [!DNL Google Analytics] får du inte hela bilden. Även om det är intressant att se antalet konverteringar från organiska sökningar till betalda sökningar, vad kan du göra med den informationen? Borde du spendera mer pengar på betald sökning? Det beror på värdet hos kunder som kommer från den kanalen, vilket inte är något som Google Analytics tillhandahåller.
 
 >[!NOTE]
 >
@@ -57,7 +57,7 @@ Den här koden översattes till ett [PHP-bibliotek på github](https://github.co
 
 Den returnerade `$data`-arrayen är en karta över tangenterna `source`, `medium`, `term`, `content`, `campaign`, `gclid` och deras respektive värden.
 
-Adobe rekommenderar att du lägger till en tabell i databasen med namnet `user_referral`, med kolumnerna `id INT PRIMARY KEY, user_id INT NOT NULL, source VARCHAR(255), medium VARCHAR(255), term VARCHAR(255), content VARCHAR(255), campaign VARCHAR(255), gclid VARCHAR(255)`. När en användare registrerar sig hämtar du hänvisningsinformationen och sparar den i den här tabellen.
+Adobe rekommenderar att du lägger till en tabell i din databas med namnet `user_referral`, med kolumnerna `id INT PRIMARY KEY, user_id INT NOT NULL, source VARCHAR(255), medium VARCHAR(255), term VARCHAR(255), content VARCHAR(255), campaign VARCHAR(255), gclid VARCHAR(255)`. När en användare registrerar sig hämtar du hänvisningsinformationen och sparar den i den här tabellen.
 
 #### Så här använder du dessa data
 

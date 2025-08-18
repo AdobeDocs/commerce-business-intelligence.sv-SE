@@ -1,5 +1,5 @@
 ---
-title: Google Analytics - Spåra användarenhets- och webbläsardata i databasen
+title: Google Analytics - Spåra användarenhets- och webbläsardata i din databas
 description: Lär dig hur många användare som faktiskt loggar in via mobila enheter och hur det påverkar livslängden för dessa användare.
 exl-id: 57b1bc45-b139-4370-86ea-2fbd021aa14d
 role: Admin, User

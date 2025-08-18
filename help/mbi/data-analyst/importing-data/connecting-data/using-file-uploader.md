@@ -17,14 +17,14 @@ ht-degree: 0%
 >
 >Kräver [administratörsbehörighet](../../../administrator/user-management/user-management.md).
 
-[!DNL Adobe Commerce Intelligence] är kraftfull inte bara på grund av dess visualiseringsfunktioner, utan även för att den ger dig möjlighet att samla alla data i en enda Data Warehouse. Även data som finns utanför dina databaser och integreringar kan hämtas till [!DNL Commerce Intelligence] med hjälp av filöverföringsverktyget i Data Warehouse Manager.
+[!DNL Adobe Commerce Intelligence] är kraftfull inte bara på grund av dess visualiseringsfunktioner, utan även för att den ger dig möjlighet att samla alla dina data i en enda Data Warehouse. Även data som finns utanför dina databaser och integreringar kan hämtas till [!DNL Commerce Intelligence] med hjälp av filöverföringsverktyget i Data Warehouse Manager.
 
 Använd annonskampanjer som exempel. Om ni kör både online- och offlinekampanjer kan ni inte få hela bilden om ni bara analyserar data från en onlineintegrering. Om du överför ett kalkylblad med offlinekampanjdata kan du analysera båda uppsättningarna data och få en mer robust förståelse för kampanjresultaten.
 
 ## Begränsningar och krav {#require}
 
 1. **Det enda format som stöds för filöverföringar är `CSV` eller`comma separated values`**. Om du arbetar i Excel kan du använda funktionen Spara som för att spara filen i formatet `.csv`.
-1. **`CSV`filer måste använda`UTF-8 encoding`**. För det mesta är detta inte något problem. Om det här felet inträffar när du överför en fil [läser du den här supportartikeln](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html?lang=sv-SE).
+1. **`CSV`filer måste använda`UTF-8 encoding`**. För det mesta är detta inte något problem. Om det här felet inträffar när du överför en fil [läser du den här supportartikeln](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html).
 1. **Filerna får inte vara större än 100 MB**. Om filen är större än så delar du upp tabellen i segment och sparar dem som enskilda filer. Du kan lägga till data när den första filen har lästs in.
 1. **Alla tabeller måste ha en`primary key`**. Det måste finnas minst en kolumn i tabellen som kan användas som `primary key`, eller en unik identifierare för varje rad i tabellen. Alla kolumner som har angetts som `primary key` kan *aldrig* vara null. En `primary key` kan vara så enkel som att lägga till en kolumn som ger ett nummer till varje rad, eller så kan två kolumner sammanfogas för att skapa en kolumn med unika värden (till exempel `campaign name` och `date`).
 
@@ -42,11 +42,11 @@ Kolumnnamn måste vara unika och får bara innehålla bokstäver, siffror, blank
 
 ### Data med komma {#commas}
 
-Eftersom filerna måste vara i formatet `CSV` kan användning av kommatecken orsaka problem vid överföring av data. `CSV`-filer använder kommatecken för att ange nya värden, och därför läses en kolumn med namnet `Campaigns`, `August` som två kolumner (`Campaigns` och `August`) i stället för en, så att alla data flyttas över en rad. Adobe rekommenderar att man undviker kommatecken där det är möjligt. Du kan använda `Data Preview` för att se om dina data visas korrekt när en uppdatering har slutförts.
+Eftersom filerna måste vara i formatet `CSV` kan användning av kommatecken orsaka problem vid överföring av data. `CSV`-filer använder kommatecken för att ange nya värden, och därför läses en kolumn med namnet `Campaigns`, `August` som två kolumner (`Campaigns` och `August`) i stället för en, så att alla data flyttas över en rad. Adobe rekommenderar att du undviker kommatecken när det är möjligt. Du kan använda `Data Preview` för att se om dina data visas korrekt när en uppdatering har slutförts.
 
 ### Datum
 
-Alla datauppsättningar som innehåller datum måste använda standarddatumformatet [&#128279;](https://dev.mysql.com/doc/refman/5.7/en/datetime.html) `YYYY-MM-DD HH:MM:SS` eller `MM/DD/YYYY`.
+Alla datauppsättningar som innehåller datum måste använda standarddatumformatet [](https://dev.mysql.com/doc/refman/5.7/en/datetime.html) `YYYY-MM-DD HH:MM:SS` eller `MM/DD/YYYY`.
 
 ### Specialtecken
 
@@ -54,7 +54,7 @@ Vissa specialtecken accepteras inte. Piplinjen `& # 1 2 4` tolkas som att en kol
 
 ### Decimaltal
 
-Valutavärden ska ha datatypen `Decimal Number` markerad och dessa kolumner avrundas automatiskt till två decimaler i Datan Warehouse. Om du inte vill avrunda dina decimaltal eller ha en större precision än detta bör du välja datatypen `Non-Currency Decimal Number`.
+Valutavärden ska ha datatypen `Decimal Number` markerad och kolumnerna avrundas automatiskt till två decimaler i din Data Warehouse. Om du inte vill avrunda dina decimaltal eller ha en större precision än detta bör du välja datatypen `Non-Currency Decimal Number`.
 
 ### Procenttal
 
@@ -69,17 +69,17 @@ Procenttal måste anges i decimaler. Exempel:
 
 ### Värden med inledande och/eller avslutande nollor {#zeroes}
 
-Vissa värden i filen - som ZIP-koder och ID:n - kan börja eller sluta med nollor. Om du vill vara säker på att nollorna behålls och överförs på rätt sätt kan du ändra formateringstypen (till exempel [ från tal till text](https://support.microsoft.com/en-us/office/format-numbers-as-text-583160db-936b-4e52-bdff-6f1863518ba4?ui=en-us&amp;rs=en-us&amp;ad=us)) eller framtvinga nummerformatering.
+Vissa värden i filen - som ZIP-koder och ID:n - kan börja eller sluta med nollor. Om du vill vara säker på att nollorna behålls och överförs på rätt sätt kan du ändra formateringstypen (till exempel [ från tal till text](https://support.microsoft.com/en-us/office/format-numbers-as-text-583160db-936b-4e52-bdff-6f1863518ba4?ui=en-us&rs=en-us&ad=us)) eller framtvinga nummerformatering.
 
-Använd `US ZIP codes` som exempel på hur du ändrar talformatering. I [!DNL Excel] markerar du kolumnen som innehåller `ZIP codes` och [ändrar talformatet ](https://support.microsoft.com/en-us/office/display-numbers-as-postal-codes-61b55c9f-6fe3-4e54-96ca-9e85c38a5a1d?ui=en-us&amp;rs=en-us&amp;ad=us) till `ZIP code`. Du kan också välja ett eget nummerformat och ange `00000` i fönstret `Type`. Tänk på att den här metoden kan orsaka problem om vissa koder är formaterade som `00000` och andra är `00000-0000`.
+Använd `US ZIP codes` som exempel på hur du ändrar talformatering. I [!DNL Excel] markerar du kolumnen som innehåller `ZIP codes` och [ändrar talformatet ](https://support.microsoft.com/en-us/office/display-numbers-as-postal-codes-61b55c9f-6fe3-4e54-96ca-9e85c38a5a1d?ui=en-us&rs=en-us&ad=us) till `ZIP code`. Du kan också välja ett eget nummerformat och ange `Type` i fönstret `00000`. Tänk på att den här metoden kan orsaka problem om vissa koder är formaterade som `00000` och andra är `00000-0000`.
 
-`Type` kan [formateras på olika sätt för att passa andra datatyper](https://support.microsoft.com/en-us/office/keeping-leading-zeros-and-large-numbers-1bf7b935-36e1-4985-842f-5dfa51f85fe7?correlationid=e1d4c2d3-cd5d-4a14-999d-437800274a90&amp;ui=en-us&amp;rs=en-us&amp;ad=us), t.ex. ID:n. Om en `ID` är nio siffror lång, till exempel, kan `Type` vara `000000000` eller `000-000-000`. Detta skulle ändra `123456` till `000-123-456`.
+`Type` kan [formateras på olika sätt för att passa andra datatyper](https://support.microsoft.com/en-us/office/keeping-leading-zeros-and-large-numbers-1bf7b935-36e1-4985-842f-5dfa51f85fe7?correlationid=e1d4c2d3-cd5d-4a14-999d-437800274a90&ui=en-us&rs=en-us&ad=us), t.ex. ID:n. Om en `ID` är nio siffror lång, till exempel, kan `Type` vara `000000000` eller `000-000-000`. Detta skulle ändra `123456` till `000-123-456`.
 
 För [!DNL Google Docs]- och [!DNL Apple Numbers]-resurser, se listan [Relaterade](#related) längst ned på den här sidan.
 
 ## Överför data {#uploading}
 
-Nu när kalkylbladet är korrekt formaterat och [!DNL Commerce Intelligence]-anpassat lägger du till det i Datan Warehouse.
+Nu när kalkylbladet är korrekt formaterat och [!DNL Commerce Intelligence]-anpassat lägger du till det i din Data Warehouse.
 
 1. Gå till **[!UICONTROL Data** > **File Uploads]** om du vill komma igång.
 
@@ -137,13 +137,13 @@ Har du några nya data att lägga till i en fil som du redan har överfört? Ing
 
 ## Tillgänglighet {#availability}
 
-Precis som beräknade kolumner är data från filöverföringar tillgängliga när nästa uppdateringscykel har slutförts. Om en uppdatering pågick under filöverföringen är informationen inte tillgänglig förrän efter nästa uppdatering. När en uppdateringscykel har slutförts kan du navigera till fliken `Data Preview` i Datan Warehouse för att kontrollera att filen som har överförts är korrekt och att data visas som förväntat.
+Precis som beräknade kolumner är data från filöverföringar tillgängliga när nästa uppdateringscykel har slutförts. Om en uppdatering pågick under filöverföringen är informationen inte tillgänglig förrän efter nästa uppdatering. När en uppdateringscykel har slutförts kan du navigera till fliken `Data Preview` i Data Warehouse för att kontrollera att filen som har överförts är korrekt och att data visas som förväntat.
 
 ## Radbrytning {#wrapup}
 
 Det här avsnittet handlar endast om grunderna för att importera data, men du kanske vill göra något mer avancerat. Läs mer i Relaterade artiklar om hur du formaterar och importerar ekonomiska data, e-handel, annonskostnader och andra typer av data.
 
-Dessutom är filöverföring inte det enda sättet att hämta data till [!DNL Commerce Intelligence]. Med funktionerna för [API:t för dataimport](https://developer.adobe.com/commerce/services/reporting/import-api/) kan du skicka godtyckliga data till din [!DNL Commerce Intelligence]-Data Warehouse.
+Dessutom är filöverföring inte det enda sättet att hämta data till [!DNL Commerce Intelligence]. Med funktionerna för [API:t för dataimport](https://developer.adobe.com/commerce/services/reporting/import-api/) kan du skicka godtyckliga data till din [!DNL Commerce Intelligence] Data Warehouse.
 
 ## Relaterad {#related}
 

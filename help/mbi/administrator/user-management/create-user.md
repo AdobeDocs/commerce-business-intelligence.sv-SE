@@ -36,8 +36,8 @@ Du kan uppdatera din e-postadress och/eller ditt lösenord genom att klicka på 
 
 ## Skicka inbjudan igen
 
-Om du behöver skicka inbjudan igen klickar du på [inloggningssidan](https://dashboard.rjmetrics.com/v2/session/create), anger den nya användarens e-postadress och klickar på **[!UICONTROL Reset Password]**. **[!UICONTROL Forgot?]** Detta skickar inbjudan igen och låter användaren logga in.
+Om du behöver skicka inbjudan igen klickar du på [inloggningssidan](https://dashboard.rjmetrics.com/v2/session/create), anger den nya användarens e-postadress och klickar på **[!UICONTROL Forgot?]**. **[!UICONTROL Reset Password]** Detta skickar inbjudan igen och låter användaren logga in.
 
 >[!IMPORTANT]
 >
->Varje konto har ett avtalat antal licenser, eller licenser. [Skicka en supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE) om du når gränsen eller vill veta mer.
+>Varje konto har ett avtalat antal licenser, eller licenser. [Skicka en supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) om du når gränsen eller vill veta mer.

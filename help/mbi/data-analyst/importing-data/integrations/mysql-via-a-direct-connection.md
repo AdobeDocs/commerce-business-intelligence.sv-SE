@@ -66,4 +66,4 @@ När du är klar klickar du på **[!UICONTROL Save & Test]** för att slutföra 
 
 ## Relaterad dokumentation
 
-* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=sv-SE)
+* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

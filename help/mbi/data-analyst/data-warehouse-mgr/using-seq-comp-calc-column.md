@@ -33,7 +33,7 @@ Kolumntypen `Sequential Comparison`: söker efter skillnaden mellan efterföljan
 | **`4`** | A | 2015-01-02 13:00:00 | 126000 |
 | **`5`** | B | 2015-01-03 13:00:00 | 217800 |
 
-I ovanstående exempel är `Seconds since owner's previous event` den `Sequential Comparison` beräknade kolumnen. För `owner_id = A` identifierar den först en sekvens baserad på kolumnen `timestamp` och subtraherar sedan den föregående händelsens `timestamp` från den aktuella händelsens tidsstämpel. I den tredje raden i tabellen - den andra raden för `owner_id A` - är värdet `Seconds since owner's previous event` antalet sekunder mellan &#39;2015-01-01 02:00&#39; och &#39;2015-01-01 00:00:00&#39;. Skillnaden är lika med två timmar = 7 200 sekunder.
+I ovanstående exempel är `Seconds since owner's previous event` den `Sequential Comparison` beräknade kolumnen. För `owner_id = A` identifierar den först en sekvens baserad på kolumnen `timestamp` och subtraherar sedan den föregående händelsens `timestamp` från den aktuella händelsens tidsstämpel. I den tredje raden i tabellen - den andra raden för `owner_id A` - är värdet för `Seconds since owner's previous event` antalet sekunder mellan &#39;2015-01-01 02:00&#39; och &#39;2015-01-01 00:00:00&#39;. Skillnaden är lika med två timmar = 7 200 sekunder.
 
 För den här beräknade kolumntypen har raden som motsvarar ägarens första händelse ett `NULL`-värde.
 

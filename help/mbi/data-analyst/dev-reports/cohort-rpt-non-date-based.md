@@ -1,5 +1,5 @@
 ---
-title: Kohort Report Builder för icke-datumbaserade kohorter
+title: Cohort Report Builder for Non-Date Based Cohorts
 description: Lär dig att gruppera användare efter en liknande aktivitet eller attribut.
 exl-id: c7b85ce9-113c-4ffc-855f-3d53fe2347d8
 role: Admin, Data Architect, Data Engineer, User
@@ -27,7 +27,7 @@ Det här är ingen omfattande lista, men här finns några möjliga analyser som
 
 1. Klicka på **[!UICONTROL Report Builder]** på den vänstra fliken eller **[!UICONTROL Add Report** > **Create Report]** på en kontrollpanel.
 
-1. Klicka på **[!UICONTROL Create Report]** bredvid alternativet `Visual Report Builder` på skärmen `Report Builder Selection`.
+1. Klicka på `Report Builder Selection` bredvid alternativet **[!UICONTROL Create Report]** på skärmen `Visual Report Builder`.
 
 ### Lägga till ett mått
 
@@ -55,11 +55,11 @@ Fem specifikationer krävs för att skapa en Cohortrapport:
 
 
 
-#### 1. Gruppera `cohorts`
+#### &#x200B;1. Gruppera `cohorts`
 
 `Cohorts` grupperas efter en beteendeegenskap, i det här exemplet `Customer's first order GA source`. De alternativ som är tillgängliga här är kolumner som redan har angetts som `groupable` för måttet.
 
-#### 2. Välja kohorter
+#### &#x200B;2. Välja kohorter
 
 Du kan visa alla resultat för den angivna egenskapen. Eftersom detta kan resultera i många `cohorts` kan du välja det specifika `cohorts` (som motsvarar de olika värden som är tillgängliga för `Customer's first order GA source`) som du behöver.
 

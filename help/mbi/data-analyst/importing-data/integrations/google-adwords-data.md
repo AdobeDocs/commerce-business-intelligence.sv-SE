@@ -15,7 +15,7 @@ ht-degree: 0%
 
 När [du har anslutit ditt [!DNL Google Adwords] konto](../integrations/google-adwords.md) kan du använda [Data Warehouse Manager](../../data-warehouse-mgr/tour-dwm.md) för att enkelt spåra relevanta datafält för analys.
 
-Det finns två tabeller som kan replikeras till Datan Warehouse:
+Här ser du två tabeller som kan replikeras till din Data Warehouse:
 
 * `campaigns[account-id]`
 * `adwords[account-id]`
@@ -45,12 +45,12 @@ Tabellen `campaigns` innehåller följande kolumner:
 |-----|-----|
 | `\_id` | Registrets primärnyckel |
 | `accountId` | Konto-ID |
-| [`adClicks`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_adclicks) | Totalt antal klick för dagen |
-| [`adCost`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_adcost) | Total kostnad för kampanjen för dagen |
-| [`adwordsCampaignID`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_adwordscampaignid) | Kampanj-ID för [!DNL Adwords] |
-| [`campaign`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=traffic_sources&amp;jump=ga_campaign) | Kampanjnamn (till exempel [utm\_campaign](https://support.google.com/analytics/answer/1033867?hl=en)) |
-| [`date`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=time&amp;jump=ga_date) | Datumet då kampanjen kördes |
-| [`impressions`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_impressions) | Antal visningar för dagen |
+| [`adClicks`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=adwords&jump=ga_adclicks) | Totalt antal klick för dagen |
+| [`adCost`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=adwords&jump=ga_adcost) | Total kostnad för kampanjen för dagen |
+| [`adwordsCampaignID`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=adwords&jump=ga_adwordscampaignid) | Kampanj-ID för [!DNL Adwords] |
+| [`campaign`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=traffic_sources&jump=ga_campaign) | Kampanjnamn (till exempel [utm\_campaign](https://support.google.com/analytics/answer/1033867?hl=en)) |
+| [`date`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=time&jump=ga_date) | Datumet då kampanjen kördes |
+| [`impressions`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=adwords&jump=ga_impressions) | Antal visningar för dagen |
 | `profileId` | Profil-ID |
 | `profileName` | Profilnamnet |
 | `\_updated\_at` | Datum och tid för den senaste uppdateringen för raden |
@@ -65,12 +65,12 @@ Tabellen `adwords` innehåller följande kolumner:
 |-----|-----|
 | `\_id` | Registrets primärnyckel |
 | `accountId` | Konto-ID |
-| [`adClicks`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_adclicks) | Totalt antal klick för dagen |
-| [`adCost`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_adcost) | Total kostnad för kampanjen för dagen |
-| [`adwordsCampaignID`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_adwordscampaignid) | Kampanj-ID för [!DNL Adwords] |
-| [`campaign`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=traffic_sources&amp;jump=ga_campaign) | Kampanjnamn (till exempel [utm\_campaign](https://support.google.com/analytics/answer/1033867?hl=en)) |
-| [`date`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=time&amp;jump=ga_date) | Datumet då kampanjen kördes |
-| [`impressions`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_impressions) | Antal visningar för dagen |
+| [`adClicks`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=adwords&jump=ga_adclicks) | Totalt antal klick för dagen |
+| [`adCost`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=adwords&jump=ga_adcost) | Total kostnad för kampanjen för dagen |
+| [`adwordsCampaignID`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=adwords&jump=ga_adwordscampaignid) | Kampanj-ID för [!DNL Adwords] |
+| [`campaign`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=traffic_sources&jump=ga_campaign) | Kampanjnamn (till exempel [utm\_campaign](https://support.google.com/analytics/answer/1033867?hl=en)) |
+| [`date`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=time&jump=ga_date) | Datumet då kampanjen kördes |
+| [`impressions`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=adwords&jump=ga_impressions) | Antal visningar för dagen |
 | `profileId` | Profil-ID |
 | `profileName` | Profilnamnet |
 | `\_updated\_at` | Datum och tid för den senaste uppdateringen för raden |
@@ -89,4 +89,4 @@ Med hjälp av dessa data kan du börja skapa [mått](../../../data-user/reports/
 
 Om du inte har någon konsoliderad tabell och du skapar en vacker kontrollpanel i tabellen `adwords` måste du replikera rapporten eller skapa dubblettmått för att jämföra data med dina [!DNL Facebook Ads]-data. Om du använder en konsoliderad tabell kan du sömlöst införliva [!DNL Facebook Ads]-data med dina befintliga [!DNL Adwords]-rapporter. Ni kan även segmentera per annonsplattform.
 
-Om du redan har synkroniserat fälten ovan, [kontaktar du oss](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE) för att konsolidera din annonsutgift.
+Om du redan har synkroniserat fälten ovan, [kontaktar du oss](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) för att konsolidera din annonsutgift.

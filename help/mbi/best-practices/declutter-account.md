@@ -99,13 +99,13 @@ Om du bestämmer dig för att måttet inte längre behövs går du tillbaka till
 
 ## Steg 4: Utvärdera dina synkroniserade kolumner
 
-Det sista steget är att utvärdera de kolumner som synkroniseras i Datan Warehouse. Det går inte bara att avsynkronisera kolumner så att ditt konto rensas, det kan också minska uppdateringstiden.
+Det sista steget är att utvärdera de kolumner som synkroniseras i din Data Warehouse. Det går inte bara att avsynkronisera kolumner så att ditt konto rensas, det kan också minska uppdateringstiden.
 
-Om du vill fortsätta med detta kontaktar du [!DNL Commerce Intelligence] [Support](../guide-overview.md#Submitting-a-Support-Ticket). Supportteamet kan skapa en rapport som innehåller alla kolumner som inte används i någon kontrollpanel för någon användare och som inte används i e-postsammanfattningar, exklusive SQL-rapporter. Du kan sedan använda den här rapporten som vägledning när du markerar kolumner som ska avsynkroniseras via Data Warehouse Manager.
+Om du vill fortsätta med detta kontaktar du [!DNL Commerce Intelligence] [Support](../guide-overview.md#Submitting-a-Support-Ticket). Supportteamet kan skapa en rapport som innehåller alla kolumner som inte används i någon kontrollpanel för någon användare och som inte används i e-postsammanfattningar, exklusive SQL-rapporter. Du kan sedan använda den här rapporten som vägledning när du väljer kolumner som ska avsynkroniseras via Data Warehouse Manager.
 
 >[!NOTE]
 >
->Du kan alltid börja synkronisera de här kolumnerna igen i framtiden. Om du avsynkroniserar en kolumn tas alla data bort från Datan Warehouse. Det innebär bara att den här kolumnen inte har genomsökts efter nya eller uppdaterade värden under uppdateringscykeln.
+>Du kan alltid börja synkronisera de här kolumnerna igen i framtiden. Om du avsynkroniserar en kolumn tas alla data bort från din Data Warehouse. Det innebär bara att den här kolumnen inte kontrolleras om det finns nya eller uppdaterade värden under uppdateringscykeln.
 
 **Så här avsynkroniserar du en kolumn (eller kolumner)**
 

@@ -11,7 +11,7 @@ ht-degree: 0%
 
 ---
 
-# Skapa [!DNL Google ECommerce] Dimensioner
+# Skapa [!DNL Google ECommerce] dimensioner
 
 >[!NOTE]
 >
@@ -23,7 +23,7 @@ De dimensioner som omfattas ger dig möjlighet att skapa analyser som [besvarar 
 
 ## Krav och översikt
 
-Om du vill skapa dimensionerna i det här avsnittet behöver du en [!DNL Google ECommerce]-tabell, en `orders`-tabell och en `customers`-tabell. Tabellerna måste [synkroniseras med din Data Warehouse](../../data-analyst/data-warehouse-mgr/tour-dwm.md) innan dimensioner kan skapas. Tabeller som synkroniseras visas i avsnittet `Synced Tables` i `Data Warehouse Manager`.
+Om du vill skapa dimensionerna i det här avsnittet behöver du en [!DNL Google ECommerce]-tabell, en `orders`-tabell och en `customers`-tabell. Dessa tabeller måste [synkroniseras med din Data Warehouse](../../data-analyst/data-warehouse-mgr/tour-dwm.md) innan dimensioner kan skapas. Tabeller som synkroniseras visas i avsnittet `Synced Tables` i `Data Warehouse Manager`.
 
 Här är en snabbtitt på synkronisering av tabeller och kolumner om du behöver en uppdaterare:
 
@@ -56,7 +56,7 @@ Om du vill skapa dimensioner öppnar du [Data Warehouse Manager](../data-warehou
 
 Det här exemplet bygger **Order [!DNL Google Analytics] Source** -dimensionen.
 
-1. Klicka på den tabell (i det här fallet `orders`) som innehåller din orderinformation i listan över tabeller i Datan Warehouse.
+1. I listan med tabeller i Data Warehouse klickar du på tabellen (i det här fallet `orders`) som innehåller din orderinformation.
 1. Klicka på **[!UICONTROL Create a Column]**.
 1. Namnge kolumnen.
 1. Välj `Joined Column` i listrutan [definition](../data-warehouse-mgr/calc-column-types.md). Det här exemplet fungerar med en [en-till-en-relation](../data-warehouse-mgr/table-relationships.md) som matchar kolumnen `eCommerce.transactionID` till exakt en rad i tabellen `orders`.
@@ -82,7 +82,7 @@ Prova sedan att skapa **Beställningens [!DNL Google Analytics] medium** och `ca
 
 Det här exemplet bygger **kundens [!DNL Google Analytics] source** -dimension för den första ordern.
 
-1. Klicka på den tabell (i det här fallet `customers`) som innehåller kundinformationen i listan med tabeller i Datan Warehouse.
+1. Klicka på tabellen (i det här fallet `customers`) som innehåller din kundinformation i listan över tabeller i Data Warehouse.
 1. Klicka på **[!UICONTROL Create a Column]**.
 1. Namnge kolumnen.
 1. I det här exemplet väljer du definitionen `is MAX` i listrutan [definition](../../data-analyst/data-warehouse-mgr/calc-column-types.md). Definitionen `is MIN` kan också fungera om den används i en textkolumn med endast ett möjligt värde. Det viktiga är att se till att rätt filter ställs in, vilket du gör senare.
@@ -105,7 +105,7 @@ Du kan stoppa här om du vill, men det här avsnittet aktiverar ytterligare anal
 
 Det här exemplet kopplar dimensionen `Customer's first order's [!DNL Google Analytics] source` till tabellen `orders`.
 
-1. Klicka på den tabell (i det här fallet `orders`) som innehåller din orderinformation i listan över tabeller i Datan Warehouse.
+1. I listan med tabeller i Data Warehouse klickar du på tabellen (i det här fallet `orders`) som innehåller din orderinformation.
 1. Klicka på **[!UICONTROL Create a Column]**.
 1. Namnge kolumnen.
 1. Välj `Joined Column` i listrutan för definition. Detta kopplar de kunddimensioner som du skapade i föregående avsnitt till tabellen `orders`.

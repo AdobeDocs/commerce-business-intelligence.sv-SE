@@ -23,6 +23,6 @@ Här är den rekommenderade listan med saker som du behöver för alternativet:
 
 1. **Ett USB-tangentbord och en mus** som styr dongeln.
 
-1. **Ett webbläsartillägg som roterar mellan flera flikar samtidigt.** Det gör att du kan konfigurera alla valda instrumentpaneler som du visar på en unik flik. Adobe rekommenderar tillägget [Flikar med versaler](https://chrome.google.com/webstore/detail/revolver-tabs/dlknooajieciikpedpldejhhijacnbda?hl=en) om du använder [!DNL Chrome].
+1. **Ett webbläsartillägg som roterar mellan flera flikar samtidigt.** Det gör att du kan konfigurera alla valda instrumentpaneler som du visar på en unik flik. Adobe rekommenderar tillägget [Flikar med överrullning](https://chrome.google.com/webstore/detail/revolver-tabs/dlknooajieciikpedpldejhhijacnbda?hl=en) om du använder [!DNL Chrome].
 
 När du har maskinvaran ovan kan du öppna ett webbläsarfönster på skärmen med en specifik kontrollpanel som du vill visa på varje flik. Äntligen kan du konfigurera webbläsaren så att den roterar genom varje kontrollpanel med önskad frekvens.

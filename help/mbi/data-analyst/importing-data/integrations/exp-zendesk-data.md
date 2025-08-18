@@ -35,4 +35,4 @@ I det här avsnittet utforskas huvuddatatabellerna som du kan importera från [!
 ## Relaterad
 
 * [Ansluter Zendesk](../integrations/zendesk.md)
-* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=sv-SE)
+* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

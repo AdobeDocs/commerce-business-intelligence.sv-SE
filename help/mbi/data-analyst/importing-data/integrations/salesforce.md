@@ -1,6 +1,6 @@
 ---
-title: Anslut Salesforce
-description: Läs om hur Salesforce-data möjliggör en rad analyser, från poängsättning och optimering av leads till att nå era mål för konverterade möjligheter.
+title: Connect Salesforce
+description: Läs om hur Salesforce data möjliggör en rad olika analyser, från poängsättning och optimering av leads till att nå era mål för konverterade möjligheter.
 exl-id: 249b2b40-8c8a-4616-9383-17690f07003d
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -33,7 +33,7 @@ Om du ansluter dina [!DNL Salesforce]-data kan du göra en rad analyser, från p
 
 ## Relaterat:
 
-Om du är lite mer teknikkunnig kan [[!DNL Salesforce] API-dokumentationen](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm) vara en användbar resurs för att lära dig mer om hur Salesforce integreras med [!DNL Commerce Intelligence].
+Om du är lite mer teknikkunnig kan [[!DNL Salesforce] API-dokumentationen](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm) vara en användbar resurs för att lära dig mer om hur Salesforce är integrerat med [!DNL Commerce Intelligence].
 
 * [ [!DNL Salesforce] data förväntades](../integrations/salesforce-data.md)
-* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=sv-SE)
+* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

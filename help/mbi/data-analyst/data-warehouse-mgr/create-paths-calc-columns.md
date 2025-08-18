@@ -15,12 +15,12 @@ ht-degree: 0%
 
 ## Uppdatera beräknade kolumner
 
-När du [skapar beräknade kolumner](../data-warehouse-mgr/creating-calculated-columns.md) i Datan Warehouse uppmanas du att definiera en sökväg som beskriver hur tabellen du skapar en kolumn i är relaterad till tabellen som du hämtar information från. För att kunna skapa en bana måste du känna till två saker:
+När du [skapar beräknade kolumner](../data-warehouse-mgr/creating-calculated-columns.md) i din Data Warehouse uppmanas du att definiera en sökväg som beskriver hur tabellen du skapar en kolumn i är relaterad till tabellen som du hämtar information från. För att kunna skapa en bana måste du känna till två saker:
 
 1. Hur tabellerna i databaserna relaterar till varandra
 1. Primära och utländska nycklar som definierar relationen
 
-Om du känner till den här informationen kan du enkelt skapa en sökväg enligt instruktionerna i det här avsnittet. Du kan fråga en teknisk expert i din organisation eller kontakta [Professional Services-teamet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE).
+Om du känner till den här informationen kan du enkelt skapa en sökväg enligt instruktionerna i det här avsnittet. Du kan fråga en teknisk expert i din organisation eller kontakta [Professional Services-teamet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ## Uppdateringar om tabellrelationer och nyckeltyper {#refresher}
 
@@ -48,7 +48,7 @@ En `Foreign Key` är en kolumn som skapats inuti en tabell som länkar till kolu
 
 ## Skapa en bana {#createpath}
 
-När du skapar en kolumn i Datan Warehouse måste du definiera sökvägen som hämtar information från en tabell till en annan. Ibland fylls banor i i förväg eftersom det finns en sökväg mellan tabeller, men om detta inte inträffar måste du skapa en.
+När du skapar en kolumn i din Data Warehouse måste du definiera sökvägen som hämtar information från en tabell till en annan. Ibland fylls banor i i förväg eftersom det finns en sökväg mellan tabeller, men om detta inte inträffar måste du skapa en.
 
 Använd relationen mellan **kunder** och **order** för att visa hur det går till. Nedbruten:
 
@@ -63,7 +63,7 @@ Nu kan du skapa banan.
 1. Tabellschemat visas. Klicka på **[!UICONTROL Create New Column]**.
 1. Ge din kolumn ett namn, till exempel `Customer's orders`.
 1. Markera definitionen för kolumnen. Ta en titt på [den beräknade kolumnguiden](../data-warehouse-mgr/creating-calculated-columns.md) om du vill ha ett praktiskt kalkylblad.
-1. Klicka på alternativet **[!UICONTROL Create new path]** i listrutan [!UICONTROL Select table and column].
+1. Klicka på alternativet [!UICONTROL Select table and column] i listrutan **[!UICONTROL Create new path]**.
 
    ![Skapar sökvägar för beräknade kolumner modal](../../assets/Creating_Paths_modal.png)
 
@@ -79,7 +79,7 @@ Nu kan du skapa banan.
 
 * **[!DNL Commerce Intelligence]kan inte gissa primära/externa nyckelrelationer**. Du vill inte infoga felaktiga data i ditt konto, så du måste skapa sökvägar manuellt.
 
-* **För närvarande kan sökvägar bara anges mellan två olika tabeller**. Innebär logiken som du försöker återskapa fler än två tabeller? Det kan sedan vara bra att (1) koppla kolumnerna till en mellanliggande tabell först, sedan till den&quot;slutliga destinationstabellen&quot; eller (2) rådfråga [Professional Services-teamet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE) för att hitta det bästa sättet att uppnå dina mål.
+* **För närvarande kan sökvägar bara anges mellan två olika tabeller**. Innebär logiken som du försöker återskapa fler än två tabeller? Det kan sedan vara bra att (1) koppla kolumnerna till en mellanliggande tabell först, sedan till den&quot;slutliga destinationstabellen&quot; eller (2) rådfråga [Professional Services-teamet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) för att hitta det bästa sättet att uppnå dina mål.
 
 * **En kolumn kan bara vara sekundärnyckelreferens för EN sökväg åt gången**. Om `order_items.order_id` till exempel pekar på `orders.id` kan `order_items.order_id` inte peka på något annat.
 
@@ -89,11 +89,11 @@ Om du inte kan skapa en beräknad kolumn på grund av en eller flera av begräns
 
 ## Ta bort en beräknad kolumnsökväg {#delete}
 
-Har du skapat en felaktig sökväg i Datan Warehouse? Eller kanske du ska göra lite vårrengöring och vill städa upp? Om du behöver ta bort en sökväg från ditt konto kan du [skicka en biljett till Adobe supportanalytiker](../../guide-overview.md#Submitting-a-Support-Ticket). **Ange namnet på sökvägen!**
+Har du skapat en felaktig sökväg i din Data Warehouse? Eller kanske du ska göra lite vårrengöring och vill städa upp? Om du behöver ta bort en sökväg från ditt konto kan du [skicka en biljett till Adobe supportanalytiker](../../guide-overview.md#Submitting-a-Support-Ticket). **Ange namnet på sökvägen!**
 
 ## Radbrytning {#wrapup}
 
-Nu kan du skapa banor för beräknade kolumner i Datan Warehouse. Om du fortfarande är osäker på en viss sökväg kan du alltid klicka på **[!UICONTROL Support]** i ditt [!DNL Commerce Intelligence]-konto för att få hjälp.
+Nu kan du skapa banor för beräknade kolumner i din Data Warehouse. Om du fortfarande är osäker på en viss sökväg kan du alltid klicka på **[!UICONTROL Support]** i ditt [!DNL Commerce Intelligence]-konto för att få hjälp.
 
 ## Relaterad
 

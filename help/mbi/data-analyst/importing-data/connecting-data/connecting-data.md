@@ -1,6 +1,6 @@
 ---
 title: Koppla samman data
-description: Lär dig hur du bläddrar bland de tabeller som är tillgängliga för synkronisering i Data Warehouse Manager.
+description: Lär dig hur du bläddrar i tabeller som är tillgängliga för synkronisering i Data Warehouse Manager.
 exl-id: 94beba8b-6a86-4af9-87fb-96b1cf8f8fa2
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration
@@ -29,7 +29,7 @@ Integreringar läggs till och hanteras med sidan `Connections`, som du kommer å
 
 ## Integrationstyper
 
-Det finns fyra sätt att hämta dina data till [!DNL Commerce Intelligence]: ansluta en databas, ansluta en SaaS-integrering, överföra en `.csv`-fil eller använda Adobe API.
+Det finns fyra sätt att hämta data till [!DNL Commerce Intelligence]: ansluta en databas, ansluta en SaaS-integrering, överföra en `.csv`-fil eller använda Adobe API.
 
 ## Databasintegreringar
 
@@ -37,7 +37,7 @@ Det finns fyra sätt att hämta dina data till [!DNL Commerce Intelligence]: ans
 
 [!DNL Commerce Intelligence] stöder SQL-baserade och NoSQL-databaser som [MySQL](../../importing-data/integrations/mysql-via-ssh-tunnel.md), [Microsoft SQL](../integrations/microsoft-sql-server.md), [MongoDB](../integrations/mongodb-via-ssh-tunnel.md) och [PostgreSQL](../integrations/postgresql.md).
 
-Du kan ansluta din databas direkt till [!DNL Commerce Intelligence] med hjälp av databasautentiseringsuppgifter, men Adobe rekommenderar att du använder en beprövad krypteringsmetod som SSH-tunnel. Detta garanterar att dina data förblir säkra och säkra när de kommer in i Datan Warehouse.
+Du kan ansluta din databas direkt till [!DNL Commerce Intelligence] med hjälp av databasautentiseringsuppgifter, men Adobe rekommenderar att du använder en beprövad krypteringsmetod som SSH-tunnel. Detta garanterar att dina data förblir säkra och säkra när de kommer in i din Data Warehouse.
 
 Beroende på anslutningsmetod och typ av databas kan viss teknisk expertis behövas för att slutföra konfigurationen.
 
@@ -51,7 +51,7 @@ Vanligtvis är det lika enkelt att konfigurera en integrering i [!DNL Commerce I
 
 ## Filöverföring
 
-Vet du inte hur du hämtar data från en extra källa till Datan Warehouse? [Att använda `File Upload` feature](../connecting-data/using-file-uploader.md) är ett bra sätt att hämta in data som du inte behöver för det dagliga beslutsfattandet. Om du följer formateringsreglerna kan du snabbt överföra `.csv` filer till Datan Warehouse och koppla dem till andra datakällor.
+Vet du inte hur man hämtar data från en extra källa till Data Warehouse? [Att använda `File Upload` feature](../connecting-data/using-file-uploader.md) är ett bra sätt att hämta in data som du inte behöver för det dagliga beslutsfattandet. Om du följer formateringsreglerna kan du snabbt överföra `.csv` filer till din Data Warehouse och koppla dem till andra datakällor.
 
 ## [!DNL Commerce Intelligence] `Import API`
 
@@ -70,6 +70,6 @@ Om du vill lägga till en integrering klickar du på **[!UICONTROL Manage Data**
 * [Konsoliderar dina tabeller](../../../best-practices/consolidating-your-tables.md)
 * [Begränsa åtkomst till databasen](../../../administrator/account-management/restrict-db-access.md)
 
-**Hittar du ingen integrering?** Vissa integreringar måste aktiveras för att de ska kunna visas på ditt konto. Om du letar efter något som [!DNL Facebook] men det inte finns med i listan, [skickar du en supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE).
+**Hittar du ingen integrering?** Vissa integreringar måste aktiveras för att de ska kunna visas på ditt konto. Om du letar efter något som [!DNL Facebook] men det inte finns med i listan, [skickar du en supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 **Om du ser felstatus för en integrering** kan du få hjälp i avsnittet [Felsökning](https://support.magento.com/hc/en-us/sections/360003078151).

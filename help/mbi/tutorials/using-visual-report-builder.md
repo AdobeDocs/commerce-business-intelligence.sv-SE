@@ -21,7 +21,7 @@ Med [[!DNL Visual Report Builder]](../data-user/reports/ess-rpt-build-visual.md)
 
 ## Steg 1: Skapa en rapport
 
-Om du vill börja skapa en rapport klickar du på **[!UICONTROL Report Builder]** i sidofältet eller **[!UICONTROL Add Report]** högst upp på en kontrollpanel. Klicka på alternativet **[!UICONTROL Visual Report Builder]** när sidan `Report Builder` visas.
+Om du vill börja skapa en rapport klickar du på **[!UICONTROL Report Builder]** i sidofältet eller **[!UICONTROL Add Report]** högst upp på en kontrollpanel. Klicka på alternativet `Report Builder` när sidan **[!UICONTROL Visual Report Builder]** visas.
 
 Om du vill redigera en rapport som skapats i [!DNL Visual Report Builder] klickar du på kugghjulsikonen (Alternativ) i det övre högra hörnet av ett diagram och klickar sedan på **[!UICONTROL Edit]**.
 
@@ -51,7 +51,7 @@ Om du till exempel anger en tidsperiod från `January 1st` till `March 1st` och 
 
 ## Steg 5: `Group by` / `Segmenting the Analysis` {#groupby}
 
-[Klicka på menyn **[!UICONTROL Group by]** längst upp till vänster i diagrammet om du vill segmentera dina mått med datamått](../best-practices/segment-filter.md). Då visas en listruta med alla tillgängliga mått för det första mätvärdet som finns i listan.
+[Klicka på menyn ](../best-practices/segment-filter.md) längst upp till vänster i diagrammet om du vill segmentera dina mått med datamått **[!UICONTROL Group by]**. Då visas en listruta med alla tillgängliga mått för det första mätvärdet som finns i listan.
 
 Du kan välja `None` för att förhindra att ett mätvärde segmenteras. Du kanske vill ha ett mått som returnerar totala intäkter utan att segmenteras, samtidigt som ett annat intäktsmått segmenteras efter region.
 

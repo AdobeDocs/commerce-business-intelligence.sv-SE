@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Formatera och importera data
 
-Om du använder en integrering som för närvarande inte stöds av [!DNL Adobe Commerce Intelligence] kan du fortfarande använda [filöverföringsfunktionen](using-file-uploader.md) för att hämta data till Datan Warehouse. I det här avsnittet beskrivs de idealiska dataformat som ska användas för att överföra e-handelsdata.
+Om du använder en integrering som för närvarande inte stöds av [!DNL Adobe Commerce Intelligence] kan du fortfarande använda [filöverföringsfunktionen](using-file-uploader.md) för att hämta dina data till din Data Warehouse. I det här avsnittet beskrivs de idealiska dataformat som ska användas för att överföra e-handelsdata.
 
 ## `Orders`-tabell
 

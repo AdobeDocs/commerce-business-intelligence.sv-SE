@@ -23,7 +23,7 @@ När nya tabeller synkroniseras i [Data Warehouse Manager](../data-warehouse-mgr
 
 [**[!UICONTROL Incremental Replication]**](#incremental) betyder att [!DNL Commerce Intelligence] endast replikerar nya eller uppdaterade data för varje replikeringsförsök. Eftersom dessa metoder minskar fördröjningen avsevärt rekommenderar Adobe att du använder den där det är möjligt.
 
-[**[!UICONTROL Full Table Replication]**](#fulltable) betyder att [!DNL Commerce Intelligence] replikerar hela innehållet i en tabell vid varje replikeringsförsök. På grund av den potentiellt stora mängd data som kan replikeras kan dessa metoder öka fördröjningen och uppdateringstiden. Om en tabell innehåller tidstämpling- eller datetime-kolumner rekommenderar Adobe att du använder en Stegvis metod i stället.
+[**[!UICONTROL Full Table Replication]**](#fulltable) betyder att [!DNL Commerce Intelligence] replikerar hela innehållet i en tabell vid varje replikeringsförsök. På grund av den potentiellt stora mängd data som kan replikeras kan dessa metoder öka fördröjningen och uppdateringstiden. Om en tabell innehåller tidstämpling- eller datetime-kolumner bör du använda en Stegvis metod i stället.
 
 **[!UICONTROL Paused]** anger att replikeringen för tabellen har stoppats eller pausats. [!DNL Commerce Intelligence] söker inte efter nya eller uppdaterade data under en uppdateringscykel. Det innebär att inga data replikeras från en tabell som har detta som replikeringsmetod.
 
@@ -37,11 +37,11 @@ Replikeringsmetoden `Modified At` använder en datetime-kolumn, som fylls i när
 * `datetime`-kolumnen är aldrig null;
 * rader tas inte bort från tabellen
 
-Utöver dessa villkor rekommenderar Adobe **indexering** den `datetime`-kolumn som används för `Modified At`-replikering, eftersom detta bidrar till att optimera replikeringshastigheten.
+Utöver dessa villkor rekommenderar Adobe **indexering** i kolumnen `datetime` som används för `Modified At`-replikering, eftersom detta bidrar till att optimera replikeringshastigheten.
 
-När uppdateringen körs identifieras nya eller ändrade data genom sökning efter rader som har ett värde i kolumnen `datetime` som inträffade efter den senaste uppdateringen. När nya rader identifieras replikeras de till Datan Warehouse. Om det finns rader i [Data Warehouse Manager](../data-warehouse-mgr/tour-dwm.md) skrivs de över med de aktuella databasvärdena.
+När uppdateringen körs identifieras nya eller ändrade data genom sökning efter rader som har ett värde i kolumnen `datetime` som inträffade efter den senaste uppdateringen. När nya rader upptäcks replikeras de till din Data Warehouse. Om det finns rader i [Data Warehouse Manager](../data-warehouse-mgr/tour-dwm.md) skrivs de över med de aktuella databasvärdena.
 
-En tabell kan till exempel ha en kolumn med namnet `modified\_at` som anger att data senast ändrades. Om den senaste uppdateringen kördes tisdag klockan 12.00 söker uppdateringen efter alla rader med ett `modified\_at`-värde som är större än tisdag klockan 12.00. Alla identifierade rader som antingen har skapats eller ändrats sedan klockan 12.00 på tisdagen replikeras till Datan Warehouse.
+En tabell kan till exempel ha en kolumn med namnet `modified\_at` som anger att data senast ändrades. Om den senaste uppdateringen kördes tisdag klockan 12.00 söker uppdateringen efter alla rader med ett `modified\_at`-värde som är större än tisdag klockan 12.00. Alla identifierade rader som antingen har skapats eller ändrats sedan klockan 12.00 på tisdagen replikeras till Data Warehouse.
 
 **Visste du det?**
 Även om din databas inte har stöd för en `Incremental` replikeringsmetod kan du [göra ändringar i din databas](../../best-practices/mod-db-inc-replication.md) som skulle kunna användas av `Modified At` eller `Single Auto Incrementing PK`.
@@ -58,13 +58,13 @@ Den här metoden är utformad för att replikera nya data från tabeller som upp
 * datatypen `primary key` är `integer`; och
 * `auto incrementing` primärnyckelvärden.
 
-När en tabell använder `Single Auto Incrementing Primary Key`-replikering upptäcks nya data genom sökning efter primärnyckelvärden som är högre än det högsta värdet i Datan Warehouse. Om det högsta primärnyckelvärdet i Datan Warehouse till exempel är 500, söker nästa uppdatering efter rader med primärnyckelvärden på 501 eller högre.
+När en tabell använder `Single Auto Incrementing Primary Key`-replikering upptäcks nya data genom sökning efter primärnyckelvärden som är högre än det högsta värdet i din Data Warehouse. Om det högsta primärnyckelvärdet i din Data Warehouse till exempel är 500, söker nästa uppdatering efter rader med primärnyckelvärden på 501 eller högre.
 
 ### Lägg till datum
 
 Metoden `Add Date` fungerar ungefär som metoden `Single Auto Incrementing Primary Key`. I stället för att använda ett heltal för tabellens primärnyckel använder den här metoden en `timestamped`-kolumn för att söka efter nya rader.
 
-När en tabell använder `Add Date`-replikering upptäcks nya data genom att söka efter tidsstämplade värden som är större än det senaste datumet som synkroniseras med Datan Warehouse. Om en uppdatering senast kördes 20/12/2015 09:00:00 markeras alla rader med en tidsstämpel som är större än denna som nya data och replikeras.
+När en tabell använder `Add Date`-replikering upptäcks nya data genom att söka efter tidsstämplade värden som är större än det senaste datumet som synkroniseras med din Data Warehouse. Om en uppdatering senast kördes 20/12/2015 09:00:00 markeras alla rader med en tidsstämpel som är större än denna som nya data och replikeras.
 
 >[!NOTE]
 >
@@ -97,13 +97,13 @@ Den här metoden är avsedd att replikera data från tabeller som uppfyller föl
 * sammansatta nycklar (flera kolumner som innehåller primärnyckeln) - observera att kolumner som används i en sammansatt primärnyckel aldrig kan ha null-värden, eller
 * primärnyckelvärden med en kolumn, ett heltal och utan autostegning.
 
-Den här metoden är inte perfekt eftersom den är oerhört långsam på grund av den mängd bearbetning som måste utföras för att undersöka grupper och hitta ändringar. Adobe rekommenderar att du inte använder den här metoden såvida det inte är omöjligt att göra nödvändiga ändringar för att stödja de andra replikeringsmetoderna. Förväntade att uppdateringstiderna ska öka om den här metoden måste användas.
+Den här metoden är inte perfekt eftersom den är oerhört långsam på grund av den mängd bearbetning som måste utföras för att undersöka grupper och hitta ändringar. Adobe rekommenderar att du inte använder den här metoden såvida det inte är omöjligt att göra nödvändiga ändringar som stöder de andra replikeringsmetoderna. Förväntade att uppdateringstiderna ska öka om den här metoden måste användas.
 
 ## Ställa in replikeringsmetoder
 
 Replikeringsmetoderna anges tabell för tabell. Om du vill ange en replikeringsmetod för en tabell behöver du [`Admin`](../../administrator/user-management/user-management.md) behörigheter så att du kan komma åt Data Warehouse Manager.
 
-1. I tabellhanteraren markerar du Datan Warehouse i listan `Synced Tables` för att visa tabellens schema.
+1. När du är i Data Warehouse Manager markerar du tabellen i listan `Synced Tables` för att visa tabellens schema.
 1. Den aktuella replikeringsmetoden visas under tabellnamnet. Klicka på länken om du vill ändra den.
 1. Klicka på alternativknappen bredvid `Incremental` eller `Full Table`-replikering i popup-fönstret som visas för att välja en replikeringstyp.
 1. Klicka sedan på listrutan **[!UICONTROL Replication Method]** för att välja en metod. Till exempel `Paused` eller `Modified At`.
@@ -122,7 +122,7 @@ Se hela processen:
 
 ## Radbrytning
 
-För att avsluta har du sammanställt den här tabellen som jämför de olika replikeringsmetoderna. Det är otroligt praktiskt när du väljer en metod för tabellerna i Datan Warehouse.
+För att avsluta har du sammanställt den här tabellen som jämför de olika replikeringsmetoderna. Det är otroligt praktiskt när du väljer en metod för tabellerna i Data Warehouse.
 
 | **`Method`** | **`Syncing New Data`** | **`Processing Rechecks on Large Data Sets`** | **`Handle Composite Keys?`** | **`Handle Non-Integer PKs?`** | **`Handle Non-Sequential PK Population?`** | **`Handle Row Deletion?`** |
 |-----|-----|-----|-----|-----|-----|-----|

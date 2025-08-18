@@ -71,7 +71,7 @@ ht-degree: 0%
       - [[!DNL sales_order_item]](data-analyst/data-warehouse-mgr/sales-flat-order-item-table.md)
       - [[!DNL quote]](data-analyst/data-warehouse-mgr/sales-flat-quote-table.md)
       - [[!DNL quote_item]](data-analyst/data-warehouse-mgr/sales-flat-quote-item-table.md)
-   - SQL Report Builder {#sql}
+   - SQL REPORT BUILDER {#sql}
       - [Använder  [!DNL Cohort Report Builder]](data-analyst/dev-reports/cohort-rpt-bldr.md)
       - [Använder  [!DNL Cohort Report Builder] för icke-datumbaserade kohorter](data-analyst/dev-reports/cohort-rpt-non-date-based.md)
       - [Skapa en kvalitativ kohortanalys](data-analyst/dev-reports/create-qual-cohort-analysis.md)
@@ -187,7 +187,7 @@ ht-degree: 0%
       - [Filteruppsättningar](data-user/reports/ess-manage-data-filters.md)
       - [Kopiera rapport](data-user/reports/copy-report.md)
       - [Diagramanalys](data-user/reports/what-is-chart-analyzing.md)
-   - Instrumentpaneler {#dashboards}
+   - Kontrollpaneler {#dashboards}
       - [Skapa instrumentpaneler](data-user/dashboards/ess-dashboards.md)
       - [Inkörbara kontrollpaneler](data-user/dashboards/ootb-dashboards.md)
       - [Dashboard Pro](data-user/dashboards/dashboards-pro.md)
@@ -229,7 +229,7 @@ ht-degree: 0%
       - [Namngivningsrapporter och element i  [!DNL Commerce Intelligence]](best-practices/naming-elements.md)
       - [Konsoliderar dina tabeller](best-practices/consolidating-your-tables.md)
       - [Deklarera ditt [!DNL Commerce Intelligence] konto](best-practices/declutter-account.md)
-   - Arbeta med instrumentpaneler {#working-dashboards}
+   - Arbeta med kontrollpaneler {#working-dashboards}
       - [Dela instrumentpaneler](best-practices/share-dashboard-best-practice.md)
       - [Bygga en Investor Dashboard](best-practices/build-investor-dashboard.md)
 - Självstudiekurser {#tutorials}

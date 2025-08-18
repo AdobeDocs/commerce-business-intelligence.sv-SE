@@ -6,7 +6,7 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '712'
+source-wordcount: '708'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,9 @@ ht-degree: 0%
 * [Referenskarta](#map)
 * [Avancerade beräknade kolumner](#advanced)
 
-I [Data Warehouse Manager](../data-warehouse-mgr/tour-dwm.md) kan du skapa kolumner för att utöka och optimera data för analys. [Du kommer åt den här funktionen](../data-warehouse-mgr/creating-calculated-columns.md) genom att markera en Data Warehouse i tabellhanteraren och klicka på **[!UICONTROL Create New Column]**.
+I [Data Warehouse Manager](../data-warehouse-mgr/tour-dwm.md) kan du skapa kolumner för att utöka och optimera data för analys. [Du kommer åt den här funktionen](../data-warehouse-mgr/creating-calculated-columns.md) genom att markera en tabell i Data Warehouse Manager och klicka på **[!UICONTROL Create New Column]**.
 
-I det här avsnittet beskrivs de kolumntyper som du kan skapa med Data Warehouse Manager. Den innehåller även beskrivningen, en visuell genomgång av den kolumnen och en [referenskarta](#map) av alla indata som krävs för att skapa en kolumn. Det finns tre sätt att skapa beräknade kolumner:
+I det här avsnittet beskrivs de typer av kolumner som du kan skapa med Data Warehouse Manager. Den innehåller även beskrivningen, en visuell genomgång av den kolumnen och en [referenskarta](#map) av alla indata som krävs för att skapa en kolumn. Det finns tre sätt att skapa beräknade kolumner:
 
 1. [Samma tabellberäknade kolumner](#sametable)
 1. [En-till-många beräknade kolumner](#onetomany)
@@ -71,7 +71,7 @@ Den här typen av beräknad kolumn returnerar antalet värden i många tabeller 
 
 I exemplet nedan skapas dimensionen `Customer's lifetime number of canceled orders` i tabellen `customers` (med ett filter för `orders.status`).
 
-![](../../assets/many_to_one.gif){: width=&quot;699&quot; height=&quot;351&quot;}
+![](../../assets/many_to_one.gif){: width="699" height="351"}
 
 ### Summa {#sum}
 
@@ -101,7 +101,7 @@ Om du har problem med att komma ihåg vad alla indata är när du skapar en ber�
 
 I din förfrågan om att analysera och besvara frågor om ditt företag kan du stöta på en situation där du inte kan skapa exakt den kolumn du vill ha.
 
-För att få en snabb vändning rekommenderar Adobe att du tittar i guiden [Avancerade beräknade kolumntyper](../../data-analyst/data-warehouse-mgr/adv-calc-columns.md) för att se vilken typ av kolumner som supportteamet i Adobe kan skapa. Det avsnittet innehåller även information som du behöver för att skapa kolumnen. Ta med den tillsammans med din begäran.
+För att få en snabb vändning rekommenderar Adobe att du tittar i guiden [Avancerade beräknade kolumntyper](../../data-analyst/data-warehouse-mgr/adv-calc-columns.md) för att se vilka typer av kolumner som Adobe supportteam kan skapa. Det avsnittet innehåller även information som du behöver för att skapa kolumnen. Ta med den tillsammans med din begäran.
 
 ## Relaterad dokumentation
 

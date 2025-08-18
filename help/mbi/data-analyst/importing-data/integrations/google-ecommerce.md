@@ -54,13 +54,13 @@ Så här identifierar du en viss webbplats profil-ID [!DNL Google Analytics]:
 ## Kopplar från [!DNL Google ECommerce] från [!DNL Commerce Intelligence] {#disconnect}
 
 1. Gå till sidan med [!DNL Google Analytics] [kontoinställningar](https://www.google.com/account/about/?hl=en).
-1. Klicka på **[!UICONTROL edit]** bredvid `Authorizing` program och webbplatser under avsnittet `Security`.
+1. Klicka på `Security` bredvid **[!UICONTROL edit]** program och webbplatser under avsnittet `Authorizing`.
 1. Klicka på **[!UICONTROL revoke access]** bredvid [!DNL Commerce Intelligence].
 
 ## Relaterat:
 
 * [ [!DNL Google ECommerce] data förväntades](../integrations/google-ecommerce-data.md)
-* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=sv-SE)
+* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [Konfigurerar [!DNL Google ECommerce] spårning](https://support.google.com/analytics/answer/1009612?hl=en)
 * [Upptäck era mest värdefulla förvärvskällor och kanaler](../../analysis/most-value-source-channel.md)
 * [Öka avkastningen på era annonskampanjer](../../analysis/roi-ad-camp.md)

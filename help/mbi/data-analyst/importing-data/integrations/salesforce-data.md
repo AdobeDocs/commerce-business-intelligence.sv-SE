@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # [!DNL Salesforce] data förväntades
 
-När [[!DNL Salesforce] setup](../integrations/salesforce.md) har slutförts skapas en tabell för varje frågningsbart [objekt](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_concepts.htm) - med namnet `sf_/\{sobject-name}` - i Datan Warehouse.
+När [[!DNL Salesforce] setup](../integrations/salesforce.md) har slutförts skapas en tabell för varje frågningsbart [objekt](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_concepts.htm) - med namnet `sf_/\{sobject-name}` - i din Data Warehouse.
 
 >[!NOTE]
 >
@@ -50,4 +50,4 @@ En lista över objekt som är tillgängliga för din organisation finns i [!DNL 
 ## Relaterat:
 
 * [Ansluter  [!DNL Salesforce]](../integrations/salesforce.md)
-* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=sv-SE)
+* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

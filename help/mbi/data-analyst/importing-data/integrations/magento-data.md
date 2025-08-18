@@ -30,4 +30,4 @@ I det här avsnittet beskrivs huvuddatatabellerna som Commerce-användare import
 ## Relaterad
 
 * [Ansluter  [!DNL Adobe Commerce]](../integrations/magento.md)
-* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=sv-SE)
+* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

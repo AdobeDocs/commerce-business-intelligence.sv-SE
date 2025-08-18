@@ -1,6 +1,6 @@
 ---
 title: Visual Report Builder
-description: Lär dig hur du använder Visual Report Builder.
+description: Lär dig använda Visual Report Builder.
 exl-id: 1101f43d-e014-4df2-be21-12d90a9d8a56
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
@@ -19,9 +19,9 @@ I följande exempel visas hur du skapar en enkel rapport, grupperar data efter y
 
 ## Så här skapar du en enkel rapport:
 
-1. Klicka på **[!UICONTROL Report Builder]** på menyn [!DNL Commerce Intelligence].
+1. Klicka på [!DNL Commerce Intelligence] på menyn **[!UICONTROL Report Builder]**.
 
-1. Klicka på **[!UICONTROL Create Report]** under [!UICONTROL Visual Report Builder] och gör följande:
+1. Klicka på [!UICONTROL Visual Report Builder] under **[!UICONTROL Create Report]** och gör följande:
 
    * Klicka på **[!UICONTROL Add Metric]**.
 
@@ -55,7 +55,7 @@ I följande exempel visas hur du skapar en enkel rapport, grupperar data efter y
 
    * Klicka på **[!UICONTROL Apply]** om du vill stänga Grupp efter detaljer.
 
-     ![Flera Dimensioner](../../assets/magento-bi-report-builder-group-by-dimension-detail.png)
+     ![Flera dimensioner](../../assets/magento-bi-report-builder-group-by-dimension-detail.png)
 
    * Håll muspekaren över ett fåtal datapunkter på varje rad för att se hur många kunder under månaden som använde kupongen när de gjorde sin första beställning.
 
@@ -80,7 +80,7 @@ I följande exempel visas hur du skapar en enkel rapport, grupperar data efter y
    * Gör följande ändringar:
 
       * Om du vill zooma in för en närmare vy ändrar du datumintervallet till `Last Full Quarter`.
-      * Välj `Week` under `Select Time Interval`.
+      * Välj `Select Time Interval` under `Week`.
       * Klicka på **[!UICONTROL Save]** när du är klar.
 
      Rapporten innehåller nu endast data för det sista kvartalet, per vecka.
@@ -110,7 +110,7 @@ I följande exempel visas hur du skapar en enkel rapport, grupperar data efter y
 
 1. Klicka på **[!UICONTROL Save]** i det övre högra hörnet och gör följande:
 
-   * Acceptera standardinställningen `Chart` för `Type`.
+   * Acceptera standardinställningen `Type` för `Chart`.
 
    * Välj `Dashboard` där rapporten ska vara tillgänglig.
 

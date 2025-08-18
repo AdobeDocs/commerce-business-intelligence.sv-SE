@@ -25,7 +25,7 @@ Det kan finnas en teknisk resurs som kan hjälpa dig att rensa data eller infoga
 
 >[!NOTE]
 >
->Du kan inte skapa en mappningstabell för konsoliderade tabeller utan hjälp från Adobe Support-teamet.
+>Du kan inte skapa en mappningstabell för konsoliderade tabeller utan hjälp från Adobe supportteam.
 
 ## Hur skapar jag det? {#how}
 
@@ -49,11 +49,11 @@ I den andra kolumnen anger du vilka dessa värden **ska vara**. Om du vill att `
 
 ## Vad behöver jag göra i [!DNL Commerce Intelligence] för att använda det? {#use}
 
-När du har skapat mappningstabellen måste du [överföra filen](../../data-analyst/importing-data/connecting-data/using-file-uploader.md) till [!DNL Commerce Intelligence] och [skapa en sammanfogad kolumn](../../data-analyst/data-warehouse-mgr/calc-column-types.md) som omplacerar det nya fältet i den önskade tabellen. Du kan göra detta när filen har synkroniserats med Datan Warehouse.
+När du har skapat mappningstabellen måste du [överföra filen](../../data-analyst/importing-data/connecting-data/using-file-uploader.md) till [!DNL Commerce Intelligence] och [skapa en sammanfogad kolumn](../../data-analyst/data-warehouse-mgr/calc-column-types.md) som omplacerar det nya fältet i den önskade tabellen. Du kan göra detta när filen har synkroniserats med din Data Warehouse.
 
 I det här exemplet flyttas kolumnen som du skapade i tabellen `mapping_state` (`state_input`) till tabellen `customer_address` med hjälp av en sammanfogad kolumn. Detta gör att vi kan gruppera efter den rena `state_input`-kolumnen i dina rapporter i stället för `state`-kolumnen.
 
-Om du vill skapa `joined`-kolumnen navigerar du till den tabell som fältet ska flyttas till i Data Warehouse Manager. I det här exemplet är det tabellen `customer_address`.
+Om du vill skapa kolumnen `joined` navigerar du till tabellen som fältet ska flyttas till i Data Warehouse Manager. I det här exemplet är det tabellen `customer_address`.
 
 1. Klicka på **[!UICONTROL Create a Column]**.
 1. Välj `Joined Column` i listrutan `Definition`.
@@ -63,7 +63,7 @@ Om du vill skapa `joined`-kolumnen navigerar du till den tabell som fältet ska 
    Om du är osäker på vad tabellrelationen är eller hur du definierar primärnycklar och sekundärnycklar på rätt sätt kan du få hjälp i [självstudiekursen](../../data-analyst/data-warehouse-mgr/create-paths-calc-columns.md).
 
    * På sidan `Many` markerar du den tabell som du flyttar fältet till (återigen, för oss är det `customer_address`) och kolumnen `Foreign Key`, eller kolumnen `state`, i exemplet.
-   * Markera tabellen `mapping` och kolumnen `Primary key` på `One`-sidan. I det här fallet väljer du kolumnen `state_input` i tabellen `mapping_state`.
+   * Markera tabellen `One` och kolumnen `mapping` på `Primary key`-sidan. I det här fallet väljer du kolumnen `state_input` i tabellen `mapping_state`.
    * Här ser du hur banan ser ut:
 
      ![](../../assets/State_Mapping_Path.png)
@@ -78,7 +78,7 @@ När en uppdateringscykel är klar kan du använda den nya sammanfogade kolumnen
 
 ![](../../assets/Clean_State_Segments.png)
 
-Mappningstabeller är användbara när du vill rensa upp en del potentiellt klumpiga data i Datan Warehouse. Mappningstabeller kan dock även användas för andra coola användningsområden, som [replikering av  [!DNL Google Analytics channels] in [!DNL Commerce Intelligence]](../data-warehouse-mgr/rep-google-analytics-channels.md).
+Mappningstabeller är användbara när du vill rensa bort data i din Data Warehouse. Mappningstabeller kan dock även användas för andra coola användningsområden, som [replikering av  [!DNL Google Analytics channels] in [!DNL Commerce Intelligence]](../data-warehouse-mgr/rep-google-analytics-channels.md).
 
 ### Relaterad
 

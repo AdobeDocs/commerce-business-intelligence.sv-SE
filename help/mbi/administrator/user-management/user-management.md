@@ -6,7 +6,7 @@ role: Admin, User
 feature: User Management
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
@@ -62,7 +62,7 @@ Förutom de allmänna behörighetsnivåerna finns även två andra användarbete
 
 ### Fakturering
 
-`Billing` användare har åtkomst till faktureringssidan och kan ändra betalningsinformation. Adobe kan också kontakta dem för faktureringsfrågor.
+`Billing` användare har åtkomst till faktureringssidan och kan ändra betalningsinformation. De kan också kontaktas av Adobe för faktureringsfrågor.
 
 `Admin` användare har som standard åtkomst till fliken `Billing`, men `Standard` användare kan även få åtkomst om kryssrutan `Billing` är markerad i deras profil.
 

@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >Kräver [administratörsbehörighet](../../administrator/user-management/user-management.md)
 
-Data Warehouse Manager, som du kommer åt genom att klicka på **[!UICONTROL Manage Data > Data Warehouse]**, är portalen till din [!DNL Adobe Commerce Intelligence]-Data Warehouse. Med hjälp av Data Warehouse Manager kan du hantera tabell- och kolumnsynkroniseringsinställningar, gå nedåt i en tabells schema och skapa beräknade kolumner som kan användas i rapporter.
+Data Warehouse Manager, som du kommer åt genom att klicka på **[!UICONTROL Manage Data > Data Warehouse]**, är portalen till din [!DNL Adobe Commerce Intelligence] Data Warehouse. Med Data Warehouse Manager kan du hantera tabell- och kolumnsynkroniseringsinställningar, gå ned i en tabells schema och skapa beräknade kolumner som kan användas i rapporter.
 
 Det här ämnet handlar om:
 
@@ -34,9 +34,9 @@ Vänster sida på sidan `Data Warehouse Manager` innehåller tabelllistan, vilke
 
 I tabelllistan grupperas tabellerna efter anslutningskälla. De här källorna läggs till under [!UICONTROL Manage Data > Integrations] och kan vara antingen en databas, ett [ API ](https://developer.adobe.com/commerce/services/reporting/) eller en tredjepartsanslutning. Överst i tabelllistan finns det en sökruta där du enkelt kan hitta de tabeller du söker.
 
-Under sökrutan visas två alternativ: `All Tables` och `Synced Tables`. Alternativet `All Tables` visar alla tabeller som du har gjort tillgängliga för Datan Warehouse, som innehåller både synkroniserade och osynkroniserade tabeller.
+Under sökrutan visas två alternativ: `All Tables` och `Synced Tables`. Alternativet `All Tables` visar alla tabeller som du har gjort tillgängliga för din Data Warehouse, som innehåller både synkroniserade och osynkroniserade tabeller.
 
-Alternativet `Synced Tables` visar alla tabeller som redan har lagts till i Datan Warehouse och som har data som replikeras från de markerade kolumnerna.
+Alternativet `Synced Tables` visar alla tabeller som redan har lagts till i din Data Warehouse och som har data som replikeras från de markerade kolumnerna.
 
 Ser du inte tabellen som du söker efter i listan `All Tables`? Det finns några möjliga orsaker till detta:
 
@@ -58,7 +58,7 @@ Med Data Warehouse Manager kan du inte bara visa och hantera datakällor, du kan
    >
    >Kolumner som är inbyggda i en tabell har Från din databas i kolumnen `Location`.
 
-1. Kontrollera `Primary Key`-kolumnerna - de här kolumnerna har en nyckelsymbol bredvid kolumnnamnet. En `Primary Key` krävs för att synkronisera data korrekt till Datan Warehouse.
+1. Kontrollera `Primary Key`-kolumnerna - de här kolumnerna har en nyckelsymbol bredvid kolumnnamnet. `Primary Key` krävs för att synkronisera data korrekt till Data Warehouse.
 
    Om du synkroniserar en tabell som kommer direkt från din databas är det möjligt att `Primary Keys` inte kan markeras. I så fall kontaktar du databasadministratören och begär att en eller flera primärnycklar läggs till i tabellen.
 1. Klicka på knappen ![button](../../assets/button.png) när du är klar.
@@ -71,13 +71,13 @@ Här är en kort titt på hela processen:
 
 ### Synkronisera nya tabeller i bakgrunden {#syncnew}
 
-När du synkroniserar en stor tabell för första gången måste Datan Warehouse hämta in alla datapunkter i tabellen retroaktivt innan nya data hämtas kontinuerligt. Om tabellen är stor kanske du inte vill att den inledande synkroniseringen ska köras i sekvens med **uppdateringscykeln**. I det här fallet vill du att den inledande synkroniseringen ska ske i bakgrunden, i *parallell*, med alla uppdateringar som körs.
+När du synkroniserar en stor tabell för första gången måste Data Warehouse hämta in alla datapunkter i tabellen retroaktivt innan nya data hämtas kontinuerligt. Om tabellen är stor kanske du inte vill att den inledande synkroniseringen ska köras i sekvens med **uppdateringscykeln**. I det här fallet vill du att den inledande synkroniseringen ska ske i bakgrunden, i *parallell*, med alla uppdateringar som körs.
 
 För att vara säker på att det sker bör du välja alternativet `Save and Sync Data Immediately` som synkroniserar tabellen för första gången.
 
 ### Söker efter nya tabeller och kolumner {#forceupdate}
 
-Datan Warehouse identifierar inte automatiskt nya källor, tabeller eller kolumner så fort de läggs till. En synkroniseringsprocess pågår under hela veckan för att hitta nya tillägg och göra dem tillgängliga, men du kan tvinga fram en struktursynkronisering om du vill komma åt nyligen tillagda tabeller och kolumner innan processen körs.
+Data Warehouse identifierar inte automatiskt nya källor, tabeller eller kolumner så fort de läggs till. En synkroniseringsprocess pågår under hela veckan för att hitta nya tillägg och göra dem tillgängliga, men du kan tvinga fram en struktursynkronisering om du vill komma åt nyligen tillagda tabeller och kolumner innan processen körs.
 
 Under sökfältet i tabelllistan finns länken `Check for new tables and columns`. Om du klickar på den här länken kommer struktursynkroniseringsprocessen att startas. Nya tillägg är vanligtvis tillgängliga efter 10 minuter. Uppdatera sidan för att se den nya källan, tabellen eller kolumnen.
 
@@ -91,7 +91,7 @@ Mer information finns i den här [självstudiekursen](../../data-analyst/data-wa
 
 ## Släpp tabeller och ta bort kolumner {#delete}
 
-På samma sätt som du kan markera tabeller och kolumner som ska synkroniseras med Datan Warehouse, kan du även ta bort eller släppa dem.
+På samma sätt som du kan markera tabeller och kolumner som ska synkroniseras med din Data Warehouse kan du även ta bort eller släppa dem.
 
 >[!NOTE]
 >
@@ -101,7 +101,7 @@ Du behöver inte oroa dig om du klickar på **[!UICONTROL Delete]** av misstag. 
 
 Om du vill ta bort kolumner klickar du på tabellen som kolumnen tillhör. Markera de kolumner som du vill ta bort och klicka på knappen ![button\_1.png](../../assets/button_1.png) .
 
-Om du vill ta bort en synkroniserad tabell markerar du alla kolumner i tabellen och klickar på knappen ![knapp](../../assets/button_1.png) igen. Då tas alla inbyggda och beräknade kolumner som använder den här tabellen bort från Datan Warehouse.
+Om du vill ta bort en synkroniserad tabell markerar du alla kolumner i tabellen och klickar på knappen ![knapp](../../assets/button_1.png) igen. Då tas alla inbyggda och beräknade kolumner som använder den här tabellen bort från din Data Warehouse.
 
 ### Bekräfta ändringar
 

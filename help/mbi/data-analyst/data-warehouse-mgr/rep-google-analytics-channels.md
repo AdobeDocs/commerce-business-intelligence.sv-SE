@@ -42,11 +42,11 @@ Som standard konfigurerar [!DNL Google] åtta olika kanaler. Reglerna som bestä
 
 ## Hur återskapar jag de här kanalgrupperingarna i min Data Warehouse? {#recreate}
 
-Nu när ni vet att kanaler bara är kombinationer av källor och medier är det en enkel process i tre steg att återskapa dessa grupperingar i Datan Warehouse.
+Nu när du vet att kanaler bara är kombinationer av källor och medier är det en enkel process i tre steg att återskapa dessa grupperingar i din Data Warehouse.
 
 1. **Aktivera [!DNL Google ECommerce]integreringen**
 
-   [När det är aktiverat](../importing-data/integrations/google-ecommerce.md) kontrollerar du att fälten [sync](../{{ site.baseurl }}/data-analyst/data-warehouse-mgr/tour-dwm.html#syncing) **medium** och **source** i Datan Warehouse är . När detta är klart hämtas data för medium- och källinhämtning till Datan Warehouse.
+   [När det är aktiverat](../importing-data/integrations/google-ecommerce.md) kontrollerar du att fälten [sync]&#x200B;(../{{ site.baseurl }}/data-analyst/data-warehouse-mgr/tour-dwm.html#syncing) **medium** och **source** i din Data Warehouse är . När detta är klart hämtas data om medium- och källinhämtning till din Data Warehouse.
 
 1. **Överför en mappning av Google kanalgrupperingar**
 
@@ -54,7 +54,7 @@ Nu när ni vet att kanaler bara är kombinationer av källor och medier är det 
 
    Om du är [!DNL Google Analytics]-proffs och har skapat egna kanaler vill du lägga till dina specifika regler i mappningstabellen innan du överför filen till [!DNL Commerce Intelligence].
 
-   Hämta in den i Datan Warehouse som en [filöverföring](../importing-data/connecting-data/using-file-uploader.md).
+   Hämta in den i din Data Warehouse som en [filöverföring](../importing-data/connecting-data/using-file-uploader.md).
 
    ![](../../assets/Setting_Primary_Keys.png)
 

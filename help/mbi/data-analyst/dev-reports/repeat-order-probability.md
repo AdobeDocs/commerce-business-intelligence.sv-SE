@@ -25,11 +25,11 @@ Om du lade till ett filter som använder en dimension som inte är lika för all
 
 I vissa fall kan du omvandla en `order-specific`-dimension till en `user-specific`-dimension som du kan lägga till som filter i `Repeat Order Probability`-diagrammet. I dessa fall returnerar du attributet order för en användares första order eller senaste order (t.ex. användarens namn för första orderområde).
 
-[Kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE) om du vill skapa en sådan ny dimension.
+[Kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) om du vill skapa en sådan ny dimension.
 
 ## Jämföra upprepningssannolikhet för order med olika attribut
 
-Om du vill jämföra antalet upprepade köp för olika orderattribut (till exempel orderns `region`) rekommenderar Adobe att du skapar ett diagram som liknar `Users by lifetime number of orders`. Här visas antalet användare som har gjort 1, 2, 3,.. antal order under livstid och lagt till ordernivåfiltret. (med andra ord, detta kan visa dig om användarna gör fler eller mindre upprepade inköp i en region eller en annan.)
+Adobe rekommenderar att du skapar ett diagram som liknar `region` om du vill jämföra antalet upprepade köp för olika orderattribut (till exempel orderns `Users by lifetime number of orders`). Här visas antalet användare som har gjort 1, 2, 3,.. antal order under livstid och lagt till ordernivåfiltret. (med andra ord, detta kan visa dig om användarna gör fler eller mindre upprepade inköp i en region eller en annan.)
 
 Siffrorna som utgör ett sådant diagram kan sedan exporteras till excel för att beräkna sannolikhetsförhållandet för upprepade order. Om du vill se sannolikheten för att kunder som har gjort `(x)` beställningar gör `(x+1)` beställningar behöver du bara ` divide the number of people who've made at least (x+1) purchases by the number of people who have made at least (x)` inköp.
 

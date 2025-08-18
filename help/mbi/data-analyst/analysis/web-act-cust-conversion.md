@@ -19,7 +19,7 @@ I det här avsnittet visas hur du konfigurerar en kontrollpanel som ska spåra w
 
 ## Förutsättningar
 
-**Importera dina annonskostnadsuppgifter** - Anslut [[!DNL [Google AdWords]]](../importing-data/integrations/google-adwords.md) till [!DNL Adobe Commerce Intelligence] - detta synkroniserar automatiskt dina [!DNL AdWords]-utgifter i Commerce Intelligence.
+**Importera dina annonskostnadsuppgifter** - Anslut [!DNL [Google AdWords]](../importing-data/integrations/google-adwords.md) till [!DNL Adobe Commerce Intelligence] - detta synkroniserar automatiskt dina [!DNL AdWords]-utgifter i Commerce Intelligence.
 
 **Spåra kanaldata för kundvärvning** - Om du vill koppla dina [!DNL Google AdWords]-data till specifika order i din databas måste du [spåra kundvärvning](../analysis/google-track-user-acq.md) via [!DNL Google Analytics E-commerce]. På så sätt kan du koppla varje beställning till en utm-källa och ett medium.
 

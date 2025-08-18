@@ -21,23 +21,23 @@ Spårning av `UTM` är en märkordskonvention för URL:er som gör att du kan an
 
 I följande lista visas de fem viktigaste saker som du bör komma ihåg när du konfigurerar dina URL-adresser med `UTM`-taggning.
 
-### 1. Rikta in dig på att tagga alla URL:er som du kan styra när du kommer till webbplatsen
+### &#x200B;1. Rikta in dig på att tagga alla URL:er som du kan styra när du kommer till webbplatsen
 
 Varje gång du ber någon klicka på en länk bör du konfigurera `UTM`-taggningen. Detta inkluderar alla e-postlänkar (din e-postleverantör har troligen ett sätt att automatiskt tagga dina URL:er), annonslänkar, pressartiklar och blogginlägg.
 
-### 2. Använd ett verktyg för att skapa URL:en
+### &#x200B;2. Använd ett verktyg för att skapa URL:en
 
 `UTM`-taggade URL:er kan vara krångliga. Istället för att försöka skriva ut dem på lång sikt kan du använda ett [liknande ](https://support.google.com/analytics/answer/1033867?hl=en)-verktyg som kan hjälpa dig. Detta garanterar att du funderar genom att lägga till alla rimliga parametrar till URL:en, och du får URL:en att kopiera och klistra in direkt från den. Om du vill hantera sociala länkar inkluderar verktyg som [!DNL Hootsuite] alternativet att lägga till anpassade URL-parametrar till alla dina länkar.
 
-### 3. Kontrollera att du är skiftlägeskänslig i parametervärdena
+### &#x200B;3. Kontrollera att du är skiftlägeskänslig i parametervärdena
 
 Det är viktigt att komma ihåg att taggen `utm\_source=adwords` är en annan tagg än `utm\_source=Adwords`. Överväg att göra allt i gemener.
 
-### 4. Lagra UTM-parametervärdena i databasen
+### &#x200B;4. Lagra UTM-parametervärdena i databasen
 
 Varje gång en transaktion eller händelse inträffar vill ni utvärdera resultatet av era marknadsföringsaktiviteter. Du kan göra detta genom att läsa värdena för UTM-parametervärdena från [[!DNL Google Analytics] cookien till din databas](../data-analyst/analysis/google-track-user-acq.md).
 
-### 5. Tänk på hur ni namnger kampanjer
+### &#x200B;5. Tänk på hur ni namnger kampanjer
 
 För att kunna spåra hur marknadsföringsarbetet förbättras med tiden måste ni vara smarta med namngivningskonventionerna. Gör det enkelt och minimera så mycket som möjligt. Komplicerade namnsystem är svårare att underhålla.
 

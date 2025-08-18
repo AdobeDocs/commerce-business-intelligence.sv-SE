@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Om du har flera mätvärden i [!DNL Commerce Intelligence] som måste filtreras på ett liknande sätt (till exempel filtrera bort testorder) kan du skapa sparade filteruppsättningar och använda dem för mätvärdena. Detta sparar tid eftersom du inte behöver lägga till enskilda filter när du skapar eller redigerar ett mätresultat.
 
-Mer information finns i [utbildningsvideon](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-filter-sets.html?lang=sv-SE).
+Mer information finns i [utbildningsvideon](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-filter-sets.html).
 
 >[!NOTE]
 >

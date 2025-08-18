@@ -53,7 +53,7 @@ Analyser (1) och (2) ovan utforskas i en separat självstudiekurs om [hur du ide
 1. Klicka på [!UICONTROL Add Report > Create report] på en kontrollpanel
 1. Välj det [!UICONTROL Adword Cost]-mått som du nyss skapade
 1. Ange [!UICONTROL Time period] till `All-time` och [!UICONTROL Interval] till `None`
-1. Lägg till `campaign` som [!UICONTROL grouping field] under fliken `Group by` och klicka på `Add All` i rutan.
+1. Lägg till `Group by` som `campaign` under fliken [!UICONTROL grouping field] och klicka på `Add All` i rutan.
 1. Den här rapporten visar din [!DNL AdWords]-kostnad per kampanj hela tiden
 
 **2. Skapa en rapport som räknar nya användare efter kampanjer:**
@@ -61,7 +61,7 @@ Analyser (1) och (2) ovan utforskas i en separat självstudiekurs om [hur du ide
 1. Klicka på **[!UICONTROL Add Report > Create report]** på en kontrollpanel
 1. Välj det `New users`-mått som räknar antalet nya registrerade användare över tiden
 1. Ange [!UICONTROL Time period] till `All-time` och [!UICONTROL Interval] till `None`
-1. Lägg till `campaign` som `grouping field` under fliken `Group by` och klicka på **`Add All`** i rutan
+1. Lägg till `Group by` som `campaign` under fliken `grouping field` och klicka på **`Add All`** i rutan
 1. Den här rapporten visar era heltidsregistrerade användare efter kampanjer
 
 **3. Skapa en rapport som segmenterar genomsnittlig användares LTV efter kampanjer:**
@@ -69,7 +69,7 @@ Analyser (1) och (2) ovan utforskas i en separat självstudiekurs om [hur du ide
 1. Klicka på **[!UICONTROL Add Report > Create report]** på en kontrollpanel
 1. Välj måttet `Average lifetime revenue` som beräknar en genomsnittlig användares livstidsintäkt
 1. Ange [!UICONTROL Time period] till `All-time` och [!UICONTROL Interval] till `None`
-1. Lägg till `campaign` eller `utm\_campaign` som [!UICONTROL grouping field] på fliken `Group by` och klicka på `Add All` i rutan
+1. Lägg till `Group by` eller `campaign` som `utm\_campaign` på fliken [!UICONTROL grouping field] och klicka på `Add All` i rutan
 1. Den här rapporten visar era genomsnittliga intäkter för användarlivstid per kampanjer
 
 **Slutligen, beräkna kampanjens avkastning genom att samla dessa tre analyser i en rapport:**
@@ -99,7 +99,7 @@ Kör ni produktspecifika annonser? I så fall kan ni mäta avkastningen på dess
 >
 >I det här exemplet antas att alla kampanjkostnader uteslutande användes för att generera inköp av specifika produkter. Om man utgår ifrån att alla kostnader spenderas på att generera inköp, utgör den resulterande avkastningen det värsta scenariot (den högsta kostnaden per inköp). Du kan vara säker på att den faktiska avkastningen är högre än den här beräkningen. Exempel: Om ni spenderade 20 USD på en kampanj som genererade 10 nya användare och 10 inköp blir den faktiska kostnaden per inköp 1 USD. Under antagandet att alla kostnader gick för att förvärva nya användare är kostnaden per inköp $2.
 
-Innan du startar [skickar du en supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE) för att ansluta följande dimensioner till din tabell med radobjekt (`sales\_flat\_order\_item, order\_item`):
+Innan du startar [skickar du en supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) för att ansluta följande dimensioner till din tabell med radobjekt (`sales\_flat\_order\_item, order\_item`):
 
 * Orderns källa (om du bara spårar hänvisningskälla på användarnivå ska du ansluta till användarens källa)
 * Beställningens kampanj (om du bara spårar hänvisningskälla på användarnivå ska du gå med i användarens kampanj)
@@ -110,8 +110,8 @@ Innan du startar [skickar du en supportanmälan](https://experienceleague.adobe.
 1. Klicka på **[!UICONTROL Add Report > Create new report]** på en kontrollpanel
 1. Välj det `Revenue by items`-mått som beräknar intäkt på radartikelnivå
 1. Ange [!UICONTROL Time period] till `All-time` och [!UICONTROL Interval] till `None`
-1. Lägg till `product name 'IN'` Product `A`, Product `B`, Product `C`, ...&quot; på fliken `Filter by` och inkludera alla produktnamn som kampanjens mål avgränsas med ett kommatecken (till exempel `product name 'IN' yellow t-shirt`, `red t-shirt, blue t-shirt`)
-1. Lägg till `order's campaign` eller `order's utm\_campaign` som `grouping`-fält under fliken `Group by` och klicka på **[!UICONTROL Add All]** i rutan
+1. Lägg till `Filter by` Product `product name 'IN'`, Product `A`, Product `B`, ...&quot; på fliken `C` och inkludera alla produktnamn som kampanjens mål avgränsas med ett kommatecken (till exempel `product name 'IN' yellow t-shirt`, `red t-shirt, blue t-shirt`)
+1. Lägg till `Group by` eller `order's campaign` som `order's utm\_campaign`-fält under fliken `grouping` och klicka på **[!UICONTROL Add All]** i rutan
 1. I den här rapporten visas intäkterna för specifika produkter per kampanj
 
 **2. Om du vill beräkna avkastningen kombinerar du statistik igen i en rapport:**

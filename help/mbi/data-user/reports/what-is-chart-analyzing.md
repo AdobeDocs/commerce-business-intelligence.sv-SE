@@ -1,6 +1,6 @@
 ---
 title: Diagramdatainformation
-description: Lär dig hur du använder visualiseringsalternativen i Report Builder.
+description: Lär dig hur du använder visualiseringsalternativen i Visual Report Builder.
 exl-id: 865efc8b-1e1a-4033-9e42-cbd03b220260
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration

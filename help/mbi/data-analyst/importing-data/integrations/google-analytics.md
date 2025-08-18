@@ -1,6 +1,6 @@
 ---
 title: Connect Google Analytics
-description: Lär dig ansluta Google Analytics till  [!DNL Commerce Intelligence].
+description: Lär dig ansluta Google Analytics med  [!DNL Commerce Intelligence].
 exl-id: 10e813f1-0306-4bdd-8222-e6364ac624de
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -57,7 +57,7 @@ Så här identifierar du en viss webbplats profil-ID [!DNL Google Analytics]:
 
 ## Relaterat:
 
-* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=sv-SE)
+* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [Ansluter  [!DNL Google Adwords]](../integrations/google-adwords.md)
 * [Analysera webbplatsaktivitet och kundkonverteringsgrader](../../analysis/web-act-cust-conversion.md)
 * [Spåra kundvärvningsdata med hjälp av  [!DNL Google Analytics] cookies](../../analysis/google-track-user-acq.md)

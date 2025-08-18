@@ -1,6 +1,6 @@
 ---
 title: Skapa visualiseringar från SQL-frågor
-description: Lär dig bekanta dig med den terminologi som används i SQL Report Builder och ge dig en gedigen grund för att skapa SQL-visualiseringar.
+description: Lär dig bekanta dig med den terminologi som används i SQL Report Builder och ge dig en stabil grund för att skapa SQL-visualiseringar.
 exl-id: 9b9bc205-5b64-4e64-8d23-057072e5dd72
 role: Admin, Data Architect, Data Engineer, Leader, User
 feature: SQL Report Builder, Data Warehouse Manager, Reports, Data Integration

@@ -15,7 +15,7 @@ ht-degree: 0%
 
 I en databastabell kan det finnas datakolumner med ändringsbara värden. I en `orders`-tabell kan det till exempel finnas en kolumn med namnet `status`. När en order skrivs till databasen från början kan statuskolumnen innehålla värdet _pending_. Ordningen replikeras i din [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) med det här `pending`-värdet.
 
-Orderstatus kan ändras, men har inte alltid statusen `pending`. Till slut kan det bli `complete` eller `cancelled`. Om du vill vara säker på att Datan Warehouse synkroniserar den här ändringen måste du kontrollera om kolumnen innehåller nya värden.
+Orderstatus kan ändras, men har inte alltid statusen `pending`. Till slut kan det bli `complete` eller `cancelled`. Om du vill vara säker på att din Data Warehouse synkroniserar den här ändringen måste du kontrollera om kolumnen innehåller nya värden.
 
 Hur passar detta in med de [replikeringsmetoder](../data-warehouse-mgr/cfg-replication-methods.md) som diskuterades? Bearbetningen av omkontroller varierar beroende på den valda replikeringsmetoden. Replikeringsmetoden `Modified\_At` är det bästa alternativet för bearbetning av ändrade värden eftersom omkontroller inte behöver konfigureras. Metoderna `Auto-Incrementing Primary Key` och `Primary Key Batch Monitoring` kräver omkontroll av konfigurationen.
 
@@ -27,14 +27,14 @@ Om du använder någon av dessa metoder måste ändringsbara kolumner flaggas f�
    >
    >Revisorn förlitar sig på en urvalsprocess och de ändrade kolumnerna kanske inte fångas omedelbart.
 
-1. Du kan ställa in dem själv genom att markera kryssrutan intill Datan Warehouse i kolumnhanteraren, klicka på **[!UICONTROL Set Recheck Frequency]** och välja ett lämpligt tidsintervall för när du ska söka efter ändringar.
+1. Du kan ange dem själv genom att markera kryssrutan bredvid kolumnen i Data Warehouse-hanteraren, klicka på **[!UICONTROL Set Recheck Frequency]** och välja ett lämpligt tidsintervall för när du ska söka efter ändringar.
 
-1. En medlem i [!DNL Adobe Commerce Intelligence]-Datans Warehouse team kan markera kolumnerna manuellt för att checka in Datan Warehouse igen. Om du känner till ändringsbara kolumner kan du kontakta teamet och begära att omkontroller är inställda. Inkludera en lista med kolumner, tillsammans med frekvens, med din begäran.
+1. En medlem i [!DNL Adobe Commerce Intelligence] Data Warehouse-teamet kan markera kolumnerna manuellt för att kontrollera om i din Data Warehouse. Om du känner till ändringsbara kolumner kan du kontakta teamet och begära att omkontroller är inställda. Inkludera en lista med kolumner, tillsammans med frekvens, med din begäran.
 
 ## Kontrollera frekvenser {#frequency}
 
 **Visste du det?**
-Om du anger en omkontroll för en `primary key` -kolumn kontrolleras inte om kolumnen innehåller ändrade värden. Tabellen genomsöks efter raderade rader och alla borttagningar tas bort från Datan Warehouse.
+Om du anger en omkontroll för en `primary key` -kolumn kontrolleras inte om kolumnen innehåller ändrade värden. Tabellen genomsöks efter raderade rader och alla borttagningar tas bort från Data Warehouse.
 
 När en kolumn flaggas för omkontroll kan du även ange hur ofta en omkontroll ska ske. Om en viss kolumn inte ändras ofta kan du [optimera uppdateringscykeln](../../best-practices/reduce-update-cycle-time.md) genom att välja en mindre frekvent omkontroll.
 
@@ -50,7 +50,7 @@ När uppdateringstiderna är korrelerade till hur mycket data som behöver synkr
 
 ## Hantera frekvenser för omkontroll {#manage}
 
-Kontrollfrekvenser kan hanteras i Datan Warehouse genom att klicka på ett tabellnamn och sedan kontrollera enskilda kolumner. Synkroniseringsstatus och frekvens för omkontroll (**Ändringar?** kolumn) visas för varje kolumn i tabellen.
+Kontrollfrekvenser kan hanteras i Data Warehouse genom att du klickar på ett tabellnamn och sedan kontrollerar enskilda kolumner. Synkroniseringsstatus och frekvens för omkontroll (**Ändringar?** kolumn) visas för varje kolumn i tabellen.
 
 Om du vill ändra frekvensen för omkontroll klickar du i kryssrutan bredvid de kolumner du vill ändra. Klicka sedan på listrutan **[!UICONTROL Set Recheck Frequency]** och ange önskad frekvens.
 
@@ -58,7 +58,7 @@ Om du vill ändra frekvensen för omkontroll klickar du i kryssrutan bredvid de 
 
 Ibland kanske `Paused` visas i kolumnen `Changes?`. Det här värdet visas när tabellens [replikeringsmetod ](../../data-analyst/data-warehouse-mgr/cfg-data-rechecks.md) är inställd på `Paused`.
 
-[!DNL Adobe] rekommenderar att du granskar dessa kolumner för att både optimera dina uppdateringar och se till att ändringsbara kolumner kontrolleras igen. Om frekvensen för omkontroll av en kolumn är hög med tanke på hur ofta data ändras rekommenderar Adobe att du minskar den för att optimera uppdateringarna.
+[!DNL Adobe] rekommenderar att du granskar dessa kolumner för att både optimera dina uppdateringar och se till att ändringsbara kolumner kontrolleras igen. Om frekvensen för omkontroll av en kolumn är hög med tanke på hur ofta data ändras, rekommenderar Adobe att du minskar den för att optimera uppdateringarna.
 
 Kontakta oss med frågor eller fråga om aktuella replikeringsmetoder eller omkontroller.
 

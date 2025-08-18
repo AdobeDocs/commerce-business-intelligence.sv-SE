@@ -17,7 +17,7 @@ Du kan göra mer i `Visual Report Builder` än att skapa analyser som visar en t
 
 Den här sorteringen och sorteringen av data kan göras i rapporter som använder både en `Group By` och en `Time Interval of None`. När båda dessa element finns i en rapport visas funktionen `Show Top/Bottom` ovanför förhandsvisningen av diagrammet. Med den här funktionen kan du se de översta (högsta till lägsta) och understa (lägsta till högsta) datapunkterna baserat på de parametrar som du anger.
 
-![Visa övre/nedre funktionen i den visuella Report Builder.](../../assets/Show_Top_Bottom.png)
+![Visa topp/botten i Visual Report Builder.](../../assets/Show_Top_Bottom.png)
 
 ## Hur använder jag den här? {#how}
 

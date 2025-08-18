@@ -25,5 +25,5 @@ Databasen [!DNL WooCommerce] baseras på [!DNL MySQL] och du kan ansluta den til
 
 ## Relaterat:
 
-* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=sv-SE)
+* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [Rekommenderade datamått för segmentering och filtrering](../../../best-practices/segment-filter.md)

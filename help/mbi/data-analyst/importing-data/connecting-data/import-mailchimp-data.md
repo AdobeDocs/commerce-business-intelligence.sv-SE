@@ -17,7 +17,7 @@ Om du vill få en heltäckande bild av dina kampanjsatsningar kan du importera d
 
 ## Exportera Öppnar data {#opens}
 
-1. Gå till fliken `Campaigns` när du har loggat in på [!DNL Mailchimp].
+1. Gå till fliken [!DNL Mailchimp] när du har loggat in på `Campaigns`.
 
    ![importera mailchimp 1](../../../assets/import-mailchimp-1.png)
 
@@ -75,4 +75,4 @@ Om du vill få en heltäckande bild av dina kampanjsatsningar kan du importera d
 
 Varje fil - `Opens`, `Clicks` och `Sent` - ska överföras till [!DNL Commerce Intelligence] som en separat fil. Adobe rekommenderar att du namnger filerna med följande namnkonvention: `MailChimp\_ACTION\_DATE`. Ersätt `ACTION` med `Open`, `Click` eller `Sent` och ersätt `DATE` med exportdatumet.
 
-När du är redo att överföra filerna använder du funktionen [`File Upload` ](../connecting-data/using-file-uploader.md) för att hämta data till Datan Warehouse.
+När du är redo att överföra filerna använder du [`File Upload`-funktionen ](../connecting-data/using-file-uploader.md) för att hämta data till din Data Warehouse.

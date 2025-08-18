@@ -6,7 +6,7 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '930'
 ht-degree: 2%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 2%
 Många analyser som du kanske vill skapa innehåller en **ny kolumn** som du vill `group by` eller `filter by`. Självstudiekursen [Skapa beräknade kolumner](../data-warehouse-mgr/creating-calculated-columns.md) beskriver grunderna för de flesta användningsfall, men du kanske vill ha en beräknad kolumn som är lite mer komplex än vad Data Warehouse Manager kan skapa.
 {: #top}
 
-Den här typen av Data Warehouse kan skapas av Adobe-teamet hos analytiker. Ange följande information om du vill definiera en ny beräknad kolumn:
+Den här typen av kolumner kan skapas av Adobe team med Data Warehouse-analytiker. Ange följande information om du vill definiera en ny beräknad kolumn:
 
 1. **`definition`** i den här kolumnen (inklusive indata, formler eller formatering)
 1. Den **`table`** som du vill skapa kolumnen på
@@ -159,9 +159,9 @@ Om du vill skapa den här typen av beräknad kolumn måste du känna till:
 
 ## Jag försöker göra något som inte finns med här. {#else}
 
-Oroa dig inte. Bara för att det inte finns med här betyder det inte att det inte är möjligt. Adobe-teamet hos Data Warehouse Analysts kan hjälpa till.
+Oroa dig inte. Bara för att det inte finns med här betyder det inte att det inte är möjligt. Adobe team med Data Warehouse Analysts kan hjälpa er.
 
-Om du vill definiera en ny beräknad kolumn, [skickar du en supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE) med information om exakt vad du vill skapa.
+Om du vill definiera en ny beräknad kolumn, [skickar du en supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) med information om exakt vad du vill skapa.
 
 ## Relaterad dokumentation
 

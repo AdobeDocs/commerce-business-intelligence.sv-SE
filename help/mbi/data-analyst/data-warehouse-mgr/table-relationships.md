@@ -15,7 +15,7 @@ ht-degree: 0%
 
 När du utvärderar relationen mellan två angivna tabeller måste du förstå hur många möjliga förekomster i en tabell som kan tillhöra en enhet i en annan, och vice versa. Använd till exempel en `users`-tabell och en `orders`-tabell. I det här fallet vill du veta hur många **order** som en viss **användare** har placerat och hur många möjliga **användare** och **order** kan tillhöra.
 
-Förhållanden är avgörande för att dataintegriteten ska kunna upprätthållas, eftersom det påverkar noggrannheten i dina [beräknade kolumner](../data-warehouse-mgr/creating-calculated-columns.md) och [dimensioner](../data-warehouse-mgr/manage-data-dimensions-metrics.md). Mer information finns i [relationstyper](#types) och [Utvärdera tabellerna i Datan Warehouse.](#eval)
+Förhållanden är avgörande för att dataintegriteten ska kunna upprätthållas, eftersom det påverkar noggrannheten i dina [beräknade kolumner](../data-warehouse-mgr/creating-calculated-columns.md) och [dimensioner](../data-warehouse-mgr/manage-data-dimensions-metrics.md). Mer information finns i [relationstyper](#types) och [Så här utvärderar du tabellerna i din Data Warehouse.](#eval)
 
 ## Relationstyper {#types}
 
@@ -49,9 +49,9 @@ Fundera på relationen mellan **produkter** och **kategorier**: en produkt kan t
 
 ## Utvärdera dina tabeller {#eval}
 
-Med tanke på vilka typer av relationer som finns mellan tabeller kan du lära dig hur du utvärderar tabellerna i Datan Warehouse. När de här relationerna utformar hur flertabellskalkylerade kolumner definieras är det viktigt att du förstår hur du identifierar tabellrelationer och vilken sida - `one` eller `many` - som tabellen tillhör.
+Med tanke på vilka typer av relationer som finns mellan tabeller kan du lära dig att utvärdera tabellerna i din Data Warehouse. När de här relationerna utformar hur flertabellskalkylerade kolumner definieras är det viktigt att du förstår hur du identifierar tabellrelationer och vilken sida - `one` eller `many` - som tabellen tillhör.
 
-Det finns två metoder som du kan använda för att utvärdera relationen mellan ett givet tabellpar i Datan Warehouse. Den första metoden använder ett [konceptuellt ramverk](#concept) som tar hänsyn till hur tabellens entiteter interagerar med varandra. Den andra metoden använder [tabellens schema](#schema).
+Det finns två metoder som du kan använda för att utvärdera relationen mellan ett givet tabellpar i din Data Warehouse. Den första metoden använder ett [konceptuellt ramverk](#concept) som tar hänsyn till hur tabellens entiteter interagerar med varandra. Den andra metoden använder [tabellens schema](#schema).
 
 ### Använda konceptuella ramverk {#concept}
 
@@ -65,7 +65,7 @@ Så här använder du den här metoden:
 
 1. Identifiera ett eller flera verb som beskriver hur dessa enheter interagerar. När man jämför användare med order lägger man order. I den andra riktningen&quot;tillhör&quot; beställningarna användare.
 
-Den här typen av ramverk kan användas för alla tabellpar i Datan Warehouse. På så sätt kan du enkelt identifiera relationstypen och vilken tabell som är en sida och vilken tabell som är en många.
+Den här typen av ramverk kan användas för alla tabellpar i din Data Warehouse. På så sätt kan du enkelt identifiera relationstypen och vilken tabell som är en sida och vilken tabell som är en många.
 
 När du har identifierat terminologin som beskriver hur de två tabellerna interagerar bildruta interaktionen i båda riktningarna genom att överväga hur en viss instans av den första entiteten relaterar till den andra. Här är några exempel på varje relation:
 

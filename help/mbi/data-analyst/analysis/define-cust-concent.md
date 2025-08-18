@@ -58,7 +58,7 @@ Kolumner att skapa
 * Kundens intäktspunkt
 * [!UICONTROL Column type]: - `Same table > Calculation`
 * [!UICONTROL Inputs]: - `(input) Ranking by customer lifetime revenue`, `Number of customers`
-* [!UICONTROL Calculation]: - **case when A is null then null else (A/B)* 100 end &#x200B;**
+* [!UICONTROL Calculation]: - **case when A is null then null else (A/B)* 100 end **
 * [!UICONTROL Datatype]: - `Decimal`
 
 * `Sales_flat_order`-tabell
@@ -76,7 +76,7 @@ Kolumner att skapa
 * Kundens intäktspunkt
 * [!UICONTROL Column type]: - `Same table > Calculation`
 * [!UICONTROL Inputs]: - `(input) Ranking by customer lifetime revenue`, `Number of customers`
-* [!UICONTROL Calculation]: - **case when A is null then null else (A/B)* 100 end &#x200B;**
+* [!UICONTROL Calculation]: - **case when A is null then null else (A/B)* 100 end **
 * [!UICONTROL Datatype]: - `Decimal`
 
 >[!NOTE]
@@ -100,16 +100,16 @@ Kolumner att skapa
 * [!UICONTROL Metric]: `Total customer lifetime value`
 * [!UICONTROL Filter]: `Customer's revenue percentile IS NOT NULL`
 
-* &#x200B;
+* 
   [!UICONTROL Group by]: `Independent`
 * Mått `A`: `Total customer lifetime revenue by percentile`
 * Mått `B`: `Total customer lifetime revenue (ungrouped)`
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Customer's revenue percentile`
 * Visa över/under: `100% of Customer's revenue percentile Name`
-* &#x200B;
+* 
   [!UICONTROL Chart type]: `Line`
 
 * **Högsta koncentrationen 10 %**
@@ -117,12 +117,12 @@ Kolumner att skapa
 
 * Mått `A`: `Total customer lifetime revenue`
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * Dölj diagram
-* &#x200B;
+* 
   [!UICONTROL Group by]: `Email`
-* &#x200B;
+* 
   [!UICONTROL Chart type]: `Table`
 
 * **50 % nedersta koncentration med endast ett inköp**
@@ -133,12 +133,12 @@ Kolumner att skapa
 * [!UICONTROL Filter]:
 
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * Dölj diagram
-* &#x200B;
+* 
   [!UICONTROL Group by]: `Email`
-* &#x200B;
+* 
   [!UICONTROL Chart type]: `Table`
 
 * **10 % nedersta koncentration**
@@ -146,14 +146,14 @@ Kolumner att skapa
 
 * Mått `A`: `Total customer lifetime revenue`
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * Dölj diagram
-* &#x200B;
+* 
   [!UICONTROL Group by]: `Email`
-* &#x200B;
+* 
   [!UICONTROL Chart type]: `Table`
 
 När du har kompilerat alla rapporter kan du ordna dem på kontrollpanelen som du vill. Resultatet kan se ut som kontrollpanelen ovan.
 
-[Kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE) om du får frågor under arbetet med att skapa den här analysen, eller om du bara vill engagera Professional Services-teamet.
+[Kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) om du får frågor under arbetet med att skapa den här analysen, eller om du bara vill engagera Professional Services-teamet.

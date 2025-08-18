@@ -22,8 +22,8 @@ Om du vill exportera dina [!DNL Bing Ads]-data måste du ha [!DNL Bing Ads Edito
 ## [!DNL Bing Ads] dataexport
 
 1. Högerklicka på den kampanj eller annonsgrupp som du vill exportera i rutan `Browser` i [!DNL Bing Ads Editor] och klicka sedan på **[!UICONTROL Export]**.
-1. Klicka på **[!UICONTROL Export]** i dialogrutan `Export`.
+1. Klicka på `Export` i dialogrutan **[!UICONTROL Export]**.
 1. I dialogrutan `Save As` klickar du på den mapp där du vill spara exportfilen.
 1. I rutan `File name` väljer du ett namn för filexporten.
 1. Klicka på **[!UICONTROL Save]**.
-1. När filen har laddats ned [kontaktar du support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE) för att göra en första överföring åt dig och ställa in nödvändiga backend-dimensioner.
+1. När filen har laddats ned [kontaktar du support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) för att göra en första överföring åt dig och ställa in nödvändiga backend-dimensioner.

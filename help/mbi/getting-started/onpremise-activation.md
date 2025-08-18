@@ -17,13 +17,13 @@ Om du vill aktivera [!DNL Commerce Intelligence] för lokala prenumerationer ska
 
 ## Skapa ditt [!DNL Commerce Intelligence]-konto
 
-Om du vill skapa ett konto kontaktar du kontoteamet eller kundens tekniska rådgivare på Adobe.
+Om du vill skapa ett konto kontaktar du Adobe Account Team eller kundens tekniska rådgivare.
 
 ## Skapa ditt lösenord
 
 När ditt konto har skapats kan du kontrollera din e-postadress för att få ett e-postmeddelande från [!DNL The Magento BI Team@rjmetrics.com]. Använd länken i e-postmeddelandet för att komma åt ditt [!DNL Commerce Intelligence]-konto och skapa ditt lösenord. Gå till din inkorg och verifiera din e-postadress.
 
-[Kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE) om du inte fått något e-postmeddelande.
+[Kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) om du inte fått något e-postmeddelande.
 
 ![](../assets/create-account-4.png)
 
@@ -41,7 +41,7 @@ När du har angett ditt lösenord och loggat in på [!DNL Commerce Intelligence]
 
 ## Skapa en dedikerad [!DNL Commerce Intelligence]-användare i [!DNL Commerce]-administratören
 
-Om du vill använda [!DNL Commerce Intelligence] måste du lägga till en permanent och dedikerad användare i [!DNL Commerce]-projektet. Den här dedikerade användaren fungerar som en permanent anslutning till [!DNL Commerce] som gör det möjligt att hämta och överföra nya data till kontots [!DNL Commerce Intelligence]-Data Warehouse.
+Om du vill använda [!DNL Commerce Intelligence] måste du lägga till en permanent och dedikerad användare i [!DNL Commerce]-projektet. Den här dedikerade användaren fungerar som en permanent anslutning till [!DNL Commerce] som gör det möjligt att hämta och överföra nya data till kontots [!DNL Commerce Intelligence] Data Warehouse.
 
 Om du konfigurerar en dedikerad [!DNL Commerce Intelligence]-användare försäkrar du dig om att kontot inte inaktiveras eller tas bort och därmed avbryts anslutningen till [!DNL Commerce Intelligence].
 
@@ -56,7 +56,7 @@ När du har skapat den dedikerade användaren för [!DNL Commerce Intelligence] 
 
 ## Skaffa dina Commerce Intelligence SSH-nycklar
 
-1. Bläddra nedåt och välj **[!UICONTROL Encryption settings]** på sidan [!UICONTROL Connect your database] för [!DNL Commerce Intelligence]-konfiguration.
+1. Bläddra nedåt och välj [!UICONTROL Connect your database] på sidan [!DNL Commerce Intelligence] för **[!UICONTROL Encryption settings]**-konfiguration.
 
 1. För **krypteringstyp** väljer du `SSH Tunnel`.
 
@@ -118,7 +118,7 @@ Ange din [!DNL Commerce Intelligence]-information på skärmen [!UICONTROL Conne
 
 [!UICONTROL Port]: `3306`
 
-[!UICONTROL -användarnamn]: `mbi`
+[!UICONTROL-användarnamn]: `mbi`
 
 [!UICONTROL Password]: [indatalösenordet visas i föregående avsnitt]
 
@@ -170,7 +170,7 @@ När du har slutfört konfigurationen [loggar du in](../getting-started/sign-in.
 
 <!---# Activate your [!DNL Commerce Intelligence] Account 
 
-To activate [!DNL Commerce Intelligence] for on-premise or `Cloud Pro` subscriptions, [contact support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE).
+To activate [!DNL Commerce Intelligence] for on-premise or `Cloud Pro` subscriptions, [contact support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 >[!NOTE]
 >

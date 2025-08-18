@@ -20,9 +20,9 @@ Om du vill överföra dina [!DNL Linkshare]-data till [!DNL Adobe Commerce Intel
 
 ## Exportera data från Länkshare {#export}
 
-1. Gå till **[!UICONTROL Reports** > **Run Reports]i ditt [!DNL Linkshare]-konto.**
+1. Gå till [!DNL Linkshare] i ditt **[!UICONTROL Reports** > **Run Reports]-konto.**
 
-1. Välj **[!UICONTROL Sales & Activity Report]** i listrutan `Report`.
+1. Välj `Report` i listrutan **[!UICONTROL Sales & Activity Report]**.
 
 1. Låt alla andra alternativ i listrutan vara standardval.
 
@@ -30,7 +30,7 @@ Om du vill överföra dina [!DNL Linkshare]-data till [!DNL Adobe Commerce Intel
 
 1. Avmarkera kryssrutan `Compare Year-Over-Year Data`.
 
-1. Välj `Transaction Date` under `Data Type`.
+1. Välj `Data Type` under `Transaction Date`.
 
    ![importerar\_linkshare\_data.png](../../../assets/importing_linkshare_data.png)
 

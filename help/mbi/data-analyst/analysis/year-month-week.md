@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Det här avsnittet innehåller instruktioner för klienter som använder den ursprungliga arkitekturen och den nya arkitekturen. Du är på den [nya arkitekturen](../../administrator/account-management/new-architecture.md) om du har sektionen [!DNL _Vyer för Data Warehouse_] tillgänglig när du har valt [!DNL Manage Data] i huvudverktygsfältet.
+>Det här avsnittet innehåller instruktioner för klienter som använder den ursprungliga arkitekturen och den nya arkitekturen. Du är på den [nya arkitekturen](../../administrator/account-management/new-architecture.md) om du har avsnittet [!DNL _Data Warehouse Views_] tillgängligt när du har valt [!DNL Manage Data] i huvudverktygsfältet.
 
 Med rapportverktyget kan du enkelt se trender över tid och ändra perspektivet för tidsperioder som du kanske vill jämföra. I det här avsnittet visas hur du konfigurerar en kontrollpanel så att du kan skapa rapporter för en vecka, en månad i taget och en år i taget.
 
@@ -40,8 +40,7 @@ Den här analysen innehåller [avancerade beräknade kolumner](../data-warehouse
    * `created_at (month)` [!UICONTROL Calculation]: **to_char(A, &#39;mm-month&#39;)**
    * `created_at (day of the month)`&lt; [!UICONTROL Calculation]: **till_char(A, dd)**
    * `created_at (day of the week)` [!UICONTROL Calculation]: **to_char(A, &#39;d-Day&#39;)**
-   * **`created_at (hour of the day)` [!UICONTROL Calculation]: &#x200B;** to_char(A, &#39;hh24&#39;)**
-
+   * **`created_at (hour of the day)` [!UICONTROL Calculation]: **to_char(A, &#39;hh24&#39;)**
      ![](../../assets/new-arch-create-calc.png)
 
 ## Mått
@@ -65,10 +64,10 @@ Ingen.
 * Mått `A`: `This year`
 * Mått `B`: `Last year`
 * [!UICONTROL Time period]: `1 year ago to 0 years ago`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `created_at (month-day)`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Line`
 
 * **MoM-diagram**
@@ -82,10 +81,10 @@ Ingen.
 * Mått `A`: Den här månaden*
 * Mått `B`: förra månaden*
 * [!UICONTROL Time period]: för en månad sedan till för 0 månader sedan
-* &#x200B;
+* 
   [!UICONTROL Interval]: None
 * [!UICONTROL Group by]: `created_at (day of month)`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: Line
 
 * **WoW-diagram**
@@ -99,10 +98,10 @@ Ingen.
 * Mått `A`: `This week`
 * Mått `B`: `Last week`
 * [!UICONTROL Time period]: `1 week ago to 0 weeks ago`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `created_at (day of week)`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Line`
 
 * **DoD-diagram**
@@ -116,10 +115,10 @@ Ingen.
 * Mått `A`: `Today`
 * Mått B: `Yesterday`
 * [!UICONTROL Time period]: `1 day ago to 0 days ago`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `created_at (hour of day)`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Line`
 
 När du har kompilerat alla rapporter kan du ordna dem på kontrollpanelen som du vill. Resultatet kan se ut som bilden högst upp på den här sidan.

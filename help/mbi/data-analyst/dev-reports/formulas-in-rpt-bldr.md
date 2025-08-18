@@ -6,7 +6,7 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '539'
+source-wordcount: '537'
 ht-degree: 0%
 
 ---
@@ -63,6 +63,6 @@ I det här exemplet använde du perspektivet `Stacked Columns` för att visa res
 
 ## Radbrytning {#wrapup}
 
-Märkte du i exemplen ovan att formelns `timestamp`, `groupings`, `perspectives` och `filters` ärvs från indatamätningarna? Kom ihåg att formler kan användas för att använda `perspectives` och [oberoende tidsalternativ](../../tutorials/time-options-visual-rpt-bldr.md){: target=&quot;_blank&quot;}, precis som mätvärden kan.
+Märkte du i exemplen ovan att formelns `timestamp`, `groupings`, `perspectives` och `filters` ärvs från indatamätningarna? Kom ihåg att formler kan användas för att använda `perspectives` och [oberoende tidsalternativ](../../tutorials/time-options-visual-rpt-bldr.md){: target="_blank"}, precis som mätvärden kan.
 
-[Kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE) om du har ytterligare frågor om hur du använder formler i `Report Builder`.
+`Report Builder`Kontakta support[ om du har ytterligare frågor om hur du använder formler i ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

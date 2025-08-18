@@ -25,7 +25,7 @@ Du kan inte ta bort rader från tabellen om du vill vara säker på att metoden 
 
 ## Modifieringar för enskild autoökning av primärnyckel
 
-Om metoden `Modified At` inte kan aktiveras är primärnyckeln för enkel autoökning det näst bästa alternativet. Nya data identifieras i tabeller med den här metoden genom att söka efter primärnyckelvärden som är högre än det högsta värdet i Datan Warehouse.
+Om metoden `Modified At` inte kan aktiveras är primärnyckeln för enkel autoökning det näst bästa alternativet. Nya data hittas i tabeller med den här metoden genom att söka efter primärnyckelvärden som är högre än det högsta värdet i Data Warehouse.
 
 Kom ihåg att tabeller som använder den här metoden är en kolumn med heltalsökning som automatiskt ökar primärnycklarna. Om du vill använda den här metoden i databasen gör du följande ändringar:
 

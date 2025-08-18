@@ -24,7 +24,7 @@ Bland kunder som köper ett *specifikt objekt*,
 
 ## Rekommenderade mått
 
-När du bygger kundrepriser rekommenderar Adobe att du använder följande mätvärden:
+Adobe rekommenderar att du använder följande mätvärden när du skapar analyser för kundåterköp:
 
 ### Sannolikhet för upprepad order
 
@@ -82,4 +82,4 @@ Förutom att analysera återköpets beteende hos era kunder kan ni också bygga 
 
 När du har identifierat varför det händer något kan du använda din analys för att skapa en `reactivation`-kampanj. Med hjälp av dessa data kan du identifiera användare som har blivit inaktiva, hur länge det har varit sedan deras senaste besök, vilket deras senaste köp var och så vidare. På så sätt kan ni fatta konkreta beslut som får kunderna att komma tillbaka.
 
-[Kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE) om du behöver hjälp med analys.
+[Kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) om du behöver hjälp med analys.

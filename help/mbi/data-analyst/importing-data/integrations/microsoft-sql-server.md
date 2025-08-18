@@ -21,7 +21,7 @@ ht-degree: 0%
 
 I det här avsnittet förklaras hur du ansluter din [!DNL Microsoft SQL]-databas till [!DNL Commerce Intelligence] i en fyrstegsprocess. Den här processen kräver viss teknisk expertis relaterad till serveranslutningar och SQL, och kan kräva stöd från utvecklare i ditt team.
 
-[!DNL Commerce Intelligence] har stöd för [!DNL Amazon RDS], [!DNL EC2], [!DNL Microsoft SQL Azure] och de flesta andra molnserverleverantörer. Om du har en fråga till din värddator [skickar du en supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE) och ber oss att ange den här informationen.
+[!DNL Commerce Intelligence] har stöd för [!DNL Amazon RDS], [!DNL EC2], [!DNL Microsoft SQL Azure] och de flesta andra molnserverleverantörer. Om du har en fråga till din värddator [skickar du en supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) och ber oss att ange den här informationen.
 
 Systemet måste köra SELECT-frågor i din databas. Detta görs först för att få en ögonblicksbild av databasstrukturen och sedan regelbundet övertid för att hålla dina data uppdaterade. Dina uppdateringar är stegvisa och Adobe begränsar uppdateringsfrekvens och -tid för att förhindra oönskad belastning på servern.
 

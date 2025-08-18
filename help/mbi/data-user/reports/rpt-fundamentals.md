@@ -64,7 +64,7 @@ Det används sedan för att skapa:
 
 Båda dessa fält måste skapas på användarnivå (till exempel i tabellen `user`). Detta gör att genomsnittsanalysen kan normaliseras av användarna (dvs. nämnaren i denna beräkning är antalet användare).
 
-Det är här [!DNL Commerce Intelligence] steg in! Du kan använda Datan Warehouse [!DNL Commerce Intelligence] för att skapa kolumnerna ovan. Kontakta Adobe analysteam och ge oss en specifik definition av de nya kolumnerna som du ska skapa. Du kan också använda [kolumnredigeraren](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md).
+Det är här [!DNL Commerce Intelligence] steg in! Du kan använda din [!DNL Commerce Intelligence] Data Warehouse för att skapa kolumnerna ovan. Kontakta Adobe analysteam och ge oss en specifik definition av de nya kolumnerna som du ska skapa. Du kan också använda [kolumnredigeraren](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md).
 
 Det är en god vana att undvika att skapa dessa beräknade datafält direkt i databasen eftersom det medför en onödig börda för produktionsservrarna.
 
@@ -94,7 +94,7 @@ Gå bara till en kontrollpanel och [skapa en rapport](../../data-user/reports/es
 
 ### `Visual Report Builder` {#visualrb}
 
-[Det `Visual Report Builder`](../../data-user/reports/ess-rpt-build-visual.md) är det enklaste sättet att visualisera dina data. Om du inte känner till SQL eller snabbt vill skapa en rapport är Visual Report Builder ditt bästa val. Med bara några klick kan ni lägga till mätvärden, segmentera data och skapa rapporter i hela organisationen. Det här alternativet är perfekt för såväl nybörjare som experter, eftersom det inte kräver någon teknisk expertis.
+[Det `Visual Report Builder`](../../data-user/reports/ess-rpt-build-visual.md) är det enklaste sättet att visualisera dina data. Om du inte känner till SQL eller snabbt vill skapa en rapport är Visual Report Builder det bästa valet. Med bara några klick kan ni lägga till mätvärden, segmentera data och skapa rapporter i hela organisationen. Det här alternativet är perfekt för såväl nybörjare som experter, eftersom det inte kräver någon teknisk expertis.
 
 |  |  |
 |--- |--- |
@@ -107,7 +107,7 @@ Gå bara till en kontrollpanel och [skapa en rapport](../../data-user/reports/es
 
 #### Lägga till beskrivningar i rapporter
 
-När du skapar rapporter som delas med andra medlemmar i ditt team rekommenderar Adobe att du lägger till beskrivningar som gör att andra användare kan förstå din analys bättre.
+När du skapar rapporter som delas med andra medlemmar i ditt team rekommenderar Adobe att du lägger till beskrivningar som ger andra användare en bättre förståelse för din analys.
 
 1. Klicka på **[!UICONTROL i]** överst i en rapport.
 1. Ange en beskrivning i ordrutan.

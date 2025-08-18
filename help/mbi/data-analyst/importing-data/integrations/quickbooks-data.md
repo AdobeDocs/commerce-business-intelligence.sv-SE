@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # [!DNL QuickBooks] data förväntades
 
-När [du har anslutit ditt [!DNL QuickBooks] konto](../../../data-analyst/importing-data/integrations/quickbooks.md) kan du använda [Data Warehouse Manager](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) för att enkelt spåra relevanta datafält för analys. Följande tabeller skapas i Datan Warehouse:
+När [du har anslutit ditt [!DNL QuickBooks] konto](../../../data-analyst/importing-data/integrations/quickbooks.md) kan du använda [Data Warehouse Manager](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) för att enkelt spåra relevanta datafält för analys. Följande tabeller skapas i din Data Warehouse:
 
 Om du vill visa alla fält som är tillgängliga för spårning klickar du på länkarna i tabellnamnskolumnen.
 
@@ -62,4 +62,4 @@ Om du vill visa alla fält som är tillgängliga för spårning klickar du på l
 ## Relaterat:
 
 * [Ansluter  [!DNL QuickBooks]](../integrations/quickbooks.md)
-* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=sv-SE)
+* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

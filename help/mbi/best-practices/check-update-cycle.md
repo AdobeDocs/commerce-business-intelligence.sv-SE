@@ -17,7 +17,7 @@ När du loggar in på din [!DNL Adobe Commerce Intelligence]-instrumentpanel fin
 
 ## Varför ska jag kontrollera statusen för uppdateringscykeln?
 
-Att kontrollera statusuppdateringscykeln är användbart när du granskar data i ditt [!DNL Commerce Intelligence]-konto. Om du ser [resultat som inte uppfyller dina förväntningar](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md), till exempel, matchar inte daglig försäljning i [!DNL Commerce Intelligence] det du ser i din e-handelsplattform eller i dina [[!DNL Google] e-handelsintäkter](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html?lang=sv-SE), kan du kontrollera den sista datapunkten för att se om problemet har lösts när en uppdatering är klar.
+Att kontrollera statusuppdateringscykeln är användbart när du granskar data i ditt [!DNL Commerce Intelligence]-konto. Om du ser [resultat som inte uppfyller dina förväntningar](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md), till exempel, matchar inte daglig försäljning i [!DNL Commerce Intelligence] det du ser i din e-handelsplattform eller i dina [[!DNL Google] e-handelsintäkter](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html), kan du kontrollera den sista datapunkten för att se om problemet har lösts när en uppdatering är klar.
 
 ## [!UICONTROL Read-Only] och [!UICONTROL Standard] användare
 

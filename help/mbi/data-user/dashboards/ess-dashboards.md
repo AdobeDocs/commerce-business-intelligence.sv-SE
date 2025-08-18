@@ -21,7 +21,7 @@ Det är enkelt att skapa en rapport, lägga till den på en kontrollpanel och ex
 
 ## Skapa instrumentpaneler {#createdash}
 
-Instrumentpaneler är delbara, tematiska samlingar för de analyser du skapar i Report Builder. Så här kan du uppmuntra ditt team att samarbeta och upprätthålla en enda källa till sanning i hela organisationen.
+Instrumentpaneler kan delas med teman för de analyser du skapar i Report Builders. Så här kan du uppmuntra ditt team att samarbeta och upprätthålla en enda källa till sanning i hela organisationen.
 
 *Om du är administratör eller standardanvändare* kan du skapa en instrumentpanel genom att klicka på listrutan `Dashboard Options` och välja `Create New dashboard`.
 
@@ -63,7 +63,7 @@ Hur de instrumentpaneler du skapar ser ut är helt upp till dig. Du kan ordna oc
 
 1. Klicka på **[!UICONTROL Create Report]** om du vill visa **[!UICONTROL Report Builder Options]**.
 
-   ![Alternativ för Report Builder](../../assets/magento-bi-report-builder.png)
+   ![Report Builder-alternativ](../../assets/magento-bi-report-builder.png)
 
 ## Ordna objekt på en kontrollpanel
 
@@ -77,7 +77,7 @@ I **[!DNL Manage Data** > **Dashboards]** kan du hantera användarbehörigheter 
 
 ### Dela dina instrumentpaneler {#sharingdash}
 
-Om du verkligen vill skala [!DNL Commerce Intelligence] i hela organisationen och få värdefulla insikter rekommenderar Adobe att du delar instrumentpaneler som du skapar med andra teammedlemmar. *Du kan dela instrumentpaneler som du äger* genom att klicka på alternativet `Share Dashboard` överst på sidan.
+Adobe rekommenderar att du delar instrumentpaneler som du skapar med andra teammedlemmar för att kunna skala [!DNL Commerce Intelligence] i hela organisationen och ge värdefulla insikter. *Du kan dela instrumentpaneler som du äger* genom att klicka på alternativet `Share Dashboard` överst på sidan.
 
 När du delar en kontrollpanel kan du tilldela behörigheter i hela organisationen ELLER på individnivå, vilket innebär att du får bestämma vem som ska kunna visa och redigera dina rapporter.
 

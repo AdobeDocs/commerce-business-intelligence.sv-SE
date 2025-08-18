@@ -1,6 +1,6 @@
 ---
-title: Förväntade lagrade data för Google Analytics
-description: Lär dig interagera med lagerdata från Google Analytics.
+title: Förväntade lagrade Google Analytics-data
+description: Lär dig interagera med dina lagrade data från Google Analytics.
 exl-id: 2b1305cd-5f34-43d9-b77f-a4f5b1d82c66
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -27,11 +27,11 @@ Integrationen [!DNL Google Analytics Warehoused] i [!DNL Commerce Intelligence] 
 >
 >För att undvika oväntade eller okänsliga resultat bör du kontrollera att de dimensioner du använder är [kompatibla med ett eller flera mått](https://ga-dev-tools.google/dimensions-metrics-explorer/) som du använder i `Report Builder`.
 
-En enda tabell med namnet `report` skapas i Datan Warehouse.
+En enda tabell med namnet `report` skapas i din Data Warehouse.
 
-Schemat för den här tabellen består av de mått och Dimensioner som du valde under konfigurationsprocessen och två andra kolumner: `start-date` och `end-date`.
+Schemat för den här tabellen består av de mått och mått som du valde under konfigurationsprocessen och två andra kolumner: `start-date` och `end-date`.
 
-Om du till exempel valde följande mått och Dimensioner under installationen:
+Om du till exempel valde följande mått och mått under installationen:
 
 * `Metrics`: `ga:users`
 * `Dimensions`: `ga:month`
@@ -58,7 +58,7 @@ Titta på [!DNL Google Analytics] annonskampanjer för att få ett exempel på v
 
 Kombinationsaspekten tillåter att [!DNL Google Analytics] data kopplas till andra data för att utföra analyser. Ta t.ex. `Total Time On Site By Ad Campaign` data från [!DNL Google Analytics] och anslut dem till `Total Spent Per Campaign` data från [!DNL Facebook Ads] för att få en fullständig bild av hur mycket engagemang som kostar er.
 
-Med integreringen av [!DNL Google Analytics Live] å andra sidan är varje [!DNL Google Analytics]-diagram som en liten silo som inte lagras i din [!DNL Commerce Intelligence]-Data Warehouse.
+Med integreringen av [!DNL Google Analytics Live] å andra sidan är varje [!DNL Google Analytics]-diagram som en liten silo som inte lagras i din [!DNL Commerce Intelligence] Data Warehouse.
 
 ## Relaterat:
 

@@ -76,22 +76,19 @@ Kolumner att skapa
 * **Kurvfrekvens**
    * [!UICONTROL Metric]: Nya kunder (efter första orderdatum)
    * [!UICONTROL Filter]: `Lifetime number of orders Greater Than 0`
-   * &#x200B;
-
+   * 
      [!UICONTROL Perspective]: `Cumulative`
    * [!UICONTROL Metric]: `New customers (by last order date)`
    * [!UICONTROL Filter]:
-   * Sekunder sedan kundens senaste orderdatum >= [Din självdefinierade brytfrekvens för kunder som blivit beställda ]&#x200B;**`^`**
+   * Sekunder sedan kundens senaste orderdatum >= [Din självdefinierade brytfrekvens för kunder som blivit beställda ]**`^`**
    * `Lifetime number of orders Greater Than 0`
 
    * [!UICONTROL Metric]: `New customers (by last order date)`
    * [!UICONTROL Filter]: `Lifetime number of orders Greater Than 0`
-   * &#x200B;
-
+   * 
      [!UICONTROL Perspective]: Cumulative
    * [!UICONTROL Formula]: `(B / ((A + B) - C)`
-   * &#x200B;
-
+   * 
      [!UICONTROL Format]: Percentage
 
 * *Mått `A`:`New customers cumulative`*

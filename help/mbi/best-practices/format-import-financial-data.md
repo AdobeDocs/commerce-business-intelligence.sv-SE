@@ -28,7 +28,7 @@ Om du vill importera och analysera dessa data i [!DNL Commerce Intelligence] må
 Så här förenklar du en tvådimensionell tabell med en pivottabell på [!DNL Excel]:
 
 1. Öppna filen med den tvådimensionella datatabellen.
-1. Öppna Pivottabellguiden. I [!DNL Windows] är genvägen `Alt-D`. Ange `Command-Option-P` i [!DNL Mac OS].
+1. Öppna Pivottabellguiden. I [!DNL Windows] är genvägen `Alt-D`. Ange [!DNL Mac OS] i `Command-Option-P`.
 1. Markera **[!UICONTROL Multiple consolidated ranges]** och klicka på **[!UICONTROL Next]**.
 1. Markera **[!UICONTROL I will create the page fields]** och klicka på **[!UICONTROL Next]**.
 1. Markera hela datauppsättningen i den tvådimensionella tabellen, inklusive etiketterna. Kontrollera att `0` har valts för antalet sidfält och klicka på **[!UICONTROL Next]**.

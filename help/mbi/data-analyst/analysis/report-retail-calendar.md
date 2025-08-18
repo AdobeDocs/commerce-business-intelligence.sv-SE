@@ -23,7 +23,7 @@ Den här analysen innehåller [avancerade beräknade kolumner](../data-warehouse
 
 ## Komma igång
 
-Du kan [hämta](../../assets/454-calendar.csv) en `.csv`-version av 4-5-4-butikskalendern för 2014 till 2017. Du kan behöva justera den här filen i enlighet med din interna butikskalender och utöka datumintervallet för att stödja din historiska och aktuella tidsram. När du har hämtat filen kan du använda filöverföringsprogrammet för att skapa en butikskalendertabell i Datan Warehouse [!DNL Commerce Intelligence]. Om du använder en oförändrad version av 4-5-4-kalendern för återförsäljning måste du se till att strukturen och datatyperna för fälten i den här tabellen matchar följande:
+Du kan [hämta](../../assets/454-calendar.csv) en `.csv`-version av 4-5-4-butikskalendern för 2014 till 2017. Du kan behöva justera den här filen i enlighet med din interna butikskalender och utöka datumintervallet för att stödja din historiska och aktuella tidsram. När du har hämtat filen kan du använda filöverföringsprogrammet för att skapa en butikskalendertabell i din [!DNL Commerce Intelligence] Data Warehouse. Om du använder en oförändrad version av 4-5-4-kalendern för återförsäljning måste du se till att strukturen och datatyperna för fälten i den här tabellen matchar följande:
 
 | Kolumnnamn | Kolumndatatyp | Primär nyckel |
 | --- | --- | --- |
@@ -50,9 +50,8 @@ Du kan [hämta](../../assets/454-calendar.csv) en `.csv`-version av 4-5-4-butiks
    * **Aktuellt datum**
       * [!UICONTROL Column type]: `Same table > Calculation`
       * [!UICONTROL Inputs]: `Date Retail`
-      * &#x200B;
-
-        [!UICONTROL -datatyp]: `Datetime`
+      * 
+        [!UICONTROL-datatyp]: `Datetime`
       * [!UICONTROL Calculation]: `case when A is null then null else to\_char(now(), 'YYYY-MM-DD 00:00:00') end`
 
         >[!NOTE]
@@ -63,8 +62,7 @@ Du kan [hämta](../../assets/454-calendar.csv) en `.csv`-version av 4-5-4-butiks
       * [!UICONTROL Column type]: E`vent Counter`
       * [!UICONTROL Local Key]: `Current date`
       * [!UICONTROL Remote Key]: `Retail calendar.Date Retail`
-      * &#x200B;
-
+      * 
         [!UICONTROL Operation]: `Max`
       * [!UICONTROL Operation value]: `Year Retail`
    * **Ingår i aktuellt år? (Ja/Nej)**
@@ -72,18 +70,16 @@ Du kan [hämta](../../assets/454-calendar.csv) en `.csv`-version av 4-5-4-butiks
       * [!UICONTROL Inputs]:
          * `A` - `Year Retail`
          * `B` - `Current retail year`
-      * &#x200B;
-
-        [!UICONTROL -datatyp]: `String`
+      * 
+        [!UICONTROL-datatyp]: `String`
       * [!UICONTROL Calculation]: `case when A is null or B is null then null when A = B then 'Yes' else 'No' end`
    * **Ingår i föregående år? (Ja/Nej)**
       * [!UICONTROL Column type]: `Same table > Calculation`
       * [!UICONTROL Inputs]:
          * `A` - `Year Retail`
          * `B` - `Current retail year`
-      * &#x200B;
-
-        [!UICONTROL -datatyp]: String
+      * 
+        [!UICONTROL-datatyp]: String
       * [!UICONTROL Calculation]: `case when A is null or B is null then null when (A = (B-1)) then 'Yes' else 'No' end`
 
 * tabellen **sales\_order**
@@ -143,79 +139,62 @@ Obs! Inga nya mätvärden behövs för den här analysen. Se dock till att [läg
       * [!UICONTROL Filter]:
          * `Created\_at (retail Year) = 2015`
    * [!UICONTROL Time period]: `All time`
-   * &#x200B;
-
+   * 
      [!UICONTROL Interval]: `None`
-   * &#x200B;
-
+   * 
      [!UICONTROL Group by]: `Created\_at` (retail week)
-   * &#x200B;
-
+   * 
      [!UICONTROL Chart type]: `Line`
       * Stäng av `multiple Y-axes`
 
 * **Översikt över butikskalender (aktuellt år per månad)**
    * Mått `A`: `Revenue`
-      * &#x200B;
-
-        [!UICONTROL -mått]: `Revenue`
+      * 
+        [!UICONTROL-mått]: `Revenue`
       * [!UICONTROL Filter]:
-         * &#x200B;
-
+         * 
            [!UICONTROL Include current retail year?]: `Yes`
    * Mått `B`: `Orders`
       * [!UICONTROL Metric]: `Number of orders`
       * [!UICONTROL Filter]:
-         * &#x200B;
-
+         * 
            [!UICONTROL Include current retail year?]: `Yes`
    * Mått `C`: `Avg order value`
       * [!UICONTROL Metric]: `Avg order value`
       * [!UICONTROL Filter]:
-         * &#x200B;
-
+         * 
            [!UICONTROL Include current retail year?]: `Yes`
    * [!UICONTROL Time period]: `All time`
-   * &#x200B;
-
+   * 
      [!UICONTROL Interval]: `None`
-   * &#x200B;
-
+   * 
      [!UICONTROL Group by]: `Created\_at` (retail month)
-   * &#x200B;
-
+   * 
      [!UICONTROL Chart type]: `Line`
 
 * **Översikt över butikskalender (föregående år per månad)**
    * Mått `A`: `Revenue`
-      * &#x200B;
-
-        [!UICONTROL -mått]: `Revenue`
+      * 
+        [!UICONTROL-mått]: `Revenue`
       * [!UICONTROL Filter]:
-         * &#x200B;
-
+         * 
            [!UICONTROL Include current retail year?]: `Yes`
    * Mått `B`: `Orders`
       * [!UICONTROL Metric]: Antal order
       * [!UICONTROL Filter]:
-         * &#x200B;
-
+         * 
            [!UICONTROL Include current retail year?]: `Yes`
    * Mått `C`: `Avg order value`
       * [!UICONTROL Metric]: `Avg order value`
       * [!UICONTROL Filter]:
-         * &#x200B;
-
+         * 
            [!UICONTROL Include current retail year?]: `Yes`
    * [!UICONTROL Time period]: `All time`
-   * &#x200B;
-
+   * 
      [!UICONTROL Interval]: `None`
-   * &#x200B;
-
+   * 
      [!UICONTROL Group by]: `Created\_at` (retail month)
-   * &#x200B;
-
+   * 
      [!UICONTROL Chart type]: `Line`
 
 ## Nästa steg

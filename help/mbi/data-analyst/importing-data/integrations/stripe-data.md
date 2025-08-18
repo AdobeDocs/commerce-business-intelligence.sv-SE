@@ -1,5 +1,5 @@
 ---
-title: Data för Stripe förväntades
+title: Förväntade Stripe-data
 description: Utforska de viktigaste datatabellerna som du kan importera från Stripe till Commerce Intelligence.
 exl-id: 694577b2-48f9-4376-850d-acae1776afe3
 role: Admin, Data Architect, Data Engineer, User
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 När [du har anslutit ditt [!DNL Stripe] konto](../integrations/stripe.md) kan du använda [Data Warehouse Manager](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) för att enkelt spåra relevanta datafält för analys.
 
-I det här avsnittet utforskas huvuddatatabellerna som du kan importera från [!DNL Stripe] till [!DNL Commerce Intelligence]. När installationen är klar skapas följande tabeller i Datan Warehouse. Klicka på länkarna i kolumnen Tabellnamn om du vill veta mer om attributen i varje tabell.
+I det här avsnittet utforskas huvuddatatabellerna som du kan importera från [!DNL Stripe] till [!DNL Commerce Intelligence]. När installationen är klar skapas följande tabeller i din Data Warehouse. Klicka på länkarna i kolumnen Tabellnamn om du vill veta mer om attributen i varje tabell.
 
 | **Tabellnamn** | **Beskrivning** |
 |-----|-----|
@@ -36,4 +36,4 @@ I det här avsnittet utforskas huvuddatatabellerna som du kan importera från [!
 ## Relaterat:
 
 * [Ansluter  [!DNL Stripe]](../integrations/stripe.md)
-* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=sv-SE)
+* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

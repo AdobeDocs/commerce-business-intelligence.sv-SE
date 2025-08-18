@@ -43,4 +43,4 @@ Förutom att utvärdera omkontrollfrekvenser, replikeringsmetoder och diagramanv
 
 ## Radbrytning
 
-Om din uppdateringstid fortfarande verkar långsam även efter att du har implementerat dessa rekommendationer, [kontaktar du supportteamet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE).
+Om din uppdateringstid fortfarande verkar långsam även efter att du har implementerat dessa rekommendationer, [kontaktar du supportteamet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

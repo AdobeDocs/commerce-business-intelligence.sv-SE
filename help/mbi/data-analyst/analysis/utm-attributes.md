@@ -1,6 +1,6 @@
 ---
-title: Google Analytics och UTM-attribut
-description: Läs mer om Google Analytics källattribueringsprocessen.
+title: Google Analytics och UTM Attribution
+description: Läs om Google Analytics källattribueringsprocess.
 exl-id: 48b8a3d3-f1ac-4d3f-8f65-db1245c9ae0a
 role: Admin, Data Architect, Data Engineer, User
 feature: Reports
@@ -21,7 +21,7 @@ Det är viktigt att [spåra källan för användarförvärv](../../data-analyst/
 
 Helst registreras en hänvisningskälla varje gång en konverteringshändelse inträffar. Men hur bestäms källan?
 
-I verkligheten kommer användarna ofta från många olika källor innan de slår till/utför en mikro- eller makrokonvertering. De kan t.ex. komma till webbplatsen via organiska tjänster, sedan lämna platsen, sedan komma via betalsökningar, sedan lämna platsen och sedan komma direkt till själva webbplatsen. Den här källspårningsinformationen tillhandahålls ofta till webbplatsen via UTM-parametrar, men det finns mer avancerade system där ute också. Fokusera på [UTM](https://support.google.com/analytics/answer/1033867?hl=en&amp;ref_topic=1032998) för dina syften.
+I verkligheten kommer användarna ofta från många olika källor innan de slår till/utför en mikro- eller makrokonvertering. De kan t.ex. komma till webbplatsen via organiska tjänster, sedan lämna platsen, sedan komma via betalsökningar, sedan lämna platsen och sedan komma direkt till själva webbplatsen. Den här källspårningsinformationen tillhandahålls ofta till webbplatsen via UTM-parametrar, men det finns mer avancerade system där ute också. Fokusera på [UTM](https://support.google.com/analytics/answer/1033867?hl=en&ref_topic=1032998) för dina syften.
 
 ## Hur attributerar [!DNL Google Analytics] hänvisningskällor via UTM-parametrar?
 

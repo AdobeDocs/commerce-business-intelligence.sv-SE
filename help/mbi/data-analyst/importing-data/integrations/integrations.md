@@ -13,8 +13,8 @@ ht-degree: 0%
 
 # Koppla externa data med hjälp av en integrering
 
-En integrering är en datakälla. Integrationer är program och databaser som du kan ansluta till Datan Warehouse.
+En integrering är en datakälla. Integrationer är program och databaser som du kan ansluta till din Data Warehouse.
 
 I det här avsnittet beskrivs de tillgängliga integreringar som du kan använda för att ansluta olika externa datakällor till [!DNL Commerce Intelligence].
 
-Om du vill ta bort en anslutning eller integrering [kontaktar du support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE) och anger namnet på anslutningen eller integreringen som ska tas bort.
+Om du vill ta bort en anslutning eller integrering [kontaktar du support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) och anger namnet på anslutningen eller integreringen som ska tas bort.

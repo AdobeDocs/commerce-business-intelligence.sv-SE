@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Datamigrering
 
-Att migrera till ett nytt databasschema, en ny server eller en rapportdatabas behöver inte vara stressigt. [[!DNL Adobe] Services-teamet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE) erbjuder migreringshjälp.
+Att migrera till ett nytt databasschema, en ny server eller en rapportdatabas behöver inte vara stressigt. [[!DNL Adobe] Services-teamet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) erbjuder migreringshjälp.
 
 För att övergången ska bli så smidig som möjligt bör du vara så detaljerad som möjligt när du skickar in din migreringsbegäran. Det här avsnittet innehåller allt du behöver för att skicka en begäran och komma igång med migreringen. Om du ger oss en heltäckande bild av dina behov kan du garantera att projektet har rätt omfång och att uppskattningen är korrekt.
 
@@ -45,7 +45,7 @@ För att den här typen av migrering ska kunna slutföras måste befintliga data
 
 Om du känner dig bekväm med att utföra matchningen själv följer du dessa instruktioner och bifogar det färdiga kalkylbladet till din begäran:
 
-1. Granska alla tabeller och kolumner som synkroniseras med Datan Warehouse (**[!UICONTROL Manage Data** > **Data Warehouse]**).
+1. Granska alla tabeller och kolumner som synkroniseras med din Data Warehouse (**[!UICONTROL Manage Data** > **Data Warehouse]**).
 
 1. I ett kalkylblad skapar du en flik för varje tabell som ska migreras till den nya databasen.
 
@@ -67,7 +67,7 @@ Här följer ett exempel:
 
 ## Hur skickar jag en förfrågan? {#submitreq}
 
-Du kan kontakta oss genom att [skicka en supportförfrågan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE).
+Du kan kontakta oss genom att [skicka en supportförfrågan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 Om du följde stegen i föregående avsnitt för att skapa ett kalkylblad som matchar kolumner, glöm inte att bifoga det.
 

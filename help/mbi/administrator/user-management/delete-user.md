@@ -26,5 +26,5 @@ Du kan återaktivera användaren genom att skapa en användare med samma e-posta
 Om du bara behöver instrumentpanelerna från den användaren som har överförts till ett annat användarkonto gör du följande:
 
 1. Använd den borttagna användarens e-postadress för att skapa en ny [!DNL Commerce Intelligence]-användare.
-1. [Meddela support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE) när du har skapat användaren. Stödet överför instrumentpanelerna till ditt konto.
+1. [Meddela support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) när du har skapat användaren. Stödet överför instrumentpanelerna till ditt konto.
 1. När Adobe Support har meddelat dig om överföringen kan du ta bort användaren igen.

@@ -48,4 +48,4 @@ Du kan också skriva egna frågor och exportera resultaten som ska jämföras me
 
 >[!NOTE]
 >
->Om du upptäcker diskrepanser efter att ha granskat dina data kan du läsa mer om vad du ska göra härnäst i [Kontakta support: datadiskrepanser](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies.html?lang=sv-SE).
+>Om du upptäcker diskrepanser efter att ha granskat dina data kan du läsa mer om vad du ska göra härnäst i [Kontakta support: datadiskrepanser](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies.html).

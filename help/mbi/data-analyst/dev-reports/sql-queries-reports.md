@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Översätta SQL-frågor i Commerce Intelligence
 
-Har du någonsin undrat hur SQL-frågor översätts till de [beräknade kolumnerna](../data-warehouse-mgr/creating-calculated-columns.md), [metrics](../../data-user/reports/ess-manage-data-metrics.md) och [reports](../../tutorials/using-visual-report-builder.md) som du använder i [!DNL Commerce Intelligence]? Om du är en tung SQL-användare kan du arbeta smartare i [Data Warehouse Manager](../data-warehouse-mgr/tour-dwm.md) och få ut det mesta av [!DNL Commerce Intelligence]-plattformen genom att förstå hur SQL översätts i [!DNL Commerce Intelligence].
+Har du någonsin undrat hur SQL-frågor översätts till de [beräknade kolumnerna](../data-warehouse-mgr/creating-calculated-columns.md), [metrics](../../data-user/reports/ess-manage-data-metrics.md) och [reports](../../tutorials/using-visual-report-builder.md) som du använder i [!DNL Commerce Intelligence]? Om du är en tung SQL-användare kan du arbeta smartare i [!DNL Commerce Intelligence]Data Warehouse Manager[ och få ut det mesta av ](../data-warehouse-mgr/tour-dwm.md)-plattformen genom att förstå hur SQL översätts i [!DNL Commerce Intelligence].
 
 I slutet av det här avsnittet finns en **översättningsmatris** för SQL-frågesatser och [!DNL Commerce Intelligence] -element.
 
@@ -53,7 +53,7 @@ Titta på ett specifikt exempel på hur ett `Total Revenue`-mått kan definieras
 | `email NOT LIKE '%@magento.com'` | Mått `filter` |
 | `AND created_at < X`<br><br>`AND created_at >= Y` | Mått `timestamp` (och rapportering `time range`) |
 
-Navigera till måttverktyget genom att klicka på **[!UICONTROL Manage Data** > **&#x200B; Metrisk &#x200B;**> **Skapa nytt mätresultat]**. Du måste först markera rätt `source`-tabell, som i det här fallet är `orders`-tabellen. Därefter ställs måtten in enligt nedan:
+Navigera till måttverktyget genom att klicka på **[!UICONTROL Manage Data** > ** Metrisk **> **Skapa nytt mätresultat]**. Du måste först markera rätt `source`-tabell, som i det här fallet är `orders`-tabellen. Därefter ställs måtten in enligt nedan:
 
 ![Måttaggregering](../../assets/Metric_aggregation.png)
 
@@ -73,9 +73,9 @@ Frågan för den här aggregeringen kan se ut ungefär som nedan:
 | `ON c.customer_id = o.customer_id` | Bana |
 | `WHERE o.status = 'success'` | Aggregera, filter |
 
-Om du konfigurerar detta i [!DNL Commerce Intelligence] måste du använda din kundhanterare, där du skapar en sökväg mellan din `orders`- och `customers`-Data Warehouse och sedan skapar en  med namnet `Customer LTV` i kundens tabell.
+Om du konfigurerar detta i [!DNL Commerce Intelligence] måste du använda din Data Warehouse-hanterare, där du skapar en sökväg mellan din `orders` - och `customers`-tabell och sedan skapar en kolumn med namnet `Customer LTV` i kundens tabell.
 
-Titta på hur du skapar en ny sökväg mellan `customers` och `orders`. Slutmålet är att skapa en ny aggregerad kolumn i tabellen `customers`, så navigera först till tabellen `customers` i Datan Warehouse och klicka sedan på **[!UICONTROL Create a Column** > **&#x200B; Markera en definition &#x200B;**> **SUM]**.
+Titta på hur du skapar en ny sökväg mellan `customers` och `orders`. Slutmålet är att skapa en ny aggregerad kolumn i tabellen `customers`, så navigera först till tabellen `customers` i Data Warehouse och klicka sedan på **[!UICONTROL Create a Column** > ** Välj en definition **> **SUM]**.
 
 Sedan måste du välja källtabellen. Om det finns en sökväg till din `orders`-tabell väljer du den i listrutan. Om du skapar en ny sökväg klickar du på **[!UICONTROL Create new path]** så visas skärmen nedan:
 
@@ -97,7 +97,7 @@ Nu när du har skapat den nya `Customer LTV`-kolumnen i din `customers`-tabell k
 >
 >För det senare måste du [lägga till dimensionen i befintliga mått](../data-warehouse-mgr/manage-data-dimensions-metrics.md) innan den är tillgänglig som `filter` eller `group by` när du skapar en ny beräknad kolumn.
 
-Se [skapa beräknade kolumner](../data-warehouse-mgr/creating-calculated-columns.md) med Data Warehouse Manager.
+Se [skapa beräknade kolumner](../data-warehouse-mgr/creating-calculated-columns.md) med din Data Warehouse Manager.
 
 ## `Group By`-satser
 

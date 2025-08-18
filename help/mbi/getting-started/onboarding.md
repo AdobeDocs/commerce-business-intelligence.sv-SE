@@ -27,7 +27,7 @@ Startfrågorna som rör inställningarna för `store` och `database` säkerstäl
 
 - *Vilken version av Commerce använder du?* - Välj den `currency` som din butik arbetar i.
 
-- *Är din butik baserad i EU?* - Om du svarar `Yes` på den här frågan är Adobe värd för din Data Warehouse och alla dina data i EU, i enlighet med den allmänna dataskyddsförordningen.
+- *Är din butik baserad i EU?* - Om du svarar `Yes` på den här frågan är Adobe värd för din Data Warehouse och alla dina data i EU, i enlighet med GDPR.
 
 ## Databasinställningar
 

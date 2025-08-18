@@ -13,19 +13,19 @@ ht-degree: 0%
 
 # Inkluderade instrumentpaneler
 
-[!DNL Adobe] erbjuder `eCommerce`- och `SaaS` startpaket. Dessa paket, som skapats av analytiker från Adobe, innehåller en anpassad uppsättning instrumentpaneler och rapporter för din datamängd. Analyserna i dessa paket gör det möjligt att kontrollera hälsan hos viktiga mätvärden som användarlivstidsintäkter, antal upprepade köp med mera, vilket skapar en stabil grund för framtida utforskande.
+[!DNL Adobe] erbjuder `eCommerce`- och `SaaS` startpaket. Dessa paket, som skapats av Adobe analytiker, innehåller en anpassad uppsättning instrumentpaneler och rapporter för din datamängd. Analyserna i dessa paket gör det möjligt att kontrollera hälsan hos viktiga mätvärden som användarlivstidsintäkter, antal upprepade köp med mera, vilket skapar en stabil grund för framtida utforskande.
 
 >[!NOTE]
 >
 >Tillgängligheten för vissa instrumentpaneler beror på din datamängd.
 
-Om du har frågor eller vill lägga till ett paket till ditt konto skickar du en [supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE) för hjälp.
+Om du har frågor eller vill lägga till ett paket till ditt konto skickar du en [supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) för hjälp.
 
 ## Översikt
 
 Kontrollpanelen `executive overview` har skapats från diagram som finns på andra instrumentpaneler. Den här instrumentpanelen är en översikt på hög nivå över dina data och innehåller diagram som skulle granskas dagligen, medan andra instrumentpaneler innehöll mer detaljerad information. Till att börja med anges den som standardinstrumentpanel för varje konto.
 
-En allmän uppsättning diagram ingår. Adobe rekommenderar att du skräddarsyr den här instrumentpanelen efter dina behov genom att lägga till andra diagram som du använder mest.
+En allmän uppsättning diagram ingår. Adobe rekommenderar att du anpassar den här instrumentpanelen efter dina behov genom att lägga till andra diagram som du använder mest.
 
 ## Kohortanalys
 

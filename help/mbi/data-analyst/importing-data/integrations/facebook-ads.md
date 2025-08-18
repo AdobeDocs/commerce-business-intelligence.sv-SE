@@ -1,5 +1,5 @@
 ---
-title: Connect Facebook Ads
+title: Anslut Facebook-annonser
 description: Lär dig hur ni analyserar era annonsutgiftsdata och ser om era pengar används effektivt.
 exl-id: 219a868b-f17c-4299-9e29-94db9156c9b6
 role: Admin, Data Architect, Data Engineer, User
@@ -58,7 +58,7 @@ Kontrollera att du spårar [!DNL Facebook] kampanjer i [!DNL Google Analytics]. 
 
 ## Relaterad
 
-* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=sv-SE)
+* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [Anslut ditt [!DNL Google Adwords] konto](../integrations/google-ecommerce.md)
 * [Spåra referenskälla för order via  [!DNL Google eCommerce]](../integrations/google-ecommerce.md)
 * [Spåra hänvisningskälla för användare i databasen](../../analysis/google-track-user-acq.md)

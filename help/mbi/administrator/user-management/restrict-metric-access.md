@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Förutom att ange behörighetsnivåer för användare kan du även begränsa åtkomsten till mätvärden per användare. Om du t.ex. vill att redovisningsavdelningen ska ha tillgång till intäktsrelaterade mått, men inte användaranhämtningsvärden, kan du begränsa åtkomsten till dessa värden.
 
-I sådana fall rekommenderar Adobe att du anger användarens konto till **[[!UICONTROL Standard]](../../administrator/user-management/user-management.md)**. **[!UICONTROL Standard]**-behörigheter bör ges till användare som inte behöver skapa eller ändra mått, beräknade kolumner, integreringar eller användare, men som behöver åtkomst till data i Datan Warehouse. Om du vill begränsa åtkomsten till data fullständigt ska du använda behörigheterna **[!UICONTROL Read Only]** i stället.
+I sådana fall rekommenderar Adobe att du anger användarens konto till **[[!UICONTROL Standard]](../../administrator/user-management/user-management.md)**. **[!UICONTROL Standard]**-behörigheter bör ges till användare som inte behöver skapa eller ändra mått, beräknade kolumner, integreringar eller användare, men som behöver åtkomst till data i Data Warehouse. Om du vill begränsa åtkomsten till data fullständigt ska du använda behörigheterna **[!UICONTROL Read Only]** i stället.
 
 När du har angett behörighetsnivån kan du välja de mått som en **[!UICONTROL Standard]**-användare har åtkomst till genom att göra följande:
 
@@ -26,7 +26,7 @@ När du har angett behörighetsnivån kan du välja de mått som en **[!UICONTRO
 
 >[!NOTE]
 >
->Alla användare med **[!UICONTROL Standard]**-behörighet har åtkomst till alla data i Datan Warehouse via dataexport utöver alla mått från [!DNL Google Analytics].
+>Alla användare med **[!UICONTROL Standard]**-behörighet har åtkomst till alla data i Data Warehouse via dataexport utöver alla mått från [!DNL Google Analytics].
 
 Du kan också begränsa åtkomsten till ett mätresultat genom att redigera mätvärdena och **[!UICONTROL Standard]** välja användare i avsnittet **[[!UICONTROL User Rights]](../../data-user/reports/ess-manage-data-metrics.md)**.
 

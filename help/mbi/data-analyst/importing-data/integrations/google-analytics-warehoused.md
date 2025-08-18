@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ![](../../../assets/google-analytics-logo.png)
 
-[!DNL Google Analytics] är den mest använda webbanalystjänsten på Internet. Genom att implementera [!DNL Google Analytics] på din webbplats kan du spåra hur besökarna använder din webbplats, vilket innehåll som är attraktivt, var besökarna lämnar webbplatsen och mycket annat. [!DNL Google Analytics Warehoused] är en separat integrering med din befintliga [!DNL Google Analytics]-integrering. Det ger en bättre analys eftersom [!DNL Google Analytics]-data finns i Datan Warehouse, vilket skiljer sig från liveflödet i den befintliga [!DNL Google Analytics]-integreringen. Om du analyserar dessa mått i [!DNL Commerce Intelligence], tillsammans med andra datadelar, förbättras webbplatsens övergripande hälsa och användbarhet.
+[!DNL Google Analytics] är den mest använda webbanalystjänsten på Internet. Genom att implementera [!DNL Google Analytics] på din webbplats kan du spåra hur besökarna använder din webbplats, vilket innehåll som är attraktivt, var besökarna lämnar webbplatsen och mycket annat. [!DNL Google Analytics Warehoused] är en separat integrering med din befintliga [!DNL Google Analytics]-integrering. Det ger bättre analys eftersom [!DNL Google Analytics]-data finns i din Data Warehouse, vilket skiljer sig från liveflödet i den befintliga [!DNL Google Analytics]-integreringen. Om du analyserar dessa mått i [!DNL Commerce Intelligence], tillsammans med andra datadelar, förbättras webbplatsens övergripande hälsa och användbarhet.
 
 ## Skillnaden mellan GA Warehouse och Live Integration
 
@@ -29,13 +29,13 @@ Titta på [!DNL Google Analytics] annonskampanjer för att få ett exempel på v
 
 Kombinationsaspekten tillåter att [!DNL Google Analytics] data kopplas till andra data för att utföra analyser. Ta t.ex. `Total Time On Site By Ad Campaign` data från [!DNL Google Analytics] och anslut dem till `Total Spent Per Campaign` data från [!DNL Facebook Ads] för att få en fullständig bild av hur mycket engagemang som kostar er.
 
-Med integreringen av [!DNL Google Analytics Live] å andra sidan är varje [!DNL Google Analytics]-diagram som en liten silo som inte lagras i Datan Warehouse.
+Med integreringen av [!DNL Google Analytics Live] å andra sidan är varje [!DNL Google Analytics]-diagram som en liten silo som inte lagras i din Data Warehouse.
 
 ## Ansluter [!DNL Google Analytics Warehoused]
 
 >[!INFO]
 >
->[!DNL Google Analytics Warehoused] är en `Premium`-integrering. [Kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE) om du vill lägga till den här integreringen i din prenumeration.
+>[!DNL Google Analytics Warehoused] är en `Premium`-integrering. [Kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) om du vill lägga till den här integreringen i din prenumeration.
 
 1. Gå till sidan `Connections` under **[!UICONTROL Admin** > **Integrations]**.
 1. Klicka på **[!UICONTROL Add an Integration]**, som finns till höger.
@@ -63,7 +63,7 @@ Så här identifierar du en viss webbplats profil-ID [!DNL Google Analytics]:
 
 ## Relaterad dokumentation
 
-* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=sv-SE)
+* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [Ansluter  [!DNL Google Adwords]](../integrations/google-adwords.md)
 * [Analysera webbplatsaktivitet och kundkonverteringsgrader](../../analysis/web-act-cust-conversion.md)
 * [Spåra kundvärvningsdata med hjälp av  [!DNL Google Analytics] cookies](../../analysis/google-track-user-acq.md)

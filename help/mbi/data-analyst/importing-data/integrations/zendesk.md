@@ -31,17 +31,17 @@ Du måste öppna två webbläsarfönster eller flikar för att kunna slutföra d
 
 ## Öppna sidan [!DNL Zendesk] med autentiseringsuppgifter i [!DNL Commerce Intelligence] {#stepone}
 
-1. Gå till sidan `Integrations` under **[!UICONTROL Manage Data** > **&#x200B; Datakällor &#x200B;**> **Integrationer]**.
+1. Gå till sidan `Integrations` under **[!UICONTROL Manage Data** > ** Datakällor **> **Integrationer]**.
 1. Klicka på **[!UICONTROL Add Integration]** till höger på skärmen.
 1. Klicka på ikonen [!DNL Zendesk]. Då öppnas sidan med [!DNL Zendesk] inloggningsuppgifter.
 
 ## Hämta din [!DNL Zendesk] API-token {#steptwo}
 
 1. Klicka på inställningsikonen (kugghjulsikonen) längst ned till vänster på skärmen i fönstret/fliken där du är inloggad på ditt [!DNL Zendesk]-konto.
-1. Leta reda på avsnittet `Channels` när menyn `Settings` visas. Klicka på **[!UICONTROL API]** i det här avsnittet.
-1. Klicka i kryssrutan bredvid `Enabled` i avsnittet `Token Access` på den här sidan. En lista över visning av Active API-token.
+1. Leta reda på avsnittet `Settings` när menyn `Channels` visas. Klicka på **[!UICONTROL API]** i det här avsnittet.
+1. Klicka i kryssrutan bredvid `Token Access` i avsnittet `Enabled` på den här sidan. En lista över visning av Active API-token.
 1. Klicka på **[!UICONTROL Add New Token]**.
-1. Ange en etikett för token när du uppmanas till detta. Adobe rekommenderar att du använder `Commerce Intelligence`, så du vet i korthet vilket program som använder token.
+1. Ange en etikett för token när du uppmanas till detta. Adobe rekommenderar att du använder `Commerce Intelligence` så att du snabbt vet vilket program som använder token.
 1. Klicka på **[!UICONTROL Create]**.
 1. En API-token skapas. Kopiera denna token. Den kommer att användas i nästa steg.
 
@@ -54,4 +54,4 @@ Du måste öppna två webbläsarfönster eller flikar för att kunna slutföra d
 ## Relaterat:
 
 * [ [!DNL Zendesk] data förväntades](../integrations/exp-zendesk-data.md)
-* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=sv-SE)
+* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

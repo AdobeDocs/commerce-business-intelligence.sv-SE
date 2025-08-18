@@ -15,7 +15,7 @@ ht-degree: 0%
 
 När [du har anslutit ditt [!DNL Mixpanel] konto](../integrations/mixpanel.md) kan du använda [Data Warehouse Manager](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) för att enkelt spåra relevanta datafält för analys.
 
-I det här avsnittet utforskas de huvuddatatabeller som du kan importera från [!DNL Mixpanel] till ditt [!DNL Commerce Intelligence]-konto. Följande tabeller kommer att skapas i Datan Warehouse när du har anslutit [!DNL Mixpanel]. Om du vill visa alla fält som är tillgängliga för spårning klickar du på länkarna i tabellnamnskolumnen.
+I det här avsnittet utforskas de huvuddatatabeller som du kan importera från [!DNL Mixpanel] till ditt [!DNL Commerce Intelligence]-konto. Följande tabeller kommer att skapas i din Data Warehouse när du har anslutit [!DNL Mixpanel]. Om du vill visa alla fält som är tillgängliga för spårning klickar du på länkarna i tabellnamnskolumnen.
 
 >[!NOTE]
 >
@@ -32,4 +32,4 @@ I det här avsnittet utforskas de huvuddatatabeller som du kan importera från [
 ## Relaterad dokumentation
 
 * [Ansluter  [!DNL Mixpanel]](../integrations/mixpanel.md)
-* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=sv-SE)
+* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

@@ -17,7 +17,7 @@ Du är bekväm med att utforma frågor och vara den person som ska ta sig an dat
 
 I det här avsnittet visas hur du:
 * ansluta och importera data till [!DNL Commerce Intelligence]
-* visa hur data lagras och struktureras i Datan Warehouse
+* visa hur data lagras och struktureras i din Data Warehouse
 * analysera era data
 * använd [!DNL SQL Report Builder]
 

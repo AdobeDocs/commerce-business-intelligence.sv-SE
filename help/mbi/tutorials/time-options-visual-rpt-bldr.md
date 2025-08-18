@@ -66,7 +66,7 @@ Nu kan du se hur effektfullt varje månad var förra året:
 
 ## Jämföra samma mått över olika tidsintervall {#difftimerange}
 
-I det här exemplet används en anpassad dimension med namnet `Day number of the month`. Om du vill skapa den här rapporten och inte redan har den här dimensionen i din Data Warehouse kan du [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE) om du behöver hjälp.
+I det här exemplet används en anpassad dimension med namnet `Day number of the month`. Om du vill skapa den här rapporten och inte redan har den här dimensionen i din Data Warehouse [kontaktar du support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) för att få hjälp.
 
 De två vanligaste exemplen i den här kategorin är (1) att jämföra tillväxtstatistik (intäkter år för år eller månad för månad) och (2) att bättre förstå de senaste trenderna inom lager- eller artikelförsäljning.
 
@@ -127,14 +127,14 @@ Kom ihåg att ange tidsintervall till vad du behöver när du skapar den här ra
 
 Om du vill skapa formlerna klickar du på **[!UICONTROL Add Formula]**. Ange formlerna nedan och klicka på **[!UICONTROL Apply Changes]** när du är klar. Upprepa detta för var och en av de tre tidsperioderna:
 
-* Ange `D / A` i fältet `Formula` för `last 7 days time period`.
-* Ange `D / (B/4)` i fältet `Formula` för `last 28 days time period`.
+* Ange `last 7 days time period` i fältet `D / A` för `Formula`.
+* Ange `last 28 days time period` i fältet `D / (B/4)` för `Formula`.
 
   >[!NOTE]
   >
   >Det är viktigt att normalisera de valda tidsintervallen här. Bryt 28 dagar i fyra veckor i det här exemplet. Du kan behöva använda en annan logik för formeln.
 
-* Ange `D / C` i fältet `Formula` för `last promo period`.
+* Ange `last promo period` i fältet `D / C` för `Formula`.
 
   ![](../assets/Different_Time_Ranges_2.png)
 

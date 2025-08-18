@@ -1,5 +1,5 @@
 ---
-title: Kohort Report Builder
+title: Cohort Report Builder
 description: Lär dig mer om analysen av användargrupper som delar liknande egenskaper under sina livscykler.
 exl-id: d80c5389-7256-40e0-86e0-49903113f93d
 role: Admin, Data Architect, Data Engineer, User
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 ---
 
-# Kohort Report Builder
+# Cohort Report Builder
 
 Har du någonsin velat studera hur olika delar av dina användare beter sig över tiden? Har du till exempel undrat om användare som registrerar sig under en kampanjperiod har en högre genomsnittlig livstidsintäkt än de som inte gör det? Om svaret är `Yes` är `Cohort Report Builder` det perfekta verktyget för dig. [!DNL Adobe Commerce Intelligence] är optimerad för att utföra den här analysen och göra den relevant för din verksamhet.
 
@@ -35,7 +35,7 @@ Det här är instruktionerna för att använda `Cohort Report Builder` i den [ny
 
 1. Klicka på **[!UICONTROL Report Builder]** på den vänstra fliken eller **[!UICONTROL Add Report** > **Create Report]** på en kontrollpanel.
 
-1. Klicka på **[!UICONTROL Create Report]** bredvid alternativet `Visual Report Builder` på markeringsskärmen `Report Builder`.
+1. Klicka på `Report Builder` bredvid alternativet **[!UICONTROL Create Report]** på markeringsskärmen `Visual Report Builder`.
 
 **Lägger till ett mått**
 
@@ -59,7 +59,7 @@ Ett nytt fönster öppnas där informationen i rapporten `Cohort` konfigureras.
 1. Den minsta mängden data som varje `cohort` måste innehålla
 1. Tidsintervall efter `cohort` förekomst
 
-#### 1. Gruppera `cohorts`
+#### &#x200B;1. Gruppera `cohorts`
 
 `Cohorts` grupperas efter en tidsstämpel, till exempel **registreringsdatum** eller **första orderdatum**.
 
@@ -67,17 +67,17 @@ Ett nytt fönster öppnas där informationen i rapporten `Cohort` konfigureras.
 >
 >Du kan inte använda samma tidsstämpel som måttet är byggt på för datumet `cohort`. För en analys som kräver detta kan du använda `Standard report builder` i stället.
 
-#### 2. `Cohort`-tidsperiod
+#### &#x200B;2. `Cohort`-tidsperiod
 
 Välj den tidsperiod som `cohorts` ska grupperas efter. Med andra ord, vilken del av tidsstämpeln som du markerade ovan är viktigast: `week`, `month`, `quarter` eller `year`? Din rapport visar data i valfritt intervall som du väljer här
 
-#### 3. och 4. Ange antalet `cohorts` som ska visas och hur mycket data varje `cohort` måste ha
+#### &#x200B;3. och 4. Ange antalet `cohorts` som ska visas och hur mycket data varje `cohort` måste ha
 
 De här parametrarna hjälper dig att endast visa `cohorts` som du är intresserad av, och den praktiska `Preview`-rutan längst ned i fönstret visar exakt vilka kohorter som visas i rapporten.
 
 Som standard inkluderas inte aktuell `cohort` om du inte ändrar den minsta mängden data som krävs för varje `cohort` till `0`. I det här fallet innehåller `cohort` för den aktuella tidsperioden endast partiella data.
 
-#### 5. Tidsintervall efter `Cohort` förekomst
+#### &#x200B;5. Tidsintervall efter `Cohort` förekomst
 
 Med den här funktionen kan du ange det tidsintervall med data som du visar för den markerade `cohorts`. Om du till exempel vill visa `cohorts` varje månad `customer's first order date`, men bara är intresserad av de första tre månaderna med data för varje `cohort` , kan du ange `number of cohorts to view` till `24` och `time range after cohort occurrence` till `3`.
 
@@ -109,11 +109,11 @@ Nedan finns instruktioner som är specifika för den äldre versionen av `Cohort
 
 `Cohort`-analys används! Här kan du se hur intäkterna ökar med tiden på kumulativ basis och per användare.
 
-I det här avsnittet får du hjälp med att skapa en egen `cohort`-analys. Exempel (och animerad GIF som demonstrerar processen) finns i avsnittet [Exempel](#examples) i det här avsnittet.
+I det här avsnittet får du hjälp med att skapa en egen `cohort`-analys. Exempel (och animerade GIF-filer som demonstrerar processen) finns i avsnittet [Exempel](#examples) i det här avsnittet.
 
 1. Klicka på **[!UICONTROL Report Builder]** på den vänstra fliken eller **[!UICONTROL Add Report** > **Create Report]** på en kontrollpanel.
 
-1. Klicka på **[!UICONTROL Create Report]** bredvid alternativet `Cohort Analysis` på skärmen `Report Builder Selection`.
+1. Klicka på `Report Builder Selection` bredvid alternativet **[!UICONTROL Create Report]** på skärmen `Cohort Analysis`.
 
 #### Lägga till ett mått
 

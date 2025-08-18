@@ -33,7 +33,7 @@ När mätvärden används i rapporter kan de analyseras över en angiven tidsper
 
 1. Namnge mätvärdena.
 
-   Adobe rekommenderar ett namn som i korthet talar om för dig vad måttet är. Till exempel: `Average Order Revenue`.
+   Adobe rekommenderar ett namn som i korthet anger vad måttet är. Till exempel: `Average Order Revenue`.
 
 1. Nästa steg är att definiera vad mätvärdena gör. Ange måttets åtgärd, kolumnen `operation` och en `date`-dimension med hjälp av listrutemenyerna:
 
@@ -64,9 +64,9 @@ I avsnittet `Filter Logic` kan du ytterligare definiera hur ett mätresultat ska
 
 * &quot;\[`A`\] eller \[`B`\]&quot; tillåter alla data som uppfyller filtren \[`A`\] ELLER \[`B`\]
 * &quot;\[`A`\] och \[`B`\]&quot; tillåter endast data som uppfyller båda filtren \[`A`\] och \[`B`\]
-* &quot;(\[`A`\] och \[`B`\]) ELLER \[`C`\]&quot; tillåter endast data som antingen uppfyller båda filtren \[`A`\] och \[`B`\], eller bara uppfyller filtret \[&lbrace;5\]`C`
+* &quot;(\[`A`\] och \[`B`\]) ELLER \[`C`\]&quot; tillåter endast data som antingen uppfyller båda filtren \[`A`\] och \[`B`\], eller bara uppfyller filtret \[{5\]`C`
 
-## Lägga till Dimensioner {#dimensions}
+## Lägga till dimensioner {#dimensions}
 
 Avsnittet [`Dimensions`](../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) visar alla tillgängliga datamått för filtrering eller gruppering. Som standard listas alla tillgängliga datakolumner som dimensioner. Om du vill segmentera dina intäkter utifrån hänvisningskälla kan du göra det här.
 

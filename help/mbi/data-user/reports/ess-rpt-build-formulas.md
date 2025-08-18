@@ -49,7 +49,7 @@ En formel kombinerar flera mätvärden och matematisk logik för att besvara en 
 
    Gör följande:
 
-   * Ange `A/B` i indatarutan `Enter your Formula`.
+   * Ange `Enter your Formula` i indatarutan `A/B`.
 
      Detta dividerar intäkterna efter beställda produkter med antalet nya kunder.
 
@@ -75,7 +75,7 @@ En formel kombinerar flera mätvärden och matematisk logik för att besvara en 
 
      I det här exemplet är helgsäsongen från `November 1` till `December 31`.
 
-   * Välj `Day` under `Select Time Interval`.
+   * Välj `Select Time Interval` under `Day`.
 
      ![Fast datumintervall](../../assets/magento-bi-report-builder-revenue-by-products-formula-report-fixed-date-range.png)
 
@@ -95,7 +95,7 @@ I det här steget sparar du rapporten som ett diagram och som en tabell.
 
    * Klicka på **[!UICONTROL Save]** i det övre högra hörnet.
 
-   * Acceptera standardinställningen `Chart` för `Type`.
+   * Acceptera standardinställningen `Type` för `Chart`.
 
    * Välj `Dashboard` där rapporten ska vara tillgänglig.
 

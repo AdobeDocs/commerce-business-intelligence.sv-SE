@@ -30,4 +30,4 @@ I det här avsnittet utforskas de huvuddatatabeller som du kan importera från [
 ## Relaterat:
 
 * [Ansluter  [!DNL Spree]](../integrations/spree.md)
-* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=sv-SE)
+* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
