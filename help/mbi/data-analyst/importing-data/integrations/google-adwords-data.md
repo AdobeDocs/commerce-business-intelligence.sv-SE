@@ -89,4 +89,4 @@ Med hjälp av dessa data kan du börja skapa [mått](../../../data-user/reports/
 
 Om du inte har någon konsoliderad tabell och du skapar en vacker kontrollpanel i tabellen `adwords` måste du replikera rapporten eller skapa dubblettmått för att jämföra data med dina [!DNL Facebook Ads]-data. Om du använder en konsoliderad tabell kan du sömlöst införliva [!DNL Facebook Ads]-data med dina befintliga [!DNL Adwords]-rapporter. Ni kan även segmentera per annonsplattform.
 
-Om du redan har synkroniserat fälten ovan, [kontaktar du oss](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) för att konsolidera din annonsutgift.
+Om du redan har synkroniserat fälten ovan, [kontaktar du oss](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE) för att konsolidera din annonsutgift.

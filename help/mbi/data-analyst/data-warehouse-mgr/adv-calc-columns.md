@@ -161,7 +161,7 @@ Om du vill skapa den här typen av beräknad kolumn måste du känna till:
 
 Oroa dig inte. Bara för att det inte finns med här betyder det inte att det inte är möjligt. Adobe team med Data Warehouse Analysts kan hjälpa er.
 
-Om du vill definiera en ny beräknad kolumn, [skickar du en supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) med information om exakt vad du vill skapa.
+Om du vill definiera en ny beräknad kolumn, [skickar du en supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE) med information om exakt vad du vill skapa.
 
 ## Relaterad dokumentation
 

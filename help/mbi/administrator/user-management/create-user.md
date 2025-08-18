@@ -40,4 +40,4 @@ Om du behöver skicka inbjudan igen klickar du på [inloggningssidan](https://da
 
 >[!IMPORTANT]
 >
->Varje konto har ett avtalat antal licenser, eller licenser. [Skicka en supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) om du når gränsen eller vill veta mer.
+>Varje konto har ett avtalat antal licenser, eller licenser. [Skicka en supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE) om du når gränsen eller vill veta mer.

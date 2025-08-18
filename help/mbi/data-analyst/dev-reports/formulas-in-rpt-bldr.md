@@ -65,4 +65,4 @@ I det här exemplet använde du perspektivet `Stacked Columns` för att visa res
 
 Märkte du i exemplen ovan att formelns `timestamp`, `groupings`, `perspectives` och `filters` ärvs från indatamätningarna? Kom ihåg att formler kan användas för att använda `perspectives` och [oberoende tidsalternativ](../../tutorials/time-options-visual-rpt-bldr.md){: target="_blank"}, precis som mätvärden kan.
 
-`Report Builder`Kontakta support[ om du har ytterligare frågor om hur du använder formler i ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+`Report Builder`Kontakta support[ om du har ytterligare frågor om hur du använder formler i ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE).

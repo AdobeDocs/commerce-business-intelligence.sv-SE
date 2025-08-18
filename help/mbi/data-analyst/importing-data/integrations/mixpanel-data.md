@@ -32,4 +32,4 @@ I det här avsnittet utforskas de huvuddatatabeller som du kan importera från [
 ## Relaterad dokumentation
 
 * [Ansluter  [!DNL Mixpanel]](../integrations/mixpanel.md)
-* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=sv-SE)

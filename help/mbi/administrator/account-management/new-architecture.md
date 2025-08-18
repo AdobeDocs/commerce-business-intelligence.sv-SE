@@ -45,7 +45,7 @@ När detta är klart vet du vilka data du behöver synkronisera med den nya Data
 
 ### Få hjälp
 
-[!DNL Adobe Commerce Intelligence] [Services-teamet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) kan utföra din omimplementering till en extra kostnad. Kontakta ditt [Adobe-kontoteam](../../guide-overview.md#Submitting-a-Support-Ticket) och förbered dig för att tillhandahålla en lista med instrumentpaneler/rapporter som du vill prioritera när du skapar i det nya kontot
+[!DNL Adobe Commerce Intelligence] [Services-teamet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE) kan utföra din omimplementering till en extra kostnad. Kontakta ditt [Adobe-kontoteam](../../guide-overview.md#Submitting-a-Support-Ticket) och förbered dig för att tillhandahålla en lista med instrumentpaneler/rapporter som du vill prioritera när du skapar i det nya kontot
 
 ### Statistik med befintlig arkitektur
 
