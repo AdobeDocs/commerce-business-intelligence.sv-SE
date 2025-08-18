@@ -64,7 +64,7 @@ I avsnittet `Filter Logic` kan du ytterligare definiera hur ett mätresultat ska
 
 * &quot;\[`A`\] eller \[`B`\]&quot; tillåter alla data som uppfyller filtren \[`A`\] ELLER \[`B`\]
 * &quot;\[`A`\] och \[`B`\]&quot; tillåter endast data som uppfyller båda filtren \[`A`\] och \[`B`\]
-* &quot;(\[`A`\] och \[`B`\]) ELLER \[`C`\]&quot; tillåter endast data som antingen uppfyller båda filtren \[`A`\] och \[`B`\], eller bara uppfyller filtret \[{5\]`C`
+* &quot;(\[`A`\] och \[`B`\]) ELLER \[`C`\]&quot; tillåter endast data som antingen uppfyller båda filtren \[`A`\] och \[`B`\], eller bara uppfyller filtret \[&lbrace;5\]`C`
 
 ## Lägga till dimensioner {#dimensions}
 

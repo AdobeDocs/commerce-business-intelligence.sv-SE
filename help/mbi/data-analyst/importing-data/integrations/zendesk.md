@@ -31,7 +31,7 @@ Du måste öppna två webbläsarfönster eller flikar för att kunna slutföra d
 
 ## Öppna sidan [!DNL Zendesk] med autentiseringsuppgifter i [!DNL Commerce Intelligence] {#stepone}
 
-1. Gå till sidan `Integrations` under **[!UICONTROL Manage Data** > ** Datakällor **> **Integrationer]**.
+1. Gå till sidan `Integrations` under **[!UICONTROL Manage Data** > **&#x200B; Datakällor &#x200B;**> **Integrationer]**.
 1. Klicka på **[!UICONTROL Add Integration]** till höger på skärmen.
 1. Klicka på ikonen [!DNL Zendesk]. Då öppnas sidan med [!DNL Zendesk] inloggningsuppgifter.
 

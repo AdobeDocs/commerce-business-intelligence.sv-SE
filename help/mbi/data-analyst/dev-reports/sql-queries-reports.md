@@ -53,7 +53,7 @@ Titta på ett specifikt exempel på hur ett `Total Revenue`-mått kan definieras
 | `email NOT LIKE '%@magento.com'` | Mått `filter` |
 | `AND created_at < X`<br><br>`AND created_at >= Y` | Mått `timestamp` (och rapportering `time range`) |
 
-Navigera till måttverktyget genom att klicka på **[!UICONTROL Manage Data** > ** Metrisk **> **Skapa nytt mätresultat]**. Du måste först markera rätt `source`-tabell, som i det här fallet är `orders`-tabellen. Därefter ställs måtten in enligt nedan:
+Navigera till måttverktyget genom att klicka på **[!UICONTROL Manage Data** > **&#x200B; Metrisk &#x200B;**> **Skapa nytt mätresultat]**. Du måste först markera rätt `source`-tabell, som i det här fallet är `orders`-tabellen. Därefter ställs måtten in enligt nedan:
 
 ![Måttaggregering](../../assets/Metric_aggregation.png)
 
@@ -75,7 +75,7 @@ Frågan för den här aggregeringen kan se ut ungefär som nedan:
 
 Om du konfigurerar detta i [!DNL Commerce Intelligence] måste du använda din Data Warehouse-hanterare, där du skapar en sökväg mellan din `orders` - och `customers`-tabell och sedan skapar en kolumn med namnet `Customer LTV` i kundens tabell.
 
-Titta på hur du skapar en ny sökväg mellan `customers` och `orders`. Slutmålet är att skapa en ny aggregerad kolumn i tabellen `customers`, så navigera först till tabellen `customers` i Data Warehouse och klicka sedan på **[!UICONTROL Create a Column** > ** Välj en definition **> **SUM]**.
+Titta på hur du skapar en ny sökväg mellan `customers` och `orders`. Slutmålet är att skapa en ny aggregerad kolumn i tabellen `customers`, så navigera först till tabellen `customers` i Data Warehouse och klicka sedan på **[!UICONTROL Create a Column** > **&#x200B; Välj en definition &#x200B;**> **SUM]**.
 
 Sedan måste du välja källtabellen. Om det finns en sökväg till din `orders`-tabell väljer du den i listrutan. Om du skapar en ny sökväg klickar du på **[!UICONTROL Create new path]** så visas skärmen nedan:
 

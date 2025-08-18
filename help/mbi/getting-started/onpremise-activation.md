@@ -118,7 +118,7 @@ Ange din [!DNL Commerce Intelligence]-information på skärmen [!UICONTROL Conne
 
 [!UICONTROL Port]: `3306`
 
-[!UICONTROL-användarnamn]: `mbi`
+[!UICONTROL -användarnamn]: `mbi`
 
 [!UICONTROL Password]: [indatalösenordet visas i föregående avsnitt]
 

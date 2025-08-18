@@ -48,7 +48,7 @@ Varje rad i tabellen `enterprise_rma` (kallas ofta `magento_rma` i Adobe Commerc
 |---|---|---|
 | `Number of returns` | Antalet begärda returer. | `Operation` kolumn: `entity id`<br>`Operation`: `Count`<br>`Timestamp` Kolumn: `date requested` |
 | `Total returned amount` | Det totala penningbelopp som returneras. | `Operation `Kolumn: `Return's total value`<br>`Operation`: Summa<br>`Timestamp` Kolumn: begärt datum |
-| `Average returned amount` | Det genomsnittliga penningbelopp som returneras. | `Operation`` Column: Return's total value`<br>`Operation`: `Average`<br>`Timestamp` Kolumn: `date requested` |
+| `Average returned amount` | Det genomsnittliga penningbelopp som returneras. | `Operation` ` Column: Return's total value`<br>`Operation`: `Average`<br>`Timestamp` Kolumn: `date requested` |
 | `Average time to return` | Genomsnittlig tid från order till retur. | `Operation` Kolumn: Sekunder mellan order som skapas vid och det begärda returdatumet <br>`Operation`: `Average`<br>`Timestamp` Kolumn: `date requested` |
 
 {style="table-layout:auto"}

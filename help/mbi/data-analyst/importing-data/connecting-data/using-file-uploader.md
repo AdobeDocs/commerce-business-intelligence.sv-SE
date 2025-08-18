@@ -46,7 +46,7 @@ Eftersom filerna måste vara i formatet `CSV` kan användning av kommatecken ors
 
 ### Datum
 
-Alla datauppsättningar som innehåller datum måste använda standarddatumformatet [](https://dev.mysql.com/doc/refman/5.7/en/datetime.html) `YYYY-MM-DD HH:MM:SS` eller `MM/DD/YYYY`.
+Alla datauppsättningar som innehåller datum måste använda standarddatumformatet [&#128279;](https://dev.mysql.com/doc/refman/5.7/en/datetime.html) `YYYY-MM-DD HH:MM:SS` eller `MM/DD/YYYY`.
 
 ### Specialtecken
 

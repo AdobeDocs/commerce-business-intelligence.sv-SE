@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Ni har undersökt er målgrupp, skapat kampanjen och investerat i några marknadsföringskanaler. Nu när tiden har gått, hur fungerar dessa kanaler? Vilken kanal har de senaste användarna fått? Vilken källa har bidragit mest till dina totala intäkter?
 
-Med [!DNL Adobe Commerce Intelligence] kan du enkelt segmentera intäkter och användare utifrån hänvisningskälla, oavsett om det motsvarar [!DNL [Google Analytics' UTM fields]](https://support.google.com/analytics/answer/1191184?hl=en) eller anpassade datafält. Denna segmentering gör att ni kan hitta de kanaler som presterar bäst och investera er marknadsföringsbudget bättre.
+Med [!DNL Adobe Commerce Intelligence] kan du enkelt segmentera intäkter och användare utifrån hänvisningskälla, oavsett om det motsvarar [[!DNL [Google Analytics' UTM fields]]](https://support.google.com/analytics/answer/1191184?hl=en) eller anpassade datafält. Denna segmentering gör att ni kan hitta de kanaler som presterar bäst och investera er marknadsföringsbudget bättre.
 
 I det här avsnittet beskrivs några rapporter som du kan använda för att identifiera dina mest värdefulla marknadsföringskanaler:
 
