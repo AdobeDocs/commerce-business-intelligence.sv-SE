@@ -4,9 +4,9 @@ description: Lär dig mer om hur företagets ekonomi nu kan samverka med era sä
 exl-id: e100c88c-af59-4185-b2a2-c8e77bfd7277
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 32b1e1be4e372164da757cb339ba1618d33a75ea
 workflow-type: tm+mt
-source-wordcount: '139'
+source-wordcount: '172'
 ht-degree: 1%
 
 ---
@@ -20,6 +20,10 @@ ht-degree: 1%
 ![](../../../assets/Quickbooks.png)
 
 Med integreringen av [!DNL QuickBooks] kan företagets ekonomi nu leva tillsammans med dina sälj- och marknadsföringsdata, vilket gör att du snabbt och enkelt kan hålla koll på dina utgifter, identifiera överutgifter och mycket mer.
+
+>[!NOTE]
+>
+>Adobe Commerce Intelligence integreras med QuickBooks Online (inte skrivbordet) och kräver en Intuit-kontoinloggning med en molnanslutning som matchar QuickBooks Online-SaaS-strukturen i stället för den lokalt installerade QuickBooks-datormodellen.
 
 ## Lägg till [!DNL QuickBooks] som en datakälla i [!DNL Commerce Intelligence]
 
@@ -40,4 +44,4 @@ När du har klickat på **[!UICONTROL Connect to Quickbooks]** loggar du in på 
 ## Relaterad
 
 * [ [!DNL QuickBooks] data förväntades](../integrations/quickbooks-data.md)
-* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=sv-SE)
+* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
