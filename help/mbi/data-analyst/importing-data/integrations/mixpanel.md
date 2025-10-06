@@ -64,5 +64,5 @@ Om anslutningen lyckas, _lyckades!_-meddelandet visas högst upp på sidan.
 
 ### Relaterad
 
-* [ [!DNL Mixpanel] data förväntades](../integrations/mixpanel-data.md)
+* [&#x200B; [!DNL Mixpanel] data förväntades](../integrations/mixpanel-data.md)
 * [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

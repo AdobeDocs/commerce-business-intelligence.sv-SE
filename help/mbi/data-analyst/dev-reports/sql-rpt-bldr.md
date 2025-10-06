@@ -113,7 +113,7 @@ Klicka på **[!UICONTROL Save]** i det övre högra hörnet av [!DNL SQL]-redige
 
 #### [!DNL SQL Report Builder]
 
-[[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md) ger dig möjlighet att direkt fråga din Data Warehouse, visa resultaten och snabbt omvandla dem till en rapport. Om du använder [!DNL SQL] kan du även använda [funktioner som inte är tillgängliga [!DNL SQL]  i ](https://docs.aws.amazon.com/redshift/latest/dg/c_SQL_functions.html)- eller `Visual` Report Builders, vilket ger dig större kontroll över dina data.`Cohort`
+[[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md) ger dig möjlighet att direkt fråga din Data Warehouse, visa resultaten och snabbt omvandla dem till en rapport. Om du använder [!DNL SQL] kan du även använda [funktioner som inte är tillgängliga [!DNL SQL]  i &#x200B;](https://docs.aws.amazon.com/redshift/latest/dg/c_SQL_functions.html)- eller `Visual` Report Builders, vilket ger dig större kontroll över dina data.`Cohort`
 
 Beräknade kolumner som skapats med [!DNL SQL] är inte beroende av uppdateringscykler, vilket innebär att du kan iterera på dem som du vill och omedelbart se resultaten.
 

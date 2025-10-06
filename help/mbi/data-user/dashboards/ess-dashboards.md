@@ -33,7 +33,7 @@ Hur de instrumentpaneler du skapar ser ut är helt upp till dig. Du kan ordna oc
 
 1. Klicka på **[!UICONTROL Dashboards]** på menyn.
 
-1. Namnet på standardkontrollpanelen visas i det övre vänstra hörnet av kontrollpanelens sidhuvud. Klicka på nedpilen (![nedpilen ](../../assets/magento-bi-btn-down.png)) för att visa tillgängliga alternativ.
+1. Namnet på standardkontrollpanelen visas i det övre vänstra hörnet av kontrollpanelens sidhuvud. Klicka på nedpilen (![nedpilen &#x200B;](../../assets/magento-bi-btn-down.png)) för att visa tillgängliga alternativ.
 
    ![Skapa instrumentpanel](../../assets/magento-bi-dashboard-create.png)
 
@@ -49,7 +49,7 @@ Hur de instrumentpaneler du skapar ser ut är helt upp till dig. Du kan ordna oc
 
    ![instrumentpanelsnamn](../../assets/magento-bi-dashboard-create-name.png)
 
-   * Namnet på den nya instrumentpanelen visas i det övre vänstra hörnet. Klicka på nedpilen (![nedpilen ](../../assets/magento-bi-btn-down.png)) för att visa alternativen. Om du har skapat en grupp visas den nya kontrollpanelen under gruppen i listan.
+   * Namnet på den nya instrumentpanelen visas i det övre vänstra hörnet. Klicka på nedpilen (![nedpilen &#x200B;](../../assets/magento-bi-btn-down.png)) för att visa alternativen. Om du har skapat en grupp visas den nya kontrollpanelen under gruppen i listan.
 
 ### Lägg till en rapport
 

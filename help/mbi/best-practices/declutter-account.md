@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Oavsett om du har varit med [!DNL Commerce Intelligence] i sex månader eller sex år så är det av största vikt att du har ett tidskonto för att få ut så mycket som möjligt av plattformen. Med tiden är det naturligt att det finns användare, kontrollpaneler, rapporter, mätvärden och kolumner som inte längre behövs. Du kanske skapade en rapport för engångsbruk och glömde den eller en användare som lämnade företaget hade aldrig inaktiverat sitt konto.
 
-Med [standardiserad, tydlig namngivning för alla element ](../best-practices/naming-elements.md)) i ditt [!DNL Commerce Intelligence]-konto kan du minska problem och onödiga analyser för användarna genom att följa stegen nedan. Ytterligare en förmån är [potentiellt snabbare uppdateringscykler](../best-practices/reduce-update-cycle-time.md).
+Med [standardiserad, tydlig namngivning för alla element &#x200B;](../best-practices/naming-elements.md)) i ditt [!DNL Commerce Intelligence]-konto kan du minska problem och onödiga analyser för användarna genom att följa stegen nedan. Ytterligare en förmån är [potentiellt snabbare uppdateringscykler](../best-practices/reduce-update-cycle-time.md).
 
 ## Steg 1: Identifiera dina icke-aktiva användare
 

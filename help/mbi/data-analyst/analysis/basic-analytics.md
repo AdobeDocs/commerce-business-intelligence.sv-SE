@@ -327,7 +327,7 @@ Här är några vanliga exempel på rapporter och mätvärden som du kan använd
 >
 >Avmarkera `Multiple Y-Axes box` och `Hide` alla mått
 
-![Beställda produkter ](../../assets/products_ordered_pic2.png)<!--{: width="929"}-->
+![Beställda produkter &#x200B;](../../assets/products_ordered_pic2.png)<!--{: width="929"}-->
 
 ### Genomsnittligt ordervärde
 

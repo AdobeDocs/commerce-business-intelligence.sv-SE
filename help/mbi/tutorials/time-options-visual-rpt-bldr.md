@@ -25,7 +25,7 @@ Om du vill följa med i några av exempelrapporterna som beskrivs i det här avs
 
 ## Analyserar mätvärden utan tidsstämplar {#notimestamp}
 
-Vissa mätvärden kan inte trendas över tid eftersom data inte samlas in eller lagras med en associerad tidsstämpel. En inventeringstabell innehåller till exempel ofta bara en rad för varje SKU. I så fall bör du [skapa måttet ](../data-user/reports/ess-manage-data-metrics.md) utan att ange en tidsstämpel.
+Vissa mätvärden kan inte trendas över tid eftersom data inte samlas in eller lagras med en associerad tidsstämpel. En inventeringstabell innehåller till exempel ofta bara en rad för varje SKU. I så fall bör du [skapa måttet &#x200B;](../data-user/reports/ess-manage-data-metrics.md) utan att ange en tidsstämpel.
 
 När du använder ett sådant mått i din rapportering, märker du att om du lägger till det här måttet i en rapport anges automatiskt en oberoende `Time Interval` av `None` och `Time Range` av `Global`:
 

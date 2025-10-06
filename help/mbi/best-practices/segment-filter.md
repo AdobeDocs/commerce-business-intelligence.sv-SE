@@ -59,7 +59,7 @@ Med produktsegment kan ni fatta försäljningsbeslut.
 * **[!UICONTROL Social Activity]**: Finns det någon korrelation mellan den buzz som genereras på sociala medier och den kvantitet som säljs för en produkt?
 * **[!UICONTROL Size / Variant]**: Hur stor är kvoten för lager som du behöver för varje variant? Vilka varianter kan säljas till rabattpriser?
 
-Om du är intresserad av att handla ska du ta en titt på [hur du kan använda produktsegment för att få fler företag att göra ](../data-analyst/analysis/most-value-source-channel.md).
+Om du är intresserad av att handla ska du ta en titt på [hur du kan använda produktsegment för att få fler företag att göra &#x200B;](../data-analyst/analysis/most-value-source-channel.md).
 
 ## Upprätta kundprofiler
 

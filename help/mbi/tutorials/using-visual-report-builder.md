@@ -27,7 +27,7 @@ Om du vill redigera en rapport som skapats i [!DNL Visual Report Builder] klicka
 
 ## Steg 2: Lägga till mått
 
-Det första steget i att skapa en analys är att välja [måttet ](../data-user/reports/ess-manage-data-metrics.md) som ska analyseras. Även om mätvärdena listas i bokstavsordning som standard kan du också gruppera dem efter tabellen som styr mätvärdena.
+Det första steget i att skapa en analys är att välja [måttet &#x200B;](../data-user/reports/ess-manage-data-metrics.md) som ska analyseras. Även om mätvärdena listas i bokstavsordning som standard kan du också gruppera dem efter tabellen som styr mätvärdena.
 
 Du kan lägga till ytterligare mått när det inledande måttet har valts och täcka över alla mätvärden i en enskild rapport eller utföra multimetriska beräkningar genom att lägga till formler.
 
@@ -51,7 +51,7 @@ Om du till exempel anger en tidsperiod från `January 1st` till `March 1st` och 
 
 ## Steg 5: `Group by` / `Segmenting the Analysis` {#groupby}
 
-[Klicka på menyn ](../best-practices/segment-filter.md) längst upp till vänster i diagrammet om du vill segmentera dina mått med datamått **[!UICONTROL Group by]**. Då visas en listruta med alla tillgängliga mått för det första mätvärdet som finns i listan.
+[Klicka på menyn &#x200B;](../best-practices/segment-filter.md) längst upp till vänster i diagrammet om du vill segmentera dina mått med datamått **[!UICONTROL Group by]**. Då visas en listruta med alla tillgängliga mått för det första mätvärdet som finns i listan.
 
 Du kan välja `None` för att förhindra att ett mätvärde segmenteras. Du kanske vill ha ett mått som returnerar totala intäkter utan att segmenteras, samtidigt som ett annat intäktsmått segmenteras efter region.
 

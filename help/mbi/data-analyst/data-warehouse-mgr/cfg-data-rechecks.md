@@ -56,7 +56,7 @@ Om du vill ändra frekvensen för omkontroll klickar du i kryssrutan bredvid de 
 
 ![Data Warehouse Manager visar konfigurationsalternativ för omkontroll](../../assets/dwm-recheck.png)
 
-Ibland kanske `Paused` visas i kolumnen `Changes?`. Det här värdet visas när tabellens [replikeringsmetod ](../../data-analyst/data-warehouse-mgr/cfg-data-rechecks.md) är inställd på `Paused`.
+Ibland kanske `Paused` visas i kolumnen `Changes?`. Det här värdet visas när tabellens [replikeringsmetod &#x200B;](../../data-analyst/data-warehouse-mgr/cfg-data-rechecks.md) är inställd på `Paused`.
 
 [!DNL Adobe] rekommenderar att du granskar dessa kolumner för att både optimera dina uppdateringar och se till att ändringsbara kolumner kontrolleras igen. Om frekvensen för omkontroll av en kolumn är hög med tanke på hur ofta data ändras, rekommenderar Adobe att du minskar den för att optimera uppdateringarna.
 

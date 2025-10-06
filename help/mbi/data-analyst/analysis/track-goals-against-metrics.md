@@ -55,46 +55,46 @@ Det är praktiskt att ha en blandning av statiska värden och visuella diagram n
 
 * **Återstående intäkter för att uppnå målet**
 * Mått `A`: `Revenue`
-* 
-  [!UICONTROL-mått]: `Revenue`
+* &#x200B;
+  [!UICONTROL -mått]: `Revenue`
 
 * Mått `B`: `Target Revenue`
 * [!UICONTROL Metric]: `Monthly Revenue Target`
 
 * [!UICONTROL Formula]: `Revenue left to achieve target`
-* 
-  [!UICONTROL-formel]: `(B-A)`
-* 
+* &#x200B;
+  [!UICONTROL -formel]: `(B-A)`
+* &#x200B;
   [!UICONTROL Format]: `Number`
 
 * [!UICONTROL Time period]: (oavsett vilken tidsperiod du vill ha)
-* 
+* &#x200B;
   [!UICONTROL Interval]: `Month`
-* 
-  [!UICONTROL-diagramtyp]: `Scalar`
+* &#x200B;
+  [!UICONTROL -diagramtyp]: `Scalar`
 
 * **Intäktsmål**
 * Mått `A`: `Revenue`
-* 
-  [!UICONTROL-mått]: `Revenue`
+* &#x200B;
+  [!UICONTROL -mått]: `Revenue`
 
 * Mått `B`: `Target Revenue`
 * [!UICONTROL Metric]: `Monthly Revenue Target`
 
 * Mått `C`: `Revenue (amount change since previous year)` (dölj)
-* 
-  [!UICONTROL-mått]: `Revenue`
+* &#x200B;
+  [!UICONTROL -mått]: `Revenue`
 * [!UICONTROL Perspective]: `Amount change vs. Previous year`
 
 * [!UICONTROL Formula]: (Den här månaden förra året)
-* 
-  [!UICONTROL-formel]: `(A-C)`
-* 
+* &#x200B;
+  [!UICONTROL -formel]: `(A-C)`
+* &#x200B;
   [!UICONTROL Format]: `Currency`
 
 * Stäng av `Multiple Y-Axes`
 * [!UICONTROL Time period]: (oavsett vilken tidsperiod du vill ha)*
-* 
+* &#x200B;
   [!UICONTROL Interval]: `Month`
 * [!UICONTROL Chart Type]: `Line Chart`
 

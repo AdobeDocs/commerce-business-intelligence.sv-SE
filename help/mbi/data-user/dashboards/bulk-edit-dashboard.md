@@ -15,11 +15,11 @@ ht-degree: 1%
 
 Gruppredigeringsfunktionen gör det enkelt att ändra diagramnamn och datum på kontrollpanelerna. Du vill till exempel att alla diagram på en specifik kontrollpanel ska hänvisa till en enskild butik och rapportera månadsvis i stället för kvartalsvis. Låt funktionen `bulk-editing` utföra arbetet i stället för att ändra allt manuellt. I det här avsnittet får du lära dig hur du använder:
 
-* [Funktionen  [!DNL Find/Replace] ](#findreplace)
+* [Funktionen  [!DNL Find/Replace] &#x200B;](#findreplace)
 
-* [Funktionen  [!DNL Prepend Name] ](#prepend)
+* [Funktionen  [!DNL Prepend Name] &#x200B;](#prepend)
 
-* [Funktionen  [!DNL Change Dates] ](#dates)
+* [Funktionen  [!DNL Change Dates] &#x200B;](#dates)
 
 Tänk på det här med tanke på det: *Måste de här ändringarna vara permanenta?* Om inte, överväg att klona instrumentpanelen och sedan ändra datumen på den nya instrumentpanelen. På så sätt kan du behålla den ursprungliga kontrollpanelen samtidigt som du gör de ändringar du behöver.
 

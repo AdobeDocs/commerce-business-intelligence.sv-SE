@@ -14,7 +14,7 @@ ht-degree: 0%
 # Välj en rapportbyggare
 
 >[!NOTE]
->>Kräver [administratörsbehörighet](../../administrator/user-management/user-management.md).
+>&#x200B;>Kräver [administratörsbehörighet](../../administrator/user-management/user-management.md).
 
 Nu när du har fler alternativ för att skapa analyser kan det ibland vara svårt att veta exakt vilken version av rapporten som passar dina behov. I det här avsnittet får du hjälp med att välja det bästa sättet att bygga din analys.
 
@@ -35,7 +35,7 @@ En del av skönheten i [!DNL SQL Report Builder] är att det ger dig möjlighet 
 * [`MONTHS_BETWEEN`](https://docs.aws.amazon.com/redshift/latest/dg/r_MONTHS_BETWEEN_function.html)
 * [`REPLACE`](https://docs.aws.amazon.com/redshift/latest/dg/r_REPLACE.html)
 * [`SQRT`](https://docs.aws.amazon.com/redshift/latest/dg/r_SQRT.html)
-* Operatorn [`concatenation` ](https://docs.aws.amazon.com/redshift/latest/dg/r_concat_op.html)
+* Operatorn [`concatenation` &#x200B;](https://docs.aws.amazon.com/redshift/latest/dg/r_concat_op.html)
 
 ### Om du vill göra lite testning..
 

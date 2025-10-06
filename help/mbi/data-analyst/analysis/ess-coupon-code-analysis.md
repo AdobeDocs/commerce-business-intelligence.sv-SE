@@ -62,43 +62,43 @@ Det första steget är att skapa ett nytt mått med följande steg:
 >[!UICONTROL Time Period]** för varje rapport visas som `All-time`. Du kan ändra detta efter dina analysbehov. Adobe rekommenderar att alla rapporter på den här instrumentpanelen täcker samma tidsperiod, till exempel `All time`, `Year-to-date` eller `Last 365 days`.
 
 * **Beställningar med kuponger**
-   * 
-     [!UICONTROL-mått]: `Orders`
+   * &#x200B;
+     [!UICONTROL -mått]: `Orders`
       * Lägg till filter:
          * [`A`] `coupon_code` **ÄR INTE** `[NULL]`
 
    * [!UICONTROL Time period]: `All time`
-   * 
-     [!UICONTROL-intervall]: `None`
+   * &#x200B;
+     [!UICONTROL -intervall]: `None`
    * [!UICONTROL Chart type]:`Number (scalar)`
 
 * **Beställningar utan kuponger**
-   * 
-     [!UICONTROL-mått]: `Orders`
+   * &#x200B;
+     [!UICONTROL -mått]: `Orders`
       * Lägg till filter:
          * [`A`] `coupon_code` **IS** `[NULL]`
 
    * [!UICONTROL Time period]: `All time`
-   * 
-     [!UICONTROL-intervall]: `None`
+   * &#x200B;
+     [!UICONTROL -intervall]: `None`
    * [!UICONTROL Chart type]:`Number (scalar)`
 
 * **Nettointäkter från order med kuponger**
-   * 
-     [!UICONTROL-mått]: `Revenue`
+   * &#x200B;
+     [!UICONTROL -mått]: `Revenue`
       * Lägg till filter:
          * [`A`] `coupon_code` **ÄR INTE** `[NULL]`
 
    * [!UICONTROL Time period]: `All time`
-   * 
-     [!UICONTROL-intervall]: `None`
+   * &#x200B;
+     [!UICONTROL -intervall]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
 
 * **Rabatter från kuponger**
    * [!UICONTROL Metric]: `Coupon discount amount`
    * [!UICONTROL Time period]: `All time`
-   * 
-     [!UICONTROL-intervall]: `None`
+   * &#x200B;
+     [!UICONTROL -intervall]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
 
 * **Inkomster för genomsnittlig livstid: Kuponghanterade kunder**
@@ -107,8 +107,8 @@ Det första steget är att skapa ett nytt mått med följande steg:
          * [`A`] `Customer's first order's coupon_code` **ÄR INTE** `[NULL]`
 
    * [!UICONTROL Time period]: `All time`
-   * 
-     [!UICONTROL-intervall]: `None`
+   * &#x200B;
+     [!UICONTROL -intervall]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
 
 * **Inkomster för livslängd i genomsnitt: Kunder som inte har kuponganskaffats**
@@ -117,8 +117,8 @@ Det första steget är att skapa ett nytt mått med följande steg:
          * [A] `Customer's first order's coupon_code` **IS**`[NULL]`
 
    * [!UICONTROL Time period]: `All time`
-   * 
-     [!UICONTROL-intervall]: `None`
+   * &#x200B;
+     [!UICONTROL -intervall]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
 
 * **Kuponganvändningsinformation (första gången beställningen)**
@@ -141,24 +141,24 @@ Det första steget är att skapa ett nytt mått med följande steg:
 
    * Skapa formel: `Gross revenue`
       * [!UICONTROL Formula]: `(B – C)`
-      * 
+      * &#x200B;
         [!UICONTROL Format]: `Currency`
 
    * Skapa formel:**% rabatt**
       * Formel: `(C / (B - C))`
-      * 
+      * &#x200B;
         [!UICONTROL Format]: `Percentage`
 
    * Skapa formel: `Average order discount`
       * [!UICONTROL Formula]: `(C / A)`
-      * 
+      * &#x200B;
         [!UICONTROL Format]: `Percentage`
 
    * [!UICONTROL Time period]: `All time`
-   * 
-     [!UICONTROL-intervall]: `None`
-   * 
-     [!UICONTROL-diagramtyp]: `Table`
+   * &#x200B;
+     [!UICONTROL -intervall]: `None`
+   * &#x200B;
+     [!UICONTROL -diagramtyp]: `Table`
 
 * **Genomsnittlig livstidsintäkt per kupong för första ordern**
    * [!UICONTROL Metric]:**Genomsnittlig livstidsintäkt**
@@ -166,8 +166,8 @@ Det första steget är att skapa ett nytt mått med följande steg:
          * [`A`] `coupon_code` **IS**`[NULL]`
 
    * [!UICONTROL Time period]: `All time`
-   * 
-     [!UICONTROL-intervall]: `None`
+   * &#x200B;
+     [!UICONTROL -intervall]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
 
 * **Kuponganvändningsinformation (första gången beställningen)**
@@ -176,11 +176,11 @@ Det första steget är att skapa ett nytt mått med följande steg:
          * [`A`] `Customer's first order's coupon_code` **ÄR INTE** `[NULL]`
 
    * [!UICONTROL Time period]: `All time`
-   * 
-     [!UICONTROL-intervall]: `None`
+   * &#x200B;
+     [!UICONTROL -intervall]: `None`
    * [!UICONTROL Group by]: `Customer's first order's coupon_code`
-   * 
-     [!UICONTROL-diagramtyp]: **Column**
+   * &#x200B;
+     [!UICONTROL -diagramtyp]: **Column**
 
 * **Nya kunder per kupong/icke-kupongförvärv**
    * Mått `1`: `New customers`

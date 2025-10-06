@@ -38,7 +38,7 @@ Kom igång.
 1. Klicka på **[!UICONTROL [!DNL MySQL] Databases]** i avsnittet `Database`.
 1. Bläddra ned till avsnittet `Add New User` och skapa en användare för [!DNL Commerce Intelligence]:
 
-   ![Gränssnittet MySQL-databaser i panelen visar användarformuläret ](../../../assets/create-mbi-mysql-user-cpanel.png)
+   ![Gränssnittet MySQL-databaser i panelen visar användarformuläret &#x200B;](../../../assets/create-mbi-mysql-user-cpanel.png)
 
 1. Klicka på **[!UICONTROL Create User]**.
 1. Nu när du har skapat användaren måste du koppla den till en databas. Gå tillbaka till avsnittet `Add New User` - se inställningarna för `Add User to Database?` Det behöver du.

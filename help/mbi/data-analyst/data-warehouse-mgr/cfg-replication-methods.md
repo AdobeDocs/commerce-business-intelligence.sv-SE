@@ -118,7 +118,7 @@ Replikeringsmetoderna anges tabell för tabell. Om du vill ange en replikeringsm
 
 Se hela processen:
 
-![Animerad demonstration av konfiguration av replikeringsmetoder för databastabeller ](../../assets/replication_method.gif)<!--{: width="801" height="341"}-->
+![Animerad demonstration av konfiguration av replikeringsmetoder för databastabeller &#x200B;](../../assets/replication_method.gif)<!--{: width="801" height="341"}-->
 
 ## Radbrytning
 
@@ -135,6 +135,6 @@ För att avsluta har du sammanställt den här tabellen som jämför de olika re
 ## Relaterad dokumentation
 
 * [Förstå omkontroller av data](../data-warehouse-mgr/cfg-data-rechecks.md)
-* [Ändra databasen som stöds ](../../best-practices/mod-db-inc-replication.md)
+* [Ändra databasen som stöds &#x200B;](../../best-practices/mod-db-inc-replication.md)
 * [Optimera databasen för analys](../../best-practices/opt-db-analysis.md)
 * [Minskar uppdateringstiderna](../../best-practices/reduce-update-cycle-time.md)

@@ -115,7 +115,7 @@ En `users`-tabell kan t.ex. hämta de flesta användarattribut (t.ex. namn) meda
 
 När tabeller länkas med en `Foreign key` som pekar på en `primary key`, beskriver den här inställningen en `one-to-many`-relation. Den ena sidan är tabellen som innehåller `primary key` och den andra sidan är tabellen som innehåller `foreign key`.
 
-![Diagram som visar en-till-många-relation med sekundärnyckel ](../../assets/one-to-many1.png)
+![Diagram som visar en-till-många-relation med sekundärnyckel &#x200B;](../../assets/one-to-many1.png)
 
 ### `Many-to-many`
 

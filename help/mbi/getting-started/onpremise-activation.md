@@ -72,7 +72,7 @@ När du har skapat den dedikerade användaren för [!DNL Commerce Intelligence] 
 
 1. Bläddra nedåt och utöka listrutan **[!UICONTROL SSH Keys]**. Välj sedan **[!UICONTROL Add a public key]**.
 
-   ![Sidan Kontoinställningar med SSH-nycklar och knappen Lägg till offentlig nyckel ](../assets/add-public-key.png)
+   ![Sidan Kontoinställningar med SSH-nycklar och knappen Lägg till offentlig nyckel &#x200B;](../assets/add-public-key.png)
 
 1. Klistra in den offentliga nyckeln som du kopierade i steget [!DNL Encryption Type] ovan.
 
@@ -118,7 +118,7 @@ Ange din [!DNL Commerce Intelligence]-information på skärmen [!UICONTROL Conne
 
 [!UICONTROL Port]: `3306`
 
-[!UICONTROL-användarnamn]: `mbi`
+[!UICONTROL -användarnamn]: `mbi`
 
 [!UICONTROL Password]: [indatalösenordet visas i föregående avsnitt]
 

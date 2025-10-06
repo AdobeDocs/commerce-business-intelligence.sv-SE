@@ -67,7 +67,7 @@ Om du använder ett filter när du gör en koppling måste du använda det på b
 
 När du skriver frågor bör du överväga att använda operatorer som är så dyra som möjligt. Varje fråga har en beräkningskostnad som bestäms av de funktioner, operatorer och filter som frågan består av. Vissa operatorer kräver mindre datorarbete, vilket gör dem billigare än andra operatorer.
 
-Jämförelseoperatorer (>, &lt;, = och så vidare) är de som är minst dyra, följt av [LIKE. LIKNANDE operatorer och POSIX-operatorer ](https://www.postgresql.org/docs/9.5/functions-matching.html), som är de mest dyra operatorerna.
+Jämförelseoperatorer (>, &lt;, = och så vidare) är de som är minst dyra, följt av [LIKE. LIKNANDE operatorer och POSIX-operatorer &#x200B;](https://www.postgresql.org/docs/9.5/functions-matching.html), som är de mest dyra operatorerna.
 
 ## Använda EXIST jämfört med IN
 

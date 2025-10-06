@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Anslut [!DNL MySQL] via [!DNL SSH Tunnel]
 
-* [Hämta den offentliga nyckeln  [!DNL Commerce Intelligence] ](#retrieve)
+* [Hämta den offentliga nyckeln  [!DNL Commerce Intelligence] &#x200B;](#retrieve)
 * [Tillåt åtkomst till  [!DNL Commerce Intelligence] IP-adressen](#allowlist)
 * [Skapa en Linux-användare för  [!DNL Commerce Intelligence]](#linux)
 * [Skapa en [!DNL MySQL] användare för [!DNL Commerce Intelligence]](#mysql)
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## GÅ TILL
 
-* [[!DNL MySQL] via ](../integrations/mysql-via-a-direct-connection.md)
+* [[!DNL MySQL] via &#x200B;](../integrations/mysql-via-a-direct-connection.md)
 * [[!DNL MySQL] via [!DNL cPanel]](../integrations/mysql-via-cpanel.md)
 
 Om du vill ansluta din [!DNL MySQL]-databas till [!DNL Commerce Intelligence] via en `SSH tunnel` måste du göra några saker:
