@@ -4,9 +4,9 @@ description: Lär dig mer om analysen av användargrupper som delar liknande ege
 exl-id: d80c5389-7256-40e0-86e0-49903113f93d
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '1569'
+source-wordcount: '1607'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Nu när du befinner dig i `Report Builder` lägger du till det mått som du vill
 
 **Växla måttvyn till`Cohort`**
 
-![](../../assets/visual-report-builder-cohort-toggle.png)
+![Visuell växlingsfunktion för Report Builder med kohortanalys](../../assets/visual-report-builder-cohort-toggle.png)
 
 Ett nytt fönster öppnas där informationen i rapporten `Cohort` konfigureras.
 
@@ -83,7 +83,7 @@ Med den här funktionen kan du ange det tidsintervall med data som du visar för
 
 Intervallet för det här värdet ändras med det du har markerat i `cohort time period` och värdet ställs in på `12` som standard. Värdet ändras inte om du inte klickar på kalenderikonen för att redigera det.
 
-![](../../assets/cohort-time-range.png)
+![Kohortintervallväljare med datumalternativ](../../assets/cohort-time-range.png)
 
 #### Övriga anmärkningar
 
@@ -105,7 +105,7 @@ Nedan finns instruktioner som är specifika för den äldre versionen av `Cohort
 
 #### Hur skapar jag en egen `cohort`-analys? {#create}
 
-![](../../assets/create-cohort-analysis.png)
+![Skapa en dialogruta för kohortanalys med konfigurationsalternativ](../../assets/create-cohort-analysis.png)
 
 `Cohort`-analys används! Här kan du se hur intäkterna ökar med tiden på kumulativ basis och per användare.
 
@@ -155,7 +155,7 @@ Under `duration` kan du definiera diagrammets X-axelinställningar. Det vill sä
 
 Om du har valt att gruppera användare efter en `cohort date` som har anslutits från en annan tabell kan du se ett `counting members in the … table`-alternativ.
 
-![](../../assets/Cohort_Counting_Members_option.png)
+![Alternativ för medlemmar i kohorträkning som visar oberoende kontra kumulativa lägen](../../assets/Cohort_Counting_Members_option.png)
 
 Titta på ett exempel som förstår den här inställningen. Anta att du har skapat en rapportkohortering för ett `Revenue`-mått av `Customer's registration date`. Du vill också använda perspektivet `Average value per cohort member` för att se intäkten per köpare över tiden. Om du vill hitta det genomsnittliga värdet per köpare måste du bestämma hur många köpare som ska divideras med. Är det antalet registrerade kunder i din `customers`-tabell, eller är det antalet distinkta köpare i din `orders table` under samma period?
 
@@ -169,7 +169,7 @@ Precis ovanför rapportvisualiseringen finns en listruta med `perspective` inst�
 
 Se [Perspektiv](#perspectives).
 
-![](../../assets/Cohort_Perspective_Menu.png)
+![Perspektivmenyn Kohort med olika visningsalternativ](../../assets/Cohort_Perspective_Menu.png)
 
 ## Exempel på kohortanalys {#examples}
 

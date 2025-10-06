@@ -4,9 +4,9 @@ description: Lär dig vem du ska kontakta för att aktivera ditt [!DNL Commerce 
 exl-id: 0efac7b4-2457-48c7-947a-d2776b90a1dd
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: cdd2373c2b9afd85427d437c6d8450f4d4e03350
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '732'
 ht-degree: 0%
 
 ---
@@ -23,21 +23,21 @@ Om du vill skapa ett konto kontaktar du Adobe Account Team eller kundens teknisk
 
 När ditt konto har skapats kan du kontrollera din e-postadress för att få ett e-postmeddelande från [!DNL The Magento BI Team@rjmetrics.com]. Använd länken i e-postmeddelandet för att komma åt ditt [!DNL Commerce Intelligence]-konto och skapa ditt lösenord. Gå till din inkorg och verifiera din e-postadress.
 
-[Kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE) om du inte fått något e-postmeddelande.
+[Kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) om du inte fått något e-postmeddelande.
 
-![](../assets/create-account-4.png)
+![Skapa lösenordsskärm för nytt Commerce Intelligence-konto](../assets/create-account-4.png)
 
 ## Ange dina butiksinställningar
 
 Fyll i formuläret för lagringsinformation innan du konfigurerar databasanslutningen. Den här informationen krävs för att slutföra installationen av **[!UICONTROL Connect your Database]**.
 
-![](../assets/create-account-6.png)
+![Lagra informationsformulär med företagsnamn, valuta och tidszonsfält](../assets/create-account-6.png)
 
 ## Lägg till [!DNL Commerce Intelligence] användare
 
 När du har angett ditt lösenord och loggat in på [!DNL Commerce Intelligence] kan du lägga till andra användare i ditt [!DNL Commerce Intelligence]-konto. När du lägger till användare lägger du till administratörsanvändare med lämplig behörighet för att slutföra aktiveringsprocessen.
 
-![](../assets/create-account-5.png)
+![Lägg till användarformulär med e-postadresser och behörighetsnivåfält](../assets/create-account-5.png)
 
 ## Skapa en dedikerad [!DNL Commerce Intelligence]-användare i [!DNL Commerce]-administratören
 
@@ -52,7 +52,7 @@ Om du konfigurerar en dedikerad [!DNL Commerce Intelligence]-användare försäk
 
 När du har skapat den dedikerade användaren för [!DNL Commerce Intelligence] i Admin lägger du till samma användare i den primära miljön för [!DNL Commerce]-projektet med inställningen **[!UICONTROL Master]** för `Contributor`.
 
-![](../assets/commerce-add-user-settings.png)
+![Commerce lägger till användargränssnitt med rollen inställd på Contributor](../assets/commerce-add-user-settings.png)
 
 ## Skaffa dina Commerce Intelligence SSH-nycklar
 
@@ -62,7 +62,7 @@ När du har skapat den dedikerade användaren för [!DNL Commerce Intelligence] 
 
 1. Kopiera den offentliga nyckeln som anges i listrutan.
 
-   ![](../assets/encryption-setting-new-account.png)
+   ![Sidan med krypteringsinställningar som visar SSH-tunneltypen och fältet för offentlig nyckel](../assets/encryption-setting-new-account.png)
 
 ## Lägg till din offentliga nyckel i [!DNL Commerce Intelligence]
 
@@ -72,21 +72,21 @@ När du har skapat den dedikerade användaren för [!DNL Commerce Intelligence] 
 
 1. Bläddra nedåt och utöka listrutan **[!UICONTROL SSH Keys]**. Välj sedan **[!UICONTROL Add a public key]**.
 
-   ![](../assets/add-public-key.png)
+   ![Sidan Kontoinställningar med SSH-nycklar och knappen Lägg till offentlig nyckel ](../assets/add-public-key.png)
 
 1. Klistra in den offentliga nyckeln som du kopierade i steget [!DNL Encryption Type] ovan.
 
-   ![](../assets/paste-public-key.png)
+   ![Lägg till formulär med offentlig nyckel med nyckeltextfält och Skicka-knapp](../assets/paste-public-key.png)
 
 ## Ange autentiseringsuppgifter för [!DNL Commerce Intelligence] Essentials `MySQL`
 
 1. Uppdatera din `.magento/services.yaml`.
 
-   ![](../assets/update-magento-services-yaml.png)
+   ![Kod som visar konfigurationen för MySQL-tjänsten i services.yaml-filen](../assets/update-magento-services-yaml.png)
 
 1. Uppdatera din `.magento.app.yaml`.
 
-   ![](../assets/magento-app-yaml-relationships.png)
+   ![Kod som visar databasrelationskonfigurationen i filen app.yaml](../assets/magento-app-yaml-relationships.png)
 
 ## Hämta databasanslutningsinformation
 
@@ -98,7 +98,7 @@ Hämta databasanslutningsinformationen till databasen [!DNL Commerce] till [!DNL
 
 1. Granska databasinformationen som ska se ut ungefär som i följande exempel.
 
-   ![](../assets/example-database-information.png)
+   ![JSON-utdata som visar autentiseringsuppgifter för databasanslutning inklusive värd, port och användarnamn](../assets/example-database-information.png)
 
 ## Anslut [!DNL Commerce Intelligence] till din [!DNL Commerce]-databas med en krypterad anslutning
 
@@ -108,7 +108,7 @@ Hämta databasanslutningsinformationen till databasen [!DNL Commerce] till [!DNL
 
 Ange din [!DNL Commerce Intelligence]-information på skärmen [!UICONTROL Connect your Magento Database].
 
-![](../assets/connect-magento-db.png)
+![Anslut databasformuläret med fält för integrationsnamn, värd, port, användarnamn, lösenord och databasnamn](../assets/connect-magento-db.png)
 
 **Indata:**
 
@@ -118,7 +118,7 @@ Ange din [!DNL Commerce Intelligence]-information på skärmen [!UICONTROL Conne
 
 [!UICONTROL Port]: `3306`
 
-[!UICONTROL -användarnamn]: `mbi`
+[!UICONTROL-användarnamn]: `mbi`
 
 [!UICONTROL Password]: [indatalösenordet visas i föregående avsnitt]
 
@@ -128,7 +128,7 @@ Ange din [!DNL Commerce Intelligence]-information på skärmen [!UICONTROL Conne
 
 ## Ange dina [!UICONTROL **tidszonsinställningar**]
 
-![](../assets/time-zone-settings.png)
+![Formulär för tidszonsinställningar med databasens tidszon och önskade listrutefält för tidszon](../assets/time-zone-settings.png)
 
 **Indata:**
 
@@ -140,11 +140,11 @@ Ange din [!DNL Commerce Intelligence]-information på skärmen [!UICONTROL Conne
 
 Projektgränssnittet tillhandahåller en SSH-åtkomststräng. Strängen kan användas för att samla in den information som krävs för [!UICONTROL **fjärradressen**] och [!UICONTROL **användarnamnet**]. Använd SSH-åtkomststrängen genom att markera åtkomstplatsknappen i huvudgrenen i projektgränssnittet. Leta sedan reda på din [!UICONTROL User Name] och [!UICONTROL Remote Address] så som visas nedan.
 
-![](../assets/master-branch-settings.png)
+![Projektgränssnittet som visar SSH-åtkomstinformation med användarnamn och fjärradress](../assets/master-branch-settings.png)
 
 ## Ange dina [!DNL Encryption]-inställningar
 
-![](../assets/encryption-settings-2.png)
+![Formulär för krypteringsinställningar med fält för krypteringstyp, fjärradress, användarnamn och port](../assets/encryption-settings-2.png)
 
 **Indata:**
 
@@ -168,9 +168,9 @@ Du har nu anslutit din [!DNL Commerce]-databas till ditt [!DNL Commerce Intellig
 
 När du har slutfört konfigurationen [loggar du in](../getting-started/sign-in.md) på ditt [!DNL Commerce Intelligence]-konto.
 
-<!---# Activate your [!DNL Commerce Intelligence] Account 
+<!---# Activate your [!DNL Commerce Intelligence] Account
 
-To activate [!DNL Commerce Intelligence] for on-premise or `Cloud Pro` subscriptions, [contact support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE).
+To activate [!DNL Commerce Intelligence] for on-premise or `Cloud Pro` subscriptions, [contact support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 >[!NOTE]
 >

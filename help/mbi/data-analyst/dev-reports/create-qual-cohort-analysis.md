@@ -4,9 +4,9 @@ description: Läs vad en kvalitativ kohort är, varför du kan vara intresserad 
 exl-id: 113244e4-409b-4129-b3d4-7a3433539ade
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '834'
+source-wordcount: '850'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Om du vill analysera kohortbeteendet för flera användarsegment i samma kohortr
 
 Om du skapar en `qualitative cohort`-rapport i `Report Builder` måste Adobe analysteam skapa [avancerade beräknade kolumner](../data-warehouse-mgr/creating-calculated-columns.md) i de nödvändiga tabellerna.
 
-Om du vill skapa dessa skickar du en [supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE) (och refererar till den här artikeln!). Det här behöver du veta:
+Om du vill skapa dessa skickar du en [supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) (och refererar till den här artikeln!). Det här behöver du veta:
 
 * `metric` som du vill utföra din kohortanalys med och vilken tabell den använder (exempel: `Revenue`, som bygger på tabellen `orders`).
 
@@ -55,7 +55,7 @@ När Adobe analysteam har svarat på ovanstående har ni några nya avancerade b
 
 För det första vill du lägga till de mått som du är intresserad av kohortering, en gång för varje `cohort` som du analyserar. I det här exemplet vill du se kumulativa `Revenue` som gjorts månader efter en kunds första order, segmenterade efter `User's referral source`. Det innebär att du för varje segment lägger till ett `Revenue`-mått och filter för det specifika segmentet:
 
-![](../../assets/qualcohort1.gif)
+![Animerad demonstration av att skapa en kvalitativ kohortanalys](../../assets/qualcohort1.gif)
 
 För det andra bör du göra två ändringar av rapportens tidsalternativ:
 
@@ -65,7 +65,7 @@ För det andra bör du göra två ändringar av rapportens tidsalternativ:
 
 I det här exemplet tittar du på en `all time`-vy av `Revenue`. Efter detta bör du få en serie punkter:
 
-![](../../assets/qualcohort2.gif)
+![Animerad demonstration av grupperings- och analysalternativ för kohort](../../assets/qualcohort2.gif)
 
 För det tredje justerar du inställningarna för `cohorts`. Baserat på den `cohort date` och `time interval` du angav för Adobe analysteam har du en dimension i ditt konto som utför dateringen `cohort`. I det här exemplet kallas den anpassade dimensionen `Months between this order and customer's first order date`. Om du använder den här dimensionen bör du:
 

@@ -4,9 +4,9 @@ description: Lär dig ansluta MySQL via cPanel.
 exl-id: 90b0a0b0-8c6b-4144-95b4-f588f18616c7
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Kom igång.
 1. Klicka på **[!UICONTROL [!DNL MySQL] Databases]** i avsnittet `Database`.
 1. Bläddra ned till avsnittet `Add New User` och skapa en användare för [!DNL Commerce Intelligence]:
 
-   ![](../../../assets/create-mbi-mysql-user-cpanel.png)
+   ![Gränssnittet MySQL-databaser i panelen visar användarformuläret ](../../../assets/create-mbi-mysql-user-cpanel.png)
 
 1. Klicka på **[!UICONTROL Create User]**.
 1. Nu när du har skapat användaren måste du koppla den till en databas. Gå tillbaka till avsnittet `Add New User` - se inställningarna för `Add User to Database?` Det behöver du.
@@ -69,4 +69,4 @@ När du är klar klickar du på **[!UICONTROL Save & Test]** för att slutföra 
 
 ## Relaterat:
 
-* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=sv-SE)
+* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

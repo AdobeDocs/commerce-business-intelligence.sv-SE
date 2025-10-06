@@ -4,9 +4,9 @@ description: Lär dig hantera dina Commerce Intelligence-användare.
 exl-id: 2a5eeabb-3c13-4ca1-b845-ed255b389c9f
 role: Admin, User
 feature: User Management
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '406'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,7 @@ Förutom de allmänna behörighetsnivåerna finns även två andra användarbete
 
 `Admin` användare har som standard åtkomst till fliken `Billing`, men `Standard` användare kan även få åtkomst om kryssrutan `Billing` är markerad i deras profil.
 
-![fakturering](../../assets/billing.png)<!--{: width="550" height="363"}-->
+![Faktureringssida](../../assets/billing.png)<!--{: width="550" height="363"}-->
 
 ### Teknisk
 

@@ -4,9 +4,9 @@ description: Lär dig hur du konfigurerar en kontrollpanel som spårar prestanda
 exl-id: a90ad89b-96d3-41f4-bfc4-f8c223957113
 role: Admin,  User
 feature: Data Warehouse Manager, Dashboards, Reports
-source-git-commit: 6bdbdbcc652d476fa2a22589ac99678d5855e6fe
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '507'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ I det här avsnittet visas hur du konfigurerar en kontrollpanel som spårar pres
 
 Innan du börjar vill du identifiera två separata tidsperioder där du har haft olika värden för butikens tröskelvärde för fri frakt.
 
-![](../../assets/free_shipping_threshold.png)
+![Diagram över analys av tröskelvärde för fri frakt och fördelning av ordervärde](../../assets/free_shipping_threshold.png)
 
 Den här analysen innehåller [avancerade beräknade kolumner](../data-warehouse-mgr/adv-calc-columns.md).
 
@@ -66,9 +66,9 @@ Inga nya mätvärden!
 
 * Mått `A`: `Average Order Value`
 * [!UICONTROL Time period]: `Time period with shipping rule A`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Scalar`
 
 * **Antal order per delsummeringsbucket med leveransregel A**
@@ -80,53 +80,53 @@ Inga nya mätvärden!
 
 * Mått `A`: `Number of orders`
 * [!UICONTROL Time period]: `Time period with shipping rule A`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Order subtotal (buckets)`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Column`
 
 * **Procent av order per delsumma med leveransregel A**
    * [!UICONTROL Metric]: `Number of orders`
 
    * [!UICONTROL Metric]: `Number of orders`
-   * &#x200B;
+   * 
      [!UICONTROL Group by]: `Independent`
    * [!UICONTROL Formula]: `(A / B)`
-   * &#x200B;
+   * 
      [!UICONTROL Format]: `%`
 
 * Mått `A`: `Number of orders by subtotal (hide)`
 * Mått `B`: `Total number of orders (hide)`
 * [!UICONTROL Formula]: `% of orders`
 * [!UICONTROL Time period]: `Time period with shipping rule A`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Order subtotal (buckets)`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Line`
 
 * **Procent av order med en delsumma som överstiger leveransregel A**
    * [!UICONTROL Metric]: `Number of orders`
-   * &#x200B;
+   * 
      [!UICONTROL Perspective]: `Cumulative`
 
    * [!UICONTROL Metric]: `Number of orders`
-   * &#x200B;
+   * 
      [!UICONTROL Group by]: `Independent`
 
    * [!UICONTROL Formula]: `1- (A / B)`
-   * &#x200B;
+   * 
      [!UICONTROL Format]: `%`
 
 * Mått `A`: `Number of orders by subtotal`
 * Mått `B`: `Total number of orders (hide)`
 * [!UICONTROL Formula]: `% of orders`
 * [!UICONTROL Time period]: `Time period with shipping rule A`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Order subtotal (buckets)`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Line`
 
 

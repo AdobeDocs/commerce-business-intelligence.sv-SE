@@ -4,9 +4,9 @@ description: Lär dig hur formler kan användas i Report Builder.
 exl-id: 7a0ad07a-5bcc-474f-95bc-ccc2b74073b2
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '544'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ I [`Report Builder`](../../tutorials/using-visual-report-builder.md) kan du skap
 
 I `Report Builder` är en `formula` bara en kombination av ett eller flera mått baserat på någon matematisk logik. Ett typiskt exempel ser ut så här:
 
-![](../../assets/formula-example.png)
+![Formelexempel som visar beräkning i Report Builder](../../assets/formula-example.png)
 
 I det här exemplet använder du en `Number of orders metric (A)` och en `Distinct buyers metric (B)`, och målet är att svara på frågan: vilket är det genomsnittliga antalet order som mina köpare gör varje månad? Formelns parametrar är:
 
@@ -65,4 +65,4 @@ I det här exemplet använde du perspektivet `Stacked Columns` för att visa res
 
 Märkte du i exemplen ovan att formelns `timestamp`, `groupings`, `perspectives` och `filters` ärvs från indatamätningarna? Kom ihåg att formler kan användas för att använda `perspectives` och [oberoende tidsalternativ](../../tutorials/time-options-visual-rpt-bldr.md){: target="_blank"}, precis som mätvärden kan.
 
-`Report Builder`Kontakta support[ om du har ytterligare frågor om hur du använder formler i ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE).
+`Report Builder`Kontakta support[ om du har ytterligare frågor om hur du använder formler i ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

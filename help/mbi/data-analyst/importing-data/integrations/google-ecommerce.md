@@ -4,9 +4,9 @@ description: Läs om era mest värdefulla hänvisningskanaler.
 exl-id: c80f52f3-894a-4084-8c0e-aee618ed77f5
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '305'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >Kräver [administratörsbehörighet](../../../administrator/user-management/user-management.md).
 
-![](../../../assets/google-ecommerce-logo.png)
+![Google e-handelslogotyp](../../../assets/google-ecommerce-logo.png)
 
 Ni har ett stadigt flöde av trafik och beställningar, vilket innebär att ni effektivt når och värvar kunder. Men vilka är era mest värdefulla hänvisningskanaler? Vilket är det genomsnittliga livstidsvärdet för kunder som förvärvats från en källa jämfört med en annan? Genom att ansluta dina källdata för orderreferenser från [!DNL Google ECommerce] till [!DNL Commerce Intelligence] kan du skapa analyser som hjälper dig att identifiera dina [mest värdefulla marknadsföringskanaler](../../../data-analyst/analysis/most-value-source-channel.md).
 
@@ -35,7 +35,7 @@ Kom igång genom att ange dina [!DNL Google ECommerce]-autentiseringsuppgifter i
 
    Om du har flera profiler och behöver hjälp med att identifiera vilka som är vilka, se avsnittet **Ansluter flera [!DNL Google Analytics]-profiler nedan.
 
-   ![](../../../assets/conn-mult-ga-profiles.png)<!--{: width="500"}-->
+   ![Formulär som visar alternativ för att ansluta flera Google Analytics-profiler](../../../assets/conn-mult-ga-profiles.png)<!--{: width="500"}-->
 
 1. Ändringarna sparas automatiskt, så klicka på **[!UICONTROL Back to Connections]** när du är klar.
 
@@ -60,7 +60,7 @@ Så här identifierar du en viss webbplats profil-ID [!DNL Google Analytics]:
 ## Relaterat:
 
 * [ [!DNL Google ECommerce] data förväntades](../integrations/google-ecommerce-data.md)
-* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=sv-SE)
+* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [Konfigurerar [!DNL Google ECommerce] spårning](https://support.google.com/analytics/answer/1009612?hl=en)
 * [Upptäck era mest värdefulla förvärvskällor och kanaler](../../analysis/most-value-source-channel.md)
 * [Öka avkastningen på era annonskampanjer](../../analysis/roi-ad-camp.md)

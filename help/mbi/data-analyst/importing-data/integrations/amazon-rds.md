@@ -4,9 +4,9 @@ description: Lär dig hur du ansluter RDS-instansen.
 exl-id: 02ad29c8-84d6-4b49-9ac1-e5f4feaa7fda
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '503'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Stegen för att ansluta din [!DNL RDS]-instans varierar beroende på vilken typ 
 
 På inloggningssidan (**[!UICONTROL Manage Data** > **Integrations]**) för varje databas visas en ruta som innehåller de IP-adresser som du måste auktorisera för att kunna ansluta R[!DNL RDS] till [!DNL Commerce Intelligence]: `54.88.76.97` och `34.250.211.151`. Här är en titt på sidan `MySQL credentials` där du markerade IP-adressrutan:
 
-![](../../../assets/RDS_IP.png)
+![Amazon RDS-säkerhetsgruppsinställningar som visar IP-adresskonfiguration](../../../assets/RDS_IP.png)
 
 För att [!DNL Commerce Intelligence] ska kunna ansluta till din [!DNL RDS]-instans måste du lägga till de här IP-adresserna till rätt databassäkerhetsgrupp via AWS hanteringskonsol. Dessa IP-adresser kan läggas till i en befintlig grupp eller så kan du skapa en - det viktiga är att gruppen har behörighet att komma åt instansen som du vill ansluta till [!DNL Commerce Intelligence].
 
@@ -55,6 +55,6 @@ Du behöver följande information för att slutföra anslutningen:
 
 Om du använder en krypterad anslutning ändrar du växlingen `Encrypted` på databasinloggningssidan till `Yes`. Här visas ett extra formulär för att konfigurera krypteringen:
 
-![](../../../assets/sql-integration-encrypted-yes.png)
+![SQL-integreringsformulär med kryptering aktiverat visar alternativet Ja](../../../assets/sql-integration-encrypted-yes.png)
 
 

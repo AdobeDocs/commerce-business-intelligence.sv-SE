@@ -4,16 +4,16 @@ description: Lär dig allt du behöver för att skicka in en begäran och komma 
 exl-id: 105cd003-98ef-4358-80b9-b3190c2c57b7
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '676'
+source-wordcount: '685'
 ht-degree: 0%
 
 ---
 
 # Datamigrering
 
-Att migrera till ett nytt databasschema, en ny server eller en rapportdatabas behöver inte vara stressigt. [[!DNL Adobe] Services-teamet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE) erbjuder migreringshjälp.
+Att migrera till ett nytt databasschema, en ny server eller en rapportdatabas behöver inte vara stressigt. [[!DNL Adobe] Services-teamet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) erbjuder migreringshjälp.
 
 För att övergången ska bli så smidig som möjligt bör du vara så detaljerad som möjligt när du skickar in din migreringsbegäran. Det här avsnittet innehåller allt du behöver för att skicka en begäran och komma igång med migreringen. Om du ger oss en heltäckande bild av dina behov kan du garantera att projektet har rätt omfång och att uppskattningen är korrekt.
 
@@ -59,7 +59,7 @@ Om du känner dig bekväm med att utföra matchningen själv följer du dessa in
 
 Här följer ett exempel:
 
-![](../../../assets/Migration_Spreadsheet.png)
+![Mallen för migreringskalkylblad med databasschema och tabellstruktur](../../../assets/Migration_Spreadsheet.png)
 
 >[!NOTE]
 >
@@ -67,7 +67,7 @@ Här följer ett exempel:
 
 ## Hur skickar jag en förfrågan? {#submitreq}
 
-Du kan kontakta oss genom att [skicka en supportförfrågan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE).
+Du kan kontakta oss genom att [skicka en supportförfrågan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 Om du följde stegen i föregående avsnitt för att skapa ett kalkylblad som matchar kolumner, glöm inte att bifoga det.
 

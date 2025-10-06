@@ -4,9 +4,9 @@ description: Lär dig hur ni samlar alla era data i en enda Data Warehouse.
 exl-id: 28db0e78-0222-431d-bbb9-6ef133686603
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '1279'
+source-wordcount: '1298'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Använd annonskampanjer som exempel. Om ni kör både online- och offlinekampanj
 ## Begränsningar och krav {#require}
 
 1. **Det enda format som stöds för filöverföringar är `CSV` eller`comma separated values`**. Om du arbetar i Excel kan du använda funktionen Spara som för att spara filen i formatet `.csv`.
-1. **`CSV`filer måste använda`UTF-8 encoding`**. För det mesta är detta inte något problem. Om det här felet inträffar när du överför en fil [läser du den här supportartikeln](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html?lang=sv-SE).
+1. **`CSV`filer måste använda`UTF-8 encoding`**. För det mesta är detta inte något problem. Om det här felet inträffar när du överför en fil [läser du den här supportartikeln](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html).
 1. **Filerna får inte vara större än 100 MB**. Om filen är större än så delar du upp tabellen i segment och sparar dem som enskilda filer. Du kan lägga till data när den första filen har lästs in.
 1. **Alla tabeller måste ha en`primary key`**. Det måste finnas minst en kolumn i tabellen som kan användas som `primary key`, eller en unik identifierare för varje rad i tabellen. Alla kolumner som har angetts som `primary key` kan *aldrig* vara null. En `primary key` kan vara så enkel som att lägga till en kolumn som ger ett nummer till varje rad, eller så kan två kolumner sammanfogas för att skapa en kolumn med unika värden (till exempel `campaign name` och `date`).
 
@@ -46,7 +46,7 @@ Eftersom filerna måste vara i formatet `CSV` kan användning av kommatecken ors
 
 ### Datum
 
-Alla datauppsättningar som innehåller datum måste använda standarddatumformatet [&#128279;](https://dev.mysql.com/doc/refman/5.7/en/datetime.html) `YYYY-MM-DD HH:MM:SS` eller `MM/DD/YYYY`.
+Alla datauppsättningar som innehåller datum måste använda standarddatumformatet [](https://dev.mysql.com/doc/refman/5.7/en/datetime.html) `YYYY-MM-DD HH:MM:SS` eller `MM/DD/YYYY`.
 
 ### Specialtecken
 
@@ -105,11 +105,11 @@ Nu när kalkylbladet är korrekt formaterat och [!DNL Commerce Intelligence]-anp
 
 Om du behöver en bild, titta på hela processen:
 
-![](../../../assets/fileupload.gif)
+![Animerad demonstration av filöverföringsprocessen som visar data som läggs till](../../../assets/fileupload.gif)
 
 Överförda tabeller visas under avsnittet **Filöverföringar** i tabelllistan (i alternativen Alla tabeller och Synkroniserade tabeller) i Data Warehouse Manager:
 
-![](../../../assets/upload-tables.png)
+![Överför tabellgränssnitt som visar tillgängliga tabeller för dataimport](../../../assets/upload-tables.png)
 
 ## Uppdatera eller bifoga data till en befintlig tabell {#appending}
 

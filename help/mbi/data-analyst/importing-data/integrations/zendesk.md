@@ -4,9 +4,9 @@ description: Lär dig hur du konsoliderar din helpdesk-rapportering i  [!DNL Com
 exl-id: 1c7f7c5c-4b1c-4bcf-8f1d-2b4cf9cdb0fb
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '261'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 >
 >Kräver [administratörsbehörighet](../../../administrator/user-management/user-management.md).
 
-![](../../../assets/Zendesk_logo.png)
+![Zendesk-logotyp](../../../assets/Zendesk_logo.png)
 
 Om du ansluter dina [!DNL Zendesk]-data kan du konsolidera din helpdesk-rapportering i [!DNL Commerce Intelligence]. På så sätt kan ni optimera kundsupporten och övervaka helpdesk-prestanda tillsammans med era intäkter.
 
@@ -31,7 +31,7 @@ Du måste öppna två webbläsarfönster eller flikar för att kunna slutföra d
 
 ## Öppna sidan [!DNL Zendesk] med autentiseringsuppgifter i [!DNL Commerce Intelligence] {#stepone}
 
-1. Gå till sidan `Integrations` under **[!UICONTROL Manage Data** > **&#x200B; Datakällor &#x200B;**> **Integrationer]**.
+1. Gå till sidan `Integrations` under **[!UICONTROL Manage Data** > ** Datakällor **> **Integrationer]**.
 1. Klicka på **[!UICONTROL Add Integration]** till höger på skärmen.
 1. Klicka på ikonen [!DNL Zendesk]. Då öppnas sidan med [!DNL Zendesk] inloggningsuppgifter.
 
@@ -54,4 +54,4 @@ Du måste öppna två webbläsarfönster eller flikar för att kunna slutföra d
 ## Relaterat:
 
 * [ [!DNL Zendesk] data förväntades](../integrations/exp-zendesk-data.md)
-* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=sv-SE)
+* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

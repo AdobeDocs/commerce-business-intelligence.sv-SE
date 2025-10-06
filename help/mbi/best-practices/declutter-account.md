@@ -4,9 +4,9 @@ description: Lär dig hur du rensar ditt [!DNL Commerce Intelligence] konto.
 exl-id: 5fcdac2d-41ca-4011-b646-a699d9ecc6e4
 role: Admin, User
 feature: Accounts
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '873'
+source-wordcount: '904'
 ht-degree: 0%
 
 ---
@@ -67,7 +67,7 @@ När du har öppnat dina instrumentpaneler och rapporter kan du börja rensa dit
 
 Du kan också välja **[!UICONTROL Dashboard Options]** och sedan **[!UICONTROL Delete]** från själva instrumentpanelen.
 
-![](../../mbi/assets/Delete_from_dashboard.png)
+![Ta bort alternativ på instrumentpanelens kugghjulsmeny](../../mbi/assets/Delete_from_dashboard.png)
 
 >[!NOTE]
 >
@@ -82,7 +82,7 @@ Du kan också välja **[!UICONTROL Dashboard Options]** och sedan **[!UICONTROL 
 
 Här följer en titt på borttagningsprocessen som inte används:
 
-![](../../mbi/assets/unused_reports.png)
+![Listan med rapporter som inte används visar rapporter som inte finns på någon instrumentpanel](../../mbi/assets/unused_reports.png)
 
 ## Steg 3: Ta bort oanvända mått
 
@@ -93,7 +93,7 @@ När du har rensat bort användarlistan, kontrollpanelerna och rapporterna kan d
 1. Längst ned på sidan visas ett avsnitt med namnet **[!UICONTROL Dependent Charts]**. Klicka på länken om du vill generera en lista med beroende rapporter för det här måttet.
 1. När kontrollen är klar visar [!DNL Commerce Intelligence] en lista över instrumentpaneler, rapporter och användare som använder det här måttet.
 
-![](../../mbi/assets/report_dependecies.png)
+![Dialogrutan Rapportera beroenden visar vilka rapporter som använder den valda kolumnen](../../mbi/assets/report_dependecies.png)
 
 Om du bestämmer dig för att måttet inte längre behövs går du tillbaka till sidan **[!UICONTROL Metrics]** genom att klicka på **[!UICONTROL Back to Metric List]** för att hitta måttet som du vill ta bort. Klicka på **[!UICONTROL Delete]**.
 
@@ -112,6 +112,7 @@ Om du vill fortsätta med detta kontaktar du [!DNL Commerce Intelligence] [Suppo
 1. Gå till **[!DNL Manage Data]** och sedan till **[!UICONTROL Data Warehouse]**.
 1. Navigera till tabellen som innehåller kolumnen i listan **[!UICONTROL Synced Tables]**.
 1. Markera en eller flera rutor bredvid en eller flera kolumner som du vill avsynkronisera.
+
    >[!NOTE]
    >
    >Du kan inte avsynkronisera en primärnyckelkolumn utan att släppa hela tabellen.
@@ -120,7 +121,7 @@ Om du vill fortsätta med detta kontaktar du [!DNL Commerce Intelligence] [Suppo
 
 Här är en titt på hela processen:
 
-![](../../mbi/assets/drop_column.png)
+![Alternativet Släpp kolumn i Data Warehouse Manager](../../mbi/assets/drop_column.png)
 
 ## Radbrytning
 

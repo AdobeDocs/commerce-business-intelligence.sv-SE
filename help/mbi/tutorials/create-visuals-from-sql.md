@@ -4,9 +4,9 @@ description: Lär dig bekanta dig med den terminologi som används i SQL Report 
 exl-id: 9b9bc205-5b64-4e64-8d23-057072e5dd72
 role: Admin, Data Architect, Data Engineer, Leader, User
 feature: SQL Report Builder, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '665'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ Ta som exempel den här frågan som returnerar det totala antalet artiklar som s
 
 Den här frågan returnerar den här resultattabellen:
 
-![](../assets/SQL_results_table.png)
+![Tabell som visar SQL-frågeresultat med artiklar som sålts per produkt, år och månad](../assets/SQL_results_table.png)
 
 ## Steg 2: Skapa visualiseringen
 
@@ -66,7 +66,7 @@ Med dessa resultat *hur skapar du visualiseringen?* Klicka på fliken **[!UICONT
 
 När en fråga körs för första gången kan rapporten se ogenomskinlig ut eftersom alla kolumner i frågan är plottade som en serie:
 
-![](../assets/SQL_initial_report_results.png)
+![Inledande SQL-rapport med alla kolumner plottade som serier](../assets/SQL_initial_report_results.png)
 
 I det här exemplet vill du att det här ska vara ett linjediagram som utvecklas över tid. Använd följande inställningar för att skapa den:
 
@@ -82,13 +82,13 @@ I det här exemplet vill du att det här ska vara ett linjediagram som utvecklas
 
 Nedan följer en kort titt på hur du skapade den här visualiseringen, från att köra frågan till att konfigurera rapporten:
 
-![](../assets/SQL_report_settings.gif)
+![Animerad demonstration av konfigurering av visualiseringsinställningar för SQL-rapport](../assets/SQL_report_settings.gif)
 
 ## Steg 3: Välj en `Chart Type`
 
 I det här exemplet används diagramtypen `Line`. Om du vill använda en annan `chart type` klickar du på ikonerna ovanför avsnittet med diagramalternativ för att ändra den:
 
-![](../assets/Chart_types.png)
+![Tillgängliga diagramtypsikoner, inklusive linje, stapel, område och andra visualiseringsalternativ](../assets/Chart_types.png)
 
 ## Steg 4: Spara visualiseringen
 

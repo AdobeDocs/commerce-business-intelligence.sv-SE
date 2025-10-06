@@ -4,9 +4,9 @@ description: Lär dig hur du skapar sparade filteruppsättningar och använder d
 exl-id: 6ef8b67c-bebd-45eb-bca7-95832ec34fc8
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '277'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Om du har flera mätvärden i [!DNL Commerce Intelligence] som måste filtreras på ett liknande sätt (till exempel filtrera bort testorder) kan du skapa sparade filteruppsättningar och använda dem för mätvärdena. Detta sparar tid eftersom du inte behöver lägga till enskilda filter när du skapar eller redigerar ett mätresultat.
 
-Mer information finns i [utbildningsvideon](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-filter-sets.html?lang=sv-SE).
+Mer information finns i [utbildningsvideon](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-filter-sets.html).
 
 >[!NOTE]
 >
@@ -23,7 +23,7 @@ Mer information finns i [utbildningsvideon](https://experienceleague.adobe.com/d
 
 1. Klicka på **[!DNL Manage Data** > **Filter Sets]** i sidlisten.
 
-   ![](../../assets/create-filter-sets.png)
+   ![Skapa gränssnitt för filteruppsättningar med alternativet Lägg till filteruppsättning](../../assets/create-filter-sets.png)
 
 1. Klicka på **[!UICONTROL Add Filter Set]** överst på sidan.
 

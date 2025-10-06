@@ -4,9 +4,9 @@ description: Lär dig hur du konsoliderar data från olika källor.
 exl-id: 668cbc77-6a96-4687-9f40-3635b1be5c66
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '337'
+source-wordcount: '345'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ Den nya kolumnen visas i den aktuella tabellen med statusen `Pending`. När näs
 
 Om du har problem med att komma ihåg vad alla indata är när du skapar en beräknad kolumn, kan du försöka behålla referenskartan när du skapar:
 
-![](../../assets/Calculated_Columns_Example.png)
+![Exempel på beräknad kolumnkonfiguration i Data Warehouse Manager](../../assets/Calculated_Columns_Example.png)
 
 ## Relaterad dokumentation
 

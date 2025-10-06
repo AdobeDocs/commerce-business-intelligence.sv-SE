@@ -4,9 +4,9 @@ description: Lär dig mer om några olika metoder för att utvärdera hur kampan
 exl-id: 4f2bf408-eeaf-4dbf-b62e-89426734640a
 role: Admin, User
 feature: Data Warehouse Manager, Reports, Campaigns
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '1247'
+source-wordcount: '1253'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ Analyser (1) och (2) ovan utforskas i en separat självstudiekurs om [hur du ide
 1. Välj `Add New Metric` och välj den [!DNL `Adwords...`]-tabell som registrerar dina [!DNL AdWords]-kostnadsdata.
 1. Ge måttet ett namn i måttredigeraren (till exempel [!UICONTROL AdWord Cost])
 1. Använd listrutorna för att utföra en **summa** i kolumnen `adCost` i tabellen [!DNL Adwords...] (Ändra) som ordnas av kolumnen `date`.
-   ![](../../assets/success-add-new-metric.png)<!--="500" height="303"}-->
+   ![Meddelandet Slutfördes när nya mått lades till](../../assets/success-add-new-metric.png)<!--="500" height="303"}-->
 1. Klicka `Back to Metric List` överst och gå till en instrumentpanel.
 
 1. Skapa en rapport som segmenterar utgifter efter kampanjer
@@ -99,7 +99,7 @@ Kör ni produktspecifika annonser? I så fall kan ni mäta avkastningen på dess
 >
 >I det här exemplet antas att alla kampanjkostnader uteslutande användes för att generera inköp av specifika produkter. Om man utgår ifrån att alla kostnader spenderas på att generera inköp, utgör den resulterande avkastningen det värsta scenariot (den högsta kostnaden per inköp). Du kan vara säker på att den faktiska avkastningen är högre än den här beräkningen. Exempel: Om ni spenderade 20 USD på en kampanj som genererade 10 nya användare och 10 inköp blir den faktiska kostnaden per inköp 1 USD. Under antagandet att alla kostnader gick för att förvärva nya användare är kostnaden per inköp $2.
 
-Innan du startar [skickar du en supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE) för att ansluta följande dimensioner till din tabell med radobjekt (`sales\_flat\_order\_item, order\_item`):
+Innan du startar [skickar du en supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) för att ansluta följande dimensioner till din tabell med radobjekt (`sales\_flat\_order\_item, order\_item`):
 
 * Orderns källa (om du bara spårar hänvisningskälla på användarnivå ska du ansluta till användarens källa)
 * Beställningens kampanj (om du bara spårar hänvisningskälla på användarnivå ska du gå med i användarens kampanj)
@@ -122,8 +122,8 @@ Innan du startar [skickar du en supportanmälan](https://experienceleague.adobe.
 1. Lägg till formler med de här måtten på plats:
 1. [!UICONTROL ROI]: Ange formeln `\[A\]/\[B\]`, om `\[A\]` representerar `Revenue per campaign for specific product(s)` och `\[B\]` representerar `Ad cost by campaigns`. Detta returnerar förhållandet (intäkt för specifika produkter) / (kampanjkostnad)
 1. [!UICONTROL Return]: Ange formeln `\[A\]-\[B\]`. Detta returnerar den genomsnittliga marginalen för en användare genom att beräkna (genomsnittlig användarkostnad per förvärv) - (genomsnittlig kostnad per förvärv)
-1. (Valfritt) [!UICONTROL Revenue]: Visa måttet `Revenue by items` om du vill visa intäkter för specifika produkter per kampanj
-1. (Valfritt) [!UICONTROL Cost]: Visa måttet `AdWords Cost` för att se kostnaden för kampanjer
+   1. (Valfritt) [!UICONTROL Revenue]: Visa måttet `Revenue by items` om du vill visa intäkter för specifika produkter per kampanj
+   1. (Valfritt) [!UICONTROL Cost]: Visa måttet `AdWords Cost` för att se kostnaden för kampanjer
 
 1. Ge rapporten ett namn och se till att den sparas som en tabell
 

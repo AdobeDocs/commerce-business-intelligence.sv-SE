@@ -4,9 +4,9 @@ description: Lär dig skapa en kopia av en rapport.
 exl-id: c57783b4-32ae-4054-a85a-5ddf63cfd34b
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '88'
+source-wordcount: '101'
 ht-degree: 0%
 
 ---
@@ -17,4 +17,4 @@ Ofta vill du ofta skapa liknande definierade diagram där du bara vill ändra et
 
 I dessa fall startar du `Chart Editor` och klickar på **[!UICONTROL Save As]** i det övre högra hörnet. Detta replikerar det befintliga diagrammet och lägger till det på den aktuella instrumentpanelen med det nya namn du väljer. Du kan redigera inställningarna för det nya diagrammet direkt.
 
-![](../../assets/create-report-copy.png)
+![Diagramredigeraren visar alternativet Spara som för att skapa en kopia av en rapport](../../assets/create-report-copy.png)

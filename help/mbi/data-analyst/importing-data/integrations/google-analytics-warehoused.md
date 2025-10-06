@@ -4,9 +4,9 @@ description: Lär dig att spåra hur besökarna använder er webbplats, vilket i
 exl-id: b9879399-9e1a-4f36-b510-8426ebc83aeb
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '489'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >Kräver [administratörsbehörighet](../../../administrator/user-management/user-management.md).
 
-![](../../../assets/google-analytics-logo.png)
+![Google Analytics-logotyp](../../../assets/google-analytics-logo.png)
 
 [!DNL Google Analytics] är den mest använda webbanalystjänsten på Internet. Genom att implementera [!DNL Google Analytics] på din webbplats kan du spåra hur besökarna använder din webbplats, vilket innehåll som är attraktivt, var besökarna lämnar webbplatsen och mycket annat. [!DNL Google Analytics Warehoused] är en separat integrering med din befintliga [!DNL Google Analytics]-integrering. Det ger bättre analys eftersom [!DNL Google Analytics]-data finns i din Data Warehouse, vilket skiljer sig från liveflödet i den befintliga [!DNL Google Analytics]-integreringen. Om du analyserar dessa mått i [!DNL Commerce Intelligence], tillsammans med andra datadelar, förbättras webbplatsens övergripande hälsa och användbarhet.
 
@@ -35,7 +35,7 @@ Med integreringen av [!DNL Google Analytics Live] å andra sidan är varje [!DNL
 
 >[!INFO]
 >
->[!DNL Google Analytics Warehoused] är en `Premium`-integrering. [Kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE) om du vill lägga till den här integreringen i din prenumeration.
+>[!DNL Google Analytics Warehoused] är en `Premium`-integrering. [Kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) om du vill lägga till den här integreringen i din prenumeration.
 
 1. Gå till sidan `Connections` under **[!UICONTROL Admin** > **Integrations]**.
 1. Klicka på **[!UICONTROL Add an Integration]**, som finns till höger.
@@ -63,7 +63,7 @@ Så här identifierar du en viss webbplats profil-ID [!DNL Google Analytics]:
 
 ## Relaterad dokumentation
 
-* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=sv-SE)
+* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [Ansluter  [!DNL Google Adwords]](../integrations/google-adwords.md)
 * [Analysera webbplatsaktivitet och kundkonverteringsgrader](../../analysis/web-act-cust-conversion.md)
 * [Spåra kundvärvningsdata med hjälp av  [!DNL Google Analytics] cookies](../../analysis/google-track-user-acq.md)

@@ -4,9 +4,9 @@ description: Lär dig hur du granskar data och mätvärden med SQL Report Builde
 exl-id: d1d9e099-4138-43e6-aaec-6f15ebc5c4d4
 role: Admin, Data Architect, Data Engineer, User
 feature: Reports, Data Warehouse Manager, SQL Report Builder
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '507'
 ht-degree: 0%
 
 ---
@@ -26,13 +26,13 @@ ht-degree: 0%
 
 Om du vill få en tydligare bild av frågan kan du formatera om hur den visas i frågefältet. Välj `Run Query` när du är klar. Resultatet fylls i som en tabell i rapportpanelen nedanför frågan.
 
-![](../../assets/run-query-results.gif)
+![Animerad demonstration av SQL-frågor och visningsresultat](../../assets/run-query-results.gif)
 
 ## Begränsa frågan
 
 Om du försöker hitta en viss diskrepans eller datauppsättning bör du begränsa frågan till ett visst prov för att kontrollera mot den lokala databasen. Du kan göra detta genom att redigera frågan så att den matchar dina önskade begränsningar. I följande exempel begränsar du frågan till att endast inkludera intäkter från 1 januari 2013 eller senare. När du har uppdaterat frågan väljer du **[!UICONTROL Run Query]** igen för att uppdatera resultatet.
 
-![](../../assets/restricting-query.gif)
+![Animerad demonstration av begränsning av fråga med filter](../../assets/restricting-query.gif)
 
 ## Spara och exportera
 
@@ -40,7 +40,7 @@ När rapporten uppfyller dina behov ger du rapporten ett tydligt namn, klickar p
 
 När rapporten har sparats går du till den instrumentpanelen genom att välja `Go to Dashboard`. Därifrån kan du exportera data genom att hitta rapporten och välja **[!UICONTROL Options gear > Full `.csv`Exportera]** eller **[!UICONTROL Full Excel Export]**.
 
-![](../../assets/export-dboard-data.gif)
+![Animerad demonstration av export av instrumentpanelsdata](../../assets/export-dboard-data.gif)
 
 ## Egna frågor
 
@@ -48,4 +48,4 @@ Du kan också skriva egna frågor och exportera resultaten som ska jämföras me
 
 >[!NOTE]
 >
->Om du upptäcker diskrepanser efter att ha granskat dina data kan du läsa mer om vad du ska göra härnäst i [Kontakta support: datadiskrepanser](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies.html?lang=sv-SE).
+>Om du upptäcker diskrepanser efter att ha granskat dina data kan du läsa mer om vad du ska göra härnäst i [Kontakta support: datadiskrepanser](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies.html).

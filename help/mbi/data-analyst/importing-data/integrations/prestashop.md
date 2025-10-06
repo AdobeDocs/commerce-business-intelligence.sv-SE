@@ -4,16 +4,16 @@ description: Lär dig hur du ansluter PrestaShop-data till  [!DNL Commerce Intel
 exl-id: b6f240c0-9461-4015-a56a-64e8e67392fa
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '85'
+source-wordcount: '87'
 ht-degree: 0%
 
 ---
 
 # Anslut [!DNL PrestaShop]
 
-![](../../../assets/Prestashop-logo.png)
+![PrestaShop-logotyp](../../../assets/Prestashop-logo.png)
 
 Vill du se hur ert företag presterar eller hitta era mest värdefulla förvärvskällor och kanaler? Om du ansluter dina [!DNL PrestaShop]-data till [!DNL Commerce Intelligence] kan du svara på dessa frågor och mycket mer.
 

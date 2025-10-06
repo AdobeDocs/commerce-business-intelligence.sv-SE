@@ -4,9 +4,9 @@ description: Lär dig hur du förstår hur många möjliga förekomster i en tab
 exl-id: e7256f46-879a-41da-9919-b700f2691013
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '1041'
 ht-degree: 0%
 
 ---
@@ -31,13 +31,13 @@ I en `one-to-one`-relation tillhör en post i tabellen `B` bara en post i tabell
 
 I förhållandet mellan människor och körkortsnummer kan en person t.ex. bara ha ett körkortsnummer och ett körkortsnummer tillhör endast en person.
 
-![](../../assets/one-to-one.png)
+![Diagram som visar en-till-en-relation mellan två entiteter](../../assets/one-to-one.png)
 
 ### `One-to-Many` {#onetomany}
 
 I en `one-to-many`-relation kan en post i tabellen `A` eventuellt tillhöra flera poster i tabellen `B`. Fundera på relationen mellan `orders` och `items` - en order kan innehålla många objekt, men ett objekt tillhör en enda order. I det här fallet är tabellen `orders` den ena sidan och tabellen `items` den andra.
 
-![](../../assets/one-to-many_001.png)
+![Diagram som visar en-till-många-relation mellan order och artiklar](../../assets/one-to-many_001.png)
 
 ### `Many-to-Many` {#manytomany}
 
@@ -45,7 +45,7 @@ I en `many-to-many`-relation kan en post i tabellen `B` eventuellt tillhöra fle
 
 Fundera på relationen mellan **produkter** och **kategorier**: en produkt kan tillhöra många kategorier, och en kategori kan innehålla många produkter.
 
-![](../../assets/many-to-many.png)
+![Diagram som visar många-till-många-relationer mellan produkter och kategorier](../../assets/many-to-many.png)
 
 ## Utvärdera dina tabeller {#eval}
 
@@ -75,7 +75,7 @@ En person kan bara ha ett körkortsnummer. En förares körkortsnummer tillhör 
 
 Det här är en `one-to-one`-relation där varje tabell är en sida.
 
-![](../../assets/one-to-one3.png)
+![Konceptdiagram över en-till-en-relation mellan person och körkort](../../assets/one-to-one3.png)
 
 ### `One-to-Many`
 
@@ -83,7 +83,7 @@ En viss order kan innehålla många artiklar. En given artikel tillhör endast e
 
 Det här är en `one-to-many`-relation där ordertabellen är den ena sidan och artikeltabellen är många.
 
-![](../../assets/one-to-many3.png)
+![Konceptuell diagram över en-till-många-relation mellan order och artiklar](../../assets/one-to-many3.png)
 
 ### `Many-to-Many`
 
@@ -91,7 +91,7 @@ En viss produkt kan eventuellt tillhöra många kategorier. En viss kategori kan
 
 Det här är en `many-to-many`-relation där varje tabell är på många sidor.
 
-![](../../assets/many-to-many3.png)
+![Konceptuell diagram över många-till-många-relationer mellan produkter och kategorier](../../assets/many-to-many3.png)
 
 ### Använda tabellens schema {#schema}
 
@@ -105,7 +105,7 @@ Om tabellerna är länkade med `primary key` i båda tabellerna beskrivs samma u
 
 En `users`-tabell kan t.ex. hämta de flesta användarattribut (t.ex. namn) medan en extra `user_source`-tabell hämtar källor för användarregistrering. I varje tabell representerar en rad en användare.
 
-![](../../assets/one-to-one1.png)
+![Schema som visar en-till-en-relation med primärnycklar](../../assets/one-to-one1.png)
 
 ### `One-to-many`
 
@@ -115,17 +115,17 @@ En `users`-tabell kan t.ex. hämta de flesta användarattribut (t.ex. namn) meda
 
 När tabeller länkas med en `Foreign key` som pekar på en `primary key`, beskriver den här inställningen en `one-to-many`-relation. Den ena sidan är tabellen som innehåller `primary key` och den andra sidan är tabellen som innehåller `foreign key`.
 
-![](../../assets/one-to-many1.png)
+![Diagram som visar en-till-många-relation med sekundärnyckel ](../../assets/one-to-many1.png)
 
 ### `Many-to-many`
 
 Om något av följande stämmer är relationen `many-to-many`:
 
 * `Non-primary key` kolumner används för att länka två tabeller
-  ![](../../assets/many-to-many1.png)
+  ![Diagram som visar många-till-många-relation med icke-primärnycklar](../../assets/many-to-many1.png)
 * En del av en sammansatt `primary key` används för att länka två tabeller
 
-![](../../assets/many-to-mnay2.png)
+![Diagram som visar många-till-många-relation med den sammansatta primärnyckeln](../../assets/many-to-mnay2.png)
 
 ## Nästa steg
 

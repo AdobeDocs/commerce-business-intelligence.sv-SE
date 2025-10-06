@@ -4,9 +4,9 @@ description: Lär dig hur du bläddrar i tabeller som är tillgängliga för syn
 exl-id: 94beba8b-6a86-4af9-87fb-96b1cf8f8fa2
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '513'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ Beroende på anslutningsmetod och typ av databas kan viss teknisk expertis behö
 
 ## `SaaS` integreringar
 
-![](../../../assets/SaaS_icons.jpg)spree-commerce-logo.png
+![SaaS-integrationsikoner som visar olika plattformar som stöds](../../../assets/SaaS_icons.jpg)spree-commerce-logo.png
 
 `SaaS`-integreringar är tjänster som [[!DNL Google Adwords]](../integrations/google-adwords.md), [[!DNL Salesforce]](../integrations/salesforce.md) och [[!DNL Zendesk]](../integrations/zendesk.md). Eftersom data från tredje part finns på leverantörens server, kan du inte komma åt dem direkt på samma sätt som du kan med data i din databas.
 
@@ -70,6 +70,6 @@ Om du vill lägga till en integrering klickar du på **[!UICONTROL Manage Data**
 * [Konsoliderar dina tabeller](../../../best-practices/consolidating-your-tables.md)
 * [Begränsa åtkomst till databasen](../../../administrator/account-management/restrict-db-access.md)
 
-**Hittar du ingen integrering?** Vissa integreringar måste aktiveras för att de ska kunna visas på ditt konto. Om du letar efter något som [!DNL Facebook] men det inte finns med i listan, [skickar du en supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE).
+**Hittar du ingen integrering?** Vissa integreringar måste aktiveras för att de ska kunna visas på ditt konto. Om du letar efter något som [!DNL Facebook] men det inte finns med i listan, [skickar du en supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 **Om du ser felstatus för en integrering** kan du få hjälp i avsnittet [Felsökning](https://support.magento.com/hc/en-us/sections/360003078151).

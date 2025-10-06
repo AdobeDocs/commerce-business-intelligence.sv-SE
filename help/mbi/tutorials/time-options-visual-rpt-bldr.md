@@ -4,9 +4,9 @@ description: Lär dig att analysera data i rapporten under en viss tidsperiod.
 exl-id: a1bb4838-f882-44b1-a29f-84b985032ceb
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '1272'
+source-wordcount: '1329'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Vissa mätvärden kan inte trendas över tid eftersom data inte samlas in eller 
 
 När du använder ett sådant mått i din rapportering, märker du att om du lägger till det här måttet i en rapport anges automatiskt en oberoende `Time Interval` av `None` och `Time Range` av `Global`:
 
-![](../assets/Metrics_without_timestamps.gif)
+![Rapport som visar mått med tidsintervallet inställt på Ingen och tidsintervallet inställt på Global](../assets/Metrics_without_timestamps.gif)
 
 ## Ger ett mätvärde och ett oberoende tidsintervall {#independenttimeinterval}
 
@@ -62,11 +62,11 @@ Den här typen av rapport kan vara användbar om du vill jämföra intäkter som
 
 Nu kan du se hur effektfullt varje månad var förra året:
 
-![](../assets/Independent_Time_Int.png)
+![Diagram som visar intäktsprocent per månad för föregående år](../assets/Independent_Time_Int.png)
 
 ## Jämföra samma mått över olika tidsintervall {#difftimerange}
 
-I det här exemplet används en anpassad dimension med namnet `Day number of the month`. Om du vill skapa den här rapporten och inte redan har den här dimensionen i din Data Warehouse [kontaktar du support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE) för att få hjälp.
+I det här exemplet används en anpassad dimension med namnet `Day number of the month`. Om du vill skapa den här rapporten och inte redan har den här dimensionen i din Data Warehouse [kontaktar du support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) för att få hjälp.
 
 De två vanligaste exemplen i den här kategorin är (1) att jämföra tillväxtstatistik (intäkter år för år eller månad för månad) och (2) att bättre förstå de senaste trenderna inom lager- eller artikelförsäljning.
 
@@ -87,7 +87,7 @@ Titta på de dagliga intäkterna för föregående månad jämfört med samma m�
 
    Oroa dig inte om mätvärdena försvinner från rapporten. Om du ställer in ett oberoende tidsalternativ döljs mätvärdena automatiskt från rapporten. Om du vill visa det igen klickar du på **[!UICONTROL Show]** bredvid måttet.
 
-   ![](../assets/Different_Time_Ranges.gif)
+   ![Demonstration av att ställa in olika tidsintervall för mätvärden i en rapport](../assets/Different_Time_Ranges.gif)
 
    * Klicka på **[!UICONTROL Apply]** om du vill spara intervall- och intervallinställningarna.
 
@@ -95,7 +95,7 @@ Titta på de dagliga intäkterna för föregående månad jämfört med samma m�
 
    * I listrutan `Group By` väljer du `Show All` och klickar på **[!UICONTROL Apply]**. Detta skapar rapportens X-axelvärden:
 
-   ![](../assets/TO4.png)
+   ![Rapport som visar intäktsjämförelse grupperad efter dagnummer i månad](../assets/TO4.png)
 
    * Byt namn på måtten. I exemplet är det första måttet `Revenue - 2015` och det andra `Revenue - 2014`.
 
@@ -136,7 +136,7 @@ Om du vill skapa formlerna klickar du på **[!UICONTROL Add Formula]**. Ange for
 
 * Ange `last promo period` i fältet `D / C` för `Formula`.
 
-  ![](../assets/Different_Time_Ranges_2.png)
+  ![Rapport som visar veckor för leveransberäkningar för olika tidsperioder](../assets/Different_Time_Ranges_2.png)
 
 * Skräddarsy slutligen rapporten genom att dölja måtten och lägga till en `SKU` eller en liknande dimension till rapporten som en `Group By`.
 

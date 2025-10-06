@@ -4,9 +4,9 @@ description: Lär dig hur du arbetar med och delar dina instrumentpaneler.
 exl-id: 73df627f-bc08-45c0-aa5e-410c4fd0642d
 role: Admin, User
 feature: Dashboards
-source-git-commit: d40a04cedb3aee3385a8c34e0919f954431e0897
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '377'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Ibland kan du hitta flera instrumentpaneler med samma namn - det beror vanligtvi
 
 Om du vill se vem som äger en kontrollpanel klickar du på kontrollpanelens listruta i det övre vänstra hörnet. Alla instrumentpaneler som inte har något namn nedanför dem tillhör dig.
 
-![](../../mbi/assets/Dash_ownership.png)
+![Instrumentpanelens ägarskapsindikator visar skapare och behörigheter](../../mbi/assets/Dash_ownership.png)
 
 Så här tar du bort alla dubblettinstrumentpaneler:
 

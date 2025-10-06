@@ -4,9 +4,9 @@ description: Lär dig ansluta Google Analytics med  [!DNL Commerce Intelligence]
 exl-id: 10e813f1-0306-4bdd-8222-e6364ac624de
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '283'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >Kräver [administratörsbehörighet](../../../administrator/user-management/user-management.md).
 
-![](../../../assets/google-analytics-logo.png)
+![Google Analytics-logotyp](../../../assets/google-analytics-logo.png)
 
 [!DNL Google Analytics] är den mest använda webbanalystjänsten på Internet. Genom att implementera [!DNL Google Analytics] på din webbplats kan du spåra hur besökarna använder din webbplats, vilket innehåll som är attraktivt, var besökarna lämnar webbplatsen och mycket annat. Om du analyserar dessa mått i [!DNL Commerce Intelligence], tillsammans med andra datadelar, förbättras webbplatsens övergripande hälsa och användbarhet.
 
@@ -33,7 +33,7 @@ Kom igång genom att ange dina [!DNL Google Analytics]-autentiseringsuppgifter i
 
 1. En lista över profil-ID:n visas. Kontrollera de profiler som du vill ansluta till [!DNL Commerce Intelligence]. Om du har flera profiler och behöver hjälp med att identifiera vilka som är vilka, se avsnittet Ansluter flera [!DNL Google Analytics]-profiler nedan.
 
-   ![](../../../assets/list-profile-id.png)<!--{: width="600px"}-->
+   ![Google Analytics Admin-sida med profil-ID i URL](../../../assets/list-profile-id.png)<!--{: width="600px"}-->
 
 1. Ändringarna sparas automatiskt, så klicka på **Tillbaka till anslutningar** när du är klar.
 
@@ -57,7 +57,7 @@ Så här identifierar du en viss webbplats profil-ID [!DNL Google Analytics]:
 
 ## Relaterat:
 
-* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=sv-SE)
+* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [Ansluter  [!DNL Google Adwords]](../integrations/google-adwords.md)
 * [Analysera webbplatsaktivitet och kundkonverteringsgrader](../../analysis/web-act-cust-conversion.md)
 * [Spåra kundvärvningsdata med hjälp av  [!DNL Google Analytics] cookies](../../analysis/google-track-user-acq.md)

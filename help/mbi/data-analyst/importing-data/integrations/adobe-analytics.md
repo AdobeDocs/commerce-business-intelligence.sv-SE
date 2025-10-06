@@ -4,9 +4,9 @@ description: Lär dig att sätta samman hela kundresan från  [!DNL Adobe Analyt
 exl-id: 824e1ee4-6b88-42f7-b265-29330dbc4407
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '312'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >Kräver [administratörsbehörighet](../../../administrator/user-management/user-management.md).
 
-![](../../../assets/adobe-analytic-slogo.png)
+![Adobe Analytics-logotyp](../../../assets/adobe-analytic-slogo.png)
 
 Integreringen av [!DNL Adobe Analytics] för [!DNL Adobe Commerce Intelligence] gör att du kan sätta ihop fokus för hela kundresan för [!DNL Adobe Analytics] och e-handelsfokus som du litar på från [!DNL Commerce Intelligence]. Detta ger en fullständig bild av butikens totala prestanda.
 
@@ -57,6 +57,6 @@ Följande information krävs för att ansluta:
 
 1. Den valda rapportsviten visas i en tabell. Klicka på **[!UICONTROL Save]** för att bekräfta ditt val.
 
-1. Informera [!DNL Commerce Intelligence] [supportteamet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE) om att din integrering är auktoriserad och de kör den inledande anslutningsprocessen åt dig.
+1. Informera [!DNL Commerce Intelligence] [supportteamet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) om att din integrering är auktoriserad och de kör den inledande anslutningsprocessen åt dig.
 
 När den inledande anslutningsprocessen har körts är tabellen tillgänglig på Data Warehouse-sidan på fliken `All Tables`. Markera de kolumner som du vill replikera, så visas data efter nästa fullständiga uppdatering.

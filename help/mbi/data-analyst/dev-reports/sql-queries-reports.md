@@ -4,9 +4,9 @@ description: Lär dig hur SQL-frågor översätts till beräknade kolumner, mät
 exl-id: b3e3905f-6952-4f15-a582-bf892a971fae
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, SQL Report Builder, Reports
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '942'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Titta på ett specifikt exempel på hur ett `Total Revenue`-mått kan definieras
 | `email NOT LIKE '%@magento.com'` | Mått `filter` |
 | `AND created_at < X`<br><br>`AND created_at >= Y` | Mått `timestamp` (och rapportering `time range`) |
 
-Navigera till måttverktyget genom att klicka på **[!UICONTROL Manage Data** > **&#x200B; Metrisk &#x200B;**> **Skapa nytt mätresultat]**. Du måste först markera rätt `source`-tabell, som i det här fallet är `orders`-tabellen. Därefter ställs måtten in enligt nedan:
+Navigera till måttverktyget genom att klicka på **[!UICONTROL Manage Data** > ** Metrisk **> **Skapa nytt mätresultat]**. Du måste först markera rätt `source`-tabell, som i det här fallet är `orders`-tabellen. Därefter ställs måtten in enligt nedan:
 
 ![Måttaggregering](../../assets/Metric_aggregation.png)
 
@@ -75,7 +75,7 @@ Frågan för den här aggregeringen kan se ut ungefär som nedan:
 
 Om du konfigurerar detta i [!DNL Commerce Intelligence] måste du använda din Data Warehouse-hanterare, där du skapar en sökväg mellan din `orders` - och `customers`-tabell och sedan skapar en kolumn med namnet `Customer LTV` i kundens tabell.
 
-Titta på hur du skapar en ny sökväg mellan `customers` och `orders`. Slutmålet är att skapa en ny aggregerad kolumn i tabellen `customers`, så navigera först till tabellen `customers` i Data Warehouse och klicka sedan på **[!UICONTROL Create a Column** > **&#x200B; Välj en definition &#x200B;**> **SUM]**.
+Titta på hur du skapar en ny sökväg mellan `customers` och `orders`. Slutmålet är att skapa en ny aggregerad kolumn i tabellen `customers`, så navigera först till tabellen `customers` i Data Warehouse och klicka sedan på **[!UICONTROL Create a Column** > ** Välj en definition **> **SUM]**.
 
 Sedan måste du välja källtabellen. Om det finns en sökväg till din `orders`-tabell väljer du den i listrutan. Om du skapar en ny sökväg klickar du på **[!UICONTROL Create new path]** så visas skärmen nedan:
 
@@ -89,7 +89,7 @@ Här bör du noga tänka på relationen mellan de två tabeller som du försöke
 
 När sökvägen har sparats kan du skapa kolumnen `Customer LTV`! Se nedan:
 
-![](../../assets/Customer_LTV.gif)
+![Animerad demonstration av kundlivstidsanalys med SQL](../../assets/Customer_LTV.gif)
 
 Nu när du har skapat den nya `Customer LTV`-kolumnen i din `customers`-tabell kan du skapa en [måttaggregering](#aggregate) med den här kolumnen (till exempel för att hitta den genomsnittliga LTV-nivån per kund). Du kan också `group by` eller `filter` med den beräknade kolumnen i en rapport med hjälp av befintliga mått som bygger på tabellen `customers`.
 

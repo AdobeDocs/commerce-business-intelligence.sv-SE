@@ -4,18 +4,18 @@ description: Lär dig hur du optimerar dina SQL-frågor.
 exl-id: 2782c707-6a02-4e5d-bfbb-eff20659fbb2
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Integration, Data Import/Export, Data Warehouse Manager
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: acc152709c7c66f387f4eded9e6c1c646a83af35
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '826'
 ht-degree: 0%
 
 ---
 
 # Optimera dina SQL-frågor
 
-Med [!DNL SQL Report Builder] kan du fråga efter och upprepa dessa frågor när du vill. Detta är användbart när du behöver ändra en fråga utan att behöva vänta på att en uppdateringscykel ska slutföras innan en kolumn eller rapport som du har skapat realiseras och behöver uppdateras.
+Med [!DNL SQL Report Builder] kan du köra och ändra dina frågor när du vill. Den här funktionen är användbar om du behöver uppdatera en fråga direkt i stället för att vänta på att en uppdateringscykel ska avslutas innan du korrigerar en kolumn eller rapport.
 
-Innan en fråga körs uppskattar [[!DNL Commerce Intelligence] dess kostnad](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html?lang=sv-SE). Kostnad anger hur lång tid och hur många resurser som krävs för att köra en fråga. Om kostnaden anses vara för hög eller om antalet returnerade rader överstiger [!DNL Commerce Intelligence]-gränserna misslyckas frågan. Adobe rekommenderar följande för att fråga din [Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md), som ser till att du skriver de mest effektiva frågorna.
+Innan en fråga körs uppskattar [[!DNL Commerce Intelligence] dess kostnad](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html). Kostnad anger hur lång tid och hur många resurser som krävs för att köra en fråga. Om kostnaden anses vara för hög eller om antalet returnerade rader överstiger [!DNL Commerce Intelligence]-gränserna misslyckas frågan. Adobe rekommenderar följande för att fråga din [Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md), som ser till att du skriver de mest effektiva frågorna.
 
 ## Använda SELECT eller Markera alla kolumner
 
@@ -25,7 +25,7 @@ Därför rekommenderar Adobe att du undviker att använda `SELECT *` där det ä
 
 | **Istället för detta..** | **Prova det här!** |
 |-----|-----|
-| ![](../../mbi/assets/Select_all_1.png) | ![](../../mbi/assets/Select_all_2.png) |
+| ![SQL-fråga med SELECT-asterisk](../../mbi/assets/Select_all_1.png) | ![SQL-fråga markera specifika kolumner](../../mbi/assets/Select_all_2.png) |
 
 {style="table-layout:auto"}
 
@@ -39,7 +39,7 @@ Se hur du kan skriva om en FULL OUTER JOIN-fråga:
 
 | **Istället för detta..** | **Prova det här!** |
 |-----|-----|
-| ![](../../mbi/assets/Full_Outer_Join_1.png) | ![](../../mbi/assets/Full_Outer_Join_2.png) |
+| ![SQL-fråga med fullständig yttre koppling](../../mbi/assets/Full_Outer_Join_1.png) | ![SQL-fråga med optimerad koppling](../../mbi/assets/Full_Outer_Join_2.png) |
 
 {style="table-layout:auto"}
 
@@ -51,7 +51,7 @@ De här frågorna är identiska på alla sätt förutom den typ av JOIN som de a
 
 ## Använda filter
 
-Använd filter när det är möjligt. `WHERE`- och `HAVING`-satser filtrerar dina resultat och ger dig bara de data du verkligen vill ha.
+Använd filter när det är möjligt. Satserna `WHERE` och `HAVING` filtrerar dina resultat och ger dig bara de data du verkligen vill ha.
 
 ## Använda filter i JOIN-satser
 
@@ -59,7 +59,7 @@ Om du använder ett filter när du gör en koppling måste du använda det på b
 
 | **Istället för detta..** | **Prova det här!** |
 |-----|-----|
-| ![](../../mbi/assets/Join_filters_1.png) | ![](../../mbi/assets/Join_filters_2.png) |
+| ![SQL-fråga med WHERE-satsfilter](../../mbi/assets/Join_filters_1.png) | ![SQL-fråga med ON-satsfilter](../../mbi/assets/Join_filters_2.png) |
 
 {style="table-layout:auto"}
 
@@ -73,19 +73,19 @@ Jämförelseoperatorer (>, &lt;, = och så vidare) är de som är minst dyra, f�
 
 Användningen av `EXISTS` jämfört med `IN` beror på vilken typ av resultat du försöker returnera. Om du bara är intresserad av ett enda värde använder du `EXISTS`-satsen i stället för `IN`. `IN` används med listor med kommaavgränsade värden, vilket ökar frågans beräkningskostnad.
 
-När `IN` frågor körs måste systemet först bearbeta underfrågan (programsatsen `IN`) och sedan hela frågan baserat på relationen som anges i programsatsen `IN`. `EXISTS` är mycket effektivare eftersom frågan inte behöver köras flera gånger - ett sant/falskt värde returneras när relationen som anges i frågan kontrolleras.
+När `IN` frågor körs måste systemet först bearbeta underfrågan (programsatsen `IN`) och sedan hela frågan baserat på relationen som anges i programsatsen `IN`. `EXISTS`-frågan är mycket effektivare eftersom frågan inte behöver köras flera gånger - ett sant/falskt värde returneras när relationen som anges i frågan kontrolleras.
 
 Kort sagt: systemet behöver inte bearbeta så mycket när `EXISTS` används.
 
 | **Istället för detta..** | **Prova det här!** |
 |-----|-----|
-| ![](../../mbi/assets/Exists_1.png) | ![](../../mbi/assets/Exists_2.png) |
+| ![SQL-fråga med LEFT JOIN med NULL-kontroll](../../mbi/assets/Exists_1.png) | ![SQL-fråga med EXISTS-sats](../../mbi/assets/Exists_2.png) |
 
 {style="table-layout:auto"}
 
 ## Använda ORDER BY
 
-`ORDER BY` är en dyr funktion i SQL och kan avsevärt öka kostnaden för en fråga. Om du får ett felmeddelande om att EXPLAIN-kostnaden för din fråga är för hög kan du försöka ta bort `ORDER BY` från din fråga om det inte behövs.
+Funktionen `ORDER BY` är dyr i SQL och kan avsevärt öka kostnaden för en fråga. Om du får ett felmeddelande om att EXPLAIN-kostnaden för din fråga är för hög kan du försöka ta bort `ORDER BY` från din fråga om det inte behövs.
 
 Detta innebär inte att `ORDER BY` inte kan användas - bara att det bara ska användas när det är nödvändigt.
 
@@ -95,7 +95,7 @@ Det kan finnas situationer där detta tillvägagångssätt inte överensstämmer
 
 | **Istället för detta..** | **Prova det här!** |
 |-----|-----|
-| ![](../../mbi/assets/Group_by_2.png) | ![](../../mbi/assets/Group_by_1.png) |
+| ![SQL-fråga med GROUP BY före filter](../../mbi/assets/Group_by_2.png) | ![SQL-fråga med filter före GROUP BY](../../mbi/assets/Group_by_1.png) |
 
 {style="table-layout:auto"}
 

@@ -4,9 +4,9 @@ description: Lär dig hur du skapar en kontrollpanel som hjälper dig att spåra
 exl-id: 9d621f40-f9c2-4310-bd96-a46ab7159930
 role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards, Reports
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '402'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 De flesta klienter vill spåra sina **affärsmål**, men inser inte att detta är möjligt i [!DNL Adobe Commerce Intelligence]. Det här avsnittet visar hur du konfigurerar en kontrollpanel som hjälper dig att spåra dina affärsmål mot dina faktiska data - inklusive intäkter, nya registrerade användare och beställningar över tid. Du får också lära dig hur du jämför års prestanda, allt på en kontrollpanel som den här:
 
-![](../../assets/Goals-_dashboard_2.png)
+![Kontrollpanelen visar målspårning mot faktiska mätresultat](../../assets/Goals-_dashboard_2.png)
 
 Innan du börjar bör du granska [filöverföringen](../importing-data/connecting-data/using-file-uploader.md) och se till att du har definierat dina affärsmål för en viss period.
 
@@ -25,7 +25,7 @@ Du måste först ladda upp en fil som innehåller specifika mål per dag, månad
 
 Du kan använda [filöverföringen](../importing-data/connecting-data/using-file-uploader.md) och bilden nedan för att formatera filen. De vanligaste målen som klienter spårar i [!DNL Commerce Intelligence] är Beställningar, Intäkter och Nya registrerade konton.
 
-![](../../assets/Goals-_Excel.png)
+![Excel-kalkylbladsmall för att spåra mål och mätvärden](../../assets/Goals-_Excel.png)
 
 ## Mått
 
@@ -55,46 +55,46 @@ Det är praktiskt att ha en blandning av statiska värden och visuella diagram n
 
 * **Återstående intäkter för att uppnå målet**
 * Mått `A`: `Revenue`
-* &#x200B;
-  [!UICONTROL -mått]: `Revenue`
+* 
+  [!UICONTROL-mått]: `Revenue`
 
 * Mått `B`: `Target Revenue`
 * [!UICONTROL Metric]: `Monthly Revenue Target`
 
 * [!UICONTROL Formula]: `Revenue left to achieve target`
-* &#x200B;
-  [!UICONTROL -formel]: `(B-A)`
-* &#x200B;
+* 
+  [!UICONTROL-formel]: `(B-A)`
+* 
   [!UICONTROL Format]: `Number`
 
 * [!UICONTROL Time period]: (oavsett vilken tidsperiod du vill ha)
-* &#x200B;
+* 
   [!UICONTROL Interval]: `Month`
-* &#x200B;
-  [!UICONTROL -diagramtyp]: `Scalar`
+* 
+  [!UICONTROL-diagramtyp]: `Scalar`
 
 * **Intäktsmål**
 * Mått `A`: `Revenue`
-* &#x200B;
-  [!UICONTROL -mått]: `Revenue`
+* 
+  [!UICONTROL-mått]: `Revenue`
 
 * Mått `B`: `Target Revenue`
 * [!UICONTROL Metric]: `Monthly Revenue Target`
 
 * Mått `C`: `Revenue (amount change since previous year)` (dölj)
-* &#x200B;
-  [!UICONTROL -mått]: `Revenue`
+* 
+  [!UICONTROL-mått]: `Revenue`
 * [!UICONTROL Perspective]: `Amount change vs. Previous year`
 
 * [!UICONTROL Formula]: (Den här månaden förra året)
-* &#x200B;
-  [!UICONTROL -formel]: `(A-C)`
-* &#x200B;
+* 
+  [!UICONTROL-formel]: `(A-C)`
+* 
   [!UICONTROL Format]: `Currency`
 
 * Stäng av `Multiple Y-Axes`
 * [!UICONTROL Time period]: (oavsett vilken tidsperiod du vill ha)*
-* &#x200B;
+* 
   [!UICONTROL Interval]: `Month`
 * [!UICONTROL Chart Type]: `Line Chart`
 

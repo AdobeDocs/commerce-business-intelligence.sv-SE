@@ -4,9 +4,9 @@ description: Lär dig hur du skapar kolumner för att förbättra och optimera d
 exl-id: 1af79b9e-77ff-4fc6-917a-4e6743b95035
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '741'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ En kolumn för beräkning av ålder returnerar antalet sekunder mellan den aktue
 
 I exemplet nedan skapas `Seconds since customer's most recent order` i tabellen `customers`. Detta kan användas för att skapa användarlistor för kunder som inte har gjort inköp (kallas ibland för att vinna) inom `X days`.
 
-![](../../assets/age.gif)
+![Animerad demonstration av att skapa åldersberäkningskolumn](../../assets/age.gif)
 
 ### Valutakonverterare
 
@@ -47,7 +47,7 @@ I exemplet nedan skapas `base\_grand\_total In AED` och `base\_grand\_total` kon
 
 För Commerce-klienter lagrar fältet `base\_currency\_code` vanligtvis inbyggda valutor. Fältet `Spot Time` ska matcha datumet som används i måtten.
 
-![](../../assets/currency_converter.png)
+![Konfiguration av beräknad kolumn för valutakonverterare](../../assets/currency_converter.png)
 
 ## En-till-många beräknade kolumner {#onetomany}
 
@@ -59,7 +59,7 @@ En sammanfogad kolumn omlokaliserar ett attribut i den enda tabellen *till* i de
 
 I exemplet nedan förenas dimensionen `Customer's group\_id` nedåt i tabellen `orders`.
 
-![](../../assets/joined_column.gif)
+![Animerad demonstration av att skapa länkade tabeller för sammanfogade kolumner](../../assets/joined_column.gif)
 
 ## Många-till-ett-beräknade kolumner {#manytoone}
 
@@ -71,7 +71,7 @@ Den här typen av beräknad kolumn returnerar antalet värden i många tabeller 
 
 I exemplet nedan skapas dimensionen `Customer's lifetime number of canceled orders` i tabellen `customers` (med ett filter för `orders.status`).
 
-![](../../assets/many_to_one.gif){: width="699" height="351"}
+![Animerad demonstration av flera-till-en-kolumnaggregering](../../assets/many_to_one.gif){: width="699" height="351"}
 
 ### Summa {#sum}
 
@@ -95,7 +95,7 @@ Den här typen av dimension kan till exempel avgöra om en kund någonsin köpt 
 
 Om du har problem med att komma ihåg vad alla indata är när du skapar en beräknad kolumn, bör du behålla referenskartan när du skapar:
 
-![](../../assets/merged_reference_map.png)
+![Referenskarta som visar den sammanfogade beräknade kolumnkonfigurationen](../../assets/merged_reference_map.png)
 
 ## Avancerade beräknade kolumner {#advanced}
 

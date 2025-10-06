@@ -4,9 +4,9 @@ description: Lär dig skapa dimensioner som länkar e-handelsdata till era order
 exl-id: f8a557ae-01d7-4886-8a1c-c0f245c7bc49
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Integration, Data Warehouse Manager
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '1023'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Om du vill skapa dimensionerna i det här avsnittet behöver du en [!DNL Google 
 
 Här är en snabbtitt på synkronisering av tabeller och kolumner om du behöver en uppdaterare:
 
-![](../../assets/Syncing_New_Columns.gif)
+![Animerad demonstration av synkronisering av nya kolumner i Data Warehouse](../../assets/Syncing_New_Columns.gif)
 
 När du har skapat en koppling från tabellen `orders` till tabellen [!DNL Google eCommerce] skapar du de första tre dimensionerna i listan nedan. Därefter använder du de här dimensionerna för att skapa tre användar-/kunddimensioner i tabellen `customers`. För att avsluta kopplar du de kolumnerna till tabellen `orders`.
 
@@ -65,7 +65,7 @@ Det här exemplet bygger **Order [!DNL Google Analytics] Source** -dimensionen.
 1. I fönstret som visas anger du `Many` till `orders.order\_id`, eller den kolumn i tabellen `orders` som innehåller order-ID:t.
 1. På sidan `One` söker du efter tabellen `Google ECommerce` och anger sedan kolumnen till `transactionID`.
 
-   ![](../../assets/google-ecommerce-table.png)
+   ![Google eCommerce-tabellstruktur som visar tillgängliga dimensioner](../../assets/google-ecommerce-table.png)
 
 1. Klicka på **[!UICONTROL Save]** för att skapa sökvägen.
 1. När sökvägen har lagts till klickar du på listrutan **[!UICONTROL Select table and column]** igen.
@@ -74,7 +74,7 @@ Det här exemplet bygger **Order [!DNL Google Analytics] Source** -dimensionen.
 
 Här är en titt på hela processen:
 
-![](../../assets/help_center.gif)
+![Animerad demonstration av att skapa Google Analytics-källdimension](../../assets/help_center.gif)
 
 Prova sedan att skapa **Beställningens [!DNL Google Analytics] medium** och `campaign`. Det finns inte mycket att ändra för de här dimensionerna, så prova. Men om du fastnar kan du checka ut [slutet av den här artikeln](#stuck) för att se vad som är annorlunda.
 
@@ -115,7 +115,7 @@ Det här exemplet kopplar dimensionen `Customer's first order's [!DNL Google Ana
 
 Här är en titt på hela processen:
 
-![](../../assets/help_center2.gif)
+![Animerad demonstration av att skapa kundförvärvsdimensioner](../../assets/help_center2.gif)
 
 Slutför genom att koppla måtten `Customer's first order's` och `campaign` till tabellen `orders`. Anslut till dimensionerna, och om det uppstår problem kan du checka ut [slutet av artikeln](#stuck) om du behöver hjälp.
 

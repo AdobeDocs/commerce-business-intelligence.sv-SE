@@ -4,9 +4,9 @@ description: Lär dig hur du genererar och analyserar din andel av bortfall i Co
 exl-id: 8775cf0a-114d-4b48-8bd2-fc1700c59a12
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Warehouse Manager, Reports
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '338'
 ht-degree: 2%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 I det här avsnittet visas hur du beräknar en **bortfallstakt** för dina **e-handelskunder**. Till skillnad från SaaS eller traditionella prenumerationsföretag har e-handelskunder vanligtvis inte någon konkret **&quot;churn-händelse&quot;** som visar att de inte längre ska räknas med i dina aktiva kunder. Av den anledningen kan du med instruktionerna nedan definiera en kund som&quot;efterfrågad&quot; baserat på den tid som gått sedan den senaste ordern.
 
-![](../../assets/Churn_rate_image.png)
+![Visualisering av kundfrekvens som visar kundlojalitet över tid](../../assets/Churn_rate_image.png)
 
 Många kunder vill ha hjälp med att börja förstå vilken **tidsram** de ska använda baserat på sina data. Om du vill använda tidigare kundbeteende för att definiera den här **tidsramen för bortfall** kanske du vill bekanta dig med ämnet [definiera urn](../analysis/define-cust-churn.md). Sedan kan du använda resultatet i formeln för bortfallsfrekvens i instruktionerna nedan.
 
@@ -76,19 +76,19 @@ Kolumner att skapa
 * **Kurvfrekvens**
    * [!UICONTROL Metric]: Nya kunder (efter första orderdatum)
    * [!UICONTROL Filter]: `Lifetime number of orders Greater Than 0`
-   * &#x200B;
+   * 
      [!UICONTROL Perspective]: `Cumulative`
    * [!UICONTROL Metric]: `New customers (by last order date)`
    * [!UICONTROL Filter]:
-   * Sekunder sedan kundens senaste orderdatum >= [Din självdefinierade brytfrekvens för kunder som blivit beställda ]&#x200B;**`^`**
+   * Sekunder sedan kundens senaste orderdatum >= [Din självdefinierade brytfrekvens för kunder som blivit beställda ]**`^`**
    * `Lifetime number of orders Greater Than 0`
 
    * [!UICONTROL Metric]: `New customers (by last order date)`
    * [!UICONTROL Filter]: `Lifetime number of orders Greater Than 0`
-   * &#x200B;
+   * 
      [!UICONTROL Perspective]: Cumulative
    * [!UICONTROL Formula]: `(B / ((A + B) - C)`
-   * &#x200B;
+   * 
      [!UICONTROL Format]: Percentage
 
 * *Mått `A`:`New customers cumulative`*

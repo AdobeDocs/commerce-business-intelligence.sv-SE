@@ -4,9 +4,9 @@ description: Läs om de bästa sätten att segmentera och filtrera.
 exl-id: 66391bce-bdeb-4e9d-8089-1c796e00d91e
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Integration, Data Import/Export, Data Warehouse Manager
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: '911'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Vill du veta vilka era mest värdefulla kunder är? Vilka av era mest värdefull
 
 Det här avsnittet behandlar viktiga segment som ofta rekommenderas för kunderna. Det går också närmare in på vilka frågor dessa segment kan hjälpa dig att svara på. Tekniskt sett är segment datakolumner i din databas. I [!DNL Adobe Commerce Intelligence] kallas de för dimensioner.
 
-![](../../mbi/assets/mbi-critical-segments.png)
+![Kontrollpanel med viktiga kundsegment och filter](../../mbi/assets/mbi-critical-segments.png)
 
 
 ## Användarsegment
@@ -71,7 +71,7 @@ Den här typen av analyser är vad marknadsförarna på Fortune 1000-företag g�
 
 Det första steget för att segmentera mätvärdena med ovanstående mått är att se till att du spårar dessa data i databasen. Om den inte spåras kan du kontakta din tekniker och hitta ett sätt att börja spåra dessa data.
 
-När du har bekräftat att data spåras i din databas, [kontaktar du supportteamet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE) för att överföra dimensionerna till dina [!DNL Commerce Intelligence]-mått och diagram. Du kan också använda *fälthanteringsverktyget* för att spåra fälten i [!DNL Commerce Intelligence].
+När du har bekräftat att data spåras i din databas, [kontaktar du supportteamet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) för att överföra dimensionerna till dina [!DNL Commerce Intelligence]-mått och diagram. Du kan också använda *fälthanteringsverktyget* för att spåra fälten i [!DNL Commerce Intelligence].
 
 ## Relaterad
 

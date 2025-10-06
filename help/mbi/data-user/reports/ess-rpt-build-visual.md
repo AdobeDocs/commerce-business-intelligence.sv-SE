@@ -4,9 +4,9 @@ description: Lär dig använda Visual Report Builder.
 exl-id: 1101f43d-e014-4df2-be21-12d90a9d8a56
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '700'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ I följande exempel visas hur du skapar en enkel rapport, grupperar data efter y
 
      ![Gruppera efter tabelldata](../../assets/magento-bi-report-builder-group-by-table-data.png)
 
-   * Klicka på kontrollen Transponera (![](../../assets/magento-bi-btn-transpose.png)) i tabellens övre högra hörn om du vill ändra orienteringen för data.
+   * Klicka på kontrollen Transponera (![Transponera-ikon](../../assets/magento-bi-btn-transpose.png)) i tabellens övre högra hörn om du vill ändra orienteringen för data.
 
      Dataaxeln vänds och tabellen har nu en kolumn för varje kupongkod och en rad för varje månad. Den här orienteringen kan vara lättare att läsa.
 
@@ -95,14 +95,14 @@ I följande exempel visas hur du skapar en enkel rapport, grupperar data efter y
 
      | | |
      |-----|-----|
-     | ![](../../assets/magento-bi-btn-chart-line.png) | Linjediagram |
-     | ![](../../assets/magento-bi-btn-chart-horz-bar.png) | Vågrätt streck |
-     | ![](../../assets/magento-bi-btn-chart-horz-stacked-bar.png) | Vågrät staplad liggande stapel |
-     | ![](../../assets/magento-bi-btn-chart-vert-bar.png) | Lodrätt streck |
-     | ![](../../assets/magento-bi-btn-chart-vert-stacked-bar.png) | Lodrät staplad liggande stapel |
-     | ![](../../assets/magento-bi-btn-chart-pie.png) | Cirkel |
-     | ![](../../assets/magento-bi-btn-chart-area.png) | Område |
-     | ![](../../assets/magento-bi-btn-chart-funnel.png) | Tratt |
+     | ![Ikon för linjediagram](../../assets/magento-bi-btn-chart-line.png) | Linjediagram |
+     | ![Ikon för vågrätt fält](../../assets/magento-bi-btn-chart-horz-bar.png) | Vågrätt streck |
+     | ![Ikon för vågrätt staplat fält](../../assets/magento-bi-btn-chart-horz-stacked-bar.png) | Vågrät staplad liggande stapel |
+     | ![Ikon för lodrätt fält](../../assets/magento-bi-btn-chart-vert-bar.png) | Lodrätt streck |
+     | ![Ikon för lodrätt staplat fält](../../assets/magento-bi-btn-chart-vert-stacked-bar.png) | Lodrät staplad liggande stapel |
+     | ![Cirkeldiagramikon](../../assets/magento-bi-btn-chart-pie.png) | Cirkel |
+     | ![Ikon för ytdiagram](../../assets/magento-bi-btn-chart-area.png) | Område |
+     | ![Ikon för trattdiagram](../../assets/magento-bi-btn-chart-funnel.png) | Tratt |
 
      {style="table-layout:auto"}
 

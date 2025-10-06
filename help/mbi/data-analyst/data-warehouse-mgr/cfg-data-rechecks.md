@@ -4,9 +4,9 @@ description: Lär dig hur du konfigurerar datakolumner med ändringsbara värden
 exl-id: c31ef32e-ba5a-4902-b632-fbab551cc632
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '562'
+source-wordcount: '569'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Kontrollfrekvenser kan hanteras i Data Warehouse genom att du klickar på ett ta
 
 Om du vill ändra frekvensen för omkontroll klickar du i kryssrutan bredvid de kolumner du vill ändra. Klicka sedan på listrutan **[!UICONTROL Set Recheck Frequency]** och ange önskad frekvens.
 
-![](../../assets/dwm-recheck.png)
+![Data Warehouse Manager visar konfigurationsalternativ för omkontroll](../../assets/dwm-recheck.png)
 
 Ibland kanske `Paused` visas i kolumnen `Changes?`. Det här värdet visas när tabellens [replikeringsmetod ](../../data-analyst/data-warehouse-mgr/cfg-data-rechecks.md) är inställd på `Paused`.
 

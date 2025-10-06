@@ -4,9 +4,9 @@ description: Lär dig hur du konfigurerar en kontrollpanel som spårar din kanal
 exl-id: 5de83998-e6cf-478d-bb6a-7a3dc77c2c0c
 role: Admin,  User
 feature: Reports, Dashboards
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,9 @@ ht-degree: 0%
 
 Om ni spenderar pengar på onlinereklam vill ni följa upp er avkastning på dessa utgifter och fatta datadrivna beslut om ytterligare investeringar. I det här avsnittet visas hur du konfigurerar en kontrollpanel som spårar din kanalanalys, inklusive avkastning på investering i aggregat och per kampanj.
 
-![](../../assets/Marketing_dashboard_example.png)
+![Kontrollpanel för marknadsföring som visar ROI-mått och kampanjresultat](../../assets/Marketing_dashboard_example.png)
 
-Innan du börjar vill du ansluta dina [[!DNL [Facebook Ads]]](../importing-data/integrations/facebook-ads.md)-, [[!DNL [Adwords]]](../importing-data/integrations/google-adwords.md)- och [[!DNL [Google Ecommerce]]](../importing-data/integrations/google-ecommerce.md)-konton och hämta ytterligare annonsutgiftsdata online. Den här analysen innehåller [avancerade beräknade kolumner](../data-warehouse-mgr/adv-calc-columns.md).
+Innan du börjar vill du ansluta dina [!DNL [Facebook Ads]](../importing-data/integrations/facebook-ads.md)-, [!DNL [Adwords]](../importing-data/integrations/google-adwords.md)- och [!DNL [Google Ecommerce]](../importing-data/integrations/google-ecommerce.md)-konton och hämta ytterligare annonsutgiftsdata online. Den här analysen innehåller [avancerade beräknade kolumner](../data-warehouse-mgr/adv-calc-columns.md).
 
 ## Konsoliderade tabeller
 
@@ -42,9 +42,9 @@ Kolumner att skapa
    * **`Order's GA campaign`**
       * Välj en definition: `Joined Column`
       * [!UICONTROL Create Path]:
-      * &#x200B;
+      * 
         [!UICONTROL Many]: `sales_flat_order.increment_id`
-      * &#x200B;
+      * 
         [!UICONTROL One]: `ecommerce####.transaction_id`
 
       * Välj en [!UICONTROL table]: `ecommerce####`
@@ -142,9 +142,9 @@ Kolumner att skapa
 
 * Mått `A`: Annonsutgift
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
-  [!UICONTROL -intervall]: `None`
-* &#x200B;
+* 
+  [!UICONTROL-intervall]: `None`
+* 
   [!UICONTROL Chart Type]: `Scalar`
 
 * **Lägg till kundförvärv (hela tiden)**
@@ -158,9 +158,9 @@ Kolumner att skapa
 
 * Mått `A`: `Ad customer acquisitions`
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
-  [!UICONTROL -intervall]: `None`
-* &#x200B;
+* 
+  [!UICONTROL-intervall]: `None`
+* 
   [!UICONTROL Chart Type]: `Scalar`
 
 * **Annonsera ROI**
@@ -183,7 +183,7 @@ Kolumner att skapa
       * Filterlogik: ([`A`] ELLER [`B`] ELLER [`C`]) OCH [`D`]
 
    * [!UICONTROL Formula]: `((C - (A / B)) / (A / B))`
-   * &#x200B;
+   * 
      [!UICONTROL Format]: `Percentage`
 
 * Mått `A`: `Ad Spend (hide)`
@@ -191,20 +191,20 @@ Kolumner att skapa
 * Mått `C`: `Average LTV (hide)`
 * [!UICONTROL Formula]: `Ads ROI`
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
-  [!UICONTROL -intervall]: `None`
-* &#x200B;
+* 
+  [!UICONTROL-intervall]: `None`
+* 
   [!UICONTROL Chart Type]: `Scalar`
 
 * **Beställningar efter gasturka**
-   * &#x200B;
-     [!UICONTROL -mått]: `Orders`
+   * 
+     [!UICONTROL-mått]: `Orders`
 
 * Mått `A`: `Orders`
 * [!UICONTROL Time period]: `All time`
 * [!UICONTROL Interval]: `By Month`
 * [!UICONTROL Group by]: `Order's medium`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Area`
 
 * **Annonsera avkastningen från kampanj**
@@ -235,15 +235,15 @@ Kolumner att skapa
       * Filterlogik: ([`A`] ELLER [`B`] ELLER [`C`]) OCH [`D`]
 
    * [!UICONTROL Formula]: `(A / B)`
-   * &#x200B;
+   * 
      [!UICONTROL Format]: `Currency`
 
    * [!UICONTROL Formula]: `(C - (A / B))`
-   * &#x200B;
+   * 
      [!UICONTROL Format]: `Currency`
 
    * [!UICONTROL Formula]: `((C - (A / B)) / (A / B))`
-   * &#x200B;
+   * 
      [!UICONTROL Format]: `Percentage`
 
    * [!UICONTROL Metric]: `Ad Clicks`
@@ -251,36 +251,36 @@ Kolumner att skapa
    * [!UICONTROL Metric]: `Ad Impressions`
 
    * [!UICONTROL Formula]: `(H / I)`
-   * &#x200B;
+   * 
      [!UICONTROL Format]: `Percentage`
 
    * [!UICONTROL Formula]: `(A / H)`
-   * &#x200B;
+   * 
      [!UICONTROL Format]: `Currency`
 
 * Mått `A`: `Ad Spend` (dölj)
 * Mått `B`: `Ad customer acquisitions`
 * Mått `C`: `Average LTV`
 * Mått `D`: `Average lifetime # of orders`
-* &#x200B;
-  [!UICONTROL -formel]: `CAC`
+* 
+  [!UICONTROL-formel]: `CAC`
 * [!UICONTROL Formula]: `Avg return`
 * [!UICONTROL Formula]: `Ads ROI`
 * Mått `H`: `adClicks`
 * Mått `I`: `Impressions`
-* &#x200B;
-  [!UICONTROL -formel]: `CTR`
-* &#x200B;
-  [!UICONTROL -formel]: `CPC`
+* 
+  [!UICONTROL-formel]: `CTR`
+* 
+  [!UICONTROL-formel]: `CPC`
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
-  [!UICONTROL -intervall]: `None`
-* &#x200B;
+* 
+  [!UICONTROL-intervall]: `None`
+* 
   [!UICONTROL Group by]: `campaign` (Använd kundens första beställningskampanj för statistik över icke-annonsutgift)
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Table`
 
-[Kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE) om du får frågor under arbetet med att skapa den här analysen, eller om du bara vill engagera Professional Services-teamet.
+[Kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) om du får frågor under arbetet med att skapa den här analysen, eller om du bara vill engagera Professional Services-teamet.
 
 ### Relaterad
 

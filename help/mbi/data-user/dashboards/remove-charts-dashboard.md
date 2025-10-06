@@ -4,16 +4,16 @@ description: Lär dig hur du tar bort ett diagram från en kontrollpanel.
 exl-id: 44116f15-92a5-43c9-8808-7902742508c9
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '63'
+source-wordcount: '65'
 ht-degree: 0%
 
 ---
 
 # Ta bort ett diagram från en kontrollpanel
 
-Om du vill ta bort ett diagram från en instrumentpanel klickar du på kugghjulsikonen (![](../../assets/gear-icon.png)) i diagrammets övre högra hörn och klickar på **[!UICONTROL Remove from Dashboard]**.
+Om du vill ta bort ett diagram från en instrumentpanel klickar du på kugghjulsikonen (![Kugghjulsikonen](../../assets/gear-icon.png)) i diagrammets övre högra hörn och klickar på **[!UICONTROL Remove from Dashboard]**.
 
 >[!NOTE]
 >

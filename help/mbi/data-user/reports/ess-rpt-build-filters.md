@@ -4,9 +4,9 @@ description: Lär dig använda filter.
 exl-id: eb683dfe-9a90-400a-a0c0-3dc00d1f28b5
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 0854d644cb72b3fc8b8b31a0bf7e8dca4cc99724
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: '364'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Ett eller flera filter kan läggas till för att begränsa vilka data som använ
 
    I den här rapporten visar varje datapunkt det totala antalet kunder för månaden.
 
-1. Klicka på ikonen Filter (![](../../assets/magento-bi-btn-filter.png)) i den vänstra panelen.
+1. Klicka på ikonen Filter (![ikonen Filter](../../assets/magento-bi-btn-filter.png)) i den vänstra panelen.
 
    ![Lägg till filter](../../assets/magento-bi-report-builder-filter-add.png)
 
@@ -35,7 +35,7 @@ Ett eller flera filter kan läggas till för att begränsa vilka data som använ
 
    Filter numreras i bokstavsordning och det första är `[A]`. De första två delarna av filtret är listrutealternativ, och den tredje delen är ett värde.
 
-   ![](../../assets/magento-bi-report-builder-filter-add-a.png)
+   ![Filtergränssnittet visar alternativet Lägg till filter](../../assets/magento-bi-report-builder-filter-add-a.png)
 
    * Klicka på den första delen av filtret och välj den kolumn som du vill använda som ämne i uttrycket.
 

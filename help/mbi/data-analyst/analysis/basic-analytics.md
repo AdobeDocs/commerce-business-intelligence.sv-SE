@@ -4,9 +4,9 @@ description: Lär dig förstå och bygga upp grundläggande analyser.
 exl-id: 23cea7b3-2e66-40c3-b4bd-d197237782e3
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Warehouse Manager, Dashboards, Data Integration
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '3120'
+source-wordcount: '3130'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ Om några av dessa beräkningar inte finns i databasen kan alla administratörsa
 
 **Accepterar du gästbeställningar?**
 
-*I så fall kanske den här tabellen inte innehåller alla dina kunder. Kontakta [supportteamet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE) för att se till att dina kundanalyser omfattar alla kunder.*
+*I så fall kanske den här tabellen inte innehåller alla dina kunder. Kontakta [supportteamet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) för att se till att dina kundanalyser omfattar alla kunder.*
 
 *Är du inte säker på om du godkänner gästbeställningar? Mer information finns i [det här avsnittet](../data-warehouse-mgr/guest-orders.md)!*
 
@@ -60,7 +60,7 @@ I den här tabellen representerar varje rad en ordning. Kolumnerna i den här ta
 * **[!UICONTROL Created_at]**: Det datum då ordern skapades eller placerades.
 * **[!UICONTROL Customer_email]**: E-postadressen till kunden som beställde. Detta kan också vara den unika identifieraren för kunden.
 * **[!UICONTROL Customer's lifetime number of orders]**: En kopia av kolumnen med samma namn i tabellen `Customers`.
-* **[!UICONTROL Customer's order number]**: Kundens sekventiella ordernummer som är associerat med ordern. Om raden du tittar på till exempel är en kunds första beställning är den här kolumnen&quot;1&quot;, men om det var kundens 15:e beställning visar den här kolumnen&quot;15&quot; för den här beställningen. Om den här dimensionen inte finns i din `Customers`-tabell ber du [supportteamet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE) att hjälpa dig att skapa den.
+* **[!UICONTROL Customer's order number]**: Kundens sekventiella ordernummer som är associerat med ordern. Om raden du tittar på till exempel är en kunds första beställning är den här kolumnen&quot;1&quot;, men om det var kundens 15:e beställning visar den här kolumnen&quot;15&quot; för den här beställningen. Om den här dimensionen inte finns i din `Customers`-tabell ber du [supportteamet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) att hjälpa dig att skapa den.
 * **[!UICONTROL Customer's order number (previous-current)]**: En sammanfogning av två värden i kolumnen **[!UICONTROL Customer's order number]**. Den används i en exempelrapport nedan för att visa den förflutna tiden mellan två order. Tiden mellan en kunds första orderdatum och dess andra orderdatum är till exempel&quot;1-2&quot; med den här beräkningen.
 * **[!UICONTROL Coupon_code]**: Visar vilka kuponger som användes på varje order.
 * **[!UICONTROL Seconds since previous order]**: Tiden (i sekunder) mellan en kunds order.
@@ -155,7 +155,7 @@ Här är några vanliga exempel på rapporter och mätvärden som du kan använd
    * **[!UICONTROL Time Interval]**: `By Month`
    * **[!UICONTROL Group By]**: `Customer's Order Number`, välj sedan `2` och `3`
 
-  ![](../../assets/2nd_and_3rd_purchases_last_year.png)
+  ![Diagram över den andra och tredje inköpsanalysen för det senaste året](../../assets/2nd_and_3rd_purchases_last_year.png)
 
 * **Rapportexempel 2**: Antalet upprepade kunder under de senaste åren
    * **[!UICONTROL Metric]**: `Distinct Customers`
@@ -244,9 +244,9 @@ Här är några vanliga exempel på rapporter och mätvärden som du kan använd
 * **Beskrivning**: Det genomsnittliga intäktsbeloppet som genererats av kunder under deras första 30 dagar som kund.
 * **Måttbeskrivning**: Det här måttet utför en **Genomsnitt** av `Customer's First 30 Day Revenue` från `customer_entity`-tabell som ordnas av `created_at`.
 * **Rapportbeskrivning**: Heltidsgenomsnitt av kundens första 30-dagars intäkter
-* **[!UICONTROL Metric]**: `Average First 30 Day Revenue`
-* **[!UICONTROL Time Range]**: `All Time`
-* **[!UICONTROL Time Interval]**: `None`
+   * **[!UICONTROL Metric]**: `Average First 30 Day Revenue`
+   * **[!UICONTROL Time Range]**: `All Time`
+   * **[!UICONTROL Time Interval]**: `None`
 
 ![Genomsnittlig första 30-dagars intäkt](../../assets/Avg_first_30_day_revenue.png)<!--{: width="929"}-->
 

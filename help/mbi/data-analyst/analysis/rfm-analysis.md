@@ -4,9 +4,9 @@ description: Lär dig hur du skapar en kontrollpanel där du kan segmentera kund
 exl-id: 8f0f08fd-710b-4810-9faf-3d0c3cc0a25d
 role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '532'
+source-wordcount: '542'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ I det här avsnittet beskrivs hur du skapar en instrumentpanel där du kan segme
 1. Hur ofta de köper från dig
 1. Pengar in hur mycket kunden spenderar
 
-![](../../assets/blobid0.png)
+![Kontrollpanel för RFM-analys som visar segment för senaste, frekventa och monetära värden](../../assets/blobid0.png)
 
 RFM-analysen kan bara konfigureras om du har [!DNL Adobe Commerce Intelligence] Pro-planen på den nya arkitekturen (till exempel om du har alternativet `Data Warehouse Views` på menyn `Manage Data`). Dessa kolumner kan skapas från sidan **[!DNL Manage Data > Data Warehouse]**. Detaljerade instruktioner finns nedan.
 
@@ -42,18 +42,18 @@ Kolumner att skapa
 * Markerad [!UICONTROL column]: `created_at`
 * [!UICONTROL Filter]: `Orders we count`
 
-* &#x200B;
+* 
       Sekunder sedan kundens senaste orderdatum
   * [!UICONTROL Column type]: -     &quot;Samma tabell > Ålder
 * Markerad [!UICONTROL column]: `Customer's last order date`
 
 * (input) Count reference reference
 * [!UICONTROL Column type]: `Same table > Calculation`
-* &#x200B;
-  [!UICONTROL -indata]: `entity_id`
+* 
+  [!UICONTROL-indata]: `entity_id`
 * [!UICONTROL Calculation]: `**case when A is null then null else 1 end**`
-* &#x200B;
-  [!UICONTROL -datatyp]: `Integer`
+* 
+  [!UICONTROL-datatyp]: `Integer`
 
 * Tabellen **Antal referenser** (det här är filen som du överförde med talet &quot;1&quot;)
 * Antal kunder
@@ -76,15 +76,15 @@ Kolumner att skapa
 * [!UICONTROL Column type]: `Same table > Calculation`
 * [!UICONTROL Inputs]: `(input) Ranking by customer lifetime revenue`, `Number of customers`
 * [!UICONTROL Calculation]: `case when A is null then null else (B-(A-1)) end`
-* &#x200B;
-  [!UICONTROL -datatyp]: `Integer`
+* 
+  [!UICONTROL-datatyp]: `Integer`
 
 * Kundens monetära poäng (i procent)
 * [!UICONTROL Column type]: `Same table > Calculation`
 * [!UICONTROL Inputs]: `(input) Ranking by customer lifetime revenue`, `Number of customers`
 * [!UICONTROL Calculation]: `Case when round((B-A+1)*100/B,0) <= 20 then 5 when round((B-A+1)*100/B,0) <= 40 then 4 when round((B-A+1)*100/B,0) <= 60 then 3 when round((B-A+1)*100/B,0) <= 80 then 2 when round((B-A+1)*100/B,0) <= 100 then 1 else 0 end`
-* &#x200B;
-  [!UICONTROL -datatyp]: `Integer`
+* 
+  [!UICONTROL-datatyp]: `Integer`
 
 * (input) Rankning per kundens livstid antal order
 * [!UICONTROL Column type]: `Same table > Event Number`
@@ -92,8 +92,8 @@ Kolumner att skapa
 * [!UICONTROL Event rank]: `Customer's lifetime number of orders`
 
 * Rankning efter kundens livstidsantal order
-* &#x200B;
-  [!UICONTROL -kolumntyp]: – "Samma tabell > Beräkning"
+* 
+  [!UICONTROL-kolumntyp]: – "Samma tabell > Beräkning"
 * [!UICONTROL Inputs]: - **(indata) Rankning efter kundens livstidsantal order**, **Antal kunder**
 * [!UICONTROL Calculation]: - **case when A is null then null else (B-(A-1)) end**
 * [!UICONTROL Datatype]: - Heltal
@@ -102,8 +102,8 @@ Kolumner att skapa
 * [!UICONTROL Column type]: `Same table > Calculation`
 * [!UICONTROL Inputs]: `(input) Ranking by customer lifetime number of orders`, `Number of customers`
 * [!UICONTROL Calculation]: `Case when round((B-A+1)*100/B,0) <= 20 then 5 when round((B-A+1)*100/B,0) <= 40 then 4 when round((B-A+1)*100/B,0) <= 60 then 3 when round((B-A+1)*100/B,0) <= 80 then 2 when round((B-A+1)*100/B,0) <= 100 then 1 else 0 end`
-* &#x200B;
-  [!UICONTROL -datatyp]: `Integer`
+* 
+  [!UICONTROL-datatyp]: `Integer`
 
 * Ordna efter sekunder sedan kundens senaste orderdatum
 * [!UICONTROL Column type]: `Same table > Event Number`
@@ -114,15 +114,15 @@ Kolumner att skapa
 * [!UICONTROL Column type]: `Same table > Calculation`
 * [!UICONTROL Inputs]: `(input) Ranking by customer lifetime number of orders`, `Number of customers`
 * [!UICONTROL Calculation]: `Case when (A * 100/B,0) <= 20 then 5 when (A * 100/B,0) <= 40 then 4 when (A * 100/B,0) <= 60 then 3 when (A * 100/B,0) <= 80 then 2 when (A * 100/B,0) <= 100 then 1 else 0 end`
-* &#x200B;
-  [!UICONTROL -datatyp]: `Integer`
+* 
+  [!UICONTROL-datatyp]: `Integer`
 
 * Kundens senaste poäng (i procent)
 * [!UICONTROL Column type]: `Same table > Calculation`
 * [!UICONTROL Inputs]: `Customer's recency score (by percentiles)`, `Customer's frequency score (by percentiles)`, `Customer's monetary score (by percentiles)`
 * [!UICONTROL Calculation]: `case when (A IS NULL or B IS NULL or C IS NULL) then null else concat(A,B,C) end`
-* &#x200B;
-  [!UICONTROL -datatyp]: String
+* 
+  [!UICONTROL-datatyp]: String
 
 * Tabellen **Räkningsreferens**
 * [!UICONTROL Number of customers]: `(RFM > 0)`
@@ -141,8 +141,8 @@ Kolumner att skapa
 * [!UICONTROL Column type]: `Same table > Calculation`
 * [!UICONTROL Inputs]: - `Customer's recency score (by percentiles)`, `Customer's frequency score (by percentiles)`, `Customer's monetary score (by percentiles)`
 * [!UICONTROL Calculation]: `case when (A IS NULL or B IS NULL or C IS NULL) then null else A+B+C end`
-* &#x200B;
-  [!UICONTROL -datatyp]: `Integer`
+* 
+  [!UICONTROL-datatyp]: `Integer`
 
 * (input) Rankning by customer&#39;s overall RFM score
 * [!UICONTROL Column type]: `Same table > Event Number`
@@ -154,15 +154,15 @@ Kolumner att skapa
 * [!UICONTROL Column type]: `Same table > Calculation`
 * [!UICONTROL Inputs]: `(input) Ranking by customer's overall RFM score`, `Number of customers (RFM > 0)`
 * [!UICONTROL Calculation]: `case when A is null then null else (B-(A-1)) end`
-* &#x200B;
-  [!UICONTROL -datatyp]: `Integer`
+* 
+  [!UICONTROL-datatyp]: `Integer`
 
 * Kundens RFM-grupp
 * [!UICONTROL Column type]: `Same table > Calculation`
 * [!UICONTROL Inputs]: `(input) Ranking by customer lifetime revenue`, `Number of customers`
 * [!UICONTROL Calculation]: `Case when round(A * 100/B,0) <= 20 then '5. copper' when round(A * 100/B,0) <= 40 then '4. bronze' when round(A * 100/B,0) <= 60 then '3. silver' when round(A * 100/B,0)<= 80 then '2. gold' else '1. Platinum' end`
-* &#x200B;
-  [!UICONTROL -datatyp]: `Integer`
+* 
+  [!UICONTROL-datatyp]: `Integer`
 
 >[!NOTE]
 >
@@ -184,13 +184,13 @@ Inga nya mätvärden!
 * [!UICONTROL Filter]: `Customer's RFM score (by percentiles) Not Equal to 000`
 
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * Dölj diagram
 * [!UICONTROL Group by]: `Customer's RFM group`
-* &#x200B;
+* 
   [!UICONTROL Group by]: `Email`
-* &#x200B;
+* 
   [!UICONTROL Chart type]: `Table`
 
 * **Kunder med fem senaste poäng**
@@ -199,15 +199,15 @@ Inga nya mätvärden!
 * [!UICONTROL Filter]: `Customer's recency score (by percentiles) Equal to 5`
 
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Scalar`
 * Dölj diagram
-* &#x200B;
+* 
   [!UICONTROL Group by]: `Email`
 * [!UICONTROL Group by]: `Customer's RFM score (R+F+M)`
-* &#x200B;
+* 
   [!UICONTROL Chart type]: `Table`
 
 * **Kunder med en senaste poäng**
@@ -216,15 +216,15 @@ Inga nya mätvärden!
 * [!UICONTROL Filter]: `Customer's recency score (by percentiles) Equal to 1`
 
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Scalar`
 * Dölj diagram
-* &#x200B;
+* 
   [!UICONTROL Group by]: `Email`
 * [!UICONTROL Group by]: `Customer's RFM score (R+F+M)`
-* &#x200B;
+* 
   [!UICONTROL Chart type]: `Table`
 
 När du har kompilerat alla rapporter kan du ordna dem på kontrollpanelen som du vill. Resultatet kan se ut som exempelinstrumentpanelen ovan, men de tre genererade tabellerna är bara exempel på den typ av kundsegmentering du kan utföra.

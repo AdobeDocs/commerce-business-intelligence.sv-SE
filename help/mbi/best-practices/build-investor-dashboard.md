@@ -4,9 +4,9 @@ description: Lär dig hur du skapar en instrumentpanel för investerare.
 exl-id: 917e7628-3498-4413-a7e1-61799989a7dd
 role: Admin, Data Architect, Data Engineer, User
 feature: Dashboards, Data Integration
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '289'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Här är vad du behöver skapa rapporter för din instrumentpanel för investera
    * Mått - intäkt
 * **[!UICONTROL Revenue from 1st time orders vs repeat orders]**
    * Mått - Inkomster av förstagångsorder
-   * Filter - användarens ordernummer är lika med 1
+      * Filter - användarens ordernummer är lika med 1
    * Mått 2 - Upprepa orderintäkt
       * Filter - användarens ordernummer är större än 1
    * Avmarkera kryssrutan för flera Y-axlar
@@ -77,4 +77,4 @@ Med [Commerce Data Enrichment Services](https://business.adobe.com/products/mage
 
 Ordna dina rapporter noggrant och var uppmärksam på detaljerna. När kontrollpanelen är klar ser den ut ungefär så här:
 
-![](../../mbi/assets/investor-dboard-example.png)
+![Skapa instrumentpanel för investerare](../../mbi/assets/investor-dboard-example.png)

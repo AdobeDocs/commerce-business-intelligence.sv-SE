@@ -4,9 +4,9 @@ description: Lär dig vad en dimension är och den kan användas för att filtre
 exl-id: 143a4b1e-2e6f-438a-90e6-bdda13b39cb9
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '419'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Så här lägger du till en eller flera dimensioner till flera mått samtidigt:
 
 1. I kolumnen `Choose Metric(s) to Add Dimensions` väljer du de mått som du vill lägga till dimensioner i. När du har valt `Choose Dimensions to Add` visas kolumnen till höger. Markera de dimensioner som du vill lägga till i det valda måttet.
 
-   ![](../../assets/Add_Dimensions.png)
+   ![Dialogrutan Lägg till dimensioner visar tillgängliga dimensionsalternativ](../../assets/Add_Dimensions.png)
 
 1. Om du vill segmentera eller gruppera efter någon av datamåtten i rapporter måste du ange att de är _grupperbara_.
 

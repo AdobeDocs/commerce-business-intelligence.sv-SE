@@ -4,9 +4,9 @@ description: Lär dig hur du använder gruppredigeringsfunktionen i  [!DNL Comme
 exl-id: 576ffabb-5e5d-4251-9662-951e2cd30f31
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '260'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ Tänk på det här med tanke på det: *Måste de här ändringarna vara permanen
 
 ## Använder [!DNL Find/Replace] {#findreplace}
 
-1. Klicka på kugghjulsikonen (![](../../assets/gear-icon.png)) bredvid instrumentpanelens namn och sedan på [!UICONTROL Bulk Edit Reports]-fönstret.
+1. Klicka på kugghjulsikonen (![Kugghjulsikonen](../../assets/gear-icon.png)) bredvid instrumentpanelens namn och sedan i fönstret [!UICONTROL Bulk Edit Reports] .
 
 1. Klicka på **[!UICONTROL Chart Title Find and Replace]** i popup-fönstret.
 
@@ -45,7 +45,7 @@ Exempel:
 
 ## Förväntar `Chart Names` {#prepend}
 
-1. Klicka på kugghjulsikonen (![](../../assets/gear-icon.png)) bredvid instrumentpanelens namn och sedan på [!UICONTROL Bulk Edit Reports]-fönstret.
+1. Klicka på kugghjulsikonen (![Kugghjulsikonen](../../assets/gear-icon.png)) bredvid instrumentpanelens namn och sedan i fönstret [!UICONTROL Bulk Edit Reports] .
 
 1. Klicka på **[!UICONTROL Prepend Report Names]** i popup-fönstret.
 
@@ -59,7 +59,7 @@ Exempel:
 
 ## Ändrar `Dates` {#dates}
 
-1. Klicka på kugghjulsikonen (![](../../assets/gear-icon.png)) bredvid instrumentpanelens namn och välj sedan fönstret [!UICONTROL Bulk Edit Reports].
+1. Klicka på kugghjulsikonen (![Kugghjulsikonen](../../assets/gear-icon.png)) bredvid instrumentpanelens namn och välj sedan [!UICONTROL Bulk Edit Reports] -fönstret.
 
 1. Klicka på **[!UICONTROL Change Dates]** i popup-fönstret.
 

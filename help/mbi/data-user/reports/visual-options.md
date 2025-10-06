@@ -4,9 +4,9 @@ description: Lär dig hur du använder visualiseringsalternativen i Visual Repor
 exl-id: e42a004e-28e3-4484-bb5a-b58c810b23e0
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '1544'
+source-wordcount: '1823'
 ht-degree: 0%
 
 ---
@@ -35,11 +35,11 @@ Att välja rätt visualisering för en viss datauppsättning är en viktig del a
 
 `Scalar` rapporter visas som ett numeriskt värde. Oftast används detta för att visa&quot;heltidsvärdet&quot; för ett nyckeltal som intäkt eller order, eller för att jämföra intäkt hittills jämfört med budget med två separata skalära rapporter. I exemplet nedan visar detta helt enkelt det totala antalet order för det angivna rapporteringsintervallet:
 
-![](../../assets/blobid0.png)
+![Skalär rapport som visar totalt antal order som ett numeriskt värde](../../assets/blobid0.png)
 
 Om du vill spara en rapport som en skalär konfigurerar du dina filter och tidsinställningar och klickar sedan på **[!UICONTROL Save]** eller **[!UICONTROL Update]** i det övre högra avsnittet av rapporten. Välj namnet Nummer: Mått i listrutan `Type` om du vill spara rapporten som det värde som visas på den vänstra sidan av fältet.
 
-![](../../assets/blobid1.png)
+![Spara rapportdialogrutan med listrutan Typ som visar alternativet Nummermetriskt namn](../../assets/blobid1.png)
 
 **Krav**:
 
@@ -51,11 +51,11 @@ Om du vill spara en rapport som en skalär konfigurerar du dina filter och tidsi
 
 Som namnet antyder är `table` rapporter bra för att visa tabelldetaljer. När det finns ett behov av att visa många grupper utifrån värden eller mätvärden i en enda rapport är en tabell ofta det bästa sättet att gå. Nedan finns en tabell med&quot;Kundinformation&quot; som visar order och intäkter grupperade efter kundens e-postadress:
 
-![](../../assets/blobid2.png)
+![Tabellrapport som visar kundinformation med order och intäkter via e-post från kund](../../assets/blobid2.png)
 
 På liknande sätt som med skalära rapporter kan du spara en rapport som en tabell genom att klicka på **[!UICONTROL Save]** eller **[!UICONTROL Update]** i rapportverktyget och sedan välja alternativet Tabell i listrutan `Type`.
 
-![](../../assets/blobid3.png)
+![Dialogrutan Spara rapport med listrutan Typ som visar tabellalternativet markerat](../../assets/blobid3.png)
 
 **Krav:**
 
@@ -65,13 +65,13 @@ På liknande sätt som med skalära rapporter kan du spara en rapport som en tab
 
 `Line` diagram är det perfekta valet för att jämföra prestanda för liknande metriska kohorter. Analysera till exempel intäkterna för två regioner under samma tidsperiod eller jämföra årstillväxt för fullgjorda order enligt nedan:
 
-![](../../assets/blobid0.png)
+![Linjediagram som jämför två mätvärden över tid med flera rader](../../assets/blobid0.png)
 
 Varje mätvärde och formel som läggs till i rapporten representeras av en egen rad. När du jämför mätvärden med liknande enheter och skalor ska du inte glömma bort att avmarkera kryssrutan för `Multiple Y-Axes` om du vill visa alla mätvärden på samma skala.
 
 Om du vill spara en rapport som ett linjediagram justerar du rapporten `Type` till `Chart` och väljer lämplig visualisering i rapportverktyget enligt nedan:
 
-![](../../assets/blobid1.png)
+![Report builder med diagramtyp markerad och alternativet för linjediagramvisualisering markerat](../../assets/blobid1.png)
 
 **Krav:**
 
@@ -81,13 +81,13 @@ Om du vill spara en rapport som ett linjediagram justerar du rapporten `Type` ti
 
 `Bar` diagram visar dina data som en serie vågräta staplar och är bäst för att visa övergripande prestanda för ett begränsat antal mätvärden eller gruppera efter värden. Ett stapeldiagram kan till exempel användas för att jämföra intäkten per butik:
 
-![](../../assets/blobid2.png)
+![Vågrätt stapeldiagram med intäktsjämförelse per butik](../../assets/blobid2.png)
 
 Alla distinkta mått, grupperade efter och tidsintervallkombinationer visas som en egen stapel. Om du har två mätvärden med en `group by`, som innehåller tre distinkta `group by`-värden, visar rapporten sex separata fält.
 
 Om du vill spara en rapport som ett stapeldiagram justerar du rapporten `Type` till `Chart` och väljer alternativet `Bar` enligt nedan:
 
-![](../../assets/blobid3.png)
+![Report builder med diagramtyp markerad och alternativet för streckvisualisering markerat](../../assets/blobid3.png)
 
 **Krav:**
 
@@ -99,13 +99,13 @@ Om du vill spara en rapport som ett stapeldiagram justerar du rapporten `Type` t
 
 Rapporten nedan innehåller till exempel två identiska intäktsmått med en filtrerad order för första gången och den andra filtrerad för upprepade order. När du har grupperat efter butik kan du se både det totala intäktsbidraget för varje butik (som representeras av den totala bredden på stapeln) och första gången, jämfört med en upprepad intäktsfördelning för varje butik.
 
-![](../../assets/blobid4.png)
+![Staplat vågrätt stapeldiagram med första gången och upprepade intäkter per butik](../../assets/blobid4.png)
 
 Kontrollera att rutan `Multiple Y-Axes` inte är markerad när du skapar en rapport som den ovan.
 
 Om du vill spara en rapport som ett staplat stapeldiagram justerar du rapporten `Type` till `Chart` och väljer alternativet för staplade fält i rapportverktyget:
 
-![](../../assets/blobid5.png)
+![Report builder med diagramtyp markerad och alternativet för staplad stapelvisualisering markerat](../../assets/blobid5.png)
 
 **Krav:**
 
@@ -117,11 +117,11 @@ Om du vill spara en rapport som ett staplat stapeldiagram justerar du rapporten 
 
 I exemplet nedan ser du två intäktsmått, en filtrerad för första gången och den andra för upprepade intäkter, som trendar över tid per månad:
 
-![](../../assets/blobid6.png)
+![Lodrätt kolumndiagram med första gången och upprepade intäkter per månad](../../assets/blobid6.png)
 
 Du kan spara kolumnrapporter genom att ändra rapporten `Type` till `Chart` och välja alternativet för kolumnvisualisering:
 
-![](../../assets/blobid7.png)
+![Report builder med diagramtyp markerad och kolumnvisualiseringsalternativ markerat](../../assets/blobid7.png)
 
 **Krav:**
 
@@ -133,13 +133,13 @@ Du kan spara kolumnrapporter genom att ändra rapporten `Type` till `Chart` och 
 
 Om du använder samma rapportkonfiguration som beskrivs i avsnittet `Column` ovan skulle en rapport med två intäktsmått (filtrerad för första gången och upprepad) se ut som nedan med en staplad kolumnvisualisering:
 
-![](../../assets/blobid8.png)
+![Staplat lodrätt stapeldiagram med första gången och upprepade intäkter per månad](../../assets/blobid8.png)
 
 Återigen är det viktigt att kryssrutan `Multiple Y-Axes` är avmarkerad när flera mätvärden visas med den staplade kolumnvisualiseringen.
 
 Om du vill spara en rapport som en staplad kolumn anger du rapporten `Type` till `Chart` och väljer alternativet `stacked column`:
 
-![](../../assets/blobid9.png)
+![Report builder med diagramtypen markerad och alternativet för staplad kolumnvisualisering markerat](../../assets/blobid9.png)
 
 **Krav:**
 
@@ -149,11 +149,11 @@ Om du vill spara en rapport som en staplad kolumn anger du rapporten `Type` till
 
 `Pie` diagram är bäst för att visa ett enskilt mått med en eller flera gruppbyte, eller flera mått utan gruppbyte. I båda fallen måste tidsintervallet anges till ingen för att data ska kunna visas i ett cirkeldiagram. I exemplet nedan är ett enskilt ordermått en grupp efter butiksnamn för att visa uppdelningen av order efter butik:
 
-![](../../assets/blobid10.png)
+![Cirkeldiagram som visar orderdistribution efter butiksnamn](../../assets/blobid10.png)
 
 Om du vill spara en rapport som ett cirkeldiagram anger du rapporten `Type` till `Chart` och väljer alternativet `pie` enligt nedan:
 
-![](../../assets/blobid11.png)
+![Report builder med diagramtyp markerad och alternativet för att visualisera cirkeldiagram markerat](../../assets/blobid11.png)
 
 **Krav:**
 
@@ -168,11 +168,11 @@ Om du vill spara en rapport som ett cirkeldiagram anger du rapporten `Type` till
 
 I rapporten nedan visas, med samma exempel från avsnittet `stacked column`, första gången jämfört med upprepade intäkter med ytdiagramsvisualisering:
 
-![](../../assets/blobid12.png)
+![Områdesdiagram med första gången och upprepade intäktstrender över tid](../../assets/blobid12.png)
 
 Om du vill spara en rapport som ett ytdiagram justerar du `Type` till `Chart` och väljer områdesalternativet:
 
-![](../../assets/blobid13.png)
+![Report builder med diagramtyp markerad och alternativet för visning av ytdiagram markerat](../../assets/blobid13.png)
 
 **Krav:**
 
@@ -182,7 +182,7 @@ Om du vill spara en rapport som ett ytdiagram justerar du `Type` till `Chart` oc
 
 `Funnel` diagram är perfekta för att visualisera konvertering i en förväntad händelsesekvens. Ett par exempel är att analysera de potentiella intäkterna i säljprocessen från lead till sluten affär eller mäta nedgången i kunder mellan första och andra ordern, andra och tredje ordern osv. Ett exempel på det senare visas nedan:
 
-![](../../assets/blobid4.png)
+![Trattdiagram som visar kundkonvertering mellan sekventiella order](../../assets/blobid4.png)
 
 I en trattrapport återspeglas det relativa värdet för ett visst steg i tratten av stegets höjd. Rapportkonfigurationen avgör i vilken ordning stegen visas. Det finns två sätt att konfigurera en trattrapport:
 
@@ -192,7 +192,7 @@ I en trattrapport återspeglas det relativa värdet för ett visst steg i tratte
 
 Om du vill spara en rapport som ett trattdiagram justerar du rapporten `Type` till `Chart` och väljer lämplig visualisering i rapportverktyget.
 
-![](../../assets/blobid5.png)
+![Report builder med diagramtypen vald och alternativet för trattvisualisering markerat](../../assets/blobid5.png)
 
 **Krav:**
 
@@ -205,13 +205,13 @@ Om du vill spara en rapport som ett trattdiagram justerar du rapporten `Type` ti
 
 En `scatter plot` används för att undersöka en metrisk relation med två olika variabler så att du enkelt kan identifiera relationer och avvikelser. Den här typen av visualisering används bäst med numeriska dimensioner - prova den med ordermåttet och dimensionerna `Customer's lifetime number of coupons` och `Customer's lifetime revenue` för att se hur kuponganvändningen är relaterad till intäkten. Du kan välja mellan en punktdiagram med och utan trendlinje:
 
-![](../../assets/scatter-plot-1.png)
+![Punktdiagram som visar korrelation mellan kundstatistik](../../assets/scatter-plot-1.png)
 
-![utan trendlinje](../../assets/scatter-plot-2.png)
+![Spridningspunkt utan trendlinje som visar datapunktsdistribution](../../assets/scatter-plot-2.png)
 
-![](../../assets/scatter-plot-3.png)
+![Punktdiagram med datapunkter och korrelationsmönster](../../assets/scatter-plot-3.png)
 
-![Med trendlinje](../../assets/scatter-plot-4.png)
+![Punktdiagram med trendlinje som visar korrelation mellan mätvärden](../../assets/scatter-plot-4.png)
 
 **Krav:**
 
@@ -233,11 +233,11 @@ Ett `bubble`-diagram kan visa upp till fyra dimensioner av data där `X`- och `Y
 
 I följande diagram visas antalet kunder (bubbelstorlek) grupperade efter en specifik anskaffningskälla (bubbelfärg) och tillstånd (olika bubblor i en viss färg), plottade mot total intäkt och genomsnittlig livstid.
 
-![](../../assets/bubble-1.png)
+![Bubbeldiagram över antalet kunder per anskaffningskälla och delstat kontra intäkter och order](../../assets/bubble-1.png)
 
 Följande diagram visar antalet kunder (bubbelstorlek) grupperade efter anskaffningskälla (bubbelfärg) och tillstånd (olika bubblor i en viss färg), plottade mot genomsnittligt livstidsvärde och totala intäkter.
 
-![](../../assets/bubble-2.png)
+![Bubbeldiagram som visar kundstatistik efter anskaffningskälla och delstat](../../assets/bubble-2.png)
 
 **Krav för bubbeldiagram i en serie:**
 
@@ -265,7 +265,7 @@ Använd `heatmaps` för att visualisera aktiveringspunkter i dina data. En heatm
 
 Följande värmekarta visar order per veckodag per timma av dagen i aggregat, över flera veckor.
 
-![](../../assets/heat-map.png)<!--{: width="650"}-->
+![Värmekarta som visar ordningsintensiteten per dag i veckan och timme på dagen](../../assets/heat-map.png)<!--{: width="650"}-->
 
 **Krav:**
 

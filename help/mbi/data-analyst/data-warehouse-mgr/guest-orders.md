@@ -4,9 +4,9 @@ description: Lär dig mer om hur gästbeställningarna påverkar dina data och v
 exl-id: cd5120ca-454c-4cf4-acb4-3aebe06cdc9a
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '566'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ I den typiska e-handelsdatabasen finns det en `orders`-tabell som ansluter till 
 
 * **Om alla kunder är registrerade** och gästorder inte tillåts innebär det att alla poster i tabellen `orders` har ett värde i kolumnen `customer\_id`. Därför kopplas varje order tillbaka till tabellen `customers`.
 
-  ![](../../assets/guest-orders-4.png)
+  ![Datatabell för gästorder som visar kundinformation](../../assets/guest-orders-4.png)
 
 * **Om gästorder tillåts** innebär det att vissa order inte har något värde i kolumnen `customer\_id`. Endast registrerade kunder får ett värde för kolumnen `customer\_id` i tabellen `orders`. Kunder som inte är registrerade får ett `NULL`-värde (eller tomt) för den här kolumnen. Därför har inte alla orderposter matchande poster i tabellen `customers`.
 
@@ -39,7 +39,7 @@ Det bästa sättet att ta med gästbeställningar är att basera alla kundnivåv
 
 Du kan lägga märke till att filtret `Customers we count` som har angetts i den här typen av inställningar har ett filter för `Customer's order number = 1`.
 
-![](../../assets/guest-orders-filter-set.png)
+![Filteruppsättningskonfiguration för att exkludera gästorder](../../assets/guest-orders-filter-set.png)
 
 I en situation utan gästorder finns varje kund som en unik rad i kundtabellen (se bild 1). Ett mätvärde som `New customers` kan bara räkna ID:t för den här tabellen baserat på `created\_at`-datumet för att förstå nya kunder baserat på registreringsdatumet.
 

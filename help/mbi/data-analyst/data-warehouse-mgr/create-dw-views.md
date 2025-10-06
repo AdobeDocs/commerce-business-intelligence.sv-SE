@@ -4,9 +4,9 @@ description: Lär dig mer om hur du skapar nya lagrade tabeller genom att ändra
 exl-id: 5aa571c9-7f38-462c-8f1b-76a826c9dc55
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '1105'
+source-wordcount: '1120'
 ht-degree: 6%
 
 ---
@@ -19,7 +19,7 @@ I det här dokumentet beskrivs syftet med och användningsområdena för `Data W
 
 Funktionen `Data Warehouse Views` är en metod för att skapa nya lagrade tabeller genom att ändra en befintlig tabell eller koppla eller konsolidera flera tabeller tillsammans med SQL. När en `Data Warehouse View` har skapats och bearbetats av en uppdateringscykel fylls den i i din Data Warehouse som en ny tabell under listrutan `Data Warehouse Views`, vilket visas nedan:
 
-![](../../assets/Data_Warehouse.png)
+![Data Warehouse-gränssnitt med tabellhanteringsalternativ](../../assets/Data_Warehouse.png)
 
 Från och med nu fungerar din nya vy som vilken annan tabell som helst, vilket ger dig möjlighet att skapa nya beräknade kolumner eller bygga mätvärden och rapporter ovanpå.
 
@@ -31,7 +31,7 @@ Om du känner till SQL använder båda dessa konsolideringsexempel funktionen `U
 
 Du kan skapa nya `Data Warehouse Views` och ta bort befintliga vyer genom att gå till **[!UICONTROL Manage Data]** > **[!UICONTROL Data Warehouse Views]** enligt nedan:
 
-![](../../assets/Data_Warehouse_Views.png)
+![Avsnittet Data Warehouse-vyer med anpassade vykonfigurationer](../../assets/Data_Warehouse_Views.png)
 
 Här kan du skapa en vy genom att följa exempelinstruktionerna nedan:
 
@@ -136,7 +136,7 @@ I stället för att skapa en separat uppsättning marknadsföringsstatistik för
 
 **Behöver du mer hjälp?**
 
-Skrivning av SQL och skapande av `Data Warehouse Views` ingår inte i teknisk support. [Services-teamet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE) kan dock hjälpa dig att skapa vyer. Allt från att migrera en äldre databas med en ny databas till att skapa en enda Data Warehouse View för en viss analys kan supportteamet hjälpa till.
+Skrivning av SQL och skapande av `Data Warehouse Views` ingår inte i teknisk support. [Services-teamet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) kan dock hjälpa dig att skapa vyer. Allt från att migrera en äldre databas med en ny databas till att skapa en enda Data Warehouse View för en viss analys kan supportteamet hjälpa till.
 
 Vanligtvis krävs fem timmars tjänsttid för att skapa en ny `Data Warehouse View` för konsolidering av 2-3 tabeller med liknande struktur, vilket innebär ungefär 1 250 USD arbete. Nedan anges dock några vanliga faktorer som kan öka den förväntade investeringen:
 

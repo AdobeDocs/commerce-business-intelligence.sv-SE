@@ -4,9 +4,9 @@ description: Lär dig hur du arbetar med att mappa tabeller.
 exl-id: e452ff87-f298-43d5-acc3-af58e53bd0bc
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '743'
+source-wordcount: '775'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Tänk dig att du håller på att `Report Builder` skapa en `Revenue by State`-rapport. Allt går bra tills du försöker lägga till en `billing state`-gruppering i din rapport och du ser följande:
 
-![](../../assets/Messy_State_Segments.png)
+![Diagram som visar felaktiga lägessegment med inkonsekvent namngivning](../../assets/Messy_State_Segments.png)
 
 ## Hur skulle det här kunna hända?
 
@@ -45,7 +45,7 @@ I den första kolumnen anger du de värden som lagras i databasen med **endast e
 
 I den andra kolumnen anger du vilka dessa värden **ska vara**. Om du vill att `pa`, `PA`, `Pennsylvania` och `pennsylvania` helt enkelt ska vara `PA` fortsätter du med exemplet med faktureringsläget och anger `PA` i den här kolumnen för varje indatavärde.
 
-![](../../assets/Mapping_table_examples.jpg)
+![Exempel på mappningstabell som visar originalvärden och standardiserade värden](../../assets/Mapping_table_examples.jpg)
 
 ## Vad behöver jag göra i [!DNL Commerce Intelligence] för att använda det? {#use}
 
@@ -66,7 +66,7 @@ Om du vill skapa kolumnen `joined` navigerar du till tabellen som fältet ska fl
    * Markera tabellen `One` och kolumnen `mapping` på `Primary key`-sidan. I det här fallet väljer du kolumnen `state_input` i tabellen `mapping_state`.
    * Här ser du hur banan ser ut:
 
-     ![](../../assets/State_Mapping_Path.png)
+     ![Data Warehouse Manager visar beräkningssökvägen för tillståndsmappning](../../assets/State_Mapping_Path.png)
 
 1. När du är klar klickar du på **[!UICONTROL Save]** för att skapa banan.
 1. Sökvägen kanske inte fylls i omedelbart efter att du har sparat - om det händer klickar du i rutan `Path` och väljer den sökväg du skapade.
@@ -76,7 +76,7 @@ Om du vill skapa kolumnen `joined` navigerar du till tabellen som fältet ska fl
 
 När en uppdateringscykel är klar kan du använda den nya sammanfogade kolumnen för att segmentera data på rätt sätt i stället för den galna kolumnen i databasen. Titta på grupperingsalternativen nu - ingen mer stress:
 
-![](../../assets/Clean_State_Segments.png)
+![Diagram som visar rena tillståndssegment efter standardisering](../../assets/Clean_State_Segments.png)
 
 Mappningstabeller är användbara när du vill rensa bort data i din Data Warehouse. Mappningstabeller kan dock även användas för andra coola användningsområden, som [replikering av  [!DNL Google Analytics channels] in [!DNL Commerce Intelligence]](../data-warehouse-mgr/rep-google-analytics-channels.md).
 

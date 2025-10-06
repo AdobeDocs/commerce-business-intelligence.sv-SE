@@ -4,9 +4,9 @@ description: Lär dig mer om några ER-diagram som hjälper dig att visualisera 
 exl-id: de7d419f-efbe-4d0c-95a8-155a12aa93f3
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '346'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ En kund kan göra många beställningar. Relationen mellan de här två tabeller
 
 Om sökvägen mellan de här två tabellerna inte finns i [!DNL Commerce Intelligence] kan du [skapa sökvägen](../data-warehouse-mgr/create-paths-calc-columns.md) på fliken Data Warehouse. När du är redo att skapa banan definieras den så här:
 
-![](../../assets/SFO___CE_path.png)
+![Entitetsrelationsdiagram med sökväg från sales_flat_order till customer_entity](../../assets/SFO___CE_path.png)
 
 ## `sales\_flat\_order & sales\_flat\_order\_item`
 
@@ -49,7 +49,7 @@ En order kan innehålla många artiklar. Relationen mellan de här två tabeller
 
 Om sökvägen mellan de här två tabellerna inte finns i [!DNL Commerce Intelligence] kan du [skapa sökvägen](../data-warehouse-mgr/create-paths-calc-columns.md) på fliken Data Warehouse. När du är redo att skapa banan definierar du den enligt nedan.
 
-![](../../assets/SFOI___SFO_path.png)
+![Entitetsrelationsdiagram med sökväg från sales_flat_order_item till sales_flat_order](../../assets/SFOI___SFO_path.png)
 
 ## `catalog\_product\_entity & sales\_flat\_order\_item`
 
@@ -59,4 +59,4 @@ En produkt kan köpas för många artiklar. Relationen mellan de här två tabel
 
 Om sökvägen mellan de här två tabellerna inte finns i [!DNL Commerce Intelligence] kan du [skapa sökvägen](../data-warehouse-mgr/create-paths-calc-columns.md) på fliken Data Warehouse. När du är redo att skapa banan definierar du den enligt nedan.
 
-![](../../assets/SFOI___CPE_path.png)
+![Entitetsrelationsdiagram med sökväg från sales_flat_order_item till catalog_product_entity](../../assets/SFOI___CPE_path.png)

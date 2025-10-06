@@ -4,9 +4,9 @@ description: Lär dig hur avancerade kolumner kan skapas i form av SQL Calculati
 exl-id: f16e4ee4-ed73-4ddb-b701-1fe3db14346a
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, SQL Report Builder, Commerce Tables
-source-git-commit: 8090c2e0f17f0e8d3bdec668ce546206bf024691
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '839'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ De olika kolumner som kan skapas med kolumnen `Calculation` är nästan obegrän
 
 De flesta konton har en kolumn med namnet `Is customer's last order?` i sin `orders`-tabell för att utföra analyser på upprepade inköpspriser och skadade kunder. Om ditt konto finns i den nya arkitekturen skapas den här kolumnen med en `Calculation`-kolumn och kan visas på skärmbilden nedan:
 
-![](../../assets/Is_customer_s_last_order.png)
+![SQL beräknad kolumndefinition för identifiering av kundens senaste order](../../assets/Is_customer_s_last_order.png)
 
 Kolumnen `Is customer's last order?` använder indata `Customer's lifetime number of orders` och `Customer's order number` med alias `A` respektive `B`.
 
@@ -47,7 +47,7 @@ Många kunder gillar att analysera intäkter på objektnivå och dela upp dem i 
 
 För att aktivera produktintäktsanalyser har de flesta konton en kolumn med namnet `Order item total value (quantity * price)` i sin `Orders Items`-tabell. Om ditt konto finns i den nya arkitekturen skapas den här kolumnen också med en `Calculation`-kolumn och kan visas på skärmbilden nedan:
 
-![](../../assets/Order_item_total_value.png)
+![SQL beräknad kolumndefinition för orderartikelns totalvärde](../../assets/Order_item_total_value.png)
 
 I Commerce-schemat använder kolumnen `Order item total value (quantity * price)` indata `qty ordered` och `base price` med alias `A` respektive `B`.
 
@@ -57,7 +57,7 @@ Värdena som returneras av den här nya kolumnen är i dollar och cent, så den 
 
 En ny `Calculation`-kolumn kan läggas till i en tabell genom att navigera till **[!DNL Manage Data > Data Warehouse]** enligt nedan:
 
-![](../../assets/blobid2.png)
+![Tabellvy som visar beräknade kolumnresultat](../../assets/blobid2.png)
 
 Härifrån kan du skapa en `Calculation`-kolumn genom att följa stegen nedan:
 
