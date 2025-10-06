@@ -17,13 +17,13 @@ ht-degree: 0%
 >
 >Kräver [administratörsbehörighet](../../administrator/user-management/user-management.md) för att skapa och redigera SQL-diagram. `Standard` användare kan ordna om dessa diagram på kontrollpaneler, och `Read-only` användare har samma upplevelse som de har av traditionella diagram. Dessutom har `Read-only` användare inte åtkomst till frågetexten.
 
-Mer information finns i [utbildningsvideon](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html).
+Mer information finns i [utbildningsvideon](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html?lang=sv-SE).
 
 [!DNL SQL], eller Structured Query Language, är ett programmeringsspråk som används för att kommunicera med databaser. I [!DNL Commerce Intelligence] används [!DNL SQL] för att fråga efter eller hämta data från din Data Warehouse. Titta på rapporterna på din instrumentpanel - bakom kulisserna drivs var och en av dem av en [!DNL SQL]-fråga.
 
 Du kan använda [[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md) för att direkt fråga din Data Warehouse, visa resultaten och omvandla dem till ett diagram. Du kan börja skapa en rapport med [!DNL SQL Report Builder] genom att klicka på **[!UICONTROL Report Builder** > **[!DNL SQL Report Builder]]**.
 
-Mer information finns i [utbildningsvideon](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html).
+Mer information finns i [utbildningsvideon](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html?lang=sv-SE).
 
 Med [!DNL SQL Report Builder] kan du ställa frågor direkt till din Data Warehouse, visa resultaten och snabbt omvandla dem till ett diagram. Det bästa med att använda [!DNL SQL] för att skapa rapporter är att du inte behöver vänta på uppdateringscykler för att iterera i kolumner som du skapar. Om resultatet inte ser bra ut kan du snabbt redigera och köra frågan igen tills det matchar dina förväntningar.
 
@@ -133,7 +133,7 @@ Beräknade kolumner som skapats med [!DNL SQL] är inte beroende av uppdaterings
 
 Olika resultat beror oftast på uppdateringscykler. Om [!DNL Commerce Intelligence] håller på att replikera data från din databas till din Data Warehouse, kan du se olika resultat även om du använder samma fråga.
 
-Anslutningsproblem kan också leda till avvikelser. Navigera till sidan `Connections` genom att klicka på **[!DNL Manage Data** > **Connections]** för att checka ut den - finns det ett fel för databasintegrationen i fråga? I så fall kan du behöva [autentisera integreringen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html) igen för att få igång saker igen.
+Anslutningsproblem kan också leda till avvikelser. Navigera till sidan `Connections` genom att klicka på **[!DNL Manage Data** > **Connections]** för att checka ut den - finns det ett fel för databasintegrationen i fråga? I så fall kan du behöva [autentisera integreringen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=sv-SE) igen för att få igång saker igen.
 
 Om alla integreringar har anslutits och du inte befinner dig mitt i en uppdateringscykel kan något annat vara fel.
 

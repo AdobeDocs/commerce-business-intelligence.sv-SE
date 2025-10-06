@@ -57,7 +57,7 @@ Så här identifierar du en viss webbplats profil-ID [!DNL Google Analytics]:
 
 ## Relaterat:
 
-* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=sv-SE)
 * [Ansluter  [!DNL Google Adwords]](../integrations/google-adwords.md)
 * [Analysera webbplatsaktivitet och kundkonverteringsgrader](../../analysis/web-act-cust-conversion.md)
 * [Spåra kundvärvningsdata med hjälp av  [!DNL Google Analytics] cookies](../../analysis/google-track-user-acq.md)

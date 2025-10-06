@@ -25,6 +25,6 @@ I vissa fall kan du ändra datatabellen som ett mätvärde använder för att ut
 
    ![Listrutan Tabellval visar tillgängliga tabeller](../../assets/change-metrics-2.png)
 
-1. Om du inte har någon matchande kolumn i den nya tabellen kan du antingen **skapa den i datatabellen** eller [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) om det är en beräkningskolumn eller en dimension som har skapats av [!DNL Commerce Intelligence]. Du kan också **ta bort dimensionen från måttet**. Om du vill ta bort en dimension som du inte längre behöver går du tillbaka till måttets redigerare och väljer vilka dimensioner som ska tas bort under `Dimensions`.
+1. Om du inte har någon matchande kolumn i den nya tabellen kan du antingen **skapa den i datatabellen** eller [kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE) om det är en beräkningskolumn eller en dimension som har skapats av [!DNL Commerce Intelligence]. Du kan också **ta bort dimensionen från måttet**. Om du vill ta bort en dimension som du inte längre behöver går du tillbaka till måttets redigerare och väljer vilka dimensioner som ska tas bort under `Dimensions`.
 
    ![Urvalsmeny för användningskolumn](../../assets/change-metrics-3.png)

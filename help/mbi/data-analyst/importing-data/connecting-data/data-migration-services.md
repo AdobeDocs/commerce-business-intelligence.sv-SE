@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Datamigrering
 
-Att migrera till ett nytt databasschema, en ny server eller en rapportdatabas behöver inte vara stressigt. [[!DNL Adobe] Services-teamet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) erbjuder migreringshjälp.
+Att migrera till ett nytt databasschema, en ny server eller en rapportdatabas behöver inte vara stressigt. [[!DNL Adobe] Services-teamet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE) erbjuder migreringshjälp.
 
 För att övergången ska bli så smidig som möjligt bör du vara så detaljerad som möjligt när du skickar in din migreringsbegäran. Det här avsnittet innehåller allt du behöver för att skicka en begäran och komma igång med migreringen. Om du ger oss en heltäckande bild av dina behov kan du garantera att projektet har rätt omfång och att uppskattningen är korrekt.
 
@@ -67,7 +67,7 @@ Här följer ett exempel:
 
 ## Hur skickar jag en förfrågan? {#submitreq}
 
-Du kan kontakta oss genom att [skicka en supportförfrågan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+Du kan kontakta oss genom att [skicka en supportförfrågan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE).
 
 Om du följde stegen i föregående avsnitt för att skapa ett kalkylblad som matchar kolumner, glöm inte att bifoga det.
 

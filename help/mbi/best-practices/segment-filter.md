@@ -71,7 +71,7 @@ Den här typen av analyser är vad marknadsförarna på Fortune 1000-företag g�
 
 Det första steget för att segmentera mätvärdena med ovanstående mått är att se till att du spårar dessa data i databasen. Om den inte spåras kan du kontakta din tekniker och hitta ett sätt att börja spåra dessa data.
 
-När du har bekräftat att data spåras i din databas, [kontaktar du supportteamet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) för att överföra dimensionerna till dina [!DNL Commerce Intelligence]-mått och diagram. Du kan också använda *fälthanteringsverktyget* för att spåra fälten i [!DNL Commerce Intelligence].
+När du har bekräftat att data spåras i din databas, [kontaktar du supportteamet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE) för att överföra dimensionerna till dina [!DNL Commerce Intelligence]-mått och diagram. Du kan också använda *fälthanteringsverktyget* för att spåra fälten i [!DNL Commerce Intelligence].
 
 ## Relaterad
 

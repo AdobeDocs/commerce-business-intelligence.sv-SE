@@ -24,7 +24,7 @@ Använd annonskampanjer som exempel. Om ni kör både online- och offlinekampanj
 ## Begränsningar och krav {#require}
 
 1. **Det enda format som stöds för filöverföringar är `CSV` eller`comma separated values`**. Om du arbetar i Excel kan du använda funktionen Spara som för att spara filen i formatet `.csv`.
-1. **`CSV`filer måste använda`UTF-8 encoding`**. För det mesta är detta inte något problem. Om det här felet inträffar när du överför en fil [läser du den här supportartikeln](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html).
+1. **`CSV`filer måste använda`UTF-8 encoding`**. För det mesta är detta inte något problem. Om det här felet inträffar när du överför en fil [läser du den här supportartikeln](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html?lang=sv-SE).
 1. **Filerna får inte vara större än 100 MB**. Om filen är större än så delar du upp tabellen i segment och sparar dem som enskilda filer. Du kan lägga till data när den första filen har lästs in.
 1. **Alla tabeller måste ha en`primary key`**. Det måste finnas minst en kolumn i tabellen som kan användas som `primary key`, eller en unik identifierare för varje rad i tabellen. Alla kolumner som har angetts som `primary key` kan *aldrig* vara null. En `primary key` kan vara så enkel som att lägga till en kolumn som ger ett nummer till varje rad, eller så kan två kolumner sammanfogas för att skapa en kolumn med unika värden (till exempel `campaign name` och `date`).
 

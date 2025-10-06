@@ -48,4 +48,4 @@ När du har klickat på **[!UICONTROL Connect with Stripe]** visas en sida för 
 [[!DNL Stripe] API-dokumentationen &#x200B;](https://stripe.com/docs/api) kan vara användbar när du vill veta mer om hur [!DNL Stripe] integreras med [!DNL Commerce Intelligence].
 
 * [&#x200B; [!DNL Stripe] data förväntades](../integrations/stripe-data.md)
-* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=sv-SE)

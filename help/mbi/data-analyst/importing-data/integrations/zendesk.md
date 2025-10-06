@@ -54,4 +54,4 @@ Du måste öppna två webbläsarfönster eller flikar för att kunna slutföra d
 ## Relaterat:
 
 * [&#x200B; [!DNL Zendesk] data förväntades](../integrations/exp-zendesk-data.md)
-* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Återautentiserar integreringar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=sv-SE)

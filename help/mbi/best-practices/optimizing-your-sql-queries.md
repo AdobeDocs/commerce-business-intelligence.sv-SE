@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Med [!DNL SQL Report Builder] kan du köra och ändra dina frågor när du vill. Den här funktionen är användbar om du behöver uppdatera en fråga direkt i stället för att vänta på att en uppdateringscykel ska avslutas innan du korrigerar en kolumn eller rapport.
 
-Innan en fråga körs uppskattar [[!DNL Commerce Intelligence] dess kostnad](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html). Kostnad anger hur lång tid och hur många resurser som krävs för att köra en fråga. Om kostnaden anses vara för hög eller om antalet returnerade rader överstiger [!DNL Commerce Intelligence]-gränserna misslyckas frågan. Adobe rekommenderar följande för att fråga din [Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md), som ser till att du skriver de mest effektiva frågorna.
+Innan en fråga körs uppskattar [[!DNL Commerce Intelligence] dess kostnad](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html?lang=sv-SE). Kostnad anger hur lång tid och hur många resurser som krävs för att köra en fråga. Om kostnaden anses vara för hög eller om antalet returnerade rader överstiger [!DNL Commerce Intelligence]-gränserna misslyckas frågan. Adobe rekommenderar följande för att fråga din [Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md), som ser till att du skriver de mest effektiva frågorna.
 
 ## Använda SELECT eller Markera alla kolumner
 

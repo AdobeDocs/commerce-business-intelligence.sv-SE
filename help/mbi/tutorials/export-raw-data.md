@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Exportera rådata
 
-Med export av rådata kan du exportera poster från Data Warehouse för att få en närmare bild av vad som ligger bakom instrumentpanelen. Dessutom kan export av rådata hjälpa dig att [identifiera datameddelanden](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html).
+Med export av rådata kan du exportera poster från Data Warehouse för att få en närmare bild av vad som ligger bakom instrumentpanelen. Dessutom kan export av rådata hjälpa dig att [identifiera datameddelanden](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html?lang=sv-SE).
 
 Export av rådata ger tillgång till ytterligare kolumner och dimensioner som genereras genom avnormalisering och föraggning av relevanta mått. `User's first order date` är till exempel en dimension som du kan exportera för varje användare i [!DNL Commerce Intelligence], men som kanske inte är tillgänglig i din databas.
 
