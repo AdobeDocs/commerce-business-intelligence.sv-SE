@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Få åtkomst till ditt aktiverade [!DNL Adobe Commerce Intelligence]-konto
 
-När du har aktiverat ditt [!DNL Commerce Intelligence]-konto för antingen [ lokalt eller molnet](../getting-started/onpremise-activation.md) och har arbetat med ditt Adobe-kontoteam för att slutföra konfigurationsstegen kan du nu logga in på ditt konto.
+När du har aktiverat ditt [!DNL Commerce Intelligence]-konto för antingen [&#x200B; lokalt eller molnet](../getting-started/onpremise-activation.md) och har arbetat med ditt Adobe-kontoteam för att slutföra konfigurationsstegen kan du nu logga in på ditt konto.
 
 ## Logga in med din [!DNL Adobe ID]
 

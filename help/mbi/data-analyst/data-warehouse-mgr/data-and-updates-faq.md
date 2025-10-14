@@ -32,7 +32,7 @@ Regelbundna uppdateringar är **schemalagda** processer medan framtvingade uppda
 
 ## Varför tar uppdateringscykeln lång tid? {#updatecycletime}
 
-Många faktorer kan öka uppdateringstiden. Vissa [replikeringsmetoder](../data-warehouse-mgr/cfg-replication-methods.md), [högre kontrollfrekvenser](../data-warehouse-mgr/cfg-data-rechecks.md) och antalet instrumentpaneler och diagram är bara några få medverkande. Adobe rekommenderar att [vissa av dina inställningar ](../../best-practices/reduce-update-cycle-time.md) konfigureras om och [att databasen optimeras för analys](../../best-practices/opt-db-analysis.md) för att minska uppdateringstiden.
+Många faktorer kan öka uppdateringstiden. Vissa [replikeringsmetoder](../data-warehouse-mgr/cfg-replication-methods.md), [högre kontrollfrekvenser](../data-warehouse-mgr/cfg-data-rechecks.md) och antalet instrumentpaneler och diagram är bara några få medverkande. Adobe rekommenderar att [vissa av dina inställningar &#x200B;](../../best-practices/reduce-update-cycle-time.md) konfigureras om och [att databasen optimeras för analys](../../best-practices/opt-db-analysis.md) för att minska uppdateringstiden.
 
 ## Kan jag få ett meddelande när en uppdateringscykel har slutförts? {#notifyupdate}
 

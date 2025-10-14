@@ -15,7 +15,7 @@ ht-degree: 2%
 
 Om du vill överföra dina [!DNL Linkshare]-data till [!DNL Adobe Commerce Intelligence] måste du göra två saker:
 
-1. [Exportera länkdelningsdata i ](#export)
+1. [Exportera länkdelningsdata i &#x200B;](#export)
 1. [Överför kalkylbladet till  [!DNL Commerce Intelligence]](../connecting-data/using-file-uploader.md)
 
 ## Exportera data från Länkshare {#export}
@@ -40,4 +40,4 @@ Om du vill överföra dina [!DNL Linkshare]-data till [!DNL Adobe Commerce Intel
 
    Nu har en `.csv`-fil laddats ned.
 
-När filen har laddats ned kan du överföra den till [!DNL Commerce Intelligence] med [`File Upload` feature ](../connecting-data/using-file-uploader.md) .
+När filen har laddats ned kan du överföra den till [!DNL Commerce Intelligence] med [`File Upload` feature &#x200B;](../connecting-data/using-file-uploader.md) .

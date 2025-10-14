@@ -27,7 +27,7 @@ Varje gång du ber någon klicka på en länk bör du konfigurera `UTM`-taggning
 
 ### &#x200B;2. Använd ett verktyg för att skapa URL:en
 
-`UTM`-taggade URL:er kan vara krångliga. Istället för att försöka skriva ut dem på lång sikt kan du använda ett [liknande ](https://support.google.com/analytics/answer/1033867?hl=en)-verktyg som kan hjälpa dig. Detta garanterar att du funderar genom att lägga till alla rimliga parametrar till URL:en, och du får URL:en att kopiera och klistra in direkt från den. Om du vill hantera sociala länkar inkluderar verktyg som [!DNL Hootsuite] alternativet att lägga till anpassade URL-parametrar till alla dina länkar.
+`UTM`-taggade URL:er kan vara krångliga. Istället för att försöka skriva ut dem på lång sikt kan du använda ett [liknande &#x200B;](https://support.google.com/analytics/answer/1033867?hl=en)-verktyg som kan hjälpa dig. Detta garanterar att du funderar genom att lägga till alla rimliga parametrar till URL:en, och du får URL:en att kopiera och klistra in direkt från den. Om du vill hantera sociala länkar inkluderar verktyg som [!DNL Hootsuite] alternativet att lägga till anpassade URL-parametrar till alla dina länkar.
 
 ### &#x200B;3. Kontrollera att du är skiftlägeskänslig i parametervärdena
 

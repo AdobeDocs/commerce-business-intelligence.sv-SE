@@ -32,7 +32,7 @@ Det här ämnet handlar om:
 
 Vänster sida på sidan `Data Warehouse Manager` innehåller tabelllistan, vilket gör att du enkelt kan växla mellan tabeller. När du väljer en tabell från listan fylls tabellhanteringsområdet i med tabellens schema där du kan ändra den markerade tabellen.
 
-I tabelllistan grupperas tabellerna efter anslutningskälla. De här källorna läggs till under [!UICONTROL Manage Data > Integrations] och kan vara antingen en databas, ett [ API ](https://developer.adobe.com/commerce/services/reporting/) eller en tredjepartsanslutning. Överst i tabelllistan finns det en sökruta där du enkelt kan hitta de tabeller du söker.
+I tabelllistan grupperas tabellerna efter anslutningskälla. De här källorna läggs till under [!UICONTROL Manage Data > Integrations] och kan vara antingen en databas, ett [&#x200B; API &#x200B;](https://developer.adobe.com/commerce/services/reporting/) eller en tredjepartsanslutning. Överst i tabelllistan finns det en sökruta där du enkelt kan hitta de tabeller du söker.
 
 Under sökrutan visas två alternativ: `All Tables` och `Synced Tables`. Alternativet `All Tables` visar alla tabeller som du har gjort tillgängliga för din Data Warehouse, som innehåller både synkroniserade och osynkroniserade tabeller.
 

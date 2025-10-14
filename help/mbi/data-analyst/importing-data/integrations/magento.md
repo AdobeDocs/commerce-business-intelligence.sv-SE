@@ -19,7 +19,7 @@ ht-degree: 0%
 
 Vill du se hur ert företag presterar eller hitta era mest värdefulla förvärvskällor och kanaler? Om du ansluter dina [!DNL Adobe Commerce]-data till [!DNL Commerce Intelligence] kan du svara på dessa frågor och mycket mer.
 
-Eftersom databasen [!DNL Adobe Commerce] baseras på MySQL kan du ansluta den till [!DNL Commerce Intelligence] via en [direkt anslutning](../integrations/mysql-via-a-direct-connection.md), [[!DNL cPanel]](../integrations/mysql-via-cpanel.md) eller [ via en SSH-tunnel](../integrations/mysql-via-ssh-tunnel.md). SSH-metoden rekommenderas eftersom den är den säkraste.
+Eftersom databasen [!DNL Adobe Commerce] baseras på MySQL kan du ansluta den till [!DNL Commerce Intelligence] via en [direkt anslutning](../integrations/mysql-via-a-direct-connection.md), [[!DNL cPanel]](../integrations/mysql-via-cpanel.md) eller [&#x200B; via en SSH-tunnel](../integrations/mysql-via-ssh-tunnel.md). SSH-metoden rekommenderas eftersom den är den säkraste.
 
 ## Relaterad information
 

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Filteralternativ
 
-I det här avsnittet utforskas några speciella `operators` som används i `filters` när [en rapport ](../../tutorials/using-visual-report-builder.md){: target="_blank"} eller [ett mått ](../../data-user/reports/ess-manage-data-metrics.md){: target="_blank"} skapas.
+I det här avsnittet utforskas några speciella `operators` som används i `filters` när [en rapport &#x200B;](../../tutorials/using-visual-report-builder.md){: target="_blank"} eller [ett mått &#x200B;](../../data-user/reports/ess-manage-data-metrics.md){: target="_blank"} skapas.
 
 ## `Filter Operators`
 

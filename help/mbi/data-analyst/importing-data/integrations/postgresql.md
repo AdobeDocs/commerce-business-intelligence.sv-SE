@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Om du vill ansluta din [!DNL PostgreSQL]-databas till [!DNL Commerce Intelligence] via en `SSH tunnel` måste du göra några saker:
 
-1. [Hämta den offentliga nyckeln  [!DNL Commerce Intelligence] ](#retrieve)
+1. [Hämta den offentliga nyckeln  [!DNL Commerce Intelligence] &#x200B;](#retrieve)
 1. [Tillåt åtkomst till  [!DNL Commerce Intelligence] IP-adressen](#allowlist)
 1. [Skapa en [!DNL Linux] användare för [!DNL Commerce Intelligence]](#linux)
 1. [Skapa en [!DNL PostgreSQL] användare för [!DNL Commerce Intelligence]](#postgres)

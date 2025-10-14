@@ -75,4 +75,4 @@ Om du vill få en heltäckande bild av dina kampanjsatsningar kan du importera d
 
 Varje fil - `Opens`, `Clicks` och `Sent` - ska överföras till [!DNL Commerce Intelligence] som en separat fil. Adobe rekommenderar att du namnger filerna med följande namnkonvention: `MailChimp\_ACTION\_DATE`. Ersätt `ACTION` med `Open`, `Click` eller `Sent` och ersätt `DATE` med exportdatumet.
 
-När du är redo att överföra filerna använder du [`File Upload`-funktionen ](../connecting-data/using-file-uploader.md) för att hämta data till din Data Warehouse.
+När du är redo att överföra filerna använder du [`File Upload`-funktionen &#x200B;](../connecting-data/using-file-uploader.md) för att hämta data till din Data Warehouse.

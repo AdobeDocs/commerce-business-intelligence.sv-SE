@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Om du vill ansluta din [!DNL MongoDB]-databas till [!DNL Commerce Intelligence] via en SSH-tunnel måste du göra några saker:
 
-1. [Hämta den offentliga nyckeln  [!DNL Commerce Intelligence] ](#retrieve)
+1. [Hämta den offentliga nyckeln  [!DNL Commerce Intelligence] &#x200B;](#retrieve)
 1. [Tillåt åtkomst till  [!DNL Commerce Intelligence] IP-adressen](#allowlist)
 1. [Skapa en Linux-användare för Commerce Intelligence](#linux)
 1. [Skapa en [!DNL MongoDB] användare för Commerce Intelligence](#mongodb)
@@ -78,7 +78,7 @@ Slutför skapandet av användaren genom att ändra behörigheterna i katalogen /
 
 ## Skapar en [!DNL Commerce Intelligence] [!DNL MongoDB]-användare {#mongodb}
 
-[!DNL MongoDB]-servrar har två körningslägen - [ett med auth-alternativet ](#auth) `(mongod -- auth)` och ett utan, [vilket är standard](#default). Stegen för att skapa en [!DNL MongoDB]-användare varierar beroende på vilket läge servern använder. Kontrollera läget innan du fortsätter.
+[!DNL MongoDB]-servrar har två körningslägen - [ett med auth-alternativet &#x200B;](#auth) `(mongod -- auth)` och ett utan, [vilket är standard](#default). Stegen för att skapa en [!DNL MongoDB]-användare varierar beroende på vilket läge servern använder. Kontrollera läget innan du fortsätter.
 
 ### Om servern använder alternativet `Auth`: {#auth}
 

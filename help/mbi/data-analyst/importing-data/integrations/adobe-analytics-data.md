@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # [!DNL Adobe Analytics] data förväntades
 
-Integrationen [!DNL Adobe Analytics] för [!DNL Adobe Commerce Intelligence] använder API:t [Analytics 2.0 ](https://developer.adobe.com/analytics-apis/docs/2.0/#!AdobeDocs/analytics-2.0-apis/master/README.md).
+Integrationen [!DNL Adobe Analytics] för [!DNL Adobe Commerce Intelligence] använder API:t [Analytics 2.0 &#x200B;](https://developer.adobe.com/analytics-apis/docs/2.0/#!AdobeDocs/analytics-2.0-apis/master/README.md).
 
 >[!INFO]
 >
