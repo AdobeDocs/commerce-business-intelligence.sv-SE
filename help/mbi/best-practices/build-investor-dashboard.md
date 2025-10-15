@@ -64,7 +64,7 @@ Med en [!DNL Google Analytics]-integrering kan du inkludera rapporter om:
 * Besök webbplatsen
 * Konverteringsgrad
 
-Med [Commerce Data Enrichment Services](https://business.adobe.com/products/magento/magento-commerce.html) kan du inkludera rapporter om:
+Med [Commerce Data Enrichment Services](https://business.adobe.com/se/products/magento/magento-commerce.html) kan du inkludera rapporter om:
 
 * Unika kunder per stat/region, ålder, kön.
 

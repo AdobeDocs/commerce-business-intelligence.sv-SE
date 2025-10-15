@@ -17,7 +17,7 @@ I det här avsnittet visas hur du konfigurerar en kontrollpanel som innehåller 
 
 ![Detaljerad returkontroll visar returfrekvenser och orsaker](../../assets/detailed-returns-dboard.png)
 
-Innan du börjar måste du vara [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html)-kund och se till att ditt företag använder tabellen `enterprise\_rma` för returer.
+Innan du börjar måste du vara [Adobe Commerce](https://business.adobe.com/se/products/magento/magento-commerce.html)-kund och se till att ditt företag använder tabellen `enterprise\_rma` för returer.
 
 Den här analysen innehåller [avancerade beräknade kolumner](../data-warehouse-mgr/adv-calc-columns.md).
 

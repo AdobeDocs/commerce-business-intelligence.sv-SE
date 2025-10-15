@@ -88,7 +88,7 @@ Tabellen används för att hantera din prenumerationsinformation, t.ex. prenumer
 
 ## Utgiftsregister för marknadsföring
 
-När du analyserar dina marknadsföringsutgifter kan du inkludera [!DNL Facebook], [!DNL Google AdWords] eller andra källor i dina analyser. Om du har flera marknadsföringsresurser kontaktar du [Managed Services Team](https://business.adobe.com/products/magento/fully-managed-service.html) för att få hjälp med att skapa en konsoliderad tabell för dina marknadsföringskampanjer.
+När du analyserar dina marknadsföringsutgifter kan du inkludera [!DNL Facebook], [!DNL Google AdWords] eller andra källor i dina analyser. Om du har flera marknadsföringsresurser kontaktar du [Managed Services Team](https://business.adobe.com/se/products/magento/fully-managed-service.html) för att få hjälp med att skapa en konsoliderad tabell för dina marknadsföringskampanjer.
 
 **Dimensioner**
 
