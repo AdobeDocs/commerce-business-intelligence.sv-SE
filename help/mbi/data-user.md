@@ -1,12 +1,12 @@
 ---
 title: Dataanvändare
-description: Dataanvändare
+description: Lär dig använda data för att fatta mer välgrundade affärsbeslut samt för att skapa rapporter och kontrollpaneler.
 exl-id: 2f412c94-5042-4411-b19b-482993e6f70f
 role: Admin, Data Architect, Data Engineer, Leader, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: cd4698a1ce3721d80aeec0782ee1efb3e43b5ce6
 workflow-type: tm+mt
-source-wordcount: '70'
+source-wordcount: '86'
 ht-degree: 0%
 
 ---
