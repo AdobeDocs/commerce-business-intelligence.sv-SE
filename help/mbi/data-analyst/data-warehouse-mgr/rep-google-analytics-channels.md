@@ -4,9 +4,9 @@ description: Lär dig hur du replikerar Google Analytics-kanaler med hjälp av f
 exl-id: e7248fe4-94db-4cdf-8f58-1f65061a207d
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: cb7dd221f3e83be0c7ee01a6af479e5d1bad108c
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '689'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ Nu när du vet att kanaler bara är kombinationer av källor och medier är det 
 
 1. **Aktivera [!DNL Google ECommerce]integreringen**
 
-   [När det är aktiverat](../importing-data/integrations/google-ecommerce.md) kontrollerar du att fälten [sync]&#x200B;(../{{ site.baseurl }}/data-analyst/data-warehouse-mgr/tour-dwm.html#syncing) **medium** och **source** i din Data Warehouse är . När detta är klart hämtas data om medium- och källinhämtning till din Data Warehouse.
+   [När det här alternativet är aktiverat](../importing-data/integrations/google-ecommerce.md) måste du [synkronisera](tour-dwm.md#syncing) fälten **medium** och **source** i din Data Warehouse. När detta är klart hämtas data om medium- och källinhämtning till din Data Warehouse.
 
 1. **Överför en mappning av Google kanalgrupperingar**
 
