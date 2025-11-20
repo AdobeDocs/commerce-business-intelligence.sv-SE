@@ -39,23 +39,23 @@ Förutom de rollbaserade arbetsflödena ovan innehåller den här guiden även:
 
 ## Få hjälp
 
-Kontakta [supportteamet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) om du har frågor och vill utnyttja vissa av dina Professional Services eller om du stöter på problem med ditt konto.
+Kontakta [supportteamet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE) om du har frågor och vill utnyttja vissa av dina Professional Services eller om du stöter på problem med ditt konto.
 
 ### Tjänstprofiler
 
-Se en [lista över vilka tjänster som kundsupportteamet tillhandahåller](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+Se en [lista över vilka tjänster som kundsupportteamet tillhandahåller](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE).
 
 ### Skicka en supportanmälan
 
-Behöver du hjälp med att skapa en avancerad beräknad kolumn? Påträffade ett fel eller ett anslutningsproblem? Om du behöver kontakta supportteamet ber Adobe dig att använda [supportriktlinjerna](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html). Dessa riktlinjer innehåller information som Adobe behöver för att lösa problemet.
+Behöver du hjälp med att skapa en avancerad beräknad kolumn? Påträffade ett fel eller ett anslutningsproblem? Om du behöver kontakta supportteamet ber Adobe dig att använda [supportriktlinjerna](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE). Dessa riktlinjer innehåller information som Adobe behöver för att lösa problemet.
 
 ## Tillgänglig dokumentation
 
 | Dokumentationsresurs | Beskrivning |
 |----------------------- | ----------- |
-| [Adobe Commerce 2.4 Merchant Documentation](https://experienceleague.adobe.com/en/docs/commerce-admin/user-guides/home) | Handlingar för både Adobe Commerce och Magento Open Source |
-| [Tjänster för Adobe Commerce-dokumentation](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home) | Dokumentation till stöd för en samling tjänster som hjälper handlare att integrera viktiga komponenter i sin verksamhet med sin butik. |
-| [Handböcker för Adobe Commerce 2.4](https://experienceleague.adobe.com/en/docs/commerce-operations/operational-guides/home) | Systemdokumentation om koncept, processer, verktyg och bästa metoder för att utveckla, driftsätta och underhålla projekt som körs på Adobe Commerce- och Magento Open Source-plattformar. |
+| [Adobe Commerce 2.4 Merchant Documentation](https://experienceleague.adobe.com/sv/docs/commerce-admin/user-guides/home) | Handlingar för både Adobe Commerce och Magento Open Source |
+| [Tjänster för Adobe Commerce-dokumentation](https://experienceleague.adobe.com/sv/docs/commerce/user-guides/home) | Dokumentation till stöd för en samling tjänster som hjälper handlare att integrera viktiga komponenter i sin verksamhet med sin butik. |
+| [Handböcker för Adobe Commerce 2.4](https://experienceleague.adobe.com/sv/docs/commerce-operations/operational-guides/home) | Systemdokumentation om koncept, processer, verktyg och bästa metoder för att utveckla, driftsätta och underhålla projekt som körs på Adobe Commerce- och Magento Open Source-plattformar. |
 | [Adobe Commerce 2.4 Developer Documentation](https://developer.adobe.com/commerce/) | Dokumentation för utvecklare som används för att skapa och anpassa Adobe Commerce eller Magento Open Source |
 
 {{$include /help/_includes/templated/whats-new.md}}
