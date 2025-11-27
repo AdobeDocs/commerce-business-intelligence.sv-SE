@@ -37,7 +37,7 @@ Om du vill analysera kohortbeteendet för flera användarsegment i samma kohortr
 
 Om du skapar en `qualitative cohort`-rapport i `Report Builder` måste Adobe analysteam skapa [avancerade beräknade kolumner](../data-warehouse-mgr/creating-calculated-columns.md) i de nödvändiga tabellerna.
 
-Om du vill skapa dessa skickar du en [supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) (och refererar till den här artikeln!). Det här behöver du veta:
+Om du vill skapa dessa skickar du en [supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE) (och refererar till den här artikeln!). Det här behöver du veta:
 
 * `metric` som du vill utföra din kohortanalys med och vilken tabell den använder (exempel: `Revenue`, som bygger på tabellen `orders`).
 
