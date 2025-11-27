@@ -4,9 +4,9 @@ description: Lär dig hur du kontrollerar hälsan hos viktiga mätvärden som in
 exl-id: f50fc417-e5d4-401c-9baa-cda1468196a2
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 3a7423c9dd0f957b77baa27b3447a715caad017b
 workflow-type: tm+mt
-source-wordcount: '960'
+source-wordcount: '956'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >Tillgängligheten för vissa instrumentpaneler beror på din datamängd.
 
-Om du har frågor eller vill lägga till ett paket till ditt konto skickar du en [supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE) för hjälp.
+Om du har frågor eller vill lägga till ett paket till ditt konto skickar du en [supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) för hjälp.
 
 ## Översikt
 
@@ -45,7 +45,7 @@ Instrumentpanelen `Email Summary` innehåller en exempeluppsättning diagram som
 
 Instrumentpanelen `Retention health` visar hur din användarbas upprepade inköpsbeteenden fungerar.
 
-Diagrammet `Time between orders` visar den genomsnittliga och/eller genomsnittliga tiden mellan en användares första och andra ordning, andra och tredje ordning och så vidare. Du kan [överväga att använda dessa data för att konfigurera dina e-postmarknadsföringskampanjer](http://blog.rjmetrics.com/acting-on-marketing-data-in-your-rjmetrics-online-dashboard/).
+Diagrammet `Time between orders` visar den genomsnittliga och/eller genomsnittliga tiden mellan en användares första och andra ordning, andra och tredje ordning och så vidare. Du kan överväga att använda dessa data för att konfigurera e-postmarknadsföringskampanjer.
 
 Diagrammet `Users by lifetime number of orders` visar det totala antalet användare för varje antal order under en livstid för att ge en allmän översikt över beteendet vid upprepade inköp.  
 
@@ -89,7 +89,7 @@ Kontrollpanelen `Users to target` innehåller tabellformatsdiagram som listar an
 
 * Lista över de största skulder som varit aktiva de senaste `X` dagarna (som du kanske vill belöna)
 
-Det är enkelt att [skapa e-postlistor för användare med liknande inköpsbeteenden för målmarknadsföring](http://blog.rjmetrics.com/creating-contact-lists-for-top-customers/) med hjälp av dina dataexportverktyg.
+Du kan använda dina dataexportverktyg för att skapa e-postlistor med användare med liknande inköpsbeteenden för målmarknadsföring.
 
 ## Användaraktivitet
 
@@ -97,4 +97,4 @@ Kontrollpanelen `User activity` innehåller diagram som segmenterar användare e
 
 Diagrammet `% of cohort members who have purchased` är värdefullt eftersom det visar konverteringsgraden (från 0 till 1) för användare baserat på när de registrerar sig (varje rad representerar en kohort med användare). Det visas också när de gör sitt första köp (till exempel i månad 1, 2, 3... efter registreringen). Detta kan visa att 10 % av användarna aktiverade under månad 1, medan antalet växer under månad 2, 3, 4.. och kan komma att platåa senare.
 
-Raderna i det här diagrammet blir vanligtvis vågräta efter en viss tidsperiod. Detta visar att få ytterligare kohortmedlemmar konverterar organiskt efter den punkten - de flesta användare som kommer att göra ett köp har redan gjort det. I nuläget är det högst osannolikt att dessa medlemmar kommer att konvertera till köpare utan ingripande. [Att nå ut till dem med anpassade kampanjer eller riktade e-postmeddelanden är ett lågrisksätt att snabbt komma igång med konverteringen av den här populationen.](http://blog.rjmetrics.com/acting-on-marketing-data-in-your-rjmetrics-online-dashboard/)
+Raderna i det här diagrammet blir vanligtvis vågräta efter en viss tidsperiod. Detta visar att få ytterligare kohortmedlemmar konverterar organiskt efter den punkten - de flesta användare som kommer att göra ett köp har redan gjort det. I nuläget är det högst osannolikt att dessa medlemmar kommer att konvertera till köpare utan ingripande. Att nå ut till dem med anpassade kampanjer eller riktade e-postmeddelanden är ett lågrisksätt att snabbt komma igång med konverteringen av den här befolkningen.

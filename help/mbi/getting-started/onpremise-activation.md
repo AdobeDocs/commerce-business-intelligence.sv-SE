@@ -4,7 +4,7 @@ description: Lär dig vem du ska kontakta för att aktivera ditt [!DNL Commerce 
 exl-id: 0efac7b4-2457-48c7-947a-d2776b90a1dd
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 736dbdc3ea6bc8b7c852f06110705765f040c31f
 workflow-type: tm+mt
 source-wordcount: '732'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Om du vill skapa ett konto kontaktar du Adobe Account Team eller kundens teknisk
 
 När ditt konto har skapats kan du kontrollera din e-postadress för att få ett e-postmeddelande från [!DNL The Magento BI Team@rjmetrics.com]. Använd länken i e-postmeddelandet för att komma åt ditt [!DNL Commerce Intelligence]-konto och skapa ditt lösenord. Gå till din inkorg och verifiera din e-postadress.
 
-[Kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE) om du inte fått något e-postmeddelande.
+[Kontakta support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) om du inte fått något e-postmeddelande.
 
 ![Skapa lösenordsskärm för nytt Commerce Intelligence-konto](../assets/create-account-4.png)
 
@@ -72,7 +72,7 @@ När du har skapat den dedikerade användaren för [!DNL Commerce Intelligence] 
 
 1. Bläddra nedåt och utöka listrutan **[!UICONTROL SSH Keys]**. Välj sedan **[!UICONTROL Add a public key]**.
 
-   ![Sidan Kontoinställningar med SSH-nycklar och knappen Lägg till offentlig nyckel &#x200B;](../assets/add-public-key.png)
+   ![Sidan Kontoinställningar med SSH-nycklar och knappen Lägg till offentlig nyckel ](../assets/add-public-key.png)
 
 1. Klistra in den offentliga nyckeln som du kopierade i steget [!DNL Encryption Type] ovan.
 
@@ -118,7 +118,7 @@ Ange din [!DNL Commerce Intelligence]-information på skärmen [!UICONTROL Conne
 
 [!UICONTROL Port]: `3306`
 
-[!UICONTROL -användarnamn]: `mbi`
+[!UICONTROL-användarnamn]: `mbi`
 
 [!UICONTROL Password]: [indatalösenordet visas i föregående avsnitt]
 
@@ -170,7 +170,7 @@ När du har slutfört konfigurationen [loggar du in](../getting-started/sign-in.
 
 <!---# Activate your [!DNL Commerce Intelligence] Account
 
-To activate [!DNL Commerce Intelligence] for on-premise or `Cloud Pro` subscriptions, [contact support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE).
+To activate [!DNL Commerce Intelligence] for on-premise or `Cloud Pro` subscriptions, [contact support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 >[!NOTE]
 >

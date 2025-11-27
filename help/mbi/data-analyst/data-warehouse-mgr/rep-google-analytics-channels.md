@@ -4,9 +4,9 @@ description: Lär dig hur du replikerar Google Analytics-kanaler med hjälp av f
 exl-id: e7248fe4-94db-4cdf-8f58-1f65061a207d
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: cb7dd221f3e83be0c7ee01a6af479e5d1bad108c
+source-git-commit: 736dbdc3ea6bc8b7c852f06110705765f040c31f
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '688'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Som standard konfigurerar [!DNL Google] åtta olika kanaler. Reglerna som bestä
 | Organic Search | Trafik som har rankats organiskt i obetalda sökmotorer. | Medium = `organic` |
 | Hänvisning | Trafik som kommer från en extern länk som inte är en organisk sökning eller från webbplatser som inte är sociala nätverk. | Medium = `referral` |
 | Betalsökning | Trafik som har en UTM-spårningskod där mediet är antingen &quot;cpc&quot;, &quot;ppc&quot; eller &quot;paidsearch&quot; OCH är ett annonsdistributionsnät som inte matchar &quot;Content&quot;. | Medium = `^(cpc|ppc|paidsearch)$`<br>AND Ad Distribution Network ≠ `Content` |
-| Social | Hänvisningstrafik som kommer från något av ungefär [400 sociala nätverk](https://www.annielytics.com/blog/analytics/sites-google-analytics-includes-in-social-reports/) och som inte är taggad som annonser. | Social Source-referens = `Yes`<br>OR Medium = `^(social|social-network|social-media|sm|social network|social media)$` |
+| Social | Hänvisningstrafik som kommer från ungefär 400 sociala nätverk och som inte är taggad som annonser. | Social Source-referens = `Yes`<br>OR Medium = `^(social|social-network|social-media|sm|social network|social media)$` |
 | E-post | Trafik från sessioner som är taggade med ett medium av &quot;e-post&quot;. | UTM-spårningskod för Medium = `email` |
 | Visa | Trafik som har en UTM-spårningskod där mediet antingen visas eller är kpm. Innehåller även AdWords-interaktion där annonsens distributionsnätverk matchar&quot;Content&quot; | Medium = `^(display|cpm|banner)$`<br>OR Ad Distribution Network = `Content`<br>AND Ad Format ≠ `Text` |
 | Övriga | Sessioner från andra annonskanaler (exklusive betald sökning) som är taggade med mediet &quot;cpc&quot;, &quot;ppc&quot;, &quot;cpm&quot;, &quot;cpv&quot;, &quot;cpa&quot;, &quot;cpp&quot;, &quot;affiliate&quot;. | Medium = `^(cpv|cpa|cpp|content-text)$` |

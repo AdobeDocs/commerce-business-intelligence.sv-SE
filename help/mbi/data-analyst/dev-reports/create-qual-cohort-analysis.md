@@ -4,9 +4,9 @@ description: Läs vad en kvalitativ kohort är, varför du kan vara intresserad 
 exl-id: 113244e4-409b-4129-b3d4-7a3433539ade
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 736dbdc3ea6bc8b7c852f06110705765f040c31f
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '846'
 ht-degree: 0%
 
 ---
@@ -20,8 +20,6 @@ Det här avsnittet handlar om vad en kvalitativ kohort är, varför du kan vara 
 ## Vad är `qualitative cohorts` egentligen? {#whatare}
 
 Analysen av `Cohort` i allmänhet kan definieras brett som en analys av användargrupper som delar liknande egenskaper under sina livscykler. Det gör att du kan identifiera beteendetrender för olika användargrupper.
-
-Se [kohortanalys](https://www.cohortanalysis.com/).
 
 De flesta `cohort` analyserar i [!DNL Commerce Intelligence] gruppanvändare tillsammans efter ett gemensamt datum (t.ex. uppsättningen med alla kunder som gjorde sitt första köp under en viss månad). En `qualitative cohort` är lite annorlunda: det är en användargrupp som definieras av en egenskap som inte är tidsbaserad. Exempel:
 
@@ -39,7 +37,7 @@ Om du vill analysera kohortbeteendet för flera användarsegment i samma kohortr
 
 Om du skapar en `qualitative cohort`-rapport i `Report Builder` måste Adobe analysteam skapa [avancerade beräknade kolumner](../data-warehouse-mgr/creating-calculated-columns.md) i de nödvändiga tabellerna.
 
-Om du vill skapa dessa skickar du en [supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE) (och refererar till den här artikeln!). Det här behöver du veta:
+Om du vill skapa dessa skickar du en [supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) (och refererar till den här artikeln!). Det här behöver du veta:
 
 * `metric` som du vill utföra din kohortanalys med och vilken tabell den använder (exempel: `Revenue`, som bygger på tabellen `orders`).
 

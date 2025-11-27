@@ -4,9 +4,9 @@ description: Lär dig mer om analysen av användargrupper som delar liknande ege
 exl-id: d80c5389-7256-40e0-86e0-49903113f93d
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 736dbdc3ea6bc8b7c852f06110705765f040c31f
 workflow-type: tm+mt
-source-wordcount: '1607'
+source-wordcount: '1597'
 ht-degree: 0%
 
 ---
@@ -18,8 +18,6 @@ Har du någonsin velat studera hur olika delar av dina användare beter sig öve
 ## Vad är kohortanalys? {#what}
 
 `Cohort`-analys kan definieras brett som en analys av användargrupper som delar liknande egenskaper under sina livscykler. Det gör att du kan identifiera beteendetrender för olika användargrupper.
-
-Om du vill ha en grundlig introduktion om `cohort`-analys kan du gå igenom [den här sidan](https://www.cohortanalysis.com/).
 
 På din [!DNL Commerce Intelligence]-kontrollpanel är det enkelt att skapa användare `cohorts` baserat på ett `cohort`-datum och ett mätvärde i ditt konto.
 
