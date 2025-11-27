@@ -46,7 +46,7 @@ Eftersom filerna måste vara i formatet `CSV` kan användning av kommatecken ors
 
 ### Datum
 
-Alla datauppsättningar som innehåller datum måste använda standarddatumformatet [](https://dev.mysql.com/doc/refman/5.7/en/datetime.html) `YYYY-MM-DD HH:MM:SS` eller `MM/DD/YYYY`.
+Alla datauppsättningar som innehåller datum måste använda standarddatumformatet [&#128279;](https://dev.mysql.com/doc/refman/5.7/en/datetime.html) `YYYY-MM-DD HH:MM:SS` eller `MM/DD/YYYY`.
 
 ### Specialtecken
 
@@ -69,9 +69,9 @@ Procenttal måste anges i decimaler. Exempel:
 
 ### Värden med inledande och/eller avslutande nollor {#zeroes}
 
-Vissa värden i filen - som ZIP-koder och ID:n - kan börja eller sluta med nollor. Om du vill vara säker på att nollorna behålls och överförs på rätt sätt kan du ändra formateringstypen (till exempel [ från tal till text](https://support.microsoft.com/en-us/office/format-numbers-as-text-583160db-936b-4e52-bdff-6f1863518ba4?ui=en-us&rs=en-us&ad=us)) eller framtvinga nummerformatering.
+Vissa värden i filen - som ZIP-koder och ID:n - kan börja eller sluta med nollor. Om du vill vara säker på att nollorna behålls och överförs på rätt sätt kan du ändra formateringstypen (till exempel [&#x200B; från tal till text](https://support.microsoft.com/en-us/office/format-numbers-as-text-583160db-936b-4e52-bdff-6f1863518ba4?ui=en-us&rs=en-us&ad=us)) eller framtvinga nummerformatering.
 
-Använd `US ZIP codes` som exempel på hur du ändrar talformatering. I [!DNL Excel] markerar du kolumnen som innehåller `ZIP codes` och [ändrar talformatet ](https://support.microsoft.com/en-us/office/display-numbers-as-postal-codes-61b55c9f-6fe3-4e54-96ca-9e85c38a5a1d?ui=en-us&rs=en-us&ad=us) till `ZIP code`. Du kan också välja ett eget nummerformat och ange `Type` i fönstret `00000`. Tänk på att den här metoden kan orsaka problem om vissa koder är formaterade som `00000` och andra är `00000-0000`.
+Använd `US ZIP codes` som exempel på hur du ändrar talformatering. I [!DNL Excel] markerar du kolumnen som innehåller `ZIP codes` och [ändrar talformatet &#x200B;](https://support.microsoft.com/en-us/office/display-numbers-as-postal-codes-61b55c9f-6fe3-4e54-96ca-9e85c38a5a1d?ui=en-us&rs=en-us&ad=us) till `ZIP code`. Du kan också välja ett eget nummerformat och ange `Type` i fönstret `00000`. Tänk på att den här metoden kan orsaka problem om vissa koder är formaterade som `00000` och andra är `00000-0000`.
 
 `Type` kan [formateras på olika sätt för att passa andra datatyper](https://support.microsoft.com/en-us/office/keeping-leading-zeros-and-large-numbers-1bf7b935-36e1-4985-842f-5dfa51f85fe7?correlationid=e1d4c2d3-cd5d-4a14-999d-437800274a90&ui=en-us&rs=en-us&ad=us), t.ex. ID:n. Om en `ID` är nio siffror lång, till exempel, kan `Type` vara `000000000` eller `000-000-000`. Detta skulle ändra `123456` till `000-123-456`.
 
