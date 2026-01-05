@@ -28,12 +28,12 @@ If you are fixing a GitHub issue, using the GitHub keyword format (https://help.
 
 `main` is the default branch. Merged pull requests to `main` go live on the site automatically. Any requested changes to content on the `main` branch must be related to the released codebase. Any content related to future releases goes in the `develop` branch.
 
-See Contribution guidelines (https://github.com/AdobeDocs/commerce-business-intelligence.en/blob/main/contributing.md) for more information.
+See Contribution guidelines (https://github.com/AdobeDocs/commerce-business-intelligence.sv-SE/blob/main/contributing.md) for more information.
 -->
 
 ### Nyheter i korthet
 
 <!--  _OPTIONAL - REMOVE THIS SECTION IF NOT USED._
 
-If this pull request introduces changes that should be highlighted in the [What's New section](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/guide-overview#whats-new), see _What's New highlights_ in the [Contribution guidelines](https://github.com/AdobeDocs/commerce-business-intelligence.en/blob/main/contributing.md#whats-new-highlights).
+If this pull request introduces changes that should be highlighted in the [What's New section](https://experienceleague.adobe.com/sv/docs/commerce-business-intelligence/mbi/guide-overview#whats-new), see _What's New highlights_ in the [Contribution guidelines](https://github.com/AdobeDocs/commerce-business-intelligence.sv-SE/blob/main/contributing.md#whats-new-highlights).
 -->
