@@ -1,7 +1,7 @@
 ---
-source-git-commit: 199353c57dd1ca316c2a8b76fee1148d0e342299
+source-git-commit: 98e0c5dbd61d6d0f8d1a6e09d239cb25cbab8f81
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '438'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ Den här katalogen innehåller förimplementerade kopplingar som automatiskt opt
 
 ## Vad krokarna gör
 
-- **Identifiera** mellanlagrade bildfiler automatiskt (PNG, JPG, JPEG, GIF, SVG)
+- **Identifiera** mellanlagrade bildfiler automatiskt (PNG, JPG, JPEG, GIF)
 - **Kör`image_optim`** för att komprimera och optimera bilder
 - **Ordna om optimerade bilder** automatiskt
 - **Kontrollera att alla implementerade bilder** är korrekt optimerade
@@ -85,11 +85,11 @@ Image optimization complete!
 ## Bildriktlinjer
 
 - **PNG**: Används för skärmbilder och gränssnittselement (optimeras automatiskt)
-- **SVG**: Använd för ikoner och enkel grafik (optimering inaktiverat som standard)
+- **SVG**: Används för ikoner och enkel grafik (inte automatiskt optimerat av den bindande funktionen)
 - **JPEG**: Används för foton (optimeras automatiskt)
 - **GIF**: Används för animeringar (optimeras automatiskt)
 
-De förimplementerade böckerna optimerar automatiskt alla bilder vid implementering.
+De förimplementerade hookarna optimerar automatiskt PNG-, JPEG- och GIF-bilder vid implementering.
 
 ## Manuell optimering
 
@@ -138,10 +138,13 @@ Hokarna använder konfigurationsfilen `_jekyll/.image_optim.yml` för att anpass
 
 ## Bildformat som stöds
 
+Den bindande funktionen utför automatiskt följande processer:
+
 - **PNG** (`.png`) - förlustfri och förstörande komprimering
 - **JPEG** (`.jpg`, `.jpeg`) - Förstörande komprimering med rensning av metadata
 - **GIF** (`.gif`) - Animering och statisk optimering
-- **SVG** (`.svg`) - Vektoroptimering (inaktiverad som standard)
+
+**Obs!** SVG-optimering är inaktiverat som standard (kan bryta komplex vektorgrafik och animeringar). SVG-filer bearbetas inte automatiskt av den exekverande kroken.
 
 ## God praxis
 
