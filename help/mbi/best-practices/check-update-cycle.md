@@ -4,7 +4,7 @@ description: Lär dig hur du kontrollerar statusen för uppdateringscykeln.
 exl-id: bd65f2bb-86c1-4e83-a132-797694ddb086
 role: Admin, Data Architect, Data Engineer, User
 feature: Dashboards
-source-git-commit: d683f1362d87eee16c41ba9a8a83a9ff533b14aa
+source-git-commit: 776b4b666c47775a7b883a3a6f71c16b4b3bfbad
 workflow-type: tm+mt
 source-wordcount: '336'
 ht-degree: 0%
@@ -17,7 +17,7 @@ När du loggar in på din [!DNL Adobe Commerce Intelligence]-instrumentpanel fin
 
 ## Varför ska jag kontrollera statusen för uppdateringscykeln?
 
-Att kontrollera statusuppdateringscykeln är användbart när du granskar data i ditt [!DNL Commerce Intelligence]-konto. Om du ser [resultat som inte uppfyller dina förväntningar](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md), till exempel, matchar inte daglig försäljning i [!DNL Commerce Intelligence] det du ser i din e-handelsplattform eller i dina [[!DNL Google] e-handelsintäkter](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html?lang=sv-SE), kan du kontrollera den sista datapunkten för att se om problemet har lösts när en uppdatering är klar.
+Att kontrollera statusuppdateringscykeln är användbart när du granskar data i ditt [!DNL Commerce Intelligence]-konto. Om du ser [resultat som inte uppfyller dina förväntningar](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md), till exempel, matchar inte daglig försäljning i [!DNL Commerce Intelligence] det du ser i din e-handelsplattform eller i dina [[!DNL Google] e-handelsintäkter](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html), kan du kontrollera den sista datapunkten för att se om problemet har lösts när en uppdatering är klar.
 
 ## [!UICONTROL Read-Only] och [!UICONTROL Standard] användare
 
@@ -72,4 +72,4 @@ curl -sS -H "X-RJM-API-Key: <EXPORT-API-KEY>" \
 }
 ```
 
-Information om parametrar, autentisering, fel och hastighetsbegränsningar finns i [API för uppdateringscykelstatus](https://developer.adobe.com/commerce/services/reporting/update-cycle-status-api/) i utvecklardokumentationen.
+Information om parametrar, autentisering, fel och hastighetsbegränsningar finns i [API för uppdateringscykelstatus](https://developer.adobe.com/commerce/services/reporting/update-cycle/) i utvecklardokumentationen.
