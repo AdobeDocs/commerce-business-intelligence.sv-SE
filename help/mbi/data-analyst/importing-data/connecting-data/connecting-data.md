@@ -4,9 +4,9 @@ description: Lär dig hur du bläddrar i tabeller som är tillgängliga för syn
 exl-id: 94beba8b-6a86-4af9-87fb-96b1cf8f8fa2
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: d683f1362d87eee16c41ba9a8a83a9ff533b14aa
 workflow-type: tm+mt
-source-wordcount: '513'
+source-wordcount: '567'
 ht-degree: 0%
 
 ---
@@ -66,10 +66,14 @@ Mer information om hur du kommer igång med `Import API` finns på [utvecklarweb
 Om du vill lägga till en integrering klickar du på **[!UICONTROL Manage Data** > **Connections]** och sedan på **[!UICONTROL Add a New Data Source]**. Klicka på ikonen för den integrering som du vill lägga till och följ instruktionerna i hjälpavsnitten för att konfigurera saker:
 
 * [Vanliga frågor om integrering](https://support.magento.com/hc/en-us/sections/360003161871-Integration-FAQ)
-* [Tillgänglig &#x200B;](../integrations/integrations.md)
+* [Tillgänglig ](../integrations/integrations.md)
 * [Konsoliderar dina tabeller](../../../best-practices/consolidating-your-tables.md)
 * [Begränsa åtkomst till databasen](../../../administrator/account-management/restrict-db-access.md)
 
-**Hittar du ingen integrering?** Vissa integreringar måste aktiveras för att de ska kunna visas på ditt konto. Om du letar efter något som [!DNL Facebook] men det inte finns med i listan, [skickar du en supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=sv-SE).
+**Hittar du ingen integrering?** Vissa integreringar måste aktiveras för att de ska kunna visas på ditt konto. Om du letar efter något som [!DNL Facebook] men det inte finns med i listan, [skickar du en supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 **Om du ser felstatus för en integrering** kan du få hjälp i avsnittet [Felsökning](https://support.magento.com/hc/en-us/sections/360003078151).
+
+## Övervaka uppdateringshälsa (valfritt)
+
+När du har anslutit källor kanske du vill automatisera en grundläggande hälsokontroll för att bekräfta att fullständiga uppdateringar har slutförts. Använd [API:t för uppdateringscykelstatus](https://developer.adobe.com/commerce/services/reporting/update-cycle-status-api/) i utvecklardokumentationen för att hämta den senaste slutförda uppdateringscykeln för din klient och visa den i interna instrumentpaneler eller varningar.
